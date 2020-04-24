@@ -3,18 +3,23 @@
 	<AttackSkill>31</AttackSkill>
 	<DefenceSkill>27</DefenceSkill>
 	<Shots>0</Shots>
-	<MinDamage>33</MinDamage>
-	<MaxDamage>57</MaxDamage>
-	<Speed>9</Speed>
+	<MinDamage>35</MinDamage>
+	<MaxDamage>55</MaxDamage>
+	<Speed>8</Speed>
 	<Initiative>14</Initiative>
 	<Flying>true</Flying>
-	<Health>200</Health>
-	<KnownSpells/>
-	<SpellPoints>0</SpellPoints>
+	<Health>210</Health>
+	<KnownSpells>
+		<Item>
+			<Spell>SPELL_REGENERATION</Spell>
+			<Mastery>MASTERY_EXPERT</Mastery>
+		</Item>
+	</KnownSpells>
+	<SpellPoints>26</SpellPoints>
 	<SpellPoints1>0</SpellPoints1>
 	<SpellPoints2>0</SpellPoints2>
-	<Exp>300</Exp>
-	<Power>6028</Power>
+	<Exp>1000</Exp>
+	<Power>6000</Power>
 	<TimeToCommand>10</TimeToCommand>
 	<CreatureTier>7</CreatureTier>
 	<Upgrade>true</Upgrade>
@@ -31,8 +36,8 @@
 		<Mercury>0</Mercury>
 		<Crystal>0</Crystal>
 		<Sulfur>0</Sulfur>
-		<Gem>2</Gem>
-		<Gold>3400</Gold>
+		<Gem>3</Gem>
+		<Gold>4500</Gold>
 	</Cost>
 	<PresetPrice>0</PresetPrice>
 	<SubjectOfRandomGeneration>true</SubjectOfRandomGeneration>
@@ -211,6 +216,7 @@
 	<Upgrades/>
 	<Abilities>
 		<Item>ABILITY_IMMUNITY_TO_EARTH</Item>
+		<Item>ABILITY_REGENERATION</Item>
 		<Item>ABILITY_ACID_BREATH</Item>
 	</Abilities>
 </Creature>

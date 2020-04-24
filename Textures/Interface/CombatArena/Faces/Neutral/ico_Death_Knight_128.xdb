@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Texture ObjectRecordID="1008202">
-	<SrcName href="/UI/Icons/Creatures/neutral/Death Knight_128.tga"/>
+	<SrcName/>
 	<DestName href="ico_Death_Knight_128.dds"/>
 	<Type>TEXTURE_2D</Type>
 	<ConversionType>CONVERT_TRANSPARENT</ConversionType>

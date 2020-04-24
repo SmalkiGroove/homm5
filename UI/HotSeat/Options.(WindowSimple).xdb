@@ -10,25 +10,25 @@
 	<Placement>
 		<Position>
 			<First>
-				<x>697</x>
+				<x>320</x>
 				<y>93</y>
 			</First>
 			<Second>true</Second>
 		</Position>
 		<VerAllign>
 			<First>EPA_LOW_END</First>
-			<Second>false</Second>
+			<Second>true</Second>
 		</VerAllign>
 		<HorAllign>
-			<First>EPA_LOW_END</First>
-			<Second>false</Second>
+			<First>ERA_CENTER</First>
+			<Second>true</Second>
 		</HorAllign>
 		<Size>
 			<First>
-				<x>0</x>
-				<y>0</y>
+				<x>269</x>
+				<y>583</y>
 			</First>
-			<Second>false</Second>
+			<Second>true</Second>
 		</Size>
 		<LowerMargin>
 			<First>
@@ -47,7 +47,7 @@
 	</Placement>
 	<Enabled>true</Enabled>
 	<TextString/>
-	<relatedTexts/>
+	<relatedTexts href="/UI/CustomGameCreate/Options.(WindowRelatedTexts).xdb#xpointer(/WindowRelatedTexts)"/>
 	<relatedTextures/>
 	<Flags>
 		<SuperActive>false</SuperActive>

@@ -5,13 +5,13 @@
 	<Type>TB_DWELLING_3</Type>
 	<Upgrade>BLD_UPG_2</Upgrade>
 	<Cost>
-		<Wood>5</Wood>
-		<Ore>5</Ore>
+		<Wood>1</Wood>
+		<Ore>7</Ore>
 		<Mercury>5</Mercury>
 		<Crystal>0</Crystal>
 		<Sulfur>0</Sulfur>
-		<Gem>0</Gem>
-		<Gold>2000</Gold>
+		<Gem>3</Gem>
+		<Gold>1000</Gold>
 	</Cost>
 	<ModObjectName>Ruinedtower</ModObjectName>
 	<dependencies>

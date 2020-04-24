@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CharacterView ObjectRecordID="277">
-	<Model href="Ranger.xdb#xpointer(/Model)"/>
-	<AnimSet href="Ranger-arena.xdb#xpointer(/AnimSet)"/>
-	<sequence/>
-	<Effect/>
-</CharacterView>

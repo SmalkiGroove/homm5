@@ -6,11 +6,11 @@
 	<Upgrade>BLD_UPG_1</Upgrade>
 	<Cost>
 		<Wood>0</Wood>
-		<Ore>10</Ore>
+		<Ore>12</Ore>
 		<Mercury>0</Mercury>
-		<Crystal>3</Crystal>
+		<Crystal>0</Crystal>
 		<Sulfur>0</Sulfur>
-		<Gem>3</Gem>
+		<Gem>0</Gem>
 		<Gold>1500</Gold>
 	</Cost>
 	<ModObjectName>RingOfStones</ModObjectName>

@@ -29,7 +29,7 @@
 	<RazedStatic/>
 	<Icon128/>
 	<InternalName>Razzak</InternalName>
-	<Class>HERO_CLASS_WIZARD</Class>
+	<Class>HERO_CLASS_WIZARDA</Class>
 	<Specialization>HERO_SPEC_MAGES</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
@@ -39,7 +39,7 @@
 	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Academy/Mentor/Description.txt"/>
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Academy/Mentor.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Academy/Academy_Narxes_128x128.(Texture).xdb#xpointer(/Texture)"/>
-	<FaceTextureSmall href="/Textures/Icons/Heroes/Academy/Academy_Narxes_128x128_64.(Texture).xdb#xpointer(/Texture)"/>
+	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/Wizard.(Character).xdb#xpointer(/Character)"/>
 	<HeroCharacterArenaMelee/>
 	<HeroCharacterAdventure href="/Characters/Heroes/Wizard_LOD.(Character).xdb#xpointer(/Character)"/>
@@ -56,11 +56,11 @@
 		<skills>
 			<Item>
 				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_LEARNING</SkillID>
+				<SkillID>HERO_SKILL_LIGHT_MAGIC</SkillID>
 			</Item>
 		</skills>
 		<perkIDs>
-			<Item>HERO_SKILL_INTELLIGENCE</Item>
+			<Item>HERO_SKILL_MELT_ARTIFACT</Item>
 		</perkIDs>
 		<spellIDs>
 			<Item>SPELL_MAGIC_FIST</Item>

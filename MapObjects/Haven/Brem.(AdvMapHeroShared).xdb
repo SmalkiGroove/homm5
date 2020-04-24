@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<AdvMapHeroShared ObjectRecordID="16">
+<AdvMapHeroShared>
 	<Model href="/_(Model)/Heroes/Knight_LOD.(Model).xdb#xpointer(/Model)"/>
 	<AnimSet href="/_(AnimSet)/Heroes/Knight_LOD-adv.(AnimSet).xdb#xpointer(/AnimSet)"/>
 	<blockedTiles/>
@@ -29,17 +29,17 @@
 	<RazedStatic/>
 	<Icon128/>
 	<InternalName>Brem</InternalName>
-	<Class>HERO_CLASS_KNIGHT</Class>
+	<Class>HERO_CLASS_RANGER</Class>
 	<Specialization>HERO_SPEC_LOGISTICS</Specialization>
 	<PrimarySkill>
-		<Mastery>MASTERY_BASIC</Mastery>
-		<SkillID>HERO_SKILL_TRAINING</SkillID>
+		<Mastery>MASTERY_ADVANCED</Mastery>
+		<SkillID>HERO_SKILL_LIGHT_MAGIC</SkillID>
 	</PrimarySkill>
 	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Haven/Wanderer/Name.txt"/>
 	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Haven/Wanderer/Description.txt"/>
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Haven/Wanderer.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Heaven/Heaven_Rutger_128x128.(Texture).xdb#xpointer(/Texture)"/>
-	<FaceTextureSmall href="/Textures/Icons/Heroes/Heaven/Heaven_Rutger_128x128_64.(Texture).xdb#xpointer(/Texture)"/>
+	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/Knight.(Character).xdb#xpointer(/Character)"/>
 	<HeroCharacterArenaMelee href="/Characters/Heroes/Knight_strike.(Character).xdb#xpointer(/Character)"/>
 	<HeroCharacterAdventure href="/Characters/Heroes/Knight_LOD.(Character).xdb#xpointer(/Character)"/>
@@ -49,26 +49,22 @@
 	<Editable>
 		<NameFileRef href="/Text/Game/Heroes/Persons/Haven/Brem/Name.txt"/>
 		<BiographyFileRef href="/Text/Game/Heroes/Persons/Haven/Brem/Bio.txt"/>
-		<Offence>1</Offence>
+		<Offence>0</Offence>
 		<Defence>2</Defence>
 		<Spellpower>1</Spellpower>
-		<Knowledge>1</Knowledge>
-		<skills>
-			<Item>
-				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_LOGISTICS</SkillID>
-			</Item>
-		</skills>
+		<Knowledge>2</Knowledge>
+		<skills/>		
 		<perkIDs>
-			<Item>HERO_SKILL_PATHFINDING</Item>
+			<Item>HERO_SKILL_MASTER_OF_BLESSING</Item>
 		</perkIDs>
 		<spellIDs>
-			<Item>SPELL_SUMMON_BOAT</Item>
+			<Item>SPELL_BLESS</Item>
 		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>
 		<AmmoCart>false</AmmoCart>
 		<FavoriteEnemies/>
+		<TalismanLevel>0</TalismanLevel>
 	</Editable>
 	<ArrowButtonState>0</ArrowButtonState>
 	<Decal/>
@@ -79,4 +75,10 @@
 	<ScenarioHero>false</ScenarioHero>
 	<AdventureMusic/>
 	<HideInEditor>false</HideInEditor>
+	<PresetMinimalAttributes>
+		<Offence>2</Offence>
+		<Defence>2</Defence>
+		<Spellpower>2</Spellpower>
+		<Knowledge>2</Knowledge>
+	</PresetMinimalAttributes>
 </AdvMapHeroShared>

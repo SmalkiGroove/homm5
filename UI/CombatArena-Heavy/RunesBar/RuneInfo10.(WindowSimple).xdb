@@ -10,8 +10,8 @@
 	<Placement>
 		<Position>
 			<First>
-				<x>335</x>
-				<y>5</y>
+				<x>350</x>
+				<y>2</y>
 			</First>
 			<Second>true</Second>
 		</Position>
@@ -25,8 +25,8 @@
 		</HorAllign>
 		<Size>
 			<First>
-				<x>263</x>
-				<y>32</y>
+				<x>310</x>
+				<y>27</y>
 			</First>
 			<Second>true</Second>
 		</Size>

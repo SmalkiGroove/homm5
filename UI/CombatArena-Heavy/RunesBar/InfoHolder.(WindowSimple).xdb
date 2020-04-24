@@ -13,20 +13,20 @@
 				<x>0</x>
 				<y>0</y>
 			</First>
-			<Second>false</Second>
+			<Second>true</Second>
 		</Position>
 		<VerAllign>
-			<First>EPA_MARGIN</First>
+			<First>EPA_LOW_END</First>
 			<Second>true</Second>
 		</VerAllign>
 		<HorAllign>
-			<First>EPA_MARGIN</First>
+			<First>EPA_LOW_END</First>
 			<Second>true</Second>
 		</HorAllign>
 		<Size>
 			<First>
-				<x>598</x>
-				<y>42</y>
+				<x>660</x>
+				<y>31</y>
 			</First>
 			<Second>true</Second>
 		</Size>

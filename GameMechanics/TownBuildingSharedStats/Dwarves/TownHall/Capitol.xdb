@@ -11,7 +11,7 @@
 		<Crystal>0</Crystal>
 		<Sulfur>0</Sulfur>
 		<Gem>0</Gem>
-		<Gold>8000</Gold>
+		<Gold>10000</Gold>
 	</Cost>
 	<ModObjectName>Townhall</ModObjectName>
 	<dependencies>

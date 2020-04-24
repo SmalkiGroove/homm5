@@ -472,6 +472,26 @@
 			<Window href="CommonBoxes/box0p2_windowsimple.xdb#xpointer(/WindowSimple)"/>
 		</Item>
 		<Item>
+			<ID>N_TALKBOX_1</ID>
+			<Window href="CommonBoxes/TalkBox/talkbox_1.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
+		</Item>
+		<Item>
+			<ID>N_TALKBOX_2</ID>
+			<Window href="CommonBoxes/TalkBox/talkbox_2.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
+		</Item>
+		<Item>
+			<ID>N_TALKBOX_3</ID>
+			<Window href="CommonBoxes/TalkBox/talkbox_3.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
+		</Item>
+		<Item>
+			<ID>N_TALKBOX_4</ID>
+			<Window href="CommonBoxes/TalkBox/talkbox_4.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
+		</Item>
+		<Item>
+			<ID>N_TALKBOX_5</ID>
+			<Window href="CommonBoxes/TalkBox/talkbox_5.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
+		</Item>
+		<Item>
 			<ID>ID_MODAL_UNDERGROUND</ID>
 			<Window href="ModalUnderground.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		</Item>
@@ -999,6 +1019,10 @@
 			<ID>ICON_BLOOD_RAGE</ID>
 			<Texture href="/Textures/Interface/Icons/BloodRage.xdb#xpointer(/Texture)"/>
 		</Item>
+		<Item>
+			<ID>EE_NO_TEXTURE</ID>
+			<Texture href="noTexture.(BackgroundSimpleTexture).xdb#xpointer(/BackgroundSimpleTexture)"/>
+		</Item>		
 	</textures>
 	<texts>
 		<Item>
@@ -1613,6 +1637,26 @@
 			<ID>MAP_COORDINATES_FORMAT</ID>
 			<TextFileRef href="AdventureScreen/MapCoordinatesFormat.txt"/>
 		</Item>
+		<Item>
+			<ID>EE_KING_COLLECTS_TAXES</ID>
+			<TextFileRef href="/Text/Interface/Announcement/EE_king_collects_taxes.txt"/>
+		</Item>
+		<Item>
+			<ID>EE_PLAYER_PONDERS</ID>
+			<TextFileRef href="/Text/Interface/Announcement/EE_player_ponders.txt"/>
+		</Item>
+		<Item>
+			<ID>EE_MSGLOG_PLAYER_PONDERS</ID>
+			<TextFileRef href="/Text/Interface/Announcement/EE_msglog_player_ponders.txt"/>
+		</Item>
+		<Item>
+			<ID>EE_TOWNPORTAL_CHARGE</ID>
+			<TextFileRef href="/Text/Interface/Announcement/EE_townportal_charge.txt"/>
+		</Item>
+		<Item>
+			<ID>EE_TOWNPORTAL_ABORT</ID>
+			<TextFileRef href="/Text/Interface/Announcement/EE_townportal_abort.txt"/>
+		</Item>		
 	</texts>
 	<models>
 		<Item>
@@ -1941,7 +1985,7 @@
 	<ranks>
 		<Item>
 			<MinExp>0</MinExp>
-			<MaxExp>30</MaxExp>
+			<MaxExp>16</MaxExp>
 			<goodInfo>
 				<TextFileRef href="MPProfile/Ranks/peasant.txt"/>
 				<Icon href="/Textures/Interface/CombatArena/Faces/Heaven/ico_Peasant_128.xdb#xpointer(/Texture)"/>
@@ -1952,8 +1996,8 @@
 			</evilInfo>
 		</Item>
 		<Item>
-			<MinExp>30</MinExp>
-			<MaxExp>60</MaxExp>
+			<MinExp>16</MinExp>
+			<MaxExp>20</MaxExp>
 			<goodInfo>
 				<TextFileRef href="MPProfile/Ranks/recruit.txt"/>
 				<Icon href="/Textures/Interface/CombatArena/Faces/Heaven/ico_Militiaman_128.xdb#xpointer(/Texture)"/>
@@ -1964,8 +2008,8 @@
 			</evilInfo>
 		</Item>
 		<Item>
-			<MinExp>60</MinExp>
-			<MaxExp>90</MaxExp>
+			<MinExp>20</MinExp>
+			<MaxExp>32</MaxExp>
 			<goodInfo>
 				<TextFileRef href="MPProfile/Ranks/scout.txt"/>
 				<Icon href="/Textures/Interface/CombatArena/Faces/Preseve/ico_Woodelf_128.xdb#xpointer(/Texture)"/>
@@ -1976,8 +2020,8 @@
 			</evilInfo>
 		</Item>
 		<Item>
-			<MinExp>90</MinExp>
-			<MaxExp>120</MaxExp>
+			<MinExp>32</MinExp>
+			<MaxExp>64</MaxExp>
 			<goodInfo>
 				<TextFileRef href="MPProfile/Ranks/legionnaire.txt"/>
 				<Icon href="/Textures/Interface/CombatArena/Faces/Heaven/ico_Swordsman_128.xdb#xpointer(/Texture)"/>
@@ -1988,8 +2032,8 @@
 			</evilInfo>
 		</Item>
 		<Item>
-			<MinExp>120</MinExp>
-			<MaxExp>150</MaxExp>
+			<MinExp>64</MinExp>
+			<MaxExp>96</MaxExp>
 			<goodInfo>
 				<TextFileRef href="MPProfile/Ranks/captain.txt"/>
 				<Icon href="/Textures/Interface/CombatArena/Faces/Heaven/ico_Footman_128.xdb#xpointer(/Texture)"/>
@@ -2000,8 +2044,8 @@
 			</evilInfo>
 		</Item>
 		<Item>
-			<MinExp>150</MinExp>
-			<MaxExp>180</MaxExp>
+			<MinExp>96</MinExp>
+			<MaxExp>128</MaxExp>
 			<goodInfo>
 				<TextFileRef href="MPProfile/Ranks/squire.txt"/>
 				<Icon href="/Textures/Interface/CombatArena/Faces/Preseve/ico_Druid_128.xdb#xpointer(/Texture)"/>
@@ -2012,8 +2056,8 @@
 			</evilInfo>
 		</Item>
 		<Item>
-			<MinExp>180</MinExp>
-			<MaxExp>210</MaxExp>
+			<MinExp>128</MinExp>
+			<MaxExp>192</MaxExp>
 			<goodInfo>
 				<TextFileRef href="MPProfile/Ranks/knight.txt"/>
 				<Icon href="/Textures/Interface/CombatArena/Faces/Heaven/ico_Cavalier_128.xdb#xpointer(/Texture)"/>
@@ -2024,8 +2068,8 @@
 			</evilInfo>
 		</Item>
 		<Item>
-			<MinExp>210</MinExp>
-			<MaxExp>240</MaxExp>
+			<MinExp>192</MinExp>
+			<MaxExp>256</MaxExp>
 			<goodInfo>
 				<TextFileRef href="MPProfile/Ranks/champion.txt"/>
 				<Icon href="/Textures/Interface/CombatArena/Faces/Heaven/ico_Paladin_128.xdb#xpointer(/Texture)"/>
@@ -2036,8 +2080,8 @@
 			</evilInfo>
 		</Item>
 		<Item>
-			<MinExp>240</MinExp>
-			<MaxExp>270</MaxExp>
+			<MinExp>256</MinExp>
+			<MaxExp>320</MaxExp>
 			<goodInfo>
 				<TextFileRef href="MPProfile/Ranks/baron.txt"/>
 				<Icon href="/Textures/Interface/CombatArena/Faces/Heaven/ico_Priest_128.xdb#xpointer(/Texture)"/>
@@ -2048,8 +2092,8 @@
 			</evilInfo>
 		</Item>
 		<Item>
-			<MinExp>270</MinExp>
-			<MaxExp>300</MaxExp>
+			<MinExp>320</MinExp>
+			<MaxExp>400</MaxExp>
 			<goodInfo>
 				<TextFileRef href="MPProfile/Ranks/duke.txt"/>
 				<Icon href="/Textures/Interface/CombatArena/Faces/Academy/ico_giant_128.xdb#xpointer(/Texture)"/>
@@ -2060,7 +2104,7 @@
 			</evilInfo>
 		</Item>
 		<Item>
-			<MinExp>300</MinExp>
+			<MinExp>400</MinExp>
 			<MaxExp>-1</MaxExp>
 			<goodInfo>
 				<TextFileRef href="MPProfile/Ranks/regent.txt"/>
@@ -2403,7 +2447,7 @@
 	<movies>
 		<Item>
 			<ID>intro</ID>
-			<MovieDesc>../video/intro_a1.xml</MovieDesc>
+			<MovieDesc>../video/intro.xml</MovieDesc>
 		</Item>
 		<Item>
 			<ID>outro</ID>
@@ -2736,6 +2780,8 @@
 			<creatures>
 				<Item>CREATURE_CAVALIER</Item>
 				<Item>CREATURE_PALADIN</Item>
+				<Item>CREATURE_BLACK_KNIGHT</Item>
+				<Item>CREATURE_DEATH_KNIGHT</Item>				
 			</creatures>
 		</Item>
 		<Item>
@@ -2782,8 +2828,6 @@
 			<creatures>
 				<Item>CREATURE_RIDER</Item>
 				<Item>CREATURE_RAVAGER</Item>
-				<Item>CREATURE_BLACK_KNIGHT</Item>
-				<Item>CREATURE_DEATH_KNIGHT</Item>
 			</creatures>
 		</Item>
 		<Item>
@@ -2844,6 +2888,7 @@
 			<Camera href="/Cameras/Interface/HireCreatures/Phoenix.xdb#xpointer(/Camera)"/>
 			<creatures>
 				<Item>CREATURE_PHOENIX</Item>
+				<Item>CREATURE_SNOW_APE</Item>
 			</creatures>
 		</Item>
 		<Item>
@@ -3149,6 +3194,108 @@
 				<Item>HERO_CLASS_BARBARIAN</Item>
 			</heroClasses>
 		</Item>
+		<Item>
+			<Camera href="/Cameras/Heroes/H5A2/Gotay/Gotay_Idle.(Camera).xdb#xpointer(/Camera)"/>
+			<heroClasses>
+				<Item>HERO_CLASS_SHAMAN</Item>
+			</heroClasses>
+		</Item>
+		<Item>
+			<Camera href="/Cameras/Heroes/H5A2/Gotay/Gotay_Idle.(Camera).xdb#xpointer(/Camera)"/>
+			<heroClasses>
+				<Item>HERO_CLASS_WARLOCKB</Item>
+			</heroClasses>
+		</Item>
+		<Item>
+			<Camera href="/Cameras/Interface/HeroScreen/Ranger.xdb#xpointer(/Camera)"/>
+			<heroClasses>
+				<Item>HERO_CLASS_RANGERA</Item>
+			</heroClasses>
+		</Item>
+		<Item>
+			<Camera href="/Cameras/Interface/HeroScreen/Ranger.xdb#xpointer(/Camera)"/>
+			<heroClasses>
+				<Item>HERO_CLASS_WARDEN</Item>
+			</heroClasses>
+		</Item>
+		<Item>
+			<Camera href="/Cameras/Interface/HeroScreen/Wolfstan.xdb#xpointer(/Camera)"/>
+			<heroClasses>
+				<Item>HERO_CLASS_ENCHANTER</Item>
+			</heroClasses>
+		</Item>
+		<Item>
+			<Camera href="/Cameras/Interface/HeroScreen/Necromancer.xdb#xpointer(/Camera)"/>
+			<heroClasses>
+				<Item>HERO_CLASS_REAVER</Item>
+			</heroClasses>
+		</Item>
+		<Item>
+			<Camera href="/Cameras/Interface/HeroScreen/Necromancer.xdb#xpointer(/Camera)"/>
+			<heroClasses>
+				<Item>HERO_CLASS_NECROMANCERA</Item>
+			</heroClasses>
+		</Item>
+		<Item>
+			<Camera href="/Cameras/Interface/HeroScreen/Warlock.xdb#xpointer(/Camera)"/>
+			<heroClasses>
+				<Item>HERO_CLASS_BEASTMASTER</Item>
+			</heroClasses>
+		</Item>
+		<Item>
+			<Camera href="/Cameras/Interface/HeroScreen/Wizard.xdb#xpointer(/Camera)"/>
+			<heroClasses>
+				<Item>HERO_CLASS_GUILDMASTER</Item>
+			</heroClasses>
+		</Item>
+		<Item>
+			<Camera href="/Cameras/Interface/HeroScreen/Warlock.xdb#xpointer(/Camera)"/>
+			<heroClasses>
+				<Item>HERO_CLASS_SEER</Item>
+			</heroClasses>
+		</Item>
+		<Item>
+			<Camera href="/Cameras/Interface/HeroScreen/Knight.xdb#xpointer(/Camera)"/>
+			<heroClasses>
+				<Item>HERO_CLASS_HERETIC</Item>
+			</heroClasses>
+		</Item>
+		<Item>
+			<Camera href="/Cameras/Interface/HeroScreen/Ranger.xdb#xpointer(/Camera)"/>
+			<heroClasses>
+				<Item>HERO_CLASS_SORCERER</Item>
+			</heroClasses>
+		</Item>
+		<Item>
+			<Camera href="/Cameras/Interface/HeroScreen/Wizard.xdb#xpointer(/Camera)"/>
+			<heroClasses>
+				<Item>HERO_CLASS_WIZARDA</Item>
+			</heroClasses>
+		</Item>
+		<Item>
+			<Camera href="/Cameras/Interface/HeroScreen/Wizard.xdb#xpointer(/Camera)"/>
+			<heroClasses>
+				<Item>HERO_CLASS_ELEMENTALIST</Item>
+			</heroClasses>
+		</Item>
+		<Item>
+			<Camera href="/Cameras/Interface/HeroScreen/Wolfstan.xdb#xpointer(/Camera)"/>
+			<heroClasses>
+				<Item>HERO_CLASS_RUNEMAGEA</Item>
+			</heroClasses>
+		</Item>
+		<Item>
+			<Camera href="/Cameras/Interface/HeroScreen/Agrael.xdb#xpointer(/Camera)"/>
+			<heroClasses>
+				<Item>HERO_CLASS_FLAMEKEEPERA</Item>
+			</heroClasses>
+		</Item>
+		<Item>
+			<Camera href="/Cameras/Interface/HeroScreen/Warlock.xdb#xpointer(/Camera)"/>
+			<heroClasses>
+				<Item>HERO_CLASS_WARLOCKB</Item>
+			</heroClasses>
+		</Item>		
 	</heroesCameras>
 	<combatScreenRunesIcons>
 		<Item>
@@ -3337,43 +3484,43 @@
 		<CampaignDefaultResults>
 			<Item>
 				<NameFileRef href="MainMenu2/HallOfFame/Params/CampaignDefaultResults/Item01.txt"/>
-				<PointCount>2542</PointCount>
+				<PointCount>2800</PointCount>
 			</Item>
 			<Item>
 				<NameFileRef href="MainMenu2/HallOfFame/Params/CampaignDefaultResults/Item02.txt"/>
-				<PointCount>2162</PointCount>
+				<PointCount>2600</PointCount>
 			</Item>
 			<Item>
 				<NameFileRef href="MainMenu2/HallOfFame/Params/CampaignDefaultResults/Item03.txt"/>
-				<PointCount>2008</PointCount>
+				<PointCount>2400</PointCount>
 			</Item>
 			<Item>
 				<NameFileRef href="MainMenu2/HallOfFame/Params/CampaignDefaultResults/Item04.txt"/>
-				<PointCount>1790</PointCount>
+				<PointCount>2200</PointCount>
 			</Item>
 			<Item>
 				<NameFileRef href="MainMenu2/HallOfFame/Params/CampaignDefaultResults/Item05.txt"/>
-				<PointCount>1640</PointCount>
+				<PointCount>2000</PointCount>
 			</Item>
 			<Item>
 				<NameFileRef href="MainMenu2/HallOfFame/Params/CampaignDefaultResults/Item06.txt"/>
-				<PointCount>1465</PointCount>
+				<PointCount>1800</PointCount>
 			</Item>
 			<Item>
 				<NameFileRef href="MainMenu2/HallOfFame/Params/CampaignDefaultResults/Item07.txt"/>
-				<PointCount>1204</PointCount>
+				<PointCount>1600</PointCount>
 			</Item>
 			<Item>
 				<NameFileRef href="MainMenu2/HallOfFame/Params/CampaignDefaultResults/Item08.txt"/>
-				<PointCount>1105</PointCount>
+				<PointCount>1400</PointCount>
 			</Item>
 			<Item>
 				<NameFileRef href="MainMenu2/HallOfFame/Params/CampaignDefaultResults/Item09.txt"/>
-				<PointCount>885</PointCount>
+				<PointCount>1300</PointCount>
 			</Item>
 			<Item>
 				<NameFileRef href="MainMenu2/HallOfFame/Params/CampaignDefaultResults/Item10.txt"/>
-				<PointCount>150</PointCount>
+				<PointCount>1200</PointCount>
 			</Item>
 		</CampaignDefaultResults>
 		<SingleDefaultResults>
@@ -3420,546 +3567,881 @@
 		</SingleDefaultResults>
 		<Ranks>
 			<Item>
-				<CreatureType>CREATURE_BLACK_DRAGON</CreatureType>
-				<SingleMinPointCount>2550</SingleMinPointCount>
-				<CampaignMinPointCount>12750</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_TITAN</CreatureType>
-				<SingleMinPointCount>2530</SingleMinPointCount>
-				<CampaignMinPointCount>12650</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_ARCHANGEL</CreatureType>
-				<SingleMinPointCount>2510</SingleMinPointCount>
-				<CampaignMinPointCount>12550</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_PHOENIX</CreatureType>
-				<SingleMinPointCount>2490</SingleMinPointCount>
-				<CampaignMinPointCount>12450</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_GOLD_DRAGON</CreatureType>
-				<SingleMinPointCount>2470</SingleMinPointCount>
-				<CampaignMinPointCount>12350</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_ARCHDEVIL</CreatureType>
-				<SingleMinPointCount>2450</SingleMinPointCount>
-				<CampaignMinPointCount>12250</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_SHADOW_DRAGON</CreatureType>
-				<SingleMinPointCount>2430</SingleMinPointCount>
-				<CampaignMinPointCount>12150</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_GREEN_DRAGON</CreatureType>
-				<SingleMinPointCount>2410</SingleMinPointCount>
-				<CampaignMinPointCount>12050</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_ANGEL</CreatureType>
-				<SingleMinPointCount>2390</SingleMinPointCount>
-				<CampaignMinPointCount>11950</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_DEEP_DRAGON</CreatureType>
-				<SingleMinPointCount>2370</SingleMinPointCount>
-				<CampaignMinPointCount>11850</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_GIANT</CreatureType>
-				<SingleMinPointCount>2350</SingleMinPointCount>
-				<CampaignMinPointCount>11750</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_BONE_DRAGON</CreatureType>
-				<SingleMinPointCount>2330</SingleMinPointCount>
-				<CampaignMinPointCount>11650</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_DEVIL</CreatureType>
-				<SingleMinPointCount>2310</SingleMinPointCount>
-				<CampaignMinPointCount>11550</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_WRAITH</CreatureType>
-				<SingleMinPointCount>2290</SingleMinPointCount>
-				<CampaignMinPointCount>11450</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_PALADIN</CreatureType>
-				<SingleMinPointCount>2270</SingleMinPointCount>
-				<CampaignMinPointCount>11350</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_BALOR</CreatureType>
-				<SingleMinPointCount>2250</SingleMinPointCount>
-				<CampaignMinPointCount>11250</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_DEATH_KNIGHT</CreatureType>
-				<SingleMinPointCount>2230</SingleMinPointCount>
-				<CampaignMinPointCount>11150</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_RAKSHASA_RUKH</CreatureType>
-				<SingleMinPointCount>2210</SingleMinPointCount>
-				<CampaignMinPointCount>11050</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_TREANT_GUARDIAN</CreatureType>
-				<SingleMinPointCount>2190</SingleMinPointCount>
-				<CampaignMinPointCount>10950</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_MATRIARCH</CreatureType>
-				<SingleMinPointCount>2170</SingleMinPointCount>
-				<CampaignMinPointCount>10850</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_RAKSHASA</CreatureType>
-				<SingleMinPointCount>2150</SingleMinPointCount>
-				<CampaignMinPointCount>10750</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_WIGHT</CreatureType>
-				<SingleMinPointCount>2130</SingleMinPointCount>
-				<CampaignMinPointCount>10650</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_TREANT</CreatureType>
-				<SingleMinPointCount>2110</SingleMinPointCount>
-				<CampaignMinPointCount>10550</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_CAVALIER</CreatureType>
-				<SingleMinPointCount>2090</SingleMinPointCount>
-				<CampaignMinPointCount>10450</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_PIT_FIEND</CreatureType>
-				<SingleMinPointCount>2070</SingleMinPointCount>
-				<CampaignMinPointCount>10350</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_MATRON</CreatureType>
-				<SingleMinPointCount>2050</SingleMinPointCount>
-				<CampaignMinPointCount>10250</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_CHAOS_HYDRA</CreatureType>
-				<SingleMinPointCount>2030</SingleMinPointCount>
-				<CampaignMinPointCount>10150</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_DEMILICH</CreatureType>
-				<SingleMinPointCount>2010</SingleMinPointCount>
-				<CampaignMinPointCount>10050</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_WAR_UNICORN</CreatureType>
-				<SingleMinPointCount>1990</SingleMinPointCount>
-				<CampaignMinPointCount>9950</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_MASTER_GENIE</CreatureType>
-				<SingleMinPointCount>1970</SingleMinPointCount>
-				<CampaignMinPointCount>9850</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_FRIGHTFUL_NIGHTMARE</CreatureType>
-				<SingleMinPointCount>1950</SingleMinPointCount>
-				<CampaignMinPointCount>9750</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_CLERIC</CreatureType>
-				<SingleMinPointCount>1930</SingleMinPointCount>
-				<CampaignMinPointCount>9650</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_HYDRA</CreatureType>
-				<SingleMinPointCount>1910</SingleMinPointCount>
-				<CampaignMinPointCount>9550</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_UNICORN</CreatureType>
-				<SingleMinPointCount>1890</SingleMinPointCount>
-				<CampaignMinPointCount>9450</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_LICH</CreatureType>
-				<SingleMinPointCount>1870</SingleMinPointCount>
-				<CampaignMinPointCount>9350</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_PRIEST</CreatureType>
-				<SingleMinPointCount>1850</SingleMinPointCount>
-				<CampaignMinPointCount>9250</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_GENIE</CreatureType>
-				<SingleMinPointCount>1830</SingleMinPointCount>
-				<CampaignMinPointCount>9150</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_NIGHTMARE</CreatureType>
-				<SingleMinPointCount>1810</SingleMinPointCount>
-				<CampaignMinPointCount>9050</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_VAMPIRE_LORD</CreatureType>
-				<SingleMinPointCount>1790</SingleMinPointCount>
-				<CampaignMinPointCount>8950</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_WATER_ELEMENTAL</CreatureType>
-				<SingleMinPointCount>1770</SingleMinPointCount>
-				<CampaignMinPointCount>8850</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_ROYAL_GRIFFIN</CreatureType>
-				<SingleMinPointCount>1750</SingleMinPointCount>
-				<CampaignMinPointCount>8750</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_INFERNAL_SUCCUBUS</CreatureType>
-				<SingleMinPointCount>1730</SingleMinPointCount>
-				<CampaignMinPointCount>8650</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_FIRE_ELEMENTAL</CreatureType>
-				<SingleMinPointCount>1710</SingleMinPointCount>
-				<CampaignMinPointCount>8550</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_EARTH_ELEMENTAL</CreatureType>
-				<SingleMinPointCount>1690</SingleMinPointCount>
-				<CampaignMinPointCount>8450</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_DRUID_ELDER</CreatureType>
-				<SingleMinPointCount>1670</SingleMinPointCount>
-				<CampaignMinPointCount>8350</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_ARCH_MAGI</CreatureType>
-				<SingleMinPointCount>1650</SingleMinPointCount>
-				<CampaignMinPointCount>8250</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_AIR_ELEMENTAL</CreatureType>
-				<SingleMinPointCount>1630</SingleMinPointCount>
-				<CampaignMinPointCount>8150</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_RAVAGER</CreatureType>
-				<SingleMinPointCount>1610</SingleMinPointCount>
-				<CampaignMinPointCount>8050</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_GRIFFIN</CreatureType>
-				<SingleMinPointCount>1590</SingleMinPointCount>
-				<CampaignMinPointCount>7950</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_VAMPIRE</CreatureType>
-				<SingleMinPointCount>1570</SingleMinPointCount>
-				<CampaignMinPointCount>7850</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_RIDER</CreatureType>
-				<SingleMinPointCount>1550</SingleMinPointCount>
-				<CampaignMinPointCount>7750</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_MAGI</CreatureType>
-				<SingleMinPointCount>1530</SingleMinPointCount>
-				<CampaignMinPointCount>7650</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_DRUID</CreatureType>
-				<SingleMinPointCount>1510</SingleMinPointCount>
-				<CampaignMinPointCount>7550</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_SUCCUBUS</CreatureType>
-				<SingleMinPointCount>1490</SingleMinPointCount>
-				<CampaignMinPointCount>7450</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_GRAND_ELF</CreatureType>
-				<SingleMinPointCount>1470</SingleMinPointCount>
-				<CampaignMinPointCount>7350</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_CERBERI</CreatureType>
-				<SingleMinPointCount>1450</SingleMinPointCount>
-				<CampaignMinPointCount>7250</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_MINOTAUR_KING</CreatureType>
-				<SingleMinPointCount>1430</SingleMinPointCount>
-				<CampaignMinPointCount>7150</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_STEEL_GOLEM</CreatureType>
-				<SingleMinPointCount>1410</SingleMinPointCount>
-				<CampaignMinPointCount>7050</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_SWORDSMAN</CreatureType>
-				<SingleMinPointCount>1390</SingleMinPointCount>
-				<CampaignMinPointCount>6950</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_GHOST</CreatureType>
-				<SingleMinPointCount>1370</SingleMinPointCount>
-				<CampaignMinPointCount>6850</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_HELL_HOUND</CreatureType>
-				<SingleMinPointCount>1350</SingleMinPointCount>
-				<CampaignMinPointCount>6750</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_IRON_GOLEM</CreatureType>
-				<SingleMinPointCount>1330</SingleMinPointCount>
-				<CampaignMinPointCount>6650</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_WOOD_ELF</CreatureType>
-				<SingleMinPointCount>1310</SingleMinPointCount>
-				<CampaignMinPointCount>6550</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_MINOTAUR</CreatureType>
-				<SingleMinPointCount>1290</SingleMinPointCount>
-				<CampaignMinPointCount>6450</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_FOOTMAN</CreatureType>
-				<SingleMinPointCount>1270</SingleMinPointCount>
-				<CampaignMinPointCount>6350</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_MANES</CreatureType>
-				<SingleMinPointCount>1250</SingleMinPointCount>
-				<CampaignMinPointCount>6250</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_BLOOD_WITCH</CreatureType>
-				<SingleMinPointCount>1230</SingleMinPointCount>
-				<CampaignMinPointCount>6150</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_WAR_DANCER</CreatureType>
-				<SingleMinPointCount>1210</SingleMinPointCount>
-				<CampaignMinPointCount>6050</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_MARKSMAN</CreatureType>
-				<SingleMinPointCount>1190</SingleMinPointCount>
-				<CampaignMinPointCount>5950</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_HORNED_DEMON</CreatureType>
-				<SingleMinPointCount>1170</SingleMinPointCount>
-				<CampaignMinPointCount>5850</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_OBSIDIAN_GARGOYLE</CreatureType>
-				<SingleMinPointCount>1150</SingleMinPointCount>
-				<CampaignMinPointCount>5750</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_ZOMBIE</CreatureType>
-				<SingleMinPointCount>1130</SingleMinPointCount>
-				<CampaignMinPointCount>5650</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_WITCH</CreatureType>
-				<SingleMinPointCount>1110</SingleMinPointCount>
-				<CampaignMinPointCount>5550</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_ARCHER</CreatureType>
-				<SingleMinPointCount>1090</SingleMinPointCount>
-				<CampaignMinPointCount>5450</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_BLADE_JUGGLER</CreatureType>
-				<SingleMinPointCount>1070</SingleMinPointCount>
-				<CampaignMinPointCount>5350</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_STONE_GARGOYLE</CreatureType>
-				<SingleMinPointCount>1050</SingleMinPointCount>
-				<CampaignMinPointCount>5250</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_DEMON</CreatureType>
-				<SingleMinPointCount>1030</SingleMinPointCount>
-				<CampaignMinPointCount>5150</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_WALKING_DEAD</CreatureType>
-				<SingleMinPointCount>1010</SingleMinPointCount>
-				<CampaignMinPointCount>5050</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_ASSASSIN</CreatureType>
-				<SingleMinPointCount>990</SingleMinPointCount>
-				<CampaignMinPointCount>4950</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_SPRITE</CreatureType>
-				<SingleMinPointCount>970</SingleMinPointCount>
-				<CampaignMinPointCount>4850</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_IMP</CreatureType>
-				<SingleMinPointCount>950</SingleMinPointCount>
-				<CampaignMinPointCount>4750</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_SKELETON_ARCHER</CreatureType>
-				<SingleMinPointCount>930</SingleMinPointCount>
-				<CampaignMinPointCount>4650</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_MASTER_GREMLIN</CreatureType>
-				<SingleMinPointCount>910</SingleMinPointCount>
-				<CampaignMinPointCount>4550</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_MILITIAMAN</CreatureType>
-				<SingleMinPointCount>890</SingleMinPointCount>
-				<CampaignMinPointCount>4450</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_SCOUT</CreatureType>
-				<SingleMinPointCount>870</SingleMinPointCount>
-				<CampaignMinPointCount>4350</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_GREMLIN</CreatureType>
-				<SingleMinPointCount>850</SingleMinPointCount>
-				<CampaignMinPointCount>4250</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_PIXIE</CreatureType>
-				<SingleMinPointCount>830</SingleMinPointCount>
-				<CampaignMinPointCount>4150</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_SKELETON</CreatureType>
-				<SingleMinPointCount>810</SingleMinPointCount>
-				<CampaignMinPointCount>4050</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_FAMILIAR</CreatureType>
-				<SingleMinPointCount>790</SingleMinPointCount>
-				<CampaignMinPointCount>3950</CampaignMinPointCount>
-			</Item>
-			<Item>
 				<CreatureType>CREATURE_PEASANT</CreatureType>
 				<SingleMinPointCount>0</SingleMinPointCount>
 				<CampaignMinPointCount>0</CampaignMinPointCount>
 			</Item>
 			<Item>
-				<CreatureType>CREATURE_CYCLOP</CreatureType>
-				<SingleMinPointCount>2540</SingleMinPointCount>
-				<CampaignMinPointCount>12700</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_THANE</CreatureType>
-				<SingleMinPointCount>2160</SingleMinPointCount>
-				<CampaignMinPointCount>10800</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_ORCCHIEF_BUTCHER</CreatureType>
-				<SingleMinPointCount>2000</SingleMinPointCount>
-				<CampaignMinPointCount>10000</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_SHAMAN</CreatureType>
-				<SingleMinPointCount>1860</SingleMinPointCount>
-				<CampaignMinPointCount>9300</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_RUNE_MAGE</CreatureType>
-				<SingleMinPointCount>1640</SingleMinPointCount>
-				<CampaignMinPointCount>8200</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_BLACKBEAR_RIDER</CreatureType>
-				<SingleMinPointCount>1460</SingleMinPointCount>
-				<CampaignMinPointCount>7300</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_ORC_WARRIOR</CreatureType>
-				<SingleMinPointCount>1100</SingleMinPointCount>
-				<CampaignMinPointCount>5500</CampaignMinPointCount>
-			</Item>
-			<Item>
-				<CreatureType>CREATURE_HARPOONER</CreatureType>
-				<SingleMinPointCount>880</SingleMinPointCount>
-				<CampaignMinPointCount>4400</CampaignMinPointCount>
-			</Item>
-			<Item>
 				<CreatureType>CREATURE_GOBLIN</CreatureType>
-				<SingleMinPointCount>350</SingleMinPointCount>
+				<SingleMinPointCount>20</SingleMinPointCount>
+				<CampaignMinPointCount>100</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_SKELETON</CreatureType>
+				<SingleMinPointCount>40</SingleMinPointCount>
+				<CampaignMinPointCount>200</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_PIXIE</CreatureType>
+				<SingleMinPointCount>60</SingleMinPointCount>
+				<CampaignMinPointCount>300</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_FAMILIAR</CreatureType>
+				<SingleMinPointCount>80</SingleMinPointCount>
+				<CampaignMinPointCount>400</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_DEFENDER</CreatureType>
+				<SingleMinPointCount>100</SingleMinPointCount>
+				<CampaignMinPointCount>500</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_SCOUT</CreatureType>
+				<SingleMinPointCount>120</SingleMinPointCount>
+				<CampaignMinPointCount>600</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_GREMLIN</CreatureType>
+				<SingleMinPointCount>140</SingleMinPointCount>
+				<CampaignMinPointCount>700</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_MILITIAMAN</CreatureType>
+				<SingleMinPointCount>160</SingleMinPointCount>
+				<CampaignMinPointCount>800</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_GOBLIN_TRAPPER</CreatureType>
+				<SingleMinPointCount>180</SingleMinPointCount>
+				<CampaignMinPointCount>900</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_SKELETON_ARCHER</CreatureType>
+				<SingleMinPointCount>200</SingleMinPointCount>
+				<CampaignMinPointCount>1000</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_SPRITE</CreatureType>
+				<SingleMinPointCount>220</SingleMinPointCount>
+				<CampaignMinPointCount>1100</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_IMP</CreatureType>
+				<SingleMinPointCount>240</SingleMinPointCount>
+				<CampaignMinPointCount>1200</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_STOUT_DEFENDER</CreatureType>
+				<SingleMinPointCount>260</SingleMinPointCount>
+				<CampaignMinPointCount>1300</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_ASSASSIN</CreatureType>
+				<SingleMinPointCount>280</SingleMinPointCount>
+				<CampaignMinPointCount>1400</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_MASTER_GREMLIN</CreatureType>
+				<SingleMinPointCount>300</SingleMinPointCount>
 				<CampaignMinPointCount>1500</CampaignMinPointCount>
 			</Item>
 			<Item>
+				<CreatureType>CREATURE_LANDLORD</CreatureType>
+				<SingleMinPointCount>320</SingleMinPointCount>
+				<CampaignMinPointCount>1600</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_GOBLIN_DEFILER</CreatureType>
+				<SingleMinPointCount>340</SingleMinPointCount>
+				<CampaignMinPointCount>1700</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_SKELETON_WARRIOR</CreatureType>
+				<SingleMinPointCount>360</SingleMinPointCount>
+				<CampaignMinPointCount>1800</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_DRYAD</CreatureType>
+				<SingleMinPointCount>380</SingleMinPointCount>
+				<CampaignMinPointCount>1900</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_QUASIT</CreatureType>
+				<SingleMinPointCount>400</SingleMinPointCount>
+				<CampaignMinPointCount>2000</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_STONE_DEFENDER</CreatureType>
+				<SingleMinPointCount>420</SingleMinPointCount>
+				<CampaignMinPointCount>2050</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_STALKER</CreatureType>
+				<SingleMinPointCount>440</SingleMinPointCount>
+				<CampaignMinPointCount>2100</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_GREMLIN_SABOTEUR</CreatureType>
+				<SingleMinPointCount>460</SingleMinPointCount>
+				<CampaignMinPointCount>2150</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_ARCHER</CreatureType>
+				<SingleMinPointCount>480</SingleMinPointCount>
+				<CampaignMinPointCount>2200</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_CENTAUR</CreatureType>
+				<SingleMinPointCount>510</SingleMinPointCount>
+				<CampaignMinPointCount>2250</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_WALKING_DEAD</CreatureType>
+				<SingleMinPointCount>520</SingleMinPointCount>
+				<CampaignMinPointCount>2300</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_BLADE_JUGGLER</CreatureType>
+				<SingleMinPointCount>530</SingleMinPointCount>
+				<CampaignMinPointCount>2350</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_DEMON</CreatureType>
+				<SingleMinPointCount>540</SingleMinPointCount>
+				<CampaignMinPointCount>2400</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_AXE_FIGHTER</CreatureType>
+				<SingleMinPointCount>550</SingleMinPointCount>
+				<CampaignMinPointCount>2450</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_WITCH</CreatureType>
+				<SingleMinPointCount>560</SingleMinPointCount>
+				<CampaignMinPointCount>2500</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_STONE_GARGOYLE</CreatureType>
+				<SingleMinPointCount>570</SingleMinPointCount>
+				<CampaignMinPointCount>2550</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_MARKSMAN</CreatureType>
+				<SingleMinPointCount>580</SingleMinPointCount>
+				<CampaignMinPointCount>2600</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_CENTAUR_NOMAD</CreatureType>
+				<SingleMinPointCount>590</SingleMinPointCount>
+				<CampaignMinPointCount>2650</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_ZOMBIE</CreatureType>
+				<SingleMinPointCount>600</SingleMinPointCount>
+				<CampaignMinPointCount>2700</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_WAR_DANCER</CreatureType>
+				<SingleMinPointCount>610</SingleMinPointCount>
+				<CampaignMinPointCount>2750</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_HORNED_DEMON</CreatureType>
+				<SingleMinPointCount>620</SingleMinPointCount>
+				<CampaignMinPointCount>2800</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_AXE_THROWER</CreatureType>
+				<SingleMinPointCount>630</SingleMinPointCount>
+				<CampaignMinPointCount>2850</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_BLOOD_WITCH</CreatureType>
+				<SingleMinPointCount>640</SingleMinPointCount>
+				<CampaignMinPointCount>2900</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_OBSIDIAN_GARGOYLE</CreatureType>
+				<SingleMinPointCount>650</SingleMinPointCount>
+				<CampaignMinPointCount>2950</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_LONGBOWMAN</CreatureType>
+				<SingleMinPointCount>660</SingleMinPointCount>
+				<CampaignMinPointCount>3050</CampaignMinPointCount>
+			</Item>
+			<Item>
 				<CreatureType>CREATURE_CENTAUR_MARADEUR</CreatureType>
-				<SingleMinPointCount>1200</SingleMinPointCount>
-				<CampaignMinPointCount>6000</CampaignMinPointCount>
+				<SingleMinPointCount>670</SingleMinPointCount>
+				<CampaignMinPointCount>3100</CampaignMinPointCount>
 			</Item>
 			<Item>
-				<CreatureType>CREATURE_FIRE_DRAGON</CreatureType>
-				<SingleMinPointCount>2545</SingleMinPointCount>
-				<CampaignMinPointCount>12725</CampaignMinPointCount>
+				<CreatureType>CREATURE_DISEASE_ZOMBIE</CreatureType>
+				<SingleMinPointCount>680</SingleMinPointCount>
+				<CampaignMinPointCount>3150</CampaignMinPointCount>
 			</Item>
 			<Item>
-				<CreatureType>CREATURE_WYVERN_PAOKAI</CreatureType>
-				<SingleMinPointCount>2300</SingleMinPointCount>
-				<CampaignMinPointCount>11500</CampaignMinPointCount>
+				<CreatureType>CREATURE_BLADE_SINGER</CreatureType>
+				<SingleMinPointCount>690</SingleMinPointCount>
+				<CampaignMinPointCount>3200</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_HORNED_LEAPER</CreatureType>
+				<SingleMinPointCount>700</SingleMinPointCount>
+				<CampaignMinPointCount>3250</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_HARPOONER</CreatureType>
+				<SingleMinPointCount>710</SingleMinPointCount>
+				<CampaignMinPointCount>3300</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_BLOOD_WITCH_2</CreatureType>
+				<SingleMinPointCount>720</SingleMinPointCount>
+				<CampaignMinPointCount>3350</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_MARBLE_GARGOYLE</CreatureType>
+				<SingleMinPointCount>730</SingleMinPointCount>
+				<CampaignMinPointCount>3400</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_FOOTMAN</CreatureType>
+				<SingleMinPointCount>750</SingleMinPointCount>
+				<CampaignMinPointCount>3500</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_ORC_WARRIOR</CreatureType>
+				<SingleMinPointCount>770</SingleMinPointCount>
+				<CampaignMinPointCount>3600</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_MANES</CreatureType>
+				<SingleMinPointCount>790</SingleMinPointCount>
+				<CampaignMinPointCount>3700</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_WOOD_ELF</CreatureType>
+				<SingleMinPointCount>810</SingleMinPointCount>
+				<CampaignMinPointCount>3800</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_HELL_HOUND</CreatureType>
+				<SingleMinPointCount>830</SingleMinPointCount>
+				<CampaignMinPointCount>3900</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_BEAR_RIDER</CreatureType>
+				<SingleMinPointCount>850</SingleMinPointCount>
+				<CampaignMinPointCount>4000</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_MINOTAUR</CreatureType>
+				<SingleMinPointCount>870</SingleMinPointCount>
+				<CampaignMinPointCount>4100</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_IRON_GOLEM</CreatureType>
+				<SingleMinPointCount>890</SingleMinPointCount>
+				<CampaignMinPointCount>4200</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_SWORDSMAN</CreatureType>
+				<SingleMinPointCount>900</SingleMinPointCount>
+				<CampaignMinPointCount>4250</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_ORC_SLAYER</CreatureType>
+				<SingleMinPointCount>910</SingleMinPointCount>
+				<CampaignMinPointCount>4300</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_GHOST</CreatureType>
+				<SingleMinPointCount>920</SingleMinPointCount>
+				<CampaignMinPointCount>4350</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_GRAND_ELF</CreatureType>
+				<SingleMinPointCount>930</SingleMinPointCount>
+				<CampaignMinPointCount>4400</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_CERBERI</CreatureType>
+				<SingleMinPointCount>940</SingleMinPointCount>
+				<CampaignMinPointCount>4450</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_BLACKBEAR_RIDER</CreatureType>
+				<SingleMinPointCount>950</SingleMinPointCount>
+				<CampaignMinPointCount>4500</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_MINOTAUR_KING</CreatureType>
+				<SingleMinPointCount>960</SingleMinPointCount>
+				<CampaignMinPointCount>4550</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_STEEL_GOLEM</CreatureType>
+				<SingleMinPointCount>970</SingleMinPointCount>
+				<CampaignMinPointCount>4600</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_VINDICATOR</CreatureType>
+				<SingleMinPointCount>980</SingleMinPointCount>
+				<CampaignMinPointCount>4650</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_ORC_WARMONGER</CreatureType>
+				<SingleMinPointCount>990</SingleMinPointCount>
+				<CampaignMinPointCount>4700</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_POLTERGEIST</CreatureType>
+				<SingleMinPointCount>1000</SingleMinPointCount>
+				<CampaignMinPointCount>4750</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_SHARP_SHOOTER</CreatureType>
+				<SingleMinPointCount>1010</SingleMinPointCount>
+				<CampaignMinPointCount>4800</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_FIREBREATHER_HOUND</CreatureType>
+				<SingleMinPointCount>1020</SingleMinPointCount>
+				<CampaignMinPointCount>4850</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_WHITE_BEAR_RIDER</CreatureType>
+				<SingleMinPointCount>1030</SingleMinPointCount>
+				<CampaignMinPointCount>4900</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_MINOTAUR_CAPTAIN</CreatureType>
+				<SingleMinPointCount>1040</SingleMinPointCount>
+				<CampaignMinPointCount>4950</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_OBSIDIAN_GOLEM</CreatureType>
+				<SingleMinPointCount>1050</SingleMinPointCount>
+				<CampaignMinPointCount>5000</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_GRIFFIN</CreatureType>
+				<SingleMinPointCount>1070</SingleMinPointCount>
+				<CampaignMinPointCount>5100</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_SHAMAN</CreatureType>
+				<SingleMinPointCount>1090</SingleMinPointCount>
+				<CampaignMinPointCount>5200</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_VAMPIRE</CreatureType>
+				<SingleMinPointCount>1110</SingleMinPointCount>
+				<CampaignMinPointCount>5300</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_DRUID</CreatureType>
+				<SingleMinPointCount>1130</SingleMinPointCount>
+				<CampaignMinPointCount>5400</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_SUCCUBUS</CreatureType>
+				<SingleMinPointCount>1150</SingleMinPointCount>
+				<CampaignMinPointCount>5500</CampaignMinPointCount>
 			</Item>
 			<Item>
 				<CreatureType>CREATURE_BROWLER</CreatureType>
+				<SingleMinPointCount>1170</SingleMinPointCount>
+				<CampaignMinPointCount>5600</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_RIDER</CreatureType>
+				<SingleMinPointCount>1190</SingleMinPointCount>
+				<CampaignMinPointCount>5700</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_MAGI</CreatureType>
+				<SingleMinPointCount>1210</SingleMinPointCount>
+				<CampaignMinPointCount>5800</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_ROYAL_GRIFFIN</CreatureType>
+				<SingleMinPointCount>1220</SingleMinPointCount>
+				<CampaignMinPointCount>5850</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_SHAMAN_WITCH</CreatureType>
+				<SingleMinPointCount>1230</SingleMinPointCount>
+				<CampaignMinPointCount>5900</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_VAMPIRE_LORD</CreatureType>
+				<SingleMinPointCount>1240</SingleMinPointCount>
+				<CampaignMinPointCount>5950</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_DRUID_ELDER</CreatureType>
+				<SingleMinPointCount>1250</SingleMinPointCount>
+				<CampaignMinPointCount>6000</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_INFERNAL_SUCCUBUS</CreatureType>
+				<SingleMinPointCount>1260</SingleMinPointCount>
+				<CampaignMinPointCount>6050</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_BERSERKER</CreatureType>
+				<SingleMinPointCount>1270</SingleMinPointCount>
+				<CampaignMinPointCount>6100</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_RAVAGER</CreatureType>
+				<SingleMinPointCount>1280</SingleMinPointCount>
+				<CampaignMinPointCount>6150</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_ARCH_MAGI</CreatureType>
+				<SingleMinPointCount>1290</SingleMinPointCount>
+				<CampaignMinPointCount>6200</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_BATTLE_GRIFFIN</CreatureType>
+				<SingleMinPointCount>1300</SingleMinPointCount>
+				<CampaignMinPointCount>6250</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_SHAMAN_HAG</CreatureType>
+				<SingleMinPointCount>1310</SingleMinPointCount>
+				<CampaignMinPointCount>6300</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_NOSFERATU</CreatureType>
+				<SingleMinPointCount>1320</SingleMinPointCount>
+				<CampaignMinPointCount>6350</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_HIGH_DRUID</CreatureType>
+				<SingleMinPointCount>1330</SingleMinPointCount>
+				<CampaignMinPointCount>6400</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_SUCCUBUS_SEDUCER</CreatureType>
 				<SingleMinPointCount>1340</SingleMinPointCount>
+				<CampaignMinPointCount>6450</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_BATTLE_RAGER</CreatureType>
+				<SingleMinPointCount>1350</SingleMinPointCount>
+				<CampaignMinPointCount>6500</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_BLACK_RIDER</CreatureType>
+				<SingleMinPointCount>1360</SingleMinPointCount>
+				<CampaignMinPointCount>6550</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_COMBAT_MAGE</CreatureType>
+				<SingleMinPointCount>1370</SingleMinPointCount>
+				<CampaignMinPointCount>6600</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_PRIEST</CreatureType>
+				<SingleMinPointCount>1390</SingleMinPointCount>
 				<CampaignMinPointCount>6700</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_ORCCHIEF_BUTCHER</CreatureType>
+				<SingleMinPointCount>1410</SingleMinPointCount>
+				<CampaignMinPointCount>6800</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_LICH</CreatureType>
+				<SingleMinPointCount>1420</SingleMinPointCount>
+				<CampaignMinPointCount>6900</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_UNICORN</CreatureType>
+				<SingleMinPointCount>1440</SingleMinPointCount>
+				<CampaignMinPointCount>7000</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_NIGHTMARE</CreatureType>
+				<SingleMinPointCount>1460</SingleMinPointCount>
+				<CampaignMinPointCount>7100</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_RUNE_MAGE</CreatureType>
+				<SingleMinPointCount>1480</SingleMinPointCount>
+				<CampaignMinPointCount>7200</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_HYDRA</CreatureType>
+				<SingleMinPointCount>1500</SingleMinPointCount>
+				<CampaignMinPointCount>7300</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_GENIE</CreatureType>
+				<SingleMinPointCount>1520</SingleMinPointCount>
+				<CampaignMinPointCount>7400</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_CLERIC</CreatureType>
+				<SingleMinPointCount>1530</SingleMinPointCount>
+				<CampaignMinPointCount>7450</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_ORCCHIEF_EXECUTIONER</CreatureType>
+				<SingleMinPointCount>1540</SingleMinPointCount>
+				<CampaignMinPointCount>7500</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_DEMILICH</CreatureType>
+				<SingleMinPointCount>1550</SingleMinPointCount>
+				<CampaignMinPointCount>7550</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_WAR_UNICORN</CreatureType>
+				<SingleMinPointCount>1560</SingleMinPointCount>
+				<CampaignMinPointCount>7600</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_FRIGHTFUL_NIGHTMARE</CreatureType>
+				<SingleMinPointCount>1570</SingleMinPointCount>
+				<CampaignMinPointCount>7650</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_FLAME_MAGE</CreatureType>
+				<SingleMinPointCount>1580</SingleMinPointCount>
+				<CampaignMinPointCount>7700</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_CHAOS_HYDRA</CreatureType>
+				<SingleMinPointCount>1590</SingleMinPointCount>
+				<CampaignMinPointCount>7750</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_MASTER_GENIE</CreatureType>
+				<SingleMinPointCount>1600</SingleMinPointCount>
+				<CampaignMinPointCount>7800</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_ZEALOT</CreatureType>
+				<SingleMinPointCount>1610</SingleMinPointCount>
+				<CampaignMinPointCount>7850</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_ORCCHIEF_CHIEFTAIN</CreatureType>
+				<SingleMinPointCount>1620</SingleMinPointCount>
+				<CampaignMinPointCount>7900</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_LICH_MASTER</CreatureType>
+				<SingleMinPointCount>1630</SingleMinPointCount>
+				<CampaignMinPointCount>7950</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_WHITE_UNICORN</CreatureType>
+				<SingleMinPointCount>1640</SingleMinPointCount>
+				<CampaignMinPointCount>8000</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_HELLMARE</CreatureType>
+				<SingleMinPointCount>1650</SingleMinPointCount>
+				<CampaignMinPointCount>8050</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_FLAME_KEEPER</CreatureType>
+				<SingleMinPointCount>1660</SingleMinPointCount>
+				<CampaignMinPointCount>8100</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_ACIDIC_HYDRA</CreatureType>
+				<SingleMinPointCount>1670</SingleMinPointCount>
+				<CampaignMinPointCount>8150</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_DJINN_VIZIER</CreatureType>
+				<SingleMinPointCount>1680</SingleMinPointCount>
+				<CampaignMinPointCount>8200</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_CAVALIER</CreatureType>
+				<SingleMinPointCount>1690</SingleMinPointCount>
+				<CampaignMinPointCount>8300</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_WYVERN</CreatureType>
+				<SingleMinPointCount>1710</SingleMinPointCount>
+				<CampaignMinPointCount>8400</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_WIGHT</CreatureType>
+				<SingleMinPointCount>1730</SingleMinPointCount>
+				<CampaignMinPointCount>8500</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_TREANT</CreatureType>
+				<SingleMinPointCount>1750</SingleMinPointCount>
+				<CampaignMinPointCount>8600</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_PIT_FIEND</CreatureType>
+				<SingleMinPointCount>1770</SingleMinPointCount>
+				<CampaignMinPointCount>8700</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_THANE</CreatureType>
+				<SingleMinPointCount>1790</SingleMinPointCount>
+				<CampaignMinPointCount>8800</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_MATRON</CreatureType>
+				<SingleMinPointCount>1810</SingleMinPointCount>
+				<CampaignMinPointCount>8900</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_RAKSHASA</CreatureType>
+				<SingleMinPointCount>1830</SingleMinPointCount>
+				<CampaignMinPointCount>9000</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_PALADIN</CreatureType>
+				<SingleMinPointCount>1840</SingleMinPointCount>
+				<CampaignMinPointCount>9050</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_WYVERN_POISONOUS</CreatureType>
+				<SingleMinPointCount>1850</SingleMinPointCount>
+				<CampaignMinPointCount>9100</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_WRAITH</CreatureType>
+				<SingleMinPointCount>1860</SingleMinPointCount>
+				<CampaignMinPointCount>9150</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_TREANT_GUARDIAN</CreatureType>
+				<SingleMinPointCount>1870</SingleMinPointCount>
+				<CampaignMinPointCount>9175</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_BALOR</CreatureType>
+				<SingleMinPointCount>1880</SingleMinPointCount>
+				<CampaignMinPointCount>9200</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_WARLORD</CreatureType>
+				<SingleMinPointCount>1890</SingleMinPointCount>
+				<CampaignMinPointCount>9250</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_MATRIARCH</CreatureType>
+				<SingleMinPointCount>1900</SingleMinPointCount>
+				<CampaignMinPointCount>9300</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_RAKSHASA_RUKH</CreatureType>
+				<SingleMinPointCount>1910</SingleMinPointCount>
+				<CampaignMinPointCount>9350</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_CHAMPION</CreatureType>
+				<SingleMinPointCount>1920</SingleMinPointCount>
+				<CampaignMinPointCount>9400</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_WYVERN_PAOKAI</CreatureType>
+				<SingleMinPointCount>1930</SingleMinPointCount>
+				<CampaignMinPointCount>9450</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_BANSHEE</CreatureType>
+				<SingleMinPointCount>1940</SingleMinPointCount>
+				<CampaignMinPointCount>9500</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_ANGER_TREANT</CreatureType>
+				<SingleMinPointCount>1950</SingleMinPointCount>
+				<CampaignMinPointCount>9550</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_PIT_SPAWN</CreatureType>
+				<SingleMinPointCount>1960</SingleMinPointCount>
+				<CampaignMinPointCount>9600</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_THUNDER_THANE</CreatureType>
+				<SingleMinPointCount>1970</SingleMinPointCount>
+				<CampaignMinPointCount>9650</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_SHADOW_MISTRESS</CreatureType>
+				<SingleMinPointCount>1980</SingleMinPointCount>
+				<CampaignMinPointCount>9700</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_RAKSHASA_KSHATRI</CreatureType>
+				<SingleMinPointCount>1990</SingleMinPointCount>
+				<CampaignMinPointCount>9750</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_ANGEL</CreatureType>
+				<SingleMinPointCount>2000</SingleMinPointCount>
+				<CampaignMinPointCount>9800</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_CYCLOP</CreatureType>
+				<SingleMinPointCount>2020</SingleMinPointCount>
+				<CampaignMinPointCount>9900</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_BONE_DRAGON</CreatureType>
+				<SingleMinPointCount>2040</SingleMinPointCount>
+				<CampaignMinPointCount>10000</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_GREEN_DRAGON</CreatureType>
+				<SingleMinPointCount>2060</SingleMinPointCount>
+				<CampaignMinPointCount>10100</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_DEVIL</CreatureType>
+				<SingleMinPointCount>2080</SingleMinPointCount>
+				<CampaignMinPointCount>10200</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_FIRE_DRAGON</CreatureType>
+				<SingleMinPointCount>2100</SingleMinPointCount>
+				<CampaignMinPointCount>10300</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_DEEP_DRAGON</CreatureType>
+				<SingleMinPointCount>2120</SingleMinPointCount>
+				<CampaignMinPointCount>10400</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_GIANT</CreatureType>
+				<SingleMinPointCount>2140</SingleMinPointCount>
+				<CampaignMinPointCount>10500</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_ARCHANGEL</CreatureType>
+				<SingleMinPointCount>2160</SingleMinPointCount>
+				<CampaignMinPointCount>10600</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_CYCLOP_UNTAMED</CreatureType>
+				<SingleMinPointCount>2180</SingleMinPointCount>
+				<CampaignMinPointCount>10700</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_SHADOW_DRAGON</CreatureType>
+				<SingleMinPointCount>2200</SingleMinPointCount>
+				<CampaignMinPointCount>10800</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_GOLD_DRAGON</CreatureType>
+				<SingleMinPointCount>2220</SingleMinPointCount>
+				<CampaignMinPointCount>10900</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_ARCHDEVIL</CreatureType>
+				<SingleMinPointCount>2240</SingleMinPointCount>
+				<CampaignMinPointCount>11000</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_MAGMA_DRAGON</CreatureType>
+				<SingleMinPointCount>2260</SingleMinPointCount>
+				<CampaignMinPointCount>11100</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_BLACK_DRAGON</CreatureType>
+				<SingleMinPointCount>2280</SingleMinPointCount>
+				<CampaignMinPointCount>11200</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_TITAN</CreatureType>
+				<SingleMinPointCount>2300</SingleMinPointCount>
+				<CampaignMinPointCount>11300</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_SERAPH</CreatureType>
+				<SingleMinPointCount>2320</SingleMinPointCount>
+				<CampaignMinPointCount>11400</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_CYCLOP_BLOODEYED</CreatureType>
+				<SingleMinPointCount>2340</SingleMinPointCount>
+				<CampaignMinPointCount>11500</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_HORROR_DRAGON</CreatureType>
+				<SingleMinPointCount>2360</SingleMinPointCount>
+				<CampaignMinPointCount>11700</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_RAINBOW_DRAGON</CreatureType>
+				<SingleMinPointCount>2380</SingleMinPointCount>
+				<CampaignMinPointCount>12000</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_ARCH_DEMON</CreatureType>
+				<SingleMinPointCount>2400</SingleMinPointCount>
+				<CampaignMinPointCount>12500</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_LAVA_DRAGON</CreatureType>
+				<SingleMinPointCount>2430</SingleMinPointCount>
+				<CampaignMinPointCount>13000</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_RED_DRAGON</CreatureType>
+				<SingleMinPointCount>2470</SingleMinPointCount>
+				<CampaignMinPointCount>14000</CampaignMinPointCount>
+			</Item>
+			<Item>
+				<CreatureType>CREATURE_STORM_LORD</CreatureType>
+				<SingleMinPointCount>2500</SingleMinPointCount>
+				<CampaignMinPointCount>15000</CampaignMinPointCount>
 			</Item>
 		</Ranks>
 		<MapSizes>
 			<Item>
-				<Size>E_MAP_SMALL_SIZE</Size>
-				<ShortNameFileRef href="MainMenu2/HallOfFame/Params/MapSizes/Small.txt"/>
+				<Size>E_MAP_TINY_SIZE</Size>
+				<ShortNameFileRef href="MainMenu2/HallOfFame/Params/MapSizes/Tiny.txt"/>
 				<PointFactor>1</PointFactor>
 			</Item>
 			<Item>
-				<Size>E_MAP_TINY_SIZE</Size>
-				<ShortNameFileRef href="MainMenu2/HallOfFame/Params/MapSizes/Normal.txt"/>
+				<Size>E_MAP_SMALL_SIZE</Size>
+				<ShortNameFileRef href="MainMenu2/HallOfFame/Params/MapSizes/Small.txt"/>
 				<PointFactor>1.9</PointFactor>
 			</Item>
 			<Item>
-				<Size>E_MAP_TINY_SIZE</Size>
-				<ShortNameFileRef href="MainMenu2/HallOfFame/Params/MapSizes/Big.txt"/>
+				<Size>E_MAP_MEDIUM_SIZE</Size>
+				<ShortNameFileRef href="MainMenu2/HallOfFame/Params/MapSizes/Normal.txt"/>
 				<PointFactor>2.8</PointFactor>
 			</Item>
 			<Item>
-				<Size>E_MAP_TINY_SIZE</Size>
-				<ShortNameFileRef href="MainMenu2/HallOfFame/Params/MapSizes/VeryBig.txt"/>
+				<Size>E_MAP_LARGE_SIZE</Size>
+				<ShortNameFileRef href="MainMenu2/HallOfFame/Params/MapSizes/Big.txt"/>
 				<PointFactor>3.7</PointFactor>
 			</Item>
 			<Item>
-				<Size>E_MAP_TINY_SIZE</Size>
+				<Size>E_MAP_EXTRALARGE_SIZE</Size>
+				<ShortNameFileRef href="MainMenu2/HallOfFame/Params/MapSizes/VeryBig.txt"/>
+				<PointFactor>4.6</PointFactor>
+			</Item>
+			<Item>
+				<Size>E_MAP_HUGE_SIZE</Size>
 				<ShortNameFileRef href="MainMenu2/HallOfFame/Params/MapSizes/UndesirableBig.txt"/>
-				<PointFactor>3.7</PointFactor>
+				<PointFactor>5.5</PointFactor>
+			</Item>
+			<Item>
+				<Size>E_MAP_IMPOSSIBLE_SIZE</Size>
+				<ShortNameFileRef href="MainMenu2/HallOfFame/Params/MapSizes/Impossible.txt"/>
+				<PointFactor>6.3</PointFactor>
 			</Item>
 		</MapSizes>
 		<uiDifficulties>
@@ -4064,6 +4546,14 @@
 						<TextFileRef href="RMGScreen/TemplateInfo/MonsterLevel/Item03.txt"/>
 						<InternalTextFileRef href="RMGScreen/TemplateInfo/MonsterLevel/ItemInternal03.txt"/>
 					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/MonsterLevel/Item04.txt"/>
+						<InternalTextFileRef href="RMGScreen/TemplateInfo/MonsterLevel/ItemInternal04.txt"/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/MonsterLevel/ItemInternal05.txt"/>
+						<InternalTextFileRef href="RMGScreen/TemplateInfo/MonsterLevel/ItemInternal05_.txt"/>
+					</Item>
 				</Items>
 			</Item>
 			<Item>
@@ -4077,10 +4567,6 @@
 				<Items>
 					<Item>
 						<TextFileRef href="RMGScreen/TemplateInfo/AmountOfWater/Item01.txt"/>
-						<InternalTextFileRef href="RMGScreen/TemplateInfo/AmountOfWater/ItemFake.txt"/>
-					</Item>
-					<Item>
-						<TextFileRef href="RMGScreen/TemplateInfo/AmountOfWater/Item02.txt"/>
 						<InternalTextFileRef href="RMGScreen/TemplateInfo/AmountOfWater/ItemFake.txt"/>
 					</Item>
 					<Item>
@@ -4167,6 +4653,474 @@
 				<LeftLabelFileRef href=""/>
 				<RightLabelFileRef href=""/>
 				<Items/>
+			</Item>
+			<Item>
+				<Param>EP_NONE</Param>
+				<ControlType>ECT_DIVIDER</ControlType>
+				<NameFileRef href=""/>
+				<CheckBoxTooltipFileRef href=""/>
+				<MainTooltipFileRef href=""/>
+				<LeftLabelFileRef href=""/>
+				<RightLabelFileRef href=""/>
+				<Items/>
+			</Item>
+			<Item>
+				<Param>EP_RESOURCE_LEVEL</Param>
+				<ControlType>ECT_COMBO</ControlType>
+				<NameFileRef href="RMGScreen/TemplateInfo/ResourceLevel/Name.txt"/>
+				<CheckBoxTooltipFileRef href="RMGScreen/TemplateInfo/MapSize/TTCheckBox.txt"/>
+				<MainTooltipFileRef href="RMGScreen/TemplateInfo/ResourceLevel/Tooltip.txt"/>
+				<LeftLabelFileRef href=""/>
+				<RightLabelFileRef href=""/>
+				<Items>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/ResourceLevel/Name-0.txt"/>
+						<InternalTextFileRef href="RMGScreen/TemplateInfo/ResourceLevel/InternalName-0.txt"/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/ResourceLevel/Name-1.txt"/>
+						<InternalTextFileRef href="RMGScreen/TemplateInfo/ResourceLevel/InternalName-1.txt"/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/ResourceLevel/Name-2.txt"/>
+						<InternalTextFileRef href="RMGScreen/TemplateInfo/ResourceLevel/InternalName-2.txt"/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/ResourceLevel/Name-3.txt"/>
+						<InternalTextFileRef href="RMGScreen/TemplateInfo/ResourceLevel/InternalName-3.txt"/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/ResourceLevel/Name-4.txt"/>
+						<InternalTextFileRef href="RMGScreen/TemplateInfo/ResourceLevel/InternalName-4.txt"/>
+					</Item>
+				</Items>
+			</Item>
+			<Item>
+				<Param>EP_EXP_LEVEL</Param>
+				<ControlType>ECT_COMBO</ControlType>
+				<NameFileRef href="RMGScreen/TemplateInfo/ExpLevel/Name.txt"/>
+				<CheckBoxTooltipFileRef href="RMGScreen/TemplateInfo/MapSize/TTCheckBox.txt"/>
+				<MainTooltipFileRef href="RMGScreen/TemplateInfo/ExpLevel/Tooltip.txt"/>
+				<LeftLabelFileRef href=""/>
+				<RightLabelFileRef href=""/>
+				<Items>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/ExpLevel/Name-0.txt"/>
+						<InternalTextFileRef href="RMGScreen/TemplateInfo/ExpLevel/InternalName-0.txt"/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/ExpLevel/Name-1.txt"/>
+						<InternalTextFileRef href="RMGScreen/TemplateInfo/ExpLevel/InternalName-1.txt"/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/ExpLevel/Name-2.txt"/>
+						<InternalTextFileRef href="RMGScreen/TemplateInfo/ExpLevel/InternalName-2.txt"/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/ExpLevel/Name-3.txt"/>
+						<InternalTextFileRef href="RMGScreen/TemplateInfo/ExpLevel/InternalName-3.txt"/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/ExpLevel/Name-4.txt"/>
+						<InternalTextFileRef href="RMGScreen/TemplateInfo/ExpLevel/InternalName-4.txt"/>
+					</Item>
+				</Items>
+			</Item>
+			<Item>
+				<Param>EP_GRAAL_ON_MAP</Param>
+				<ControlType>ECT_CHECKBOX</ControlType>
+				<NameFileRef href="RMGScreen/TemplateInfo/Grail/Name.txt"/>
+				<CheckBoxTooltipFileRef href=""/>
+				<MainTooltipFileRef href="RMGScreen/TemplateInfo/Graal/Tooltip.txt"/>
+				<LeftLabelFileRef href=""/>
+				<RightLabelFileRef href=""/>
+				<Items/>
+			</Item>
+			<Item>
+				<Param>EP_NONE</Param>
+				<ControlType>ECT_DIVIDER</ControlType>
+				<NameFileRef href=""/>
+				<CheckBoxTooltipFileRef href=""/>
+				<MainTooltipFileRef href=""/>
+				<LeftLabelFileRef href=""/>
+				<RightLabelFileRef href=""/>
+				<Items/>
+			</Item>
+			<Item>
+				<Param>EP_RACE_PLAYER_1</Param>
+				<ControlType>ECT_COMBO</ControlType>
+				<NameFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name1.txt"/>
+				<CheckBoxTooltipFileRef href="RMGScreen/TemplateInfo/MapSize/TTCheckBox.txt"/>
+				<MainTooltipFileRef href="RMGScreen/TemplateInfo/PlayerRace/Tooltip.txt"/>
+				<LeftLabelFileRef href=""/>
+				<RightLabelFileRef href=""/>
+				<Items>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Random.txt"/>
+						<InternalTextFileRef href="RMGScreen/TemplateInfo/PlayerRace/InternalName_Random.txt"/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Heaven.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Preserve.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Academy.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Dungeon.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Necropolis.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Inferno.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Fortress.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Stronghold.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+				</Items>
+			</Item>
+			<Item>
+				<Param>EP_RACE_PLAYER_2</Param>
+				<ControlType>ECT_COMBO</ControlType>
+				<NameFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name2.txt"/>
+				<CheckBoxTooltipFileRef href="RMGScreen/TemplateInfo/MapSize/TTCheckBox.txt"/>
+				<MainTooltipFileRef href="RMGScreen/TemplateInfo/PlayerRace/Tooltip.txt"/>
+				<LeftLabelFileRef href=""/>
+				<RightLabelFileRef href=""/>
+				<Items>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Random.txt"/>
+						<InternalTextFileRef href="RMGScreen/TemplateInfo/PlayerRace/InternalName_Random.txt"/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Heaven.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Preserve.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Academy.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Dungeon.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Necropolis.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Inferno.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Fortress.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Stronghold.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+				</Items>
+			</Item>
+			<Item>
+				<Param>EP_RACE_PLAYER_3</Param>
+				<ControlType>ECT_COMBO</ControlType>
+				<NameFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name3.txt"/>
+				<CheckBoxTooltipFileRef href="RMGScreen/TemplateInfo/MapSize/TTCheckBox.txt"/>
+				<MainTooltipFileRef href="RMGScreen/TemplateInfo/PlayerRace/Tooltip.txt"/>
+				<LeftLabelFileRef href=""/>
+				<RightLabelFileRef href=""/>
+				<Items>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Random.txt"/>
+						<InternalTextFileRef href="RMGScreen/TemplateInfo/PlayerRace/InternalName_Random.txt"/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Heaven.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Preserve.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Academy.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Dungeon.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Necropolis.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Inferno.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Fortress.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Stronghold.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+				</Items>
+			</Item>
+			<Item>
+				<Param>EP_RACE_PLAYER_4</Param>
+				<ControlType>ECT_COMBO</ControlType>
+				<NameFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name4.txt"/>
+				<CheckBoxTooltipFileRef href="RMGScreen/TemplateInfo/MapSize/TTCheckBox.txt"/>
+				<MainTooltipFileRef href="RMGScreen/TemplateInfo/PlayerRace/Tooltip.txt"/>
+				<LeftLabelFileRef href=""/>
+				<RightLabelFileRef href=""/>
+				<Items>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Random.txt"/>
+						<InternalTextFileRef href="RMGScreen/TemplateInfo/PlayerRace/InternalName_Random.txt"/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Heaven.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Preserve.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Academy.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Dungeon.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Necropolis.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Inferno.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Fortress.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Stronghold.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+				</Items>
+			</Item>
+			<Item>
+				<Param>EP_RACE_PLAYER_5</Param>
+				<ControlType>ECT_COMBO</ControlType>
+				<NameFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name5.txt"/>
+				<CheckBoxTooltipFileRef href="RMGScreen/TemplateInfo/MapSize/TTCheckBox.txt"/>
+				<MainTooltipFileRef href="RMGScreen/TemplateInfo/PlayerRace/Tooltip.txt"/>
+				<LeftLabelFileRef href=""/>
+				<RightLabelFileRef href=""/>
+				<Items>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Random.txt"/>
+						<InternalTextFileRef href="RMGScreen/TemplateInfo/PlayerRace/InternalName_Random.txt"/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Heaven.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Preserve.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Academy.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Dungeon.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Necropolis.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Inferno.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Fortress.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Stronghold.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+				</Items>
+			</Item>
+			<Item>
+				<Param>EP_RACE_PLAYER_6</Param>
+				<ControlType>ECT_COMBO</ControlType>
+				<NameFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name6.txt"/>
+				<CheckBoxTooltipFileRef href="RMGScreen/TemplateInfo/MapSize/TTCheckBox.txt"/>
+				<MainTooltipFileRef href="RMGScreen/TemplateInfo/PlayerRace/Tooltip.txt"/>
+				<LeftLabelFileRef href=""/>
+				<RightLabelFileRef href=""/>
+				<Items>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Random.txt"/>
+						<InternalTextFileRef href="RMGScreen/TemplateInfo/PlayerRace/InternalName_Random.txt"/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Heaven.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Preserve.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Academy.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Dungeon.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Necropolis.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Inferno.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Fortress.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Stronghold.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+				</Items>
+			</Item>
+			<Item>
+				<Param>EP_RACE_PLAYER_7</Param>
+				<ControlType>ECT_COMBO</ControlType>
+				<NameFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name7.txt"/>
+				<CheckBoxTooltipFileRef href="RMGScreen/TemplateInfo/MapSize/TTCheckBox.txt"/>
+				<MainTooltipFileRef href="RMGScreen/TemplateInfo/PlayerRace/Tooltip.txt"/>
+				<LeftLabelFileRef href=""/>
+				<RightLabelFileRef href=""/>
+				<Items>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Random.txt"/>
+						<InternalTextFileRef href="RMGScreen/TemplateInfo/PlayerRace/InternalName_Random.txt"/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Heaven.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Preserve.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Academy.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Dungeon.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Necropolis.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Inferno.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Fortress.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Stronghold.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+				</Items>
+			</Item>
+			<Item>
+				<Param>EP_RACE_PLAYER_8</Param>
+				<ControlType>ECT_COMBO</ControlType>
+				<NameFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name8.txt"/>
+				<CheckBoxTooltipFileRef href="RMGScreen/TemplateInfo/MapSize/TTCheckBox.txt"/>
+				<MainTooltipFileRef href="RMGScreen/TemplateInfo/PlayerRace/Tooltip.txt"/>
+				<LeftLabelFileRef href=""/>
+				<RightLabelFileRef href=""/>
+				<Items>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Random.txt"/>
+						<InternalTextFileRef href="RMGScreen/TemplateInfo/PlayerRace/InternalName_Random.txt"/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Heaven.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Preserve.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Academy.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Dungeon.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Necropolis.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Inferno.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Fortress.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+					<Item>
+						<TextFileRef href="RMGScreen/TemplateInfo/PlayerRace/Name_Stronghold.txt"/>
+						<InternalTextFileRef href=""/>
+					</Item>
+				</Items>
 			</Item>
 		</Controls>
 		<MapNamePatternFileRef href="RMGScreen/TemplateInfo/MapNamePattern.txt"/>

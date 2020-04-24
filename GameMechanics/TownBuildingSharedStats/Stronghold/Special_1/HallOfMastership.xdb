@@ -5,13 +5,13 @@
 	<Type>TB_SPECIAL_1</Type>
 	<Upgrade>BLD_UPG_2</Upgrade>
 	<Cost>
-		<Wood>5</Wood>
-		<Ore>5</Ore>
+		<Wood>3</Wood>
+		<Ore>3</Ore>
 		<Mercury>2</Mercury>
 		<Crystal>2</Crystal>
 		<Sulfur>2</Sulfur>
 		<Gem>2</Gem>
-		<Gold>3000</Gold>
+		<Gold>1000</Gold>
 	</Cost>
 	<ModObjectName>Special_1</ModObjectName>
 	<dependencies>

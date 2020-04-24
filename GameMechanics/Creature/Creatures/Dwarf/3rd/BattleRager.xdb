@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Creature>
-	<AttackSkill>7</AttackSkill>
-	<DefenceSkill>7</DefenceSkill>
+	<AttackSkill>5</AttackSkill>
+	<DefenceSkill>5</DefenceSkill>
 	<Shots>0</Shots>
-	<MinDamage>3</MinDamage>
-	<MaxDamage>7</MaxDamage>
+	<MinDamage>4</MinDamage>
+	<MaxDamage>6</MaxDamage>
 	<Speed>5</Speed>
-	<Initiative>11</Initiative>
+	<Initiative>12</Initiative>
 	<Flying>false</Flying>
-	<Health>30</Health>
+	<Health>24</Health>
 	<KnownSpells/>
 	<SpellPoints>0</SpellPoints>
 	<SpellPoints1>0</SpellPoints1>
 	<SpellPoints2>0</SpellPoints2>
-	<Exp>41</Exp>
-	<Power>434</Power>
+	<Exp>40</Exp>
+	<Power>350</Power>
 	<TimeToCommand>10</TimeToCommand>
-	<CreatureTier>4</CreatureTier>
+	<CreatureTier>3</CreatureTier>
 	<Upgrade>false</Upgrade>
 	<PairCreature>CREATURE_UNKNOWN</PairCreature>
 	<CreatureTown>TOWN_FORTRESS</CreatureTown>
@@ -24,7 +24,7 @@
 		<First>ELEMENT_EARTH</First>
 		<Second>ELEMENT_NONE</Second>
 	</MagicElement>
-	<WeeklyGrowth>6</WeeklyGrowth>
+	<WeeklyGrowth>25</WeeklyGrowth>
 	<Cost>
 		<Wood>0</Wood>
 		<Ore>0</Ore>
@@ -32,7 +32,7 @@
 		<Crystal>0</Crystal>
 		<Sulfur>0</Sulfur>
 		<Gem>0</Gem>
-		<Gold>220</Gold>
+		<Gold>150</Gold>
 	</Cost>
 	<PresetPrice>0</PresetPrice>
 	<SubjectOfRandomGeneration>true</SubjectOfRandomGeneration>

@@ -18,6 +18,10 @@
 			<Anim href="Lazlo-arena-cast.xdb#xpointer(/BasicSkelAnim)"/>
 		</Item>
 		<Item>
+			<Kind>rangeattack</Kind>
+			<Anim href="Lazlo-arena-cast.xdb#xpointer(/BasicSkelAnim)"/>
+		</Item>
+		<Item>
 			<Kind>defeat</Kind>
 			<Anim href="Lazlo-arena-defeat.xdb#xpointer(/BasicSkelAnim)"/>
 		</Item>

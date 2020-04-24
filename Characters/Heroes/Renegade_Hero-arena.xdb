@@ -18,6 +18,10 @@
 			<Anim href="Renegade_Hero-arena-cast.xdb#xpointer(/BasicSkelAnim)"/>
 		</Item>
 		<Item>
+			<Kind>rangeattack</Kind>
+			<Anim href="Renegade_Hero-arena-cast.xdb#xpointer(/BasicSkelAnim)"/>
+		</Item>
+		<Item>
 			<Kind>death</Kind>
 			<Anim href="Renegade_Hero-arena-death.xdb#xpointer(/BasicSkelAnim)"/>
 		</Item>

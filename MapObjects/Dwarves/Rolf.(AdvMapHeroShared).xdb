@@ -27,17 +27,17 @@
 	<FlyPassable>true</FlyPassable>
 	<AdventureSoundEffect/>
 	<RazedStatic/>
-	<Icon128/>
+	<Icon128 href="/UI/H5A1/Icons/Heroes/Portrets128x128/Rolf.(Texture).xdb#xpointer(/Texture)"/>
 	<InternalName>Rolf</InternalName>
-	<Class>HERO_CLASS_RUNEMAGE</Class>
-	<Specialization>HERO_SPEC_COURTIER</Specialization>
+	<Class>HERO_CLASS_NECROMANCER</Class>
+	<Specialization>HERO_SPEC_BEAR_RIDERS</Specialization>
 	<PrimarySkill>
-		<Mastery>MASTERY_BASIC</Mastery>
-		<SkillID>HERO_SKILL_RUNELORE</SkillID>
+		<Mastery>MASTERY_ADVANCED</Mastery>
+		<SkillID>HERO_SKILL_WAR_MACHINES</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Fortress/Courtier/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Fortress/Courtier/Description.txt"/>
-	<SpecializationIcon href="/UI/H5A1/Icons/Abilites/Heroes_Abillites/128x128/Courtier.(Texture).xdb#xpointer(/Texture)"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Fortress/Rider/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Fortress/Rider/Description.txt"/>
+	<SpecializationIcon href="/UI/H5A1/Icons/Abilites/Heroes_Abillites/128x128/Rider.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/UI/H5A1/Icons/Heroes/Portrets128x128/Rolf.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/Rolf.(Character).xdb#xpointer(/Character)"/>
@@ -50,22 +50,17 @@
 		<NameFileRef href="/Text/Game/Heroes/Persons/Dwarves/Rolf/Name.txt"/>
 		<BiographyFileRef href="/Text/Game/Heroes/Persons/Dwarves/Rolf/Bio.txt"/>
 		<Offence>0</Offence>
-		<Defence>1</Defence>
-		<Spellpower>2</Spellpower>
-		<Knowledge>2</Knowledge>
-		<skills>
-			<Item>
-				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_LEADERSHIP</SkillID>
-			</Item>
-		</skills>
+		<Defence>3</Defence>
+		<Spellpower>1</Spellpower>
+		<Knowledge>1</Knowledge>
+		<skills/>
 		<perkIDs>
-			<Item>HERO_SKILL_DIPLOMACY</Item>
+			<Item>HERO_SKILL_BALLISTA</Item>
 		</perkIDs>
 		<spellIDs/>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>
-		<AmmoCart>false</AmmoCart>
+		<AmmoCart>true</AmmoCart>
 		<FavoriteEnemies/>
 	</Editable>
 	<ArrowButtonState>0</ArrowButtonState>
@@ -74,7 +69,7 @@
 	<Trace href="/MapObjects/_(AdvMapHeroTraceSet)/Fortress.(AdvMapHeroTraceSet).xdb#xpointer(/AdvMapHeroTraceSet)"/>
 	<RaceTraitIcon/>
 	<RaceTraitDescFileRef href=""/>
-	<ScenarioHero>true</ScenarioHero>
+	<ScenarioHero>false</ScenarioHero>
 	<AdventureMusic href="/Sounds/_(Music)/AdvMap-Heroes/a1-Rolf.xdb#xpointer(/Music)"/>
 	<HideInEditor>false</HideInEditor>
 </AdvMapHeroShared>

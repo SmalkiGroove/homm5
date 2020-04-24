@@ -9,7 +9,7 @@
 	<ExpSettingsFile href="/H:/Tools/MayaExportSettings/settings_character_anim.ges"/>
 	<MovementSpeed>0</MovementSpeed>
 	<SpeedFactor>1</SpeedFactor>
-	<Sound href="/Sounds/_(Sound)/Creatures/Neutrals/FireBird/idle00.xdb#xpointer(/Sound)"/>
+	<Sound href="/Sounds/_(Sound)/Creatures/Neutrals/FireBird/idle01.xdb#xpointer(/Sound)"/>
 	<Effect/>
 	<SpeedLineFallTime>250</SpeedLineFallTime>
 	<SpeedLineMaterial/>

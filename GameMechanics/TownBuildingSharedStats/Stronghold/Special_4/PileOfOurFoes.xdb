@@ -7,9 +7,9 @@
 	<Cost>
 		<Wood>0</Wood>
 		<Ore>5</Ore>
-		<Mercury>4</Mercury>
-		<Crystal>0</Crystal>
-		<Sulfur>4</Sulfur>
+		<Mercury>0</Mercury>
+		<Crystal>5</Crystal>
+		<Sulfur>0</Sulfur>
 		<Gem>0</Gem>
 		<Gold>2000</Gold>
 	</Cost>

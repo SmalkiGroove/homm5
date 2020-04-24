@@ -33,20 +33,20 @@
 	</damage>
 	<duration>
 		<Item>
-			<Base>0</Base>
-			<PerPower>1</PerPower>
+			<Base>1</Base>
+			<PerPower>0.5</PerPower>
 		</Item>
 		<Item>
-			<Base>0</Base>
-			<PerPower>1</PerPower>
+			<Base>1</Base>
+			<PerPower>0.5</PerPower>
 		</Item>
 		<Item>
-			<Base>0</Base>
-			<PerPower>1</PerPower>
+			<Base>1</Base>
+			<PerPower>0.5</PerPower>
 		</Item>
 		<Item>
-			<Base>0</Base>
-			<PerPower>1</PerPower>
+			<Base>1</Base>
+			<PerPower>0.5</PerPower>
 		</Item>
 	</duration>
 	<sSpellCost>

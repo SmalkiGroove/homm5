@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<AdvMapHeroShared ObjectRecordID="22">
+<AdvMapHeroShared>
 	<Model href="/Characters/Heroes/Thralsai_LOD.xdb#xpointer(/Model)"/>
 	<AnimSet href="/Characters/Heroes/Thralsai_LOD-adv.xdb#xpointer(/AnimSet)"/>
 	<blockedTiles/>
@@ -27,19 +27,19 @@
 	<FlyPassable>true</FlyPassable>
 	<AdventureSoundEffect/>
 	<RazedStatic/>
-	<Icon128/>
+	<Icon128 href="/UI/H5A1/Icons/Heroes/Portrets128x128/Thralsai.(Texture).xdb#xpointer(/Texture)"/>
 	<InternalName>Thralsai</InternalName>
-	<Class>HERO_CLASS_WARLOCK</Class>
-	<Specialization>HERO_SPEC_DARK_ACOLYTE</Specialization>
+	<Class>HERO_CLASS_SEER</Class>
+	<Specialization>HERO_SPEC_BEATER</Specialization>
 	<PrimarySkill>
-		<Mastery>MASTERY_BASIC</Mastery>
-		<SkillID>HERO_SKILL_INVOCATION</SkillID>
+		<Mastery>MASTERY_ADVANCED</Mastery>
+		<SkillID>HERO_SKILL_LOGISTICS</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Dungeon/Dark_Acolyte/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Dungeon/Dark_Acolyte/Description.txt"/>
-	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Dungeon/Dark_Acolyte.xdb#xpointer(/Texture)"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Inferno/Beater2/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Inferno/Beater2/Description.txt"/>
+	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Dungeon/Power_Bargain.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/UI/H5A1/Icons/Heroes/Portrets128x128/Thralsai.(Texture).xdb#xpointer(/Texture)"/>
-	<FaceTextureSmall href="/UI/H5A1/Icons/Heroes/Portrets128x128/Thralsai.(Texture).xdb#xpointer(/Texture)"/>
+	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/Thralsai.(Character).xdb#xpointer(/Character)"/>
 	<HeroCharacterArenaMelee/>
 	<HeroCharacterAdventure href="/Characters/Heroes/Thralsai_LOD.(Character).xdb#xpointer(/Character)"/>
@@ -49,20 +49,17 @@
 	<Editable>
 		<NameFileRef href="/Text/Game/Heroes/Persons/Dungeon/Thralsai/Name.txt"/>
 		<BiographyFileRef href="/Text/Game/Heroes/Persons/Dungeon/Thralsai/Bio.txt"/>
-		<Offence>1</Offence>
+		<Offence>2</Offence>
 		<Defence>0</Defence>
-		<Spellpower>3</Spellpower>
+		<Spellpower>2</Spellpower>
 		<Knowledge>1</Knowledge>
-		<skills>
-			<Item>
-				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_DARK_MAGIC</SkillID>
-			</Item>
-		</skills>
+		<skills/>
 		<perkIDs>
-			<Item>HERO_SKILL_DARK_RITUAL</Item>
+			<Item>HERO_SKILL_PATHFINDING</Item>
 		</perkIDs>
-		<spellIDs/>
+		<spellIDs>	
+			<Item>SPELL_TELEPORT</Item>
+		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>
 		<AmmoCart>false</AmmoCart>
@@ -74,7 +71,7 @@
 	<Trace href="/MapObjects/_(AdvMapHeroTraceSet)/Dungeon.xdb#xpointer(/AdvMapHeroTraceSet)"/>
 	<RaceTraitIcon/>
 	<RaceTraitDescFileRef href=""/>
-	<ScenarioHero>true</ScenarioHero>
+	<ScenarioHero>false</ScenarioHero>
 	<AdventureMusic/>
 	<HideInEditor>false</HideInEditor>
 </AdvMapHeroShared>

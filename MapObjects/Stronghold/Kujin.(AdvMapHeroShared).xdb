@@ -53,7 +53,7 @@
 		<BiographyFileRef href="/Text/Game/Heroes/Persons/Stronghold/Kujin/Bio.txt"/>
 		<Offence>3</Offence>
 		<Defence>0</Defence>
-		<Spellpower>0</Spellpower>
+		<Spellpower>1</Spellpower>
 		<Knowledge>1</Knowledge>
 		<skills>
 			<Item>

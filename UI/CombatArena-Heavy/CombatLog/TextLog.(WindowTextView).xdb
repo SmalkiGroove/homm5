@@ -11,7 +11,7 @@
 		<Position>
 			<First>
 				<x>0</x>
-				<y>0</y>
+				<y>15</y>
 			</First>
 			<Second>true</Second>
 		</Position>
@@ -54,6 +54,5 @@
 	</Flags>
 	<TextFileRef href="TextLog.txt"/>
 	<ResizeOnTextSet>true</ResizeOnTextSet>
-	<ResizeWidthOnTextSet>false</ResizeWidthOnTextSet>
 	<TextFormat/>
 </WindowTextView>

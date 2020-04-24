@@ -13,11 +13,11 @@
 		<Item href="/MapObjects/Necropolis/Ghost.xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Preserve/Wood_Elf.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Preserve/Grand_Elf.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
-		<Item href="/MapObjects/Dwarf/Bear_Raider.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
-		<Item href="/MapObjects/Dwarf/Blackbear_Raider.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
+		<Item href="/MapObjects/Dwarf/Brawler.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
+		<Item href="/MapObjects/Dwarf/Berserker.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Academy/Obsidian_Golem.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Dungeon/Minotaur_Captain.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
-		<Item href="/MapObjects/Dwarf/Whitebear_Rider.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
+		<Item href="/MapObjects/Dwarf/Battlerager.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Inferno/Firebreather.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Necropolis/Alt_upgrade/Poltergeist.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Preserve/Alt_upgrade/Sharpshooter.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>

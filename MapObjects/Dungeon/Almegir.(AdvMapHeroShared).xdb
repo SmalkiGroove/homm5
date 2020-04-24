@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AdvMapHeroShared ObjectRecordID="22">
-	<Model href="/_(Model)/Heroes/DemonLord_LOD.(Model).xdb#xpointer(/Model)"/>
-	<AnimSet href="/_(AnimSet)/Heroes/DemonLord_LOD-adv.(AnimSet).xdb#xpointer(/AnimSet)"/>
+	<Model href="/Characters/Heroes/Ilaya_LOD.xdb#xpointer(/Model)"/>
+	<AnimSet href="/Characters/Heroes/Ilaya_LOD-adv.xdb#xpointer(/AnimSet)"/>
 	<blockedTiles/>
 	<holeTiles/>
 	<activeTiles>
@@ -29,41 +29,36 @@
 	<RazedStatic/>
 	<Icon128/>
 	<InternalName>Almegir</InternalName>
-	<Class>HERO_CLASS_WARLOCK</Class>
-	<Specialization>HERO_SPEC_DARK_ACOLYTE</Specialization>
+	<Class>HERO_CLASS_SEER</Class>
+	<Specialization/>
 	<PrimarySkill>
-		<Mastery>MASTERY_BASIC</Mastery>
-		<SkillID>HERO_SKILL_INVOCATION</SkillID>
+		<Mastery>MASTERY_ADVANCED</Mastery>
+		<SkillID>HERO_SKILL_LOGISTICS</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Dungeon/Dark_Acolyte/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Dungeon/Dark_Acolyte/Description.txt"/>
-	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Dungeon/Dark_Acolyte.xdb#xpointer(/Texture)"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Added/Manticores/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Added/Manticores/Description.txt"/>
+	<SpecializationIcon href="/UI/H5A1/Icons/Creatures/Neutral/128x128/mantikore.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Dungeon/Dungeon_Yrbeth_128x128.(Texture).xdb#xpointer(/Texture)"/>
-	<FaceTextureSmall href="/Textures/Icons/Heroes/Dungeon/Dungeon_Yrbeth_128x128_64.(Texture).xdb#xpointer(/Texture)"/>
-	<HeroCharacterArena href="/Characters/Heroes/Warlock.(Character).xdb#xpointer(/Character)"/>
+	<FaceTextureSmall/>
+	<HeroCharacterArena href="/Characters/Heroes/Ilaya.(Character).xdb#xpointer(/Character)"/>
 	<HeroCharacterArenaMelee/>
-	<HeroCharacterAdventure href="/Characters/Heroes/Warlock_LOD.(Character).xdb#xpointer(/Character)"/>
+	<HeroCharacterAdventure href="/Characters/Heroes/Ilaya_LOD.(Character).xdb#xpointer(/Character)"/>
 	<HeroIndividualCamera/>
 	<CombatVisual href="/GameMechanics/CreatureVisual/Heroes/Warlock.xdb#xpointer(/CreatureVisual)"/>
 	<TownType>TOWN_DUNGEON</TownType>
 	<Editable>
 		<NameFileRef href="/Text/Game/Heroes/Persons/Dungeon/Almegir/Name.txt"/>
 		<BiographyFileRef href="/Text/Game/Heroes/Persons/Dungeon/Almegir/Bio.txt"/>
-		<Offence>1</Offence>
+		<Offence>2</Offence>
 		<Defence>0</Defence>
-		<Spellpower>3</Spellpower>
+		<Spellpower>2</Spellpower>
 		<Knowledge>1</Knowledge>
-		<skills>
-			<Item>
-				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_DARK_MAGIC</SkillID>
-			</Item>
-		</skills>
+		<skills/>
 		<perkIDs>
-			<Item>HERO_SKILL_DARK_RITUAL</Item>
+			<Item>HERO_SKILL_PATHFINDING</Item>
 		</perkIDs>
 		<spellIDs>
-			<Item>SPELL_MAGIC_ARROW</Item>
+			<Item>SPELL_PLAGUE</Item>
 		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>

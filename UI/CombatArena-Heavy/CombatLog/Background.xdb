@@ -5,15 +5,15 @@
 	<Type>REGULAR</Type>
 	<ConversionType>CONVERT_ORDINARY</ConversionType>
 	<AddrType>CLAMP</AddrType>
-	<Format>TF_DXT3</Format>
-	<Width>1024</Width>
-	<Height>128</Height>
+	<Format>TF_8888</Format>
+	<Width>838</Width>
+	<Height>575</Height>
 	<MappingSize>0</MappingSize>
 	<NMips>1</NMips>
 	<Gain>0</Gain>
 	<AverageColor>-2147286526</AverageColor>
 	<InstantLoad>true</InstantLoad>
-	<IsDXT>true</IsDXT>
+	<IsDXT>false</IsDXT>
 	<FlipY>false</FlipY>
 	<StandardExport>true</StandardExport>
 	<UseS3TC>false</UseS3TC>

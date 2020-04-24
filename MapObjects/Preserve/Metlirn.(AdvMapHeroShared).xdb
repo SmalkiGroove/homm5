@@ -29,43 +29,38 @@
 	<RazedStatic/>
 	<Icon128/>
 	<InternalName>Metlirn</InternalName>
-	<Class>HERO_CLASS_RANGER</Class>
+	<Class>HERO_CLASS_RANGERA</Class>
 	<Specialization>HERO_SPEC_FOREST_GUARDIAN</Specialization>
 	<PrimarySkill>
-		<Mastery>MASTERY_BASIC</Mastery>
+		<Mastery>MASTERY_ADVANCED</Mastery>
 		<SkillID>HERO_SKILL_AVENGER</SkillID>
 	</PrimarySkill>
 	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Preserve/Forest_Guardian/Name.txt"/>
 	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Preserve/Forest_Guardian/Description.txt"/>
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Preserve/Forest_Guardian.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Preserve/Preserve_Anwen_128x128.(Texture).xdb#xpointer(/Texture)"/>
-	<FaceTextureSmall href="/Textures/Icons/Heroes/Preserve/Preserve_Anwen_128x128_64.(Texture).xdb#xpointer(/Texture)"/>
-	<HeroCharacterArena href="/Characters/Heroes/Ranger.(Character).xdb#xpointer(/Character)"/>
+	<FaceTextureSmall/>
+	<HeroCharacterArena href="/Characters/Heroes/Findan.(Character).xdb#xpointer(/Character)"/>
 	<HeroCharacterArenaMelee/>
-	<HeroCharacterAdventure href="/Characters/Heroes/Ranger_LOD.(Character).xdb#xpointer(/Character)"/>
+	<HeroCharacterAdventure href="/Characters/Heroes/Findan_LOD.(Character).xdb#xpointer(/Character)"/>
 	<HeroIndividualCamera/>
 	<CombatVisual href="/GameMechanics/CreatureVisual/Heroes/Ranger.xdb#xpointer(/CreatureVisual)"/>
 	<TownType>TOWN_PRESERVE</TownType>
 	<Editable>
 		<NameFileRef href="/Text/Game/Heroes/Persons/Preserve/Metlirn/Name.txt"/>
 		<BiographyFileRef href="/Text/Game/Heroes/Persons/Preserve/Metlirn/Bio.txt"/>
-		<Offence>0</Offence>
-		<Defence>2</Defence>
+		<Offence>2</Offence>
+		<Defence>1</Defence>
 		<Spellpower>1</Spellpower>
-		<Knowledge>2</Knowledge>
-		<skills>
-			<Item>
-				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_DEFENCE</SkillID>
-			</Item>
-		</skills>
+		<Knowledge>1</Knowledge>
+		<skills/>
 		<perkIDs>
-			<Item>HERO_SKILL_PROTECTION</Item>
+			<Item>HERO_SKILL_SNIPE_DEAD</Item>
 		</perkIDs>
 		<spellIDs/>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>
-		<AmmoCart>false</AmmoCart>
+		<AmmoCart>true</AmmoCart>
 		<FavoriteEnemies/>
 	</Editable>
 	<ArrowButtonState>0</ArrowButtonState>

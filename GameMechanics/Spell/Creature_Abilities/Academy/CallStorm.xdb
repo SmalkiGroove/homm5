@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Spell>
 	<NameFileRef href="/Text/Game/Creatures/Creature_abilities/Presence_of_the_storm/Name.txt"/>
 	<LongDescriptionFileRef href="/Text/Game/Creatures/Creature_abilities/Presence_of_the_storm/Description.txt"/>
@@ -18,37 +18,37 @@
 	<damage>
 		<Item>
 			<Base>0</Base>
-			<PerPower>10</PerPower>
+			<PerPower>15</PerPower>
 		</Item>
 		<Item>
-			<Base>1</Base>
+			<Base>2</Base>
 			<PerPower>1</PerPower>
 		</Item>
 		<Item>
-			<Base>1</Base>
+			<Base>2</Base>
 			<PerPower>1</PerPower>
 		</Item>
 		<Item>
-			<Base>1</Base>
+			<Base>2</Base>
 			<PerPower>1</PerPower>
 		</Item>
 	</damage>
 	<duration>
 		<Item>
 			<Base>1</Base>
-			<PerPower>1</PerPower>
+			<PerPower>2</PerPower>
 		</Item>
 		<Item>
 			<Base>1</Base>
-			<PerPower>1</PerPower>
+			<PerPower>2</PerPower>
 		</Item>
 		<Item>
 			<Base>1</Base>
-			<PerPower>1</PerPower>
+			<PerPower>2</PerPower>
 		</Item>
 		<Item>
 			<Base>1</Base>
-			<PerPower>1</PerPower>
+			<PerPower>2</PerPower>
 		</Item>
 	</duration>
 	<sSpellCost>

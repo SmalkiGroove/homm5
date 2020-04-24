@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Spell ObjectRecordID="1000074">
 	<NameFileRef href="/Text/Game/Spells/Combat/Mass_Slow/Name.txt"/>
 	<LongDescriptionFileRef href="/Text/Game/Spells/Combat/Mass_Slow/Long_Description.txt"/>
@@ -10,7 +10,7 @@
 	<MagicSchool>MAGIC_SCHOOL_DARK</MagicSchool>
 	<RequiredHeroLevel>0</RequiredHeroLevel>
 	<IsAimed>false</IsAimed>
-	<TrainedCost>8</TrainedCost>
+	<TrainedCost>12</TrainedCost>
 	<damage/>
 	<duration/>
 	<sSpellCost>

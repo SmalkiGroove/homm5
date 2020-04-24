@@ -813,12 +813,12 @@
 		<Item href="/GameMechanics/TownBuildingSharedStats/Stronghold/Tavern/Tavern.xdb#xpointer(/TownBuildingSharedStats)"/>
 		<Item href="/GameMechanics/TownBuildingSharedStats/Stronghold/Dwelling_1/GoblinSlum.xdb#xpointer(/TownBuildingSharedStats)"/>
 		<Item href="/GameMechanics/TownBuildingSharedStats/Stronghold/Dwelling_1/GoblinHuts.xdb#xpointer(/TownBuildingSharedStats)"/>
-		<Item href="/GameMechanics/TownBuildingSharedStats/Stronghold/Dwelling_2/CentaurOutpost.xdb#xpointer(/TownBuildingSharedStats)"/>
-		<Item href="/GameMechanics/TownBuildingSharedStats/Stronghold/Dwelling_2/CentaurCamp.xdb#xpointer(/TownBuildingSharedStats)"/>
+		<Item href="/GameMechanics/TownBuildingSharedStats/Stronghold/Dwelling_2/HouseOfSpirits.xdb#xpointer(/TownBuildingSharedStats)"/>
+		<Item href="/GameMechanics/TownBuildingSharedStats/Stronghold/Dwelling_2/HouseOfBones.xdb#xpointer(/TownBuildingSharedStats)"/>
 		<Item href="/GameMechanics/TownBuildingSharedStats/Stronghold/Dwelling_3/WarriorsTents.xdb#xpointer(/TownBuildingSharedStats)"/>
 		<Item href="/GameMechanics/TownBuildingSharedStats/Stronghold/Dwelling_3/WarPavillion.xdb#xpointer(/TownBuildingSharedStats)"/>
-		<Item href="/GameMechanics/TownBuildingSharedStats/Stronghold/Dwelling_4/HouseOfSpirits.xdb#xpointer(/TownBuildingSharedStats)"/>
-		<Item href="/GameMechanics/TownBuildingSharedStats/Stronghold/Dwelling_4/HouseOfBones.xdb#xpointer(/TownBuildingSharedStats)"/>
+		<Item href="/GameMechanics/TownBuildingSharedStats/Stronghold/Dwelling_4/CentaurOutpost.xdb#xpointer(/TownBuildingSharedStats)"/>
+		<Item href="/GameMechanics/TownBuildingSharedStats/Stronghold/Dwelling_4/CentaurCamp.xdb#xpointer(/TownBuildingSharedStats)"/>
 		<Item href="/GameMechanics/TownBuildingSharedStats/Stronghold/Dwelling_5/ChamberOfWrath.xdb#xpointer(/TownBuildingSharedStats)"/>
 		<Item href="/GameMechanics/TownBuildingSharedStats/Stronghold/Dwelling_5/ChamberOfRage.xdb#xpointer(/TownBuildingSharedStats)"/>
 		<Item href="/GameMechanics/TownBuildingSharedStats/Stronghold/Dwelling_6/WyvernCliff.xdb#xpointer(/TownBuildingSharedStats)"/>

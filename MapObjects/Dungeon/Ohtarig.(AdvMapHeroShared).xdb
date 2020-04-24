@@ -29,17 +29,17 @@
 	<RazedStatic/>
 	<Icon128/>
 	<InternalName>Ohtarig</InternalName>
-	<Class>HERO_CLASS_WARLOCK</Class>
+	<Class>HERO_CLASS_SEER</Class>
 	<Specialization>HERO_SPEC_SAVAGE</Specialization>
 	<PrimarySkill>
-		<Mastery>MASTERY_BASIC</Mastery>
-		<SkillID>HERO_SKILL_INVOCATION</SkillID>
+		<Mastery>MASTERY_ADVANCED</Mastery>
+		<SkillID>HERO_SKILL_LOGISTICS</SkillID>
 	</PrimarySkill>
 	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Dungeon/Savage/Name.txt"/>
 	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Dungeon/Savage/Description.txt"/>
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Dungeon/Savage.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Dungeon/Dungeon_Vayshan_128x128.(Texture).xdb#xpointer(/Texture)"/>
-	<FaceTextureSmall href="/Textures/Icons/Heroes/Dungeon/Dungeon_Vayshan_128x128_64.(Texture).xdb#xpointer(/Texture)"/>
+	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/Warlock.(Character).xdb#xpointer(/Character)"/>
 	<HeroCharacterArenaMelee/>
 	<HeroCharacterAdventure href="/Characters/Heroes/Warlock_LOD.(Character).xdb#xpointer(/Character)"/>
@@ -49,21 +49,16 @@
 	<Editable>
 		<NameFileRef href="/Text/Game/Heroes/Persons/Dungeon/Ohtarig/Name.txt"/>
 		<BiographyFileRef href="/Text/Game/Heroes/Persons/Dungeon/Ohtarig/Bio.txt"/>
-		<Offence>1</Offence>
+		<Offence>2</Offence>
 		<Defence>0</Defence>
-		<Spellpower>3</Spellpower>
+		<Spellpower>2</Spellpower>
 		<Knowledge>1</Knowledge>
-		<skills>
-			<Item>
-				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_LUCK</SkillID>
-			</Item>
-		</skills>
+		<skills/>
 		<perkIDs>
-			<Item>HERO_SKILL_LUCKY_STRIKE</Item>
+			<Item>HERO_SKILL_PATHFINDING</Item>
 		</perkIDs>
 		<spellIDs>
-			<Item>SPELL_LAND_MINE</Item>
+			<Item>SPELL_PLAGUE</Item>
 		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>

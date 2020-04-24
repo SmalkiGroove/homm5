@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AdvMapHeroShared ObjectRecordID="56">
-	<Model href="/_(Model)/Heroes/Knight_LOD.(Model).xdb#xpointer(/Model)"/>
-	<AnimSet href="/_(AnimSet)/Heroes/Knight_LOD-adv.(AnimSet).xdb#xpointer(/AnimSet)"/>
+	<Model href="/Characters/Heroes/H5A2/Ornella_Mounted.xdb#xpointer(/Model)"/>
+	<AnimSet href="/Characters/Heroes/H5A2/Ornella_Mounted-arena.xdb#xpointer(/AnimSet)"/>
 	<blockedTiles/>
 	<holeTiles/>
 	<activeTiles>
@@ -29,44 +29,37 @@
 	<RazedStatic/>
 	<Icon128/>
 	<InternalName>Tamika</InternalName>
-	<Class>HERO_CLASS_NECROMANCER</Class>
-	<Specialization>HERO_SPEC_VAMPIRES</Specialization>
+	<Class>HERO_CLASS_RUNEMAGE</Class>
+	<Specialization/>
 	<PrimarySkill>
-		<Mastery>MASTERY_BASIC</Mastery>
-		<SkillID>HERO_SKILL_NECROMANCY</SkillID>
+		<Mastery>MASTERY_ADVANCED</Mastery>
+		<SkillID>HERO_SKILL_TRAINING</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Necropolis/Vamipre_Princess/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Necropolis/Vamipre_Princess/Description.txt"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Added/Vampires/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Added/Vampires/Description.txt"/>
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Necropolis/Vampire_Princess.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Necropolis/Necropolis_Lucretia_128x128.(Texture).xdb#xpointer(/Texture)"/>
-	<FaceTextureSmall href="/Textures/Icons/Heroes/Necropolis/Necropolis_Lucretia_128x128_64.(Texture).xdb#xpointer(/Texture)"/>
-	<HeroCharacterArena href="/Characters/Heroes/Necromancer.(Character).xdb#xpointer(/Character)"/>
+	<FaceTextureSmall/>
+	<HeroCharacterArena href="/Characters/Heroes/H5A2/Ornella_Mounted.(Character).xdb#xpointer(/Character)"/>
 	<HeroCharacterArenaMelee/>
-	<HeroCharacterAdventure href="/Characters/Heroes/Necromancer_LOD.(Character).xdb#xpointer(/Character)"/>
+	<HeroCharacterAdventure href="/Characters/Heroes/H5A2/Ornella_Mounted.(Character).xdb#xpointer(/Character)"/>
 	<HeroIndividualCamera/>
-	<CombatVisual href="/GameMechanics/CreatureVisual/Heroes/Necromancer.xdb#xpointer(/CreatureVisual)"/>
+	<CombatVisual href="/GameMechanics/CreatureVisual/Heroes/Knight.xdb#xpointer(/CreatureVisual)"/>
 	<TownType>TOWN_NECROMANCY</TownType>
 	<Editable>
 		<NameFileRef href="/Text/Game/Heroes/Persons/Necropolis/Tamika/Name.txt"/>
 		<BiographyFileRef href="/Text/Game/Heroes/Persons/Necropolis/Tamika/Bio.txt"/>
-		<Offence>0</Offence>
-		<Defence>1</Defence>
-		<Spellpower>3</Spellpower>
+		<Offence>1</Offence>
+		<Defence>2</Defence>
+		<Spellpower>1</Spellpower>
 		<Knowledge>1</Knowledge>
-		<skills>
-			<Item>
-				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_SORCERY</SkillID>
-			</Item>
-		</skills>
+		<skills/>
 		<perkIDs>
-			<Item>HERO_SKILL_MYSTICISM</Item>
+			<Item>HERO_SKILL_CRITICAL_STRIKE</Item>
 		</perkIDs>
-		<spellIDs>
-			<Item>SPELL_ANIMATE_DEAD</Item>
-		</spellIDs>
+		<spellIDs/>
 		<Ballista>false</Ballista>
-		<FirstAidTent>false</FirstAidTent>
+		<FirstAidTent>true</FirstAidTent>
 		<AmmoCart>false</AmmoCart>
 		<FavoriteEnemies/>
 	</Editable>

@@ -3,17 +3,17 @@
 	<AttackSkill>6</AttackSkill>
 	<DefenceSkill>6</DefenceSkill>
 	<Shots>6</Shots>
-	<MinDamage>6</MinDamage>
+	<MinDamage>10</MinDamage>
 	<MaxDamage>13</MaxDamage>
 	<Speed>4</Speed>
 	<Initiative>9</Initiative>
 	<Flying>false</Flying>
-	<Health>32</Health>
+	<Health>30</Health>
 	<KnownSpells/>
 	<SpellPoints>0</SpellPoints>
 	<SpellPoints1>1</SpellPoints1>
 	<SpellPoints2>1</SpellPoints2>
-	<Exp>54</Exp>
+	<Exp>60</Exp>
 	<Power>680</Power>
 	<TimeToCommand>10</TimeToCommand>
 	<CreatureTier>4</CreatureTier>
@@ -24,7 +24,7 @@
 		<First>ELEMENT_AIR</First>
 		<Second>ELEMENT_FIRE</Second>
 	</MagicElement>
-	<WeeklyGrowth>5</WeeklyGrowth>
+	<WeeklyGrowth>12</WeeklyGrowth>
 	<Cost>
 		<Wood>0</Wood>
 		<Ore>0</Ore>
@@ -45,6 +45,7 @@
 	<Upgrades/>
 	<Abilities>
 		<Item>ABILITY_DEMONIC</Item>
+		<Item>ABILITY_IMMUNITY_TO_FIRE</Item>
 		<Item>ABILITY_RANGED_RETALIATE</Item>
 		<Item>ABILITY_SEDUCE</Item>
 		<Item>ABILITY_IMMUNITY_TO_HYPNOTIZE</Item>

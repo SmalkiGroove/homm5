@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<AdvMapHeroShared ObjectRecordID="22">
+<AdvMapHeroShared>
 	<Model href="/Characters/Heroes/Ilaya_LOD.xdb#xpointer(/Model)"/>
 	<AnimSet href="/Characters/Heroes/Ilaya_LOD-adv.xdb#xpointer(/AnimSet)"/>
 	<blockedTiles/>
@@ -27,7 +27,7 @@
 	<FlyPassable>true</FlyPassable>
 	<AdventureSoundEffect/>
 	<RazedStatic/>
-	<Icon128/>
+	<Icon128 href="/UI/H5A1/Icons/Heroes/Portrets128x128/Shadwyn.(Texture).xdb#xpointer(/Texture)"/>
 	<InternalName>Shadwyn</InternalName>
 	<Class>HERO_CLASS_WARLOCK</Class>
 	<Specialization>HERO_SPEC_DARK_ACOLYTE</Specialization>
@@ -49,23 +49,25 @@
 	<Editable>
 		<NameFileRef href="/Text/Game/Heroes/Persons/Dungeon/Shadwyn/Name.txt"/>
 		<BiographyFileRef href="/Text/Game/Heroes/Persons/Dungeon/Shadwyn/Bio.txt"/>
-		<Offence>1</Offence>
+		<Offence>0</Offence>
 		<Defence>0</Defence>
 		<Spellpower>3</Spellpower>
-		<Knowledge>1</Knowledge>
+		<Knowledge>2</Knowledge>
 		<skills>
 			<Item>
 				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_OFFENCE</SkillID>
+				<SkillID>HERO_SKILL_DESTRUCTIVE_MAGIC</SkillID>
 			</Item>
 		</skills>
 		<perkIDs>
 			<Item>HERO_SKILL_DARK_RITUAL</Item>
 		</perkIDs>
-		<spellIDs/>
+		<spellIDs>
+			<Item>SPELL_LIGHTNING_BOLT</Item>
+		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>
-		<AmmoCart>true</AmmoCart>
+		<AmmoCart>false</AmmoCart>
 		<FavoriteEnemies/>
 	</Editable>
 	<ArrowButtonState>0</ArrowButtonState>
@@ -74,7 +76,7 @@
 	<Trace href="/MapObjects/_(AdvMapHeroTraceSet)/Dungeon.xdb#xpointer(/AdvMapHeroTraceSet)"/>
 	<RaceTraitIcon/>
 	<RaceTraitDescFileRef href=""/>
-	<ScenarioHero>true</ScenarioHero>
+	<ScenarioHero>false</ScenarioHero>
 	<AdventureMusic href="/Sounds/_(Music)/AdvMap-Heroes/a1-Shadwyn-Ylaya.xdb#xpointer(/Music)"/>
 	<HideInEditor>false</HideInEditor>
 </AdvMapHeroShared>

@@ -10,8 +10,8 @@
 	<Placement>
 		<Position>
 			<First>
-				<x>557</x>
-				<y>4</y>
+				<x>772</x>
+				<y>0</y>
 			</First>
 			<Second>true</Second>
 		</Position>
@@ -26,7 +26,7 @@
 		<Size>
 			<First>
 				<x>16</x>
-				<y>88</y>
+				<y>536</y>
 			</First>
 			<Second>true</Second>
 		</Size>
@@ -57,8 +57,4 @@
 		<Reversable>false</Reversable>
 	</Effects>
 	<HideDisabled>false</HideDisabled>
-	<ClickScrollDist>
-		<First>0</First>
-		<Second>false</Second>
-	</ClickScrollDist>
 </WindowScrollBar>

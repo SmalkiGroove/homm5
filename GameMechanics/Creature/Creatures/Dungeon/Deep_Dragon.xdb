@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Creature ObjectRecordID="1000034">
-	<AttackSkill>25</AttackSkill>
-	<DefenceSkill>24</DefenceSkill>
+	<AttackSkill>30</AttackSkill>
+	<DefenceSkill>26</DefenceSkill>
 	<Shots>0</Shots>
 	<MinDamage>45</MinDamage>
-	<MaxDamage>70</MaxDamage>
+	<MaxDamage>65</MaxDamage>
 	<Speed>9</Speed>
 	<Initiative>10</Initiative>
 	<Flying>true</Flying>
-	<Health>200</Health>
+	<Health>210</Health>
 	<KnownSpells/>
 	<SpellPoints>0</SpellPoints>
 	<SpellPoints1>0</SpellPoints1>
 	<SpellPoints2>0</SpellPoints2>
-	<Exp>269</Exp>
-	<Power>5234</Power>
+	<Exp>750</Exp>
+	<Power>5000</Power>
 	<TimeToCommand>10</TimeToCommand>
 	<CreatureTier>7</CreatureTier>
 	<Upgrade>false</Upgrade>
@@ -30,7 +30,7 @@
 		<Ore>0</Ore>
 		<Mercury>0</Mercury>
 		<Crystal>0</Crystal>
-		<Sulfur>1</Sulfur>
+		<Sulfur>2</Sulfur>
 		<Gem>0</Gem>
 		<Gold>3000</Gold>
 	</Cost>
@@ -48,5 +48,6 @@
 	</Upgrades>
 	<Abilities>
 		<Item>ABILITY_FIRE_BREATH</Item>
+		<Item>ABILITY_UNLIMITED_RETALIATION</Item>
 	</Abilities>
 </Creature>

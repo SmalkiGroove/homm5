@@ -5,13 +5,13 @@
 	<Type>TB_DWELLING_4</Type>
 	<Upgrade>BLD_UPG_2</Upgrade>
 	<Cost>
-		<Wood>10</Wood>
-		<Ore>10</Ore>
-		<Mercury>5</Mercury>
+		<Wood>4</Wood>
+		<Ore>8</Ore>
+		<Mercury>6</Mercury>
 		<Crystal>0</Crystal>
-		<Sulfur>0</Sulfur>
+		<Sulfur>6</Sulfur>
 		<Gem>0</Gem>
-		<Gold>4000</Gold>
+		<Gold>1500</Gold>
 	</Cost>
 	<ModObjectName>GriffinBastion</ModObjectName>
 	<dependencies>

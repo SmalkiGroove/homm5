@@ -5,12 +5,12 @@
 	<Type>TB_DWELLING_6</Type>
 	<Upgrade>BLD_UPG_1</Upgrade>
 	<Cost>
-		<Wood>0</Wood>
-		<Ore>10</Ore>
+		<Wood>5</Wood>
+		<Ore>15</Ore>
 		<Mercury>0</Mercury>
-		<Crystal>5</Crystal>
-		<Sulfur>5</Sulfur>
-		<Gem>10</Gem>
+		<Crystal>0</Crystal>
+		<Sulfur>0</Sulfur>
+		<Gem>0</Gem>
 		<Gold>5000</Gold>
 	</Cost>
 	<ModObjectName>SilverPavilion</ModObjectName>

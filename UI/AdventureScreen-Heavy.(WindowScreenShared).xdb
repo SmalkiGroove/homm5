@@ -21,7 +21,7 @@
 		<Item href="GhostInfo/EndOfTurnNotify.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		<Item href="AdventureScreen-heavy/OnJog-DigGrail.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
 		<Item href="AdventureScreen-heavy/TownHeroPanel/TownHeroPanel.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
-		<Item href="AdventureScreen-heavy/HotSeatBlackBg.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
+		<-- !Item href="AdventureScreen-heavy/HotSeatBlackBg.(WindowSimple).xdb#xpointer(/WindowSimple)"/>		
 	</Children>
 	<Background/>
 	<Foreground/>

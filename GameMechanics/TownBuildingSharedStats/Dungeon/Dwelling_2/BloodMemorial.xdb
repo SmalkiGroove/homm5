@@ -5,13 +5,13 @@
 	<Type>TB_DWELLING_2</Type>
 	<Upgrade>BLD_UPG_2</Upgrade>
 	<Cost>
-		<Wood>0</Wood>
-		<Ore>5</Ore>
-		<Mercury>0</Mercury>
-		<Crystal>3</Crystal>
+		<Wood>3</Wood>
+		<Ore>3</Ore>
+		<Mercury>1</Mercury>
+		<Crystal>5</Crystal>
 		<Sulfur>0</Sulfur>
 		<Gem>0</Gem>
-		<Gold>2500</Gold>
+		<Gold>750</Gold>
 	</Cost>
 	<ModObjectName>blood_stone</ModObjectName>
 	<dependencies>

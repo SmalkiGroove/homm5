@@ -15,15 +15,15 @@
 	<TrainedCost>9</TrainedCost>
 	<damage>
 		<Item>
-			<Base>0.5</Base>
+			<Base>0.4</Base>
 			<PerPower>0</PerPower>
 		</Item>
 		<Item>
-			<Base>0.7</Base>
+			<Base>0.6</Base>
 			<PerPower>0</PerPower>
 		</Item>
 		<Item>
-			<Base>0.9</Base>
+			<Base>0.8</Base>
 			<PerPower>0</PerPower>
 		</Item>
 		<Item>
@@ -33,20 +33,20 @@
 	</damage>
 	<duration>
 		<Item>
-			<Base>0</Base>
-			<PerPower>1</PerPower>
+			<Base>1</Base>
+			<PerPower>0.5</PerPower>
 		</Item>
 		<Item>
-			<Base>0</Base>
-			<PerPower>1</PerPower>
+			<Base>2</Base>
+			<PerPower>0.5</PerPower>
 		</Item>
 		<Item>
-			<Base>0</Base>
-			<PerPower>1</PerPower>
+			<Base>2</Base>
+			<PerPower>0.5</PerPower>
 		</Item>
 		<Item>
-			<Base>0</Base>
-			<PerPower>1</PerPower>
+			<Base>2</Base>
+			<PerPower>0.5</PerPower>
 		</Item>
 	</duration>
 	<sSpellCost>

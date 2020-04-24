@@ -10,23 +10,23 @@
 	<Placement>
 		<Position>
 			<First>
-				<x>-4</x>
-				<y>1</y>
+				<x>0</x>
+				<y>57</y>
 			</First>
 			<Second>true</Second>
 		</Position>
 		<VerAllign>
-			<First>EPA_HIGH_END</First>
+			<First>EPA_LOW_END</First>
 			<Second>true</Second>
 		</VerAllign>
 		<HorAllign>
-			<First>EPA_HIGH_END</First>
+			<First>EPA_LOW_END</First>
 			<Second>true</Second>
 		</HorAllign>
 		<Size>
 			<First>
-				<x>45</x>
-				<y>22</y>
+				<x>57</x>
+				<y>18</y>
 			</First>
 			<Second>true</Second>
 		</Size>
@@ -54,6 +54,5 @@
 	</Flags>
 	<TextFileRef href="Count.txt"/>
 	<ResizeOnTextSet>false</ResizeOnTextSet>
-	<ResizeWidthOnTextSet>false</ResizeWidthOnTextSet>
 	<TextFormat/>
 </WindowTextView>

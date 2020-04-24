@@ -7,9 +7,9 @@
 	<Icon32/>
 	<Icon64/>
 	<Icon128/>
-	<AnimCharacter/>
+	<AnimCharacter href="/Characters/Heroes/RuneMage.(Character).xdb#xpointer(/Character)"/>
 	<DeadCharacter/>
-	<AnimShot/>
+	<AnimShot href="/GameMechanics/Shot/Creatures/Dwarf/Stormstrike.xdb#xpointer(/Shot)"/>
 	<SummoningEffect/>
 	<DamageEffect/>
 	<TeleportingMove>

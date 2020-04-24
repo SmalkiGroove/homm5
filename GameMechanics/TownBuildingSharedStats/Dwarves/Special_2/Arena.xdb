@@ -11,14 +11,14 @@
 		<Crystal>0</Crystal>
 		<Sulfur>0</Sulfur>
 		<Gem>0</Gem>
-		<Gold>1000</Gold>
+		<Gold>500</Gold>
 	</Cost>
 	<ModObjectName>Special_2</ModObjectName>
 	<dependencies>
-		<Item href="/GameMechanics/TownBuildingSharedStats/Dwarves/Dwelling_4/FightingRing.xdb#xpointer(/TownBuildingSharedStats)"/>
+		<Item href="/GameMechanics/TownBuildingSharedStats/Dwarves/Dwelling_3/FightingRing.xdb#xpointer(/TownBuildingSharedStats)"/>
 	</dependencies>
 	<Creature>CREATURE_UNKNOWN</Creature>
-	<DevLevelNeeded>12</DevLevelNeeded>
+	<DevLevelNeeded>6</DevLevelNeeded>
 	<UIObjectName>Special_2</UIObjectName>
 	<UIStackPosition>0</UIStackPosition>
 	<Icon href="/UI/H5A1/Icons/Buildings/Towns/Fortress/Building_Mode_Icon/128x128/Arena.(Texture).xdb#xpointer(/Texture)"/>

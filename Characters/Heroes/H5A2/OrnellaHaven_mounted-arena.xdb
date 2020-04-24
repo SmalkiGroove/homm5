@@ -14,6 +14,10 @@
 			<Anim href="OrnellaHaven_mounted-arena-cast.xdb#xpointer(/BasicSkelAnim)"/>
 		</Item>
 		<Item>
+			<Kind>rangeattack</Kind>
+			<Anim href="OrnellaHaven_mounted-arena-cast.xdb#xpointer(/BasicSkelAnim)"/>
+		</Item>
+		<Item>
 			<Kind>happy</Kind>
 			<Anim href="OrnellaHaven_mounted-arena-happy.xdb#xpointer(/BasicSkelAnim)"/>
 		</Item>

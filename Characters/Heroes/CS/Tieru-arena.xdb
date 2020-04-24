@@ -29,6 +29,10 @@
 			<Kind>spneutral</Kind>
 			<Anim href="Tieru-arena-spneutral.xdb#xpointer(/BasicSkelAnim)"/>
 		</Item>
+		<Item>
+			<Kind>rangeattack</Kind>
+			<Anim href="HighDruid-arena-rangeattack,xbd#xpointer(/BasicSkelAnim"/>
+		</Item>
 	</animations>
 	<ExpSrcScene href="/models/Heroes/Tieru/Tieru_CS.mb"/>
 	<ExpSrcClipFolder href="/Animations/Heroes/Tieru/Clip/"/>

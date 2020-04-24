@@ -4,8 +4,10 @@
 	<Children>
 		<Item href="LargeIcon.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		<Item href="IconView.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
-		<Item href="/UI/CombatScreen-Heavy/ATBBar/ScrollLeft.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
-		<Item href="/UI/CombatScreen-Heavy/ATBBar/ScrollRight.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="ScrollLeft.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="ScrollRight.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="ScrollLeft2.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="ScrollRight2.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
 		<Item href="IconViewPlaceholder.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 	</Children>
 	<Background href="ATBBar.(BackgroundSimpleTexture).xdb#xpointer(/BackgroundSimpleTexture)"/>
@@ -19,20 +21,20 @@
 				<x>0</x>
 				<y>0</y>
 			</First>
-			<Second>false</Second>
+			<Second>true</Second>
 		</Position>
 		<VerAllign>
 			<First>EPA_LOW_END</First>
-			<Second>false</Second>
+			<Second>true</Second>
 		</VerAllign>
 		<HorAllign>
 			<First>EPA_LOW_END</First>
-			<Second>false</Second>
+			<Second>true</Second>
 		</HorAllign>
 		<Size>
 			<First>
-				<x>766</x>
-				<y>162</y>
+				<x>1197</x>
+				<y>100</y>
 			</First>
 			<Second>true</Second>
 		</Size>
@@ -41,17 +43,17 @@
 				<x>0</x>
 				<y>0</y>
 			</First>
-			<Second>false</Second>
+			<Second>true</Second>
 		</LowerMargin>
 		<UpperMargin>
 			<First>
 				<x>0</x>
 				<y>0</y>
 			</First>
-			<Second>false</Second>
+			<Second>true</Second>
 		</UpperMargin>
 	</Placement>
 	<ActiveArea/>
 	<IgnoreDblClick>false</IgnoreDblClick>
-	<ActiveMask/>
+	<ActiveMask href=""/>
 </WindowSimpleShared>

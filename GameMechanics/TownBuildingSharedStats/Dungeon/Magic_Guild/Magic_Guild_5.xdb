@@ -5,8 +5,8 @@
 	<Type>TB_MAGIC_GUILD</Type>
 	<Upgrade>BLD_UPG_5</Upgrade>
 	<Cost>
-		<Wood>5</Wood>
-		<Ore>5</Ore>
+		<Wood>6</Wood>
+		<Ore>6</Ore>
 		<Mercury>5</Mercury>
 		<Crystal>5</Crystal>
 		<Sulfur>5</Sulfur>

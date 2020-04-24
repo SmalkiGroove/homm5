@@ -16,12 +16,12 @@
 			<PerPower>1</PerPower>
 		</Item>
 		<Item>
-			<Base>30</Base>
-			<PerPower>3</PerPower>
-		</Item>
-		<Item>
 			<Base>40</Base>
 			<PerPower>4</PerPower>
+		</Item>
+		<Item>
+			<Base>50</Base>
+			<PerPower>5</PerPower>
 		</Item>
 		<Item>
 			<Base>60</Base>

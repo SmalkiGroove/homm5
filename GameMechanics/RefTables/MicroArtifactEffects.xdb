@@ -31,8 +31,8 @@
 					<Icon href="/UI/AcademyCreatureArtifacts/MiniArtifactEffects/Wounding.(Texture).xdb#xpointer(/Texture)"/>
 					<Cost>
 						<Wood>0</Wood>
-						<Ore>5</Ore>
-						<Mercury>5</Mercury>
+						<Ore>2</Ore>
+						<Mercury>2</Mercury>
 						<Crystal>0</Crystal>
 						<Sulfur>0</Sulfur>
 						<Gem>0</Gem>
@@ -51,9 +51,9 @@
 					<Icon href="/UI/AcademyCreatureArtifacts/MiniArtifactEffects/Piercing.(Texture).xdb#xpointer(/Texture)"/>
 					<Cost>
 						<Wood>0</Wood>
-						<Ore>5</Ore>
+						<Ore>2</Ore>
 						<Mercury>0</Mercury>
-						<Crystal>5</Crystal>
+						<Crystal>2</Crystal>
 						<Sulfur>0</Sulfur>
 						<Gem>0</Gem>
 						<Gold>0</Gold>
@@ -71,10 +71,10 @@
 					<Icon href="/UI/AcademyCreatureArtifacts/MiniArtifactEffects/ArmorCrushing.(Texture).xdb#xpointer(/Texture)"/>
 					<Cost>
 						<Wood>0</Wood>
-						<Ore>5</Ore>
+						<Ore>2</Ore>
 						<Mercury>0</Mercury>
 						<Crystal>0</Crystal>
-						<Sulfur>5</Sulfur>
+						<Sulfur>2</Sulfur>
 						<Gem>0</Gem>
 						<Gold>0</Gold>
 					</Cost>
@@ -90,12 +90,12 @@
 					<Description href="/Text/Game/MicroArtifacts/Health_Desc.txt"/>
 					<Icon href="/UI/AcademyCreatureArtifacts/MiniArtifactEffects/Health.(Texture).xdb#xpointer(/Texture)"/>
 					<Cost>
-						<Wood>5</Wood>
+						<Wood>2</Wood>
 						<Ore>0</Ore>
 						<Mercury>0</Mercury>
 						<Crystal>0</Crystal>
 						<Sulfur>0</Sulfur>
-						<Gem>5</Gem>
+						<Gem>2</Gem>
 						<Gold>0</Gold>
 					</Cost>
 				</MicroArtifactEffect>
@@ -110,10 +110,10 @@
 					<Description href="/Text/Game/MicroArtifacts/Defence_Desc.txt"/>
 					<Icon href="/UI/AcademyCreatureArtifacts/MiniArtifactEffects/Defence.(Texture).xdb#xpointer(/Texture)"/>
 					<Cost>
-						<Wood>5</Wood>
+						<Wood>2</Wood>
 						<Ore>0</Ore>
 						<Mercury>0</Mercury>
-						<Crystal>5</Crystal>
+						<Crystal>2</Crystal>
 						<Sulfur>0</Sulfur>
 						<Gem>0</Gem>
 						<Gold>0</Gold>
@@ -130,12 +130,12 @@
 					<Description href="/Text/Game/MicroArtifacts/MagicProtection_Desc.txt"/>
 					<Icon href="/UI/AcademyCreatureArtifacts/MiniArtifactEffects/MagicProtection.(Texture).xdb#xpointer(/Texture)"/>
 					<Cost>
-						<Wood>5</Wood>
+						<Wood>2</Wood>
 						<Ore>0</Ore>
 						<Mercury>0</Mercury>
 						<Crystal>0</Crystal>
 						<Sulfur>0</Sulfur>
-						<Gem>5</Gem>
+						<Gem>2</Gem>
 						<Gold>0</Gold>
 					</Cost>
 				</MicroArtifactEffect>
@@ -150,10 +150,10 @@
 					<Description href="/Text/Game/MicroArtifacts/Luck_Desc.txt"/>
 					<Icon href="/UI/AcademyCreatureArtifacts/MiniArtifactEffects/Luck.(Texture).xdb#xpointer(/Texture)"/>
 					<Cost>
-						<Wood>5</Wood>
+						<Wood>2</Wood>
 						<Ore>0</Ore>
 						<Mercury>0</Mercury>
-						<Crystal>5</Crystal>
+						<Crystal>2</Crystal>
 						<Sulfur>0</Sulfur>
 						<Gem>0</Gem>
 						<Gold>0</Gold>
@@ -171,10 +171,10 @@
 					<Icon href="/UI/AcademyCreatureArtifacts/MiniArtifactEffects/Morale.(Texture).xdb#xpointer(/Texture)"/>
 					<Cost>
 						<Wood>0</Wood>
-						<Ore>5</Ore>
+						<Ore>2</Ore>
 						<Mercury>0</Mercury>
 						<Crystal>0</Crystal>
-						<Sulfur>5</Sulfur>
+						<Sulfur>2</Sulfur>
 						<Gem>0</Gem>
 						<Gold>0</Gold>
 					</Cost>
@@ -191,8 +191,8 @@
 					<Icon href="/UI/AcademyCreatureArtifacts/MiniArtifactEffects/Speed.(Texture).xdb#xpointer(/Texture)"/>
 					<Cost>
 						<Wood>0</Wood>
-						<Ore>5</Ore>
-						<Mercury>5</Mercury>
+						<Ore>2</Ore>
+						<Mercury>2</Mercury>
 						<Crystal>0</Crystal>
 						<Sulfur>0</Sulfur>
 						<Gem>0</Gem>
@@ -212,9 +212,9 @@
 					<Cost>
 						<Wood>0</Wood>
 						<Ore>0</Ore>
-						<Mercury>5</Mercury>
+						<Mercury>2</Mercury>
 						<Crystal>0</Crystal>
-						<Sulfur>5</Sulfur>
+						<Sulfur>2</Sulfur>
 						<Gem>0</Gem>
 						<Gold>0</Gold>
 					</Cost>

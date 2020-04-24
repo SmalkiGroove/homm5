@@ -9,8 +9,8 @@
 		<Item href="/MapObjects/Academy/Titan.xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Dungeon/Deep_Dragon.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Dungeon/Black_Dragon.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
-		<Item href="/MapObjects/Necropolis/Bone_Dragon.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
-		<Item href="/MapObjects/Necropolis/Shadow_Dragon.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
+		<Item href="/MapObjects/Necropolis/Wight.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
+		<Item href="/MapObjects/Necropolis/Wraith.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Preserve/Green_Dragon.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Preserve/Gold_Dragon.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Dwarf/Fire_Dragon.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
@@ -19,7 +19,7 @@
 		<Item href="/MapObjects/Dungeon/Red_Dragon.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Dwarf/Lava_Dragon.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Inferno/Arch_Demon.xdb#xpointer(/AdvMapMonsterShared)"/>
-		<Item href="/MapObjects/Necropolis/Alt_upgrade/Horror_Dragon.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
+		<Item href="/MapObjects/Necropolis/Alt_upgrade/Banshee.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Preserve/Alt_upgrade/Rainbow_Dragon.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Stronghold/Bloodeyed_Cyclop.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Haven/Renegates/Seraph.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>

@@ -6,12 +6,12 @@
 	<Upgrade>BLD_UPG_2</Upgrade>
 	<Cost>
 		<Wood>5</Wood>
-		<Ore>5</Ore>
-		<Mercury>3</Mercury>
-		<Crystal>3</Crystal>
-		<Sulfur>3</Sulfur>
-		<Gem>3</Gem>
-		<Gold>8000</Gold>
+		<Ore>11</Ore>
+		<Mercury>6</Mercury>
+		<Crystal>0</Crystal>
+		<Sulfur>5</Sulfur>
+		<Gem>5</Gem>
+		<Gold>2500</Gold>
 	</Cost>
 	<ModObjectName>Monastery</ModObjectName>
 	<dependencies>

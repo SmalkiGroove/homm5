@@ -131,14 +131,26 @@
 				<Name href="Haven.txt"/>
 				<TownProto href="/MapObjects/Heaven.(AdvMapTownShared).xdb#xpointer(/AdvMapTownShared)"/>
 				<HeroPool>
-					<Item href="/MapObjects/Haven/Axel.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-					<Item href="/MapObjects/Haven/Brem.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-					<Item href="/MapObjects/Haven/Christian.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-					<Item href="/MapObjects/Haven/Mardigo.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-					<Item href="/MapObjects/Haven/Nathaniel.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Haven/Duncan.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 					<Item href="/MapObjects/Haven/Orrin.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Haven/Brem.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Haven/Maeve.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>					
 					<Item href="/MapObjects/Haven/Sarge.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Haven/Mardigo.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Haven/RedHeavenHero01.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>	
+					<Item href="/MapObjects/Haven/RedHeavenHero05.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>					
+					<Item href="/MapObjects/Haven/Nathaniel.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>					
 					<Item href="/MapObjects/Haven/Ving.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Haven/Nicolai.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Haven/GodricMP.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Haven/Isabell.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Haven/Axel.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Haven/Alaric.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Haven/RedHeavenHero03.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Haven/RedHeavenHero04.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Haven/RedHeavenHero06.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Haven/RedHeaven07_Orlando.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Haven/Markal.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>					
 				</HeroPool>
 				<Dwellings>
 					<Item href="/MapObjects/Haven/PeasantHut.(AdvMapDwellingShared).xdb#xpointer(/AdvMapDwellingShared)"/>
@@ -501,18 +513,21 @@
 					<Item href="/MapObjects/Gold_Mine.(AdvMapMineShared).xdb#xpointer(/AdvMapMineShared)"/>
 				</Mines>
 				<AbandonedMine href="/MapObjects/Abandoned_Mine.(AdvMapAbanMineShared).xdb#xpointer(/AdvMapAbanMineShared)"/>
-				<NewBuffBuildings>
-					<Item>
-						<Building href="/MapObjects/Stables.(AdvMapBuildingShared).xdb#xpointer(/AdvMapBuildingShared)"/>
-						<Value>10</Value>
-						<GuardStrenght>0</GuardStrenght>
-					</Item>
-					<Item>
-						<Building href="/MapObjects/Magic_Spring.(AdvMapBuildingShared).xdb#xpointer(/AdvMapBuildingShared)"/>
-						<Value>10</Value>
-						<GuardStrenght>0</GuardStrenght>
-					</Item>
-				</NewBuffBuildings>
+				<NewBuffBuildings/>
+				<RaceColor>
+					<x>0.392157</x>
+					<y>0.733333</y>
+					<z>0.0156863</z>
+				</RaceColor>
+				<PointLightParams>
+					<ZoneRadius>20</ZoneRadius>
+					<MinDist>7</MinDist>
+					<zMin>3</zMin>
+					<zMax>3</zMax>
+					<LightRadiusMin>10</LightRadiusMin>
+					<LightRadiusMax>10</LightRadiusMax>
+					<Colors/>
+				</PointLightParams>
 			</obj>
 		</Item>
 		<Item>
@@ -522,14 +537,24 @@
 				<Name href="Preserve.txt"/>
 				<TownProto href="/MapObjects/Preserve.(AdvMapTownShared).xdb#xpointer(/AdvMapTownShared)"/>
 				<HeroPool>
-					<Item href="/MapObjects/Preserve/Diraya.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-					<Item href="/MapObjects/Preserve/Elleshar.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-					<Item href="/MapObjects/Preserve/Gillion.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 					<Item href="/MapObjects/Preserve/Linaas.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-					<Item href="/MapObjects/Preserve/Itil.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 					<Item href="/MapObjects/Preserve/Metlirn.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 					<Item href="/MapObjects/Preserve/Nadaur.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 					<Item href="/MapObjects/Preserve/Ossir.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Preserve/Heam.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Preserve/Jenova.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>		
+					<Item href="/MapObjects/Preserve/Gillion.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Preserve/Kyrre.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>		
+					<Item href="/MapObjects/Preserve/Arniel.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Preserve/Mephala.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Preserve/Ildar.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Preserve/Melodia.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>		
+					<Item href="/MapObjects/Preserve/Diraya.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Preserve/Elleshar.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Preserve/Itil.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Preserve/Vaniel.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Preserve/Gem.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Preserve/Vinrael.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 				</HeroPool>
 				<Dwellings>
 					<Item href="/MapObjects/Preserve/Fairie_Tree.xdb#xpointer(/AdvMapDwellingShared)"/>
@@ -887,6 +912,20 @@
 				</Mines>
 				<AbandonedMine href="/MapObjects/Abandoned_Mine.(AdvMapAbanMineShared).xdb#xpointer(/AdvMapAbanMineShared)"/>
 				<NewBuffBuildings/>
+				<RaceColor>
+					<x>0.235294</x>
+					<y>0.85098</y>
+					<z>0.215686</z>
+				</RaceColor>
+				<PointLightParams>
+					<ZoneRadius>20</ZoneRadius>
+					<MinDist>7</MinDist>
+					<zMin>3</zMin>
+					<zMax>3</zMax>
+					<LightRadiusMin>10</LightRadiusMin>
+					<LightRadiusMax>10</LightRadiusMax>
+					<Colors/>
+				</PointLightParams>
 			</obj>
 		</Item>
 		<Item>
@@ -896,14 +935,24 @@
 				<Name href="Academy.txt"/>
 				<TownProto href="/MapObjects/Academy.(AdvMapTownShared).xdb#xpointer(/AdvMapTownShared)"/>
 				<HeroPool>
-					<Item href="/MapObjects/Academy/Astral.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-					<Item href="/MapObjects/Academy/Faiz.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 					<Item href="/MapObjects/Academy/Havez.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Academy/Minasli.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Academy/Josephine.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>		
 					<Item href="/MapObjects/Academy/Isher.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Academy/Davius.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Academy/Rissa.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>		
+					<Item href="/MapObjects/Academy/Gurvilin.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Academy/Razzak.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>		
+					<Item href="/MapObjects/Academy/Sufi.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>		
+					<Item href="/MapObjects/Academy/Cyrus.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Academy/Faiz.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>		
+					<Item href="/MapObjects/Academy/Maahir.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>		
 					<Item href="/MapObjects/Academy/Nur.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-					<Item href="/MapObjects/Academy/Razzak.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-					<Item href="/MapObjects/Academy/Sufi.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Academy/Astral.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 					<Item href="/MapObjects/Academy/Tan.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Academy/Zehir.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Academy/Timerkhan.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Academy/Emilia.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 				</HeroPool>
 				<Dwellings>
 					<Item href="/MapObjects/Academy/Workshop.xdb#xpointer(/AdvMapDwellingShared)"/>
@@ -1250,6 +1299,20 @@
 				</Mines>
 				<AbandonedMine href="/MapObjects/Abandoned_Mine.(AdvMapAbanMineShared).xdb#xpointer(/AdvMapAbanMineShared)"/>
 				<NewBuffBuildings/>
+				<RaceColor>
+					<x>0.976471</x>
+					<y>0.952941</y>
+					<z>0.12549</z>
+				</RaceColor>
+				<PointLightParams>
+					<ZoneRadius>20</ZoneRadius>
+					<MinDist>7</MinDist>
+					<zMin>3</zMin>
+					<zMax>3</zMax>
+					<LightRadiusMin>10</LightRadiusMin>
+					<LightRadiusMax>10</LightRadiusMax>
+					<Colors/>
+				</PointLightParams>
 			</obj>
 		</Item>
 		<Item>
@@ -1259,14 +1322,24 @@
 				<Name href="Dungeon.txt"/>
 				<TownProto href="/MapObjects/Dungeon.(AdvMapTownShared).xdb#xpointer(/AdvMapTownShared)"/>
 				<HeroPool>
-					<Item href="/MapObjects/Dungeon/Almegir.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Dungeon/Ferigl.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Dungeon/Menel.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Dungeon/Agbeth.xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Dungeon/Ranleth.xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Dungeon/Darkstorm.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Dungeon/Urunir.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Dungeon/Ohtarig.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Dungeon/Thralsai.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 					<Item href="/MapObjects/Dungeon/Dalom.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 					<Item href="/MapObjects/Dungeon/Eruina.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-					<Item href="/MapObjects/Dungeon/Ferigl.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Dungeon/Almegir.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Dungeon/Sylsai.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>		
 					<Item href="/MapObjects/Dungeon/Inagost.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-					<Item href="/MapObjects/Dungeon/Menel.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-					<Item href="/MapObjects/Dungeon/Ohtarig.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-					<Item href="/MapObjects/Dungeon/Urunir.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Dungeon/Kelodin.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Dungeon/Raelag.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Dungeon/Shadwyn.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Dungeon/Sephinroth.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Dungeon/Kastore.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 				</HeroPool>
 				<Dwellings>
 					<Item href="/MapObjects/Dungeon/Battle_Academy.xdb#xpointer(/AdvMapDwellingShared)"/>
@@ -1602,6 +1675,51 @@
 				</Mines>
 				<AbandonedMine href="/MapObjects/Abandoned_Mine.(AdvMapAbanMineShared).xdb#xpointer(/AdvMapAbanMineShared)"/>
 				<NewBuffBuildings/>
+				<RaceColor>
+					<x>0.733333</x>
+					<y>0.137255</y>
+					<z>0.988235</z>
+				</RaceColor>
+				<PointLightParams>
+					<ZoneRadius>20</ZoneRadius>
+					<MinDist>7</MinDist>
+					<zMin>3</zMin>
+					<zMax>3</zMax>
+					<LightRadiusMin>10</LightRadiusMin>
+					<LightRadiusMax>10</LightRadiusMax>
+					<Colors>
+						<Item>
+							<x>0.5</x>
+							<y>0.5</y>
+							<z>1</z>
+						</Item>
+						<Item>
+							<x>0.6</x>
+							<y>0.35</y>
+							<z>1</z>
+						</Item>						
+						<Item>
+							<x>0</x>
+							<y>0.5</y>
+							<z>0.5</z>
+						</Item>
+						<Item>
+							<x>0</x>
+							<y>1</y>
+							<z>1</z>
+						</Item>						
+						<Item>
+							<x>0.5</x>
+							<y>0.5</y>
+							<z>0.75</z>
+						</Item>
+						<Item>
+							<x>0</x>
+							<y>0.5</y>
+							<z>0.75</z>
+						</Item>
+					</Colors>
+				</PointLightParams>
 			</obj>
 		</Item>
 		<Item>
@@ -1611,14 +1729,24 @@
 				<Name href="Necropolis.txt"/>
 				<TownProto href="/MapObjects/Necromancy.(AdvMapTownShared).xdb#xpointer(/AdvMapTownShared)"/>
 				<HeroPool>
-					<Item href="/MapObjects/Necropolis/Aberrar.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-					<Item href="/MapObjects/Necropolis/Effig.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 					<Item href="/MapObjects/Necropolis/Gles.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-					<Item href="/MapObjects/Necropolis/Muscip.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-					<Item href="/MapObjects/Necropolis/Nemor.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 					<Item href="/MapObjects/Necropolis/Pelt.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 					<Item href="/MapObjects/Necropolis/Straker.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-					<Item href="/MapObjects/Necropolis/Tamika.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Necropolis/Ornella_necro.xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Necropolis/Tamika.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>	
+					<Item href="/MapObjects/Necropolis/Xerxon.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>			
+					<Item href="/MapObjects/Necropolis/Nemor.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Necropolis/Muscip.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Necropolis/Aislinn.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>	
+					<Item href="/MapObjects/Necropolis/Giovanni.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Necropolis/Nimbus.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Necropolis/Archilus.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>		
+					<Item href="/MapObjects/Necropolis/Aberrar.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>		
+					<Item href="/MapObjects/Necropolis/Effig.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Necropolis/A2_Arantir.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Necropolis/Thant.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Necropolis/Sandro.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>		
+					<Item href="/MapObjects/Necropolis/Vidomina.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 				</HeroPool>
 				<Dwellings>
 					<Item href="/MapObjects/Necropolis/Graveyard.(AdvMapDwellingShared).xdb#xpointer(/AdvMapDwellingShared)"/>
@@ -1968,6 +2096,20 @@
 				</Mines>
 				<AbandonedMine href="/MapObjects/Abandoned_Mine.(AdvMapAbanMineShared).xdb#xpointer(/AdvMapAbanMineShared)"/>
 				<NewBuffBuildings/>
+				<RaceColor>
+					<x>0.560784</x>
+					<y>0.360784</y>
+					<z>0.439216</z>
+				</RaceColor>
+				<PointLightParams>
+					<ZoneRadius>20</ZoneRadius>
+					<MinDist>7</MinDist>
+					<zMin>3</zMin>
+					<zMax>3</zMax>
+					<LightRadiusMin>10</LightRadiusMin>
+					<LightRadiusMax>10</LightRadiusMax>
+					<Colors/>
+				</PointLightParams>
 			</obj>
 		</Item>
 		<Item>
@@ -1978,13 +2120,23 @@
 				<TownProto href="/MapObjects/Inferno.(AdvMapTownShared).xdb#xpointer(/AdvMapTownShared)"/>
 				<HeroPool>
 					<Item href="/MapObjects/Inferno/Calid.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-					<Item href="/MapObjects/Inferno/Deleb.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-					<Item href="/MapObjects/Inferno/Efion.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-					<Item href="/MapObjects/Inferno/Grok.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 					<Item href="/MapObjects/Inferno/Jazaz.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 					<Item href="/MapObjects/Inferno/Marder.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Inferno/Harkenraz.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>	
+					<Item href="/MapObjects/Inferno/Calh.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>		
+					<Item href="/MapObjects/Inferno/Sheltem.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>			
+					<Item href="/MapObjects/Inferno/Efion.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Inferno/Grok.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 					<Item href="/MapObjects/Inferno/Nymus.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 					<Item href="/MapObjects/Inferno/Oddrema.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Inferno/Ash.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Inferno/Malustar.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>		
+					<Item href="/MapObjects/Inferno/Agrael.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Inferno/Biara.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Inferno/Sovereign2.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Inferno/Zydar.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Inferno/Deleb.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Inferno/Calid2.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>		
 				</HeroPool>
 				<Dwellings>
 					<Item href="/MapObjects/Inferno/ImpCrucible.(AdvMapDwellingShared).xdb#xpointer(/AdvMapDwellingShared)"/>
@@ -2338,6 +2490,20 @@
 				</Mines>
 				<AbandonedMine href="/MapObjects/Abandoned_Mine.(AdvMapAbanMineShared).xdb#xpointer(/AdvMapAbanMineShared)"/>
 				<NewBuffBuildings/>
+				<RaceColor>
+					<x>0.996078</x>
+					<y>0.0627451</y>
+					<z>0.0862745</z>
+				</RaceColor>
+				<PointLightParams>
+					<ZoneRadius>20</ZoneRadius>
+					<MinDist>7</MinDist>
+					<zMin>3</zMin>
+					<zMax>3</zMax>
+					<LightRadiusMin>10</LightRadiusMin>
+					<LightRadiusMax>10</LightRadiusMax>
+					<Colors/>
+				</PointLightParams>
 			</obj>
 		</Item>
 		<Item>
@@ -2347,14 +2513,24 @@
 				<Name href="Fortress.txt"/>
 				<TownProto href="/MapObjects/Fortress.(AdvMapTownShared).xdb#xpointer(/AdvMapTownShared)"/>
 				<HeroPool>
-					<Item href="/MapObjects/Dwarves/Bersy.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-					<Item href="/MapObjects/Dwarves/Brand.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-					<Item href="/MapObjects/Dwarves/Egil.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 					<Item href="/MapObjects/Dwarves/Ingvar.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-					<Item href="/MapObjects/Dwarves/Ottar.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Dwarves/Rolf.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Dwarves/Wulfstan.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Dwarves/Tazar.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Dwarves/Maximus.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>		
 					<Item href="/MapObjects/Dwarves/Skeggy.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 					<Item href="/MapObjects/Dwarves/Una.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Dwarves/KingTolghar.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Dwarves/Bersy.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Dwarves/Hangvul2.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Dwarves/Ufretin.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>			
+					<Item href="/MapObjects/Dwarves/Ottar.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Dwarves/Brand.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Dwarves/Egil.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 					<Item href="/MapObjects/Dwarves/Vegeyr.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Dwarves/Hangvul.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Dwarves/Bart.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Dwarves/Vilma.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 				</HeroPool>
 				<Dwellings>
 					<Item href="/MapObjects/Dwarven/DwarvenDwelling.(AdvMapDwellingShared).xdb#xpointer(/AdvMapDwellingShared)"/>
@@ -2664,6 +2840,20 @@
 				</Mines>
 				<AbandonedMine href="/MapObjects/Abandoned_Mine.(AdvMapAbanMineShared).xdb#xpointer(/AdvMapAbanMineShared)"/>
 				<NewBuffBuildings/>
+				<RaceColor>
+					<x>1</x>
+					<y>0.392157</y>
+					<z>0.101961</z>
+				</RaceColor>
+				<PointLightParams>
+					<ZoneRadius>20</ZoneRadius>
+					<MinDist>7</MinDist>
+					<zMin>3</zMin>
+					<zMax>3</zMax>
+					<LightRadiusMin>10</LightRadiusMin>
+					<LightRadiusMax>10</LightRadiusMax>
+					<Colors/>
+				</PointLightParams>
 			</obj>
 		</Item>
 		<Item>
@@ -2673,14 +2863,26 @@
 				<Name href="Stronghold.txt"/>
 				<TownProto href="/MapObjects/Orc_Stronghold.(AdvMapTownShared).xdb#xpointer(/AdvMapTownShared)"/>
 				<HeroPool>
+					<Item href="/MapObjects/Stronghold/Hero8.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Stronghold/Hero4.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Stronghold/Gottai.xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Stronghold/Azar.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Stronghold/Matewa.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>		
+					<Item href="/MapObjects/Stronghold/Kunyak.xdb#xpointer(/AdvMapHeroShared)"/>
 					<Item href="/MapObjects/Stronghold/Hero1.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Stronghold/Hero9.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Stronghold/Crag.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Stronghold/Kraal.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>			
+					<Item href="/MapObjects/Stronghold/Hero5.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Stronghold/Hero6.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Stronghold/KujinMP.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Stronghold/Shiva.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Stronghold/Mokka.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>	
+					<Item href="/MapObjects/Stronghold/Hero7.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 					<Item href="/MapObjects/Stronghold/Hero2.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 					<Item href="/MapObjects/Stronghold/Hero3.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-					<Item href="/MapObjects/Stronghold/Hero4.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-					<Item href="/MapObjects/Stronghold/Hero6.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-					<Item href="/MapObjects/Stronghold/Hero7.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-					<Item href="/MapObjects/Stronghold/Hero8.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-					<Item href="/MapObjects/Stronghold/Hero9.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Stronghold/Zouleika.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<Item href="/MapObjects/Stronghold/Erika.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 				</HeroPool>
 				<Dwellings>
 					<Item href="/MapObjects/Orcs/OrcishDwelling01.(AdvMapDwellingShared).xdb#xpointer(/AdvMapDwellingShared)"/>
@@ -3026,6 +3228,20 @@
 				</Mines>
 				<AbandonedMine href="/MapObjects/Abandoned_Mine.(AdvMapAbanMineShared).xdb#xpointer(/AdvMapAbanMineShared)"/>
 				<NewBuffBuildings/>
+				<RaceColor>
+					<x>0.788235</x>
+					<y>0.643137</y>
+					<z>0.203922</z>
+				</RaceColor>
+				<PointLightParams>
+					<ZoneRadius>20</ZoneRadius>
+					<MinDist>7</MinDist>
+					<zMin>3</zMin>
+					<zMax>3</zMax>
+					<LightRadiusMin>10</LightRadiusMin>
+					<LightRadiusMax>10</LightRadiusMax>
+					<Colors/>
+				</PointLightParams>
 			</obj>
 		</Item>
 		<Item>
@@ -3069,16 +3285,23 @@
 					<WaterBottomTile/>
 					<WaterBottomTileStrenght>100</WaterBottomTileStrenght>
 					<OtherTiles/>
+					<WaterCoastTile/>
 				</Tiles>
 				<OneTileSmallBlockers/>
 				<OneTileSmallNonblockers/>
 				<OneTileBigObjects/>
 				<BigStatics/>
 				<Mountains/>
+				<OverLakeCenterObjects/>
+				<OverLakeOneTileRandomObjects/>
+				<OverTownCenterObjects/>
+				<OverTownOneTileRandomObjects/>
 				<ExtendedOneTileSmallBlockers/>
 				<ExtendedOneTileSmallNonblockers/>
 				<ExtendedOneTileBigObjects/>
 				<ExtendedBigStatics/>
+				<ExtendedAdditionalObjects1/>
+				<ExtendedAdditionalObjects2/>
 				<NewLuckMoraleBuildings/>
 				<NewShopBuildings/>
 				<NewResourceGivers/>
@@ -3088,6 +3311,20 @@
 				<Mines/>
 				<AbandonedMine/>
 				<NewBuffBuildings/>
+				<RaceColor>
+					<x>0</x>
+					<y>0</y>
+					<z>0</z>
+				</RaceColor>
+				<PointLightParams>
+					<ZoneRadius>20</ZoneRadius>
+					<MinDist>7</MinDist>
+					<zMin>3</zMin>
+					<zMax>3</zMax>
+					<LightRadiusMin>10</LightRadiusMin>
+					<LightRadiusMax>10</LightRadiusMax>
+					<Colors/>
+				</PointLightParams>
 			</obj>
 		</Item>
 	</objects>

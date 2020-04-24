@@ -27,8 +27,8 @@
 		</HorAllign>
 		<Size>
 			<First>
-				<x>33</x>
-				<y>33</y>
+				<x>27</x>
+				<y>27</y>
 			</First>
 			<Second>false</Second>
 		</Size>
@@ -53,7 +53,7 @@
 	<VisualStates>
 		<Item>
 			<Normal>
-				<Background href="Frame.(BackgroundSimpleScallingTexture).xdb#xpointer(/BackgroundSimpleScallingTexture)"/>
+				<Background/>
 				<Foreground/>
 				<TextString/>
 				<OnEnterSubState>
@@ -63,7 +63,7 @@
 				<TextFormat/>
 			</Normal>
 			<MouseOver>
-				<Background href="Frame.(BackgroundSimpleScallingTexture).xdb#xpointer(/BackgroundSimpleScallingTexture)"/>
+				<Background/>
 				<Foreground href="FrameHilight.(BackgroundSimpleScallingTexture).xdb#xpointer(/BackgroundSimpleScallingTexture)"/>
 				<TextString/>
 				<OnEnterSubState>
@@ -73,7 +73,7 @@
 				<TextFormat/>
 			</MouseOver>
 			<Pushed>
-				<Background href="FramePushed.(BackgroundSimpleScallingTexture).xdb#xpointer(/BackgroundSimpleScallingTexture)"/>
+				<Background/>
 				<Foreground/>
 				<TextString/>
 				<OnEnterSubState>
@@ -83,7 +83,7 @@
 				<TextFormat/>
 			</Pushed>
 			<Disabled>
-				<Background href="Frame.(BackgroundSimpleScallingTexture).xdb#xpointer(/BackgroundSimpleScallingTexture)"/>
+				<Background/>
 				<Foreground/>
 				<TextString/>
 				<OnEnterSubState>

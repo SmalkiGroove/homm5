@@ -5,7 +5,7 @@
 	<Name>Selection</Name>
 	<TooltipFileRef href=""/>
 	<Visible>false</Visible>
-	<Priority>6</Priority>
+	<Priority>5</Priority>
 	<GameMessageReactions/>
 	<Placement>
 		<Position>

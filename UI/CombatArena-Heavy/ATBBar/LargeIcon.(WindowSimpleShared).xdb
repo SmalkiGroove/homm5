@@ -32,8 +32,8 @@
 		</HorAllign>
 		<Size>
 			<First>
-				<x>128</x>
-				<y>128</y>
+				<x>96</x>
+				<y>96</y>
 			</First>
 			<Second>true</Second>
 		</Size>

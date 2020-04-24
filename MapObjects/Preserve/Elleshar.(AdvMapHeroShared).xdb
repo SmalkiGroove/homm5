@@ -29,17 +29,17 @@
 	<RazedStatic/>
 	<Icon128/>
 	<InternalName>Elleshar</InternalName>
-	<Class>HERO_CLASS_RANGER</Class>
+	<Class>HERO_CLASS_ENCHANTER</Class>
 	<Specialization>HERO_SPEC_TALENTED_WARRIOR</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
-		<SkillID>HERO_SKILL_AVENGER</SkillID>
+		<SkillID>HERO_SKILL_LEARNING</SkillID>
 	</PrimarySkill>
 	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Preserve/Talented_Warrior/Name.txt"/>
 	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Preserve/Talented_Warrior/Description.txt"/>
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Preserve/Talented_Warrior.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Preserve/Preserve_Vinrael_128x128.(Texture).xdb#xpointer(/Texture)"/>
-	<FaceTextureSmall href="/Textures/Icons/Heroes/Preserve/Preserve_Vinrael_128x128_64.(Texture).xdb#xpointer(/Texture)"/>
+	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/Ranger.(Character).xdb#xpointer(/Character)"/>
 	<HeroCharacterArenaMelee/>
 	<HeroCharacterAdventure href="/Characters/Heroes/Ranger_LOD.(Character).xdb#xpointer(/Character)"/>
@@ -50,19 +50,21 @@
 		<NameFileRef href="/Text/Game/Heroes/Persons/Preserve/Elleshar/Name.txt"/>
 		<BiographyFileRef href="/Text/Game/Heroes/Persons/Preserve/Elleshar/Bio.txt"/>
 		<Offence>0</Offence>
-		<Defence>2</Defence>
-		<Spellpower>1</Spellpower>
+		<Defence>1</Defence>
+		<Spellpower>2</Spellpower>
 		<Knowledge>2</Knowledge>
 		<skills>
 			<Item>
 				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_LEARNING</SkillID>
+				<SkillID>HERO_SKILL_SUMMONING_MAGIC</SkillID>
 			</Item>
 		</skills>
 		<perkIDs>
-			<Item>HERO_SKILL_INTELLIGENCE</Item>
+			<Item>HERO_SKILL_SCHOLAR</Item>
 		</perkIDs>
-		<spellIDs/>
+		<spellIDs>
+			<Item>SPELL_WASP_SWARM</Item>
+		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>
 		<AmmoCart>false</AmmoCart>

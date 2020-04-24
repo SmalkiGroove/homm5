@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Creature>
-	<AttackSkill>29</AttackSkill>
+	<AttackSkill>36</AttackSkill>
 	<DefenceSkill>27</DefenceSkill>
 	<Shots>0</Shots>
-	<MinDamage>40</MinDamage>
-	<MaxDamage>52</MaxDamage>
+	<MinDamage>25</MinDamage>
+	<MaxDamage>65</MaxDamage>
 	<Speed>5</Speed>
 	<Initiative>9</Initiative>
 	<Flying>false</Flying>
-	<Health>220</Health>
+	<Health>240</Health>
 	<KnownSpells>
 		<Item>
 			<Spell>SPELL_ABILITY_SWALLOW_GOBLIN</Spell>
@@ -18,8 +18,8 @@
 	<SpellPoints>0</SpellPoints>
 	<SpellPoints1>0</SpellPoints1>
 	<SpellPoints2>0</SpellPoints2>
-	<Exp>212</Exp>
-	<Power>4790</Power>
+	<Exp>750</Exp>
+	<Power>5000</Power>
 	<TimeToCommand>10</TimeToCommand>
 	<CreatureTier>7</CreatureTier>
 	<Upgrade>false</Upgrade>
@@ -33,11 +33,11 @@
 	<Cost>
 		<Wood>0</Wood>
 		<Ore>0</Ore>
-		<Mercury>1</Mercury>
+		<Mercury>2</Mercury>
 		<Crystal>0</Crystal>
 		<Sulfur>0</Sulfur>
 		<Gem>0</Gem>
-		<Gold>2900</Gold>
+		<Gold>3000</Gold>
 	</Cost>
 	<PresetPrice>0</PresetPrice>
 	<SubjectOfRandomGeneration>true</SubjectOfRandomGeneration>
@@ -55,5 +55,6 @@
 	<Abilities>
 		<Item>ABILITY_DEMON_RAGED</Item>
 		<Item>ABILITY_SWALLOW_GOBLIN</Item>
+		<Item>ABILITY_GOBLIN_THROWER</Item>
 	</Abilities>
 </Creature>

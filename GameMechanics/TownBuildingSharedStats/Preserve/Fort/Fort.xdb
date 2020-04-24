@@ -5,18 +5,18 @@
 	<Type>TB_FORT</Type>
 	<Upgrade>BLD_UPG_1</Upgrade>
 	<Cost>
-		<Wood>5</Wood>
-		<Ore>5</Ore>
+		<Wood>0</Wood>
+		<Ore>8</Ore>
 		<Mercury>0</Mercury>
 		<Crystal>0</Crystal>
 		<Sulfur>0</Sulfur>
 		<Gem>0</Gem>
-		<Gold>5000</Gold>
+		<Gold>500</Gold>
 	</Cost>
 	<ModObjectName>Fort</ModObjectName>
 	<dependencies/>
 	<Creature>CREATURE_UNKNOWN</Creature>
-	<DevLevelNeeded>6</DevLevelNeeded>
+	<DevLevelNeeded>3</DevLevelNeeded>
 	<UIObjectName>Fort</UIObjectName>
 	<UIStackPosition>0</UIStackPosition>
 	<Icon href="/UI/TownHall/preserve/128/fort1.xdb#xpointer(/Texture)"/>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Creature ObjectRecordID="1000035">
-	<AttackSkill>30</AttackSkill>
-	<DefenceSkill>30</DefenceSkill>
+	<AttackSkill>33</AttackSkill>
+	<DefenceSkill>31</DefenceSkill>
 	<Shots>0</Shots>
 	<MinDamage>45</MinDamage>
-	<MaxDamage>70</MaxDamage>
-	<Speed>9</Speed>
+	<MaxDamage>75</MaxDamage>
+	<Speed>10</Speed>
 	<Initiative>10</Initiative>
 	<Flying>true</Flying>
 	<Health>240</Health>
@@ -13,8 +13,8 @@
 	<SpellPoints>0</SpellPoints>
 	<SpellPoints1>0</SpellPoints1>
 	<SpellPoints2>0</SpellPoints2>
-	<Exp>353</Exp>
-	<Power>6443</Power>
+	<Exp>1000</Exp>
+	<Power>6000</Power>
 	<TimeToCommand>10</TimeToCommand>
 	<CreatureTier>7</CreatureTier>
 	<Upgrade>true</Upgrade>
@@ -30,9 +30,9 @@
 		<Ore>0</Ore>
 		<Mercury>0</Mercury>
 		<Crystal>0</Crystal>
-		<Sulfur>2</Sulfur>
+		<Sulfur>3</Sulfur>
 		<Gem>0</Gem>
-		<Gold>3700</Gold>
+		<Gold>4500</Gold>
 	</Cost>
 	<SubjectOfRandomGeneration>true</SubjectOfRandomGeneration>
 	<MonsterShared href="/MapObjects/Dungeon/Black_Dragon.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
@@ -46,5 +46,6 @@
 	<Abilities>
 		<Item>ABILITY_IMMUNITY_TO_MAGIC</Item>
 		<Item>ABILITY_FIRE_BREATH</Item>
+		<Item>ABILITY_UNLIMITED_RETALIATION</Item>
 	</Abilities>
 </Creature>

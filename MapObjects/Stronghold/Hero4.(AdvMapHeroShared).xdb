@@ -32,14 +32,14 @@
 	<Icon128 href="/UI/H5A2/Icons/Heroes/Portrets128x128/Stronghold_Gombath.(Texture).xdb#xpointer(/Texture)"/>
 	<InternalName>Hero4</InternalName>
 	<Class>HERO_CLASS_BARBARIAN</Class>
-	<Specialization>HERO_SPEC_ORC_ELDER</Specialization>
+	<Specialization>HERO_SPEC_CENTAUR_MISTRESS</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_ADVANCED</Mastery>
 		<SkillID>HERO_SKILL_DEMONIC_RAGE</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Stronghold/OrcElder/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Stronghold/OrcElder/Description.txt"/>
-	<SpecializationIcon href="/UI/H5A2/Icons/Heroes_Specializations/Orc_Elder.(Texture).xdb#xpointer(/Texture)"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Stronghold/CentaurMistress/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Stronghold/CentaurMistress/Description.txt"/>
+	<SpecializationIcon href="/UI/H5A2/Icons/Heroes_Specializations/Centaur_Mistress.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/UI/H5A2/Icons/Heroes/Portrets128x128/Stronghold_Gombath.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/H5A2/OrcWarrior_Hero.(Character).xdb#xpointer(/Character)"/>
@@ -53,16 +53,16 @@
 		<BiographyFileRef href="/Text/Game/Heroes/Persons/Stronghold/Hero4/Bio.txt"/>
 		<Offence>3</Offence>
 		<Defence>0</Defence>
-		<Spellpower>0</Spellpower>
+		<Spellpower>1</Spellpower>
 		<Knowledge>1</Knowledge>
 		<skills/>
 		<perkIDs>
-			<Item>HERO_SKILL_POWERFULL_BLOW</Item>
+			<Item>HERO_SKILL_MEMORY_OF_OUR_BLOOD</Item>
 		</perkIDs>
 		<spellIDs/>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>
-		<AmmoCart>false</AmmoCart>
+		<AmmoCart>true</AmmoCart>
 		<FavoriteEnemies/>
 		<TalismanLevel>0</TalismanLevel>
 	</Editable>

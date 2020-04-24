@@ -29,17 +29,17 @@
 	<RazedStatic/>
 	<Icon128/>
 	<InternalName>Ferigl</InternalName>
-	<Class>HERO_CLASS_WARLOCK</Class>
+	<Class>HERO_CLASS_BEASTMASTER</Class>
 	<Specialization>HERO_SPEC_RIDERS</Specialization>
 	<PrimarySkill>
-		<Mastery>MASTERY_BASIC</Mastery>
-		<SkillID>HERO_SKILL_INVOCATION</SkillID>
+		<Mastery>MASTERY_ADVANCED</Mastery>
+		<SkillID>HERO_SKILL_LEADERSHIP</SkillID>
 	</PrimarySkill>
 	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Dungeon/Lizard_Breeder/Name.txt"/>
 	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Dungeon/Lizard_Breeder/Description.txt"/>
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Dungeon/Lizard_Breeder.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Dungeon/Dungeon_Sorgal_128x128.(Texture).xdb#xpointer(/Texture)"/>
-	<FaceTextureSmall href="/Textures/Icons/Heroes/Dungeon/Dungeon_Sorgal_128x128_64.(Texture).xdb#xpointer(/Texture)"/>
+	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/Warlock.(Character).xdb#xpointer(/Character)"/>
 	<HeroCharacterArenaMelee/>
 	<HeroCharacterAdventure href="/Characters/Heroes/Warlock_LOD.(Character).xdb#xpointer(/Character)"/>
@@ -49,24 +49,17 @@
 	<Editable>
 		<NameFileRef href="/Text/Game/Heroes/Persons/Dungeon/Ferigl/Name.txt"/>
 		<BiographyFileRef href="/Text/Game/Heroes/Persons/Dungeon/Ferigl/Bio.txt"/>
-		<Offence>1</Offence>
-		<Defence>0</Defence>
-		<Spellpower>3</Spellpower>
+		<Offence>2</Offence>
+		<Defence>1</Defence>
+		<Spellpower>1</Spellpower>
 		<Knowledge>1</Knowledge>
-		<skills>
-			<Item>
-				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_OFFENCE</SkillID>
-			</Item>
-		</skills>
+		<skills/>
 		<perkIDs>
-			<Item>HERO_SKILL_FRENZY</Item>
+			<Item>HERO_SKILL_RECRUITMENT</Item>
 		</perkIDs>
-		<spellIDs>
-			<Item>SPELL_HASTE</Item>
-		</spellIDs>
+		<spellIDs/>
 		<Ballista>false</Ballista>
-		<FirstAidTent>false</FirstAidTent>
+		<FirstAidTent>true</FirstAidTent>
 		<AmmoCart>false</AmmoCart>
 		<FavoriteEnemies/>
 	</Editable>

@@ -5,12 +5,12 @@
 	<Type>TB_DWELLING_7</Type>
 	<Upgrade>BLD_UPG_2</Upgrade>
 	<Cost>
-		<Wood>5</Wood>
-		<Ore>5</Ore>
+		<Wood>0</Wood>
+		<Ore>30</Ore>
 		<Mercury>0</Mercury>
-		<Crystal>10</Crystal>
+		<Crystal>0</Crystal>
 		<Sulfur>0</Sulfur>
-		<Gem>10</Gem>
+		<Gem>30</Gem>
 		<Gold>10000</Gold>
 	</Cost>
 	<ModObjectName>ForestNest</ModObjectName>

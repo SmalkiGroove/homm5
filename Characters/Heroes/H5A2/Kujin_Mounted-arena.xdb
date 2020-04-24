@@ -18,6 +18,10 @@
 			<Anim href="Kujin_Mounted-arena-stir00.xdb#xpointer(/BasicSkelAnim)"/>
 		</Item>
 		<Item>
+			<Kind>rangeattack</Kind>
+			<Anim href="Kujin_Mounted-arena-cast.xdb#xpointer(/BasicSkelAnim)"/>			
+		</Item>
+		<Item>
 			<Kind>strike</Kind>
 			<Anim href="Kujin_Mounted-arena-strike.xdb#xpointer(/BasicSkelAnim)"/>
 		</Item>

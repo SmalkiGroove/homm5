@@ -5,13 +5,13 @@
 	<Type>TB_DWELLING_4</Type>
 	<Upgrade>BLD_UPG_2</Upgrade>
 	<Cost>
-		<Wood>0</Wood>
-		<Ore>0</Ore>
-		<Mercury>5</Mercury>
-		<Crystal>3</Crystal>
-		<Sulfur>5</Sulfur>
-		<Gem>3</Gem>
-		<Gold>5000</Gold>
+		<Wood>4</Wood>
+		<Ore>8</Ore>
+		<Mercury>10</Mercury>
+		<Crystal>0</Crystal>
+		<Sulfur>0</Sulfur>
+		<Gem>2</Gem>
+		<Gold>1500</Gold>
 	</Cost>
 	<ModObjectName>hallofsigns</ModObjectName>
 	<dependencies>

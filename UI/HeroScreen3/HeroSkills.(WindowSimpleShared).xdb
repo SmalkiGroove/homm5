@@ -10,6 +10,8 @@
 		<Item href="Skills/Cell_4.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		<Item href="Skills/Cell_5.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		<Item href="Skills/Cell_6.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
+		<Item href="Skills/Cell_7.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
+		<Item href="Skills/Cell_8.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		<Item href="Skills/Racial_1.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		<Item href="Skills/Racial_2.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		<Item href="Skills/Racial_3.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
@@ -18,6 +20,7 @@
 		<Item href="Skills/Racial_Desc.(WindowStaticText).xdb#xpointer(/WindowStaticText)"/>
 		<Item href="SkillSelection.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		<Item href="TableSkillSelection.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
+		<Item href="/UI/Doc/Skills/Button.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>		
 	</Children>
 	<Background/>
 	<Foreground/>

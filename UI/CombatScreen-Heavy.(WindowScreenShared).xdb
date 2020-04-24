@@ -2,27 +2,33 @@
 <WindowScreenShared ObjectRecordID="40">
 	<Crap>false</Crap>
 	<Children>
-		<Item href="CombatScreen-Heavy/OnJog-AtbToggle.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
-		<Item href="CombatScreen-Heavy/OnJog-AutoCombat.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
-		<Item href="CombatScreen-Heavy/OnJog-Flee.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
-		<Item href="CombatScreen-Heavy/OnJog-Menu.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
-		<Item href="CombatScreen-Heavy/OnJog-Special.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
-		<Item href="CombatScreen-Heavy/OnJog-Spellbook.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
-		<Item href="CombatArena-Heavy/ATBBar/ATBBar.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
-		<Item href="CombatScreen-Heavy/OnJog-Defend.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
 		<Item href="CombatArena-Heavy/Jogdial.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
-		<Item href="CombatScreen-Heavy/OnJog-StartCombat.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
-		<Item href="CombatScreen-Heavy/OnJog-NextCreature.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="CombatArena-Heavy/JogDial/OnJog-AtbToggle.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="CombatArena-Heavy/JogDial/OnJog-AtbToggle2.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="CombatArena-Heavy/JogDial/OnJog-AutoCombat.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="CombatArena-Heavy/JogDial/OnJog-Flee.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="CombatArena-Heavy/JogDial/OnJog-Menu.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="CombatArena-Heavy/JogDial/OnJog-AutoD.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="CombatArena-Heavy/JogDial/OnJog-FleeD.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="CombatArena-Heavy/JogDial/OnJog-MenuD.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="CombatArena-Heavy/JogDial/OnJog-Special.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="CombatArena-Heavy/JogDial/OnJog-Spellbook.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="CombatArena-Heavy/JogDial/OnJog-Defend.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="CombatArena-Heavy/JogDial/OnJog-Wait.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="CombatArena-Heavy/JogDial/OnJog-StartCombat.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="CombatArena-Heavy/JogDial/OnJog-NextCreature.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="CombatArena-Heavy/ATBBar/ATBBar.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
+		<Item href="CombatArena-Heavy/DialMisc.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		<Item href="CombatArena/Face.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		<Item href="CombatArena-Heavy/Prediction.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		<Item href="CombatArena-Heavy/PlacementBar.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		<Item href="CombatArena-Heavy/CombatLog/CombatLog.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
+		<Item href="CombatArena-Heavy/CombatLog/Rage.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		<Item href="Common/Creatures/DragIcon.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		<Item href="CombatArena-Heavy/CursorPrediction.(WindowTextView).xdb#xpointer(/WindowTextView)"/>
 		<Item href="CombatScreen-Heavy/TacticPhaseMarker.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		<Item href="CombatArena-Heavy/RunesBar/RunesBar.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		<Item href="RunesBarSnapBottomPlace.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
-		<Item href="CombatScreen-Heavy/OnJog-Wait.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
 	</Children>
 	<Background/>
 	<Foreground/>

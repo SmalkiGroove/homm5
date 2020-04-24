@@ -6,12 +6,12 @@
 	<Upgrade>BLD_UPG_2</Upgrade>
 	<Cost>
 		<Wood>0</Wood>
-		<Ore>20</Ore>
-		<Mercury>10</Mercury>
-		<Crystal>10</Crystal>
+		<Ore>30</Ore>
+		<Mercury>30</Mercury>
+		<Crystal>0</Crystal>
 		<Sulfur>0</Sulfur>
 		<Gem>0</Gem>
-		<Gold>11000</Gold>
+		<Gold>10000</Gold>
 	</Cost>
 	<ModObjectName>Dwelling_7</ModObjectName>
 	<dependencies>

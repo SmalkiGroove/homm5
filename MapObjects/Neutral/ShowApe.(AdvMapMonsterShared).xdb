@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AdvMapMonsterShared>
-	<Model href="/_(Model)/Creatures/Haven/Peasant_LOD.(Model).xdb#xpointer(/Model)"/>
-	<AnimSet href="/_(AnimSet)/Creatures/Haven/Peasant-adv.(AnimSet).xdb#xpointer(/AnimSet)"/>
+	<Model href="/_(Model)/Creatures/Preserve/Firebird_LOD.(Model).xdb#xpointer(/Model)"/>
+	<AnimSet href="/_(AnimSet)/Creatures/Preserve/Firebird-adv.(AnimSet).xdb#xpointer(/AnimSet)"/>
 	<blockedTiles/>
 	<holeTiles/>
 	<activeTiles>
@@ -18,7 +18,7 @@
 	<Effect/>
 	<EffectWhenOwned/>
 	<messagesFileRef>
-		<Item href="/Text/Game/Creatures/Neutrals/SnowApe/name.txt"/>
+		<Item href="/Text/Game/Creatures/Neutrals/Firebird.txt"/>
 	</messagesFileRef>
 	<WaterBased>false</WaterBased>
 	<ApplyHeroTrace>false</ApplyHeroTrace>

@@ -34,7 +34,7 @@
 	<Class>HERO_CLASS_BARBARIAN</Class>
 	<Specialization>HERO_SPEC_WAR_LEADER</Specialization>
 	<PrimarySkill>
-		<Mastery>MASTERY_ADVANCED</Mastery>
+		<Mastery>MASTERY_BASIC</Mastery>
 		<SkillID>HERO_SKILL_DEMONIC_RAGE</SkillID>
 	</PrimarySkill>
 	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Stronghold/WarLeader/Name.txt"/>
@@ -61,14 +61,13 @@
 				<SkillID>HERO_SKILL_VOICE</SkillID>
 			</Item>
 		</skills>
-		<perkIDs/>
-		<spellIDs>
-			<Item>SPELL_WARCRY_RALLING_CRY</Item>
-			<Item>SPELL_WARCRY_WORD_OF_THE_CHIEF</Item>
-		</spellIDs>
+		<perkIDs>
+			<Item>HERO_SKILL_VOICE_TRAINING</Item>
+		</perkIDs>
+		<spellIDs/>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>
-		<AmmoCart>false</AmmoCart>
+		<AmmoCart>true</AmmoCart>
 		<FavoriteEnemies/>
 		<TalismanLevel>0</TalismanLevel>
 	</Editable>
@@ -78,7 +77,7 @@
 	<Trace href="/MapObjects/_(AdvMapHeroTraceSet)/Barbarian.xdb#xpointer(/AdvMapHeroTraceSet)"/>
 	<RaceTraitIcon/>
 	<RaceTraitDescFileRef href=""/>
-	<ScenarioHero>true</ScenarioHero>
+	<ScenarioHero>false</ScenarioHero>
 	<AdventureMusic href="/Sounds/_(Music)/AdvMap-Heroes/a2-Gotai.(Music).xdb#xpointer(/Music)"/>
 	<HideInEditor>false</HideInEditor>
 	<PresetMinimalAttributes>

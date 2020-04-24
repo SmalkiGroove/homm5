@@ -5,13 +5,13 @@
 	<Name>LargeIcon</Name>
 	<TooltipFileRef href=""/>
 	<Visible>true</Visible>
-	<Priority>0</Priority>
+	<Priority>5</Priority>
 	<GameMessageReactions/>
 	<Placement>
 		<Position>
 			<First>
-				<x>17</x>
-				<y>16</y>
+				<x>0</x>
+				<y>4</y>
 			</First>
 			<Second>true</Second>
 		</Position>

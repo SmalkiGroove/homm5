@@ -27,37 +27,44 @@
 	<FlyPassable>true</FlyPassable>
 	<AdventureSoundEffect/>
 	<RazedStatic/>
-	<Icon128/>
+	<Icon128 href="/UI/H5A1/Icons/Heroes/Portrets128x128/King_Tolghar.(Texture).xdb#xpointer(/Texture)"/>
 	<InternalName>KingTolghar</InternalName>
-	<Class>HERO_CLASS_RUNEMAGE</Class>
-	<Specialization>HERO_SPEC_MOUNTAIN_KING</Specialization>
+	<Class>HERO_CLASS_RUNEMAGEA</Class>
+	<Specialization>HERO_SPEC_EVASIVE</Specialization>
 	<PrimarySkill>
-		<Mastery>MASTERY_ADVANCED</Mastery>
+		<Mastery>MASTERY_BASIC</Mastery>
 		<SkillID>HERO_SKILL_RUNELORE</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Fortress/Mountain_King/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Fortress/Mountain_King/Description.txt"/>
-	<SpecializationIcon href="/UI/H5A1/Icons/Abilites/Heroes_Abillites/128x128/Mountain_King.(Texture).xdb#xpointer(/Texture)"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Dungeon/Evasive2/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Dungeon/Evasive2/Description.txt"/>
+	<SpecializationIcon href="/UI/H5A1/Icons/Abilites/Skills/128x128/Defencive_Formation.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/UI/H5A1/Icons/Heroes/Portrets128x128/King_Tolghar.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/Tolghar.(Character).xdb#xpointer(/Character)"/>
 	<HeroCharacterArenaMelee href="/Characters/Heroes/Tolghar_Strike.(Character).xdb#xpointer(/Character)"/>
 	<HeroCharacterAdventure href="/Characters/Heroes/Tolghar_LOD.(Character).xdb#xpointer(/Character)"/>
 	<HeroIndividualCamera/>
-	<CombatVisual href="/GameMechanics/CreatureVisual/Heroes/Runemage.xdb#xpointer(/CreatureVisual)"/>
+	<CombatVisual href="/GameMechanics/CreatureVisual/Heroes/KingTolghar.xdb#xpointer(/CreatureVisual)"/>
 	<TownType>TOWN_FORTRESS</TownType>
 	<Editable>
 		<NameFileRef href="/Text/Game/Heroes/Persons/Dwarves/King_Tolghar/Name.txt"/>
 		<BiographyFileRef href="/Text/Game/Heroes/Persons/Dwarves/King_Tolghar/Bio.txt"/>
 		<Offence>0</Offence>
-		<Defence>1</Defence>
+		<Defence>2</Defence>
 		<Spellpower>2</Spellpower>
-		<Knowledge>2</Knowledge>
-		<skills/>
+		<Knowledge>1</Knowledge>
+		<skills>
+			<Item>
+				<Mastery>MASTERY_BASIC</Mastery>
+				<SkillID>HERO_SKILL_DEFENCE</SkillID>
+			</Item>
+		</skills>
 		<perkIDs>
-			<Item>HERO_SKILL_STRONG_RUNE</Item>
+			<Item>HERO_SKILL_EVASION</Item>
 		</perkIDs>
-		<spellIDs/>
+		<spellIDs>
+			<Item>SPELL_DEFLECT_ARROWS</Item>
+		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>
 		<AmmoCart>false</AmmoCart>
@@ -69,7 +76,7 @@
 	<Trace href="/MapObjects/_(AdvMapHeroTraceSet)/Fortress.(AdvMapHeroTraceSet).xdb#xpointer(/AdvMapHeroTraceSet)"/>
 	<RaceTraitIcon/>
 	<RaceTraitDescFileRef href=""/>
-	<ScenarioHero>true</ScenarioHero>
+	<ScenarioHero>false</ScenarioHero>
 	<AdventureMusic/>
 	<HideInEditor>false</HideInEditor>
 </AdvMapHeroShared>

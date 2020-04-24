@@ -6,10 +6,10 @@
 	<Upgrade>BLD_UPG_2</Upgrade>
 	<Cost>
 		<Wood>0</Wood>
-		<Ore>10</Ore>
+		<Ore>30</Ore>
 		<Mercury>0</Mercury>
-		<Crystal>0</Crystal>
-		<Sulfur>10</Sulfur>
+		<Crystal>30</Crystal>
+		<Sulfur>0</Sulfur>
 		<Gem>0</Gem>
 		<Gold>10000</Gold>
 	</Cost>

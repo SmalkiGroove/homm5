@@ -4,23 +4,27 @@
 		<Item>
 			<Kind>attack00</Kind>
 			<Anim href="FireBird-arena-attack00.xdb#xpointer(/BasicSkelAnim)"/>
-		</Item>
+		</Item>	
 		<Item>
 			<Kind>death</Kind>
 			<Anim href="FireBird-arena-death.xdb#xpointer(/BasicSkelAnim)"/>
 		</Item>
+		<Item>
+			<Kind>happy</Kind>
+			<Anim href="FireBird-arena-happy.xdb#xpointer(/BasicSkelAnim)"/>
+		</Item>		
 		<Item>
 			<Kind>hit</Kind>
 			<Anim href="FireBird-arena-hit.xdb#xpointer(/BasicSkelAnim)"/>
 		</Item>
 		<Item>
 			<Kind>idle00</Kind>
-			<Anim href="FireBird-arena-idle00.xdb#xpointer(/BasicSkelAnim)"/>
+			<Anim href="Firebird-arena-idle00.xdb#xpointer(/BasicSkelAnim)"/>
 		</Item>
 		<Item>
 			<Kind>move</Kind>
 			<Anim href="FireBird-arena-move.xdb#xpointer(/BasicSkelAnim)"/>
-		</Item>
+		</Item>			
 	</animations>
 	<ExpSrcScene href="/models/Creatures/Preserve/FireBird.mb"/>
 	<ExpSrcClipFolder href="/Animations/Creatures/PRESERVE/FireBird/Clip/"/>

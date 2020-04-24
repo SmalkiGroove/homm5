@@ -16,20 +16,20 @@
 	<TrainedCost>9</TrainedCost>
 	<damage>
 		<Item>
+			<Base>30</Base>
+			<PerPower>15</PerPower>
+		</Item>
+		<Item>
+			<Base>40</Base>
+			<PerPower>20</PerPower>
+		</Item>
+		<Item>
+			<Base>50</Base>
+			<PerPower>25</PerPower>
+		</Item>
+		<Item>
 			<Base>60</Base>
-			<PerPower>12</PerPower>
-		</Item>
-		<Item>
-			<Base>72</Base>
-			<PerPower>12</PerPower>
-		</Item>
-		<Item>
-			<Base>84</Base>
-			<PerPower>12</PerPower>
-		</Item>
-		<Item>
-			<Base>96</Base>
-			<PerPower>12</PerPower>
+			<PerPower>30</PerPower>
 		</Item>
 	</damage>
 	<duration/>

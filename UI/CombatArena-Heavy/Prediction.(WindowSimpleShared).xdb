@@ -3,9 +3,14 @@
 	<Crap>false</Crap>
 	<Children>
 		<Item href="PredictionText.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
-		<Item href="LogHider.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="RageShow1.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="RageShow2.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="RageHide.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="LogShow.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="LogHide.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="UpperPanel.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 	</Children>
-	<Background/>
+	<Background href="UpperPanel.(BackgroundSimpleTexture).xdb#xpointer(/BackgroundSimpleTexture)"/>
 	<Foreground/>
 	<Flags>
 		<Transparent>false</Transparent>
@@ -28,8 +33,8 @@
 		</HorAllign>
 		<Size>
 			<First>
-				<x>604</x>
-				<y>43</y>
+				<x>0</x>
+				<y>0</y>
 			</First>
 			<Second>false</Second>
 		</Size>
@@ -50,5 +55,5 @@
 	</Placement>
 	<ActiveArea/>
 	<IgnoreDblClick>false</IgnoreDblClick>
-	<ActiveMask/>
+	<ActiveMask href=""/>
 </WindowSimpleShared>

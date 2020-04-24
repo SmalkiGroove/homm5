@@ -236,6 +236,6 @@
 	</Patterns>
 	<RotateToMainTarget>false</RotateToMainTarget>
 	<DamageToMainTargetCoefficient>1</DamageToMainTargetCoefficient>
-	<DamageToOtherTargetsCoefficient>1</DamageToOtherTargetsCoefficient>
+	<DamageToOtherTargetsCoefficient>0.75</DamageToOtherTargetsCoefficient>
 	<DamageAll>false</DamageAll>
 </PatternAttack>

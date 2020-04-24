@@ -5,13 +5,13 @@
 	<Type>TB_DWELLING_3</Type>
 	<Upgrade>BLD_UPG_2</Upgrade>
 	<Cost>
-		<Wood>5</Wood>
+		<Wood>3</Wood>
 		<Ore>5</Ore>
-		<Mercury>0</Mercury>
-		<Crystal>0</Crystal>
-		<Sulfur>5</Sulfur>
+		<Mercury>5</Mercury>
+		<Crystal>3</Crystal>
+		<Sulfur>0</Sulfur>
 		<Gem>0</Gem>
-		<Gold>2500</Gold>
+		<Gold>1000</Gold>
 	</Cost>
 	<ModObjectName>GolemForge</ModObjectName>
 	<dependencies>

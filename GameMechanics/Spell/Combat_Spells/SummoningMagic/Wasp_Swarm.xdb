@@ -16,37 +16,37 @@
 	<damage>
 		<Item>
 			<Base>10</Base>
-			<PerPower>2</PerPower>
-		</Item>
-		<Item>
-			<Base>20</Base>
 			<PerPower>4</PerPower>
 		</Item>
 		<Item>
+			<Base>20</Base>
+			<PerPower>8</PerPower>
+		</Item>
+		<Item>
 			<Base>30</Base>
-			<PerPower>6</PerPower>
+			<PerPower>12</PerPower>
 		</Item>
 		<Item>
 			<Base>40</Base>
-			<PerPower>8</PerPower>
+			<PerPower>16</PerPower>
 		</Item>
 	</damage>
 	<duration>
 		<Item>
 			<Base>0</Base>
-			<PerPower>0</PerPower>
+			<PerPower>0.01</PerPower>
 		</Item>
 		<Item>
 			<Base>0.2</Base>
-			<PerPower>0</PerPower>
+			<PerPower>0.01</PerPower>
 		</Item>
 		<Item>
 			<Base>0.4</Base>
-			<PerPower>0</PerPower>
+			<PerPower>0.01</PerPower>
 		</Item>
 		<Item>
 			<Base>0.6</Base>
-			<PerPower>0</PerPower>
+			<PerPower>0.01</PerPower>
 		</Item>
 	</duration>
 	<sSpellCost>

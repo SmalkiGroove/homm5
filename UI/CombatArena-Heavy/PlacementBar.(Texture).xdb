@@ -3,17 +3,17 @@
 	<SrcName href="/UI/Tactics/back.tga"/>
 	<DestName href="PlacementBar.(Texture).dds"/>
 	<Type>REGULAR</Type>
-	<ConversionType>CONVERT_TRANSPARENT</ConversionType>
+	<ConversionType>CONVERT_ORDINARY</ConversionType>
 	<AddrType>CLAMP</AddrType>
-	<Format>TF_DXT3</Format>
-	<Width>1024</Width>
-	<Height>256</Height>
+	<Format>TF_8888</Format>
+	<Width>651</Width>
+	<Height>148</Height>
 	<MappingSize>0</MappingSize>
 	<NMips>1</NMips>
 	<Gain>0</Gain>
 	<AverageColor>873138439</AverageColor>
 	<InstantLoad>true</InstantLoad>
-	<IsDXT>true</IsDXT>
+	<IsDXT>false</IsDXT>
 	<FlipY>false</FlipY>
 	<StandardExport>true</StandardExport>
 	<UseS3TC>false</UseS3TC>

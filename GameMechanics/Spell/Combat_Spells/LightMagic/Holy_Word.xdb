@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Spell ObjectRecordID="135">
 	<NameFileRef href="/Text/Game/Spells/Combat/Holy_Word/Name.txt"/>
 	<LongDescriptionFileRef href="/Text/Game/Spells/Combat/Holy_Word/Long_Description.txt"/>
@@ -12,23 +12,23 @@
 	<Level>5</Level>
 	<MagicSchool>MAGIC_SCHOOL_LIGHT</MagicSchool>
 	<RequiredHeroLevel>0</RequiredHeroLevel>
-	<TrainedCost>15</TrainedCost>
+	<TrainedCost>25</TrainedCost>
 	<damage>
 		<Item>
-			<Base>8</Base>
-			<PerPower>2</PerPower>
+			<Base>100</Base>
+			<PerPower>20</PerPower>
 		</Item>
 		<Item>
-			<Base>12</Base>
-			<PerPower>3</PerPower>
+			<Base>200</Base>
+			<PerPower>30</PerPower>
 		</Item>
 		<Item>
-			<Base>30</Base>
-			<PerPower>6</PerPower>
+			<Base>400</Base>
+			<PerPower>35</PerPower>
 		</Item>
 		<Item>
-			<Base>144</Base>
-			<PerPower>12</PerPower>
+			<Base>600</Base>
+			<PerPower>40</PerPower>
 		</Item>
 	</damage>
 	<duration/>
@@ -45,7 +45,7 @@
 	<IsAreaAttack>false</IsAreaAttack>
 	<CanSelectDead>false</CanSelectDead>
 	<Target>TARGET_NEUTRAL</Target>
-	<Element>ELEMENT_FIRE</Element>
+	<Element>ELEMENT_NONE</Element>
 	<DamageIsElemental>false</DamageIsElemental>
 	<visuals>
 		<Item href="HolyWord.(SpellVisual).xdb#xpointer(/SpellVisual)"/>

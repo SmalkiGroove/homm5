@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WindowSimple ObjectRecordID="688">
 	<ClassTypeID>285700801</ClassTypeID>
-	<Shared href="/UI/CombatArena-FPP-2/Jogdial.(WindowSimpleShared).xdb#xpointer(/WindowSimpleShared)"/>
+	<Shared href="Jogdial.(WindowSimpleShared).xdb#xpointer(/WindowSimpleShared)"/>
 	<Name>Jogdial</Name>
 	<TooltipFileRef href=""/>
 	<Visible>true</Visible>
@@ -10,18 +10,18 @@
 	<Placement>
 		<Position>
 			<First>
-				<x>799</x>
-				<y>549</y>
+				<x>0</x>
+				<y>-100</y>
 			</First>
 			<Second>true</Second>
 		</Position>
 		<VerAllign>
-			<First>EPA_LOW_END</First>
-			<Second>false</Second>
+			<First>EPA_HIGH_END</First>
+			<Second>true</Second>
 		</VerAllign>
 		<HorAllign>
-			<First>EPA_LOW_END</First>
-			<Second>false</Second>
+			<First>EPA_HIGH_END</First>
+			<Second>true</Second>
 		</HorAllign>
 		<Size>
 			<First>

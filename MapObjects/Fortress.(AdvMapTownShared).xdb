@@ -1449,10 +1449,10 @@
 		<Item href="/GameMechanics/TownBuildingSharedStats/Dwarves/Dwelling_1/MilitiaGarrison.xdb#xpointer(/TownBuildingSharedStats)"/>
 		<Item href="/GameMechanics/TownBuildingSharedStats/Dwarves/Dwelling_2/Woodworks.xdb#xpointer(/TownBuildingSharedStats)"/>
 		<Item href="/GameMechanics/TownBuildingSharedStats/Dwarves/Dwelling_2/ThrowingRange.xdb#xpointer(/TownBuildingSharedStats)"/>
-		<Item href="/GameMechanics/TownBuildingSharedStats/Dwarves/Dwelling_3/BearPens.xdb#xpointer(/TownBuildingSharedStats)"/>
-		<Item href="/GameMechanics/TownBuildingSharedStats/Dwarves/Dwelling_3/BlackbearPens.xdb#xpointer(/TownBuildingSharedStats)"/>
-		<Item href="/GameMechanics/TownBuildingSharedStats/Dwarves/Dwelling_4/FightingRing.xdb#xpointer(/TownBuildingSharedStats)"/>
-		<Item href="/GameMechanics/TownBuildingSharedStats/Dwarves/Dwelling_4/FightningSquare.xdb#xpointer(/TownBuildingSharedStats)"/>
+		<Item href="/GameMechanics/TownBuildingSharedStats/Dwarves/Dwelling_3/FightingRing.xdb#xpointer(/TownBuildingSharedStats)"/>
+		<Item href="/GameMechanics/TownBuildingSharedStats/Dwarves/Dwelling_3/FightningSquare.xdb#xpointer(/TownBuildingSharedStats)"/>
+		<Item href="/GameMechanics/TownBuildingSharedStats/Dwarves/Dwelling_4/BearPens.xdb#xpointer(/TownBuildingSharedStats)"/>
+		<Item href="/GameMechanics/TownBuildingSharedStats/Dwarves/Dwelling_4/BlackbearPens.xdb#xpointer(/TownBuildingSharedStats)"/>
 		<Item href="/GameMechanics/TownBuildingSharedStats/Dwarves/Dwelling_5/RunicSeminary.xdb#xpointer(/TownBuildingSharedStats)"/>
 		<Item href="/GameMechanics/TownBuildingSharedStats/Dwarves/Dwelling_5/RunicUniversity.xdb#xpointer(/TownBuildingSharedStats)"/>
 		<Item href="/GameMechanics/TownBuildingSharedStats/Dwarves/Dwelling_6/ClansHalls.xdb#xpointer(/TownBuildingSharedStats)"/>

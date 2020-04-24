@@ -29,17 +29,17 @@
 	<RazedStatic/>
 	<Icon128/>
 	<InternalName>Isher</InternalName>
-	<Class>HERO_CLASS_WIZARD</Class>
+	<Class>HERO_CLASS_GUILDMASTER</Class>
 	<Specialization>HERO_SPEC_GOLEMS</Specialization>
 	<PrimarySkill>
-		<Mastery>MASTERY_BASIC</Mastery>
-		<SkillID>HERO_SKILL_ARTIFICIER</SkillID>
+		<Mastery>MASTERY_ADVANCED</Mastery>
+		<SkillID>HERO_SKILL_LUCK</SkillID>
 	</PrimarySkill>
 	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Academy/Machinist/Name.txt"/>
 	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Academy/Machinist/Description.txt"/>
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Academy/Machinist.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Academy/Academy_Razzak_128x128.(Texture).xdb#xpointer(/Texture)"/>
-	<FaceTextureSmall href="/Textures/Icons/Heroes/Academy/Academy_Razzak_128x128_64.(Texture).xdb#xpointer(/Texture)"/>
+	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/Wizard.(Character).xdb#xpointer(/Character)"/>
 	<HeroCharacterArenaMelee/>
 	<HeroCharacterAdventure href="/Characters/Heroes/Wizard_LOD.(Character).xdb#xpointer(/Character)"/>
@@ -49,18 +49,13 @@
 	<Editable>
 		<NameFileRef href="/Text/Game/Heroes/Persons/Academy/Isher/Name.txt"/>
 		<BiographyFileRef href="/Text/Game/Heroes/Persons/Academy/Isher/Bio.txt"/>
-		<Offence>0</Offence>
+		<Offence>2</Offence>
 		<Defence>0</Defence>
-		<Spellpower>2</Spellpower>
-		<Knowledge>3</Knowledge>
-		<skills>
-			<Item>
-				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_DEFENCE</SkillID>
-			</Item>
-		</skills>
+		<Spellpower>1</Spellpower>
+		<Knowledge>2</Knowledge>
+		<skills/>
 		<perkIDs>
-			<Item>HERO_SKILL_TOUGHNESS</Item>
+			<Item>HERO_SKILL_RESISTANCE</Item>
 		</perkIDs>
 		<spellIDs>
 			<Item>SPELL_HASTE</Item>

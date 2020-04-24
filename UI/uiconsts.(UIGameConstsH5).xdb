@@ -319,7 +319,7 @@
 			<Name>smallbody</Name>
 			<TextFileRef href="Consts/mlTags/Fonts/smallbody.txt"/>
 		</Item>
-reso		<Item>
+		<Item>
 			<Name>button</Name>
 			<TextFileRef href="Consts/mlTags/Fonts/button.txt"/>
 		</Item>
@@ -937,23 +937,23 @@ reso		<Item>
 								<Items>
 									<Item>
 										<NameFileRef href="Consts/GameOptions/GameCombatTimeFactor/Item00.txt"/>
-										<Value>1</Value>
+										<Value>1.1</Value>
 									</Item>
 									<Item>
 										<NameFileRef href="Consts/GameOptions/GameCombatTimeFactor/Item01.txt"/>
-										<Value>1.2</Value>
-									</Item>
-									<Item>
-										<NameFileRef href="Consts/GameOptions/GameCombatTimeFactor/Item02.txt"/>
 										<Value>1.5</Value>
 									</Item>
 									<Item>
-										<NameFileRef href="Consts/GameOptions/GameCombatTimeFactor/Item03.txt"/>
+										<NameFileRef href="Consts/GameOptions/GameCombatTimeFactor/Item02.txt"/>
 										<Value>2</Value>
 									</Item>
 									<Item>
-										<NameFileRef href="Consts/GameOptions/GameCombatTimeFactor/Item04.txt"/>
+										<NameFileRef href="Consts/GameOptions/GameCombatTimeFactor/Item03.txt"/>
 										<Value>3</Value>
+									</Item>
+									<Item>
+										<NameFileRef href="Consts/GameOptions/GameCombatTimeFactor/Item04.txt"/>
+										<Value>5</Value>
 									</Item>
 								</Items>
 								<ItemsGlobalVar/>
@@ -988,29 +988,29 @@ reso		<Item>
 				<Pages>
 					<Item>
 						<ID>page_video</ID>
-						<NameFileRef href="Consts/GameOptions/PageVideo.txt"/>
-						<TooltipFileRef href="Consts/GameOptions/PageVideoTooltip.txt"/>
+						<NameFileRef href=""/>
+						<TooltipFileRef href=""/>
 						<Options>
 							<Item>
-								<ID>full_screen</ID>
-								<Type>OPTION_CHECK_BOX</Type>
-								<NameFileRef href="Consts/GameOptions/VideoFullScreen/Name.txt"/>
-								<TooltipFileRef href="Consts/GameOptions/VideoFullScreen/Tooltip.txt"/>
+								<ID/>
+								<Type>OPTION_BLOCK_HEADER</Type>
+								<NameFileRef href="Consts/GameOptions/PageVideo.txt"/>
+								<TooltipFileRef href="Consts/GameOptions/PageVideoTooltip.txt"/>
 								<Items/>
 								<ItemsGlobalVar/>
 								<UseItemNameAsValue>false</UseItemNameAsValue>
-								<GlobalVar1>gfx_fullscreen</GlobalVar1>
+								<GlobalVar1/>
 								<GlobalVar2/>
-								<DefaultValue1>1</DefaultValue1>
+								<DefaultValue1>0</DefaultValue1>
 								<DefaultValue2>0</DefaultValue2>
 								<OptionToDisableID/>
 								<OptionDisableByValue1>0</OptionDisableByValue1>
 								<OptionToDisableValue1>0</OptionToDisableValue1>
 								<DisableByCodeGlobalVar/>
 								<LabelsFileRef/>
-								<Hide>true</Hide>
+								<Hide>false</Hide>
 								<Global>false</Global>
-								<Group>video</Group>
+								<Group/>
 								<Preview>false</Preview>
 							</Item>
 							<Item>
@@ -1079,6 +1079,50 @@ reso		<Item>
 								<Preview>false</Preview>
 							</Item>
 							<Item>
+								<ID>full_screen</ID>
+								<Type>OPTION_CHECK_BOX</Type>
+								<NameFileRef href="Consts/GameOptions/VideoFullScreen/Name.txt"/>
+								<TooltipFileRef href="Consts/GameOptions/VideoFullScreen/Tooltip.txt"/>
+								<Items/>
+								<ItemsGlobalVar/>
+								<UseItemNameAsValue>false</UseItemNameAsValue>
+								<GlobalVar1>gfx_fullscreen</GlobalVar1>
+								<GlobalVar2/>
+								<DefaultValue1>1</DefaultValue1>
+								<DefaultValue2>0</DefaultValue2>
+								<OptionToDisableID>app_always_active</OptionToDisableID>
+								<OptionDisableByValue1>0</OptionDisableByValue1>
+								<OptionToDisableValue1>0</OptionToDisableValue1>
+								<DisableByCodeGlobalVar/>
+								<LabelsFileRef/>
+								<Hide>false</Hide>
+								<Global>false</Global>
+								<Group>video</Group>
+								<Preview>false</Preview>
+							</Item>
+							<Item>
+								<ID>app_always_active</ID>
+								<Type>OPTION_CHECK_BOX</Type>
+								<NameFileRef href="Consts/GameOptions/VideoAlwaysActive/Name.txt"/>
+								<TooltipFileRef href="Consts/GameOptions/VideoAlwaysActive/Tooltip.txt"/>
+								<Items/>
+								<ItemsGlobalVar/>
+								<UseItemNameAsValue>false</UseItemNameAsValue>
+								<GlobalVar1>app_always_active</GlobalVar1>
+								<GlobalVar2/>
+								<DefaultValue1>0</DefaultValue1>
+								<DefaultValue2>0</DefaultValue2>
+								<OptionToDisableID/>
+								<OptionDisableByValue1>0</OptionDisableByValue1>
+								<OptionToDisableValue1>0</OptionToDisableValue1>
+								<DisableByCodeGlobalVar/>
+								<LabelsFileRef/>
+								<Hide>false</Hide>
+								<Global>false</Global>
+								<Group>video</Group>
+								<Preview>false</Preview>
+							</Item>
+							<Item>
 								<ID>gamma_correction</ID>
 								<Type>OPTION_SCROLLER</Type>
 								<NameFileRef href="Consts/GameOptions/VideoGammaCorrection/Name.txt"/>
@@ -1130,7 +1174,7 @@ reso		<Item>
 								<OptionToDisableID/>
 								<OptionDisableByValue1>0</OptionDisableByValue1>
 								<OptionToDisableValue1>0</OptionToDisableValue1>
-								<DisableByCodeGlobalVar/>
+								<DisableByCodeGlobalVar>~gfx_fullscreen</DisableByCodeGlobalVar>
 								<LabelsFileRef>
 									<Item href="Consts/GameOptions/VideoGammaCorrection/Label00.txt"/>
 									<Item href="Consts/GameOptions/VideoGammaCorrection/Label01.txt"/>
@@ -1139,28 +1183,6 @@ reso		<Item>
 								<Global>false</Global>
 								<Group/>
 								<Preview>true</Preview>
-							</Item>
-							<Item>
-								<ID>use_hardware_cursor</ID>
-								<Type>OPTION_CHECK_BOX</Type>
-								<NameFileRef href="Consts/GameOptions/VideoHardwareCursor/Name.txt"/>
-								<TooltipFileRef href="Consts/GameOptions/VideoHardwareCursor/Tooltip.txt"/>
-								<Items/>
-								<ItemsGlobalVar/>
-								<UseItemNameAsValue>false</UseItemNameAsValue>
-								<GlobalVar1>ui_use_hwcursor</GlobalVar1>
-								<GlobalVar2/>
-								<DefaultValue1>0</DefaultValue1>
-								<DefaultValue2>0</DefaultValue2>
-								<OptionToDisableID/>
-								<OptionDisableByValue1>0</OptionDisableByValue1>
-								<OptionToDisableValue1>0</OptionToDisableValue1>
-								<DisableByCodeGlobalVar/>
-								<LabelsFileRef/>
-								<Hide>false</Hide>
-								<Global>false</Global>
-								<Group/>
-								<Preview>false</Preview>
 							</Item>
 							<Item>
 								<ID>antialiasing</ID>
@@ -1264,6 +1286,35 @@ reso		<Item>
 								<Group>video</Group>
 								<Preview>false</Preview>
 							</Item>
+						</Options>
+					</Item>
+					<Item>
+						<ID>page_audio</ID>
+						<NameFileRef href=""/>
+						<TooltipFileRef href=""/>
+						<Options>
+							<Item>
+								<ID>use_hardware_cursor</ID>
+								<Type>OPTION_CHECK_BOX</Type>
+								<NameFileRef href="Consts/GameOptions/VideoHardwareCursor/Name.txt"/>
+								<TooltipFileRef href="Consts/GameOptions/VideoHardwareCursor/Tooltip.txt"/>
+								<Items/>
+								<ItemsGlobalVar/>
+								<UseItemNameAsValue>false</UseItemNameAsValue>
+								<GlobalVar1>ui_use_hwcursor</GlobalVar1>
+								<GlobalVar2/>
+								<DefaultValue1>0</DefaultValue1>
+								<DefaultValue2>0</DefaultValue2>
+								<OptionToDisableID/>
+								<OptionDisableByValue1>0</OptionDisableByValue1>
+								<OptionToDisableValue1>0</OptionToDisableValue1>
+								<DisableByCodeGlobalVar/>
+								<LabelsFileRef/>
+								<Hide>false</Hide>
+								<Global>false</Global>
+								<Group/>
+								<Preview>false</Preview>
+							</Item>
 							<Item>
 								<ID>h5_simple_render</ID>
 								<Type>OPTION_CHECK_BOX</Type>
@@ -1343,13 +1394,28 @@ reso		<Item>
 								<Group/>
 								<Preview>false</Preview>
 							</Item>
-						</Options>
-					</Item>
-					<Item>
-						<ID>page_audio</ID>
-						<NameFileRef href="Consts/GameOptions/PageAudio.txt"/>
-						<TooltipFileRef href="Consts/GameOptions/PageAudioTooltip.txt"/>
-						<Options>
+							<Item>
+								<ID/>
+								<Type>OPTION_BLOCK_HEADER</Type>
+								<NameFileRef href="Consts/GameOptions/PageAudio.txt"/>
+								<TooltipFileRef href="Consts/GameOptions/PageAudioTooltip.txt"/>
+								<Items/>
+								<ItemsGlobalVar/>
+								<UseItemNameAsValue>false</UseItemNameAsValue>
+								<GlobalVar1/>
+								<GlobalVar2/>
+								<DefaultValue1>0</DefaultValue1>
+								<DefaultValue2>0</DefaultValue2>
+								<OptionToDisableID/>
+								<OptionDisableByValue1>0</OptionDisableByValue1>
+								<OptionToDisableValue1>0</OptionToDisableValue1>
+								<DisableByCodeGlobalVar/>
+								<LabelsFileRef/>
+								<Hide>false</Hide>
+								<Global>false</Global>
+								<Group/>
+								<Preview>false</Preview>
+							</Item>
 							<Item>
 								<ID>play_sounds</ID>
 								<Type>OPTION_CHECK_BOX</Type>

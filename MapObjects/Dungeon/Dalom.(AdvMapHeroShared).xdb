@@ -29,17 +29,17 @@
 	<RazedStatic/>
 	<Icon128/>
 	<InternalName>Dalom</InternalName>
-	<Class>HERO_CLASS_WARLOCK</Class>
+	<Class>HERO_CLASS_SEER</Class>
 	<Specialization>HERO_SPEC_POISONER</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
-		<SkillID>HERO_SKILL_INVOCATION</SkillID>
+		<SkillID>HERO_SKILL_LOGISTICS</SkillID>
 	</PrimarySkill>
 	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Dungeon/Poisoner/Name.txt"/>
 	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Dungeon/Poisoner/Description.txt"/>
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Dungeon/Poisoner.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Dungeon/Dungeon_Lethos_128x128.(Texture).xdb#xpointer(/Texture)"/>
-	<FaceTextureSmall href="/Textures/Icons/Heroes/Dungeon/Dungeon_Lethos_128x128_64.(Texture).xdb#xpointer(/Texture)"/>
+	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/Warlock.(Character).xdb#xpointer(/Character)"/>
 	<HeroCharacterArenaMelee/>
 	<HeroCharacterAdventure href="/Characters/Heroes/Warlock_LOD.(Character).xdb#xpointer(/Character)"/>
@@ -49,9 +49,9 @@
 	<Editable>
 		<NameFileRef href="/Text/Game/Heroes/Persons/Dungeon/Dalom/Name.txt"/>
 		<BiographyFileRef href="/Text/Game/Heroes/Persons/Dungeon/Dalom/Bio.txt"/>
-		<Offence>1</Offence>
+		<Offence>2</Offence>
 		<Defence>0</Defence>
-		<Spellpower>3</Spellpower>
+		<Spellpower>2</Spellpower>
 		<Knowledge>1</Knowledge>
 		<skills>
 			<Item>
@@ -59,9 +59,12 @@
 				<SkillID>HERO_SKILL_DARK_MAGIC</SkillID>
 			</Item>
 		</skills>
-		<perkIDs/>
+		<perkIDs>
+			<Item>HERO_SKILL_MASTER_OF_SICKNESS</Item>
+		</perkIDs>
 		<spellIDs>
 			<Item>SPELL_PLAGUE</Item>
+			<Item>SPELL_DISRUPTING_RAY</Item>			
 		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>

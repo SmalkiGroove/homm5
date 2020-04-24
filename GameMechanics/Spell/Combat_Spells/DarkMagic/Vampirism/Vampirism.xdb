@@ -8,44 +8,44 @@
 		<Item href="/Text/Game/Spells/Combat/Vampirism/SpellBookPrediction.txt"/>
 	</SpellBookPredictions>
 	<CombatLogTexts/>
-	<Level>5</Level>
+	<Level>4</Level>
 	<MagicSchool>MAGIC_SCHOOL_DARK</MagicSchool>
 	<RequiredHeroLevel>0</RequiredHeroLevel>
-	<TrainedCost>10</TrainedCost>
+	<TrainedCost>15</TrainedCost>
 	<damage>
 		<Item>
 			<Base>10</Base>
-			<PerPower>2</PerPower>
+			<PerPower>1</PerPower>
 		</Item>
 		<Item>
 			<Base>20</Base>
-			<PerPower>2</PerPower>
+			<PerPower>1</PerPower>
 		</Item>
 		<Item>
-			<Base>30</Base>
-			<PerPower>2</PerPower>
+			<Base>40</Base>
+			<PerPower>1</PerPower>
 		</Item>
 		<Item>
-			<Base>50</Base>
-			<PerPower>2</PerPower>
+			<Base>60</Base>
+			<PerPower>1</PerPower>
 		</Item>
 	</damage>
 	<duration>
 		<Item>
-			<Base>0</Base>
-			<PerPower>1</PerPower>
+			<Base>1</Base>
+			<PerPower>0.5</PerPower>
 		</Item>
 		<Item>
-			<Base>0</Base>
-			<PerPower>1</PerPower>
+			<Base>1</Base>
+			<PerPower>0.5</PerPower>
 		</Item>
 		<Item>
-			<Base>0</Base>
-			<PerPower>1</PerPower>
+			<Base>1</Base>
+			<PerPower>0.5</PerPower>
 		</Item>
 		<Item>
-			<Base>0</Base>
-			<PerPower>1</PerPower>
+			<Base>1</Base>
+			<PerPower>0.5</PerPower>
 		</Item>
 	</duration>
 	<sSpellCost>

@@ -29,17 +29,17 @@
 	<RazedStatic/>
 	<Icon128 href="/Textures/Icons/Heroes/Academy/Academy_Zehir_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<InternalName>Zehir</InternalName>
-	<Class>HERO_CLASS_WIZARD</Class>
+	<Class>HERO_CLASS_ELEMENTALIST</Class>
 	<Specialization>HERO_SPEC_MASTER_OF_ELEMENTS</Specialization>
 	<PrimarySkill>
-		<Mastery>MASTERY_BASIC</Mastery>
-		<SkillID>HERO_SKILL_ARTIFICIER</SkillID>
+		<Mastery>MASTERY_ADVANCED</Mastery>
+		<SkillID>HERO_SKILL_SUMMONING_MAGIC</SkillID>
 	</PrimarySkill>
 	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Academy/Master_of_Elements/Name.txt"/>
 	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Academy/Master_of_Elements/Description.txt"/>
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Academy/Master_of_Elements.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Academy/Academy_Zehir_128x128.(Texture).xdb#xpointer(/Texture)"/>
-	<FaceTextureSmall href="/Textures/Icons/Heroes/Academy/Academy_Zehir_128x128_64.(Texture).xdb#xpointer(/Texture)"/>
+	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/Zehir.(Character).xdb#xpointer(/Character)"/>
 	<HeroCharacterArenaMelee/>
 	<HeroCharacterAdventure href="/Characters/Heroes/Zehir_LOD.(Character).xdb#xpointer(/Character)"/>
@@ -51,14 +51,9 @@
 		<BiographyFileRef href="/Text/Game/Heroes/Persons/Academy/Zehir/Bio.txt"/>
 		<Offence>0</Offence>
 		<Defence>0</Defence>
-		<Spellpower>2</Spellpower>
-		<Knowledge>3</Knowledge>
-		<skills>
-			<Item>
-				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_SUMMONING_MAGIC</SkillID>
-			</Item>
-		</skills>
+		<Spellpower>3</Spellpower>
+		<Knowledge>2</Knowledge>
+		<skills/>
 		<perkIDs>
 			<Item>HERO_SKILL_MASTER_OF_CREATURES</Item>
 		</perkIDs>
@@ -77,7 +72,7 @@
 	<Trace href="/MapObjects/_(AdvMapHeroTraceSet)/Academy.xdb#xpointer(/AdvMapHeroTraceSet)"/>
 	<RaceTraitIcon/>
 	<RaceTraitDescFileRef href=""/>
-	<ScenarioHero>true</ScenarioHero>
+	<ScenarioHero>false</ScenarioHero>
 	<AdventureMusic href="/Sounds/_(Music)/AdvMap-Heroes/a2-Zehir.xdb#xpointer(/Music)"/>
 	<HideInEditor>false</HideInEditor>
 	<PresetMinimalAttributes>

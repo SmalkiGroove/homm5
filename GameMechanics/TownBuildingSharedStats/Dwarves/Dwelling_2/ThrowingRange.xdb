@@ -5,13 +5,13 @@
 	<Type>TB_DWELLING_2</Type>
 	<Upgrade>BLD_UPG_2</Upgrade>
 	<Cost>
-		<Wood>0</Wood>
-		<Ore>10</Ore>
+		<Wood>2</Wood>
+		<Ore>4</Ore>
 		<Mercury>0</Mercury>
 		<Crystal>3</Crystal>
-		<Sulfur>0</Sulfur>
+		<Sulfur>3</Sulfur>
 		<Gem>0</Gem>
-		<Gold>2500</Gold>
+		<Gold>750</Gold>
 	</Cost>
 	<ModObjectName>Dwelling_2</ModObjectName>
 	<dependencies>

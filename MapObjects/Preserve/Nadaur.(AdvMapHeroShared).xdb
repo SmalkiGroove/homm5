@@ -29,43 +29,38 @@
 	<RazedStatic/>
 	<Icon128/>
 	<InternalName>Nadaur</InternalName>
-	<Class>HERO_CLASS_RANGER</Class>
+	<Class>HERO_CLASS_RANGERA</Class>
 	<Specialization>HERO_SPEC_ELVEN_FURY</Specialization>
 	<PrimarySkill>
-		<Mastery>MASTERY_BASIC</Mastery>
+		<Mastery>MASTERY_ADVANCED</Mastery>
 		<SkillID>HERO_SKILL_AVENGER</SkillID>
 	</PrimarySkill>
 	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Preserve/Elven_Fury/Name.txt"/>
 	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Preserve/Elven_Fury/Description.txt"/>
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Preserve/Elven_Fury.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Preserve/Preserve_Talanar_128x128.(Texture).xdb#xpointer(/Texture)"/>
-	<FaceTextureSmall href="/Textures/Icons/Heroes/Preserve/Preserve_Talanar_128x128_64.(Texture).xdb#xpointer(/Texture)"/>
-	<HeroCharacterArena href="/Characters/Heroes/Ranger.(Character).xdb#xpointer(/Character)"/>
+	<FaceTextureSmall/>
+	<HeroCharacterArena href="/Characters/Heroes/Findan.(Character).xdb#xpointer(/Character)"/>
 	<HeroCharacterArenaMelee/>
-	<HeroCharacterAdventure href="/Characters/Heroes/Ranger_LOD.(Character).xdb#xpointer(/Character)"/>
+	<HeroCharacterAdventure href="/Characters/Heroes/Findan_LOD.(Character).xdb#xpointer(/Character)"/>
 	<HeroIndividualCamera/>
 	<CombatVisual href="/GameMechanics/CreatureVisual/Heroes/Ranger.xdb#xpointer(/CreatureVisual)"/>
 	<TownType>TOWN_PRESERVE</TownType>
 	<Editable>
 		<NameFileRef href="/Text/Game/Heroes/Persons/Preserve/Nadaur/Name.txt"/>
 		<BiographyFileRef href="/Text/Game/Heroes/Persons/Preserve/Nadaur/Bio.txt"/>
-		<Offence>0</Offence>
-		<Defence>2</Defence>
+		<Offence>3</Offence>
+		<Defence>1</Defence>
 		<Spellpower>1</Spellpower>
-		<Knowledge>2</Knowledge>
-		<skills>
-			<Item>
-				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_LEADERSHIP</SkillID>
-			</Item>
-		</skills>
+		<Knowledge>1</Knowledge>
+		<skills/>
 		<perkIDs>
-			<Item>HERO_SKILL_RECRUITMENT</Item>
+			<Item>HERO_SKILL_SNIPE_DEAD</Item>
 		</perkIDs>
 		<spellIDs/>
-		<Ballista>true</Ballista>
+		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>
-		<AmmoCart>false</AmmoCart>
+		<AmmoCart>true</AmmoCart>
 		<FavoriteEnemies/>
 	</Editable>
 	<ArrowButtonState>0</ArrowButtonState>

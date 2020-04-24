@@ -5,44 +5,44 @@
 	<Name>ATBBar</Name>
 	<TooltipFileRef href=""/>
 	<Visible>true</Visible>
-	<Priority>0</Priority>
+	<Priority>1</Priority>
 	<GameMessageReactions/>
 	<Placement>
 		<Position>
 			<First>
-				<x>21</x>
-				<y>598</y>
+				<x>0</x>
+				<y>0</y>
 			</First>
 			<Second>true</Second>
 		</Position>
 		<VerAllign>
-			<First>EPA_LOW_END</First>
-			<Second>false</Second>
+			<First>EPA_HIGH_END</First>
+			<Second>true</Second>
 		</VerAllign>
 		<HorAllign>
 			<First>EPA_LOW_END</First>
-			<Second>false</Second>
+			<Second>true</Second>
 		</HorAllign>
 		<Size>
 			<First>
-				<x>0</x>
-				<y>0</y>
+				<x>1197</x>
+				<y>100</y>
 			</First>
-			<Second>false</Second>
+			<Second>true</Second>
 		</Size>
 		<LowerMargin>
 			<First>
 				<x>0</x>
 				<y>0</y>
 			</First>
-			<Second>false</Second>
+			<Second>true</Second>
 		</LowerMargin>
 		<UpperMargin>
 			<First>
 				<x>0</x>
 				<y>0</y>
 			</First>
-			<Second>false</Second>
+			<Second>true</Second>
 		</UpperMargin>
 	</Placement>
 	<Enabled>true</Enabled>

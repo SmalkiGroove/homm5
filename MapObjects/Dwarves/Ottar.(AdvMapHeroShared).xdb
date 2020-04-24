@@ -29,7 +29,7 @@
 	<RazedStatic/>
 	<Icon128/>
 	<InternalName>Ottar</InternalName>
-	<Class>HERO_CLASS_RUNEMAGE</Class>
+	<Class>HERO_CLASS_RUNEMAGEA</Class>
 	<Specialization>HERO_SPEC_SACRED_HAMMER</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
@@ -39,7 +39,7 @@
 	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Fortress/Sacred_Hammer/Description.txt"/>
 	<SpecializationIcon href="/UI/H5A1/Icons/Abilites/Heroes_Abillites/128x128/Sacred_hammer.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/UI/H5A1/Icons/Heroes/Portrets128x128/Ottar.(Texture).xdb#xpointer(/Texture)"/>
-	<FaceTextureSmall href="/UI/H5A1/Icons/Heroes/Portrets128x128/Ottar.(Texture).xdb#xpointer(/Texture)"/>
+	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/RuneMage.(Character).xdb#xpointer(/Character)"/>
 	<HeroCharacterArenaMelee href="/Characters/Heroes/RuneMageHero_Strike.(Character).xdb#xpointer(/Character)"/>
 	<HeroCharacterAdventure href="/Characters/Heroes/RuneMage_LOD.(Character).xdb#xpointer(/Character)"/>
@@ -50,18 +50,21 @@
 		<NameFileRef href="/Text/Game/Heroes/Persons/Dwarves/Ottar/Name.txt"/>
 		<BiographyFileRef href="/Text/Game/Heroes/Persons/Dwarves/Ottar/Bio.txt"/>
 		<Offence>0</Offence>
-		<Defence>1</Defence>
+		<Defence>2</Defence>
 		<Spellpower>2</Spellpower>
-		<Knowledge>2</Knowledge>
+		<Knowledge>1</Knowledge>
 		<skills>
 			<Item>
-				<Mastery>MASTERY_ADVANCED</Mastery>
+				<Mastery>MASTERY_BASIC</Mastery>
 				<SkillID>HERO_SKILL_LIGHT_MAGIC</SkillID>
 			</Item>
 		</skills>
-		<perkIDs/>
+		<perkIDs>
+			<Item>HERO_SKILL_MASTER_OF_WRATH</Item>
+		</perkIDs>
 		<spellIDs>
 			<Item>SPELL_BLOODLUST</Item>
+			<Item>SPELL_HASTE</Item>			
 		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>

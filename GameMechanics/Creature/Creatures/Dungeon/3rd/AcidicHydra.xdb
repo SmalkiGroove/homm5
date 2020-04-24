@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Creature>
-	<AttackSkill>15</AttackSkill>
-	<DefenceSkill>14</DefenceSkill>
+	<AttackSkill>20</AttackSkill>
+	<DefenceSkill>30</DefenceSkill>
 	<Shots>0</Shots>
-	<MinDamage>9</MinDamage>
-	<MaxDamage>12</MaxDamage>
-	<Speed>5</Speed>
-	<Initiative>8</Initiative>
+	<MinDamage>12</MinDamage>
+	<MaxDamage>25</MaxDamage>
+	<Speed>4</Speed>
+	<Initiative>7</Initiative>
 	<Flying>false</Flying>
-	<Health>125</Health>
+	<Health>170</Health>
 	<KnownSpells/>
 	<SpellPoints>0</SpellPoints>
 	<SpellPoints1>0</SpellPoints1>
 	<SpellPoints2>0</SpellPoints2>
-	<Exp>86</Exp>
-	<Power>1333</Power>
+	<Exp>500</Exp>
+	<Power>2750</Power>
 	<TimeToCommand>10</TimeToCommand>
-	<CreatureTier>5</CreatureTier>
+	<CreatureTier>6</CreatureTier>
 	<Upgrade>false</Upgrade>
 	<PairCreature>CREATURE_UNKNOWN</PairCreature>
 	<CreatureTown>TOWN_DUNGEON</CreatureTown>
@@ -31,8 +31,8 @@
 		<Mercury>0</Mercury>
 		<Crystal>0</Crystal>
 		<Sulfur>0</Sulfur>
-		<Gem>0</Gem>
-		<Gold>800</Gold>
+		<Gem>1</Gem>
+		<Gold>1500</Gold>
 	</Cost>
 	<SubjectOfRandomGeneration>true</SubjectOfRandomGeneration>
 	<MonsterShared href="/MapObjects/Dungeon/Acidic_Hydra.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
@@ -45,8 +45,8 @@
 	<Upgrades/>
 	<Abilities>
 		<Item>ABILITY_ACID_BLOOD</Item>
-		<Item>ABILITY_ENRAGED</Item>
-		<Item>ABILITY_NO_ENEMY_RETALIATION</Item>
+		<Item>ABILITY_BATTLE_RAGE</Item>
 		<Item>ABILITY_SIX_HEADED_ATTACK</Item>
+		<Item>ABILITY_REGENERATION</Item>
 	</Abilities>
 </Creature>

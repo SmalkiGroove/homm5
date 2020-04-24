@@ -10,7 +10,7 @@
 	<IntersectionMaterial href="/UI/CombatArena/Grid/Intersection.(Material).xdb#xpointer(/Material)"/>
 	<GridFadeValue>0.3</GridFadeValue>
 	<PassableFadeValue>0.9</PassableFadeValue>
-	<PassableTargetFadeValue>0.55</PassableTargetFadeValue>
+	<PassableTargetFadeValue>0.75</PassableTargetFadeValue>
 	<TargetFadeValue>0.9</TargetFadeValue>
 	<AimableFadeValue>0.75</AimableFadeValue>
 	<AffectedFadeValue>0.75</AffectedFadeValue>

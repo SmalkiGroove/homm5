@@ -1,27 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CreatureVisual>
-	<CreatureNameFileRef href="/Text/Game/Creatures/Neutrals/SnowApe/name.txt"/>
-	<CreatureAbilitiesFileRef href="/Text/Game/Creatures/Neutrals/SnowApe/abilities.txt"/>
-	<DescriptionFileRef href="/Text/Game/Creatures/Neutrals/SnowApe/description.txt"/>
-	<Icon href="/Textures/Test/NoPicture.xdb#xpointer(/Texture)"/>
-	<Icon32 href="/Textures/Test/NoPicture.xdb#xpointer(/Texture)"/>
-	<Icon64 href="/Textures/Test/NoPicture.xdb#xpointer(/Texture)"/>
-	<Icon128 href="/Textures/Test/NoPicture.xdb#xpointer(/Texture)"/>
-	<AnimCharacter href="/Characters/Creatures/Neutral/H5A1/Wolf.(Character).xdb#xpointer(/Character)"/>
+	<CreatureNameFileRef href="/Text/Game/Creatures/Neutrals/Firebird.txt"/>
+	<CreatureAbilitiesFileRef href="/Text/Game/Creatures/Neutrals/FirebirdAbilities.txt"/>
+	<DescriptionFileRef href="/Text/Game/Creatures/Neutrals/FirebirdDescription.txt"/>
+	<Icon/>
+	<Icon32/>
+	<Icon64/>
+	<Icon128 href="/UI/H5A0/Icons/Creatures/Neutral/128x128/Eagle.(Texture).xdb#xpointer(/Texture)"/>
+	<AnimCharacter href="/Characters/Creatures/Preserve/Firebird.(Character).xdb#xpointer(/Character)"/>
 	<DeadCharacter/>
 	<AnimShot/>
 	<SummoningEffect/>
-	<DamageEffect href="/GameMechanics/CreatureDamage/Flesh_and_Blood.xdb#xpointer(/CreatureDamage)"/>
+	<DamageEffect href="/GameMechanics/CreatureDamage/Necro_Hits.xdb#xpointer(/CreatureDamage)"/>
 	<TeleportingMove>
 		<Use>false</Use>
 		<StartEffect/>
 		<FinishEffect/>
 	</TeleportingMove>
-	<Win3DView/>
+	<Win3DView href="#n:inline(Win3DObj)" id="item_fbcee9c8-ddeb-436c-bdf7-6b3c6b1d36e2">
+		<Win3DObj ObjectRecordID="1000019">
+			<Model/>
+			<placements>
+				<Item>
+					<SizeDesc href="/GameMechanics/Win3DObjSizeDesc/creatureInfo.xdb#xpointer(/Win3DObjSizeDesc)"/>
+					<Matrix>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</Matrix>
+					<Shift>
+						<x>0</x>
+						<y>0</y>
+					</Shift>
+					<RollY>0</RollY>
+					<RollX>0</RollX>
+					<Scale>1</Scale>
+				</Item>
+			</placements>
+		</Win3DObj>
+	</Win3DView>
 	<MountPoint>
-		<x>-0.115055</x>
-		<y>-0.192879</y>
-		<z>0.606045</z>
+		<x>0.138907</x>
+		<y>-0.431992</y>
+		<z>3.79488</z>
 	</MountPoint>
-	<MountBone>Neck_1</MountBone>
+	<MountBone>Neck1</MountBone>
 </CreatureVisual>

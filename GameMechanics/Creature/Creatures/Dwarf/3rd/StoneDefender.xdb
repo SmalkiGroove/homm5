@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Creature>
-	<AttackSkill>2</AttackSkill>
-	<DefenceSkill>6</DefenceSkill>
+	<AttackSkill>1</AttackSkill>
+	<DefenceSkill>5</DefenceSkill>
 	<Shots>0</Shots>
 	<MinDamage>1</MinDamage>
 	<MaxDamage>2</MaxDamage>
 	<Speed>4</Speed>
 	<Initiative>8</Initiative>
 	<Flying>false</Flying>
-	<Health>12</Health>
+	<Health>13</Health>
 	<KnownSpells/>
 	<SpellPoints>0</SpellPoints>
 	<SpellPoints1>0</SpellPoints1>
 	<SpellPoints2>0</SpellPoints2>
-	<Exp>12</Exp>
+	<Exp>17</Exp>
 	<Power>113</Power>
 	<TimeToCommand>10</TimeToCommand>
 	<CreatureTier>1</CreatureTier>
@@ -24,7 +24,7 @@
 		<First>ELEMENT_EARTH</First>
 		<Second>ELEMENT_NONE</Second>
 	</MagicElement>
-	<WeeklyGrowth>18</WeeklyGrowth>
+	<WeeklyGrowth>62</WeeklyGrowth>
 	<Cost>
 		<Wood>0</Wood>
 		<Ore>0</Ore>
@@ -32,7 +32,7 @@
 		<Crystal>0</Crystal>
 		<Sulfur>0</Sulfur>
 		<Gem>0</Gem>
-		<Gold>40</Gold>
+		<Gold>10</Gold>
 	</Cost>
 	<PresetPrice>0</PresetPrice>
 	<SubjectOfRandomGeneration>true</SubjectOfRandomGeneration>
@@ -50,5 +50,6 @@
 		<Item>ABILITY_ARMORED</Item>
 		<Item>ABILITY_HOLD_GROUND</Item>
 		<Item>ABILITY_PREPARED_POSITION</Item>
+		<Item>ABILITY_FIERCE_RETALIATION</Item>
 	</Abilities>
 </Creature>

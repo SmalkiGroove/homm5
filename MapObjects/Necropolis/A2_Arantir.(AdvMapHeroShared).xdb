@@ -31,15 +31,15 @@
 	<RazedStatic/>
 	<Icon128 href="/UI/H5A2/Icons/Heroes/Portrets128x128/Necropolis_Arantir.(Texture).xdb#xpointer(/Texture)"/>
 	<InternalName>Arantir</InternalName>
-	<Class>HERO_CLASS_NECROMANCER</Class>
-	<Specialization>HERO_SPEC_AVATAR_OF_DEATH</Specialization>
+	<Class>HERO_CLASS_NECROMANCERA</Class>
+	<Specialization>HERO_SPEC_REANIMATOR</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
 		<SkillID>HERO_SKILL_NECROMANCY</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Necropolis/AvatarOfDeath/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Necropolis/AvatarOfDeath/Description.txt"/>
-	<SpecializationIcon href="/UI/H5A2/Icons/Heroes_Specializations/AvatarOfDeath.(Texture).xdb#xpointer(/Texture)"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Necropolis/Reanimator/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Necropolis/Reanimator/Description.txt"/>
+	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Necropolis/Reanimator.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/UI/H5A2/Icons/Heroes/Portrets128x128/Necropolis_Arantir.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/H5A2/Arantir_Mounted.(Character).xdb#xpointer(/Character)"/>
@@ -52,29 +52,25 @@
 		<NameFileRef href="/Text/Game/Heroes/Persons/Necropolis/Arantir/Name.txt"/>
 		<BiographyFileRef href="/Text/Game/Heroes/Persons/Necropolis/Arantir/Bio.txt"/>
 		<Offence>0</Offence>
-		<Defence>1</Defence>
+		<Defence>0</Defence>
 		<Spellpower>3</Spellpower>
-		<Knowledge>1</Knowledge>
+		<Knowledge>2</Knowledge>
 		<skills>
 			<Item>
 				<Mastery>MASTERY_BASIC</Mastery>
 				<SkillID>HERO_SKILL_SUMMONING_MAGIC</SkillID>
 			</Item>
-			<Item>
-				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_DARK_MAGIC</SkillID>
-			</Item>
 		</skills>
-		<perkIDs/>
+		<perkIDs>
+			<Item>HERO_SKILL_MASTER_OF_ANIMATION</Item>
+		</perkIDs>
 		<spellIDs>
 			<Item>SPELL_ANIMATE_DEAD</Item>
-			<Item>SPELL_SLOW</Item>
 		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>
 		<AmmoCart>false</AmmoCart>
 		<FavoriteEnemies/>
-		<TalismanLevel>0</TalismanLevel>
 	</Editable>
 	<ArrowButtonState>0</ArrowButtonState>
 	<Decal/>
@@ -82,7 +78,7 @@
 	<Trace href="/MapObjects/_(AdvMapHeroTraceSet)/Necropolis.xdb#xpointer(/AdvMapHeroTraceSet)"/>
 	<RaceTraitIcon/>
 	<RaceTraitDescFileRef href=""/>
-	<ScenarioHero>true</ScenarioHero>
+	<ScenarioHero>false</ScenarioHero>
 	<AdventureMusic href="/Sounds/_(Music)/AdvMap-Heroes/a2-Arantir.xdb#xpointer(/Music)"/>
 	<HideInEditor>false</HideInEditor>
 	<PresetMinimalAttributes>

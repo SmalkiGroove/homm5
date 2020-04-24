@@ -1,28 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Creature ObjectRecordID="1000026">
-	<AttackSkill>10</AttackSkill>
-	<DefenceSkill>10</DefenceSkill>
+	<AttackSkill>8</AttackSkill>
+	<DefenceSkill>8</DefenceSkill>
 	<Shots>3</Shots>
 	<MinDamage>7</MinDamage>
 	<MaxDamage>7</MaxDamage>
 	<Speed>4</Speed>
 	<Initiative>10</Initiative>
 	<Flying>false</Flying>
-	<Health>18</Health>
+	<Health>22</Health>
 	<KnownSpells>
 		<Item>
 			<Spell>SPELL_MAGIC_FIST</Spell>
-			<Mastery>MASTERY_BASIC</Mastery>
-		</Item>
-		<Item>
-			<Spell>SPELL_DISPEL</Spell>
 			<Mastery>MASTERY_ADVANCED</Mastery>
 		</Item>
 	</KnownSpells>
-	<SpellPoints>10</SpellPoints>
+	<SpellPoints>15</SpellPoints>
 	<SpellPoints1>0</SpellPoints1>
 	<SpellPoints2>0</SpellPoints2>
-	<Exp>36</Exp>
+	<Exp>44</Exp>
 	<Power>498</Power>
 	<TimeToCommand>15</TimeToCommand>
 	<CreatureTier>4</CreatureTier>
@@ -33,7 +29,7 @@
 		<First>ELEMENT_FIRE</First>
 		<Second>ELEMENT_NONE</Second>
 	</MagicElement>
-	<WeeklyGrowth>5</WeeklyGrowth>
+	<WeeklyGrowth>12</WeeklyGrowth>
 	<Cost>
 		<Wood>0</Wood>
 		<Ore>0</Ore>

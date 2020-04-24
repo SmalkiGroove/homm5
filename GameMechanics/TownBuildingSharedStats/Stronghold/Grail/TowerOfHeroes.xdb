@@ -16,7 +16,7 @@
 	<ModObjectName>Grail</ModObjectName>
 	<dependencies/>
 	<Creature>CREATURE_UNKNOWN</Creature>
-	<DevLevelNeeded>15</DevLevelNeeded>
+	<DevLevelNeeded>0</DevLevelNeeded>
 	<UIObjectName>Grail</UIObjectName>
 	<UIStackPosition>0</UIStackPosition>
 	<Icon href="/UI/H5A2/Icons/City_Buildings/Tower_Of_Heroes.(Texture).xdb#xpointer(/Texture)"/>

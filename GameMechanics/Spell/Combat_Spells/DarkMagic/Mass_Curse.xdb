@@ -10,7 +10,7 @@
 	<MagicSchool>MAGIC_SCHOOL_DARK</MagicSchool>
 	<RequiredHeroLevel>0</RequiredHeroLevel>
 	<IsAimed>false</IsAimed>
-	<TrainedCost>8</TrainedCost>
+	<TrainedCost>12</TrainedCost>
 	<damage/>
 	<duration/>
 	<sSpellCost>

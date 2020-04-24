@@ -21,18 +21,6 @@
 			<Kind>move</Kind>
 			<Anim href="Dunkan_DS_M-arena-move.xdb#xpointer(/BasicSkelAnim)"/>
 		</Item>
-		<Item>
-			<Kind>cast</Kind>
-			<Anim href="/Characters/Heroes/Duncan-arena-cast.xdb#xpointer(/BasicSkelAnim)"/>
-		</Item>
-		<Item>
-			<Kind>buff</Kind>
-			<Anim href="/Characters/Heroes/Duncan-arena-buff.xdb#xpointer(/BasicSkelAnim)"/>
-		</Item>
-		<Item>
-			<Kind>happy</Kind>
-			<Anim href="/Characters/Heroes/Duncan-arena-happy.xdb#xpointer(/BasicSkelAnim)"/>
-		</Item>
 	</animations>
 	<ExpSrcScene href="/H5A1/Models/Heroes/Duncan/Duncan_DS_M.mb"/>
 	<ExpSrcClipFolder href="/H5A1/Animations/Dialogs/Dunkan/Dunkan_mounted/Clip/"/>

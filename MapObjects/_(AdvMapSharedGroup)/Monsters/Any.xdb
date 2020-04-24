@@ -94,6 +94,7 @@
 		<Item href="/MapObjects/Neutral/Wolf.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Neutral/Manticore.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Neutral/Mummy.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
+		<Item href="/MapObjects/Neutral/ShowApe.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Haven/Renegates/Landlord.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Haven/Renegates/Longbowman.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Haven/Renegates/Vindicator.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>

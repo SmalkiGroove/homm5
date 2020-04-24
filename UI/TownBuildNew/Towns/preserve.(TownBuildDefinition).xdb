@@ -32,12 +32,12 @@
 				<Item>
 					<Upgrade>BLD_UPG_1</Upgrade>
 					<XSlotPos>2</XSlotPos>
-					<YSlotPos>3</YSlotPos>
+					<YSlotPos>2</YSlotPos>
 				</Item>
 				<Item>
 					<Upgrade>BLD_UPG_2</Upgrade>
 					<XSlotPos>2</XSlotPos>
-					<YSlotPos>4</YSlotPos>
+					<YSlotPos>5</YSlotPos>
 				</Item>
 				<Item>
 					<Upgrade>BLD_UPG_3</Upgrade>
@@ -151,12 +151,12 @@
 			<buildings>
 				<Item>
 					<Upgrade>BLD_UPG_1</Upgrade>
-					<XSlotPos>2</XSlotPos>
+					<XSlotPos>5</XSlotPos>
 					<YSlotPos>2</YSlotPos>
 				</Item>
 				<Item>
 					<Upgrade>BLD_UPG_2</Upgrade>
-					<XSlotPos>2</XSlotPos>
+					<XSlotPos>5</XSlotPos>
 					<YSlotPos>2</YSlotPos>
 				</Item>
 			</buildings>
@@ -166,12 +166,12 @@
 			<buildings>
 				<Item>
 					<Upgrade>BLD_UPG_1</Upgrade>
-					<XSlotPos>5</XSlotPos>
+					<XSlotPos>2</XSlotPos>
 					<YSlotPos>3</YSlotPos>
 				</Item>
 				<Item>
 					<Upgrade>BLD_UPG_2</Upgrade>
-					<XSlotPos>5</XSlotPos>
+					<XSlotPos>2</XSlotPos>
 					<YSlotPos>3</YSlotPos>
 				</Item>
 			</buildings>
@@ -241,12 +241,12 @@
 			<buildings>
 				<Item>
 					<Upgrade>BLD_UPG_1</Upgrade>
-					<XSlotPos>5</XSlotPos>
+					<XSlotPos>2</XSlotPos>
 					<YSlotPos>4</YSlotPos>
 				</Item>
 				<Item>
 					<Upgrade>BLD_UPG_2</Upgrade>
-					<XSlotPos>5</XSlotPos>
+					<XSlotPos>2</XSlotPos>
 					<YSlotPos>4</YSlotPos>
 				</Item>
 			</buildings>
@@ -272,7 +272,7 @@
 				<Item>
 					<Upgrade>BLD_UPG_1</Upgrade>
 					<XSlotPos>5</XSlotPos>
-					<YSlotPos>2</YSlotPos>
+					<YSlotPos>3</YSlotPos>
 				</Item>
 			</buildings>
 		</Item>
@@ -305,13 +305,23 @@
 		</Item>
 		<Item>
 			<XSlotPos>2</XSlotPos>
+			<YSlotPos>2</YSlotPos>
+			<Length>1</Length>
+		</Item>
+		<Item>
+			<XSlotPos>2</XSlotPos>
 			<YSlotPos>3</YSlotPos>
 			<Length>1</Length>
 		</Item>
 		<Item>
 			<XSlotPos>2</XSlotPos>
 			<YSlotPos>4</YSlotPos>
-			<Length>2</Length>
+			<Length>1</Length>
+		</Item>
+		<Item>
+			<XSlotPos>2</XSlotPos>
+			<YSlotPos>5</YSlotPos>
+			<Length>1</Length>
 		</Item>
 		<Item>
 			<XSlotPos>5</XSlotPos>
@@ -335,12 +345,7 @@
 		</Item>
 		<Item>
 			<XSlotPos>5</XSlotPos>
-			<YSlotPos>1</YSlotPos>
-			<Length>1</Length>
-		</Item>
-		<Item>
-			<XSlotPos>5</XSlotPos>
-			<YSlotPos>3</YSlotPos>
+			<YSlotPos>2</YSlotPos>
 			<Length>1</Length>
 		</Item>
 	</arrows>

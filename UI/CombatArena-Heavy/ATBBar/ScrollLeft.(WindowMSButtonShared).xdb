@@ -25,8 +25,8 @@
 		</HorAllign>
 		<Size>
 			<First>
-				<x>26</x>
-				<y>26</y>
+				<x>15</x>
+				<y>37</y>
 			</First>
 			<Second>true</Second>
 		</Size>
@@ -51,7 +51,7 @@
 	<VisualStates>
 		<Item>
 			<Normal>
-				<Background href="ScrollLeft_Normal.(BackgroundSimpleTexture).xdb#xpointer(/BackgroundSimpleTexture)"/>
+				<Background href="ScrollLeft_Normal.(BackgroundSimpleScallingTexture).xdb#xpointer(/BackgroundSimpleScallingTexture)"/>
 				<Foreground/>
 				<TextString/>
 				<OnEnterSubState>
@@ -61,8 +61,8 @@
 				<TextFormat/>
 			</Normal>
 			<MouseOver>
-				<Background href="ScrollLeft_Normal.(BackgroundSimpleTexture).xdb#xpointer(/BackgroundSimpleTexture)"/>
-				<Foreground href="Scroll_Hightlight.(BackgroundSimpleTexture).xdb#xpointer(/BackgroundSimpleTexture)"/>
+				<Background href="ScrollLeft_Normal.(BackgroundSimpleScallingTexture).xdb#xpointer(/BackgroundSimpleScallingTexture)"/>
+				<Foreground/>
 				<TextString/>
 				<OnEnterSubState>
 					<Commands/>
@@ -71,7 +71,7 @@
 				<TextFormat/>
 			</MouseOver>
 			<Pushed>
-				<Background href="ScrollLeft_Pushed.(BackgroundSimpleTexture).xdb#xpointer(/BackgroundSimpleTexture)"/>
+				<Background href="ScrollLeft_Pushed.(BackgroundSimpleScallingTexture).xdb#xpointer(/BackgroundSimpleScallingTexture)"/>
 				<Foreground/>
 				<TextString/>
 				<OnEnterSubState>
@@ -83,7 +83,7 @@
 				<TextFormat/>
 			</Pushed>
 			<Disabled>
-				<Background href="ScrollLeft_Disabled.(BackgroundSimpleTexture).xdb#xpointer(/BackgroundSimpleTexture)"/>
+				<Background href="ScrollLeft_Disabled.(BackgroundSimpleScallingTexture).xdb#xpointer(/BackgroundSimpleScallingTexture)"/>
 				<Foreground/>
 				<TextString/>
 				<OnEnterSubState>

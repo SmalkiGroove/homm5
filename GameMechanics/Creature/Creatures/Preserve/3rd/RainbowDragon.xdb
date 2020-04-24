@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Creature>
-	<AttackSkill>30</AttackSkill>
-	<DefenceSkill>26</DefenceSkill>
+	<AttackSkill>33</AttackSkill>
+	<DefenceSkill>33</DefenceSkill>
 	<Shots>0</Shots>
-	<MinDamage>30</MinDamage>
-	<MaxDamage>60</MaxDamage>
-	<Speed>9</Speed>
-	<Initiative>14</Initiative>
+	<MinDamage>36</MinDamage>
+	<MaxDamage>63</MaxDamage>
+	<Speed>8</Speed>
+	<Initiative>15</Initiative>
 	<Flying>true</Flying>
-	<Health>200</Health>
+	<Health>230</Health>
 	<KnownSpells/>
 	<SpellPoints>0</SpellPoints>
 	<SpellPoints1>0</SpellPoints1>
 	<SpellPoints2>0</SpellPoints2>
-	<Exp>301</Exp>
-	<Power>5905</Power>
+	<Exp>1000</Exp>
+	<Power>6000</Power>
 	<TimeToCommand>10</TimeToCommand>
 	<CreatureTier>7</CreatureTier>
 	<Upgrade>false</Upgrade>
@@ -31,8 +31,8 @@
 		<Mercury>0</Mercury>
 		<Crystal>0</Crystal>
 		<Sulfur>0</Sulfur>
-		<Gem>2</Gem>
-		<Gold>3400</Gold>
+		<Gem>3</Gem>
+		<Gold>4500</Gold>
 	</Cost>
 	<SubjectOfRandomGeneration>true</SubjectOfRandomGeneration>
 	<MonsterShared href="/MapObjects/Preserve/Alt_upgrade/Rainbow_Dragon.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
@@ -45,5 +45,6 @@
 	<Upgrades/>
 	<Abilities>
 		<Item>ABILITY_RAINBOW_BREATH</Item>
+		<Item>ABILITY_REGENERATION</Item>
 	</Abilities>
 </Creature>

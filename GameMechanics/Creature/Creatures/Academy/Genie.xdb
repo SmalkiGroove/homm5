@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Creature ObjectRecordID="1000045">
 	<AttackSkill>11</AttackSkill>
-	<DefenceSkill>10</DefenceSkill>
+	<DefenceSkill>7</DefenceSkill>
 	<Shots>0</Shots>
-	<MinDamage>12</MinDamage>
+	<MinDamage>11</MinDamage>
 	<MaxDamage>14</MaxDamage>
 	<Speed>7</Speed>
 	<Initiative>12</Initiative>
 	<Flying>true</Flying>
-	<Health>40</Health>
+	<Health>35</Health>
 	<KnownSpells>
 		<Item>
 			<Spell>SPELL_ABILITY_RANDOM_CAST_DARK</Spell>
@@ -18,7 +18,7 @@
 	<SpellPoints>0</SpellPoints>
 	<SpellPoints1>3</SpellPoints1>
 	<SpellPoints2>0</SpellPoints2>
-	<Exp>55</Exp>
+	<Exp>150</Exp>
 	<Power>839</Power>
 	<TimeToCommand>10</TimeToCommand>
 	<CreatureTier>5</CreatureTier>
@@ -29,7 +29,7 @@
 		<First>ELEMENT_AIR</First>
 		<Second>ELEMENT_NONE</Second>
 	</MagicElement>
-	<WeeklyGrowth>3</WeeklyGrowth>
+	<WeeklyGrowth>6</WeeklyGrowth>
 	<Cost>
 		<Wood>0</Wood>
 		<Ore>0</Ore>
@@ -37,7 +37,7 @@
 		<Crystal>0</Crystal>
 		<Sulfur>0</Sulfur>
 		<Gem>0</Gem>
-		<Gold>460</Gold>
+		<Gold>500</Gold>
 	</Cost>
 	<PresetPrice>0</PresetPrice>
 	<SubjectOfRandomGeneration>true</SubjectOfRandomGeneration>

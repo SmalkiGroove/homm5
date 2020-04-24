@@ -29,17 +29,17 @@
 	<RazedStatic/>
 	<Icon128/>
 	<InternalName>Nur</InternalName>
-	<Class>HERO_CLASS_WIZARD</Class>
-	<Specialization>HERO_SPEC_WEILDER_OF_FIRE</Specialization>
+	<Class>HERO_CLASS_ELEMENTALIST</Class>
+	<Specialization>HERO_SPEC_POWER_BARGAIN</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
-		<SkillID>HERO_SKILL_ARTIFICIER</SkillID>
+		<SkillID>HERO_SKILL_SUMMONING_MAGIC</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Academy/Weilder_of_Fire/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Academy/Weilder_of_Fire/Description.txt"/>
-	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Academy/Weilder_of_Fire.xdb#xpointer(/Texture)"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Dungeon/Power_Bargain2/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Dungeon/Power_Bargain2/Description.txt"/>
+	<SpecializationIcon href="/UI/H5A1/Icons/Abilites/Heroes_Abillites/128x128/Stormcaller.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Academy/Academy_Nathir_128x128.(Texture).xdb#xpointer(/Texture)"/>
-	<FaceTextureSmall href="/Textures/Icons/Heroes/Academy/Academy_Nathir_128x128_64.(Texture).xdb#xpointer(/Texture)"/>
+	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/Wizard.(Character).xdb#xpointer(/Character)"/>
 	<HeroCharacterArenaMelee/>
 	<HeroCharacterAdventure href="/Characters/Heroes/Wizard_LOD.(Character).xdb#xpointer(/Character)"/>
@@ -51,19 +51,20 @@
 		<BiographyFileRef href="/Text/Game/Heroes/Persons/Academy/Nur/Bio.txt"/>
 		<Offence>0</Offence>
 		<Defence>0</Defence>
-		<Spellpower>2</Spellpower>
-		<Knowledge>3</Knowledge>
+		<Spellpower>3</Spellpower>
+		<Knowledge>2</Knowledge>
 		<skills>
 			<Item>
 				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_DESTRUCTIVE_MAGIC</SkillID>
-			</Item>
+				<SkillID>HERO_SKILL_INVOCATION</SkillID>
+			</Item>	
 		</skills>
 		<perkIDs>
-			<Item>HERO_SKILL_MASTER_OF_FIRE</Item>
+			<Item>HERO_SKILL_EMPOWERED_SPELLS</Item>
 		</perkIDs>
 		<spellIDs>
-			<Item>SPELL_FIREBALL</Item>
+			<Item>SPELL_SUMMON_ELEMENTALS</Item>
+			<Item>SPELL_MAGIC_FIST</Item>
 		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>

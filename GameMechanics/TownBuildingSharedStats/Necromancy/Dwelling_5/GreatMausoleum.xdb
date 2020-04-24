@@ -5,13 +5,13 @@
 	<Type>TB_DWELLING_5</Type>
 	<Upgrade>BLD_UPG_2</Upgrade>
 	<Cost>
-		<Wood>10</Wood>
-		<Ore>10</Ore>
-		<Mercury>3</Mercury>
-		<Crystal>3</Crystal>
+		<Wood>5</Wood>
+		<Ore>11</Ore>
+		<Mercury>13</Mercury>
+		<Crystal>0</Crystal>
 		<Sulfur>3</Sulfur>
-		<Gem>3</Gem>
-		<Gold>6000</Gold>
+		<Gem>0</Gem>
+		<Gold>2500</Gold>
 	</Cost>
 	<ModObjectName>Mausoleum</ModObjectName>
 	<dependencies>

@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Creature ObjectRecordID="48">
-	<AttackSkill>32</AttackSkill>
+	<AttackSkill>39</AttackSkill>
 	<DefenceSkill>29</DefenceSkill>
 	<Shots>0</Shots>
-	<MinDamage>36</MinDamage>
-	<MaxDamage>66</MaxDamage>
-	<Speed>7</Speed>
-	<Initiative>11</Initiative>
+	<MinDamage>44</MinDamage>
+	<MaxDamage>88</MaxDamage>
+	<Speed>9</Speed>
+	<Initiative>10</Initiative>
 	<Flying>true</Flying>
-	<Health>199</Health>
+	<Health>215</Health>
 	<KnownSpells>
 		<Item>
 			<Spell>SPELL_ABILITY_SUMMON_BALOR</Spell>
 			<Mastery>MASTERY_ADVANCED</Mastery>
 		</Item>
+		<Item>
+			<Spell>SPELL_HYPNOTIZE</Spell>
+			<Mastery>MASTERY_ADVANCED</Mastery>
+		</Item>
 	</KnownSpells>
-	<SpellPoints>0</SpellPoints>
+	<SpellPoints>30</SpellPoints>
 	<SpellPoints1>1</SpellPoints1>
 	<SpellPoints2>1</SpellPoints2>
-	<Exp>311</Exp>
-	<Power>5850</Power>
+	<Exp>1000</Exp>
+	<Power>6000</Power>
 	<TimeToCommand>10</TimeToCommand>
 	<CreatureTier>7</CreatureTier>
 	<Upgrade>true</Upgrade>
@@ -35,9 +39,9 @@
 		<Ore>0</Ore>
 		<Mercury>0</Mercury>
 		<Crystal>0</Crystal>
-		<Sulfur>2</Sulfur>
+		<Sulfur>3</Sulfur>
 		<Gem>0</Gem>
-		<Gold>3666</Gold>
+		<Gold>4500</Gold>
 	</Cost>
 	<SubjectOfRandomGeneration>true</SubjectOfRandomGeneration>
 	<MonsterShared href="/MapObjects/Inferno/ArchDevil.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
@@ -50,6 +54,8 @@
 	<Upgrades/>
 	<Abilities>
 		<Item>ABILITY_DEMONIC</Item>
+		<Item>ABILITY_IMMUNITY_TO_FIRE</Item>
+		<Item>ABILITY_AURA_OF_FIRE_VULNERABILITY</Item>
 		<Item>ABILITY_BALOR_SUMMONIG</Item>
 	</Abilities>
 </Creature>

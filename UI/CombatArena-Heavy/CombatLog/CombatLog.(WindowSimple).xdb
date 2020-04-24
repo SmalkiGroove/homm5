@@ -5,13 +5,13 @@
 	<Name>LogWindow</Name>
 	<TooltipFileRef href=""/>
 	<Visible>false</Visible>
-	<Priority>5</Priority>
+	<Priority>100</Priority>
 	<GameMessageReactions/>
 	<Placement>
 		<Position>
 			<First>
-				<x>174</x>
-				<y>602</y>
+				<x>93</x>
+				<y>18</y>
 			</First>
 			<Second>true</Second>
 		</Position>

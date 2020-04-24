@@ -5,13 +5,13 @@
 	<Type>TB_DWELLING_7</Type>
 	<Upgrade>BLD_UPG_2</Upgrade>
 	<Cost>
-		<Wood>0</Wood>
+		<Wood>10</Wood>
 		<Ore>20</Ore>
 		<Mercury>0</Mercury>
-		<Crystal>0</Crystal>
+		<Crystal>30</Crystal>
 		<Sulfur>0</Sulfur>
-		<Gem>10</Gem>
-		<Gold>12000</Gold>
+		<Gem>0</Gem>
+		<Gold>10000</Gold>
 	</Cost>
 	<ModObjectName>Angel</ModObjectName>
 	<dependencies>

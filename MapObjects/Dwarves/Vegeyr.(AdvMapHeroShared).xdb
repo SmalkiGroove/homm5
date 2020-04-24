@@ -29,15 +29,15 @@
 	<RazedStatic/>
 	<Icon128/>
 	<InternalName>Vegeyr</InternalName>
-	<Class>HERO_CLASS_RUNEMAGE</Class>
-	<Specialization>HERO_SPEC_STORMCALLER</Specialization>
+	<Class>HERO_CLASS_FLAMEKEEPERA</Class>
+	<Specialization>HERO_SPEC_INEXHAUSTIBLE</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
-		<SkillID>HERO_SKILL_RUNELORE</SkillID>
+		<SkillID>HERO_SKILL_DESTRUCTIVE_MAGIC</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Fortress/Stormcaller/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Fortress/Stormcaller/Description.txt"/>
-	<SpecializationIcon href="/UI/H5A1/Icons/Abilites/Heroes_Abillites/128x128/Stormcaller.(Texture).xdb#xpointer(/Texture)"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Academy/Inexhaustible2/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Academy/Inexhaustible2/Description.txt"/>
+	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Academy/Inexhaustible.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/UI/H5A1/Icons/Heroes/Portrets128x128/Vegeyr.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/RuneMage.(Character).xdb#xpointer(/Character)"/>
@@ -50,20 +50,20 @@
 		<NameFileRef href="/Text/Game/Heroes/Persons/Dwarves/Vegeyr/Name.txt"/>
 		<BiographyFileRef href="/Text/Game/Heroes/Persons/Dwarves/Vegeyr/Bio.txt"/>
 		<Offence>0</Offence>
-		<Defence>1</Defence>
-		<Spellpower>2</Spellpower>
+		<Defence>0</Defence>
+		<Spellpower>3</Spellpower>
 		<Knowledge>2</Knowledge>
 		<skills>
 			<Item>
 				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_DESTRUCTIVE_MAGIC</SkillID>
+				<SkillID>HERO_SKILL_SORCERY</SkillID>
 			</Item>
 		</skills>
 		<perkIDs>
-			<Item>HERO_SKILL_MASTER_OF_LIGHTNINGS</Item>
+			<Item>HERO_SKILL_MASTER_OF_FIRE</Item>
 		</perkIDs>
 		<spellIDs>
-			<Item>SPELL_LIGHTNING_BOLT</Item>
+			<Item>SPELL_FIREBALL</Item>
 		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>

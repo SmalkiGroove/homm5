@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Spell ObjectRecordID="1000085">
 	<NameFileRef href="/Text/Game/Spells/Creature_Abilities/Academy/CallLightning_name.txt"/>
 	<LongDescriptionFileRef href=""/>
@@ -14,19 +14,19 @@
 	<damage>
 		<Item>
 			<Base>0</Base>
-			<PerPower>30</PerPower>
+			<PerPower>60</PerPower>
 		</Item>
 		<Item>
 			<Base>0</Base>
-			<PerPower>30</PerPower>
+			<PerPower>60</PerPower>
 		</Item>
 		<Item>
 			<Base>0</Base>
-			<PerPower>30</PerPower>
+			<PerPower>60</PerPower>
 		</Item>
 		<Item>
 			<Base>0</Base>
-			<PerPower>30</PerPower>
+			<PerPower>60</PerPower>
 		</Item>
 	</damage>
 	<duration/>
@@ -43,6 +43,7 @@
 	<CanSelectDead>false</CanSelectDead>
 	<Target>TARGET_HOSTILE</Target>
 	<Element>ELEMENT_AIR</Element>
+	<DamageIsElemental>true</DamageIsElemental>
 	<visuals>
 		<Item href="CallLightning.(SpellVisual).xdb#xpointer(/SpellVisual)"/>
 	</visuals>

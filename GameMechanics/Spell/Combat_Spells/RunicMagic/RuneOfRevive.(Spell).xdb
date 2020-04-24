@@ -8,7 +8,7 @@
 	<CombatLogTexts>
 		<Item href="Rune_Usage.txt"/>
 	</CombatLogTexts>
-	<Level>4</Level>
+	<Level>5</Level>
 	<MagicSchool>MAGIC_SCHOOL_RUNIC</MagicSchool>
 	<RequiredHeroLevel>0</RequiredHeroLevel>
 	<IsAimed>false</IsAimed>

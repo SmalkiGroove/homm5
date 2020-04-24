@@ -14,20 +14,20 @@
 	<TrainedCost>4</TrainedCost>
 	<damage>
 		<Item>
-			<Base>48</Base>
-			<PerPower>8</PerPower>
+			<Base>10</Base>
+			<PerPower>10</PerPower>
 		</Item>
 		<Item>
-			<Base>56</Base>
-			<PerPower>8</PerPower>
+			<Base>20</Base>
+			<PerPower>20</PerPower>
 		</Item>
 		<Item>
-			<Base>64</Base>
-			<PerPower>8</PerPower>
+			<Base>30</Base>
+			<PerPower>30</PerPower>
 		</Item>
 		<Item>
-			<Base>72</Base>
-			<PerPower>8</PerPower>
+			<Base>40</Base>
+			<PerPower>40</PerPower>
 		</Item>
 	</damage>
 	<duration/>

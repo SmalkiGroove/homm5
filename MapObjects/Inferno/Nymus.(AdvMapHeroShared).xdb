@@ -32,14 +32,14 @@
 	<Class>HERO_CLASS_DEMON_LORD</Class>
 	<Specialization>HERO_SPEC_GATE_KEEPER</Specialization>
 	<PrimarySkill>
-		<Mastery>MASTERY_BASIC</Mastery>
+		<Mastery>MASTERY_ADVANCED</Mastery>
 		<SkillID>HERO_SKILL_GATING</SkillID>
 	</PrimarySkill>
 	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Inferno/Gate_Keeper/Name.txt"/>
 	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Inferno/Gate_Keeper/Description.txt"/>
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Inferno/Gate_Keeper.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Inferno/Inferno_Nebiros_128x128.(Texture).xdb#xpointer(/Texture)"/>
-	<FaceTextureSmall href="/Textures/Icons/Heroes/Inferno/Inferno_Nebiros_128x128_64.(Texture).xdb#xpointer(/Texture)"/>
+	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/DemonLord.(Character).xdb#xpointer(/Character)"/>
 	<HeroCharacterArenaMelee/>
 	<HeroCharacterAdventure href="/Characters/Heroes/DemonLord_LOD.(Character).xdb#xpointer(/Character)"/>
@@ -49,20 +49,17 @@
 	<Editable>
 		<NameFileRef href="/Text/Game/Heroes/Persons/Inferno/Nymus/Name.txt"/>
 		<BiographyFileRef href="/Text/Game/Heroes/Persons/Inferno/Nymus/Bio.txt"/>
-		<Offence>2</Offence>
+		<Offence>3</Offence>
 		<Defence>0</Defence>
-		<Spellpower>1</Spellpower>
-		<Knowledge>2</Knowledge>
-		<skills>
-			<Item>
-				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_LUCK</SkillID>
-			</Item>
-		</skills>
+		<Spellpower>2</Spellpower>
+		<Knowledge>1</Knowledge>
+		<skills/>
 		<perkIDs>
-			<Item>HERO_SKILL_RESISTANCE</Item>
+			<Item>HERO_SKILL_GATING_MASTERY</Item>
 		</perkIDs>
-		<spellIDs/>
+		<spellIDs>
+			<Item>SPELL_SLOW</Item>
+		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>
 		<AmmoCart>false</AmmoCart>

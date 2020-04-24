@@ -2,7 +2,7 @@
 <WindowSimpleShared>
 	<Crap>false</Crap>
 	<Children/>
-	<Background href="RuneInfo08.(BackgroundSimpleTexture).xdb#xpointer(/BackgroundSimpleTexture)"/>
+	<Background/>
 	<Foreground/>
 	<Flags>
 		<Transparent>false</Transparent>

@@ -10,7 +10,7 @@
 	<Placement>
 		<Position>
 			<First>
-				<x>526</x>
+				<x>463</x>
 				<y>0</y>
 			</First>
 			<Second>true</Second>
@@ -26,7 +26,7 @@
 		<Size>
 			<First>
 				<x>70</x>
-				<y>33</y>
+				<y>27</y>
 			</First>
 			<Second>true</Second>
 		</Size>

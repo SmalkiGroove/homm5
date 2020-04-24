@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Creature>
-	<AttackSkill>35</AttackSkill>
-	<DefenceSkill>25</DefenceSkill>
+	<AttackSkill>38</AttackSkill>
+	<DefenceSkill>27</DefenceSkill>
 	<Shots>0</Shots>
-	<MinDamage>25</MinDamage>
-	<MaxDamage>75</MaxDamage>
-	<Speed>8</Speed>
+	<MinDamage>1</MinDamage>
+	<MaxDamage>99</MaxDamage>
+	<Speed>7</Speed>
 	<Initiative>11</Initiative>
 	<Flying>true</Flying>
 	<Health>220</Health>
@@ -22,8 +22,8 @@
 	<SpellPoints>14</SpellPoints>
 	<SpellPoints1>0</SpellPoints1>
 	<SpellPoints2>0</SpellPoints2>
-	<Exp>322</Exp>
-	<Power>6003</Power>
+	<Exp>1000</Exp>
+	<Power>6000</Power>
 	<TimeToCommand>10</TimeToCommand>
 	<CreatureTier>7</CreatureTier>
 	<Upgrade>true</Upgrade>
@@ -38,10 +38,10 @@
 		<Wood>0</Wood>
 		<Ore>0</Ore>
 		<Mercury>0</Mercury>
-		<Crystal>2</Crystal>
+		<Crystal>3</Crystal>
 		<Sulfur>0</Sulfur>
 		<Gem>0</Gem>
-		<Gold>3500</Gold>
+		<Gold>4500</Gold>
 	</Cost>
 	<PresetPrice>0</PresetPrice>
 	<SubjectOfRandomGeneration>true</SubjectOfRandomGeneration>
@@ -53,5 +53,10 @@
 	<Range>0</Range>
 	<BaseCreature>CREATURE_ANGEL</BaseCreature>
 	<Upgrades/>
-	<Abilities/>
+	<Abilities>
+		<Item>ABILITY_BOND_OF_LIGHT</Item>
+		<Item>ABILITY_ANTI_GIANT</Item>
+		<Item>ABILITY_FLAMEWAVE</Item>
+		<Item>ABILITY_IMMUNITY_TO_CURSE</Item>
+	</Abilities>
 </Creature>

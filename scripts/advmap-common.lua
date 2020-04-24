@@ -2,7 +2,7 @@ doFile("/scripts/common.lua")
 
 __difficulty = GetDifficulty();
 __defaultResources = { 20, 20, 10, 10, 10, 10, 20000 };
-__difficultyResModifiers = { 2.5, 1.5, 1.0, 0.5 };
+__difficultyResModifiers = { 1.5, 1.0, 1.0, 0.5 };
 function SetPlayerStartResource( nPlayer, nRes, nAmount )
     local resbonus = GetPlayerResource( nPlayer, nRes ) - __defaultResources[nRes + 1] * __difficultyResModifiers[__difficulty + 1];
     SetPlayerResource( nPlayer, nRes, nAmount + resbonus );
@@ -68,3 +68,10 @@ function GetPlayerFilter( player )
   if player == PLAYER_8 then return PLAYERFLT_8; end;
   return 0;
 end;
+
+function PlayVoiceover( soundName )
+  Play2DSound( soundName, 1 );
+end;
+
+doFile("/scripts/H55-Tables.lua");
+doFile("/scripts/H55-Core.lua");

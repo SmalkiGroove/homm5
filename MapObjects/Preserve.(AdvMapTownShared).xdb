@@ -1489,10 +1489,10 @@
 		<Item href="/GameMechanics/TownBuildingSharedStats/Preserve/MarketPlace/Resource_Silo.xdb#xpointer(/TownBuildingSharedStats)"/>
 		<Item href="/GameMechanics/TownBuildingSharedStats/Preserve/Shipyard/Shipyard.xdb#xpointer(/TownBuildingSharedStats)"/>
 		<Item href="/GameMechanics/TownBuildingSharedStats/Preserve/Tavern/Tavern.xdb#xpointer(/TownBuildingSharedStats)"/>
-		<Item href="/GameMechanics/TownBuildingSharedStats/Preserve/Dwelling_1/FaerieTrees.xdb#xpointer(/TownBuildingSharedStats)"/>
-		<Item href="/GameMechanics/TownBuildingSharedStats/Preserve/Dwelling_1/FaeriePenates.xdb#xpointer(/TownBuildingSharedStats)"/>
-		<Item href="/GameMechanics/TownBuildingSharedStats/Preserve/Dwelling_2/WoodGuardQuarters.xdb#xpointer(/TownBuildingSharedStats)"/>
-		<Item href="/GameMechanics/TownBuildingSharedStats/Preserve/Dwelling_2/WoodGuardTerraces.xdb#xpointer(/TownBuildingSharedStats)"/>
+		<Item href="/GameMechanics/TownBuildingSharedStats/Preserve/Dwelling_1/WoodGuardQuarters.xdb#xpointer(/TownBuildingSharedStats)"/>
+		<Item href="/GameMechanics/TownBuildingSharedStats/Preserve/Dwelling_1/WoodGuardTerraces.xdb#xpointer(/TownBuildingSharedStats)"/>
+		<Item href="/GameMechanics/TownBuildingSharedStats/Preserve/Dwelling_2/FaerieTrees.xdb#xpointer(/TownBuildingSharedStats)"/>
+		<Item href="/GameMechanics/TownBuildingSharedStats/Preserve/Dwelling_2/FaeriePenates.xdb#xpointer(/TownBuildingSharedStats)"/>
 		<Item href="/GameMechanics/TownBuildingSharedStats/Preserve/Dwelling_3/HighCabins.xdb#xpointer(/TownBuildingSharedStats)"/>
 		<Item href="/GameMechanics/TownBuildingSharedStats/Preserve/Dwelling_3/HighPalace.xdb#xpointer(/TownBuildingSharedStats)"/>
 		<Item href="/GameMechanics/TownBuildingSharedStats/Preserve/Dwelling_4/RingOfStones.xdb#xpointer(/TownBuildingSharedStats)"/>
@@ -1516,7 +1516,7 @@
 		<y>0</y>
 	</FitRandomTownMaskPositionShift>
 	<MagicSchool_0>MAGIC_SCHOOL_LIGHT</MagicSchool_0>
-	<MagicSchool_1>MAGIC_SCHOOL_DESTRUCTIVE</MagicSchool_1>
+	<MagicSchool_1>MAGIC_SCHOOL_SUMMONING</MagicSchool_1>
 	<icons>
 		<Icon55x55 href="Preserve/Icon55x55.(Texture).xdb#xpointer(/Texture)"/>
 		<IconWithFort55x55 href="Preserve/IconWithFort55x55.(Texture).xdb#xpointer(/Texture)"/>

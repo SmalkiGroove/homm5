@@ -14,6 +14,10 @@
 			<Anim href="RuneMage-arena-cast.xdb#xpointer(/BasicSkelAnim)"/>
 		</Item>
 		<Item>
+			<Kind>rangeattack</Kind>
+			<Anim href="RuneMage-arena-cast.xdb#xpointer(/BasicSkelAnim)"/>
+		</Item>
+		<Item>
 			<Kind>buff</Kind>
 			<Anim href="RuneMage-arena-buff.xdb#xpointer(/BasicSkelAnim)"/>
 		</Item>

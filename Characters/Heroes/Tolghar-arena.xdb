@@ -14,6 +14,10 @@
 			<Anim href="Tolghar-arena-happy.xdb#xpointer(/BasicSkelAnim)"/>
 		</Item>
 		<Item>
+			<Kind>rangeattack</Kind>
+			<Anim href="Tolghar-arena-cast.xdb#xpointer(/BasicSkelAnim)"/>
+		</Item>
+		<Item>
 			<Kind>idle00</Kind>
 			<Anim href="Tolghar-arena-idle00.xdb#xpointer(/BasicSkelAnim)"/>
 		</Item>

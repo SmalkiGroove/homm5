@@ -14,23 +14,23 @@
 	<MagicSchool>MAGIC_SCHOOL_DARK</MagicSchool>
 	<RequiredHeroLevel>0</RequiredHeroLevel>
 	<IsAimed>true</IsAimed>
-	<TrainedCost>6</TrainedCost>
+	<TrainedCost>8</TrainedCost>
 	<damage>
 		<Item>
-			<Base>32</Base>
+			<Base>24</Base>
 			<PerPower>8</PerPower>
 		</Item>
 		<Item>
 			<Base>32</Base>
-			<PerPower>8</PerPower>
+			<PerPower>12</PerPower>
 		</Item>
 		<Item>
-			<Base>32</Base>
-			<PerPower>8</PerPower>
+			<Base>40</Base>
+			<PerPower>16</PerPower>
 		</Item>
 		<Item>
-			<Base>32</Base>
-			<PerPower>8</PerPower>
+			<Base>48</Base>
+			<PerPower>20</PerPower>
 		</Item>
 	</damage>
 	<duration>

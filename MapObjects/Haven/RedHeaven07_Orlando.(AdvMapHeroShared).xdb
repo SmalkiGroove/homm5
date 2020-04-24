@@ -4,7 +4,12 @@
 	<AnimSet href="/_(AnimSet)/Heroes/Knight_LOD-adv.(AnimSet).xdb#xpointer(/AnimSet)"/>
 	<blockedTiles/>
 	<holeTiles/>
-	<activeTiles/>
+	<activeTiles>
+		<Item>
+			<x>0</x>
+			<y>0</y>
+		</Item>
+	</activeTiles>
 	<passableTiles/>
 	<PossessionMarkerTile>
 		<x>0</x>
@@ -21,38 +26,42 @@
 	<flybyMessageFileRef href=""/>
 	<ObjectTypeFileRef href="/Text/Visibility_Types/Units.txt"/>
 	<TerrainAligned>false</TerrainAligned>
-	<FlyPassable>true</FlyPassable>
+	<FlyPassable>false</FlyPassable>
 	<AdventureSoundEffect/>
 	<RazedStatic/>
-	<Icon128/>
+	<Icon128 href="/UI/H5A2/Icons/Heroes/Portrets128x128/Haven_Orlando.xdb#xpointer(/Texture)"/>
 	<InternalName>Orlando</InternalName>
-	<Class>HERO_CLASS_KNIGHT</Class>
-	<Specialization>HERO_SPEC_GRIFFINS</Specialization>
+	<Class>HERO_CLASS_HERETIC</Class>
+	<Specialization>HERO_SPEC_MALEDICTOR</Specialization>
 	<PrimarySkill>
-		<Mastery>MASTERY_BASIC</Mastery>
-		<SkillID>HERO_SKILL_TRAINING</SkillID>
+		<Mastery>MASTERY_ADVANCED</Mastery>
+		<SkillID>HERO_SKILL_DARK_MAGIC</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Haven/Griffon_Commander/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Haven/Griffon_Commander/Description.txt"/>
-	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Haven/Griffon_Commander.xdb#xpointer(/Texture)"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Necropolis/Maledictor2/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Necropolis/Maledictor2/Description.txt"/>
+	<SpecializationIcon href="/Textures/HeroScreen/Feats/Wizard/DarkMagic_SuppresDark.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/UI/H5A2/Icons/Heroes/Portrets128x128/Haven_Orlando.xdb#xpointer(/Texture)"/>
-	<FaceTextureSmall href="/UI/H5A2/Icons/Heroes/Portrets128x128/Haven_Orlando.xdb#xpointer(/Texture)"/>
-	<HeroCharacterArena href="/Characters/Heroes/Renegade_Hero.(Character).xdb#xpointer(/Character)"/>
-	<HeroCharacterArenaMelee href="/Characters/Heroes/Renegade_Hero_Strike.(Character).xdb#xpointer(/Character)"/>
-	<HeroCharacterAdventure href="/Characters/Heroes/Renegade_Hero_LOD.(Character).xdb#xpointer(/Character)"/>
+	<FaceTextureSmall/>
+	<HeroCharacterArena href="/Characters/Heroes/Markal(Berein).(Character).xdb#xpointer(/Character)"/>
+	<HeroCharacterArenaMelee/>
+	<HeroCharacterAdventure href="/Characters/Heroes/Markal(Berein)_LOD.(Character).xdb#xpointer(/Character)"/>
 	<HeroIndividualCamera/>
-	<CombatVisual href="/GameMechanics/CreatureVisual/Heroes/Knight.xdb#xpointer(/CreatureVisual)"/>
+	<CombatVisual href="/GameMechanics/CreatureVisual/Heroes/Necromancer.xdb#xpointer(/CreatureVisual)"/>
 	<TownType>TOWN_HEAVEN</TownType>
 	<Editable>
 		<NameFileRef href="RedHeavenHero07_Orlando.txt"/>
 		<BiographyFileRef href="/Text/Game/Heroes/Persons/Haven/RedHeavenHero06/Bio.txt"/>
-		<Offence>1</Offence>
-		<Defence>2</Defence>
-		<Spellpower>1</Spellpower>
+		<Offence>2</Offence>
+		<Defence>0</Defence>
+		<Spellpower>2</Spellpower>
 		<Knowledge>1</Knowledge>
 		<skills/>
-		<perkIDs/>
-		<spellIDs/>
+		<perkIDs>
+			<Item>HERO_SKILL_MASTER_OF_CURSES</Item>
+		</perkIDs>
+		<spellIDs>
+			<Item>SPELL_CURSE</Item>
+		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>
 		<AmmoCart>false</AmmoCart>
@@ -65,7 +74,7 @@
 	<Trace href="/MapObjects/_(AdvMapHeroTraceSet)/Haven.xdb#xpointer(/AdvMapHeroTraceSet)"/>
 	<RaceTraitIcon/>
 	<RaceTraitDescFileRef href=""/>
-	<ScenarioHero>true</ScenarioHero>
+	<ScenarioHero>false</ScenarioHero>
 	<AdventureMusic/>
 	<HideInEditor>false</HideInEditor>
 	<PresetMinimalAttributes>

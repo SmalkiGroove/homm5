@@ -27,19 +27,19 @@
 	<FlyPassable>true</FlyPassable>
 	<AdventureSoundEffect/>
 	<RazedStatic/>
-	<Icon128/>
+	<Icon128 href="/Textures/Icons/Heroes/Heaven/Heaven_Godric_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<InternalName>Godric</InternalName>
-	<Class>HERO_CLASS_KNIGHT</Class>
-	<Specialization>HERO_SPEC_WHITE_KNIGHT</Specialization>
+	<Class>HERO_CLASS_RANGER</Class>
+	<Specialization>HERO_SPEC_HASTE</Specialization>
 	<PrimarySkill>
-		<Mastery>MASTERY_BASIC</Mastery>
-		<SkillID>HERO_SKILL_TRAINING</SkillID>
+		<Mastery>MASTERY_ADVANCED</Mastery>
+		<SkillID>HERO_SKILL_LIGHT_MAGIC</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Haven/White_Knight/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Haven/White_Knight/Description.txt"/>
-	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Haven/White_Khight.xdb#xpointer(/Texture)"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Haven/Expediter/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Haven/Expediter/Description.txt"/>
+	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Haven/Expediter.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Heaven/Heaven_Godric_128x128.(Texture).xdb#xpointer(/Texture)"/>
-	<FaceTextureSmall href="/Textures/Icons/Heroes/Heaven/Heaven_Godric_128x128_64.(Texture).xdb#xpointer(/Texture)"/>
+	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/Godric.(Character).xdb#xpointer(/Character)"/>
 	<HeroCharacterArenaMelee href="/Characters/Heroes/Godric_Strike.(Character).xdb#xpointer(/Character)"/>
 	<HeroCharacterAdventure href="/Characters/Heroes/Godric_LOD.(Character).xdb#xpointer(/Character)"/>
@@ -49,28 +49,19 @@
 	<Editable>
 		<NameFileRef href="/Text/Game/Heroes/Persons/Haven/Godric/Name.txt"/>
 		<BiographyFileRef href="/Text/Game/Heroes/Persons/Haven/Godric/Bio.txt"/>
-		<Offence>1</Offence>
+		<Offence>0</Offence>
 		<Defence>2</Defence>
 		<Spellpower>1</Spellpower>
-		<Knowledge>1</Knowledge>
-		<skills>
-			<Item>
-				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_LEADERSHIP</SkillID>
-			</Item>
-			<Item>
-				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_LIGHT_MAGIC</SkillID>
-			</Item>
-		</skills>
+		<Knowledge>2</Knowledge>
+		<skills/>
 		<perkIDs>
-			<Item>HERO_SKILL_PRAYER</Item>
+			<Item>HERO_SKILL_MASTER_OF_WRATH</Item>
 		</perkIDs>
 		<spellIDs>
-			<Item>SPELL_BLESS</Item>
+			<Item>SPELL_HASTE</Item>
 		</spellIDs>
 		<Ballista>false</Ballista>
-		<FirstAidTent>true</FirstAidTent>
+		<FirstAidTent>false</FirstAidTent>
 		<AmmoCart>false</AmmoCart>
 		<FavoriteEnemies/>
 	</Editable>

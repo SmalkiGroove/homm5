@@ -33,5 +33,17 @@
 			<TextName>bonus_tooltip_resource</TextName>
 			<text href="bonus_tooltip_resource.txt"/>
 		</Item>
+		<Item>
+			<TextName>EE_equal_resources</TextName>
+			<text href="EE_tooltip_equal_resources.txt"/>
+		</Item>
+		<Item>
+			<TextName>EE_ai_aggressive</TextName>
+			<text href="EE_tooltip_ai_aggressive.txt"/>
+		</Item>
+		<Item>
+			<TextName>EE_ai_defensive</TextName>
+			<text href="EE_tooltip_ai_defensive.txt"/>
+		</Item>
 	</texts>
 </WindowRelatedTexts>

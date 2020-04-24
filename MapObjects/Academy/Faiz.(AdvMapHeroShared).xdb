@@ -29,17 +29,17 @@
 	<RazedStatic/>
 	<Icon128/>
 	<InternalName>Faiz</InternalName>
-	<Class>HERO_CLASS_WIZARD</Class>
-	<Specialization>HERO_SPEC_DISRUPTER</Specialization>
+	<Class>HERO_CLASS_WIZARDA</Class>
+	<Specialization/>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
 		<SkillID>HERO_SKILL_ARTIFICIER</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Academy/Disrupter/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Academy/Disrupter/Description.txt"/>
-	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Academy/Disrupter.xdb#xpointer(/Texture)"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Added/Eagles/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Added/Eagles/Description.txt"/>
+	<SpecializationIcon href="/UI/H5A0/Icons/Creatures/Neutral/128x128/Eagle.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Academy/Academy_Faiz_128x128.(Texture).xdb#xpointer(/Texture)"/>
-	<FaceTextureSmall href="/Textures/Icons/Heroes/Academy/Academy_Faiz_128x128_64.(Texture).xdb#xpointer(/Texture)"/>
+	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/Wizard.(Character).xdb#xpointer(/Character)"/>
 	<HeroCharacterArenaMelee/>
 	<HeroCharacterAdventure href="/Characters/Heroes/Wizard_LOD.(Character).xdb#xpointer(/Character)"/>
@@ -60,10 +60,10 @@
 			</Item>
 		</skills>
 		<perkIDs>
-			<Item>HERO_SKILL_MASTER_OF_SICKNESS</Item>
+			<Item>HERO_SKILL_MELT_ARTIFACT</Item>
 		</perkIDs>
 		<spellIDs>
-			<Item>SPELL_DISRUPTING_RAY</Item>
+			<Item>SPELL_SLOW</Item>
 		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>

@@ -9,7 +9,9 @@
 		<Item href="Abilities/AbilitiesLine3.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		<Item href="Abilities/AbilitiesLine4.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		<Item href="Abilities/SkillsHeader.(WindowStaticText).xdb#xpointer(/WindowStaticText)"/>
-		<Item href="SkillSelection.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
+		<Item href="Abilities/Left.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="Abilities/Right.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="SkillSelection.(WindowSimple).xdb#xpointer(/WindowSimple)"/>	
 	</Children>
 	<Background/>
 	<Foreground/>

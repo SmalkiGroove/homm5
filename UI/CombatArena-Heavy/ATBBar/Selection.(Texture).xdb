@@ -6,8 +6,8 @@
 	<ConversionType>CONVERT_TRANSPARENT_ADD</ConversionType>
 	<AddrType>CLAMP</AddrType>
 	<Format>TF_8888</Format>
-	<Width>61</Width>
-	<Height>61</Height>
+	<Width>57</Width>
+	<Height>57</Height>
 	<MappingSize>0</MappingSize>
 	<NMips>1</NMips>
 	<Gain>0</Gain>

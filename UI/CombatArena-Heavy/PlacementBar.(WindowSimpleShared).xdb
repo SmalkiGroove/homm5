@@ -3,13 +3,13 @@
 	<Crap>false</Crap>
 	<Children>
 		<Item href="PlacementBar/Hero.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
-		<Item href="/UI/AdventureScreen-heavy/PlacementBar/Slot1.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
-		<Item href="/UI/AdventureScreen-heavy/PlacementBar/Slot2.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
-		<Item href="/UI/AdventureScreen-heavy/PlacementBar/Slot3.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
-		<Item href="/UI/AdventureScreen-heavy/PlacementBar/Slot4.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
-		<Item href="/UI/AdventureScreen-heavy/PlacementBar/Slot5.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
-		<Item href="/UI/AdventureScreen-heavy/PlacementBar/Slot6.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
-		<Item href="/UI/AdventureScreen-heavy/PlacementBar/Slot7.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="PlacementBar/Slot1.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="PlacementBar/Slot2.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="PlacementBar/Slot3.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="PlacementBar/Slot4.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="PlacementBar/Slot5.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="PlacementBar/Slot6.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="PlacementBar/Slot7.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
 	</Children>
 	<Background href="PlacementBar.(BackgroundSimpleTexture).xdb#xpointer(/BackgroundSimpleTexture)"/>
 	<Foreground/>
@@ -34,8 +34,8 @@
 		</HorAllign>
 		<Size>
 			<First>
-				<x>600</x>
-				<y>165</y>
+				<x>651</x>
+				<y>148</y>
 			</First>
 			<Second>false</Second>
 		</Size>

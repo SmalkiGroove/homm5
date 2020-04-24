@@ -4,7 +4,9 @@
 	<LongDescriptionFileRef href="/Text/Game/Spells/Creature_Abilities/Inferno/Explosion/Description.txt"/>
 	<Texture href="/Textures/SpecialAbilities/Explosion.(Texture).xdb#xpointer(/Texture)"/>
 	<EffectTexture/>
-	<SpellBookPredictions/>
+	<SpellBookPredictions>
+          		<Item href="/Text/Game/Spells/SpellBookPredictions/DirectDamage.txt"/>
+	 </SpellBookPredictions>
 	<CombatLogTexts/>
 	<Level>0</Level>
 	<MagicSchool>MAGIC_SCHOOL_SPECIAL</MagicSchool>
@@ -12,20 +14,20 @@
 	<TrainedCost>0</TrainedCost>
 	<damage>
 		<Item>
-			<Base>5</Base>
-			<PerPower>5</PerPower>
-		</Item>
-		<Item>
-			<Base>7</Base>
-			<PerPower>7</PerPower>
-		</Item>
-		<Item>
-			<Base>9</Base>
-			<PerPower>9</PerPower>
+			<Base>11</Base>
+			<PerPower>16</PerPower>
 		</Item>
 		<Item>
 			<Base>11</Base>
-			<PerPower>11</PerPower>
+			<PerPower>16</PerPower>
+		</Item>
+		<Item>
+			<Base>11</Base>
+			<PerPower>16</PerPower>
+		</Item>
+		<Item>
+			<Base>11</Base>
+			<PerPower>16</PerPower>
 		</Item>
 	</damage>
 	<duration/>

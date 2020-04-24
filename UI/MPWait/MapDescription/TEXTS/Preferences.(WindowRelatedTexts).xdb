@@ -61,5 +61,37 @@
 			<TextName>simultaneus_turns</TextName>
 			<text href="simultaneus_turns.txt"/>
 		</Item>
+		<Item>
+			<TextName>EE_lookahead</TextName>
+			<text href="EE_lookahead_name.txt"/>
+		</Item>
+		<Item>
+			<TextName>EE_mercenaries</TextName>
+			<text href="EE_mercenaries_name.txt"/>
+		</Item>
+		<Item>
+			<TextName>EE_decisionhall</TextName>
+			<text href="EE_decisionhall_name.txt"/>
+		</Item>		
+		<Item>
+			<TextName>EE_discount</TextName>
+			<text href="EE_discount_name.txt"/>
+		</Item>
+		<Item>
+			<TextName>EE_artefacts</TextName>
+			<text href="EE_artefacts_name.txt"/>
+		</Item>
+		<Item>
+			<TextName>EE_taxes</TextName>
+			<text href="EE_taxes_name.txt"/>
+		</Item>
+		<Item>
+			<TextName>EE_eightskills</TextName>
+			<text href="EE_eightskills_name.txt"/>
+		</Item>
+		<Item>
+			<TextName>EE_measure_days</TextName>
+			<text href="/UI/MPWait/MapDescription/EE_measure_days.txt"/>
+		</Item>
 	</texts>
 </WindowRelatedTexts>

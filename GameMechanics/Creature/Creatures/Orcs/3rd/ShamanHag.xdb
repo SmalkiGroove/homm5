@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Creature>
-	<AttackSkill>10</AttackSkill>
-	<DefenceSkill>7</DefenceSkill>
+	<AttackSkill>3</AttackSkill>
+	<DefenceSkill>3</DefenceSkill>
 	<Shots>0</Shots>
-	<MinDamage>7</MinDamage>
-	<MaxDamage>11</MaxDamage>
+	<MinDamage>3</MinDamage>
+	<MaxDamage>4</MaxDamage>
 	<Speed>5</Speed>
-	<Initiative>12</Initiative>
+	<Initiative>11</Initiative>
 	<Flying>false</Flying>
-	<Health>35</Health>
+	<Health>16</Health>
 	<KnownSpells>
 		<Item>
 			<Spell>SPELL_ABILITY_SACRIFICE_GOBLIN</Spell>
@@ -26,10 +26,10 @@
 	<SpellPoints>8</SpellPoints>
 	<SpellPoints1>0</SpellPoints1>
 	<SpellPoints2>0</SpellPoints2>
-	<Exp>55</Exp>
-	<Power>692</Power>
+	<Exp>28</Exp>
+	<Power>180</Power>
 	<TimeToCommand>10</TimeToCommand>
-	<CreatureTier>4</CreatureTier>
+	<CreatureTier>2</CreatureTier>
 	<Upgrade>false</Upgrade>
 	<PairCreature>CREATURE_UNKNOWN</PairCreature>
 	<CreatureTown>TOWN_STRONGHOLD</CreatureTown>
@@ -37,7 +37,7 @@
 		<First>ELEMENT_EARTH</First>
 		<Second>ELEMENT_NONE</Second>
 	</MagicElement>
-	<WeeklyGrowth>5</WeeklyGrowth>
+	<WeeklyGrowth>13</WeeklyGrowth>
 	<Cost>
 		<Wood>0</Wood>
 		<Ore>0</Ore>
@@ -45,7 +45,7 @@
 		<Crystal>0</Crystal>
 		<Sulfur>0</Sulfur>
 		<Gem>0</Gem>
-		<Gold>360</Gold>
+		<Gold>75</Gold>
 	</Cost>
 	<SubjectOfRandomGeneration>true</SubjectOfRandomGeneration>
 	<MonsterShared href="/MapObjects/Stronghold/Hag.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>

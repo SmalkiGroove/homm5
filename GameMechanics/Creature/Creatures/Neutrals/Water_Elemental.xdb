@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Creature ObjectRecordID="1000056">
-	<AttackSkill>8</AttackSkill>
-	<DefenceSkill>8</DefenceSkill>
+	<AttackSkill>1</AttackSkill>
+	<DefenceSkill>10</DefenceSkill>
 	<Shots>0</Shots>
-	<MinDamage>8</MinDamage>
-	<MaxDamage>12</MaxDamage>
-	<Speed>5</Speed>
-	<Initiative>10</Initiative>
+	<MinDamage>4</MinDamage>
+	<MaxDamage>6</MaxDamage>
+	<Speed>4</Speed>
+	<Initiative>9</Initiative>
 	<Flying>false</Flying>
-	<Health>43</Health>
+	<Health>140</Health>
 	<KnownSpells>
 		<Item>
 			<Spell>SPELL_ICE_BOLT</Spell>
@@ -19,10 +19,10 @@
 			<Mastery>MASTERY_BASIC</Mastery>
 		</Item>
 	</KnownSpells>
-	<SpellPoints>12</SpellPoints>
+	<SpellPoints>27</SpellPoints>
 	<SpellPoints1>0</SpellPoints1>
 	<SpellPoints2>0</SpellPoints2>
-	<Exp>57</Exp>
+	<Exp>88</Exp>
 	<Power>795</Power>
 	<TimeToCommand>15</TimeToCommand>
 	<CreatureTier>4</CreatureTier>
@@ -33,7 +33,7 @@
 		<First>ELEMENT_WATER</First>
 		<Second>ELEMENT_NONE</Second>
 	</MagicElement>
-	<WeeklyGrowth>4</WeeklyGrowth>
+	<WeeklyGrowth>15</WeeklyGrowth>
 	<Cost>
 		<Wood>0</Wood>
 		<Ore>0</Ore>
@@ -41,7 +41,7 @@
 		<Crystal>0</Crystal>
 		<Sulfur>0</Sulfur>
 		<Gem>0</Gem>
-		<Gold>400</Gold>
+		<Gold>250</Gold>
 	</Cost>
 	<SubjectOfRandomGeneration>false</SubjectOfRandomGeneration>
 	<MonsterShared href="/MapObjects/Neutral/Water_Elemental.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>

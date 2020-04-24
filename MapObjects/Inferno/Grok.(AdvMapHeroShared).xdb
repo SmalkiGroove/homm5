@@ -32,14 +32,14 @@
 	<Class>HERO_CLASS_DEMON_LORD</Class>
 	<Specialization>HERO_SPEC_BEATER</Specialization>
 	<PrimarySkill>
-		<Mastery>MASTERY_BASIC</Mastery>
+		<Mastery>MASTERY_ADVANCED</Mastery>
 		<SkillID>HERO_SKILL_GATING</SkillID>
 	</PrimarySkill>
 	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Inferno/Beater/Name.txt"/>
 	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Inferno/Beater/Description.txt"/>
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Inferno/Beater.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Inferno/Inferno_Erasial_128x128.(Texture).xdb#xpointer(/Texture)"/>
-	<FaceTextureSmall href="/Textures/Icons/Heroes/Inferno/Inferno_Erasial_128x128_64.(Texture).xdb#xpointer(/Texture)"/>
+	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/DemonLord.(Character).xdb#xpointer(/Character)"/>
 	<HeroCharacterArenaMelee/>
 	<HeroCharacterAdventure href="/Characters/Heroes/DemonLord_LOD.(Character).xdb#xpointer(/Character)"/>
@@ -51,16 +51,11 @@
 		<BiographyFileRef href="/Text/Game/Heroes/Persons/Inferno/Grok/Bio.txt"/>
 		<Offence>2</Offence>
 		<Defence>0</Defence>
-		<Spellpower>1</Spellpower>
-		<Knowledge>2</Knowledge>
-		<skills>
-			<Item>
-				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_LOGISTICS</SkillID>
-			</Item>
-		</skills>
+		<Spellpower>2</Spellpower>
+		<Knowledge>1</Knowledge>
+		<skills/>
 		<perkIDs>
-			<Item>HERO_SKILL_PATHFINDING</Item>
+			<Item>HERO_SKILL_GATING_MASTERY</Item>
 		</perkIDs>
 		<spellIDs>
 			<Item>SPELL_TELEPORT</Item>

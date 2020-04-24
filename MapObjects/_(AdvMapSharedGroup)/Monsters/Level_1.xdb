@@ -11,8 +11,8 @@
 		<Item href="/MapObjects/Dungeon/Assassin.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Necropolis/Sceleton.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Necropolis/Sceleton_Archer.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
-		<Item href="/MapObjects/Preserve/Pixie.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
-		<Item href="/MapObjects/Preserve/Sprite.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
+		<Item href="/MapObjects/Preserve/Blade_Juggler.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
+		<Item href="/MapObjects/Preserve/War_Dancer.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Dwarf/Defender.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Dwarf/Stout_Defender.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Academy/Gremlin_Saboteur.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
@@ -20,7 +20,7 @@
 		<Item href="/MapObjects/Dwarf/Stone_Defender.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Inferno/Quasit.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Necropolis/Alt_upgrade/Skeleton_Warrior.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
-		<Item href="/MapObjects/Preserve/Alt_upgrade/Dryad.xdb#xpointer(/AdvMapMonsterShared)"/>
+		<Item href="/MapObjects/Preserve/Alt_upgrade/Bladesinger.xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Stronghold/Goblin_Defiler.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Haven/Renegates/Landlord.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
 		<Item href="/MapObjects/Stronghold/Goblin.xdb#xpointer(/AdvMapMonsterShared)"/>

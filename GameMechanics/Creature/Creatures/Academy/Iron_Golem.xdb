@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Creature ObjectRecordID="1000041">
-	<AttackSkill>5</AttackSkill>
-	<DefenceSkill>5</DefenceSkill>
+	<AttackSkill>8</AttackSkill>
+	<DefenceSkill>8</DefenceSkill>
 	<Shots>0</Shots>
-	<MinDamage>3</MinDamage>
+	<MinDamage>2</MinDamage>
 	<MaxDamage>5</MaxDamage>
 	<Speed>4</Speed>
 	<Initiative>7</Initiative>
@@ -13,7 +13,7 @@
 	<SpellPoints>0</SpellPoints>
 	<SpellPoints1>0</SpellPoints1>
 	<SpellPoints2>0</SpellPoints2>
-	<Exp>21</Exp>
+	<Exp>33</Exp>
 	<Power>243</Power>
 	<TimeToCommand>10</TimeToCommand>
 	<CreatureTier>3</CreatureTier>
@@ -24,7 +24,7 @@
 		<First>ELEMENT_EARTH</First>
 		<Second>ELEMENT_NONE</Second>
 	</MagicElement>
-	<WeeklyGrowth>9</WeeklyGrowth>
+	<WeeklyGrowth>24</WeeklyGrowth>
 	<Cost>
 		<Wood>0</Wood>
 		<Ore>0</Ore>

@@ -7,7 +7,7 @@
 	<Icon32/>
 	<Icon64/>
 	<Icon128/>
-	<AnimCharacter/>
+	<AnimCharacter href="/Characters/Heroes/DemonLord.(Character).xdb#xpointer(/Character)"/>
 	<DeadCharacter/>
 	<AnimShot href="/GameMechanics/Shot/Heroes/Agrael.xdb#xpointer(/Shot)"/>
 	<SummoningEffect/>
