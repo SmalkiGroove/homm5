@@ -11,11 +11,11 @@
 
 H55_TownGateEnabled = 1; --Activates Town Gate, allows teleportation of heroes to any town (0 = deactivated).
 
-H55_TownConvEnabled = 0; --Activates Town and Dwelling Conversion (0 = deactivated)
+H55_TownConvEnabled = 1; --Activates Town and Dwelling Conversion (0 = deactivated)
 H55_AmountExtraTownsDwellings = 1; --Allows to increase amount of allowed conversions for dwellings and towns (1 = balanced like RC3, zero can also be used).
 
-H55_GovernanceEnabled = 0; --Allows the creation of governor heroes (0 = deactivated).
-H55_GovernorExpCoef = 1; --Multiplier for experience gain of governors (do not set to zero) Example: 1.2 = 20% more, 0.8 = 20% less.
+H55_GovernanceEnabled = 1; --Allows the creation of governor heroes (0 = deactivated).
+H55_GovernorExpCoef = 1.1; --Multiplier for experience gain of governors (do not set to zero) Example: 1.2 = 20% more, 0.8 = 20% less.
 
 H55_IgnoreExpAdjustment = 0; --If this is set to 1, the game will not adjust the experience gain to the size of the neutral stacks (so higher difficulty will not be as hard).
 
@@ -33,7 +33,7 @@ H55_AllAgainstOne = 0; --If this is set to 1, all AI players will always be team
 --	WARNING!!! The AICheatMode setting does not affect 'casual game' mode, in this mode Cheating is always off!
 
 H55_AIHandicap = 0; --Set this to 1 to make AI start with fewer resources for easier game. Also makes casual game easier. Don't use for Campaign.
-H55_AICheatMode = 4; --Makes AI Cheating more or less difficult, Only accepts numbers 0,1,2,3,4,5,6; 
+H55_AICheatMode = 0; --Makes AI Cheating more or less difficult, Only accepts numbers 0,1,2,3,4,5,6; 
 
 --	GUIDELINES for AICheatMode setting:
 --	0 = Cheating is ALWAYS off, allows choosing bonus without cheating, casual game mode is still a little easier above hard since AI starts with less resources.
@@ -41,7 +41,7 @@ H55_AICheatMode = 4; --Makes AI Cheating more or less difficult, Only accepts nu
 --	4 = 100% same difficulty as previous releases.
 --	6 = 5 = 120%, 6 = 140%.
 
-H55_ForceAIFix = 0; --If this is set to 1, the bug where 31j AI sometimes doesn't attack after losing all towns is fixed on all maps instead of only ARMG maps.
+H55_ForceAIFix = 1; --If this is set to 1, the bug where 31j AI sometimes doesn't attack after losing all towns is fixed on all maps instead of only ARMG maps.
 
 --	WARNING!!! Do not set H55_ForceAIFix to 1, if you intend to play any campaign or storyline singleplayer maps.
 

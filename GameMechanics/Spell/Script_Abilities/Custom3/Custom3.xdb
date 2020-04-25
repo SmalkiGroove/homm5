@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spell ObjectRecordID="1000083">
-	<NameFileRef href="/Text/Game/Spells/Combat/Mass_Haste/Name.txt"/>
-	<LongDescriptionFileRef href="/Text/Game/Spells/Combat/Mass_Haste/Long_Description.txt"/>
-	<Texture href="/Textures/SpellBook______2618/Spells/Spell_Haste.xdb#xpointer(/Texture)"/>
-	<EffectTexture href="/UI/Common/Icons/Spell_Buff_Icons/Haste.(Texture).xdb#xpointer(/Texture)"/>
+<Spell>
+	<NameFileRef href="/Text/Game/Scripts/TownPortal/TCName.txt"/>
+	<LongDescriptionFileRef href="/Text/Game/Scripts/TownPortal/TCDesc.txt"/>
+	<Texture href="/Textures/MyTownPortal/Spell_TownConv.xdb#xpointer(/Texture)"/>
+	<EffectTexture/>
 	<SpellBookPredictions/>
 	<CombatLogTexts/>
 	<Level>1</Level>
-	<MagicSchool>MAGIC_SCHOOL_LIGHT</MagicSchool>
+	<MagicSchool>MAGIC_SCHOOL_ADVENTURE</MagicSchool>
 	<RequiredHeroLevel>0</RequiredHeroLevel>
-	<IsAimed>false</IsAimed>
-	<TrainedCost>8</TrainedCost>
+	<TrainedCost>0</TrainedCost>
 	<damage/>
 	<duration/>
 	<sSpellCost>
@@ -22,9 +21,13 @@
 		<Gem>0</Gem>
 		<Gold>0</Gold>
 	</sSpellCost>
+	<IsAimed>false</IsAimed>
 	<IsAreaAttack>false</IsAreaAttack>
 	<CanSelectDead>false</CanSelectDead>
 	<Target>TARGET_FRIEND</Target>
 	<Element>ELEMENT_NONE</Element>
+	<DamageIsElemental>true</DamageIsElemental>
 	<visuals/>
+	<PresetPrice>-1</PresetPrice>
+	<AvailableForPresets>false</AvailableForPresets>
 </Spell>

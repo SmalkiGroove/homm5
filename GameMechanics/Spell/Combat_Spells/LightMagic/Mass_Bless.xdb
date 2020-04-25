@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spell ObjectRecordID="1000083">
-	<NameFileRef href="/Text/Game/Spells/Combat/Mass_Haste/Name.txt"/>
-	<LongDescriptionFileRef href="/Text/Game/Spells/Combat/Mass_Haste/Long_Description.txt"/>
-	<Texture href="/Textures/SpellBook______2618/Spells/Spell_Haste.xdb#xpointer(/Texture)"/>
-	<EffectTexture href="/UI/Common/Icons/Spell_Buff_Icons/Haste.(Texture).xdb#xpointer(/Texture)"/>
+<Spell ObjectRecordID="1000078">
+	<NameFileRef href="/Text/Game/Spells/Combat/Mass_Bless/Name.txt"/>
+	<LongDescriptionFileRef href="/Text/Game/Spells/Combat/Mass_Bless/Long_Description.txt"/>
+	<Texture href="/Textures/SpellBook______2618/Spells/Spell_Bless.xdb#xpointer(/Texture)"/>
+	<EffectTexture href="/UI/Common/Icons/Spell_Buff_Icons/bless.(Texture).xdb#xpointer(/Texture)"/>
 	<SpellBookPredictions/>
 	<CombatLogTexts/>
 	<Level>1</Level>
 	<MagicSchool>MAGIC_SCHOOL_LIGHT</MagicSchool>
 	<RequiredHeroLevel>0</RequiredHeroLevel>
-	<IsAimed>false</IsAimed>
-	<TrainedCost>8</TrainedCost>
+	<IsAimed>false</IsAimed>	
+	<TrainedCost>8</TrainedCost>	
 	<damage/>
 	<duration/>
 	<sSpellCost>

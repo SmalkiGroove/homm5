@@ -181,7 +181,7 @@ H55_GlobalWeeklyGoldPayout = {0,0,0,0,0,0,0,0};
 H55_GlobalDailyGoldPayout = {0,0,0,0,0,0,0,0};
 H55_TaxRate = 5;
 			
---Supply
+--[[Supply
 
 H55_MysticalGardens = GetObjectNamesByType("BUILDING_MYSTICAL_GARDEN");
 H55_MysticalGardenClaims = {};
@@ -200,7 +200,7 @@ H55_WeeklyWindmillResQty = {};
 H55_WaterwheelsOwned = {};
 H55_SiegeWorkshopsOwned = {};
 H55_WeeklySiegeWorkshopResQty = {};
-
+]]
 H55_GoblinNetworkOwners = {};
 H55_DwarvenNetworkOwners = {};
 H55_NetworkSkillAmount = {0,0,0,0,0,0,0,0};
@@ -4251,7 +4251,7 @@ function H55_WeeklyEvents(player)
 	------------------------------------------------------------------------------------------------------------------------------------------------
 	H55_DEBUG = {2,"Suppliers",player,""};----------------------------------------------------------------------------------------------------------
 	------------------------------------------------------------------------------------------------------------------------------------------------
-	
+	--[[
 	if H55_MysticalGardens ~= nil then
 		local gardengold = 0;
 		local gardengems = 0;
@@ -4381,7 +4381,7 @@ function H55_WeeklyEvents(player)
 			end;
 		end;
 	end;
-			
+	]]
 	------------------------------------------------------------------------------------------------------------------------------------------------
 	H55_DEBUG = {3,"Economic Weekly",player,""};----------------------------------------------------------------------------------------------------
 	------------------------------------------------------------------------------------------------------------------------------------------------
@@ -5154,7 +5154,7 @@ function H55_ResetWeeklyEvents()
 	H55_ElementalsReceived = {};
 	H55_CodexReceived = {};
 	H55_DivineGuardiansReceived = {0,0,0,0,0,0,0,0};	
-
+	--[[
 	for i,garden in H55_MysticalGardens do
 		H55_WeeklyMysticalGardenRes[garden] = random(2);
 	end;
@@ -5165,7 +5165,7 @@ function H55_ResetWeeklyEvents()
 	for i,workshop in H55_SiegeWorkshops do
 		H55_WeeklySiegeWorkshopResQty[workshop] = 3+random(5);
 	end;
-
+	]]
 	--Map level weekly event
 	
 	if H55_SPMap == 1 and H55_SPMapWeeklyEvent == 1 then

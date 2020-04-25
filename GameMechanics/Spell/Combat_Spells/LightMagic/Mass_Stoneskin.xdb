@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spell ObjectRecordID="1000083">
-	<NameFileRef href="/Text/Game/Spells/Combat/Mass_Haste/Name.txt"/>
-	<LongDescriptionFileRef href="/Text/Game/Spells/Combat/Mass_Haste/Long_Description.txt"/>
-	<Texture href="/Textures/SpellBook______2618/Spells/Spell_Haste.xdb#xpointer(/Texture)"/>
-	<EffectTexture href="/UI/Common/Icons/Spell_Buff_Icons/Haste.(Texture).xdb#xpointer(/Texture)"/>
+<Spell ObjectRecordID="1000080">
+	<NameFileRef href="/Text/Game/Spells/Combat/Mass_Stoneskin/Name.txt"/>
+	<LongDescriptionFileRef href="/Text/Game/Spells/Combat/Mass_Stoneskin/Long_Description.txt"/>
+	<Texture href="/Textures/SpellBook______2618/Spells/Spell_Stoneskin.xdb#xpointer(/Texture)"/>
+	<EffectTexture href="/UI/Common/Icons/Spell_Buff_Icons/StoneSkin.(Texture).xdb#xpointer(/Texture)"/>
 	<SpellBookPredictions/>
 	<CombatLogTexts/>
-	<Level>1</Level>
+	<Level>2</Level>
 	<MagicSchool>MAGIC_SCHOOL_LIGHT</MagicSchool>
 	<RequiredHeroLevel>0</RequiredHeroLevel>
 	<IsAimed>false</IsAimed>
-	<TrainedCost>8</TrainedCost>
+	<TrainedCost>12</TrainedCost>
 	<damage/>
 	<duration/>
 	<sSpellCost>

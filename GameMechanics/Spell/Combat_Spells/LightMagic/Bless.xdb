@@ -37,15 +37,15 @@
 			<PerPower>0.5</PerPower>
 		</Item>
 		<Item>
-			<Base>1</Base>
+			<Base>2</Base>
 			<PerPower>0.5</PerPower>
 		</Item>
 		<Item>
-			<Base>1</Base>
+			<Base>2</Base>
 			<PerPower>0.5</PerPower>
 		</Item>
 		<Item>
-			<Base>1</Base>
+			<Base>2</Base>
 			<PerPower>0.5</PerPower>
 		</Item>
 	</duration>
