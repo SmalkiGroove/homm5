@@ -15,7 +15,7 @@
 	</Cost>
 	<ModObjectName>fort</ModObjectName>
 	<dependencies>
-		<Item href="/GameMechanics/TownBuildingSharedStats/Inferno/Fort/Citadel.xdb#xpointer(/TownBuildingSharedStats)"/>
+		<Item href="/GameMechanics/TownBuildingSharedStats/Inferno/Special_5/Sacrificial_Pit.xdb#xpointer(/TownBuildingSharedStats)"/>
 	</dependencies>
 	<Creature>CREATURE_UNKNOWN</Creature>
 	<DevLevelNeeded>15</DevLevelNeeded>
