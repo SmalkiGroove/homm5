@@ -33,10 +33,10 @@
 	<Specialization>HERO_SPEC_WEILDER_OF_FIRE</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
-		<SkillID>HERO_SKILL_SORCERY</SkillID>
+		<SkillID>HERO_SKILL_GATING</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Academy/Weilder_of_Fire2/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Academy/Weilder_of_Fire2/Description.txt"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Inferno/Weilder_of_Fire/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Inferno/Weilder_of_Fire/Description.txt"/>
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Academy/Weilder_of_Fire.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Inferno/Inferno_Calid2_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>

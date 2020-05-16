@@ -39,7 +39,7 @@
 			<ID>WAR_MACHINE_BALLISTA</ID>
 			<Obj href="#n:inline(WarMachine)" id="item_20388156-af46-40fe-b843-66d3a2404b58">
 				<WarMachine ObjectRecordID="29">
-					<Shots>60</Shots>
+					<Shots>10</Shots>
 					<Initiative>10</Initiative>
 					<Health>500</Health>
 					<Range>0</Range>
@@ -97,7 +97,7 @@
 			<ID>WAR_MACHINE_CATAPULT</ID>
 			<Obj href="#n:inline(WarMachine)" id="item_eb716ddf-8f42-49e5-96ac-c4d686a4301a">
 				<WarMachine ObjectRecordID="30">
-					<Shots>0</Shots>
+					<Shots>10</Shots>
 					<Initiative>12</Initiative>
 					<Health>1000</Health>
 					<Range>0</Range>

@@ -32,11 +32,11 @@
 	<Class>HERO_CLASS_ELEMENTALIST</Class>
 	<Specialization/>
 	<PrimarySkill>
-		<Mastery>MASTERY_ADVANCED</Mastery>
-		<SkillID>HERO_SKILL_SUMMONING_MAGIC</SkillID>
+		<Mastery>MASTERY_BASIC</Mastery>
+		<SkillID>HERO_SKILL_ARTIFICIER</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Added/Djinns/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Added/Djinns/Description.txt"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Academy/Djinns/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Academy/Djinns/Description.txt"/>
 	<SpecializationIcon href="/Textures/Interface/CombatArena/Faces/Academy/ico_mastergenie_64.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Academy/Academy_Galib_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
@@ -53,7 +53,12 @@
 		<Defence>0</Defence>
 		<Spellpower>3</Spellpower>
 		<Knowledge>2</Knowledge>
-		<skills/>
+		<skills>
+			<Item>
+				<Mastery>MASTERY_BASIC</Mastery>
+				<SkillID>HERO_SKILL_SUMMONING_MAGIC</SkillID>
+			</Item>	
+		</skills>
 		<perkIDs>
 			<Item>HERO_SKILL_MASTER_OF_CREATURES</Item>
 		</perkIDs>

@@ -32,11 +32,11 @@
 	<Class>HERO_CLASS_WARDEN</Class>
 	<Specialization/>
 	<PrimarySkill>
-		<Mastery>MASTERY_ADVANCED</Mastery>
-		<SkillID>HERO_SKILL_DEFENCE</SkillID>
+		<Mastery>MASTERY_BASIC</Mastery>
+		<SkillID>HERO_SKILL_AVENGER</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Added/Wolves/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Added/Wolves/Description.txt"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Preserve/Wolves/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Preserve/Wolves/Description.txt"/>
 	<SpecializationIcon href="/UI/H5A1/Icons/Creatures/Neutral/128x128/Wolf.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Preserve/Preserve_Arniel_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall href=""/>
@@ -53,12 +53,17 @@
 		<Defence>2</Defence>
 		<Spellpower>2</Spellpower>
 		<Knowledge>1</Knowledge>
-		<skills/>
+		<skills>
+			<Item>
+				<Mastery>MASTERY_BASIC</Mastery>
+				<SkillID>HERO_SKILL_LEADERSHIP</SkillID>
+			</Item>
+		</skills>
 		<perkIDs>
-			<Item>HERO_SKILL_TOUGHNESS</Item>
+			<Item>HERO_SKILL_RECRUITMENT</Item>
 		</perkIDs>		
 		<spellIDs>
-			<Item>SPELL_STONESKIN</Item>
+			<Item>SPELL_HASTE</Item>
 		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>

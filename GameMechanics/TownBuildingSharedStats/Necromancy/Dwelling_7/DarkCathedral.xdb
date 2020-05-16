@@ -6,7 +6,7 @@
 	<Upgrade>BLD_UPG_2</Upgrade>
 	<Cost>
 		<Wood>15</Wood>
-		<Ore>25</Ore>
+		<Ore>15</Ore>
 		<Mercury>30</Mercury>
 		<Crystal>0</Crystal>
 		<Sulfur>0</Sulfur>

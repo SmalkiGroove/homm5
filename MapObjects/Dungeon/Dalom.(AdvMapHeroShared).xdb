@@ -33,7 +33,7 @@
 	<Specialization>HERO_SPEC_POISONER</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
-		<SkillID>HERO_SKILL_LOGISTICS</SkillID>
+		<SkillID>HERO_SKILL_INVOCATION</SkillID>
 	</PrimarySkill>
 	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Dungeon/Poisoner/Name.txt"/>
 	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Dungeon/Poisoner/Description.txt"/>
@@ -63,8 +63,7 @@
 			<Item>HERO_SKILL_MASTER_OF_SICKNESS</Item>
 		</perkIDs>
 		<spellIDs>
-			<Item>SPELL_PLAGUE</Item>
-			<Item>SPELL_DISRUPTING_RAY</Item>			
+			<Item>SPELL_PLAGUE</Item>		
 		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>

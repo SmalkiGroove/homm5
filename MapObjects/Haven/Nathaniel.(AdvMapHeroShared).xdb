@@ -32,8 +32,8 @@
 	<Class>HERO_CLASS_RANGER</Class>
 	<Specialization>HERO_SPEC_PEASANTS</Specialization>
 	<PrimarySkill>
-		<Mastery>MASTERY_ADVANCED</Mastery>
-		<SkillID>HERO_SKILL_LIGHT_MAGIC</SkillID>
+		<Mastery>MASTERY_BASIC</Mastery>
+		<SkillID>HERO_SKILL_TRAINING</SkillID>
 	</PrimarySkill>
 	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Haven/Squire/Name.txt"/>
 	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Haven/Squire/Description.txt"/>
@@ -53,15 +53,20 @@
 		<Defence>2</Defence>
 		<Spellpower>1</Spellpower>
 		<Knowledge>2</Knowledge>
-		<skills/>
+		<skills>
+			<Item>
+				<Mastery>MASTERY_BASIC</Mastery>
+				<SkillID>HERO_SKILL_LEADERSHIP</SkillID>
+			</Item>
+		</skills>
 		<perkIDs>
-			<Item>HERO_SKILL_MASTER_OF_BLESSING</Item>
+			<Item>HERO_SKILL_RECRUITMENT</Item>
 		</perkIDs>
 		<spellIDs>
-			<Item>SPELL_BLESS</Item>
+			<Item>SPELL_STONESKIN</Item>
 		</spellIDs>
 		<Ballista>false</Ballista>
-		<FirstAidTent>false</FirstAidTent>
+		<FirstAidTent>true</FirstAidTent>
 		<AmmoCart>false</AmmoCart>
 		<FavoriteEnemies/>
 	</Editable>

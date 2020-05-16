@@ -56,11 +56,11 @@
 		<skills>
 			<Item>
 				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_LEADERSHIP</SkillID>
+				<SkillID>HERO_SKILL_LOGISTICS</SkillID>
 			</Item>
 		</skills>
 		<perkIDs>
-			<Item>HERO_SKILL_DIPLOMACY</Item>
+			<Item>HERO_SKILL_NO_REST_FOR_THE_WICKED</Item>
 		</perkIDs>
 		<spellIDs/>
 		<Ballista>false</Ballista>

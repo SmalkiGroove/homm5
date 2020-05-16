@@ -30,14 +30,14 @@
 	<Icon128 href="/Textures/Icons/Heroes/Dungeon/Dungeon_Shadya_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<InternalName>Kelodin</InternalName>
 	<Class>HERO_CLASS_WARLOCK</Class>
-	<Specialization>HERO_SPEC_FLAGBEARER_OF_DARKNESS</Specialization>
+	<Specialization>HERO_SPEC_MALEDICTOR</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
 		<SkillID>HERO_SKILL_INVOCATION</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Inferno/Flagbearer_of_Darkness2/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Inferno/Flagbearer_of_Darkness2/Description.txt"/>
-	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Inferno/Flagbearer_of_Darkness.xdb#xpointer(/Texture)"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Dungeon/Maledictor/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Dungeon/Maledictor/Description.txt"/>
+	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Necropolis/Maledictor.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Dungeon/Dungeon_Shadya_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/Shadya.(Character).xdb#xpointer(/Character)"/>
@@ -56,14 +56,14 @@
 		<skills>
 			<Item>
 				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_DESTRUCTIVE_MAGIC</SkillID>
+				<SkillID>HERO_SKILL_DARK_MAGIC</SkillID>
 			</Item>
 		</skills>
 		<perkIDs>
-			<Item>HERO_SKILL_EMPOWERED_SPELLS</Item>
+			<Item>HERO_SKILL_MASTER_OF_CURSES</Item>
 		</perkIDs>
 		<spellIDs>
-			<Item>SPELL_LIGHTNING_BOLT</Item>
+			<Item>SPELL_WEAKNESS</Item>
 		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>

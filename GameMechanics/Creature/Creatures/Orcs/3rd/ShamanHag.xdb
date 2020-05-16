@@ -16,11 +16,11 @@
 		</Item>
 		<Item>
 			<Spell>SPELL_SLOW</Spell>
-			<Mastery>MASTERY_ADVANCED</Mastery>
+			<Mastery>MASTERY_BASIC</Mastery>
 		</Item>
 		<Item>
 			<Spell>SPELL_HASTE</Spell>
-			<Mastery>MASTERY_ADVANCED</Mastery>
+			<Mastery>MASTERY_BASIC</Mastery>
 		</Item>
 	</KnownSpells>
 	<SpellPoints>8</SpellPoints>

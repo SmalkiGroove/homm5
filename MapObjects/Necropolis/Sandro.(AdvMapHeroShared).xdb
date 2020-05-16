@@ -30,14 +30,14 @@
 	<Icon128/>
 	<InternalName>Sandro</InternalName>
 	<Class>HERO_CLASS_NECROMANCERA</Class>
-	<Specialization/>
+	<Specialization>HERO_SPEC_HEIR_OF_UNDEAD</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
 		<SkillID>HERO_SKILL_NECROMANCY</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Added/Spellpower2/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Added/Spellpower2/Description.txt"/>
-	<SpecializationIcon href="/Textures/HeroScreen/Skills/Sorcery_3.xdb#xpointer(/Texture)"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Necropolis/Heir_of_Undeath/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Necropolis/Heir_of_Undeath/Description.txt"/>
+	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Necropolis/Heir_of_Undeath.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Necropolis/Necropolis_Sandro_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/Necromancer.(Character).xdb#xpointer(/Character)"/>

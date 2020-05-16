@@ -30,14 +30,14 @@
 	<Icon128 href="/UI/H5A2/Icons/Heroes/Portrets128x128/Sylvan_Tieru.(Texture).xdb#xpointer(/Texture)"/>
 	<InternalName>Vaniel</InternalName>
 	<Class>HERO_CLASS_ENCHANTER</Class>
-	<Specialization>HERO_SPEC_SACRED_HAMMER</Specialization>
+	<Specialization>HERO_SPEC_HASTE</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
-		<SkillID>HERO_SKILL_LEARNING</SkillID>
+		<SkillID>HERO_SKILL_AVENGER</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Fortress/Sacred_Hammer3/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Fortress/Sacred_Hammer3/Description.txt"/>
-	<SpecializationIcon href="/UI/H5A2/Icons/Creatures/Sylvan_second_upg/Anger_Treant.(Texture).xdb#xpointer(/Texture)"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Preserve/Expediter/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Preserve/Expediter/Description.txt"/>
+	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Haven/Expediter.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/UI/H5A2/Icons/Heroes/Portrets128x128/Sylvan_Tieru.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall href=""/>
 	<FaceTextureSmall href=""/>
@@ -65,7 +65,6 @@
 		</perkIDs>
 		<spellIDs>
 			<Item>SPELL_HASTE</Item>
-			<Item>SPELL_BLOODLUST</Item>			
 		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>

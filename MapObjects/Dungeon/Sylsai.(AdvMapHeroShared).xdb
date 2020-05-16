@@ -33,10 +33,10 @@
 	<Specialization>HERO_SPEC_EMPIRIC</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
-		<SkillID>HERO_SKILL_LOGISTICS</SkillID>
+		<SkillID>HERO_SKILL_INVOCATION</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Necropolis/Empiric3/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Necropolis/Empiric3/Description.txt"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Dungeon/Empiric/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Dungeon/Empiric/Description.txt"/>
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Necropolis/Empiric.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Dungeon/Dungeon_Sylsai_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>

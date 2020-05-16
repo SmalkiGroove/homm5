@@ -35,10 +35,10 @@
 	<Specialization>HERO_SPEC_IMPREGNABLE</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
-		<SkillID>HERO_SKILL_TRAINING</SkillID>
+		<SkillID>HERO_SKILL_NECROMANCY</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Inferno/Impregnable2/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Inferno/Impregnable2/Description.txt"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Necropolis/Impregnable/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Necropolis/Impregnable/Description.txt"/>
 	<SpecializationIcon href="/Textures/HeroScreen/Feats/Necromancer/Sorcery_SpellprofBones.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/UI/H5A2/Icons/Heroes/Portrets128x128/Necropolis_Ornella.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
@@ -58,11 +58,11 @@
 		<skills>
 			<Item>
 				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_LUCK</SkillID>
+				<SkillID>HERO_SKILL_DEFENCE</SkillID>
 			</Item>
 		</skills>
 		<perkIDs>
-			<Item>HERO_SKILL_RESISTANCE</Item>
+			<Item>HERO_SKILL_EVASION</Item>
 		</perkIDs>
 		<spellIDs/>
 		<Ballista>false</Ballista>

@@ -8,7 +8,7 @@
 	<Speed>8</Speed>
 	<Initiative>12</Initiative>
 	<Flying>true</Flying>
-	<Health>40</Health>
+	<Health>47</Health>
 	<KnownSpells/>
 	<SpellPoints>0</SpellPoints>
 	<SpellPoints1>3</SpellPoints1>
@@ -37,7 +37,7 @@
 	<PresetPrice>0</PresetPrice>
 	<SubjectOfRandomGeneration>true</SubjectOfRandomGeneration>
 	<MonsterShared href="/MapObjects/Academy/Djinn_Vizier.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
-	<CombatSize>2</CombatSize>
+	<CombatSize>1</CombatSize>
 	<PatternAttack/>
 	<flybySequence/>
 	<Visual href="/GameMechanics/CreatureVisual/Creatures/Academy/3rd/DjinnVizier.(CreatureVisual).xdb#xpointer(/CreatureVisual)"/>
@@ -45,8 +45,8 @@
 	<BaseCreature>CREATURE_GENIE</BaseCreature>
 	<Upgrades/>
 	<Abilities>
+		<Item>ABILITY_ELEMENTAL</Item>
 		<Item>ABILITY_LUCK_GAMBLER</Item>
 		<Item>ABILITY_MAGIC_PROOF_75</Item>
-		<Item>ABILITY_IMMUNITY_TO_AIR</Item>
 	</Abilities>
 </Creature>

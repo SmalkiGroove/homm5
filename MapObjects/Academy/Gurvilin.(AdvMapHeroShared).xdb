@@ -30,14 +30,14 @@
 	<Icon128/>
 	<InternalName>Gurvilin</InternalName>
 	<Class>HERO_CLASS_WIZARDA</Class>
-	<Specialization/>
+	<Specialization>HERO_SPEC_DISRUPTER</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
 		<SkillID>HERO_SKILL_ARTIFICIER</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Added/Gargoyles/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Added/Gargoyles/Description.txt"/>
-	<SpecializationIcon href="/Textures/Interface/CombatArena/Faces/Academy/ico_obsidiangargoyle_64.xdb#xpointer(/Texture)"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Academy/Disrupter/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Academy/Disrupter/Description.txt"/>
+	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Academy/Disrupter.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Academy/Academy_Gurvilin_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/Wizard.(Character).xdb#xpointer(/Character)"/>
@@ -56,14 +56,14 @@
 		<skills>
 			<Item>
 				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_DESTRUCTIVE_MAGIC</SkillID>
+				<SkillID>HERO_SKILL_DARK_MAGIC</SkillID>
 			</Item>
 		</skills>
 		<perkIDs>
-			<Item>HERO_SKILL_MELT_ARTIFACT</Item>
+			<Item>HERO_SKILL_MAGIC_MIRROR</Item>
 		</perkIDs>
 		<spellIDs>
-			<Item>SPELL_MAGIC_ARROW</Item>
+			<Item>SPELL_DISRUPTING_RAY</Item>
 		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>

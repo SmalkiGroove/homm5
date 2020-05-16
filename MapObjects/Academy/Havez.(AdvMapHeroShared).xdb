@@ -32,8 +32,8 @@
 	<Class>HERO_CLASS_GUILDMASTER</Class>
 	<Specialization>HERO_SPEC_GREMLINS</Specialization>
 	<PrimarySkill>
-		<Mastery>MASTERY_ADVANCED</Mastery>
-		<SkillID>HERO_SKILL_LUCK</SkillID>
+		<Mastery>MASTERY_BASIC</Mastery>
+		<SkillID>HERO_SKILL_ARTIFICIER</SkillID>
 	</PrimarySkill>
 	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Academy/Artisan/Name.txt"/>
 	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Academy/Artisan/Description.txt"/>
@@ -53,15 +53,18 @@
 		<Defence>0</Defence>
 		<Spellpower>1</Spellpower>
 		<Knowledge>2</Knowledge>
-		<skills/>
+		<skills>
+			<Item>
+				<Mastery>MASTERY_BASIC</Mastery>
+				<SkillID>HERO_SKILL_WAR_MACHINES</SkillID>
+			</Item>	
+		</skills>
 		<perkIDs>
-			<Item>HERO_SKILL_RESISTANCE</Item>
+			<Item>HERO_SKILL_FIRST_AID</Item>
 		</perkIDs>
-		<spellIDs>
-			<Item>SPELL_HASTE</Item>
-		</spellIDs>
+		<spellIDs/>
 		<Ballista>false</Ballista>
-		<FirstAidTent>false</FirstAidTent>
+		<FirstAidTent>true</FirstAidTent>
 		<AmmoCart>false</AmmoCart>
 		<FavoriteEnemies/>
 	</Editable>

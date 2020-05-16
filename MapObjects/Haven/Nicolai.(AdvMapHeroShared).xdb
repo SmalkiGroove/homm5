@@ -30,14 +30,14 @@
 	<Icon128 href="/Textures/Icons/Heroes/Heaven/Heaven_Nicolai_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<InternalName>Nicolai</InternalName>
 	<Class>HERO_CLASS_RANGER</Class>
-	<Specialization>HERO_SPEC_EVASIVE</Specialization>
+	<Specialization>HERO_SPEC_COURTIER</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
-		<SkillID>HERO_SKILL_LIGHT_MAGIC</SkillID>
+		<SkillID>HERO_SKILL_TRANING</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Dungeon/Evasive3/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Dungeon/Evasive3/Description.txt"/>
-	<SpecializationIcon href="/UI/H5A1/Icons/Abilites/Skills/128x128/Defencive_Formation.(Texture).xdb#xpointer(/Texture)"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Haven/Courtier/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Haven/Courtier/Description.txt"/>
+	<SpecializationIcon href="/UI/H5A1/Icons/Abilites/Heroes_Abillites/128x128/Courtier.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Heaven/Heaven_Nicolai_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/Knight.(Character).xdb#xpointer(/Character)"/>
@@ -56,15 +56,13 @@
 		<skills>
 			<Item>
 				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_DEFENCE</SkillID>
+				<SkillID>HERO_SKILL_LEADERSHIP</SkillID>
 			</Item>
 		</skills>
 		<perkIDs>
-			<Item>HERO_SKILL_EVASION</Item>
+			<Item>HERO_SKILL_DIPLOMACY</Item>
 		</perkIDs>
-		<spellIDs>
-			<Item>SPELL_BLESS</Item>
-		</spellIDs>
+		<spellIDs/>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>
 		<AmmoCart>false</AmmoCart>

@@ -7364,7 +7364,7 @@
 					<Item href="/Text/Game/Skills/Unique/Training/AbsoluteCharge/Description.txt"/>
 				</DescriptionFileRef>
 				<CommonDescriptionFileRef href=""/>
-				<SkillType>SKILLTYPE_UINQUE_PERK</SkillType>
+				<SkillType>SKILLTYPE_SPECIAL_PERK</SkillType>
 				<HeroClass>HERO_CLASS_NONE</HeroClass>
 				<spellBuffs/>
 				<BasicSkillID>HERO_SKILL_TRAINING</BasicSkillID>
@@ -9007,7 +9007,7 @@
 					<Item href="/Text/Game/Skills/Unique/Gating/AbsoluteGating/Description.txt"/>
 				</DescriptionFileRef>
 				<CommonDescriptionFileRef href=""/>
-				<SkillType>SKILLTYPE_UINQUE_PERK</SkillType>
+				<SkillType>SKILLTYPE_SPECIAL_PERK</SkillType>
 				<HeroClass>HERO_CLASS_NONE</HeroClass>
 				<spellBuffs/>
 				<BasicSkillID>HERO_SKILL_GATING</BasicSkillID>
@@ -9315,43 +9315,7 @@
 				<BasicSkillID>HERO_SKILL_WAR_MACHINES</BasicSkillID>
 				<SkillPrerequisites>
 					<Item>
-						<Class>HERO_CLASS_KNIGHT</Class>
-						<dependenciesIDs>
-							<Item>HERO_SKILL_FIRST_AID</Item>
-						</dependenciesIDs>
-					</Item>
-					<Item>
-						<Class>HERO_CLASS_KNIGHT</Class>
-						<dependenciesIDs>
-							<Item>HERO_SKILL_FIRST_AID</Item>
-						</dependenciesIDs>
-					</Item>
-					<Item>
-						<Class>HERO_CLASS_RANGER</Class>
-						<dependenciesIDs>
-							<Item>HERO_SKILL_FIRST_AID</Item>
-						</dependenciesIDs>
-					</Item>
-					<Item>
 						<Class>HERO_CLASS_HERETIC</Class>
-						<dependenciesIDs>
-							<Item>HERO_SKILL_FIRST_AID</Item>
-						</dependenciesIDs>
-					</Item>
-					<Item>
-						<Class>HERO_CLASS_RANGERA</Class>
-						<dependenciesIDs>
-							<Item>HERO_SKILL_FIRST_AID</Item>
-						</dependenciesIDs>
-					</Item>
-					<Item>
-						<Class>HERO_CLASS_WARDEN</Class>
-						<dependenciesIDs>
-							<Item>HERO_SKILL_FIRST_AID</Item>
-						</dependenciesIDs>
-					</Item>
-					<Item>
-						<Class>HERO_CLASS_ENCHANTER</Class>
 						<dependenciesIDs>
 							<Item>HERO_SKILL_FIRST_AID</Item>
 						</dependenciesIDs>
@@ -9364,18 +9328,6 @@
 					</Item>
 					<Item>
 						<Class>HERO_CLASS_DEMON_LORD</Class>
-						<dependenciesIDs>
-							<Item>HERO_SKILL_FIRST_AID</Item>
-						</dependenciesIDs>
-					</Item>
-					<Item>
-						<Class>HERO_CLASS_FLAMEKEEPERA</Class>
-						<dependenciesIDs>
-							<Item>HERO_SKILL_FIRST_AID</Item>
-						</dependenciesIDs>
-					</Item>
-					<Item>
-						<Class>HERO_CLASS_NECROMANCER</Class>
 						<dependenciesIDs>
 							<Item>HERO_SKILL_FIRST_AID</Item>
 						</dependenciesIDs>
@@ -9405,12 +9357,6 @@
 						</dependenciesIDs>
 					</Item>
 					<Item>
-						<Class>HERO_CLASS_BEASTMASTER</Class>
-						<dependenciesIDs>
-							<Item>HERO_SKILL_FIRST_AID</Item>
-						</dependenciesIDs>
-					</Item>
-					<Item>
 						<Class>HERO_CLASS_GUILDMASTER</Class>
 						<dependenciesIDs>
 							<Item>HERO_SKILL_FIRST_AID</Item>
@@ -9423,18 +9369,6 @@
 						</dependenciesIDs>
 					</Item>
 					<Item>
-						<Class>HERO_CLASS_WIZARDA</Class>
-						<dependenciesIDs>
-							<Item>HERO_SKILL_FIRST_AID</Item>
-						</dependenciesIDs>
-					</Item>
-					<Item>
-						<Class>HERO_CLASS_ELEMENTALIST</Class>
-						<dependenciesIDs>
-							<Item>HERO_SKILL_FIRST_AID</Item>
-						</dependenciesIDs>
-					</Item>
-					<Item>
 						<Class>HERO_CLASS_WIZARD</Class>
 						<dependenciesIDs>
 							<Item>HERO_SKILL_FIRST_AID</Item>
@@ -9442,18 +9376,6 @@
 					</Item>
 					<Item>
 						<Class>HERO_CLASS_RUNEMAGE</Class>
-						<dependenciesIDs>
-							<Item>HERO_SKILL_FIRST_AID</Item>
-						</dependenciesIDs>
-					</Item>
-					<Item>
-						<Class>HERO_CLASS_RUNEMAGEA</Class>
-						<dependenciesIDs>
-							<Item>HERO_SKILL_FIRST_AID</Item>
-						</dependenciesIDs>
-					</Item>
-					<Item>
-						<Class>HERO_CLASS_BARBARIAN</Class>
 						<dependenciesIDs>
 							<Item>HERO_SKILL_FIRST_AID</Item>
 						</dependenciesIDs>
@@ -10833,7 +10755,7 @@
 					<Item href="/Text/Game/Skills/Unique/Necromancy/AbsoluteFear/Description.txt"/>
 				</DescriptionFileRef>
 				<CommonDescriptionFileRef href=""/>
-				<SkillType>SKILLTYPE_UINQUE_PERK</SkillType>
+				<SkillType>SKILLTYPE_SPECIAL_PERK</SkillType>
 				<HeroClass>HERO_CLASS_NONE</HeroClass>
 				<spellBuffs/>
 				<BasicSkillID>HERO_SKILL_NECROMANCY</BasicSkillID>
@@ -12700,7 +12622,7 @@
 					<Item href="/Text/Game/Skills/Unique/Avenger/AbsoluteLuck/Description.txt"/>
 				</DescriptionFileRef>
 				<CommonDescriptionFileRef href=""/>
-				<SkillType>SKILLTYPE_UINQUE_PERK</SkillType>
+				<SkillType>SKILLTYPE_SPECIAL_PERK</SkillType>
 				<HeroClass>HERO_CLASS_NONE</HeroClass>
 				<spellBuffs/>
 				<BasicSkillID>HERO_SKILL_AVENGER</BasicSkillID>
@@ -14921,7 +14843,7 @@
 					<Item href="/Text/Game/Skills/Unique/Artificer/AbsoluteWizardy/Description.txt"/>
 				</DescriptionFileRef>
 				<CommonDescriptionFileRef href=""/>
-				<SkillType>SKILLTYPE_UINQUE_PERK</SkillType>
+				<SkillType>SKILLTYPE_SPECIAL_PERK</SkillType>
 				<HeroClass>HERO_CLASS_NONE</HeroClass>
 				<spellBuffs/>
 				<BasicSkillID>HERO_SKILL_ARTIFICIER</BasicSkillID>
@@ -17273,7 +17195,7 @@
 					<Item href="/Text/Game/Skills/Unique/Invocation/AbsoluteChains/Description.txt"/>
 				</DescriptionFileRef>
 				<CommonDescriptionFileRef href=""/>
-				<SkillType>SKILLTYPE_UINQUE_PERK</SkillType>
+				<SkillType>SKILLTYPE_SPECIAL_PERK</SkillType>
 				<HeroClass>HERO_CLASS_NONE</HeroClass>
 				<spellBuffs/>
 				<BasicSkillID>HERO_SKILL_INVOCATION</BasicSkillID>
@@ -17505,7 +17427,7 @@
 					<Item href="/Text/Game/Skills/Unique/Runelore/StrongRune/Description.txt"/>
 				</DescriptionFileRef>
 				<CommonDescriptionFileRef href=""/>
-				<SkillType>SKILLTYPE_SPECIAL_PERK</SkillType>
+				<SkillType>SKILLTYPE_STANDART_PERK</SkillType>
 				<HeroClass>HERO_CLASS_NONE</HeroClass>
 				<spellBuffs/>
 				<BasicSkillID>HERO_SKILL_RUNELORE</BasicSkillID>
@@ -19542,7 +19464,7 @@
 					<Item href="/Text/Game/Skills/Unique/Runelore/AbsoluteProtection/Description.txt"/>
 				</DescriptionFileRef>
 				<CommonDescriptionFileRef href=""/>
-				<SkillType>SKILLTYPE_UINQUE_PERK</SkillType>
+				<SkillType>SKILLTYPE_SPECIAL_PERK</SkillType>
 				<HeroClass>HERO_CLASS_NONE</HeroClass>
 				<spellBuffs>
 					<Item>SPELL_SKILL_ABSOLUTE_PROTECTION</Item>
@@ -21461,15 +21383,15 @@
 				</Texture>
 				<CommonTexture/>
 				<NameFileRef>
-					<Item href="/Text/Game/Skills/Common/BLearning/1/Name.txt"/>
-					<Item href="/Text/Game/Skills/Common/BLearning/2/Name.txt"/>
-					<Item href="/Text/Game/Skills/Common/BLearning/3/Name.txt"/>
+					<Item href="/Text/Game/Skills/Common/Learning/1/Name.txt"/>
+					<Item href="/Text/Game/Skills/Common/Learning/2/Name.txt"/>
+					<Item href="/Text/Game/Skills/Common/Learning/3/Name.txt"/>
 				</NameFileRef>
 				<CommonNameFileRef href=""/>
 				<DescriptionFileRef>
-					<Item href="/Text/Game/Skills/Common/BLearning/1/Description.txt"/>
-					<Item href="/Text/Game/Skills/Common/BLearning/2/Description.txt"/>
-					<Item href="/Text/Game/Skills/Common/BLearning/3/Description.txt"/>
+					<Item href="/Text/Game/Skills/Common/Learning/1/Description.txt"/>
+					<Item href="/Text/Game/Skills/Common/Learning/2/Description.txt"/>
+					<Item href="/Text/Game/Skills/Common/Learning/3/Description.txt"/>
 				</DescriptionFileRef>
 				<CommonDescriptionFileRef href=""/>
 				<SkillType>SKILLTYPE_SKILL</SkillType>

@@ -35,7 +35,7 @@
 	<Specialization>HERO_SPEC_BOMBARDIER</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
-		<SkillID>HERO_SKILL_OFFENCE</SkillID>
+		<SkillID>HERO_SKILL_GATING</SkillID>
 	</PrimarySkill>
 	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Inferno/Bombardier/Name.txt"/>
 	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Inferno/Bombardier/Description.txt"/>

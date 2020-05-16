@@ -35,10 +35,10 @@
 	<Specialization>HERO_SPEC_EMPIRIC</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
-		<SkillID>HERO_SKILL_DARK_MAGIC</SkillID>
+		<SkillID>HERO_SKILL_TRAINING</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Necropolis/Empiric2/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Necropolis/Empiric2/Description.txt"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Haven/Empiric/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Haven/Empiric/Description.txt"/>
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Necropolis/Empiric.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Academy/Academy_Jeddite_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>

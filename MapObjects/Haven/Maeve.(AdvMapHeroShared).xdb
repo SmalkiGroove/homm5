@@ -32,11 +32,11 @@
 	<Class>HERO_CLASS_RANGER</Class>
 	<Specialization>HERO_SPEC_FEATHER_MAGE</Specialization>
 	<PrimarySkill>
-		<Mastery>MASTERY_ADVANCED</Mastery>
-		<SkillID>HERO_SKILL_LIGHT_MAGIC</SkillID>
+		<Mastery>MASTERY_BASIC</Mastery>
+		<SkillID>HERO_SKILL_TRAINING</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Academy/Feather_Mage3/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Academy/Feather_Mage3/Description.txt"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Haven/Feather_Mage/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Haven/Feather_Mage/Description.txt"/>
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Haven/Expediter.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Heaven/Heaven_Maeve_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
@@ -53,12 +53,17 @@
 		<Defence>2</Defence>
 		<Spellpower>1</Spellpower>
 		<Knowledge>2</Knowledge>
-		<skills/>
+		<skills>
+			<Item>
+				<Mastery>MASTERY_BASIC</Mastery>
+				<SkillID>HERO_SKILL_LIGHT_MAGIC</SkillID>
+			</Item>
+		</skills>
 		<perkIDs>
-			<Item>HERO_SKILL_MASTER_OF_BLESSING</Item>
+			<Item>HERO_SKILL_PRAYER</Item>
 		</perkIDs>
 		<spellIDs>
-			<Item>SPELL_BLESS</Item>
+			<Item>SPELL_HASTE</Item>
 		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>

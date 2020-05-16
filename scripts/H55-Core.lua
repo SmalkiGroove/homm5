@@ -180,27 +180,7 @@ H55_GlobalDailyGemPayout = {0,0,0,0,0,0,0,0};
 H55_GlobalWeeklyGoldPayout = {0,0,0,0,0,0,0,0};
 H55_GlobalDailyGoldPayout = {0,0,0,0,0,0,0,0};
 H55_TaxRate = 5;
-			
---[[Supply
 
-H55_MysticalGardens = GetObjectNamesByType("BUILDING_MYSTICAL_GARDEN");
-H55_MysticalGardenClaims = {};
-H55_Windmills = GetObjectNamesByType("BUILDING_WINDMILL");
-H55_WindmillClaims = {};
-H55_Waterwheels = GetObjectNamesByType("BUILDING_WATER_WHEEL");
-H55_WaterwheelClaims = {};
-H55_SiegeWorkshops = GetObjectNamesByType("BUILDING_WARMACHINE_FACTORY");
-H55_SiegeWorkshopClaims = {};
-
-H55_MysticalGardensOwned = {};
-H55_WeeklyMysticalGardenRes = {};
-H55_WindmillsOwned = {};
-H55_WeeklyWindmillRes = {};
-H55_WeeklyWindmillResQty = {};
-H55_WaterwheelsOwned = {};
-H55_SiegeWorkshopsOwned = {};
-H55_WeeklySiegeWorkshopResQty = {};
-]]
 H55_GoblinNetworkOwners = {};
 H55_DwarvenNetworkOwners = {};
 H55_NetworkSkillAmount = {0,0,0,0,0,0,0,0};
@@ -4249,238 +4229,11 @@ function H55_WeeklyEvents(player)
 	end;
 	
 	------------------------------------------------------------------------------------------------------------------------------------------------
-	H55_DEBUG = {2,"Suppliers",player,""};----------------------------------------------------------------------------------------------------------
-	------------------------------------------------------------------------------------------------------------------------------------------------
-	--[[
-	if H55_MysticalGardens ~= nil then
-		local gardengold = 0;
-		local gardengems = 0;
-		local gardenbonus = H55_NetworkSkillAmount[player];
-		for i,garden in H55_MysticalGardens do
-			if H55_MysticalGardensOwned[garden] == player then
-				if H55_WeeklyMysticalGardenRes[garden] == 0 then
-					gardengold = gardengold + 500;
-					if gardenbonus >= 1 then
-						gardengold = gardengold + (gardenbonus*250);
-					end;
-				elseif H55_WeeklyMysticalGardenRes[garden] == 1 then
-					gardengems = gardengems + 5 + gardenbonus;
-				end;
-			end;
-		end;
-		if gardengold > 0 then
-			H55_GlobalWeeklyGoldPayout[player] = H55_GlobalWeeklyGoldPayout[player]+gardengold;					
-		end;
-		if gardengems > 0 then
-			H55_GlobalWeeklyGemPayout[player] = H55_GlobalWeeklyGemPayout[player]+gardengems;
-		end;
-	end;
-	
-	if H55_SiegeWorkshops ~= nil then
-		local workshopwood = 0;
-		local workshopbonus = H55_NetworkSkillAmount[player];		
-		for i,workshop in H55_SiegeWorkshops do
-			if H55_SiegeWorkshopsOwned[workshop] == player then
-				workshopwood = workshopwood + H55_WeeklySiegeWorkshopResQty[workshop] + workshopbonus;
-			end;
-		end;
-		if workshopwood > 0 then
-			H55_GlobalWeeklyWoodPayout[player] = H55_GlobalWeeklyWoodPayout[player]+workshopwood;				
-		end;
-	end;
-
-	if H55_Windmills ~= nil then
-		local millore = 0;
-		local millmercury = 0;
-		local millcrystal = 0;
-		local millsulphur = 0;
-		local millgems = 0;
-		local millbonus = H55_NetworkSkillAmount[player];		
-		for i,mill in H55_Windmills do
-			if H55_WindmillsOwned[mill] == player then
-				if H55_WeeklyWindmillRes[mill] == 1 then
-					millore = millore + H55_WeeklyWindmillResQty[mill] + millbonus;
-				elseif H55_WeeklyWindmillRes[mill] == 2 then
-					millmercury = millmercury + H55_WeeklyWindmillResQty[mill] + millbonus;
-				elseif H55_WeeklyWindmillRes[mill] == 3 then
-					millcrystal = millcrystal + H55_WeeklyWindmillResQty[mill] + millbonus;
-				elseif H55_WeeklyWindmillRes[mill] == 4 then
-					millsulphur = millsulphur + H55_WeeklyWindmillResQty[mill] + millbonus;
-				else
-					millgems = millgems + H55_WeeklyWindmillResQty[mill] + millbonus;					
-				end;
-			end;
-		end;
-		if millore > 0 then
-			H55_GlobalWeeklyOrePayout[player] = H55_GlobalWeeklyOrePayout[player]+millore;			
-		end;
-		if millmercury > 0 then
-			H55_GlobalWeeklyMercuryPayout[player] = H55_GlobalWeeklyMercuryPayout[player]+millmercury;			
-		end;
-		if millcrystal > 0 then	
-			H55_GlobalWeeklyCrystalPayout[player] = H55_GlobalWeeklyCrystalPayout[player]+millcrystal;			
-		end;
-		if millsulphur > 0 then	
-			H55_GlobalWeeklySulphurPayout[player] = H55_GlobalWeeklySulphurPayout[player]+millsulphur;			
-		end;
-		if millgems > 0 then
-			H55_GlobalWeeklyGemPayout[player] = H55_GlobalWeeklyGemPayout[player]+millgems;			
-		end;		
-	end;
-	
-	if H55_Waterwheels ~= nil then
-		local wheelgold = 0;
-		local wheelbonus = H55_NetworkSkillAmount[player];
-		for i,wheel in H55_Waterwheels do
-			if H55_WaterwheelsOwned[wheel] == player then
-				wheelgold = wheelgold + 1000;
-				if wheelbonus >= 1 then
-					wheelgold = wheelgold + (wheelbonus*500);
-				end;
-			end;
-		end;
-		if wheelgold > 0 then
-			H55_GlobalWeeklyGoldPayout[player] = H55_GlobalWeeklyGoldPayout[player]+wheelgold;			
-		end;
-	end;
-	
-	if blood >= 14 then
-		local towns = H55_GetPlayerTowns(player);		
-		if (length(towns) > 0) then
-			for i,town in towns do
-				local townrace = H55_GetTownRace(town);
-				local bloodcoef = 12;
-				local bloodroot = sqrt(blood);
-				local elemtype = H55_GetRaceElementalTypeID(player,townrace);				
-				if townrace == 2 then bloodcoef = 8 end;
-				if townrace == 4 then bloodcoef = 18 end;
-				if townrace == 5 then bloodcoef = 30 end;				
-				if townrace == 6 then bloodcoef = 30 end;
-				if elemtype == 90 then bloodcoef = 30 end;
-				if townrace == 8 then
-					local growth = 2+(GetTownBuildingLevel(town, TOWN_BUILDING_SPECIAL_1))+(GetTownBuildingLevel(town, TOWN_BUILDING_SPECIAL_3));
-					local totalgrowth = H55_Round((bloodroot/bloodcoef)*growth);
-					if totalgrowth >= 1 then
-						AddObjectCreatures(town,elemtype,totalgrowth);
-						if H55_IsThisAIPlayer(player) ~= 1 then 
-							ShowFlyingSign({"/Text/Game/Scripts/Garrison.txt"; num=totalgrowth},town,player,5);
-							sleep(1);								
-						end;
-					end;
-				else
-					local growth = 1+GetTownBuildingLevel(town, TOWN_BUILDING_MAGIC_GUILD);
-					local totalgrowth = H55_Round((bloodroot/bloodcoef)*growth);
-					if totalgrowth >= 1 then
-						AddObjectCreatures(town,elemtype,totalgrowth);
-						if H55_IsThisAIPlayer(player) ~= 1 then 
-							ShowFlyingSign({"/Text/Game/Scripts/Garrison.txt"; num=totalgrowth},town,player,5);
-							sleep(1);								
-						end;
-					end;
-				end;
-			end;
-		end;
-	end;
-	]]
-	------------------------------------------------------------------------------------------------------------------------------------------------
 	H55_DEBUG = {3,"Economic Weekly",player,""};----------------------------------------------------------------------------------------------------
 	------------------------------------------------------------------------------------------------------------------------------------------------
 
 	local heroes = GetPlayerHeroes(player);
 	if heroes~=nil then
-	
-		--Economic specs
-	
-		-- if contains(heroes,"Jenova") ~= nil then		
-			-- local rndchoice = random(6)+1;
-			-- local level = GetHeroLevel("Jenova");
-			-- local rndamount = H55_RndGold[rndchoice];
-			-- local lvlamount = (H55_GldLevelFactor[level]*500)
-			-- local addedamount = lvlamount+rndamount
-			-- if ((level >= 5) and (H55_JenovaReceived == 0)) then
-				-- H55_GlobalWeeklyGoldPayout[player] = H55_GlobalWeeklyGoldPayout[player]+addedamount;
-				-- H55_JenovaReceived = 1;
-			-- end;
-		-- end;
-		-- if contains(heroes,"RedHeavenHero06") ~= nil then		
-			-- local rndchoice = random(5)+1;
-			-- local level = GetHeroLevel("RedHeavenHero06");
-			-- local rndamount = H55_RndResources[rndchoice];
-			-- local lvlamount = H55_ResLevelFactor[level]
-			-- local addedamount = lvlamount+rndamount
-			-- if ((level >= 5) and (H55_RedHeavenHero06Received == 0)) then
-				-- H55_GlobalWeeklyCrystalPayout[player] = H55_GlobalWeeklyCrystalPayout[player]+addedamount;			
-				-- H55_RedHeavenHero06Received = 1;
-			-- end;
-		-- end;
-		-- if contains(heroes,"Vidomina") ~= nil then		
-			-- local rndchoice = random(5)+1;
-			-- local level = GetHeroLevel("Vidomina");
-			-- local rndamount = H55_RndResources[rndchoice];
-			-- local lvlamount = H55_ResLevelFactor[level]
-			-- local addedamount = lvlamount+rndamount
-			-- if ((level >= 5) and (H55_VidominaReceived == 0)) then
-				-- H55_GlobalWeeklyGemPayout[player] = H55_GlobalWeeklyGemPayout[player]+addedamount;				
-				-- H55_VidominaReceived = 1;
-			-- end;
-		-- end;	
-		-- if contains(heroes,"Vaniel") ~= nil then		
-			-- local rndchoice = random(5)+1;
-			-- local level = GetHeroLevel("Vaniel");
-			-- local rndamount = H55_RndResources[rndchoice];
-			-- local lvlamount = H55_ResLevelFactor[level]
-			-- local addedamount = lvlamount+rndamount
-			-- if ((level >= 5) and (H55_VanielReceived == 0)) then
-				-- H55_GlobalWeeklyCrystalPayout[player] = H55_GlobalWeeklyCrystalPayout[player]+addedamount;							
-				-- H55_VanielReceived = 1;
-			-- end;
-		-- end;		
-		-- if contains(heroes,"Rissa") ~= nil then		
-			-- local rndchoice = random(5)+1;
-			-- local level = GetHeroLevel("Rissa");
-			-- local rndamount = H55_RndResources[rndchoice];
-			-- local lvlamount = H55_ResLevelFactor[level]
-			-- local addedamount = lvlamount+rndamount
-			-- if ((level >= 5) and (H55_RissaReceived == 0)) then
-				-- H55_GlobalWeeklyGemPayout[player] = H55_GlobalWeeklyGemPayout[player]+addedamount;			
-				-- H55_RissaReceived = 1;			
-			-- end;
-		-- end;
-		-- if contains(heroes,"Calid2") ~= nil then		
-			-- local rndchoice = random(5)+1;
-			-- local level = GetHeroLevel("Calid2");
-			-- local rndamount = H55_RndResources[rndchoice];
-			-- local lvlamount = H55_ResLevelFactor[level]
-			-- local addedamount = lvlamount+rndamount
-			-- if ((level >= 5) and (H55_Calid2Received == 0)) then	
-				-- H55_GlobalWeeklyMercuryPayout[player] = H55_GlobalWeeklyMercuryPayout[player]+addedamount;					
-				-- H55_Calid2Received = 1;
-			-- end;
-		-- end;
-		-- if contains(heroes,"Sephinroth") ~= nil then		
-			-- local rndchoice = random(5)+1;
-			-- local level = GetHeroLevel("Sephinroth");
-			-- local rndamount = H55_RndResources[rndchoice];
-			-- local lvlamount = H55_ResLevelFactor[level]
-			-- local addedamount = lvlamount+rndamount
-			-- if ((level >= 5) and (H55_SephinrothReceived == 0)) then
-				-- H55_GlobalWeeklySulphurPayout[player] = H55_GlobalWeeklySulphurPayout[player]+addedamount;			
-				-- H55_SephinrothReceived = 1;
-			-- end;
-		-- end;
-		-- if contains(heroes,"Ufretin") ~= nil then		
-			-- local rndchoice = random(5)+1;
-			-- local level = GetHeroLevel("Ufretin");
-			-- local rndamount = H55_RndResources[rndchoice];
-			-- local lvlamount = H55_ResLevelFactor[level]
-			-- local addedamount = lvlamount+rndamount
-			-- if ((level >= 5) and (H55_UfretinReceived == 0)) then
-				-- H55_GlobalWeeklyWoodPayout[player] = H55_GlobalWeeklyWoodPayout[player]+addedamount;
-				-- H55_GlobalWeeklyOrePayout[player] = H55_GlobalWeeklyOrePayout[player]+addedamount;				
-				-- H55_UfretinReceived = 1;
-			-- end;
-		-- end;
-
 		------------------------------------------------------------------------------------------------------------------------------------------------
 		H55_DEBUG = {4,"Reinforcements",player,""};-----------------------------------------------------------------------------------------------------
 		------------------------------------------------------------------------------------------------------------------------------------------------
@@ -4501,30 +4254,7 @@ function H55_WeeklyEvents(player)
 		if contains(heroes,"Ferigl") ~= nil then H55_WeeklyReinforce("Ferigl",player,78,141,77,0.15) end;	
 		if contains(heroes,"Maximus") ~= nil then H55_WeeklyReinforce("Maximus",player,99,169,98,0.3) end;	
 		if contains(heroes,"Matewa") ~= nil then H55_WeeklyReinforce("Matewa",player,124,176,123,0.2) end;
-		if contains(heroes,"Hero9") ~= nil then H55_WeeklyReinforce("Hero9",player,118,173,117,1.7) end;		
-		-- if contains(heroes,"Hero9") ~= nil then
-			-- local type = H55_ArmyInfoSimple("Hero9");
-			-- local level = GetHeroLevel("Hero9");
-			-- local growth = 0;
-			-- local multiplier = 1 - (H55_GetJoinSpecMultiplier("Hero9",player));
-			-- if multiplier > 0 then
-				-- growth = H55_Round(multiplier*(1*level));
-			-- end;		
-			-- if growth >= 1 then
-				-- for i = 0,6 do
-					-- if (type[i] == 118) and (H55_WeeklyReinforceTable["Hero9"] ~= 1) then
-						-- AddHeroCreatures("Hero9",118,growth);
-						-- H55_WeeklyReinforceTable["Hero9"] = 1;
-					-- elseif (type[i] ==173) and (H55_WeeklyReinforceTable["Hero9"] ~= 1) then	
-						-- AddHeroCreatures("Hero9",173,growth);
-						-- H55_WeeklyReinforceTable["Hero9"] = 1;
-					-- elseif (type[i] ==117) and (H55_WeeklyReinforceTable["Hero9"] ~= 1) then	
-						-- AddHeroCreatures("Hero9",117,growth);
-						-- H55_WeeklyReinforceTable["Hero9"] = 1;
-					-- end;
-				-- end;
-			-- end;
-		-- end;
+		if contains(heroes,"Hero9") ~= nil then H55_WeeklyReinforce("Hero9",player,118,173,117,1.7) end;
 	
 		------------------------------------------------------------------------------------------------------------------------------------------------
 		H55_DEBUG = {5,"Recruits",player,""};-----------------------------------------------------------------------------------------------------------
@@ -7197,28 +6927,12 @@ function H55_ContinuesEvent(player)
 				ChangeHeroStat(hero,STAT_MANA_POINTS,8);
 				H55_ArtManaReceived[hero] = ci;
 			end;
-			-- if H55_IsThisAIPlayer(player) ~= 1 then		
-				-- if (HasArtefact(hero,ARTIFACT_MONK_03,1)) ~= nil and (H55_ArtMoveReceived[hero] ~= ci) and (GetSavedCombatArmyHero(ci,1)==hero) then
-					-- ChangeHeroStat(hero,STAT_MOVE_POINTS,350);
-					-- H55_ArtMoveReceived[hero] = ci;
-				-- end;
-			-- end;
 			if H55_IsThisAIPlayer(player) ~= 1 then		
 				if (HasArtefact(hero,ARTIFACT_MONK_03,1)) ~= nil and (H55_ArtMoveReceived[hero] ~= H55_Day) and (GetSavedCombatArmyHero(ci,1)==hero) then
 					ChangeHeroStat(hero,STAT_MOVE_POINTS,350);
 					H55_ArtMoveReceived[hero] = H55_Day;
 				end;
-			end;			
-			-- if H55_IsThisAIPlayer(player) ~= 1 then				
-				-- if (H55_GetHeroRaceNum(hero) == 3) and (H55_GetHeroClass(hero) == "Gatekeeper") and (H55_IsNativeTownNearby(hero,player) == 1) and (H55_InfernoMoveCorrection[hero] ~= ci) and (GetSavedCombatArmyHero(ci,1)==hero) then
-					-- ChangeHeroStat(hero,STAT_MOVE_POINTS,-50);
-					-- H55_InfernoMoveCorrection[hero] = ci;
-				-- end;
-				-- if (H55_GetHeroRaceNum(hero) == 6) and (H55_GetHeroClass(hero) == "Warlock") and (H55_IsNativeTownNearby(hero,player) == 1) and (H55_DungeonMoveCorrection[hero] ~= ci) and (GetSavedCombatArmyHero(ci,1)==hero) then
-					-- ChangeHeroStat(hero,STAT_MOVE_POINTS,-50);
-					-- H55_DungeonMoveCorrection[hero] = ci;
-				-- end;
-			-- end;			
+			end;	
 		end;
 	end;
 
@@ -7248,16 +6962,10 @@ function H55_CrashProtection()
 			H55_Switch = 1;
 			H55_DbgTxt = H55_DEBUG;
 			startThread(H55_ContinuesActivator);
-			--sleep(2)
 			print("The H55 script engine has been restarted!");
 		else 
-			--print("H55 crash protection is active!");
 			print("H55 Player Configuration: "..H55_PlayerStatus[1]..H55_PlayerStatus[2]..H55_PlayerStatus[3]..H55_PlayerStatus[4]..H55_PlayerStatus[5]..H55_PlayerStatus[6]..H55_PlayerStatus[7]..H55_PlayerStatus[8].." - "..H55_GameMode.." - "..H55_CycleSpeed);
 			print("H55 Amount of Recovered Crashes: "..H55_AmountCrashes);
-			--print("Amount of AI Script Cycles: "..H55_AmountCyclesAI);
-			--print("H55 Amount of AI TownConversions: "..H55_AmountAIConversions);
-			--print("H55 Amount of AI DwellingConversions: "..H55_AmountAIDwellingConversions);
-			--print("H55 Amount of AI Bank Visits: "..H55_AmountAIBankVisits);
 		end;
 	else 
 		print("H55 is switched off by the user")

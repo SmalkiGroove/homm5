@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Creature ObjectRecordID="1000022">
-	<AttackSkill>22</AttackSkill>
-	<DefenceSkill>22</DefenceSkill>
+	<AttackSkill>20</AttackSkill>
+	<DefenceSkill>20</DefenceSkill>
 	<Shots>0</Shots>
 	<MinDamage>25</MinDamage>
 	<MaxDamage>50</MaxDamage>
@@ -18,7 +18,7 @@
 	<TimeToCommand>10</TimeToCommand>
 	<CreatureTier>7</CreatureTier>
 	<Upgrade>true</Upgrade>
-	<PairCreature>CREATURE_UNKNOWN</PairCreature>
+	<PairCreature>CREATURE_SNOW_APE</PairCreature>
 	<CreatureTown>TOWN_NO_TYPE</CreatureTown>
 	<MagicElement>
 		<First>ELEMENT_FIRE</First>
@@ -41,7 +41,7 @@
 	<flybySequence/>
 	<Visual href="/GameMechanics/CreatureVisual/Creatures/Neutrals/Phoenix.xdb#xpointer(/CreatureVisual)"/>
 	<Range>0</Range>
-	<BaseCreature>CREATURE_UNKNOWN</BaseCreature>
+	<BaseCreature>CREATURE_SNOW_APE</BaseCreature>
 	<Upgrades/>
 	<Abilities>
 		<Item>ABILITY_IMMUNITY_TO_FIRE</Item>

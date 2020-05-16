@@ -32,7 +32,7 @@
 	<Class>HERO_CLASS_DEMON_LORD</Class>
 	<Specialization>HERO_SPEC_GATE_KEEPER</Specialization>
 	<PrimarySkill>
-		<Mastery>MASTERY_ADVANCED</Mastery>
+		<Mastery>MASTERY_BASIC</Mastery>
 		<SkillID>HERO_SKILL_GATING</SkillID>
 	</PrimarySkill>
 	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Inferno/Gate_Keeper/Name.txt"/>
@@ -49,16 +49,21 @@
 	<Editable>
 		<NameFileRef href="/Text/Game/Heroes/Persons/Inferno/Nymus/Name.txt"/>
 		<BiographyFileRef href="/Text/Game/Heroes/Persons/Inferno/Nymus/Bio.txt"/>
-		<Offence>3</Offence>
+		<Offence>2</Offence>
 		<Defence>0</Defence>
 		<Spellpower>2</Spellpower>
 		<Knowledge>1</Knowledge>
-		<skills/>
+		<skills>
+			<Item>
+				<Mastery>MASTERY_BASIC</Mastery>
+				<SkillID>HERO_SKILL_SUMMONING_MAGIC</SkillID>
+			</Item>
+		</skills>
 		<perkIDs>
 			<Item>HERO_SKILL_GATING_MASTERY</Item>
 		</perkIDs>
 		<spellIDs>
-			<Item>SPELL_SLOW</Item>
+			<Item>SPELL_DISRUPTING_RAY</Item>
 		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>

@@ -58,11 +58,11 @@
 		<skills>
 			<Item>
 				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_BARBARIAN_LEARNING</SkillID>
+				<SkillID>HERO_SKILL_LOGISTICS</SkillID>
 			</Item>
 		</skills>
 		<perkIDs>
-			<Item>HERO_SKILL_WARCRY_LEARNING</Item>
+			<Item>HERO_SKILL_PATHFINDING</Item>
 		</perkIDs>
 		<spellIDs/>
 		<Ballista>false</Ballista>

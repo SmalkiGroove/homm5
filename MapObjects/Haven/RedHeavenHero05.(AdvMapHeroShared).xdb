@@ -32,11 +32,11 @@
 	<Class>HERO_CLASS_KNIGHT</Class>
 	<Specialization>HERO_SPEC_OFFENDER</Specialization>
 	<PrimarySkill>
-		<Mastery>MASTERY_ADVANCED</Mastery>
+		<Mastery>MASTERY_BASIC</Mastery>
 		<SkillID>HERO_SKILL_TRAINING</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Stronghold/Offender2/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Stronghold/Offender2/Description.txt"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Haven/Offender/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Haven/Offender/Description.txt"/>
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Haven/Jouster.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/UI/H5A2/Icons/Heroes/Portrets128x128/RedHeaven_Bertrand.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall href="/UI/H5A2/Icons/Heroes/Portrets128x128/RedHeaven_Bertrand.(Texture).xdb#xpointer(/Texture)"/>
@@ -53,9 +53,14 @@
 		<Defence>0</Defence>
 		<Spellpower>1</Spellpower>
 		<Knowledge>1</Knowledge>
-		<skills/>
+		<skills>
+			<Item>
+				<Mastery>MASTERY_BASIC</Mastery>
+				<SkillID>HERO_SKILL_LEADERSHIP</SkillID>
+			</Item>
+		</skills>
 		<perkIDs>
-			<Item>HERO_SKILL_CRITICAL_STRIKE</Item>
+			<Item>HERO_SKILL_RECRUITMENT</Item>
 		</perkIDs>
 		<spellIDs/>
 		<Ballista>false</Ballista>

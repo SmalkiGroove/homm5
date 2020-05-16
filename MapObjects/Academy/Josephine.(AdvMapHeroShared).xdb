@@ -30,14 +30,14 @@
 	<Icon128/>
 	<InternalName>Josephine</InternalName>
 	<Class>HERO_CLASS_GUILDMASTER</Class>
-	<Specialization>HERO_SPEC_LOGISTICS</Specialization>
+	<Specialization>HERO_SPEC_BEATER</Specialization>
 	<PrimarySkill>
-		<Mastery>MASTERY_ADVANCED</Mastery>
-		<SkillID>HERO_SKILL_LUCK</SkillID>
+		<Mastery>MASTERY_BASIC</Mastery>
+		<SkillID>HERO_SKILL_ARTIFICIER</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Haven/Wanderer2/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Haven/Wanderer2/Description.txt"/>
-	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Haven/Wanderer.xdb#xpointer(/Texture)"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Academy/Beater/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Academy/Beater/Description.txt"/>
+	<SpecializationIcon href="/Textures/SpellBook______2618/Spells/Spell_Teleport.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Academy/Academy_Josephine_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/Wizard.(Character).xdb#xpointer(/Character)"/>
@@ -53,12 +53,17 @@
 		<Defence>0</Defence>
 		<Spellpower>1</Spellpower>
 		<Knowledge>2</Knowledge>
-		<skills/>
+		<skills>
+			<Item>
+				<Mastery>MASTERY_BASIC</Mastery>
+				<SkillID>HERO_SKILL_LIGHT_MAGIC</SkillID>
+			</Item>
+		</skills>
 		<perkIDs>
-			<Item>HERO_SKILL_RESISTANCE</Item>
+			<Item>HERO_SKILL_MELT_ARTIFACT</Item>
 		</perkIDs>
 		<spellIDs>
-			<Item>SPELL_HASTE</Item>
+			<Item>SPELL_TELEPORT</Item>
 		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>

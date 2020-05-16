@@ -30,14 +30,14 @@
 	<Icon128/>
 	<InternalName>Vegeyr</InternalName>
 	<Class>HERO_CLASS_FLAMEKEEPERA</Class>
-	<Specialization>HERO_SPEC_INEXHAUSTIBLE</Specialization>
+	<Specialization>HERO_SPEC_WEILDER_OF_FIRE</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
-		<SkillID>HERO_SKILL_DESTRUCTIVE_MAGIC</SkillID>
+		<SkillID>HERO_SKILL_RUNELORE</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Academy/Inexhaustible2/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Academy/Inexhaustible2/Description.txt"/>
-	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Academy/Inexhaustible.xdb#xpointer(/Texture)"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Fortress/Weilder_of_Fire/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Fortress/Weilder_of_Fire/Description.txt"/>
+	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Academy/Weilder_of_Fire.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/UI/H5A1/Icons/Heroes/Portrets128x128/Vegeyr.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/RuneMage.(Character).xdb#xpointer(/Character)"/>
@@ -56,7 +56,7 @@
 		<skills>
 			<Item>
 				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_SORCERY</SkillID>
+				<SkillID>HERO_SKILL_DESTRUCTIVE_MAGIC</SkillID>
 			</Item>
 		</skills>
 		<perkIDs>

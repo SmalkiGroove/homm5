@@ -55,9 +55,18 @@
 		<Defence>2</Defence>
 		<Spellpower>1</Spellpower>
 		<Knowledge>1</Knowledge>
-		<skills/>
-		<perkIDs/>
-		<spellIDs/>
+		<skills>
+			<Item>
+				<Mastery>MASTERY_BASIC</Mastery>
+				<SkillID>HERO_SKILL_LIGHT_MAGIC</SkillID>
+			</Item>
+		</skills>
+		<perkIDs>
+			<Item>HERO_SKILL_MASTER_OF_BLESSING</Item>
+		</perkIDs>
+		<spellIDs>
+			<Item>SPELL_BLESS</Item>
+		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>
 		<AmmoCart>true</AmmoCart>

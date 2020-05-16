@@ -63,9 +63,9 @@
 			<Item>HERO_SKILL_BALLISTA</Item>
 		</perkIDs>
 		<spellIDs/>
-		<Ballista>false</Ballista>
+		<Ballista>true</Ballista>
 		<FirstAidTent>false</FirstAidTent>
-		<AmmoCart>true</AmmoCart>
+		<AmmoCart>false</AmmoCart>
 		<FavoriteEnemies/>
 	</Editable>
 	<ArrowButtonState>0</ArrowButtonState>

@@ -4,11 +4,11 @@
 	<DefenceSkill>2</DefenceSkill>
 	<Shots>7</Shots>
 	<MinDamage>1</MinDamage>
-	<MaxDamage>4</MaxDamage>
+	<MaxDamage>3</MaxDamage>
 	<Speed>5</Speed>
-	<Initiative>10</Initiative>
+	<Initiative>11</Initiative>
 	<Flying>false</Flying>
-	<Health>6</Health>
+	<Health>7</Health>
 	<KnownSpells/>
 	<SpellPoints>0</SpellPoints>
 	<SpellPoints1>0</SpellPoints1>

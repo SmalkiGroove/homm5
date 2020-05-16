@@ -32,12 +32,12 @@
 	<Class>HERO_CLASS_ELEMENTALIST</Class>
 	<Specialization/>
 	<PrimarySkill>
-		<Mastery>MASTERY_ADVANCED</Mastery>
-		<SkillID>HERO_SKILL_SUMMONING_MAGIC</SkillID>
+		<Mastery>MASTERY_BASIC</Mastery>
+		<SkillID>HERO_SKILL_ARTIFICIER</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Added/Spellpower/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Added/Spellpower/Description.txt"/>
-	<SpecializationIcon href="/Textures/HeroScreen/Skills/Sorcery_3.xdb#xpointer(/Texture)"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Academy/Eagles/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Academy/Eagles/Description.txt"/>
+	<SpecializationIcon href="/UI/H5A0/Icons/Creatures/Neutral/128x128/Eagle.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Academy/Academy_Theodorus_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/Wizard.(Character).xdb#xpointer(/Character)"/>
@@ -53,12 +53,17 @@
 		<Defence>0</Defence>
 		<Spellpower>3</Spellpower>
 		<Knowledge>2</Knowledge>
-		<skills/>
+		<skills>
+			<Item>
+				<Mastery>MASTERY_BASIC</Mastery>
+				<SkillID>HERO_SKILL_SUMMONING_MAGIC</SkillID>
+			</Item>	
+		</skills>
 		<perkIDs>
 			<Item>HERO_SKILL_MASTER_OF_CREATURES</Item>
 		</perkIDs>
 		<spellIDs>
-			<Item>SPELL_SUMMON_ELEMENTALS</Item>
+			<Item>SPELL_SUMMON_PHOENIX</Item>
 		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>

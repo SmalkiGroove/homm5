@@ -35,8 +35,8 @@
 		<Mastery>MASTERY_BASIC</Mastery>
 		<SkillID>HERO_SKILL_GATING</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Added/Dark_Messiah/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Added/Dark_Messiah/Description.txt"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Inferno/Dark_Messiah/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Inferno/Dark_Messiah/Description.txt"/>
 	<SpecializationIcon href="/Textures/HeroScreen/Skills/Gating_4.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Inferno/Inferno_DMessiah_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>

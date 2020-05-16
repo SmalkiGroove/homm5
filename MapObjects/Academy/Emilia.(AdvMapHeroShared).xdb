@@ -30,14 +30,14 @@
 	<Icon128/>
 	<InternalName>Emilia</InternalName>
 	<Class>HERO_CLASS_ELEMENTALIST</Class>
-	<Specialization>HERO_SPEC_INEXHAUSTIBLE</Specialization>
+	<Specialization>HERO_SPEC_CALL_OF_THE_WASP</Specialization>
 	<PrimarySkill>
-		<Mastery>MASTERY_ADVANCED</Mastery>
-		<SkillID>HERO_SKILL_SUMMONING_MAGIC</SkillID>
+		<Mastery>MASTERY_BASIC</Mastery>
+		<SkillID>HERO_SKILL_ARTIFICIER</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Academy/Inexhaustible/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Academy/Inexhaustible/Description.txt"/>
-	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Academy/Inexhaustible.xdb#xpointer(/Texture)"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Academy/Call_of_the_Wasp/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Academy/Call_of_the_Wasp/Description.txt"/>
+	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Preserve/Call_of_the_Wasp.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Academy/Academy_Emilia_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/Wizard.(Character).xdb#xpointer(/Character)"/>
@@ -53,12 +53,17 @@
 		<Defence>0</Defence>
 		<Spellpower>3</Spellpower>
 		<Knowledge>2</Knowledge>
-		<skills/>
+		<skills>
+			<Item>
+				<Mastery>MASTERY_BASIC</Mastery>
+				<SkillID>HERO_SKILL_SUMMONING_MAGIC</SkillID>
+			</Item>	
+		</skills>
 		<perkIDs>
 			<Item>HERO_SKILL_MASTER_OF_CREATURES</Item>
 		</perkIDs>
 		<spellIDs>
-			<Item>SPELL_SUMMON_ELEMENTALS</Item>
+			<Item>SPELL_WASP_SWARM</Item>
 		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>

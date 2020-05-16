@@ -33,10 +33,10 @@
 	<Specialization>HERO_SPEC_BOMBARDIER</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
-		<SkillID>HERO_SKILL_LUCK</SkillID>
+		<SkillID>HERO_SKILL_ARTIFICIER</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Inferno/Bombardier2/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Inferno/Bombardier2/Description.txt"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Academy/Bombardier/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Academy/Bombardier/Description.txt"/>
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Inferno/Bombardier.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Academy/Academy_Minasli_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
@@ -62,10 +62,8 @@
 		<perkIDs>
 			<Item>HERO_SKILL_BALLISTA</Item>
 		</perkIDs>
-		<spellIDs>
-			<Item>SPELL_HASTE</Item>
-		</spellIDs>
-		<Ballista>false</Ballista>
+		<spellIDs/>
+		<Ballista>true</Ballista>
 		<FirstAidTent>false</FirstAidTent>
 		<AmmoCart>false</AmmoCart>
 		<FavoriteEnemies/>

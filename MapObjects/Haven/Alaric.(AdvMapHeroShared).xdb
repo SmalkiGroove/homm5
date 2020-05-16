@@ -35,7 +35,7 @@
 	<Specialization>HERO_SPEC_WEILDER_OF_FIRE</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
-		<SkillID>HERO_SKILL_DARK_MAGIC</SkillID>
+		<SkillID>HERO_SKILL_TRAINING</SkillID>
 	</PrimarySkill>
 	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Academy/Weilder_of_Fire/Name.txt"/>
 	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Academy/Weilder_of_Fire/Description.txt"/>

@@ -23,6 +23,21 @@ function length(array)
 	return count
 end
 
+function trunc(num)
+    return num - mod(num, 1);
+end;
+
+function round(num)
+    return trunc(num + 0.5)
+end;
+
+function power(a, n)
+    local p = 1;
+    for i = 1,n do
+        p = p * a;
+    end;
+end;
+
 function contains(array, sample)
 	for index, element in array do
 		if (element == sample) then
@@ -31,6 +46,11 @@ function contains(array, sample)
 	end
 	return nil
 end
+
+function insert(array, sample)
+	local index = length(array);
+	array[index] = sample;
+end;
 
 function WaitForTutorialMessageBox()
 	while IsTutorialMessageBoxOpen() do
@@ -139,6 +159,7 @@ end;
     CREATURE_WATER_ELEMENTAL = 86
     CREATURE_EARTH_ELEMENTAL = 87
     CREATURE_AIR_ELEMENTAL = 88
+    CREATURE_BLACK_KNIGHT = 89
     CREATURE_DEATH_KNIGHT = 90
     CREATURE_PHOENIX = 91
     CREATURE_DEFENDER = 92

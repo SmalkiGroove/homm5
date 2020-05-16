@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Creature>
-	<AttackSkill>5</AttackSkill>
-	<DefenceSkill>5</DefenceSkill>
+	<AttackSkill>6</AttackSkill>
+	<DefenceSkill>6</DefenceSkill>
 	<Shots>0</Shots>
 	<MinDamage>4</MinDamage>
 	<MaxDamage>6</MaxDamage>
 	<Speed>5</Speed>
-	<Initiative>12</Initiative>
+	<Initiative>13</Initiative>
 	<Flying>false</Flying>
 	<Health>24</Health>
 	<KnownSpells/>
@@ -46,8 +46,8 @@
 	<Upgrades/>
 	<Abilities>
 		<Item>ABILITY_ANTI_GIANT</Item>
-		<Item>ABILITY_BASH</Item>
-		<Item>ABILITY_IMMUNITY_TO_MIND_CONTROL</Item>
+		<Item>ABILITY_UNLIMITED_RETALIATION</Item>
 		<Item>ABILITY_BATTLE_RAGE</Item>
+		<Item>ABILITY_IMMUNITY_TO_MIND_CONTROL</Item>
 	</Abilities>
 </Creature>

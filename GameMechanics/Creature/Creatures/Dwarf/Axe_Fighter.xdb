@@ -47,6 +47,7 @@
 		<Item>CREATURE_HARPOONER</Item>
 	</Upgrades>
 	<Abilities>
+		<Item>ABILITY_NO_MELEE_PENALTY</Item>
 		<Item>ABILITY_WOUND</Item>
 	</Abilities>
 </Creature>

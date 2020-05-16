@@ -30,14 +30,14 @@
 	<Icon128/>
 	<InternalName>Pelt</InternalName>
 	<Class>HERO_CLASS_RUNEMAGE</Class>
-	<Specialization/>
+	<Specialization>HERO_SPEC_PRUDENT</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
-		<SkillID>HERO_SKILL_TRAINING</SkillID>
+		<SkillID>HERO_SKILL_NECROMANCY</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Added/Wights/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Added/Wights/Description.txt"/>
-	<SpecializationIcon href="/Textures/Interface/CombatArena/Faces/Necropolis/ico_Wraith_64.xdb#xpointer(/Texture)"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Necropolis/Prudent/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Necropolis/Prudent/Description.txt"/>
+	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Dungeon/Prudent.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Necropolis/Necropolis_Vladimir_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/DM/Sareth_M.(Character).xdb#xpointer(/Character)"/>
@@ -56,11 +56,11 @@
 		<skills>
 			<Item>
 				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_NECROMANCY</SkillID>
+				<SkillID>HERO_SKILL_LOGISTICS</SkillID>
 			</Item>
 		</skills>
 		<perkIDs>
-			<Item>HERO_SKILL_CRITICAL_STRIKE</Item>
+			<Item>HERO_SKILL_DEATH_SCREAM</Item>
 		</perkIDs>
 		<spellIDs/>
 		<Ballista>false</Ballista>

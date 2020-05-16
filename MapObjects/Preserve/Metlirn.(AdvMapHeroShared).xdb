@@ -32,7 +32,7 @@
 	<Class>HERO_CLASS_RANGERA</Class>
 	<Specialization>HERO_SPEC_FOREST_GUARDIAN</Specialization>
 	<PrimarySkill>
-		<Mastery>MASTERY_ADVANCED</Mastery>
+		<Mastery>MASTERY_BASIC</Mastery>
 		<SkillID>HERO_SKILL_AVENGER</SkillID>
 	</PrimarySkill>
 	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Preserve/Forest_Guardian/Name.txt"/>
@@ -53,7 +53,12 @@
 		<Defence>1</Defence>
 		<Spellpower>1</Spellpower>
 		<Knowledge>1</Knowledge>
-		<skills/>
+		<skills>
+			<Item>
+				<Mastery>MASTERY_BASIC</Mastery>
+				<SkillID>HERO_SKILL_LUCK</SkillID>
+			</Item>
+		</skills>
 		<perkIDs>
 			<Item>HERO_SKILL_SNIPE_DEAD</Item>
 		</perkIDs>

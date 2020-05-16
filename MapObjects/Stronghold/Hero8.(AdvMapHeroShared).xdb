@@ -34,7 +34,7 @@
 	<Class>HERO_CLASS_BARBARIAN</Class>
 	<Specialization>HERO_SPEC_GRIM_FIGHTER</Specialization>
 	<PrimarySkill>
-		<Mastery>MASTERY_ADVANCED</Mastery>
+		<Mastery>MASTERY_BASIC</Mastery>
 		<SkillID>HERO_SKILL_DEMONIC_RAGE</SkillID>
 	</PrimarySkill>
 	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Stronghold/GrimFighter/Name.txt"/>
@@ -55,7 +55,12 @@
 		<Defence>0</Defence>
 		<Spellpower>1</Spellpower>
 		<Knowledge>1</Knowledge>
-		<skills/>
+		<skills>
+			<Item>
+				<Mastery>MASTERY_BASIC</Mastery>
+				<SkillID>HERO_SKILL_LEADERSHIP</SkillID>
+			</Item>
+		</skills>
 		<perkIDs>
 			<Item>HERO_SKILL_MEMORY_OF_OUR_BLOOD</Item>
 		</perkIDs>

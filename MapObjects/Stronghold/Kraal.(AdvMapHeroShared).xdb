@@ -37,8 +37,8 @@
 		<Mastery>MASTERY_BASIC</Mastery>
 		<SkillID>HERO_SKILL_DEMONIC_RAGE</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Haven/Artilleryman3/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Haven/Artilleryman3/Description.txt"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Stronghold/Artilleryman/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Stronghold/Artilleryman/Description.txt"/>
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Haven/Artilleryman.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Stronghold/Stronghold_Kraal_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
@@ -65,9 +65,9 @@
 			<Item>HERO_SKILL_BALLISTA</Item>
 		</perkIDs>
 		<spellIDs/>
-		<Ballista>false</Ballista>
+		<Ballista>true</Ballista>
 		<FirstAidTent>false</FirstAidTent>
-		<AmmoCart>true</AmmoCart>
+		<AmmoCart>false</AmmoCart>
 		<FavoriteEnemies/>
 		<TalismanLevel>0</TalismanLevel>
 	</Editable>
