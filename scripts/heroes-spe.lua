@@ -5,6 +5,7 @@ TURN = 0 -- current turn
 ATTRIBUTE_NAME = {"None", "Attaque", "Defense", "Puissance Magique", "Esprit", "Moral", "Chance"};
 
 function ApplyHeroesSpe_daily(player)
+	print("Daily run for player "..player);
 	local heroes = GetPlayerHeroes(player);
 	if heroes~=nil then
 		-- Haven
@@ -37,11 +38,12 @@ function ApplyHeroesSpe_daily(player)
 		-- Stronghold
 		if contains(heroes,"Hero6") ~= nil then Spe_AddCreatures("Hero6",player,127,128,178,0.05) end; -- Wyvern - 1:10 - 2:30 - 3:50
 	end;
-	local turn = GetDate(DAY);
-	PLAYER_DAILY_EVENTS_CHECK[player] = turn;
+	print("Daily run done.");
+	PLAYER_DAILY_EVENTS_CHECK[player] = TURN;
 end;
 
 function ApplyHeroesSpe_weekly(player)
+	print("Weekly run for player "..player);
     local heroes = GetPlayerHeroes(player);
 	if heroes~=nil then
 		-- Haven
@@ -80,11 +82,12 @@ function ApplyHeroesSpe_weekly(player)
 		if contains(heroes,"Kunyak") ~= nil then Spe_AddRecruits("Kunyak",player,CREATURE_ORCCHIEF_BUTCHER,TOWN_BUILDING_DWELLING_5,0.3) end;
 		if contains(heroes,"Zouleika") ~= nil then Spe_GiveStats("Zouleika",player,3+random(1),0.1) end; --Spellpower or Knowledge - +1 / 10*lvl / week
 	end;
-	local turn = GetDate(DAY);
-	PLAYER_WEEKLY_EVENTS_CHECK[player] = turn;
+	print("Weekly run done.");
+	PLAYER_WEEKLY_EVENTS_CHECK[player] = TURN;
 end;
 
 function Spe_AddCreatures(hero,player,u1,u2,u3,coef)
+	print("Add creatures to hero "..hero);
 	local army = GetHeroArmy(hero);
 	local level = GetHeroLevel(hero);
 	local nb = round(coef*level);
@@ -108,8 +111,11 @@ function Spe_AddCreatures(hero,player,u1,u2,u3,coef)
 end;
 
 function Spe_AddCreatures2(hero,player,id,coef)
+	print("Add neutral creatures to hero "..hero);
+	local nb = 0;
 	local level = GetHeroLevel(hero);
-	local nb = round(coef*level);
+	print("Hero level : "..level.." - Mult : "..coef);
+	nb = round(coef*level);
 	if nb >= 1 then
 		AddHeroCreatures(hero,id,nb);
 		ShowFlyingSign({"/Text/Game/Scripts/Reinforcements.txt"; num=nb},hero,player,5);
@@ -118,6 +124,7 @@ function Spe_AddCreatures2(hero,player,id,coef)
 end;
 
 function Spe_AddRecruits(hero,player,creature,dwelling,coef)
+	print("Adding recruits from hero "..hero);
 	local level = GetHeroLevel(hero);
 	local towns = GetHeroTowns(player,hero);
 	local nb = round(coef*level);
@@ -133,6 +140,7 @@ function Spe_AddRecruits(hero,player,creature,dwelling,coef)
 end;
 
 function Spe_GiveStats(hero,player,stat,coef)
+	print("Adding statistics to hero "..hero);
 	-- 1 offence - 2 defence - 3 spellpower - 4 knowledge - 5 moral - 6 luck
 	local level = GetHeroLevel(hero);
 	local amount = trunc(coef*level);
@@ -144,6 +152,7 @@ function Spe_GiveStats(hero,player,stat,coef)
 end;
 
 function Spe_GiveResources(PlayerID,ResourceID,chosenamount)
+	print("Adding resources from hero "..hero);
 	-- 0 wood - 1 ore - 2 mercury - 3 crystal - 4 sulfur - 5 gems - 6 gold
 	local currentamount = GetPlayerResource(PlayerID,ResourceID);
 	local newamount = currentamount + chosenamount;
@@ -154,6 +163,7 @@ function Spe_GiveResources(PlayerID,ResourceID,chosenamount)
 end;
 
 function Spe_GetResourceAmount(hero)
+	print("Compute amount of resources for hero "..hero);
 	local level = GetHeroLevel(hero);
 	local amount = 1;
 	if hero == "Orlando" then amount = level * 50 end;
@@ -166,17 +176,19 @@ end;
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
-SPE_LOOP = true
+SPE_LOOP = 1
 
 function ResetManager()
-	SPE_LOOP = false;
+	print("Restarting loop...");
+	SPE_LOOP = 0;
 	sleep(2);
 	startThread(HeroesSpeManager);
 end;
 
 function HeroesSpeManager()
-	SPE_LOOP = true;
-	while(SPE_LOOP) do
+	print("Entering new loop...");
+	SPE_LOOP = 1;
+	while(SPE_LOOP == 1) do
 		sleep(2);
 		local day = GetDate(DAY_OF_WEEK);
 
@@ -187,10 +199,12 @@ function HeroesSpeManager()
 			end;
 		end;
 	end;
+	print("Exited loop.");
 end;
 
 function CheckLoopStatus()
 	local turn = GetDate(DAY);
+	print("Checking script status - turn "..turn);
 	if TURN ~= turn then
 		TURN = turn;
 		ResetManager();

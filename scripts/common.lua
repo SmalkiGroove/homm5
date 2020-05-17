@@ -16,19 +16,21 @@ DIFFICULTY_HARD = 2
 DIFFICULTY_HEROIC = 3
 
 function length(array)
-	local count = 0
+	local count = 0;
 	for index, element in array do
-		count = count + 1
-	end
-	return count
-end
+		count = count + 1;
+	end;
+	return count;
+end;
 
 function trunc(num)
-    return num - mod(num, 1);
+    local r = num - mod(num, 1);
+    return r;
 end;
 
 function round(num)
-    return trunc(num + 0.5)
+    local r = trunc(num + 0.5);
+    return r;
 end;
 
 function power(a, n)
@@ -41,10 +43,10 @@ end;
 function contains(array, sample)
 	for index, element in array do
 		if (element == sample) then
-			return not nil
+			return not nil;
 		end
 	end
-	return nil
+	return nil;
 end
 
 function insert(array, sample)
