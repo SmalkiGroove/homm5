@@ -62,3 +62,9 @@ function GetHeroTowns(player,hero)
 	end;
 	return cities;
 end;
+
+function GetHeroArmy(hero)
+	local type = {};
+	type[0], type[1], type[2], type[3], type[4], type[5], type[6] = GetHeroCreaturesTypes(hero);
+	return type
+end;

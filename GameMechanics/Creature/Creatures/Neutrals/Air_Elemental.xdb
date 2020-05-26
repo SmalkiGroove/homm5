@@ -8,7 +8,7 @@
 	<Speed>8</Speed>
 	<Initiative>16</Initiative>
 	<Flying>true</Flying>
-	<Health>90</Health>
+	<Health>80</Health>
 	<KnownSpells/>
 	<SpellPoints>0</SpellPoints>
 	<SpellPoints1>0</SpellPoints1>

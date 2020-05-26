@@ -96,15 +96,12 @@ function Spe_AddCreatures(hero,player,u1,u2,u3,coef)
 			if (army[i] == u1) then
 				AddHeroCreatures(hero,u1,nb);
                 ShowFlyingSign({"/Text/Game/Scripts/Reinforcements.txt"; num=nb},hero,player,5);
-                --sleep(8);
 			elseif (army[i] == u2) then	
 				AddHeroCreatures(hero,u2,nb);
                 ShowFlyingSign({"/Text/Game/Scripts/Reinforcements.txt"; num=nb},hero,player,5);
-                --sleep(8);
 			elseif (army[i] == u3) then	
 				AddHeroCreatures(hero,u3,nb);
                 ShowFlyingSign({"/Text/Game/Scripts/Reinforcements.txt"; num=nb},hero,player,5);
-                --sleep(8);
 			end;
 		end;
 	end;
@@ -119,7 +116,6 @@ function Spe_AddCreatures2(hero,player,id,coef)
 	if nb >= 1 then
 		AddHeroCreatures(hero,id,nb);
 		ShowFlyingSign({"/Text/Game/Scripts/Reinforcements.txt"; num=nb},hero,player,5);
-		--sleep(8);
 	end;
 end;
 
@@ -133,7 +129,6 @@ function Spe_AddRecruits(hero,player,creature,dwelling,coef)
 			if GetTownBuildingLevel(town,dwelling) ~= 0 then
 				SetObjectDwellingCreatures(town,creature,GetObjectDwellingCreatures(town,creature) + nb);
 				ShowFlyingSign({"/Text/Game/Scripts/Recruits.txt"; num=nb},hero,player,5);
-				--sleep(8);
 			end;
 		end;
 	end;
@@ -203,6 +198,7 @@ function HeroesSpeManager()
 end;
 
 function CheckLoopStatus()
+	TURN = TURN + 1;
 	local turn = GetDate(DAY);
 	print("Checking script status - turn "..turn);
 	if TURN ~= turn then
