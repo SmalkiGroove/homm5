@@ -1294,7 +1294,7 @@
 		<HeroSkills>
 			<Knight>
 				<RoadHome>
-					<SpeedBonus>1</SpeedBonus>
+					<SpeedBonus>2</SpeedBonus>
 					<NativeTerrain>TT_GRASS</NativeTerrain>
 				</RoadHome>
 				<HoldGround_DefendBonusMultiplier>2</HoldGround_DefendBonusMultiplier>
@@ -1359,7 +1359,7 @@
 					<EnergyBase>50</EnergyBase>
 					<EnergyPerNecromancerLevel>10</EnergyPerNecromancerLevel>
 					<EnergyPerNecromancyAmplifier>100</EnergyPerNecromancyAmplifier>
-					<EnergyForGrailBuilding>500</EnergyForGrailBuilding>
+					<EnergyForGrailBuilding>250</EnergyForGrailBuilding>
 					<CreaturePowerPointsForOneEnergy>33</CreaturePowerPointsForOneEnergy>
 					<NecroPendant_CreatureCostDisountPercents>20</NecroPendant_CreatureCostDisountPercents>
 					<TransformTable>

@@ -38,6 +38,7 @@ function power(a, n)
     for i = 1,n do
         p = p * a;
     end;
+    return p;
 end;
 
 function contains(array, sample)

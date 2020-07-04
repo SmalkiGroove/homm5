@@ -18,7 +18,7 @@
 	<damage>
 		<Item>
 			<Base>120</Base>
-			<PerPower>15</PerPower>
+			<PerPower>12</PerPower>
 		</Item>
 		<Item>
 			<Base>160</Base>
@@ -26,11 +26,11 @@
 		</Item>
 		<Item>
 			<Base>200</Base>
-			<PerPower>17</PerPower>
+			<PerPower>20</PerPower>
 		</Item>
 		<Item>
 			<Base>240</Base>
-			<PerPower>18</PerPower>
+			<PerPower>24</PerPower>
 		</Item>
 	</damage>
 	<duration>

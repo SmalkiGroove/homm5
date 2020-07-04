@@ -16,7 +16,7 @@
 		</Item>
 		<Item>
 			<Spell>SPELL_HYPNOTIZE</Spell>
-			<Mastery>MASTERY_ADVANCED</Mastery>
+			<Mastery>MASTERY_BASIC</Mastery>
 		</Item>
 	</KnownSpells>
 	<SpellPoints>30</SpellPoints>

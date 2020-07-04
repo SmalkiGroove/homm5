@@ -51,5 +51,7 @@
 	<Abilities>
 		<Item>ABILITY_WHIRLWIND</Item>
 		<Item>ABILITY_DASH</Item>
+		<Item>ABILITY_IMMUNITY_TO_CURSE</Item>
+		<Item>ABILITY_IMMUNITY_TO_SLOW</Item>
 	</Abilities>
 </Creature>

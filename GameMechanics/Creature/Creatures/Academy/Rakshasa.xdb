@@ -48,5 +48,6 @@
 	</Upgrades>
 	<Abilities>
 		<Item>ABILITY_NO_ENEMY_RETALIATION</Item>
+		<Item>ABILITY_IMMUNITY_TO_CURSE</Item>
 	</Abilities>
 </Creature>

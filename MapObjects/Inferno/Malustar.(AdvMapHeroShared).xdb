@@ -37,7 +37,7 @@
 	</PrimarySkill>
 	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Inferno/Attributes/Name.txt"/>
 	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Inferno/Attributes/Description.txt"/>
-	<SpecializationIcon href="/Textures/Interface/CombatArena/Faces/Inferno/ico_Balor_128.xdb#xpointer(/Texture)"/>
+	<SpecializationIcon href="/UI/H5A2/Icons/Heroes_Skills/Other_Perks/Bodybuilding.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Inferno/Inferno_Malustar_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/DemonLord.(Character).xdb#xpointer(/Character)"/>

@@ -293,8 +293,8 @@
 					<Defence>0</Defence>
 					<Knowledge>0</Knowledge>
 					<SpellPower>0</SpellPower>
-					<Morale>2</Morale>
-					<Luck>2</Luck>
+					<Morale>3</Morale>
+					<Luck>3</Luck>
 				</HeroStatsModif>
 				<ArtifactShared href="/MapObjects/Artifacts/crown_of_courage.(AdvMapArtifactShared).xdb#xpointer(/AdvMapArtifactShared)"/>
 				<AvailableForPresets>true</AvailableForPresets>
@@ -790,10 +790,10 @@
 				<CanBeGeneratedToSell>true</CanBeGeneratedToSell>
 				<HeroStatsModif>
 					<Attack>0</Attack>
-					<Defence>2</Defence>
+					<Defence>3</Defence>
 					<Knowledge>0</Knowledge>
 					<SpellPower>0</SpellPower>
-					<Morale>2</Morale>
+					<Morale>3</Morale>
 					<Luck>0</Luck>
 				</HeroStatsModif>
 				<ArtifactShared href="/MapObjects/Artifacts/Lion_hide_cape.(AdvMapArtifactShared).xdb#xpointer(/AdvMapArtifactShared)"/>
@@ -1617,7 +1617,7 @@
 					<Attack>0</Attack>
 					<Defence>0</Defence>
 					<Knowledge>0</Knowledge>
-					<SpellPower>5</SpellPower>
+					<SpellPower>6</SpellPower>
 					<Morale>-1</Morale>
 					<Luck>0</Luck>
 				</HeroStatsModif>

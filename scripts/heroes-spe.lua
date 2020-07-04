@@ -1,6 +1,6 @@
 PLAYER_DAILY_EVENTS_CHECK = {1,1,1,1,1,1,1,1}; -- last turn number applied for each player's daily events
 PLAYER_WEEKLY_EVENTS_CHECK = {1,1,1,1,1,1,1,1}; -- last turn number applied for each player's weekly events
-TURN = 0 -- current turn
+TURN = 1; -- current turn
 
 ATTRIBUTE_NAME = {"None", "Attaque", "Defense", "Puissance Magique", "Esprit", "Moral", "Chance"};
 
@@ -9,14 +9,14 @@ function ApplyHeroesSpe_daily(player)
 	local heroes = GetPlayerHeroes(player);
 	if heroes~=nil then
 		-- Haven
-		if contains(heroes,"Orlando") ~= nil then Spe_GiveResources(player, 6, Spe_GetResourceAmount("Orlando")) end; -- Gold - 250 + 50/level
+		if contains(heroes,"Orlando") ~= nil then Spe_GiveResources("Orlando",player, 6, Spe_GetResourceAmount("Orlando")) end; -- Gold - 250 + 50/level
 		if contains(heroes,"Sarge") ~= nil then Spe_AddCreatures("Sarge",player,11,12,111,0.05) end; -- Cavalier - 1:10 - 2:30 - 3:50
 		-- Preserve
 		if contains(heroes,"Ildar") ~= nil then Spe_AddCreatures("Ildar",player,49,50,148,0.17) end; -- Druid - 1:3 - 2:9 - 3:15 - 4:21 - 5:27 ... 9:50
 		if contains(heroes,"Jenova") ~= nil then Spe_AddCreatures("Jenova",player,55,56,151,0.03) end; -- Green Dragon - 1:17 - 2:50
 		if contains(heroes,"Arniel") ~= nil then Spe_AddCreatures2("Arniel",player,113,0.2) end; -- Wolf - 1:3 - 2:8 - 3:13 - 4:18 - 5:23 ...
 		-- Academy
-		if contains(heroes,"Faiz") ~= nil then Spe_GiveResources(player, 6, Spe_GetResourceAmount("Faiz")) end; -- Gold - 1:250 - 10:500 - 20:1000 ... 50:8000
+		if contains(heroes,"Faiz") ~= nil then Spe_GiveResources("Faiz",player, 6, Spe_GetResourceAmount("Faiz")) end; -- Gold - 1:250 - 10:500 - 20:1000 ... 50:8000
 		if contains(heroes,"Tan") ~= nil then Spe_AddCreatures("Tan",player,65,66,163,0.15) end; -- Djinn - 1:4 - 2:10 - 3:17 - 4:24 - 5:30 ... 8:50
 		if contains(heroes,"Davius") ~= nil then Spe_AddCreatures("Davius",player,67,68,164,0.09) end; -- Rakshasa - 1:6 - 2:17 - 3:28 - 4:39 - 5:50
 		if contains(heroes,"Timerkhan") ~= nil then Spe_AddCreatures2("Timerkhan",player,114,0.08) end; -- Eagle - 1:7 - 2:19 - 3:32 - 4:44
@@ -27,11 +27,11 @@ function ApplyHeroesSpe_daily(player)
 		if contains(heroes,"Thant") ~= nil then Spe_AddCreatures2("Thant",player,116,0.17) end; -- Mummy - 1:3 - 2:9 - 3:15 - 4:21 - 5:27 ... 9:50
 		if contains(heroes,"Xerxon") ~= nil then Spe_AddCreatures2("Xerxon",player,89,0.1) end; -- Black Knight - 1:5 - 2:15 - 3:25 - 4:35 - 5:45
 		-- Inferno
-		if contains(heroes,"Harkenraz") ~= nil then Spe_GiveResources(player, 4, Spe_GetResourceAmount("Harkenraz")) end; -- Gold 250 - Sulfur +1 / 10 levels
+		if contains(heroes,"Harkenraz") ~= nil then Spe_GiveResources("Harkenraz",player, 4, Spe_GetResourceAmount("Harkenraz")) end; -- Gold 250 - Sulfur +1 / 10 levels
 		if contains(heroes,"Ash") ~= nil then Spe_AddCreatures("Ash",player,23,24,135,0.13) end; -- Hellmare - 1:4 - 2:12 - 3:20 - 4:27 ... 7:50
 		if contains(heroes,"Sovereign") ~= nil then Spe_AddCreatures("Sovereign",player,25,26,136,0.09) end; -- Pitlord - 1:6 - 2:17 - 3:28 - 4:39 - 5:50
 		-- Dungeon
-		if contains(heroes,"Menel") ~= nil then Spe_GiveResources(player, 6, Spe_GetResourceAmount("Menel")) end; -- Gold - 5:100 - 10:200 - 20:400 ... 50:1000
+		if contains(heroes,"Menel") ~= nil then Spe_GiveResources("Menel",player, 6, Spe_GetResourceAmount("Menel")) end; -- Gold - 5:100 - 10:200 - 20:400 ... 50:1000
 		if contains(heroes,"Ferigl") ~= nil then Spe_AddCreatures("Ferigl",player,77,78,141,0.12) end; -- Raptor - 1:5 - 2:13 - 3:21 - 4:30 - 5:38 - 6:46
 		if contains(heroes,"Eruina") ~= nil then Spe_AddCreatures("Eruina",player,81,82,143,0.08) end; -- Matron - 1:7 - 2:19 - 3:32 - 4:44
 		if contains(heroes,"Almegir") ~= nil then Spe_AddCreatures2("Almegir",player,115,0.11) end; -- Manticore - 1:5 - 2:14 - 3:23 - 4:32 - 5:41 - 6:50
@@ -91,19 +91,24 @@ function Spe_AddCreatures(hero,player,u1,u2,u3,coef)
 	local army = GetHeroArmy(hero);
 	local level = GetHeroLevel(hero);
 	local nb = round(coef*level);
+	print("Hero level : "..level.." - Mult : "..coef);
 	if nb >= 1 then
+		local b = false;
 		for i = 0,6 do
-			if (army[i] == u1) then
+			if b then
+				b = true;
+			elseif (army[i] == u1) then
 				AddHeroCreatures(hero,u1,nb);
-                ShowFlyingSign({"/Text/Game/Scripts/Reinforcements.txt"; num=nb},hero,player,5);
+				b = true;
 			elseif (army[i] == u2) then	
 				AddHeroCreatures(hero,u2,nb);
-                ShowFlyingSign({"/Text/Game/Scripts/Reinforcements.txt"; num=nb},hero,player,5);
+				b = true;
 			elseif (army[i] == u3) then	
 				AddHeroCreatures(hero,u3,nb);
-                ShowFlyingSign({"/Text/Game/Scripts/Reinforcements.txt"; num=nb},hero,player,5);
+				b = true;
 			end;
 		end;
+		if b then ShowFlyingSign({"/Text/Game/Scripts/Reinforcements.txt"; num=nb},hero,player,5) end;
 	end;
 end;
 
@@ -123,6 +128,7 @@ function Spe_AddRecruits(hero,player,creature,dwelling,coef)
 	print("Adding recruits from hero "..hero);
 	local level = GetHeroLevel(hero);
 	local towns = GetHeroTowns(player,hero);
+	print("Hero level : "..level.." - Mult : "..coef);
 	local nb = round(coef*level);
 	if nb >= 1 then
 		for i,town in towns do
@@ -136,8 +142,9 @@ end;
 
 function Spe_GiveStats(hero,player,stat,coef)
 	print("Adding statistics to hero "..hero);
-	-- 1 offence - 2 defence - 3 spellpower - 4 knowledge - 5 moral - 6 luck
+	-- 0 exp - 1 offence - 2 defence - 3 spellpower - 4 knowledge - 5 luck - 6 morale - 7 movement - 8 mana
 	local level = GetHeroLevel(hero);
+	print("Hero level : "..level.." - Mult : "..coef);
 	local amount = trunc(coef*level);
 	if amount >= 1 then
 		ChangeHeroStat(hero,stat,amount);
@@ -146,14 +153,14 @@ function Spe_GiveStats(hero,player,stat,coef)
 	end;
 end;
 
-function Spe_GiveResources(PlayerID,ResourceID,chosenamount)
+function Spe_GiveResources(hero,player,resource,chosenamount)
 	print("Adding resources from hero "..hero);
-	-- 0 wood - 1 ore - 2 mercury - 3 crystal - 4 sulfur - 5 gems - 6 gold
-	local currentamount = GetPlayerResource(PlayerID,ResourceID);
+	-- resource : 0 wood - 1 ore - 2 mercury - 3 crystal - 4 sulfur - 5 gems - 6 gold
+	local currentamount = GetPlayerResource(player,resource);
 	local newamount = currentamount + chosenamount;
-	if newamount > 0 then
-		SetPlayerResource(PlayerID,ResourceID,newamount);
-		ShowFlyingSign({"/Text/Game/Scripts/Resource.txt"; num=nb},hero,player,5);
+	if chosenamount > 0 then
+		SetPlayerResource(player,resource,newamount);
+		-- ShowFlyingSign({"/Text/Game/Scripts/Resource.txt"; num=newamount},hero,player,5);
 	end;
 end;
 
@@ -199,12 +206,8 @@ end;
 
 function CheckLoopStatus()
 	TURN = TURN + 1;
-	local turn = GetDate(DAY);
-	print("Checking script status - turn "..turn);
-	if TURN ~= turn then
-		TURN = turn;
-		ResetManager();
-	end;
+	print("New day ! Turn "..TURN);
+	ResetManager();
 end;
 
 
