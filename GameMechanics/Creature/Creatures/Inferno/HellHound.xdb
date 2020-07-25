@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Creature ObjectRecordID="39">
-	<AttackSkill>4</AttackSkill>
+	<AttackSkill>5</AttackSkill>
 	<DefenceSkill>3</DefenceSkill>
 	<Shots>0</Shots>
 	<MinDamage>3</MinDamage>
@@ -8,7 +8,7 @@
 	<Speed>5</Speed>
 	<Initiative>11</Initiative>
 	<Flying>false</Flying>
-	<Health>13</Health>
+	<Health>14</Health>
 	<KnownSpells/>
 	<SpellPoints>0</SpellPoints>
 	<SpellPoints1>0</SpellPoints1>
@@ -47,6 +47,7 @@
 		<Item>CREATURE_FIREBREATHER_HOUND</Item>
 	</Upgrades>
 	<Abilities>
+		<Item>ABILITY_NO_ENEMY_RETALIATION</Item>
 		<Item>ABILITY_DEMONIC</Item>
 	</Abilities>
 </Creature>

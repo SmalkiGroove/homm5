@@ -3,10 +3,10 @@
 	<AttackSkill>3</AttackSkill>
 	<DefenceSkill>5</DefenceSkill>
 	<Shots>0</Shots>
-	<MinDamage>2</MinDamage>
+	<MinDamage>3</MinDamage>
 	<MaxDamage>4</MaxDamage>
 	<Speed>5</Speed>
-	<Initiative>8</Initiative>
+	<Initiative>9</Initiative>
 	<Flying>false</Flying>
 	<Health>15</Health>
 	<KnownSpells>
@@ -52,6 +52,7 @@
 		<Item>ABILITY_DEMONIC</Item>
 		<Item>ABILITY_IMMUNITY_TO_FIRE</Item>
 		<Item>ABILITY_ENRAGED</Item>
+		<Item>ABILITY_BERSERKER_RAGE</Item>
 		<Item>ABILITY_EXPLOSION</Item>
 	</Abilities>
 </Creature>

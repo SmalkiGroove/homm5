@@ -707,10 +707,10 @@
 				<NameFileRef href="/Text/Game/Artifacts/EndlessSackOfGold/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/EndlessSackOfGold/Description.txt"/>
 				<Model href="/_(Model)/Artefacts/Endless_Sack_of_Gold.(Model).xdb#xpointer(/Model)"/>
-				<Type>ARTF_CLASS_MINOR</Type>
+				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>SHOULDERS</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Endless_Sack_of_Gold.xdb#xpointer(/Texture)"/>
-				<CostOfGold>1500</CostOfGold>
+				<CostOfGold>7000</CostOfGold>
 				<AIValue>4000</AIValue>
 				<CanBeGeneratedToSell>true</CanBeGeneratedToSell>
 				<HeroStatsModif>
@@ -729,13 +729,13 @@
 		<Item>
 			<ID>ENDLESS_BAG_OF_GOLD</ID>
 			<obj>
-				<NameFileRef href="/Text/Game/Artifacts/Legion_T8/Name.txt"/>
-				<DescriptionFileRef href="/Text/Game/Artifacts/Legion_T8/Description.txt"/>
-				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
-				<Type>ARTF_CLASS_MAJOR</Type>
+				<NameFileRef href="/Text/Game/Artifacts/Endless_bag_of_gold/Name.txt"/>
+				<DescriptionFileRef href="/Text/Game/Artifacts/Endless_bag_of_gold/Description.txt"/>
+				<Model href="/_(Model)/Artefacts/Endless_Bag_of_Gold.(Model).xdb#xpointer(/Model)"/>
+				<Type>ARTF_CLASS_MINOR</Type>
 				<Slot>SHOULDERS</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/LegionT8.xdb#xpointer(/Texture)"/>
-				<CostOfGold>7000</CostOfGold>
+				<CostOfGold>1500</CostOfGold>
 				<AIValue>6600</AIValue>
 				<CanBeGeneratedToSell>true</CanBeGeneratedToSell>
 				<HeroStatsModif>
