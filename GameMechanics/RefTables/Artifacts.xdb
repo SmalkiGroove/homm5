@@ -734,7 +734,7 @@
 				<Model href="/_(Model)/Artefacts/Endless_Bag_of_Gold.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
 				<Slot>SHOULDERS</Slot>
-				<Icon href="/Textures/HeroScreen/Artifacts/LegionT8.xdb#xpointer(/Texture)"/>
+				<Icon href="/Textures/HeroScreen/Artifacts/Endless_Bag_of_Gold.tga.(Texture).xdb#xpointer(/Texture)"/>
 				<CostOfGold>1500</CostOfGold>
 				<AIValue>6600</AIValue>
 				<CanBeGeneratedToSell>true</CanBeGeneratedToSell>
