@@ -3161,31 +3161,31 @@
 		<Item>
 			<Camera href="/Cameras/Interface/HeroScreen/Necromancer.xdb#xpointer(/Camera)"/>
 			<heroClasses>
-				<Item>HERO_CLASS_NECROMANCER</Item>
+				<Item>HERO_CLASS_ENGINEER</Item>
 			</heroClasses>
 		</Item>
 		<Item>
 			<Camera href="/Cameras/Interface/HeroScreen/Ranger.xdb#xpointer(/Camera)"/>
 			<heroClasses>
-				<Item>HERO_CLASS_RANGER</Item>
+				<Item>HERO_CLASS_PALADIN</Item>
 			</heroClasses>
 		</Item>
 		<Item>
 			<Camera href="/Cameras/Interface/HeroScreen/Warlock.xdb#xpointer(/Camera)"/>
 			<heroClasses>
-				<Item>HERO_CLASS_WARLOCK</Item>
+				<Item>HERO_CLASS_SORCERER</Item>
 			</heroClasses>
 		</Item>
 		<Item>
 			<Camera href="/Cameras/Interface/HeroScreen/Wizard.xdb#xpointer(/Camera)"/>
 			<heroClasses>
-				<Item>HERO_CLASS_WIZARD</Item>
+				<Item>HERO_CLASS_WARLOCK</Item>
 			</heroClasses>
 		</Item>
 		<Item>
 			<Camera href="/Cameras/Interface/HeroScreen/Wolfstan.xdb#xpointer(/Camera)"/>
 			<heroClasses>
-				<Item>HERO_CLASS_RUNEMAGE</Item>
+				<Item>HERO_CLASS_DEATHKNIGHT</Item>
 			</heroClasses>
 		</Item>
 		<Item>
@@ -3203,13 +3203,13 @@
 		<Item>
 			<Camera href="/Cameras/Heroes/H5A2/Gotay/Gotay_Idle.(Camera).xdb#xpointer(/Camera)"/>
 			<heroClasses>
-				<Item>HERO_CLASS_WARLOCKB</Item>
+				<Item>HERO_CLASS_BEWITCHER</Item>
 			</heroClasses>
 		</Item>
 		<Item>
 			<Camera href="/Cameras/Interface/HeroScreen/Ranger.xdb#xpointer(/Camera)"/>
 			<heroClasses>
-				<Item>HERO_CLASS_RANGERA</Item>
+				<Item>HERO_CLASS_RANGER</Item>
 			</heroClasses>
 		</Item>
 		<Item>
@@ -3221,7 +3221,7 @@
 		<Item>
 			<Camera href="/Cameras/Interface/HeroScreen/Wolfstan.xdb#xpointer(/Camera)"/>
 			<heroClasses>
-				<Item>HERO_CLASS_ENCHANTER</Item>
+				<Item>HERO_CLASS_DRUID</Item>
 			</heroClasses>
 		</Item>
 		<Item>
@@ -3233,7 +3233,7 @@
 		<Item>
 			<Camera href="/Cameras/Interface/HeroScreen/Necromancer.xdb#xpointer(/Camera)"/>
 			<heroClasses>
-				<Item>HERO_CLASS_NECROMANCERA</Item>
+				<Item>HERO_CLASS_NECROMANCER</Item>
 			</heroClasses>
 		</Item>
 		<Item>
@@ -3245,13 +3245,13 @@
 		<Item>
 			<Camera href="/Cameras/Interface/HeroScreen/Wizard.xdb#xpointer(/Camera)"/>
 			<heroClasses>
-				<Item>HERO_CLASS_GUILDMASTER</Item>
+				<Item>HERO_CLASS_SEER</Item>
 			</heroClasses>
 		</Item>
 		<Item>
 			<Camera href="/Cameras/Interface/HeroScreen/Warlock.xdb#xpointer(/Camera)"/>
 			<heroClasses>
-				<Item>HERO_CLASS_SEER</Item>
+				<Item>HERO_CLASS_ASSASSIN</Item>
 			</heroClasses>
 		</Item>
 		<Item>
@@ -3263,13 +3263,13 @@
 		<Item>
 			<Camera href="/Cameras/Interface/HeroScreen/Ranger.xdb#xpointer(/Camera)"/>
 			<heroClasses>
-				<Item>HERO_CLASS_SORCERER</Item>
+				<Item>HERO_CLASS_ENCHANTER</Item>
 			</heroClasses>
 		</Item>
 		<Item>
 			<Camera href="/Cameras/Interface/HeroScreen/Wizard.xdb#xpointer(/Camera)"/>
 			<heroClasses>
-				<Item>HERO_CLASS_WIZARDA</Item>
+				<Item>HERO_CLASS_WIZARD</Item>
 			</heroClasses>
 		</Item>
 		<Item>
@@ -3281,7 +3281,7 @@
 		<Item>
 			<Camera href="/Cameras/Interface/HeroScreen/Wolfstan.xdb#xpointer(/Camera)"/>
 			<heroClasses>
-				<Item>HERO_CLASS_RUNEMAGEA</Item>
+				<Item>HERO_CLASS_RUNEMAGE</Item>
 			</heroClasses>
 		</Item>
 		<Item>
@@ -3293,7 +3293,7 @@
 		<Item>
 			<Camera href="/Cameras/Interface/HeroScreen/Warlock.xdb#xpointer(/Camera)"/>
 			<heroClasses>
-				<Item>HERO_CLASS_WARLOCKB</Item>
+				<Item>HERO_CLASS_BEWITCHER</Item>
 			</heroClasses>
 		</Item>		
 	</heroesCameras>
