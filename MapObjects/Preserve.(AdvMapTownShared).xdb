@@ -887,7 +887,7 @@
 						</Size>
 						<Object href="/Arenas/CombatArena/RampartArena/s_central_tower.(ArenaModObject).xdb#xpointer(/ArenaModObject)"/>
 						<Locator href="/Arenas/CombatArena/RampartArena/shooter_s3.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
-						<Shooter href="/Characters/Creatures/Preserve/Druid.(Character).xdb#xpointer(/Character)"/>
+						<Shooter href="/Characters/Creatures/Preserve/AlternativeUpgrade/T4_High_Druid.(Character).xdb#xpointer(/Character)"/>
 						<Shot href="/GameMechanics/Shot/Creatures/Preserve/Druid.xdb#xpointer(/Shot)"/>
 						<Type>BIG_TOWER</Type>
 						<HitEffect href="/Effects/_(Effect)/Arenas/InfernoSiege/Hit/BigTower.xdb#xpointer(/Effect)"/>
@@ -1115,8 +1115,8 @@
 						</Size>
 						<Object href="/Arenas/CombatArena/RampartArena/s_tower_1.(ArenaModObject).xdb#xpointer(/ArenaModObject)"/>
 						<Locator href="/Arenas/CombatArena/RampartArena/shooter_s1.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
-						<Shooter href="/Characters/Creatures/Preserve/Druid.(Character).xdb#xpointer(/Character)"/>
-						<Shot href="/GameMechanics/Shot/Creatures/Preserve/Druid.xdb#xpointer(/Shot)"/>
+						<Shooter href="/Characters/Creatures/Preserve/AlternativeUpgrade/T3_Elf_Sniper.(Character).xdb#xpointer(/Character)"/>
+						<Shot href="/GameMechanics/Shot/Creatures/Preserve/HighElf.xdb#xpointer(/Shot)"/>
 						<Type>LEFT_TOWER</Type>
 						<HitEffect href="/Effects/_(Effect)/Arenas/InfernoSiege/Hit/Tower1.xdb#xpointer(/Effect)"/>
 						<HitSound href="/Sounds/_(Sound)/SFX/Seige-Destr/Hit.xdb#xpointer(/Sound)"/>
@@ -1165,8 +1165,8 @@
 						</Size>
 						<Object href="/Arenas/CombatArena/RampartArena/s_tower_2.(ArenaModObject).xdb#xpointer(/ArenaModObject)"/>
 						<Locator href="/Arenas/CombatArena/RampartArena/shooter_s2.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
-						<Shooter href="/Characters/Creatures/Preserve/Druid.(Character).xdb#xpointer(/Character)"/>
-						<Shot href="/GameMechanics/Shot/Creatures/Preserve/Druid.xdb#xpointer(/Shot)"/>
+						<Shooter href="/Characters/Creatures/Preserve/AlternativeUpgrade/T3_Elf_Sniper.(Character).xdb#xpointer(/Character)"/>
+						<Shot href="/GameMechanics/Shot/Creatures/Preserve/HighElf.xdb#xpointer(/Shot)"/>
 						<Type>RIGHT_TOWER</Type>
 						<HitEffect href="/Effects/_(Effect)/Arenas/InfernoSiege/Hit/Tower2.xdb#xpointer(/Effect)"/>
 						<HitSound href="/Sounds/_(Sound)/SFX/Seige-Destr/Hit.xdb#xpointer(/Sound)"/>

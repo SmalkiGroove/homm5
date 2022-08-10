@@ -41,7 +41,7 @@
 				<WarMachine ObjectRecordID="29">
 					<Shots>10</Shots>
 					<Initiative>10</Initiative>
-					<Health>500</Health>
+					<Health>75</Health>
 					<Range>0</Range>
 					<spellIDs/>
 					<MagicElement>
@@ -55,7 +55,7 @@
 						<Crystal>0</Crystal>
 						<Sulfur>0</Sulfur>
 						<Gem>0</Gem>
-						<Gold>2500</Gold>
+						<Gold>1500</Gold>
 					</Cost>
 					<CombatSize>2</CombatSize>
 					<flybySequence/>
@@ -99,7 +99,7 @@
 				<WarMachine ObjectRecordID="30">
 					<Shots>10</Shots>
 					<Initiative>12</Initiative>
-					<Health>1000</Health>
+					<Health>200</Health>
 					<Range>0</Range>
 					<spellIDs/>
 					<MagicElement>
@@ -151,7 +151,7 @@
 				<WarMachine ObjectRecordID="31">
 					<Shots>6</Shots>
 					<Initiative>10</Initiative>
-					<Health>400</Health>
+					<Health>60</Health>
 					<Range>0</Range>
 					<spellIDs>
 						<Item>SPELL_EFFECT_FIRST_AID_TENT_HEAL</Item>
@@ -193,7 +193,7 @@
 				<WarMachine ObjectRecordID="32">
 					<Shots>0</Shots>
 					<Initiative>10</Initiative>
-					<Health>400</Health>
+					<Health>35</Health>
 					<Range>0</Range>
 					<spellIDs/>
 					<MagicElement>

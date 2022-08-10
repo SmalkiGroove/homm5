@@ -29,7 +29,7 @@
 	<RazedStatic/>
 	<Icon128/>
 	<InternalName>Ingvar</InternalName>
-	<Class>HERO_CLASS_NECROMANCER</Class>
+	<Class>HERO_CLASS_ENGINEER</Class>
 	<Specialization>HERO_SPEC_DEFENDER</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>

@@ -1139,8 +1139,8 @@
 						</Size>
 						<Object href="/Arenas/CombatArena/Dungeonarena/s_tower_1.(ArenaModObject).xdb#xpointer(/ArenaModObject)"/>
 						<Locator href="/Arenas/CombatArena/Dungeonarena/shooter_s1.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
-						<Shooter href="/Characters/Creatures/Dungeon/Matron.(Character).xdb#xpointer(/Character)"/>
-						<Shot href="/GameMechanics/Shot/Creatures/Dungeon/Matron.xdb#xpointer(/Shot)"/>
+						<Shooter href="/Characters/Creatures/Dungeon/Assassin.(Character).xdb#xpointer(/Character)"/>
+						<Shot href="/GameMechanics/Shot/Creatures/Dungeon/Assassin.xdb#xpointer(/Shot)"/>
 						<Type>LEFT_TOWER</Type>
 						<HitEffect/>
 						<HitSound href="/Sounds/_(Sound)/SFX/Seige-Destr/Hit.xdb#xpointer(/Sound)"/>
@@ -1189,8 +1189,8 @@
 						</Size>
 						<Object href="/Arenas/CombatArena/Dungeonarena/s_tower_2.(ArenaModObject).xdb#xpointer(/ArenaModObject)"/>
 						<Locator href="/Arenas/CombatArena/Dungeonarena/shooter_s2.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
-						<Shooter href="/Characters/Creatures/Dungeon/Matron.(Character).xdb#xpointer(/Character)"/>
-						<Shot href="/GameMechanics/Shot/Creatures/Dungeon/Matron.xdb#xpointer(/Shot)"/>
+						<Shooter href="/Characters/Creatures/Dungeon/Assassin.(Character).xdb#xpointer(/Character)"/>
+						<Shot href="/GameMechanics/Shot/Creatures/Dungeon/Assassin.xdb#xpointer(/Shot)"/>
 						<Type>RIGHT_TOWER</Type>
 						<HitEffect/>
 						<HitSound href="/Sounds/_(Sound)/SFX/Seige-Destr/Hit.xdb#xpointer(/Sound)"/>

@@ -29,7 +29,7 @@
 	<RazedStatic/>
 	<Icon128/>
 	<InternalName>Jenova</InternalName>
-	<Class>HERO_CLASS_RANGERA</Class>
+	<Class>HERO_CLASS_RANGER</Class>
 	<Specialization/>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>

@@ -29,7 +29,7 @@
 	<RazedStatic/>
 	<Icon128/>
 	<InternalName>Vinrael</InternalName>
-	<Class>HERO_CLASS_ENCHANTER</Class>
+	<Class>HERO_CLASS_DRUID</Class>
 	<Specialization/>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>

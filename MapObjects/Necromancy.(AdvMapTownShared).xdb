@@ -1166,8 +1166,8 @@
 						</Size>
 						<Object href="/Arenas/CombatArena/Necropolisarena/s_tower_1.(ArenaModObject).xdb#xpointer(/ArenaModObject)"/>
 						<Locator href="/Arenas/CombatArena/Necropolisarena/shooter_s1.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
-						<Shooter href="/Characters/Creatures/Necropolis/Lich.(Character).xdb#xpointer(/Character)"/>
-						<Shot href="/GameMechanics/Shot/Creatures/Necropolis/Lich.xdb#xpointer(/Shot)"/>
+						<Shooter href="/Characters/Creatures/Necropolis/SkeletonArcher.(Character).xdb#xpointer(/Character)"/>
+						<Shot href="/GameMechanics/Shot/Creatures/Haven/Archer.xdb#xpointer(/Shot)"/>
 						<Type>LEFT_TOWER</Type>
 						<HitEffect href="/Effects/_(Effect)/Arenas/InfernoSiege/Hit/Tower1.xdb#xpointer(/Effect)"/>
 						<HitSound href="/Sounds/_(Sound)/SFX/Seige-Destr/Hit.xdb#xpointer(/Sound)"/>
@@ -1216,8 +1216,8 @@
 						</Size>
 						<Object href="/Arenas/CombatArena/Necropolisarena/s_tower_2.(ArenaModObject).xdb#xpointer(/ArenaModObject)"/>
 						<Locator href="/Arenas/CombatArena/Necropolisarena/shooter_s2.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
-						<Shooter href="/Characters/Creatures/Necropolis/Lich.(Character).xdb#xpointer(/Character)"/>
-						<Shot href="/GameMechanics/Shot/Creatures/Necropolis/Lich.xdb#xpointer(/Shot)"/>
+						<Shooter href="/Characters/Creatures/Necropolis/SkeletonArcher.(Character).xdb#xpointer(/Character)"/>
+						<Shot href="/GameMechanics/Shot/Creatures/Haven/Archer.xdb#xpointer(/Shot)"/>
 						<Type>RIGHT_TOWER</Type>
 						<HitEffect href="/Effects/_(Effect)/Arenas/InfernoSiege/Hit/Tower2.xdb#xpointer(/Effect)"/>
 						<HitSound href="/Sounds/_(Sound)/SFX/Seige-Destr/Hit.xdb#xpointer(/Sound)"/>

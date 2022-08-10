@@ -3287,7 +3287,7 @@
 		<Item>
 			<Camera href="/Cameras/Interface/HeroScreen/Agrael.xdb#xpointer(/Camera)"/>
 			<heroClasses>
-				<Item>HERO_CLASS_FLAMEKEEPERA</Item>
+				<Item>HERO_CLASS_FLAMEKEEPER</Item>
 			</heroClasses>
 		</Item>
 		<Item>

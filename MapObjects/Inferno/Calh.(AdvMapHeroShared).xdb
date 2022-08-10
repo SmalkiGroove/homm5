@@ -29,7 +29,7 @@
 	<RazedStatic/>
 	<Icon128/>
 	<InternalName>Calh</InternalName>
-	<Class>HERO_CLASS_WIZARD</Class>
+	<Class>HERO_CLASS_WARLOCK</Class>
 	<Specialization/>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>

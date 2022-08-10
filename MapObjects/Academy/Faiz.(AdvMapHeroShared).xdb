@@ -29,7 +29,7 @@
 	<RazedStatic/>
 	<Icon128/>
 	<InternalName>Faiz</InternalName>
-	<Class>HERO_CLASS_WIZARDA</Class>
+	<Class>HERO_CLASS_WIZARD</Class>
 	<Specialization>HERO_SPEC_SUZERAIN</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>

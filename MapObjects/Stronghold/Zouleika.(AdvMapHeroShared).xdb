@@ -31,7 +31,7 @@
 	<RazedStatic/>
 	<Icon128/>
 	<InternalName>Zouleika</InternalName>
-	<Class>HERO_CLASS_WARLOCKB</Class>
+	<Class>HERO_CLASS_BEWITCHER</Class>
 	<Specialization/>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>

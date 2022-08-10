@@ -469,8 +469,8 @@
 						</Size>
 						<Object href="/Arenas/CombatArena/Academyarena/s_central_tower.(ArenaModObject).xdb#xpointer(/ArenaModObject)"/>
 						<Locator href="/Arenas/CombatArena/Academyarena/shooter_s3.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
-						<Shooter href="/Characters/Creatures/Academy/Gremlin.(Character).xdb#xpointer(/Character)"/>
-						<Shot href="/GameMechanics/Shot/Creatures/Academy/Gremlin.xdb#xpointer(/Shot)"/>
+						<Shooter href="/Characters/Creatures/Academy/Magi.(Character).xdb#xpointer(/Character)"/>
+						<Shot href="/GameMechanics/Shot/Creatures/Academy/Magi.xdb#xpointer(/Shot)"/>
 						<Type>BIG_TOWER</Type>
 						<HitEffect/>
 						<HitSound href="/Sounds/_(Sound)/SFX/Seige-Destr/Hit.xdb#xpointer(/Sound)"/>

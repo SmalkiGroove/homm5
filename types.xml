@@ -1021,28 +1021,28 @@
 			<EnumEntries>
 				<Item>HERO_CLASS_NONE</Item>
 				<Item>HERO_CLASS_KNIGHT</Item>
-				<Item>HERO_CLASS_RANGER</Item>
-				<Item>HERO_CLASS_WIZARD</Item>
-				<Item>HERO_CLASS_DEMON_LORD</Item>
-				<Item>HERO_CLASS_NECROMANCER</Item>
+				<Item>HERO_CLASS_PALADIN</Item>
 				<Item>HERO_CLASS_WARLOCK</Item>
-				<Item>HERO_CLASS_RUNEMAGE</Item>
+				<Item>HERO_CLASS_DEMON_LORD</Item>
+				<Item>HERO_CLASS_ENGINEER</Item>
+				<Item>HERO_CLASS_SORCERER</Item>
+				<Item>HERO_CLASS_DEATHKNIGHT</Item>
 				<Item>HERO_CLASS_BARBARIAN</Item>
 				<Item>HERO_CLASS_HERETIC</Item>
-				<Item>HERO_CLASS_RANGERA</Item>
+				<Item>HERO_CLASS_RANGER</Item>
 				<Item>HERO_CLASS_WARDEN</Item>
+				<Item>HERO_CLASS_DRUID</Item>
 				<Item>HERO_CLASS_ENCHANTER</Item>
-				<Item>HERO_CLASS_SORCERER</Item>
-				<Item>HERO_CLASS_FLAMEKEEPERA</Item>
+				<Item>HERO_CLASS_FLAMEKEEPER</Item>
 				<Item>HERO_CLASS_REAVER</Item>
-				<Item>HERO_CLASS_NECROMANCERA</Item>
+				<Item>HERO_CLASS_NECROMANCER</Item>
 				<Item>HERO_CLASS_BEASTMASTER</Item>
-				<Item>HERO_CLASS_GUILDMASTER</Item>
 				<Item>HERO_CLASS_SEER</Item>
-				<Item>HERO_CLASS_WIZARDA</Item>
+				<Item>HERO_CLASS_ASSASSIN</Item>
+				<Item>HERO_CLASS_WIZARD</Item>
 				<Item>HERO_CLASS_ELEMENTALIST</Item>
-				<Item>HERO_CLASS_RUNEMAGEA</Item>
-				<Item>HERO_CLASS_WARLOCKB</Item>
+				<Item>HERO_CLASS_RUNEMAGE</Item>
+				<Item>HERO_CLASS_BEWITCHER</Item>
 				<Item>HERO_CLASS_SHAMAN</Item>
 			</EnumEntries>
 		</Item>
@@ -39952,11 +39952,11 @@
 					<Value>1</Value>
 				</Item>
 				<Item>
-					<Name>HERO_CLASS_RANGER</Name>
+					<Name>HERO_CLASS_PALADIN</Name>
 					<Value>2</Value>
 				</Item>
 				<Item>
-					<Name>HERO_CLASS_WIZARD</Name>
+					<Name>HERO_CLASS_WARLOCK</Name>
 					<Value>3</Value>
 				</Item>
 				<Item>
@@ -39964,15 +39964,15 @@
 					<Value>4</Value>
 				</Item>
 				<Item>
-					<Name>HERO_CLASS_NECROMANCER</Name>
+					<Name>HERO_CLASS_ENGINEER</Name>
 					<Value>5</Value>
 				</Item>
 				<Item>
-					<Name>HERO_CLASS_WARLOCK</Name>
+					<Name>HERO_CLASS_SORCERER</Name>
 					<Value>6</Value>
 				</Item>
 				<Item>
-					<Name>HERO_CLASS_RUNEMAGE</Name>
+					<Name>HERO_CLASS_DEATHKNIGHT</Name>
 					<Value>7</Value>
 				</Item>
 				<Item>
@@ -39984,7 +39984,7 @@
 					<Value>9</Value>
 				</Item>
 				<Item>
-					<Name>HERO_CLASS_RANGERA</Name>
+					<Name>HERO_CLASS_RANGER</Name>
 					<Value>10</Value>
 				</Item>
 				<Item>
@@ -39992,15 +39992,15 @@
 					<Value>11</Value>
 				</Item>
 				<Item>
-					<Name>HERO_CLASS_ENCHANTER</Name>
+					<Name>HERO_CLASS_DRUID</Name>
 					<Value>12</Value>
 				</Item>
 				<Item>
-					<Name>HERO_CLASS_SORCERER</Name>
+					<Name>HERO_CLASS_ENCHANTER</Name>
 					<Value>13</Value>
 				</Item>
 				<Item>
-					<Name>HERO_CLASS_FLAMEKEEPERA</Name>
+					<Name>HERO_CLASS_FLAMEKEEPER</Name>
 					<Value>14</Value>
 				</Item>
 				<Item>
@@ -40008,11 +40008,11 @@
 					<Value>15</Value>
 				</Item>
 				<Item>
-					<Name>HERO_CLASS_NECROMANCERA</Name>
+					<Name>HERO_CLASS_NECROMANCER</Name>
 					<Value>16</Value>
 				</Item>
 				<Item>
-					<Name>HERO_CLASS_WARLOCKB</Name>
+					<Name>HERO_CLASS_BEWITCHER</Name>
 					<Value>17</Value>
 				</Item>
 				<Item>
@@ -40020,15 +40020,15 @@
 					<Value>18</Value>
 				</Item>
 				<Item>
-					<Name>HERO_CLASS_GUILDMASTER</Name>
+					<Name>HERO_CLASS_SEER</Name>
 					<Value>19</Value>
 				</Item>
 				<Item>
-					<Name>HERO_CLASS_SEER</Name>
+					<Name>HERO_CLASS_ASSASSIN</Name>
 					<Value>20</Value>
 				</Item>
 				<Item>
-					<Name>HERO_CLASS_WIZARDA</Name>
+					<Name>HERO_CLASS_WIZARD</Name>
 					<Value>21</Value>
 				</Item>
 				<Item>
@@ -40036,7 +40036,7 @@
 					<Value>22</Value>
 				</Item>
 				<Item>
-					<Name>HERO_CLASS_RUNEMAGEA</Name>
+					<Name>HERO_CLASS_RUNEMAGE</Name>
 					<Value>23</Value>
 				</Item>
 				<Item>

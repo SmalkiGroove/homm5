@@ -938,8 +938,8 @@
 						</Size>
 						<Object href="/Arenas/CombatArena/FortressArena/s_central_tower.(ArenaModObject).xdb#xpointer(/ArenaModObject)"/>
 						<Locator href="/Arenas/CombatArena/FortressArena/shooter_s3.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
-						<Shooter href="/Characters/Creatures/Dwarves/T2_Dwarf/SpearThrower.(Character).xdb#xpointer(/Character)"/>
-						<Shot href="/GameMechanics/Shot/Creatures/Dwarf/AxeThrower.xdb#xpointer(/Shot)"/>
+						<Shooter href="/Characters/Creatures/Dwarves/T5_Dwarf/RuneMage.(Character).xdb#xpointer(/Character)"/>
+						<Shot href="/GameMechanics/Shot/Creatures/Dwarf/RuneMage.xdb#xpointer(/Shot)"/>
 						<Type>BIG_TOWER</Type>
 						<HitEffect/>
 						<HitSound/>
