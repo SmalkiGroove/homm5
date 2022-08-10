@@ -79,9 +79,9 @@
 			</obj>
 		</Item>
 		<Item>
-			<ID>HERO_CLASS_RANGERA</ID>
+			<ID>HERO_CLASS_RANGER</ID>
 			<obj>
-				<NameFileRef href="HeroClass/HeroClassRangera.txt"/>
+				<NameFileRef href="HeroClass/HeroClassRanger.txt"/>
 				<SkillsProbs>
 					<Item>
 						<SkillID>HERO_SKILL_LOGISTICS</SkillID>
@@ -142,9 +142,9 @@
 			</obj>
 		</Item>
 		<Item>
-			<ID>HERO_CLASS_RANGER</ID>
+			<ID>HERO_CLASS_PALADIN</ID>
 			<obj>
-				<NameFileRef href="HeroClass/HeroClassRanger.txt"/>
+				<NameFileRef href="HeroClass/HeroClassPaladin.txt"/>
 				<SkillsProbs>
 					<Item>
 						<SkillID>HERO_SKILL_LOGISTICS</SkillID>
@@ -205,9 +205,9 @@
 			</obj>
 		</Item>
 		<Item>
-			<ID>HERO_CLASS_WIZARDA</ID>
+			<ID>HERO_CLASS_WIZARD</ID>
 			<obj>
-				<NameFileRef href="HeroClass/HeroClassWizarda.txt"/>
+				<NameFileRef href="HeroClass/HeroClassWizard.txt"/>
 				<SkillsProbs>
 					<Item>
 						<SkillID>HERO_SKILL_LEARNING</SkillID>
@@ -268,9 +268,9 @@
 			</obj>
 		</Item>
 		<Item>
-			<ID>HERO_CLASS_WIZARD</ID>
+			<ID>HERO_CLASS_WARLOCK</ID>
 			<obj>
-				<NameFileRef href="HeroClass/HeroClassWizard.txt"/>
+				<NameFileRef href="HeroClass/HeroClassWarlock.txt"/>
 				<SkillsProbs>
 					<Item>
 						<SkillID>HERO_SKILL_LOGISTICS</SkillID>
@@ -394,9 +394,9 @@
 			</obj>
 		</Item>
 		<Item>
-			<ID>HERO_CLASS_NECROMANCER</ID>
+			<ID>HERO_CLASS_ENGINEER</ID>
 			<obj>
-				<NameFileRef href="HeroClass/HeroClassNecromancer.txt"/>
+				<NameFileRef href="HeroClass/HeroClassEngineer.txt"/>
 				<SkillsProbs>
 					<Item>
 						<SkillID>HERO_SKILL_WAR_MACHINES</SkillID>
@@ -457,9 +457,9 @@
 			</obj>
 		</Item>
 		<Item>
-			<ID>HERO_CLASS_NECROMANCERA</ID>
+			<ID>HERO_CLASS_NECROMANCER</ID>
 			<obj>
-				<NameFileRef href="HeroClass/HeroClassNecromancera.txt"/>
+				<NameFileRef href="HeroClass/HeroClassNecromancer.txt"/>
 				<SkillsProbs>
 					<Item>
 						<SkillID>HERO_SKILL_NECROMANCY</SkillID>
@@ -520,9 +520,9 @@
 			</obj>
 		</Item>
 		<Item>
-			<ID>HERO_CLASS_WARLOCK</ID>
+			<ID>HERO_CLASS_SORCERER</ID>
 			<obj>
-				<NameFileRef href="HeroClass/HeroClassWarlock.txt"/>
+				<NameFileRef href="HeroClass/HeroClassSorcerer.txt"/>
 				<SkillsProbs>
 					<Item>
 						<SkillID>HERO_SKILL_OFFENCE</SkillID>
@@ -583,9 +583,9 @@
 			</obj>
 		</Item>
 		<Item>
-			<ID>HERO_CLASS_WARLOCKB</ID>
+			<ID>HERO_CLASS_BEWITCHER</ID>
 			<obj>
-				<NameFileRef href="HeroClass/HeroClassWarlockb.txt"/>
+				<NameFileRef href="HeroClass/HeroClassBewitcher.txt"/>
 				<SkillsProbs>
 					<Item>
 						<SkillID>HERO_SKILL_OFFENCE</SkillID>
@@ -709,9 +709,9 @@
 			</obj>
 		</Item>
 		<Item>
-			<ID>HERO_CLASS_RUNEMAGE</ID>
+			<ID>HERO_CLASS_DEATHKNIGHT</ID>
 			<obj>
-				<NameFileRef href="HeroClass/HeroClassRunemage.txt"/>
+				<NameFileRef href="HeroClass/HeroClassDeathknight.txt"/>
 				<SkillsProbs>
 					<Item>
 						<SkillID>HERO_SKILL_NECROMANCY</SkillID>
@@ -772,9 +772,9 @@
 			</obj>
 		</Item>
 		<Item>
-			<ID>HERO_CLASS_RUNEMAGEA</ID>
+			<ID>HERO_CLASS_RUNEMAGE</ID>
 			<obj>
-				<NameFileRef href="HeroClass/HeroClassRunemagea.txt"/>
+				<NameFileRef href="HeroClass/HeroClassRunemage.txt"/>
 				<SkillsProbs>
 					<Item>
 						<SkillID>HERO_SKILL_WAR_MACHINES</SkillID>
@@ -1087,9 +1087,9 @@
 			</obj>
 		</Item>
 		<Item>
-			<ID>HERO_CLASS_FLAMEKEEPERA</ID>
+			<ID>HERO_CLASS_FLAMEKEEPER</ID>
 			<obj>
-				<NameFileRef href="HeroClass/HeroClassFlamekeepera.txt"/>
+				<NameFileRef href="HeroClass/HeroClassFlamekeeper.txt"/>
 				<SkillsProbs>
 					<Item>
 						<SkillID>HERO_SKILL_OFFENCE</SkillID>
@@ -1213,9 +1213,9 @@
 			</obj>
 		</Item>
 		<Item>
-			<ID>HERO_CLASS_GUILDMASTER</ID>
+			<ID>HERO_CLASS_SEER</ID>
 			<obj>
-				<NameFileRef href="HeroClass/HeroClassGuildmaster.txt"/>
+				<NameFileRef href="HeroClass/HeroClassSeer.txt"/>
 				<SkillsProbs>
 					<Item>
 						<SkillID>HERO_SKILL_WAR_MACHINES</SkillID>
@@ -1276,9 +1276,9 @@
 			</obj>
 		</Item>
 		<Item>
-			<ID>HERO_CLASS_SEER</ID>
+			<ID>HERO_CLASS_ASSASSIN</ID>
 			<obj>
-				<NameFileRef href="HeroClass/HeroClassSeer.txt"/>
+				<NameFileRef href="HeroClass/HeroClassAssassin.txt"/>
 				<SkillsProbs>
 					<Item>
 						<SkillID>HERO_SKILL_SORCERY</SkillID>
@@ -1339,9 +1339,9 @@
 			</obj>
 		</Item>
 		<Item>
-			<ID>HERO_CLASS_ENCHANTER</ID>
+			<ID>HERO_CLASS_DRUID</ID>
 			<obj>
-				<NameFileRef href="HeroClass/HeroClassEnchanter.txt"/>
+				<NameFileRef href="HeroClass/HeroClassDruid.txt"/>
 				<SkillsProbs>
 					<Item>
 						<SkillID>HERO_SKILL_AVENGER</SkillID>
@@ -1402,9 +1402,9 @@
 			</obj>
 		</Item>
 		<Item>
-			<ID>HERO_CLASS_SORCERER</ID>
+			<ID>HERO_CLASS_ENCHANTER</ID>
 			<obj>
-				<NameFileRef href="HeroClass/HeroClassSorcerer.txt"/>
+				<NameFileRef href="HeroClass/HeroClassEnchanter.txt"/>
 				<SkillsProbs>
 					<Item>
 						<SkillID>HERO_SKILL_GATING</SkillID>
