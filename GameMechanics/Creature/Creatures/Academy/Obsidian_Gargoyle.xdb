@@ -45,9 +45,7 @@
 	<Upgrades/>
 	<Abilities>
 		<Item>ABILITY_MECHANICAL</Item>
-		<Item>ABILITY_ENRAGED</Item>
-		<Item>ABILITY_IMMUNITY_TO_AIR</Item>
-		<Item>ABILITY_IMMUNITY_TO_FIRE</Item>
-		<Item>ABILITY_IMMUNITY_TO_WATER</Item>
+		<Item>ABILITY_TAUNT</Item>
+		<Item>ABILITY_DESTRUCTION_MAGIC_MAGNETISM</Item>
 	</Abilities>
 </Creature>

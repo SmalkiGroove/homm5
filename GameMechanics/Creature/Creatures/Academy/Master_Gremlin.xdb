@@ -50,6 +50,7 @@
 	<BaseCreature>CREATURE_GREMLIN</BaseCreature>
 	<Upgrades/>
 	<Abilities>
+		<Item>ABILITY_MAGIC_PROOF_25</Item>
 		<Item>ABILITY_REPAIR</Item>
 	</Abilities>
 </Creature>

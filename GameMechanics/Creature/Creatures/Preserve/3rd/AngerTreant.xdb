@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Creature>
-	<AttackSkill>21</AttackSkill>
+	<AttackSkill>22</AttackSkill>
 	<DefenceSkill>27</DefenceSkill>
 	<Shots>0</Shots>
 	<MinDamage>11</MinDamage>

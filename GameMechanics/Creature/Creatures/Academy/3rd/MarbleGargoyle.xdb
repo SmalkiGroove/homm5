@@ -44,10 +44,8 @@
 	<BaseCreature>CREATURE_STONE_GARGOYLE</BaseCreature>
 	<Upgrades/>
 	<Abilities>
-		<Item>ABILITY_AURA_OF_FIRE_VULNERABILITY</Item>
-		<Item>ABILITY_AURA_OF_ICE_VULNERABILITY</Item>
-		<Item>ABILITY_AURA_OF_LIGHTNING_VULNERABILITY</Item>
-		<Item>ABILITY_ENRAGED</Item>
 		<Item>ABILITY_MECHANICAL</Item>
+		<Item>ABILITY_TAUNT</Item>
+		<Item>ABILITY_ENCHANTED_OBSIDIAN</Item>
 	</Abilities>
 </Creature>

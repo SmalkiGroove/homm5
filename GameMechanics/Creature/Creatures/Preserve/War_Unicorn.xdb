@@ -46,5 +46,6 @@
 	<Abilities>
 		<Item>ABILITY_BLINDING_ATTACK</Item>
 		<Item>ABILITY_AURA_OF_MAGIC_RESISTANCE</Item>
+		<Item>ABILITY_RIDER_CHARGE</Item>
 	</Abilities>
 </Creature>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Creature ObjectRecordID="1000045">
-	<AttackSkill>11</AttackSkill>
-	<DefenceSkill>7</DefenceSkill>
+	<AttackSkill>12</AttackSkill>
+	<DefenceSkill>8</DefenceSkill>
 	<Shots>0</Shots>
 	<MinDamage>11</MinDamage>
 	<MaxDamage>14</MaxDamage>
@@ -55,6 +55,6 @@
 	<Abilities>
 		<Item>ABILITY_ELEMENTAL</Item>
 		<Item>ABILITY_RANDOM_CASTER</Item>
-		<Item>ABILITY_MAGIC_PROOF_50</Item>
+		<Item>ABILITY_MAGIC_PROOF_75</Item>
 	</Abilities>
 </Creature>

@@ -49,6 +49,7 @@
 	<BaseCreature>CREATURE_RAKSHASA</BaseCreature>
 	<Upgrades/>
 	<Abilities>
+		<Item>ABILITY_BRAVERY</Item>
 		<Item>ABILITY_WHIRLWIND</Item>
 		<Item>ABILITY_DASH</Item>
 		<Item>ABILITY_IMMUNITY_TO_CURSE</Item>

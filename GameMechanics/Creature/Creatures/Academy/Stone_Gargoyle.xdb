@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Creature ObjectRecordID="1000039">
 	<AttackSkill>2</AttackSkill>
-	<DefenceSkill>6</DefenceSkill>
+	<DefenceSkill>8</DefenceSkill>
 	<Shots>0</Shots>
 	<MinDamage>1</MinDamage>
 	<MaxDamage>1</MaxDamage>
@@ -48,7 +48,6 @@
 	</Upgrades>
 	<Abilities>
 		<Item>ABILITY_MECHANICAL</Item>
-		<Item>ABILITY_ENRAGED</Item>
-		<Item>ABILITY_IMMUNITY_TO_AIR</Item>
+		<Item>ABILITY_TAUNT</Item>
 	</Abilities>
 </Creature>

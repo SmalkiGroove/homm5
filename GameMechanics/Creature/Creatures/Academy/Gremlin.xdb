@@ -46,5 +46,7 @@
 		<Item>CREATURE_MASTER_GREMLIN</Item>
 		<Item>CREATURE_GREMLIN_SABOTEUR</Item>
 	</Upgrades>
-	<Abilities/>
+	<Abilities>
+		<Item>ABILITY_MAGIC_PROOF_25</Item>
+	</Abilities>
 </Creature>

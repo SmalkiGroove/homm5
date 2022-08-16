@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Creature ObjectRecordID="6">
-	<AttackSkill>3</AttackSkill>
+	<AttackSkill>4</AttackSkill>
 	<DefenceSkill>5</DefenceSkill>
 	<Shots>10</Shots>
-	<MinDamage>4</MinDamage>
-	<MaxDamage>6</MaxDamage>
+	<MinDamage>5</MinDamage>
+	<MaxDamage>7</MaxDamage>
 	<Speed>4</Speed>
 	<Initiative>8</Initiative>
 	<Flying>false</Flying>
@@ -46,5 +46,6 @@
 	<Abilities>
 		<Item>ABILITY_PRECISE_SHOT</Item>
 		<Item>ABILITY_MAGIC_ATTACK</Item>
+		<Item>ABILITY_PREPARED_POSITION</Item>
 	</Abilities>
 </Creature>

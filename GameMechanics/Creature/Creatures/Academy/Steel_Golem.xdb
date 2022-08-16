@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Creature ObjectRecordID="1000042">
-	<AttackSkill>10</AttackSkill>
-	<DefenceSkill>10</DefenceSkill>
+	<AttackSkill>11</AttackSkill>
+	<DefenceSkill>11</DefenceSkill>
 	<Shots>0</Shots>
 	<MinDamage>3</MinDamage>
 	<MaxDamage>6</MaxDamage>
@@ -44,9 +44,9 @@
 	<BaseCreature>CREATURE_IRON_GOLEM</BaseCreature>
 	<Upgrades/>
 	<Abilities>
-		<Item>ABILITY_UNLIMITED_RETALIATION</Item>
 		<Item>ABILITY_MECHANICAL</Item>
 		<Item>ABILITY_IMMUNITY_TO_SLOW</Item>
-		<Item>ABILITY_MAGIC_PROOF_75</Item>
+		<Item>ABILITY_MAGIC_PROOF_50</Item>
+		<Item>ABILITY_UNLIMITED_RETALIATION</Item>
 	</Abilities>
 </Creature>
