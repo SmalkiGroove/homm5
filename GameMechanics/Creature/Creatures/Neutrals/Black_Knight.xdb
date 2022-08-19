@@ -6,9 +6,9 @@
 	<MinDamage>15</MinDamage>
 	<MaxDamage>35</MaxDamage>
 	<Speed>7</Speed>
-	<Initiative>5</Initiative>
+	<Initiative>8</Initiative>
 	<Flying>false</Flying>
-	<Health>150</Health>
+	<Health>125</Health>
 	<KnownSpells/>
 	<SpellPoints>0</SpellPoints>
 	<SpellPoints1>0</SpellPoints1>
@@ -32,7 +32,7 @@
 		<Crystal>0</Crystal>
 		<Sulfur>0</Sulfur>
 		<Gem>0</Gem>
-		<Gold>1</Gold>
+		<Gold>1000</Gold>
 	</Cost>
 	<SubjectOfRandomGeneration>true</SubjectOfRandomGeneration>
 	<MonsterShared/>

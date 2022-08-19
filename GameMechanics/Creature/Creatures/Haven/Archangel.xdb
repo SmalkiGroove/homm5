@@ -41,7 +41,7 @@
 		<Crystal>3</Crystal>
 		<Sulfur>0</Sulfur>
 		<Gem>0</Gem>
-		<Gold>4500</Gold>
+		<Gold>3000</Gold>
 	</Cost>
 	<SubjectOfRandomGeneration>true</SubjectOfRandomGeneration>
 	<MonsterShared href="/MapObjects/Haven/Archangel.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>

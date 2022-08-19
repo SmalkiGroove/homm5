@@ -28,13 +28,13 @@
 		</Respawn>
 		<StartHumanResources>
 			<Item>
-				<Wood>30</Wood>
-				<Ore>30</Ore>
-				<Mercury>15</Mercury>
-				<Crystal>15</Crystal>
-				<Sulfur>15</Sulfur>
-				<Gem>15</Gem>
-				<Gold>30000</Gold>
+				<Wood>40</Wood>
+				<Ore>40</Ore>
+				<Mercury>20</Mercury>
+				<Crystal>20</Crystal>
+				<Sulfur>20</Sulfur>
+				<Gem>20</Gem>
+				<Gold>50000</Gold>
 			</Item>
 			<Item>
 				<Wood>20</Wood>
@@ -55,26 +55,17 @@
 				<Gold>20000</Gold>
 			</Item>
 			<Item>
-				<Wood>10</Wood>
-				<Ore>10</Ore>
+				<Wood>15</Wood>
+				<Ore>15</Ore>
 				<Mercury>5</Mercury>
 				<Crystal>5</Crystal>
 				<Sulfur>5</Sulfur>
 				<Gem>5</Gem>
-				<Gold>10000</Gold>
+				<Gold>15000</Gold>
 			</Item>
 		</StartHumanResources>
 		<StartComputerResources>
 			<Item>
-				<Wood>30</Wood>
-				<Ore>30</Ore>
-				<Mercury>15</Mercury>
-				<Crystal>15</Crystal>
-				<Sulfur>15</Sulfur>
-				<Gem>15</Gem>
-				<Gold>30000</Gold>
-			</Item>
-			<Item>
 				<Wood>20</Wood>
 				<Ore>20</Ore>
 				<Mercury>10</Mercury>
@@ -93,16 +84,25 @@
 				<Gold>20000</Gold>
 			</Item>
 			<Item>
-				<Wood>10</Wood>
-				<Ore>10</Ore>
-				<Mercury>5</Mercury>
-				<Crystal>5</Crystal>
-				<Sulfur>5</Sulfur>
-				<Gem>5</Gem>
-				<Gold>10000</Gold>
+				<Wood>20</Wood>
+				<Ore>20</Ore>
+				<Mercury>10</Mercury>
+				<Crystal>10</Crystal>
+				<Sulfur>10</Sulfur>
+				<Gem>10</Gem>
+				<Gold>20000</Gold>
+			</Item>
+			<Item>
+				<Wood>20</Wood>
+				<Ore>20</Ore>
+				<Mercury>10</Mercury>
+				<Crystal>10</Crystal>
+				<Sulfur>10</Sulfur>
+				<Gem>10</Gem>
+				<Gold>20000</Gold>
 			</Item>
 		</StartComputerResources>
-		<ChestMinorArtifactChance>5</ChestMinorArtifactChance>
+		<ChestMinorArtifactChance>10</ChestMinorArtifactChance>
 		<NeutralsInCampaign>
 			<CountCoefs>
 				<Item>1.0</Item>
@@ -147,7 +147,7 @@
 			<Scouting_VisibilityIncrease>6</Scouting_VisibilityIncrease>
 			<DisguiseAndReckon_VisibilityIncrease>12</DisguiseAndReckon_VisibilityIncrease>
 			<Intelligence_ManaPointsBonus>1.5</Intelligence_ManaPointsBonus>
-			<WarMachines_HealthBonusPerSkillTrained>100</WarMachines_HealthBonusPerSkillTrained>
+			<WarMachines_HealthBonusPerSkillTrained>25</WarMachines_HealthBonusPerSkillTrained>
 			<WarMachines_PerkSpecificHealthMultiplier>2</WarMachines_PerkSpecificHealthMultiplier>
 		</HeroSkills>
 		<TownBuildingBonuses>
@@ -160,7 +160,7 @@
 			<Academy_GrailDefenderKnowledgeBonus>10</Academy_GrailDefenderKnowledgeBonus>
 			<Dungeon_HallOfIntrigueKnowledgeBoost>1</Dungeon_HallOfIntrigueKnowledgeBoost>
 			<Dungeon_GrailDefenderSpellpowerBonus>10</Dungeon_GrailDefenderSpellpowerBonus>
-			<Fortress_Arena_BrawlerGrowthAddition>4</Fortress_Arena_BrawlerGrowthAddition>
+			<Fortress_Arena_BrawlerGrowthAddition>5</Fortress_Arena_BrawlerGrowthAddition>
 			<Fortress_Arena_RuneMageGrowthAddition>1</Fortress_Arena_RuneMageGrowthAddition>
 			<Fortress_GuardPostStats>
 				<CellToPlaceWithFort>
@@ -171,13 +171,13 @@
 					<x>8</x>
 					<y>6</y>
 				</CellToPlaceNoFort>
-				<BaseCreatureToPlace>CREATURE_DEFENDER</BaseCreatureToPlace>
-				<CreaturesPerTownLevelPerMonth>5</CreaturesPerTownLevelPerMonth>
+				<BaseCreatureToPlace>CREATURE_STONE_DEFENDER</BaseCreatureToPlace>
+				<CreaturesPerTownLevelPerMonth>10</CreaturesPerTownLevelPerMonth>
 			</Fortress_GuardPostStats>
 			<Fortress_BlazingAnvil_DefenderDefenceBonus>6</Fortress_BlazingAnvil_DefenderDefenceBonus>
 			<Fortress_BlazingAnvil_DefenderSpellPowerBonus>6</Fortress_BlazingAnvil_DefenderSpellPowerBonus>
-			<Stronghold_TowerOfHeroes_OffenceBonus>4</Stronghold_TowerOfHeroes_OffenceBonus>
-			<Stronghold_GarbagePile_GoblinGrowthAddition>6</Stronghold_GarbagePile_GoblinGrowthAddition>
+			<Stronghold_TowerOfHeroes_OffenceBonus>5</Stronghold_TowerOfHeroes_OffenceBonus>
+			<Stronghold_GarbagePile_GoblinGrowthAddition>10</Stronghold_GarbagePile_GoblinGrowthAddition>
 		</TownBuildingBonuses>
 		<TalismanOfAdventure>
 			<Levels>
@@ -242,11 +242,11 @@
 			<Crystal>0</Crystal>
 			<Sulfur>0</Sulfur>
 			<Gem>0</Gem>
-			<Gold>6000</Gold>
+			<Gold>5000</Gold>
 		</AstrologerCallWeekCost>
-		<SacrificialAltar_ArtifactCostOfGoldToExpCoef>1</SacrificialAltar_ArtifactCostOfGoldToExpCoef>
+		<SacrificialAltar_ArtifactCostOfGoldToExpCoef>3</SacrificialAltar_ArtifactCostOfGoldToExpCoef>
 		<SacrificialAltar_CreatureHitsToExpCoef>3</SacrificialAltar_CreatureHitsToExpCoef>
-		<Marketplace_ArtifactSellCostOfGoldCoef>0.5</Marketplace_ArtifactSellCostOfGoldCoef>
+		<Marketplace_ArtifactSellCostOfGoldCoef>0.6</Marketplace_ArtifactSellCostOfGoldCoef>
 	</adventure>
 	<combat>
 		<DamageIncrease>0.05</DamageIncrease>
@@ -333,13 +333,13 @@
 				<MagicMagnetism_DamageRedirectPercentPerWeeklyGrowth>5</MagicMagnetism_DamageRedirectPercentPerWeeklyGrowth>
 				<SabotageCoef>10</SabotageCoef>
 				<CallStorm_DamagePerCreature>20</CallStorm_DamagePerCreature>
-				<CallStorm_ShootPenaltyPerCreature>0.01</CallStorm_ShootPenaltyPerCreature>
+				<CallStorm_ShootPenaltyPerCreature>0.02</CallStorm_ShootPenaltyPerCreature>
 				<CallStorm_MaxShootPenalty>0.8</CallStorm_MaxShootPenalty>
 				<CallStorm_DurationInRounds>3</CallStorm_DurationInRounds>
 			</Academy>
 			<Dungeon>
 				<AssasinPoisonDamagePerPower>1</AssasinPoisonDamagePerPower>
-				<AssasinPoisonCounter>3</AssasinPoisonCounter>
+				<AssasinPoisonCounter>2</AssasinPoisonCounter>
 				<WhipStrikeSpellPower>5</WhipStrikeSpellPower>
 				<WhipStrike_ProcFactor>2</WhipStrike_ProcFactor>
 				<HydraRegenerationMin>50</HydraRegenerationMin>
@@ -347,7 +347,7 @@
 				<RiderCharge_DefenceReducePerPathCell>0.2</RiderCharge_DefenceReducePerPathCell>
 				<AcidicHydraPattern href="/GameMechanics/Creature/Creatures/Dungeon/AcidBlood.xdb#xpointer(/PatternAttack)"/>
 				<AuraOfBraveryMoraleMin>1</AuraOfBraveryMoraleMin>
-				<Invisibility_DurationInRounds>3</Invisibility_DurationInRounds>
+				<Invisibility_DurationInRounds>2</Invisibility_DurationInRounds>
 				<IncinerateCoef>1.5</IncinerateCoef>
 				<RideByAttack_DamageCoef>0.4</RideByAttack_DamageCoef>
 				<RideByAttack_LastPointsToExclude>1</RideByAttack_LastPointsToExclude>
@@ -368,12 +368,12 @@
 				<AvengingFlameCoef>70</AvengingFlameCoef>
 				<BearRoar_SmallCreaturesChanceMult>2</BearRoar_SmallCreaturesChanceMult>
 				<BearRoar_EffectDuration>2</BearRoar_EffectDuration>
-				<BearRoar_MoraleBonus>1</BearRoar_MoraleBonus>
+				<BearRoar_MoraleBonus>2</BearRoar_MoraleBonus>
 				<BearRoar_HealthBonus>0.1</BearRoar_HealthBonus>
 				<BearRoar_ProcFactor>2</BearRoar_ProcFactor>
 				<HarpoonStrike_DamageBonus>1</HarpoonStrike_DamageBonus>
 				<HarpoonStrike_WorksOnLargeCreatures>false</HarpoonStrike_WorksOnLargeCreatures>
-				<LiquidFlameBreath_DamagePerCreature>20</LiquidFlameBreath_DamagePerCreature>
+				<LiquidFlameBreath_DamagePerCreature>25</LiquidFlameBreath_DamagePerCreature>
 				<LiquidFlameBreath_MinDuration>2</LiquidFlameBreath_MinDuration>
 				<LiquidFlameBreath_MaxDuration>2</LiquidFlameBreath_MaxDuration>
 				<PreparedPosition_DefenceBonus>5</PreparedPosition_DefenceBonus>
@@ -1317,7 +1317,7 @@
 				</Training>
 				<Prayer_DefenceBonus>1</Prayer_DefenceBonus>
 				<Prayer_InitiativeBonus>0.1</Prayer_InitiativeBonus>
-				<WhiteKnight_PrayerMultiplier>2</WhiteKnight_PrayerMultiplier>
+				<WhiteKnight_PrayerMultiplier>3</WhiteKnight_PrayerMultiplier>
 				<Encourage_ATBIncrease>0.33</Encourage_ATBIncrease>
 				<Retribution_DamageBonusPerMorale>0.05</Retribution_DamageBonusPerMorale>
 			</Knight>
@@ -1939,7 +1939,7 @@
 				<SpiritLink_HPForOneMana>100</SpiritLink_HPForOneMana>
 				<DeathScream_MoralePenalty>1</DeathScream_MoralePenalty>
 				<DeathScream_InitiativePenalty>0.1</DeathScream_InitiativePenalty>
-				<DarkEissary_DeathScreamMultiplier>2</DarkEissary_DeathScreamMultiplier>
+				<DarkEissary_DeathScreamMultiplier>3</DarkEissary_DeathScreamMultiplier>
 			</Necromancer>
 			<Warlock>
 				<ElementalChainBonusPerInvocationTrained>0.1</ElementalChainBonusPerInvocationTrained>
@@ -1951,7 +1951,7 @@
 			<Wizard>
 				<Unsummon_DamagePerHeroLevel>40</Unsummon_DamagePerHeroLevel>
 				<Unsummon_DamagePerSkillMastery>20</Unsummon_DamagePerSkillMastery>
-				<MeltArtifact_HealPerArtifactEffectPerHeroLevel>10</MeltArtifact_HealPerArtifactEffectPerHeroLevel>
+				<MeltArtifact_HealPerArtifactEffectPerHeroLevel>15</MeltArtifact_HealPerArtifactEffectPerHeroLevel>
 				<MeltArtifact_ATBUsage>0.25</MeltArtifact_ATBUsage>
 			</Wizard>
 			<Ranger>
@@ -2090,7 +2090,7 @@
 				<CavalryCommander_JoustingBonusPerLevel>0.01</CavalryCommander_JoustingBonusPerLevel>
 				<CavalryCommander_HolyChargeBonus>0.05</CavalryCommander_HolyChargeBonus>
 				<Expediter_HasteBonusPerLevel>0.01</Expediter_HasteBonusPerLevel>
-				<Wanderer_MPBonusBase>0</Wanderer_MPBonusBase>
+				<Wanderer_MPBonusBase>100</Wanderer_MPBonusBase>
 				<Wanderer_MPBonusPerLevel>0.01</Wanderer_MPBonusPerLevel>
 				<Wanderer_LevelDivisor>1</Wanderer_LevelDivisor>
 			</Knight>
@@ -2115,12 +2115,12 @@
 			</Ranger>
 			<Necromancer>
 				<Soulhunter_ManesSummonedBase>10</Soulhunter_ManesSummonedBase>
-				<Soulhunter_ManesSummonedPerLevel>1</Soulhunter_ManesSummonedPerLevel>
+				<Soulhunter_ManesSummonedPerLevel>5</Soulhunter_ManesSummonedPerLevel>
 				<Reanimator_SpellpowerBonus>1</Reanimator_SpellpowerBonus>
 				<Reanimator_SpellpowerBonusLevelDivisor>3</Reanimator_SpellpowerBonusLevelDivisor>
 				<Reanimator_SpellpowerBonusPerLevel>1</Reanimator_SpellpowerBonusPerLevel>
 				<AvatarOfDeath_Creature href="AvatarOfDeath.xdb#xpointer(/RPGCombatUniqueCreatureStats)"/>
-				<AvatarOfDeath_ManaCostPerLevel>2</AvatarOfDeath_ManaCostPerLevel>
+				<AvatarOfDeath_ManaCostPerLevel>1</AvatarOfDeath_ManaCostPerLevel>
 			</Necromancer>
 			<Wizard>
 				<Radiant_MirrorProb>0.4</Radiant_MirrorProb>
@@ -2130,7 +2130,7 @@
 				<Disrupter_DamagePerLevel>10</Disrupter_DamagePerLevel>
 				<TimeShiftStopFactor>0.05</TimeShiftStopFactor>
 				<TimeShiftBonusATBPerLevel>0.5</TimeShiftBonusATBPerLevel>
-				<FeatherMage_InitiativeBonusBase>0</FeatherMage_InitiativeBonusBase>
+				<FeatherMage_InitiativeBonusBase>0.05</FeatherMage_InitiativeBonusBase>
 				<FeatherMage_InitiativeBonusPerLevel>0.01</FeatherMage_InitiativeBonusPerLevel>
 				<MasterOfElements_SpellpowerBonus>
 					<Base>1</Base>
@@ -2215,7 +2215,7 @@
 			</Armageddon>
 			<Runic>
 				<DragonFormSpellPercent>0.5</DragonFormSpellPercent>
-				<ReviveSpellPercent>0.4</ReviveSpellPercent>
+				<ReviveSpellPercent>0.5</ReviveSpellPercent>
 			</Runic>
 			<HolyWordWaveSpeed>33</HolyWordWaveSpeed>
 			<UnholyWordWaveSpeed>33</UnholyWordWaveSpeed>
@@ -6150,7 +6150,7 @@
 		<Dragonish_4_Creature_Attack>5</Dragonish_4_Creature_Attack>
 		<Dragonish_4_Creature_Defence>5</Dragonish_4_Creature_Defence>
 		<Dragonish_4_Creature_HitPoints>20</Dragonish_4_Creature_HitPoints>
-		<Dragonish_6_AllStats>3</Dragonish_6_AllStats>
+		<Dragonish_6_AllStats>5</Dragonish_6_AllStats>
 		<Dragonish_8_Creature_Tier>7</Dragonish_8_Creature_Tier>
 		<Dragonish_8_Creature_Count>1</Dragonish_8_Creature_Count>
 		<Dwarven_2_Creature_MagicProofPercents>40</Dwarven_2_Creature_MagicProofPercents>
@@ -6167,14 +6167,14 @@
 		<Necromancers_4_EnemyCreature_BadMoralePenaltyToAttackDefencePercents>20</Necromancers_4_EnemyCreature_BadMoralePenaltyToAttackDefencePercents>
 		<Necromancers_4Necromancer_NecromancyBonusPercents>20</Necromancers_4Necromancer_NecromancyBonusPercents>
 		<Necromancers_4Necromancer_NecromancyCreatureCostDisountPercents>25</Necromancers_4Necromancer_NecromancyCreatureCostDisountPercents>
-		<Educational_2_GainExperienceBonusPercents>15</Educational_2_GainExperienceBonusPercents>
+		<Educational_2_GainExperienceBonusPercents>25</Educational_2_GainExperienceBonusPercents>
 		<Hunters_2_ShootersATBLessPercents>30</Hunters_2_ShootersATBLessPercents>
-		<Ogres_2_Creature_Attack>3</Ogres_2_Creature_Attack>
-		<Ogres_2_Creature_HitPoints>2</Ogres_2_Creature_HitPoints>
+		<Ogres_2_Creature_Attack>5</Ogres_2_Creature_Attack>
+		<Ogres_2_Creature_HitPoints>3</Ogres_2_Creature_HitPoints>
 		<Ogres_2Barbarian_HeroAttack_ATBLessPercents>30</Ogres_2Barbarian_HeroAttack_ATBLessPercents>
-		<Runic_2_AllStats>1</Runic_2_AllStats>
+		<Runic_2_AllStats>3</Runic_2_AllStats>
 		<Runic_2Warlock_ElementalVisionMultiplier>2</Runic_2Warlock_ElementalVisionMultiplier>
-		<Demonic_2_Attack>5</Demonic_2_Attack>
+		<Demonic_2_Attack>8</Demonic_2_Attack>
 		<Demonic_2DemonLord_GatingBonusPercents>25</Demonic_2DemonLord_GatingBonusPercents>
 	</ArtifactsSetsEffectsConsts>
 	<SlaveMarketConsts>

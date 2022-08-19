@@ -3,7 +3,7 @@
 	<AttackSkill>37</AttackSkill>
 	<DefenceSkill>29</DefenceSkill>
 	<Shots>0</Shots>
-	<MinDamage>45</MinDamage>
+	<MinDamage>55</MinDamage>
 	<MaxDamage>65</MaxDamage>
 	<Speed>10</Speed>
 	<Initiative>11</Initiative>
@@ -32,7 +32,7 @@
 		<Crystal>0</Crystal>
 		<Sulfur>3</Sulfur>
 		<Gem>0</Gem>
-		<Gold>4500</Gold>
+		<Gold>3000</Gold>
 	</Cost>
 	<SubjectOfRandomGeneration>true</SubjectOfRandomGeneration>
 	<MonsterShared href="/MapObjects/Dungeon/Red_Dragon.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
@@ -45,8 +45,9 @@
 	<Upgrades/>
 	<Abilities>
 		<Item>ABILITY_FIRE_BREATH</Item>
+		<Item>ABILITY_UNLIMITED_RETALIATION</Item>
+		<Item>ABILITY_FIERCE_RETALIATION</Item>
 		<Item>ABILITY_INCINERATE</Item>
 		<Item>ABILITY_IMMUNITY_TO_MIND_CONTROL</Item>
-		<Item>ABILITY_UNLIMITED_RETALIATION</Item>
 	</Abilities>
 </Creature>

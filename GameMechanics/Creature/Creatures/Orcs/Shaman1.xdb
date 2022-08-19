@@ -41,7 +41,7 @@
 		<Crystal>0</Crystal>
 		<Sulfur>0</Sulfur>
 		<Gem>0</Gem>
-		<Gold>50</Gold>
+		<Gold>40</Gold>
 	</Cost>
 	<SubjectOfRandomGeneration>true</SubjectOfRandomGeneration>
 	<MonsterShared href="/MapObjects/Stronghold/Shaman.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>

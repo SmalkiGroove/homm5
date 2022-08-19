@@ -6,9 +6,9 @@
 	<MinDamage>25</MinDamage>
 	<MaxDamage>45</MaxDamage>
 	<Speed>7</Speed>
-	<Initiative>5</Initiative>
+	<Initiative>10</Initiative>
 	<Flying>false</Flying>
-	<Health>300</Health>
+	<Health>175</Health>
 	<KnownSpells/>
 	<SpellPoints>0</SpellPoints>
 	<SpellPoints1>0</SpellPoints1>

@@ -14,15 +14,15 @@
 	<damage>
 		<Item>
 			<Base>0</Base>
-			<PerPower>60</PerPower>
+			<PerPower>30</PerPower>
 		</Item>
 		<Item>
 			<Base>0</Base>
-			<PerPower>60</PerPower>
+			<PerPower>40</PerPower>
 		</Item>
 		<Item>
 			<Base>0</Base>
-			<PerPower>60</PerPower>
+			<PerPower>50</PerPower>
 		</Item>
 		<Item>
 			<Base>0</Base>

@@ -22,32 +22,32 @@
 		</Item>
 		<Item>
 			<Base>2</Base>
-			<PerPower>1</PerPower>
+			<PerPower>2</PerPower>
 		</Item>
 		<Item>
 			<Base>2</Base>
-			<PerPower>1</PerPower>
+			<PerPower>2</PerPower>
 		</Item>
 		<Item>
 			<Base>2</Base>
-			<PerPower>1</PerPower>
+			<PerPower>2</PerPower>
 		</Item>
 	</damage>
 	<duration>
 		<Item>
-			<Base>1</Base>
+			<Base>2</Base>
 			<PerPower>2</PerPower>
 		</Item>
 		<Item>
-			<Base>1</Base>
+			<Base>2</Base>
 			<PerPower>2</PerPower>
 		</Item>
 		<Item>
-			<Base>1</Base>
+			<Base>2</Base>
 			<PerPower>2</PerPower>
 		</Item>
 		<Item>
-			<Base>1</Base>
+			<Base>2</Base>
 			<PerPower>2</PerPower>
 		</Item>
 	</duration>
