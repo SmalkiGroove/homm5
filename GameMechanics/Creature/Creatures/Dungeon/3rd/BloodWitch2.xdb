@@ -44,7 +44,7 @@
 	<BaseCreature>CREATURE_WITCH</BaseCreature>
 	<Upgrades/>
 	<Abilities>
-		<Item>ABILITY_NO_ENEMY_RETALIATION</Item>
+		<Item>ABILITY_FAST_ATTACK</Item>
 		<Item>ABILITY_STRIKE_AND_RETURN</Item>
 		<Item>ABILITY_POISONOUS_ATTACK</Item>
 	</Abilities>

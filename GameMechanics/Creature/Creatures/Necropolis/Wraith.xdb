@@ -14,8 +14,12 @@
 			<Spell>SPELL_ABILITY_HARM_TOUCH</Spell>
 			<Mastery>MASTERY_ADVANCED</Mastery>
 		</Item>
+		<Item>
+			<Spell>SPELL_PHANTOM</Spell>
+			<Mastery>MASTERY_BASIC</Mastery>
+		</Item>
 	</KnownSpells>
-	<SpellPoints>0</SpellPoints>
+	<SpellPoints>18</SpellPoints>
 	<SpellPoints1>0</SpellPoints1>
 	<SpellPoints2>0</SpellPoints2>
 	<Exp>1000</Exp>

@@ -53,6 +53,7 @@
 	<BaseCreature>CREATURE_DRUID</BaseCreature>
 	<Upgrades/>
 	<Abilities>
+		<Item>ABILITY_IMMUNITY_TO_MIND_CONTROL</Item>
 		<Item>ABILITY_POWER_FEED</Item>
 	</Abilities>
 </Creature>

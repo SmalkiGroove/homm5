@@ -11,11 +11,11 @@
 	<Health>14</Health>
 	<KnownSpells>
 		<Item>
-			<Spell>SPELL_SLOW</Spell>
+			<Spell>SPELL_HASTE</Spell>
 			<Mastery>MASTERY_BASIC</Mastery>
 		</Item>
 		<Item>
-			<Spell>SPELL_HASTE</Spell>
+			<Spell>SPELL_SLOW</Spell>
 			<Mastery>MASTERY_BASIC</Mastery>
 		</Item>
 	</KnownSpells>

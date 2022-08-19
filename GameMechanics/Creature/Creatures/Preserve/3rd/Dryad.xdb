@@ -6,9 +6,9 @@
 	<MinDamage>2</MinDamage>
 	<MaxDamage>7</MaxDamage>
 	<Speed>6</Speed>
-	<Initiative>13</Initiative>
+	<Initiative>10</Initiative>
 	<Flying>true</Flying>
-	<Health>10</Health>
+	<Health>12</Health>
 	<KnownSpells/>
 	<SpellPoints>0</SpellPoints>
 	<SpellPoints1>1</SpellPoints1>
@@ -46,6 +46,7 @@
 	<Abilities>
 		<Item>ABILITY_NO_ENEMY_RETALIATION</Item>
 		<Item>ABILITY_SPRAY_ATTACK</Item>
+		<Item>ABILITY_IMMUNITY_TO_EARTH</Item>
 		<Item>ABILITY_TREEANT_UNION</Item>
 	</Abilities>
 </Creature>

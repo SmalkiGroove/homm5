@@ -55,5 +55,7 @@
 		<Item>CREATURE_DRUID_ELDER</Item>
 		<Item>CREATURE_HIGH_DRUID</Item>
 	</Upgrades>
-	<Abilities/>
+	<Abilities>
+		<Item>ABILITY_IMMUNITY_TO_MIND_CONTROL</Item>
+	</Abilities>
 </Creature>

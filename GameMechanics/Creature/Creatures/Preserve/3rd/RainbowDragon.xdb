@@ -46,5 +46,6 @@
 	<Abilities>
 		<Item>ABILITY_RAINBOW_BREATH</Item>
 		<Item>ABILITY_REGENERATION</Item>
+		<Item>ABILITY_CRYSTAL_SCALES</Item>
 	</Abilities>
 </Creature>

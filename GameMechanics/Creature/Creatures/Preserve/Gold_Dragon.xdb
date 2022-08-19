@@ -215,8 +215,8 @@
 	<BaseCreature>CREATURE_GREEN_DRAGON</BaseCreature>
 	<Upgrades/>
 	<Abilities>
-		<Item>ABILITY_IMMUNITY_TO_EARTH</Item>
 		<Item>ABILITY_REGENERATION</Item>
 		<Item>ABILITY_ACID_BREATH</Item>
+		<Item>ABILITY_CRYSTAL_SCALES</Item>
 	</Abilities>
 </Creature>

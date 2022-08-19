@@ -46,6 +46,5 @@
 	<Abilities>
 		<Item>ABILITY_NO_ENEMY_RETALIATION</Item>
 		<Item>ABILITY_STRIKE_AND_RETURN</Item>
-		<Item>ABILITY_MANA_DRAIN</Item>
 	</Abilities>
 </Creature>

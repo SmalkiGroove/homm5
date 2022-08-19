@@ -6,13 +6,13 @@
 	<MinDamage>3</MinDamage>
 	<MaxDamage>5</MaxDamage>
 	<Speed>6</Speed>
-	<Initiative>12</Initiative>
+	<Initiative>9</Initiative>
 	<Flying>true</Flying>
-	<Health>12</Health>
+	<Health>13</Health>
 	<KnownSpells>
 		<Item>
 			<Spell>SPELL_WASP_SWARM</Spell>
-			<Mastery>MASTERY_NONE</Mastery>
+			<Mastery>MASTERY_BASIC</Mastery>
 		</Item>
 	</KnownSpells>
 	<SpellPoints>6</SpellPoints>
@@ -196,5 +196,6 @@
 	<Abilities>
 		<Item>ABILITY_NO_ENEMY_RETALIATION</Item>
 		<Item>ABILITY_SPRAY_ATTACK</Item>
+		<Item>ABILITY_IMMUNITY_TO_EARTH</Item>
 	</Abilities>
 </Creature>
