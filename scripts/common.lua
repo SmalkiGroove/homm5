@@ -15,6 +15,14 @@ DIFFICULTY_NORMAL = 1
 DIFFICULTY_HARD = 2
 DIFFICULTY_HEROIC = 3
 
+function random(min,max,seed)
+    if (min == max) then return min end;
+    local diff = max - min;
+    if (diff < 0) then diff = -diff end;
+    local r = mod(min+max+seed,diff+1);
+    return min + r;
+end;
+
 function length(array)
 	local count = 0;
 	for index, element in array do
