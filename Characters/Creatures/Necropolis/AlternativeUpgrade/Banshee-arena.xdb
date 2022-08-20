@@ -7,7 +7,7 @@
 		</Item>
 		<Item>
 			<Kind>cast</Kind>
-			<Anim href="Banshee-arena-specability.xdb#xpointer(/BasicSkelAnim)"/>
+			<Anim href="Banshee-arena-happy.xdb#xpointer(/BasicSkelAnim)"/>
 		</Item>
 		<Item>
 			<Kind>death</Kind>

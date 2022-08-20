@@ -7,7 +7,7 @@
 		</Item>
 		<Item>
 			<Kind>cast</Kind>
-			<Anim href="Wraith-arena-happy.xdb#xpointer(/BasicSkelAnim)"/>
+			<Anim href="Wraith-arena-specability.xdb#xpointer(/BasicSkelAnim)"/>
 		</Item>
 		<Item>
 			<Kind>death</Kind>
