@@ -64,8 +64,8 @@
 		</perkIDs>
 		<spellIDs/>
 		<Ballista>false</Ballista>
-		<FirstAidTent>false</FirstAidTent>
-		<AmmoCart>true</AmmoCart>
+		<FirstAidTent>true</FirstAidTent>
+		<AmmoCart>false</AmmoCart>
 		<FavoriteEnemies/>
 	</Editable>
 	<ArrowButtonState>0</ArrowButtonState>

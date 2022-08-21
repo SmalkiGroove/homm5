@@ -6,7 +6,7 @@
 	<MinDamage>2</MinDamage>
 	<MaxDamage>4</MaxDamage>
 	<Speed>3</Speed>
-	<Initiative>7</Initiative>
+	<Initiative>8</Initiative>
 	<Flying>false</Flying>
 	<Health>20</Health>
 	<KnownSpells/>
@@ -48,5 +48,6 @@
 		<Item>ABILITY_ENRAGED</Item>
 		<Item>ABILITY_WEAKENING_STRIKE</Item>
 		<Item>ABILITY_WOUND</Item>
+		<Item>ABILITY_PACK_HUNTER</Item>
 	</Abilities>
 </Creature>

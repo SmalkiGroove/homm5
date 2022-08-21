@@ -66,7 +66,7 @@
 			<Item>SPELL_STONESKIN</Item>
 		</spellIDs>
 		<Ballista>false</Ballista>
-		<FirstAidTent>false</FirstAidTent>
+		<FirstAidTent>true</FirstAidTent>
 		<AmmoCart>false</AmmoCart>
 		<FavoriteEnemies/>
 	</Editable>

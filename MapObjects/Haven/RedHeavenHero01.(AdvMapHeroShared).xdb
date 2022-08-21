@@ -62,7 +62,10 @@
 		<perkIDs>
 			<Item>HERO_SKILL_EVASION</Item>
 		</perkIDs>
-		<spellIDs/>
+		<spellIDs>
+			<Item>SPELL_STONESKIN</Item>
+			<Item>SPELL_DEFLECT_ARROWS</Item>
+		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>
 		<AmmoCart>true</AmmoCart>

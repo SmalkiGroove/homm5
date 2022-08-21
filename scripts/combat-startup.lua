@@ -1,3 +1,4 @@
+doFile("/scripts/common.lua")
 doFile("/scripts/combat-common.lua")
 doFile("/scripts/combat-specials.lua")
 
