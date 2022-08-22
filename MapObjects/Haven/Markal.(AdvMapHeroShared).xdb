@@ -65,7 +65,7 @@
 			<Item>HERO_SKILL_MASTER_OF_MIND</Item>
 		</perkIDs>
 		<spellIDs>
-			<Item>SPELL_CONFUSION</Item>
+			<Item>SPELL_FORGETFULNESS</Item>
 		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>

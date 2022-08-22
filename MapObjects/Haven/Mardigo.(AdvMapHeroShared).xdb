@@ -55,12 +55,19 @@
 		<Knowledge>1</Knowledge>
 		<skills>
 			<Item>
-				<Mastery>MASTERY_BASIC</Mastery>
+				<Mastery>MASTERY_ADVANCED</Mastery>
 				<SkillID>HERO_SKILL_OFFENCE</SkillID>
+			</Item>
+			<Item>
+				<Mastery>MASTERY_ADVANCED</Mastery>
+				<SkillID>HERO_SKILL_LEADERSHIP</SkillID>
 			</Item>
 		</skills>
 		<perkIDs>
 			<Item>HERO_SKILL_TACTICS</Item>
+			<Item>HERO_SKILL_CHILLING_STEEL</Item>
+			<Item>HERO_SKILL_RECRUITMENT</Item>
+			<Item>HERO_SKILL_ENCOURAGE</Item>
 		</perkIDs>
 		<spellIDs/>
 		<Ballista>false</Ballista>

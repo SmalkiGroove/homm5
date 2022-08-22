@@ -41,6 +41,11 @@ function round(num)
     return r;
 end;
 
+function ceil(num)
+    local r = num + mod(-num,1);
+    return r;
+end;
+
 function power(a, n)
     local p = 1;
     for i = 1,n do

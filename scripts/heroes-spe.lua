@@ -7,6 +7,10 @@ ATTRIBUTE_NAME = {"None", "Attaque", "Defense", "Puissance Magique", "Esprit", "
 RESOURCE_NAME = {"wood", "ores", "mercury", "cystals", "sulfur", "gems", "golds"};
 ONE_TIME_BONUSES = {["Isabell"]=0,["Linaas"]=0,["Metlirn"]=0};
 
+ARTIFACTS_GAINS = {
+	["Brem"] = [26,88,21,25,11,77] -- Wayfarer boots / Crown of leadership / Ring of life / Golden horseshoe / Crown of courage / Tome of light magic
+}
+
 function ApplyHeroesSpe_daily(player)
 	print("Daily run for player "..player);
 	local heroes = GetPlayerHeroes(player);
@@ -49,6 +53,7 @@ end;
 
 function ApplyHeroesSpe_weekly(player)
 	print("Weekly run for player "..player);
+	print("Controller value : "..PLAYER_WEEKLY_EVENTS_CHECK[player]);
     local heroes = GetPlayerHeroes(player);
 	if heroes~=nil then
 		-- Haven
@@ -56,7 +61,7 @@ function ApplyHeroesSpe_weekly(player)
 		if contains(heroes,"Ving") ~= nil then Spe_CallCreatures("Ving",player,CREATURE_GRIFFIN,TOWN_BUILDING_DWELLING_4,1.2) end;
 		-- Preserve
 		if contains(heroes,"Gillion") ~= nil then Spe_AddRecruits("Gillion",player,CREATURE_BLADE_JUGGLER,TOWN_BUILDING_DWELLING_1,3) end;
-		if contains(heroes,"Itil") ~= nil then Spe_AddRecruits("Itil",player,CREATURE_UNICORN,TOWN_BUILDING_DWELLING_5,0.3) end;
+		if contains(heroes,"Itil") ~= nil then Spe_CallCreatures("Itil",player,CREATURE_UNICORN,TOWN_BUILDING_DWELLING_5,0.5) end;
 		if contains(heroes,"Vinrael") ~= nil then Spe_GiveStats("Vinrael",player,3,0.2) end; -- Spellpower - +1 / 5*lvl / week
 		if contains(heroes,"Nadaur") ~= nil then Spe_GiveStats("Nadaur",player,1,0.1) end; -- Attack - +1 / 10*lvl / week
 		-- Academy
@@ -94,21 +99,30 @@ function ApplyHeroesSpe_onetime(player)
 	local heroes = GetPlayerHeroes(player);
 	if heroes~=nil then
 		-- Haven
-		if (ONE_TIME_BONUSES["Isabell"] == 0) then
-			if contains(heroes,"Isabell") ~= nil then
+		if contains(heroes,"Isabell") ~= nil then
+			if (ONE_TIME_BONUSES["Isabell"] == 0) then
 				ChangeHeroStat("Isabell",5,2);
 				ONE_TIME_BONUSES["Isabell"] = 1;
 			end; --Luck +2
 		end;
+		if contains(heroes,"Brem") ~= nil then
+			local level = trunc(0.1*GetHeroLevel("Brem"));
+			if (ONE_TIME_BONUSES["Brem"] <= level) then
+				for i = ONE_TIME_BONUSES["Brem"],level do
+					GiveArtifact("Brem",ARTIFACTS_GAINS["Brem"][i]);
+				end;
+				ONE_TIME_BONUSES["Brem"] = 1+level;
+			end; --Artifacts
+		end;
 		-- Preserve
-		if (ONE_TIME_BONUSES["Linaas"] == 0) then
-			if contains(heroes,"Linaas") ~= nil then
+		if contains(heroes,"Linaas") ~= nil then
+			if (ONE_TIME_BONUSES["Linaas"] == 0) then
 				ChangeHeroStat("Linaas",6,2);
 				ONE_TIME_BONUSES["Linaas"] = 1;
 			end; --Morale +2
 		end;
-		if (ONE_TIME_BONUSES["Metlirn"] == 0) then
-			if contains(heroes,"Metlirn") ~= nil then
+		if contains(heroes,"Metlirn") ~= nil then
+			if (ONE_TIME_BONUSES["Metlirn"] == 0) then
 				ChangeHeroStat("Metlirn",5,2);
 				ONE_TIME_BONUSES["Metlirn"] = 1;
 			end; --Luck +2
@@ -165,7 +179,7 @@ function Spe_CallCreatures(hero,player,creature,dwelling,coef)
 			local recruits = GetObjectDwellingCreatures(town,creature);
 			local amount = min(level*coef,recruits);
 			if amount >= 1 then
-				SetObjectDwellingCreatures(town,creature,recruits-amount);
+				SetObjectDwellingCreatures(town,creature,recruits-amount+1);
 				AddHeroCreatures(hero,creature,amount);
 				ShowFlyingSign({"/Text/Game/Scripts/Reinforcements.txt"; num=amount},hero,player,5);
 				-- ShowFlyingSign({"/Text/Game/Scripts/Called.txt"; num=nb},hero,player,5);

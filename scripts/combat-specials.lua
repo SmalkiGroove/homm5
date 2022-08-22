@@ -4,13 +4,13 @@ function UnitPlayFirst(side,id0,id1,id2)
     local creatures = GetUnits(side,CREATURE);
     for i,cr in creatures do
         if GetCreatureType(cr) == id0 then
-            setATB(cr,1);
+            setATB(cr,2);
         end;
         if GetCreatureType(cr) == id1 then
-            setATB(cr,1);
+            setATB(cr,2);
         end;
         if GetCreatureType(cr) == id2 then
-            setATB(cr,1);
+            setATB(cr,2);
         end;
     end;
 end;
@@ -68,7 +68,7 @@ end;
 function HeroAttackEnnemies(side,hero)
 	local ennemies = GetUnits(1-side,CREATURE);
     for i,en in ennemies do
-        commandAttack(hero,en);
+        --ShootCombatUnit(hero,en);
     end;
 end;
 
@@ -135,6 +135,14 @@ function TriggerHeroSpe(side,hero_name,hero_id)
     if hero_name == "RedHeavenHero05" then
         print("Trigger random hero attack !")
         HeroAttackEnnemies(side,hero_id);
+    end;
+    if hero_name == "Markal" then
+        print("Trigger cast Mass Confusion !")
+        HeroCastFirst_Global(hero_id,213);
+    end;
+    if hero_name == "Axel" then
+        print("Trigger cast Prayer !")
+        HeroCastFirst_Global(hero_id,54);
     end;
     -- Preserve
 	if hero_name == "Ossir" then
