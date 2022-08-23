@@ -58,12 +58,16 @@
 				<Mastery>MASTERY_BASIC</Mastery>
 				<SkillID>HERO_SKILL_LIGHT_MAGIC</SkillID>
 			</Item>
+			<Item>
+				<Mastery>MASTERY_BASIC</Mastery>
+				<SkillID>HERO_SKILL_SUMMONING_MAGIC</SkillID>
+			</Item>
 		</skills>	
 		<perkIDs>
-			<Item>HERO_SKILL_MASTER_OF_WRATH</Item>
+			<Item>HERO_SKILL_MASTER_OF_ABJURATION</Item>
 		</perkIDs>
 		<spellIDs>
-			<Item>SPELL_BLOODLUST</Item>
+			<Item>SPELL_CELESTIAL_SHIELD</Item>
 		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>

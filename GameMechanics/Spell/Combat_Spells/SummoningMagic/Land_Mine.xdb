@@ -21,15 +21,15 @@
 			<PerPower>25</PerPower>
 		</Item>
 		<Item>
-			<Base>350</Base>
+			<Base>300</Base>
 			<PerPower>35</PerPower>
 		</Item>
 		<Item>
-			<Base>450</Base>
+			<Base>350</Base>
 			<PerPower>45</PerPower>
 		</Item>
 		<Item>
-			<Base>550</Base>
+			<Base>400</Base>
 			<PerPower>55</PerPower>
 		</Item>
 	</damage>

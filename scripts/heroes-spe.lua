@@ -2,13 +2,14 @@ PLAYER_DAILY_EVENTS_CHECK = {1,1,1,1,1,1,1,1}; -- last turn number applied for e
 PLAYER_WEEKLY_EVENTS_CHECK = {1,1,1,1,1,1,1,1}; -- last turn number applied for each player's weekly events
 PLAYER_ONETIME_EVENTS_CHECK = {1,1,1,1,1,1,1,1}; -- last turn number applied for each player's onetime events
 TURN = 1; -- current turn
+LOCK = 0;
 
 ATTRIBUTE_NAME = {"None", "Attaque", "Defense", "Puissance Magique", "Esprit", "Moral", "Chance"};
 RESOURCE_NAME = {"wood", "ores", "mercury", "cystals", "sulfur", "gems", "golds"};
-ONE_TIME_BONUSES = {["Isabell"]=0,["Linaas"]=0,["Metlirn"]=0};
+ONE_TIME_BONUSES = {["Isabell"]=0,["Brem"]=0,["Linaas"]=0,["Metlirn"]=0};
 
 ARTIFACTS_GAINS = {
-	["Brem"] = [26,88,21,25,11,77] -- Wayfarer boots / Crown of leadership / Ring of life / Golden horseshoe / Crown of courage / Tome of light magic
+	["Brem0"]=26,["Brem1"]=88,["Brem2"]=21,["Brem3"]=25,["Brem4"]=11,["Brem5"]=77 -- Wayfarer boots / Crown of leadership / Ring of life / Golden horseshoe / Crown of courage / Tome of light magic
 }
 
 function ApplyHeroesSpe_daily(player)
@@ -18,6 +19,7 @@ function ApplyHeroesSpe_daily(player)
 		-- Haven
 		if contains(heroes,"Orlando") ~= nil then Spe_GiveResources("Orlando",player,6,Spe_GetResourceAmount("Orlando")) end; -- Gold - 250/level
 		if contains(heroes,"Sarge") ~= nil then Spe_AddCreatures("Sarge",player,11,12,111,0.05) end; -- Cavalier - 1:10 - 2:30 - 3:50
+		if contains(heroes,"RedHeavenHero06") ~= nil then Spe_AddCreatures("RedHeavenHero06",player,9,10,110,0.13) end; -- Cleric - 1:4 - 2:12 - 3:20 - 4:27 ... 7:50
 		-- Preserve
 		if contains(heroes,"Diraya") ~= nil then Spe_AddCreatures2("Diraya",player,44,0.5) end; -- Sprites - 1:1 - 2:3 - 3:5 - 4:7 - 5:9 ... 25:49
 		if contains(heroes,"Jenova") ~= nil then Spe_AddCreatures("Jenova",player,55,56,151,0.03) end; -- Green Dragon - 1:17 - 2:50
@@ -52,13 +54,16 @@ function ApplyHeroesSpe_daily(player)
 end;
 
 function ApplyHeroesSpe_weekly(player)
+	LOCK = 1 - LOCK;
+	if (LOCK == 1) then return end;
 	print("Weekly run for player "..player);
-	print("Controller value : "..PLAYER_WEEKLY_EVENTS_CHECK[player]);
     local heroes = GetPlayerHeroes(player);
 	if heroes~=nil then
 		-- Haven
 		if contains(heroes,"Nathaniel") ~= nil then Spe_AddRecruits("Nathaniel",player,CREATURE_PEASANT,TOWN_BUILDING_DWELLING_1,3.5) end;
 		if contains(heroes,"Ving") ~= nil then Spe_CallCreatures("Ving",player,CREATURE_GRIFFIN,TOWN_BUILDING_DWELLING_4,1.2) end;
+		if contains(heroes,"RedHeavenHero05") ~= nil then Spe_GiveStats("RedHeavenHero05",player,1,0.1) end; -- Attack - +1 / 10*lvl / week
+		if contains(heroes,"Nicolai") ~= nil then Spe_ArmyMultiply("Nicolai",player,{1,2,106,3,4,107,5,6,108,9,10,110},0.01) end; -- T1 T2 T3 T5 : 1% * level
 		-- Preserve
 		if contains(heroes,"Gillion") ~= nil then Spe_AddRecruits("Gillion",player,CREATURE_BLADE_JUGGLER,TOWN_BUILDING_DWELLING_1,3) end;
 		if contains(heroes,"Itil") ~= nil then Spe_CallCreatures("Itil",player,CREATURE_UNICORN,TOWN_BUILDING_DWELLING_5,0.5) end;
@@ -109,7 +114,7 @@ function ApplyHeroesSpe_onetime(player)
 			local level = trunc(0.1*GetHeroLevel("Brem"));
 			if (ONE_TIME_BONUSES["Brem"] <= level) then
 				for i = ONE_TIME_BONUSES["Brem"],level do
-					GiveArtifact("Brem",ARTIFACTS_GAINS["Brem"][i]);
+					GiveArtifact("Brem",ARTIFACTS_GAINS["Brem"..i]);
 				end;
 				ONE_TIME_BONUSES["Brem"] = 1+level;
 			end; --Artifacts
@@ -160,14 +165,34 @@ end;
 
 function Spe_AddCreatures2(hero,player,id,coef)
 	print("Add neutral creatures to hero "..hero);
-	local nb = 0;
 	local level = GetHeroLevel(hero);
 	print("Hero level : "..level.." - Mult : "..coef);
-	nb = round(coef*level);
+	local nb = round(coef*level);
 	if nb >= 1 then
 		AddHeroCreatures(hero,id,nb);
 		ShowFlyingSign({"/Text/Game/Scripts/Reinforcements.txt"; num=nb},hero,player,5);
 	end;
+end;
+
+function Spe_ArmyMultiply(hero,player,ids,coef)
+	print("Multiply army size for hero "..hero);
+	local level = GetHeroLevel(hero);
+	local army = GetHeroArmy(hero);
+	local total = 0;
+	for i = 0,6 do
+		for j = 0,length(ids) do
+			local id = ids[j];
+			if (army[i] == id) then
+				local nb = trunc(GetHeroCreatures(hero,id) * level * coef);
+				print("Add hero "..hero.." "..nb.." creature "..id);
+				if nb >= 1 then
+					AddHeroCreatures(hero,id,nb);
+					total = total + nb;
+				end;
+			end;
+		end;
+	end;
+	ShowFlyingSign({"/Text/Game/Scripts/Reinforcements.txt"; num=total},hero,player,5);
 end;
 
 function Spe_CallCreatures(hero,player,creature,dwelling,coef)

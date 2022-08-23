@@ -1,22 +1,27 @@
---------------------------------------------------------------------------
+COMBAT_TURN = 0;
+CURRENT_UNIT = "none";
 
 function UnitPlayFirst(side,id0,id1,id2)
     local creatures = GetUnits(side,CREATURE);
     for i,cr in creatures do
         if GetCreatureType(cr) == id0 then
-            setATB(cr,2);
+            setATB(cr,1);
+        else if GetCreatureType(cr) == id1 then
+            setATB(cr,1);
+        else if GetCreatureType(cr) == id2 then
+            setATB(cr,1);
+        else
+            setATB(cr,0);
         end;
-        if GetCreatureType(cr) == id1 then
-            setATB(cr,2);
-        end;
-        if GetCreatureType(cr) == id2 then
-            setATB(cr,2);
-        end;
+    end;
+    local ennemies = GetUnits(1-side,CREATURE);
+    for i,en in ennemies do
+        setATB(en,0);
     end;
 end;
 
 function UnitRandomShoot(side,id0,id1,id2)
-    local seed = GetUnitManaPoints(GetUnits(side,HERO)[0])
+    local seed = GetUnitManaPoints(GetHero(side))
     local creatures = GetUnits(side,CREATURE);
 	local ennemies = GetUnits(1-side,CREATURE);
 	local stacks = length(ennemies);
@@ -41,7 +46,7 @@ function UnitRandomShoot(side,id0,id1,id2)
 end;
 
 function BallistaRandomShoot(side)
-    local seed = GetUnitManaPoints(GetUnits(side,HERO)[0])
+    local seed = GetUnitManaPoints(GetHero(side))
     local war_machines = GetUnits(side,WAR_MACHINE);
 	local ennemies = GetUnits(1-side,CREATURE);
 	local stacks = length(ennemies);
@@ -72,29 +77,52 @@ function HeroAttackEnnemies(side,hero)
     end;
 end;
 
-function HeroCastFirst_RandomAlly(side,hero,spell,seed)
+function HeroCast_RandomAlly(side,hero,spell,free,seed)
     local mana = GetUnitManaPoints(hero);
     local creatures = GetUnits(side,CREATURE);
     local stacks = length(creatures);
     local target;
     if stacks >= 2 then target = random(0,stacks-1,mana+seed) else target = 0 end;
-    SetUnitManaPoints(hero,99);
+    if free == 1 then SetUnitManaPoints(hero,99) end;
     UnitCastAimedSpell(hero,spell,creatures[target]);
-    SetUnitManaPoints(hero,mana);
+    if free == 1 then SetUnitManaPoints(hero,mana) end;
 end;
 
-function HeroCastFirst_Area(hero,spell)
+function HeroCast_RandomEnnemy(side,hero,spell,free,seed)
     local mana = GetUnitManaPoints(hero);
-    SetUnitManaPoints(hero,99);
-    --UnitCastAreaSpell(unitName,spell,x,y)
-    SetUnitManaPoints(hero,mana);
+    local creatures = GetUnits(1-side,CREATURE);
+    local stacks = length(creatures);
+    local target;
+    if stacks >= 2 then target = random(0,stacks-1,mana+seed) else target = 0 end;
+    if free == 1 then SetUnitManaPoints(hero,99) end;
+    UnitCastAimedSpell(hero,spell,creatures[target]);
+    if free == 1 then SetUnitManaPoints(hero,mana) end;
 end;
 
-function HeroCastFirst_Global(hero,spell)
+function HeroCast_RandomEnnemyArea(side,hero,spell,free,seed)
     local mana = GetUnitManaPoints(hero);
-    SetUnitManaPoints(hero,99);
+    local creatures = GetUnits(1-side,CREATURE);
+    local stacks = length(creatures);
+    local target;
+    if stacks >= 2 then target = random(0,stacks-1,mana+seed) else target = 0 end;
+    local x,y = GetUnitPosition(creatures[target]);
+    if free == 1 then SetUnitManaPoints(hero,99) end;
+    UnitCastAreaSpell(hero,spell,x,y)
+    if free == 1 then SetUnitManaPoints(hero,mana) end;
+end;
+
+function HeroCast_Area(hero,spell,x,y,free)
+    local mana = GetUnitManaPoints(hero);
+    if free == 1 then SetUnitManaPoints(hero,99) end;
+    UnitCastAreaSpell(hero,spell,x,y)
+    if free == 1 then SetUnitManaPoints(hero,mana) end;
+end;
+
+function HeroCast_Global(hero,spell,free)
+    local mana = GetUnitManaPoints(hero);
+    if free == 1 then SetUnitManaPoints(hero,99) end;
     UnitCastGlobalSpell(hero,spell);
-    SetUnitManaPoints(hero,mana);
+    if free == 1 then SetUnitManaPoints(hero,mana) end;
 end;
 
 function SiphonEnnemyMana(hero_id,side)
@@ -117,7 +145,7 @@ end;
 
 --------------------------------------------------------------------------
 
-function TriggerHeroSpe(side,hero_name,hero_id)
+function TriggerHeroSpe_Start(side,hero_name,hero_id)
     -- Haven
     if hero_name == "Duncan" then
         print("Trigger ballista random shoot !")
@@ -127,22 +155,21 @@ function TriggerHeroSpe(side,hero_name,hero_id)
         print("Trigger archers atb boost !")
         UnitPlayFirst(side,3,4,107);
     end;
-    if hero_name == "RedHeavenHero01" then
-        print("Trigger random stoneskin and deflect arrows !")
-        HeroCastFirst_RandomAlly(side,hero_id,25,0);
-        HeroCastFirst_RandomAlly(side,hero_id,29,1);
-    end;
-    if hero_name == "RedHeavenHero05" then
-        print("Trigger random hero attack !")
-        HeroAttackEnnemies(side,hero_id);
-    end;
     if hero_name == "Markal" then
         print("Trigger cast Mass Confusion !")
-        HeroCastFirst_Global(hero_id,213);
+        HeroCast_Global(hero_id,213,1);
     end;
     if hero_name == "Axel" then
         print("Trigger cast Prayer !")
-        HeroCastFirst_Global(hero_id,54);
+        HeroCast_Global(hero_id,54,0);
+    end;
+    if hero_name == "RedHeavenHero03" then
+        print("Trigger cast Blade Barriers !")
+        local x;
+        if (side == 0) then x=10 else x=5 end;
+        for y=2,9 do
+            startThread(HeroCast_Area(hero_id,284,x,y,1));
+        end;
     end;
     -- Preserve
 	if hero_name == "Ossir" then
@@ -151,7 +178,7 @@ function TriggerHeroSpe(side,hero_name,hero_id)
     end;
     if hero_name == "Vaniel" then
         print("Trigger hero cast Mass Haste !")
-        HeroCastFirst_Global(hero_id,221);
+        HeroCast_Global(hero_id,221,1);
     end;
     if hero_name == "Ildar" then
         print("Trigger elder druids summoning !")
@@ -169,17 +196,60 @@ function TriggerHeroSpe(side,hero_name,hero_id)
     end;
 end;
 
+function TriggerHeroSpe_Turn(side,hero_name,hero_id,unit)
+    -- Haven
+    if hero_name == "RedHeavenHero01" then
+        print("Trigger random stoneskin or deflect arrows !")
+        HeroCast_RandomAlly(side,hero_id,25,1,COMBAT_TURN);
+        HeroCast_RandomAlly(side,hero_id,29,1,COMBAT_TURN);
+        setATB(hero_id,1);
+    end;
+    if hero_name == "Maeve" and hero_id == unit then
+        print("Trigger random Encourage !")
+        HeroCast_RandomAlly(side,hero_id,52,0,COMBAT_TURN);
+        setATB(hero_id,1);
+    end;
+    if hero_name == "Jeddite" then
+        print("Trigger random Vampirism !")
+        local m = GetUnitManaPoints(hero_id);
+        if m => 100 then
+            HeroCast_RandomAlly(side,hero_id,278,0,COMBAT_TURN);
+            setATB(hero_id,1);
+        end;
+    end;
+    -- Inferno
+    if hero_name == "toto" and hero_id == unit then
+        print("Trigger random Fireball !")
+        HeroCast_RandomEnnemyArea(side,hero_id,5,1,COMBAT_TURN);
+    end;
+end;
+
 
 function CombatStartSpecials()
 	if GetHero(ATTACKER) then
 		local attacker_id = GetAttackerHero();
 		local attacker = GetHeroName(attacker_id);
-		TriggerHeroSpe(ATTACKER,attacker,attacker_id);
+		TriggerHeroSpe_Start(ATTACKER,attacker,attacker_id);
 	end;
 	if GetHero(DEFENDER) then
 		local defender_id = GetDefenderHero(); 
 		local defender = GetHeroName(defender_id);
-		TriggerHeroSpe(DEFENDER,defender,defender_id);
+		TriggerHeroSpe_Start(DEFENDER,defender,defender_id);
 	end;
 end;
 
+function UnitMoveSpecials(unit)
+    if CURRENT_UNIT ~= unit then
+        CURRENT_UNIT = unit;
+        COMBAT_TURN = COMBAT_TURN + 1;
+
+        local side = nil;
+        if IsAttacker(unit) then side = ATTACKER else side = DEFENDER end;
+    
+        if GetHero(side) then
+            local hero_id = GetHero(side);
+            local hero_name = GetHeroName(hero_id);
+            TriggerHeroSpe_Turn(side,hero_name,hero_id,unit);
+        end;
+    end;
+end;

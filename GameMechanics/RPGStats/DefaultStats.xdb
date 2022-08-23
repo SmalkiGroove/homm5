@@ -1311,14 +1311,14 @@
 					<ExpertTrainer_CostDiscount>35</ExpertTrainer_CostDiscount>
 					<Suserain_CostDiscount>
 						<Base>1</Base>
-						<LevelDivisor>2</LevelDivisor>
+						<LevelDivisor>1</LevelDivisor>
 						<PerDividedLevel>1</PerDividedLevel>
 					</Suserain_CostDiscount>
 				</Training>
-				<Prayer_DefenceBonus>1</Prayer_DefenceBonus>
+				<Prayer_DefenceBonus>2</Prayer_DefenceBonus>
 				<Prayer_InitiativeBonus>0.1</Prayer_InitiativeBonus>
 				<WhiteKnight_PrayerMultiplier>3</WhiteKnight_PrayerMultiplier>
-				<Encourage_ATBIncrease>0.33</Encourage_ATBIncrease>
+				<Encourage_ATBIncrease>0.5</Encourage_ATBIncrease>
 				<Retribution_DamageBonusPerMorale>0.05</Retribution_DamageBonusPerMorale>
 			</Knight>
 			<DemonLord>
@@ -1345,7 +1345,7 @@
 					<DamagePerSpellPower>5</DamagePerSpellPower>
 					<ManaCost>1</ManaCost>
 				</DemonicFire>
-				<ConsumeCorpseHPForOneMana>30</ConsumeCorpseHPForOneMana>
+				<ConsumeCorpseHPForOneMana>20</ConsumeCorpseHPForOneMana>
 				<CriticalStrike_ChanceToWork>50</CriticalStrike_ChanceToWork>
 			</DemonLord>
 			<Necromancer>
@@ -2090,7 +2090,7 @@
 				<CavalryCommander_JoustingBonusPerLevel>0.01</CavalryCommander_JoustingBonusPerLevel>
 				<CavalryCommander_HolyChargeBonus>0.05</CavalryCommander_HolyChargeBonus>
 				<Expediter_HasteBonusPerLevel>0.01</Expediter_HasteBonusPerLevel>
-				<Wanderer_MPBonusBase>100</Wanderer_MPBonusBase>
+				<Wanderer_MPBonusBase>0</Wanderer_MPBonusBase>
 				<Wanderer_MPBonusPerLevel>0.01</Wanderer_MPBonusPerLevel>
 				<Wanderer_LevelDivisor>1</Wanderer_LevelDivisor>
 			</Knight>
@@ -2148,8 +2148,8 @@
 					<PerDividedLevel>1</PerDividedLevel>
 				</Inexhaustible_ManaRestorePerTurn>
 				<WeilderOfFire_FireballSpellpowerBonus>
-					<Base>1</Base>
-					<LevelDivisor>3</LevelDivisor>
+					<Base>5</Base>
+					<LevelDivisor>2</LevelDivisor>
 					<PerDividedLevel>1</PerDividedLevel>
 				</WeilderOfFire_FireballSpellpowerBonus>
 			</Wizard>
@@ -2170,9 +2170,9 @@
 				<Courtier_DiplomacyBonusPerLevel>0.1</Courtier_DiplomacyBonusPerLevel>
 				<MountainKing_ActiveRune>SPELL_RUNE_OF_STUNNING</MountainKing_ActiveRune>
 				<Researcher_ChanceToGetExtraRune>0.25</Researcher_ChanceToGetExtraRune>
-				<SacredHammer_ChanceToCastBase>0.2</SacredHammer_ChanceToCastBase>
+				<SacredHammer_ChanceToCastBase>0.15</SacredHammer_ChanceToCastBase>
 				<SacredHammer_ChanceToCastPerLevel>0.03</SacredHammer_ChanceToCastPerLevel>
-				<SacredHammer_SpellToCast>SPELL_BLOODLUST</SacredHammer_SpellToCast>
+				<SacredHammer_SpellToCast>SPELL_CELESTIAL_SHIELD</SacredHammer_SpellToCast>
 				<Economist_FineRuneChanceBonusBase>0.2</Economist_FineRuneChanceBonusBase>
 				<Economist_FineRuneChanceBonusPerLevel>0.01</Economist_FineRuneChanceBonusPerLevel>
 				<FineRuneProbability>0.5</FineRuneProbability>

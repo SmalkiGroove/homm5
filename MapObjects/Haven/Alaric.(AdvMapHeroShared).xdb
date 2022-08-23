@@ -37,8 +37,8 @@
 		<Mastery>MASTERY_BASIC</Mastery>
 		<SkillID>HERO_SKILL_TRAINING</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Academy/Weilder_of_Fire/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Academy/Weilder_of_Fire/Description.txt"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Haven/Weilder_of_Fire/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Haven/Weilder_of_Fire/Description.txt"/>
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Academy/Weilder_of_Fire.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/UI/H5A2/Icons/Heroes/Portrets128x128/Haven_Alaric.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
@@ -60,9 +60,15 @@
 				<Mastery>MASTERY_BASIC</Mastery>
 				<SkillID>HERO_SKILL_DESTRUCTIVE_MAGIC</SkillID>
 			</Item>
+			<Item>
+				<Mastery>MASTERY_ADVANCED</Mastery>
+				<SkillID>HERO_SKILL_LUCK</SkillID>
+			</Item>
 		</skills>
 		<perkIDs>
 			<Item>HERO_SKILL_MASTER_OF_FIRE</Item>
+			<Item>HERO_SKILL_CHAOTIC_SPELLS</Item>
+			<Item>HERO_SKILL_LUCKY_SPELLS</Item>
 		</perkIDs>
 		<spellIDs>
 			<Item>SPELL_FIREBALL</Item>

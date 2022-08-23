@@ -6913,13 +6913,13 @@
 					<Item>
 						<Class>HERO_CLASS_ENCHANTER</Class>
 						<dependenciesIDs>
-							<Item>HERO_SKILL_SECRETS_OF_DESTRUCTION</Item>
+							<Item>HERO_SKILL_DEMONIC_FLAME</Item>
 						</dependenciesIDs>
 					</Item>
 					<Item>
 						<Class>HERO_CLASS_DEMON_LORD</Class>
 						<dependenciesIDs>
-							<Item>HERO_SKILL_SECRETS_OF_DESTRUCTION</Item>
+							<Item>HERO_SKILL_DEMONIC_FLAME</Item>
 						</dependenciesIDs>
 					</Item>
 					<Item>
@@ -6991,7 +6991,7 @@
 					<Item>
 						<Class>HERO_CLASS_WARLOCK</Class>
 						<dependenciesIDs>
-							<Item>HERO_SKILL_SECRETS_OF_DESTRUCTION</Item>
+							<Item>HERO_SKILL_DEMONIC_FLAME</Item>
 						</dependenciesIDs>
 					</Item>
 					<Item>
@@ -8382,7 +8382,7 @@
 				<SkillType>SKILLTYPE_SPECIAL_PERK</SkillType>
 				<HeroClass>HERO_CLASS_NONE</HeroClass>
 				<spellBuffs/>
-				<BasicSkillID>HERO_SKILL_RUNELORE</BasicSkillID>
+				<BasicSkillID>HERO_SKILL_DESTRUCTIVE_MAGIC</BasicSkillID>
 				<SkillPrerequisites>
 					<Item>
 						<Class>HERO_CLASS_ENCHANTER</Class>
@@ -8475,49 +8475,42 @@
 					<Item>
 						<Class>HERO_CLASS_HERETIC</Class>
 						<dependenciesIDs>
-							<Item>HERO_SKILL_MASTER_OF_CURSES</Item>
 							<Item>HERO_SKILL_HOLY_CHARGE</Item>
 						</dependenciesIDs>
 					</Item>
 					<Item>
 						<Class>HERO_CLASS_ENCHANTER</Class>
 						<dependenciesIDs>
-							<Item>HERO_SKILL_MASTER_OF_CURSES</Item>
 							<Item>HERO_SKILL_DEMONIC_STRIKE</Item>
 						</dependenciesIDs>
 					</Item>
 					<Item>
 						<Class>HERO_CLASS_DEMON_LORD</Class>
 						<dependenciesIDs>
-							<Item>HERO_SKILL_MASTER_OF_CURSES</Item>
 							<Item>HERO_SKILL_DEMONIC_STRIKE</Item>
 						</dependenciesIDs>
 					</Item>
 					<Item>
 						<Class>HERO_CLASS_BEWITCHER</Class>
 						<dependenciesIDs>
-							<Item>HERO_SKILL_MASTER_OF_CURSES</Item>
 							<Item>HERO_SKILL_POWERFULL_BLOW</Item>
 						</dependenciesIDs>
 					</Item>
 					<Item>
 						<Class>HERO_CLASS_WARLOCK</Class>
 						<dependenciesIDs>
-							<Item>HERO_SKILL_MASTER_OF_CURSES</Item>
 							<Item>HERO_SKILL_DEMONIC_STRIKE</Item>
 						</dependenciesIDs>
 					</Item>
 					<Item>
 						<Class>HERO_CLASS_BARBARIAN</Class>
 						<dependenciesIDs>
-							<Item>HERO_SKILL_MASTER_OF_CURSES</Item>
 							<Item>HERO_SKILL_POWERFULL_BLOW</Item>
 						</dependenciesIDs>
 					</Item>
 					<Item>
 						<Class>HERO_CLASS_SHAMAN</Class>
 						<dependenciesIDs>
-							<Item>HERO_SKILL_MASTER_OF_CURSES</Item>
 							<Item>HERO_SKILL_POWERFULL_BLOW</Item>
 						</dependenciesIDs>
 					</Item>
@@ -9017,7 +9010,7 @@
 						<dependenciesIDs>
 							<Item>HERO_SKILL_CRITICAL_STRIKE</Item>
 							<Item>HERO_SKILL_DEMONIC_FLAME</Item>
-							<Item>HERO_SKILL_WEAKENING_STRIKE</Item>
+							<Item>HERO_SKILL_SOIL_BURN</Item>
 						</dependenciesIDs>
 					</Item>
 					<Item>
@@ -9025,7 +9018,7 @@
 						<dependenciesIDs>
 							<Item>HERO_SKILL_CRITICAL_STRIKE</Item>
 							<Item>HERO_SKILL_DEMONIC_FLAME</Item>
-							<Item>HERO_SKILL_WEAKENING_STRIKE</Item>
+							<Item>HERO_SKILL_SOIL_BURN</Item>
 						</dependenciesIDs>
 					</Item>
 					<Item>
@@ -9033,7 +9026,7 @@
 						<dependenciesIDs>
 							<Item>HERO_SKILL_CRITICAL_STRIKE</Item>
 							<Item>HERO_SKILL_DEMONIC_FLAME</Item>
-							<Item>HERO_SKILL_WEAKENING_STRIKE</Item>
+							<Item>HERO_SKILL_SOIL_BURN</Item>
 						</dependenciesIDs>
 					</Item>
 				</SkillPrerequisites>

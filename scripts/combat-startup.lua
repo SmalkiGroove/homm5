@@ -204,6 +204,7 @@ end
 
 function UnitMove(unitName)
 	local temp = nil
+	UnitMoveSpecials(unitName)
 	if IsAttacker(unitName) then
 		temp = AttackerUnitMove(unitName)
 	elseif IsDefender(unitName) then
