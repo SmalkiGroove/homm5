@@ -66,7 +66,7 @@
 		<perkIDs>
 			<Item>HERO_SKILL_MASTER_OF_QUAKES</Item>
 		</perkIDs>
-		<spellIDs>		
+		<spellIDs>
 			<Item>SPELL_BLADE_BARRIER</Item>
 		</spellIDs>
 		<Ballista>false</Ballista>

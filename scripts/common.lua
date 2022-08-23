@@ -15,11 +15,13 @@ DIFFICULTY_NORMAL = 1
 DIFFICULTY_HARD = 2
 DIFFICULTY_HEROIC = 3
 
+SEED = 0;
 function random(min,max,seed)
     if (min == max) then return min end;
-    local diff = max - min;
-    if (diff < 0) then diff = -diff end;
-    local r = mod(min+max+seed,diff+1);
+    if seed ~= nil then SEED = SEED + seed end;
+    local diff = abs(max - min);
+    local r = mod(SEED,diff+1);
+    SEED = SEED + r - 1;
     return min + r;
 end;
 
