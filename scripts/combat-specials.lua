@@ -20,11 +20,8 @@ TRIGGER_LIMIT_PER_COMBAT = {
 function UnitPlayFirst(side,id0,id1,id2)
     local creatures = GetUnits(side,CREATURE);
     for i,cr in creatures do
-        if GetCreatureType(cr) == id0 then
-            setATB(cr,1);
-        elseif GetCreatureType(cr) == id1 then
-            setATB(cr,1);
-        elseif GetCreatureType(cr) == id2 then
+        local id = GetCreatureType(cr);
+        if id == id0 or id == id1 or id == id2 then
             setATB(cr,1);
         else
             setATB(cr,0);
@@ -38,18 +35,42 @@ function UnitPlayFirst(side,id0,id1,id2)
     if GetHero(1-side) then setATB(GetHero(1-side),0) end;
 end;
 
+function UnitPlayNext_Creature(side,id0,id1,id2)
+    local creatures = GetUnits(side,CREATURE);
+    for i,cr in creatures do
+        local id = GetCreatureType(cr);
+        if id == id0 or id == id1 or id == id2 then
+            setATB(cr,0.99);
+        end;
+    end;
+end;
+
+function UnitPlayNext_WarMachine(side,type)
+    local war_machines = GetUnits(side,WAR_MACHINE);
+    for i,wm in war_machines do
+        if GetWarMachineType(wm) == type then
+            setATB(wm,0.99);
+        end;
+    end;
+end;
+
 function UnitRandomShoot(side,id0,id1,id2)
     local creatures = GetUnits(side,CREATURE);
     for i,cr in creatures do
-        if GetCreatureType(cr) == id0 then
+        local id = GetCreatureType(cr);
+        if id == id0 or id == id1 or id == id2 then
             ShootCombatUnit(cr,RandomCreature(1-side,i));
             setATB(cr,0);
-        elseif GetCreatureType(cr) == id1 then
-            ShootCombatUnit(cr,RandomCreature(1-side,i));
-            setATB(cr,0);
-        elseif GetCreatureType(cr) == id2 then
-            ShootCombatUnit(cr,RandomCreature(1-side,i));
-            setATB(cr,0);
+        end;
+    end;
+end;
+
+function UnitSpecialAbility(side,id0,id1,id2,ability)
+    local creatures = GetUnits(side,CREATURE);
+    for i,cr in creatures do
+        local id = GetCreatureType(cr);
+        if id == id0 or id == id1 or id == id2 then
+            UseCombatAbility(cr,ability);
         end;
     end;
 end;
@@ -70,6 +91,27 @@ function SummonStack(side,id,amount,offset)
     if amount == 0 then amount = 1 end;
     SummonCreature(side,id,amount,x);
     sleep(1);
+end;
+
+function SummonCopy(side,id0,id1,id2)
+    local largest = 0;
+    local copied_stack = "none";
+    local creatures = GetUnits(side,CREATURE);
+    for i,cr in creatures do
+        local id = GetCreatureType(cr);
+        local nb = GetCreatureNumber(cr);
+        if id == id0 or id == id1 or id == id2 then
+            if nb > largest then
+                largest = nb;
+                copied_stack = cr;
+            end;
+        end;
+    end;
+    if IsCombatUnit(copied_stack) then
+        local x,y = GetUnitPosition(copied_stack);
+        SummonCreature(side,GetCreatureType(copied_stack),largest,x,y+1);
+        sleep(1);
+    end;
 end;
 
 function DoCastTargetSpell(unit,spell,mana,target)
@@ -145,6 +187,13 @@ function HeroCast_Global(hero,spell,required)
     if required == FREE_MANA then SetUnitManaPoints(hero,mana) end;
 end;
 
+function HeroAttack_RandomEnnemy()
+    SetControlMode(side,MODE_AUTO);
+    sleep(1);
+    SetControlMode(side,MODE_MANUAL);
+    SetControlMode(side,MODE_NORMAL);
+end;
+
 function SiphonEnnemyMana(hero_id,side)
     local ennemies = GetUnits(1-side,CREATURE);
     local amount = 0;
@@ -211,6 +260,15 @@ function TriggerHeroSpe_Start(side,hero_name,hero_id)
         print("Trigger siphon mana !")
         SiphonEnnemyMana(hero_id,side);
     end;
+    -- Academy
+    if hero_name == "Isher" then
+        print("Trigger copy largest golems group !")
+        SummonCopy(side,61,62,161);
+    end;
+    if hero_name == "Davius" then
+        print("Trigger rakshasas dash !")
+        UnitSpecialAbility(side,67,68,164,176);
+    end;
     -- Fortress
     if hero_name == "Skeggy" then
         print("Trigger spearwielders random shoot !")
@@ -244,6 +302,16 @@ function TriggerHeroSpe_Turn(side,hero_name,hero_id,unit)
             HeroCast_RandomAlly(side,hero_id,278,NO_COST);
             setATB(hero_id,1);
         end;
+    end;
+    -- Academy
+    if hero_name == "Minasli" and hero_id == unit then
+        print("Trigger fire ballista ATB boost !")
+        UnitPlayNext_WarMachine(side,WAR_MACHINE_BALLISTA);
+    end;
+    if hero_name == "Rissa" and hero_id == unit then
+        print("Trigger random Slow !")
+        HeroCast_RandomEnnemy(side,hero_id,12,FREE_MANA);
+        setATB(hero_id,1);
     end;
     -- Inferno
     if hero_name == "toto" and hero_id == unit then

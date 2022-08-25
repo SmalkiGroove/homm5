@@ -2096,8 +2096,8 @@
 			</Knight>
 			<Demonlord>
 				<Hypnotist_ManaDrainPerLevel>1</Hypnotist_ManaDrainPerLevel>
-				<Bombardier_FireballSpellpower>-1</Bombardier_FireballSpellpower>
-				<Bombardier_FireballSpellpowerLevelDivisor>2</Bombardier_FireballSpellpowerLevelDivisor>
+				<Bombardier_FireballSpellpower>1</Bombardier_FireballSpellpower>
+				<Bombardier_FireballSpellpowerLevelDivisor>1</Bombardier_FireballSpellpowerLevelDivisor>
 				<Bombardier_FireballSpellpowerPerLevel>1</Bombardier_FireballSpellpowerPerLevel>
 				<Beater_MPBonusBase>0.05</Beater_MPBonusBase>
 				<Beater_MPBonusPerLevel>0.01</Beater_MPBonusPerLevel>
@@ -2125,9 +2125,9 @@
 			<Wizard>
 				<Radiant_MirrorProb>0.4</Radiant_MirrorProb>
 				<Radiant_MirrorProbPerLevel>0.02</Radiant_MirrorProbPerLevel>
-				<Disrupter_Damage>10</Disrupter_Damage>
+				<Disrupter_Damage>25</Disrupter_Damage>
 				<Disrupter_DamageLevelDivisor>1</Disrupter_DamageLevelDivisor>
-				<Disrupter_DamagePerLevel>10</Disrupter_DamagePerLevel>
+				<Disrupter_DamagePerLevel>25</Disrupter_DamagePerLevel>
 				<TimeShiftStopFactor>0.05</TimeShiftStopFactor>
 				<TimeShiftBonusATBPerLevel>0.5</TimeShiftBonusATBPerLevel>
 				<FeatherMage_InitiativeBonusBase>0.05</FeatherMage_InitiativeBonusBase>
@@ -2160,11 +2160,11 @@
 				<PowerBargain_CostReducePerLevel>0.01</PowerBargain_CostReducePerLevel>
 				<Prudent_InitiativeDisbonusBase>0</Prudent_InitiativeDisbonusBase>
 				<Prudent_InitiativeDisbonusPerLevel>0.01</Prudent_InitiativeDisbonusPerLevel>
-				<Evasive_DamageReduceBase>0</Evasive_DamageReduceBase>
+				<Evasive_DamageReduceBase>0.1</Evasive_DamageReduceBase>
 				<Evasive_DamageReducePerLevel>0.02</Evasive_DamageReducePerLevel>
 			</Warlock>
 			<Runemage>
-				<BorderGuard_DistanceFromCityInDays>1</BorderGuard_DistanceFromCityInDays>
+				<BorderGuard_DistanceFromCityInDays>3</BorderGuard_DistanceFromCityInDays>
 				<BorderGuard_LevelDivisor>1</BorderGuard_LevelDivisor>
 				<BorderGuard_DefenceBonusPerLevel>1</BorderGuard_DefenceBonusPerLevel>
 				<Courtier_DiplomacyBonusPerLevel>0.1</Courtier_DiplomacyBonusPerLevel>

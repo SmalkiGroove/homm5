@@ -32,12 +32,12 @@
 	<Class>HERO_CLASS_SEER</Class>
 	<Specialization>HERO_SPEC_PRUDENT</Specialization>
 	<PrimarySkill>
-		<Mastery>MASTERY_ADVANCED</Mastery>
+		<Mastery>MASTERY_BASIC</Mastery>
 		<SkillID>HERO_SKILL_ARTIFICIER</SkillID>
 	</PrimarySkill>
 	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Academy/Prudent/Name.txt"/>
 	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Academy/Prudent/Description.txt"/>
-	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Dungeon/Prudent.xdb#xpointer(/Texture)"/>
+	<SpecializationIcon href="/Textures/SpellBook______2618/Spells/Spell_Slow.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Academy/Academy_Rissa_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/Wizard.(Character).xdb#xpointer(/Character)"/>
