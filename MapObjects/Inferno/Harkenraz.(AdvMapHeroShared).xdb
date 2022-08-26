@@ -30,14 +30,14 @@
 	<Icon128/>
 	<InternalName>Harkenraz</InternalName>
 	<Class>HERO_CLASS_WARLOCK</Class>
-	<Specialization>HERO_SPEC_SUZERAIN</Specialization>
+	<Specialization/>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
 		<SkillID>HERO_SKILL_GATING</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Inferno/Suzerain/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Inferno/Suzerain/Description.txt"/>
-	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Haven/Suzerain.xdb#xpointer(/Texture)"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Inferno/Sulfur/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Inferno/Sulfur/Description.txt"/>
+	<SpecializationIcon href="/Textures/auto-imported_______320/TerrainObjects/Lava/FireDotsTerrain01/FireDotsTerrain01.tga.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Inferno/Inferno_Harkenraz_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/Veyer.(Character).xdb#xpointer(/Character)"/>

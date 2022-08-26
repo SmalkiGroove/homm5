@@ -32,14 +32,14 @@
 	<Icon128 href="/Textures/Icons/Heroes/Inferno/Inferno_Biara_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<InternalName>Biara</InternalName>
 	<Class>HERO_CLASS_ENCHANTER</Class>
-	<Specialization>HERO_SPEC_FLAGBEARER_OF_DARKNESS</Specialization>
+	<Specialization>HERO_SPEC_SUCCUBUSES</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
 		<SkillID>HERO_SKILL_GATING</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Inferno/Flagbearer_of_Darkness/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Inferno/Flagbearer_of_Darkness/Description.txt"/>
-	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Inferno/Flagbearer_of_Darkness.xdb#xpointer(/Texture)"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Inferno/Temptress/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Inferno/Temptress/Description.txt"/>
+	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Inferno/Temptress.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Inferno/Inferno_Biara_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/Biara.(Character).xdb#xpointer(/Character)"/>

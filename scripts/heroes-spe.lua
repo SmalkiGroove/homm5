@@ -275,8 +275,12 @@ function ApplyHeroesSpe_daily(player)
 			startThread(Spe_AddCreatures2,"Xerxon",player,89,0.1); -- Black Knight - 1:5 - 2:15 - 3:25 - 4:35 - 5:45
 		end;
 		-- Inferno
+		if contains(heroes,"Calid") ~= nil then
+			startThread(Spe_AddCreatures,"Calid",player,19,20,133,0.33); -- Hell hounds - 1:2 - 2:5 - 3:8 - 4:11 - ... - 17:50
+		end;
 		if contains(heroes,"Harkenraz") ~= nil then
-			startThread(Spe_GiveResources,"Harkenraz",player,4,Spe_GetResourceAmount("Harkenraz")); -- Gold 250 - Sulfur +1 / 3 levels
+			startThread(Spe_GiveResources,"Harkenraz",player,6,500); -- Gold - +500
+			startThread(Spe_GiveResources,"Harkenraz",player,4,Spe_GetResourceAmount("Harkenraz")); -- Sulfur - +1 / 3 levels
 		end;
 		if contains(heroes,"Ash") ~= nil then
 			startThread(Spe_AddCreatures,"Ash",player,23,24,135,0.13); -- Hellmare - 1:4 - 2:12 - 3:20 - 4:27 ... 7:50
@@ -292,7 +296,7 @@ function ApplyHeroesSpe_daily(player)
 			startThread(Spe_AddCreatures,"Ferigl",player,77,78,141,0.12); -- Raptor - 1:5 - 2:13 - 3:21 - 4:30 - 5:38 - 6:46
 		end;
 		if contains(heroes,"Eruina") ~= nil then
-			startThread(Spe_AddCreatures,"Eruina",player,81,82,143,0.08) -- Matron - 1:7 - 2:19 - 3:32 - 4:44
+			startThread(Spe_AddCreatures,"Eruina",player,81,82,143,0.08); -- Matron - 1:7 - 2:19 - 3:32 - 4:44
 		end;
 		if contains(heroes,"Almegir") ~= nil then
 			startThread(Spe_AddCreatures2,"Almegir",player,115,0.13); -- Manticore - 1:4 - 2:12 - 3:20 - 4:27 ... 7:50
@@ -315,7 +319,7 @@ function ApplyHeroesSpe_weekly(player)
 			startThread(Spe_AddRecruits,"Nathaniel",player,CREATURE_PEASANT,TOWN_BUILDING_DWELLING_1,7); -- Peasants - 7 * level recruits per week
 		end;
 		if contains(heroes,"Ving") ~= nil then
-			startThread(Spe_CallCreatures,"Ving",player,CREATURE_GRIFFIN,TOWN_BUILDING_DWELLING_4,1.5) -- Griffins - 1.5 * level transfered
+			startThread(Spe_CallCreatures,"Ving",player,CREATURE_GRIFFIN,TOWN_BUILDING_DWELLING_4,1.5); -- Griffins - 1.5 * level transfered
 		end;
 		if contains(heroes,"RedHeavenHero05") ~= nil then
 			startThread(Spe_GiveStats,"RedHeavenHero05",player,1,0.1); -- Attack - +1 / 10*lvl / week
@@ -334,7 +338,7 @@ function ApplyHeroesSpe_weekly(player)
 			startThread(Spe_GiveStats,"Vinrael",player,3,0.2); -- Spellpower - +1 / 5*lvl / week
 		end;
 		if contains(heroes,"Nadaur") ~= nil then
-			startThread(Spe_GiveStats,"Nadaur",player,1,0.1) -- Attack - +1 / 10*lvl / week
+			startThread(Spe_GiveStats,"Nadaur",player,1,0.1); -- Attack - +1 / 10*lvl / week
 		end;
 		-- Academy
 		if contains(heroes,"Davius") ~= nil then
@@ -351,12 +355,19 @@ function ApplyHeroesSpe_weekly(player)
 			startThread(Spe_AddRecruits,"Egil",player,CREATURE_RUNE_MAGE,TOWN_BUILDING_DWELLING_5,0.3);
 		end;
 		-- Necropolis
-		if contains(heroes,"Straker") ~= nil then startThread(Spe_AddRecruits,"Straker",player,CREATURE_WALKING_DEAD,TOWN_BUILDING_DWELLING_2,2.5) end;
-		if contains(heroes,"Tamika") ~= nil then startThread(Spe_AddRecruits,"Tamika",player,CREATURE_VAMPIRE,TOWN_BUILDING_DWELLING_4,0.9) end;
+		if contains(heroes,"Straker") ~= nil then
+			startThread(Spe_AddRecruits,"Straker",player,CREATURE_WALKING_DEAD,TOWN_BUILDING_DWELLING_2,2.5);
+		end;
+		if contains(heroes,"Tamika") ~= nil then
+			startThread(Spe_AddRecruits,"Tamika",player,CREATURE_VAMPIRE,TOWN_BUILDING_DWELLING_4,0.9);
+		end;
 		-- Inferno
-		if contains(heroes,"Calid") ~= nil then startThread(Spe_AddRecruits,"Calid",player,CREATURE_HELL_HOUND,TOWN_BUILDING_DWELLING_3,1.5) end;
-		if contains(heroes,"Oddrema") ~= nil then startThread(Spe_AddRecruits,"Oddrema",player,CREATURE_SUCCUBUS,TOWN_BUILDING_DWELLING_4,0.9) end;
-		if contains(heroes,"Malustar") ~= nil then startThread(Spe_GiveStats,"Malustar",player,1+random(3),0.1) end; -- Random attribute - +1 / 10*lvl / week
+		if contains(heroes,"Zydar") ~= nil then
+			startThread(Spe_AddRecruits,"Zydar",player,CREATURE_IMP,TOWN_BUILDING_DWELLING_1,2.5); -- Imps - 2.5 * level recruits per week
+			startThread(Spe_AddRecruits,"Zydar",player,CREATURE_DEMON,TOWN_BUILDING_DWELLING_2,1.5); -- Horned demons - 1.5 * level recruits per week
+			startThread(Spe_AddRecruits,"Zydar",player,CREATURE_DEVIL,TOWN_BUILDING_DWELLING_7,0.1); -- Devils - 0.1 * level recruits per week
+		end;
+		if contains(heroes,"Malustar") ~= nil then startThread(Spe_GiveStats,"Malustar",player,1+random(3),0.2) end; -- Random attribute - +1 / 5*lvl / week
 		-- Dungeon
 		if contains(heroes,"Ohtarig") ~= nil then startThread(Spe_AddRecruits,"Ohtarig",player,CREATURE_SCOUT,TOWN_BUILDING_DWELLING_1,3) end;
 		if contains(heroes,"Urunir") ~= nil then startThread(Spe_AddRecruits,"Urunir",player,CREATURE_WITCH,TOWN_BUILDING_DWELLING_2,2.4) end;

@@ -7,4 +7,4 @@ Compress-Archive @zip
 
 Move-Item ".\mod.zip" "..\mod.pak" -Force
 
-Read-Host
+# Read-Host

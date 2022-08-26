@@ -32,12 +32,12 @@
 	<Class>HERO_CLASS_DEMON_LORD</Class>
 	<Specialization>HERO_SPEC_GATE_KEEPER</Specialization>
 	<PrimarySkill>
-		<Mastery>MASTERY_BASIC</Mastery>
+		<Mastery>MASTERY_EXTRA_EXPERT</Mastery>
 		<SkillID>HERO_SKILL_GATING</SkillID>
 	</PrimarySkill>
 	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Inferno/Gate_Keeper/Name.txt"/>
 	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Inferno/Gate_Keeper/Description.txt"/>
-	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Inferno/Gate_Keeper.xdb#xpointer(/Texture)"/>
+	<SpecializationIcon href="/Textures/HeroScreen/Skills/Gating_4.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Inferno/Inferno_Nebiros_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/DemonLord.(Character).xdb#xpointer(/Character)"/>

@@ -2101,7 +2101,7 @@
 				<Bombardier_FireballSpellpowerPerLevel>1</Bombardier_FireballSpellpowerPerLevel>
 				<Beater_MPBonusBase>0.05</Beater_MPBonusBase>
 				<Beater_MPBonusPerLevel>0.01</Beater_MPBonusPerLevel>
-				<Beater_LevelDivisor>4</Beater_LevelDivisor>
+				<Beater_LevelDivisor>2</Beater_LevelDivisor>
 				<Furious_InitiativeBonusBase>0</Furious_InitiativeBonusBase>
 				<Furious_InitiativeBonusPerLevel>0.01</Furious_InitiativeBonusPerLevel>
 			</Demonlord>

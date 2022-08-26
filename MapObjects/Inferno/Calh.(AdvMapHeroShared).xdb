@@ -37,7 +37,7 @@
 	</PrimarySkill>
 	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Inferno/Stunner/Name.txt"/>
 	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Inferno/Stunner/Description.txt"/>
-	<SpecializationIcon href="/UI/H5A2/Icons/Heroes_Skills/Blood_Rage/Perk_Powerfull_Blow.(Texture).xdb#xpointer(/Texture)"/>
+	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Inferno/Gate_Keeper.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Inferno/Inferno_Calh_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/Veyer.(Character).xdb#xpointer(/Character)"/>

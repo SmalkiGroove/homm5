@@ -14,6 +14,7 @@ TRIGGER_LIMIT_PER_COMBAT = {
     ["Jeddite"]=-1,
     ["Minasli"]=-1,
     ["Rissa"]=-1,
+    ["Sheltem"]=-1,
     ["Calid2"]=-1,
 } -- -1 means no limit
 
@@ -33,6 +34,13 @@ function Wait()
     THREAD_FINISHER = THREAD_FINISHER - 1;
     -- print("Thread finisher = "..THREAD_FINISHER);
     if THREAD_FINISHER == 0 then THREAD_STATE = 1 end;
+end;
+
+function SetMana(unit,mana)
+    repeat
+        SetUnitManaPoints(unit,mana);
+        sleep(1);
+    until GetUnitManaPoints(unit) == mana;
 end;
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -107,6 +115,16 @@ function UnitSpecialAbility(side,id0,id1,id2,ability)
     end;
 end;
 
+function BallistaTargetShoot(side,target)
+    local war_machines = GetUnits(side,WAR_MACHINE);
+    for i,wm in war_machines do
+        if GetWarMachineType(wm) == WAR_MACHINE_BALLISTA then
+            ShootCombatUnit(wm,target);
+            setATB(wm,0);
+        end;
+    end;
+end;
+
 function BallistaRandomShoot(side)
     local war_machines = GetUnits(side,WAR_MACHINE);
     for i,wm in war_machines do
@@ -166,72 +184,72 @@ end;
 
 function HeroCast_Target(hero,spell,required,target)
     local mana = GetUnitManaPoints(hero);
-    if required == FREE_MANA then SetUnitManaPoints(hero,FREE_MANA) end;
+    if required == FREE_MANA then SetMana(hero,FREE_MANA) end;
     startThread(DoCastTargetSpell,hero,spell,required,target);
     repeat Wait() until THREAD_STATE == 1;
     THREAD_STATE = 0; THREAD_FINISHER = THREAD_LIMIT;
-    if required == FREE_MANA then SetUnitManaPoints(hero,mana) end;
+    if required == FREE_MANA then SetMana(hero,mana) end;
 end;
 
 function HeroCast_AllEnnemies(side,hero,spell,required)
     local mana = GetUnitManaPoints(hero);
     local ennemies = GetUnits(1-side,CREATURE);
     for i,en in ennemies do
-        if required == FREE_MANA then SetUnitManaPoints(hero,FREE_MANA) end;
+        if required == FREE_MANA then SetMana(hero,FREE_MANA) end;
         startThread(DoCastTargetSpell,hero,spell,required,en);
         repeat Wait() until THREAD_STATE == 1;
         THREAD_STATE = 0; THREAD_FINISHER = THREAD_LIMIT;
     end;
-    if required == FREE_MANA then SetUnitManaPoints(hero,mana) end;
+    if required == FREE_MANA then SetMana(hero,mana) end;
 end;
 
 function HeroCast_RandomAlly(side,hero,spell,required)
     local mana = GetUnitManaPoints(hero);
-    if required == FREE_MANA then SetUnitManaPoints(hero,FREE_MANA) end;
+    if required == FREE_MANA then SetMana(hero,FREE_MANA) end;
     startThread(DoCastTargetSpell,hero,spell,required,RandomCreature(side,mana+COMBAT_TURN));
     repeat Wait() until THREAD_STATE == 1;
     THREAD_STATE = 0; THREAD_FINISHER = THREAD_LIMIT;
-    if required == FREE_MANA then SetUnitManaPoints(hero,mana) end;
+    if required == FREE_MANA then SetMana(hero,mana) end;
 end;
 
 function HeroCast_RandomEnnemy(side,hero,spell,required)
     local mana = GetUnitManaPoints(hero);
-    if required == FREE_MANA then SetUnitManaPoints(hero,FREE_MANA) end;
+    if required == FREE_MANA then SetMana(hero,FREE_MANA) end;
     startThread(DoCastTargetSpell,hero,spell,required,RandomCreature(1-side,mana+COMBAT_TURN));
     repeat Wait() until THREAD_STATE == 1;
     THREAD_STATE = 0; THREAD_FINISHER = THREAD_LIMIT;
-    if required == FREE_MANA then SetUnitManaPoints(hero,mana) end;
+    if required == FREE_MANA then SetMana(hero,mana) end;
 end;
 
 function HeroCast_RandomEnnemyArea(side,hero,spell,required)
     local mana = GetUnitManaPoints(hero);
     local x,y = GetUnitPosition(RandomCreature(1-side,mana+COMBAT_TURN));
-    if required == FREE_MANA then SetUnitManaPoints(hero,FREE_MANA) end;
+    if required == FREE_MANA then SetMana(hero,FREE_MANA) end;
     startThread(DoCastAreaSpell,hero,spell,required,x,y);
     repeat Wait() until THREAD_STATE == 1;
     THREAD_STATE = 0; THREAD_FINISHER = THREAD_LIMIT;
-    if required == FREE_MANA then SetUnitManaPoints(hero,mana) end;
+    if required == FREE_MANA then SetMana(hero,mana) end;
 end;
 
 function HeroCast_Area(hero,spell,x,y,required)
     local mana = GetUnitManaPoints(hero);
-    if required == FREE_MANA then SetUnitManaPoints(hero,FREE_MANA) end;
+    if required == FREE_MANA then SetMana(hero,FREE_MANA) end;
     startThread(DoCastAreaSpell,hero,spell,required,x,y);
     repeat Wait() until THREAD_STATE == 1;
     THREAD_STATE = 0; THREAD_FINISHER = THREAD_LIMIT;
-    if required == FREE_MANA then SetUnitManaPoints(hero,mana) end;
+    if required == FREE_MANA then SetMana(hero,mana) end;
 end;
 
 function HeroCast_Global(hero,spell,required)
     local mana = GetUnitManaPoints(hero);
-    if required == FREE_MANA then SetUnitManaPoints(hero,FREE_MANA) end;
+    if required == FREE_MANA then SetMana(hero,FREE_MANA) end;
     startThread(DoCastGlobalSpell,hero,spell,required);
     repeat Wait() until THREAD_STATE == 1;
     THREAD_STATE = 0; THREAD_FINISHER = THREAD_LIMIT;
-    if required == FREE_MANA then SetUnitManaPoints(hero,mana) end;
+    if required == FREE_MANA then SetMana(hero,mana) end;
 end;
 
-function HeroAttack_RandomEnnemy()
+function HeroAttack_RandomEnnemy(side)
     SetControlMode(side,MODE_AUTO);
     sleep(1);
     SetControlMode(side,MODE_MANUAL);
@@ -243,16 +261,16 @@ function SiphonEnnemyMana(hero_id,side)
     local amount = 0;
     for i,en in ennemies do
         local mana = GetUnitManaPoints(en);
-        SetUnitManaPoints(en,0);
+        SetMana(en,0);
         amount = amount + mana;
     end;
     local hero_mana = GetUnitManaPoints(hero_id);
     local hero_max_mana = GetUnitMaxManaPoints(hero_id);
     hero_mana = hero_mana + amount;
     if (hero_mana > hero_max_mana) then
-        SetUnitManaPoints(hero_id,hero_max_mana);
+        SetMana(hero_id,hero_max_mana);
     else
-        SetUnitManaPoints(hero_id,hero_mana);
+        SetMana(hero_id,hero_mana);
     end;
 end;
 
@@ -287,7 +305,7 @@ function TriggerHeroSpe_Start(side,hero_name,hero_id)
             HeroCast_Area(hero_id,284,x,y,FREE_MANA);
             HeroCast_Area(hero_id,284,x-1+side*2,11-y,FREE_MANA);
         end;
-        SetUnitManaPoints(hero_id,m);
+        SetMana(hero_id,m);
     end;
     -- Preserve
 	if hero_name == "Ossir" then
@@ -348,6 +366,24 @@ function TriggerHeroSpe_Start(side,hero_name,hero_id)
         print("Trigger spearwielders random shoot !")
         UnitRandomShoot(side,94,95,167);
     end;
+    -- Inferno
+    if hero_name == "Jazaz" then
+        print("Trigger hero attacks !")
+        for i = 1,3 do
+            setATB(hero_id,1);
+            HeroAttack_RandomEnnemy(side);
+        end;
+    end;
+    if hero_name == "Biara" then
+        print("Trigger succubus random shoot !")
+        UnitRandomShoot(side,21,22,134);
+    end;
+    if hero_name == "Sovereign" then
+        print("Trigger pit lords summoning !")
+        local m = GetUnitMaxManaPoints(hero_id) * 0.1;
+        SummonStack(side,26,trunc(0.1*m*m),0);
+        SummonStack(side,26,trunc(0.1*m*m),0);
+    end;
 end;
 
 function TriggerHeroSpe_Turn(side,hero_name,hero_id,unit)
@@ -399,6 +435,21 @@ function TriggerHeroSpe_Turn(side,hero_name,hero_id,unit)
     end;
 end;
 
+function TriggerHeroSpe_EnnemyTurn(side,hero_name,hero_id,unit)
+    if TRIGGER_LIMIT_PER_COMBAT[hero_name] then
+        if TRIGGER_LIMIT_PER_COMBAT[hero_name] == 0 then
+            return nil;
+        end;
+    else
+        return nil;
+    end;
+    -- Inferno
+    if hero_name == "Sheltem" then
+        print("Trigger fireball ballista shoot !")
+        BallistaTargetShoot(1-side,unit);
+    end;
+end;
+
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -429,6 +480,11 @@ function UnitMoveSpecials(unit)
             local hero_id = GetHero(side);
             local hero_name = GetHeroName(hero_id);
             TriggerHeroSpe_Turn(side,hero_name,hero_id,unit);
+        end;
+        if GetHero(1-side) then
+            local hero_id = GetHero(1-side);
+            local hero_name = GetHeroName(hero_id);
+            TriggerHeroSpe_EnnemyTurn(side,hero_name,hero_id,unit);
         end;
     end;
 end;
