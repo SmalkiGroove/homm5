@@ -2170,8 +2170,8 @@
 				<Courtier_DiplomacyBonusPerLevel>0.1</Courtier_DiplomacyBonusPerLevel>
 				<MountainKing_ActiveRune>SPELL_RUNE_OF_STUNNING</MountainKing_ActiveRune>
 				<Researcher_ChanceToGetExtraRune>0.25</Researcher_ChanceToGetExtraRune>
-				<SacredHammer_ChanceToCastBase>0.15</SacredHammer_ChanceToCastBase>
-				<SacredHammer_ChanceToCastPerLevel>0.03</SacredHammer_ChanceToCastPerLevel>
+				<SacredHammer_ChanceToCastBase>0.20</SacredHammer_ChanceToCastBase>
+				<SacredHammer_ChanceToCastPerLevel>0.01</SacredHammer_ChanceToCastPerLevel>
 				<SacredHammer_SpellToCast>SPELL_CELESTIAL_SHIELD</SacredHammer_SpellToCast>
 				<Economist_FineRuneChanceBonusBase>0.2</Economist_FineRuneChanceBonusBase>
 				<Economist_FineRuneChanceBonusPerLevel>0.01</Economist_FineRuneChanceBonusPerLevel>

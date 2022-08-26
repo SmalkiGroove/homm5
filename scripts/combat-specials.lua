@@ -9,13 +9,13 @@ NO_COST = 0;
 FREE_MANA = 99;
 
 TRIGGER_LIMIT_PER_COMBAT = {
-    ["Duncan"]=0,
-    ["Orrin"]=0,
-    ["Markal"]=0,
-    ["Axel"]=0,
-    ["RedHeavenHero03"]=0,
-    ["Ossir"]=0,
-}
+    ["RedHeavenHero01"]=-1,
+    ["Maeve"]=-1,
+    ["Jeddite"]=-1,
+    ["Minasli"]=-1,
+    ["Rissa"]=-1,
+    ["Calid2"]=-1,
+} -- -1 means no limit
 
 function UnitPlayFirst(side,id0,id1,id2)
     local creatures = GetUnits(side,CREATURE);
@@ -60,6 +60,17 @@ function UnitRandomShoot(side,id0,id1,id2)
         local id = GetCreatureType(cr);
         if id == id0 or id == id1 or id == id2 then
             ShootCombatUnit(cr,RandomCreature(1-side,i));
+            setATB(cr,0);
+        end;
+    end;
+end;
+
+function UnitCast_RandomEnnemy(side,id0,id1,id2,spell)
+    local creatures = GetUnits(side,CREATURE);
+    for i,cr in creatures do
+        local id = GetCreatureType(cr);
+        if id == id0 or id == id1 or id == id2 then
+            UnitCastAimedSpell(id,spell,RandomCreature(1-side,i));
             setATB(cr,0);
         end;
     end;
@@ -138,6 +149,18 @@ function HeroCast_Target(hero,spell,required,target)
     startThread(DoCastTargetSpell,hero,spell,required,target);
     repeat Wait() until THREAD_STATE == 1;
     THREAD_STATE = 0; THREAD_FINISHER = THREAD_LIMIT;
+    if required == FREE_MANA then SetUnitManaPoints(hero,mana) end;
+end;
+
+function HeroCast_AllEnnemies(side,hero,spell,required)
+    local mana = GetUnitManaPoints(hero);
+    local ennemies = GetUnits(1-side,CREATURE);
+    for i,en in ennemies do
+        if required == FREE_MANA then SetUnitManaPoints(hero,FREE_MANA) end;
+        startThread(DoCastTargetSpell,hero,spell,required,en);
+        repeat Wait() until THREAD_STATE == 1;
+        THREAD_STATE = 0; THREAD_FINISHER = THREAD_LIMIT;
+    end;
     if required == FREE_MANA then SetUnitManaPoints(hero,mana) end;
 end;
 
@@ -269,6 +292,32 @@ function TriggerHeroSpe_Start(side,hero_name,hero_id)
         print("Trigger rakshasas dash !")
         UnitSpecialAbility(side,67,68,164,176);
     end;
+    if hero_name == "Gurvilin" then
+        print("Trigger disrupting rays !")
+        HeroCast_AllEnnemies(side,hero_id,13,FREE_MANA);
+    end;
+    if hero_name == "Zehir" then
+        print("Trigger summon elementals !")
+        HeroCast_Global(hero_id,43,FREE_MANA);
+        HeroCast_Global(hero_id,43,FREE_MANA);
+    end;
+    if hero_name == "Emilia" then
+        print("Trigger summon beehives !")
+        local x = 13 - 11 * side;
+        HeroCast_Area(hero_id,283,x,1,FREE_MANA);
+        HeroCast_Area(hero_id,283,x,10,FREE_MANA);
+    end;
+    if hero_name == "Cyrus" then
+        print("Trigger mages spell !")
+        UnitCast_RandomEnnemy(side,63,64,162,2);
+    end;
+    if hero_name == "Astral" then
+        print("Trigger random arcane crystals !")
+        local m = trunc(GetUnitManaPoints(hero_id) * 0.05);
+        for i = 1,m do
+            startThread(UnitCastAreaSpell,hero_id,282);
+        end;
+    end;
     -- Fortress
     if hero_name == "Skeggy" then
         print("Trigger spearwielders random shoot !")
@@ -281,6 +330,8 @@ function TriggerHeroSpe_Turn(side,hero_name,hero_id,unit)
         if TRIGGER_LIMIT_PER_COMBAT[hero_name] == 0 then
             return nil;
         end;
+    else
+        return nil;
     end;
     -- Haven
     if hero_name == "RedHeavenHero01" and hero_id == unit then
@@ -314,7 +365,7 @@ function TriggerHeroSpe_Turn(side,hero_name,hero_id,unit)
         setATB(hero_id,1);
     end;
     -- Inferno
-    if hero_name == "toto" and hero_id == unit then
+    if hero_name == "Calid2" and hero_id == unit then
         print("Trigger random Fireball !")
         HeroCast_RandomEnnemyArea(side,hero_id,5,FREE_MANA);
     end;
