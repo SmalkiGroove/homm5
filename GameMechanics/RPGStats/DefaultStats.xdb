@@ -2134,13 +2134,13 @@
 				<FeatherMage_InitiativeBonusPerLevel>0.01</FeatherMage_InitiativeBonusPerLevel>
 				<MasterOfElements_SpellpowerBonus>
 					<Base>1</Base>
-					<LevelDivisor>3</LevelDivisor>
+					<LevelDivisor>1</LevelDivisor>
 					<PerDividedLevel>1</PerDividedLevel>
 				</MasterOfElements_SpellpowerBonus>
 				<MasterOfElements_NumElementals>
 					<Base>1</Base>
-					<LevelDivisor>3</LevelDivisor>
-					<PerDividedLevel>1</PerDividedLevel>
+					<LevelDivisor>1</LevelDivisor>
+					<PerDividedLevel>5</PerDividedLevel>
 				</MasterOfElements_NumElementals>
 				<Inexhaustible_ManaRestorePerTurn>
 					<Base>1</Base>

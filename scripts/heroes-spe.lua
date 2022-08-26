@@ -6,7 +6,7 @@ TURN = 1; -- current turn
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
-ATTRIBUTE_NAME = {"Experience", "Offense", "Defense", "Magic Power", "Knowledge", "Luck", "Morale", "Movement", "Mana"};
+ATTRIBUTE_NAME = {"Experience", "Offense", "Defense", "Spellpower", "Knowledge", "Luck", "Morale", "Movement", "Mana"};
 RESOURCE_NAME = {"wood", "ores", "mercury", "cystals", "sulfur", "gems", "golds"};
 ONE_TIME_BONUSES = {["Isabell"]=0,["Brem"]=0,["Linaas"]=0,["Metlirn"]=0,["Josephine"]=0};
 
@@ -238,7 +238,7 @@ function ApplyHeroesSpe_daily(player)
 			startThread(Spe_AddCreatures2,"Arniel",player,113,0.5); -- Wolf - 1:1 - 2:3 - 3:5 - 4:7 - 5:9 ... 25:49
 		end;
 		if contains(heroes,"Elleshar") ~= nil then
-			startThread(Spe_GiveStats,"Elleshar",player,0,500); -- Exp - +500 * level
+			startThread(Spe_GiveStats,"Elleshar",player,0,300); -- Exp - +300 * level
 		end;
 		if contains(heroes,"Mephala") ~= nil then
 			startThread(Spe_GiveResources,"Mephala",player,random(1),Spe_GetResourceAmount("Mephala")); -- Wood or Ore - +1 / 2 levels
@@ -311,21 +311,45 @@ function ApplyHeroesSpe_weekly(player)
     local heroes = GetPlayerHeroes(player);
 	if heroes~=nil then
 		-- Haven
-		if contains(heroes,"Nathaniel") ~= nil then startThread(Spe_AddRecruits,"Nathaniel",player,CREATURE_PEASANT,TOWN_BUILDING_DWELLING_1,7) end;
-		if contains(heroes,"Ving") ~= nil then startThread(Spe_CallCreatures,"Ving",player,CREATURE_GRIFFIN,TOWN_BUILDING_DWELLING_4,1.5) end;
-		if contains(heroes,"RedHeavenHero05") ~= nil then startThread(Spe_GiveStats,"RedHeavenHero05",player,1,0.1) end; -- Attack - +1 / 10*lvl / week
-		if contains(heroes,"Nicolai") ~= nil then startThread(Spe_ArmyMultiply,"Nicolai",player,{1,2,106,3,4,107,5,6,108,9,10,110},0.01) end; -- T1 T2 T3 T5 : 1% * level
+		if contains(heroes,"Nathaniel") ~= nil then
+			startThread(Spe_AddRecruits,"Nathaniel",player,CREATURE_PEASANT,TOWN_BUILDING_DWELLING_1,7); -- Peasants - 7 * level recruits per week
+		end;
+		if contains(heroes,"Ving") ~= nil then
+			startThread(Spe_CallCreatures,"Ving",player,CREATURE_GRIFFIN,TOWN_BUILDING_DWELLING_4,1.5) -- Griffins - 1.5 * level transfered
+		end;
+		if contains(heroes,"RedHeavenHero05") ~= nil then
+			startThread(Spe_GiveStats,"RedHeavenHero05",player,1,0.1); -- Attack - +1 / 10*lvl / week
+		end;
+		if contains(heroes,"Nicolai") ~= nil then
+			startThread(Spe_ArmyMultiply,"Nicolai",player,{3,4,107,5,6,108,9,10,110},0.01); -- T2 T3 T5 : 1% * level
+		end;
 		-- Preserve
-		if contains(heroes,"Gillion") ~= nil then startThread(Spe_AddRecruits,"Gillion",player,CREATURE_BLADE_JUGGLER,TOWN_BUILDING_DWELLING_1,6) end;
-		if contains(heroes,"Itil") ~= nil then startThread(Spe_CallCreatures,"Itil",player,CREATURE_UNICORN,TOWN_BUILDING_DWELLING_5,0.75) end;
-		if contains(heroes,"Vinrael") ~= nil then startThread(Spe_GiveStats,"Vinrael",player,3,0.2) end; -- Spellpower - +1 / 5*lvl / week
-		if contains(heroes,"Nadaur") ~= nil then startThread(Spe_GiveStats,"Nadaur",player,1,0.1) end; -- Attack - +1 / 10*lvl / week
+		if contains(heroes,"Gillion") ~= nil then
+			startThread(Spe_AddRecruits,"Gillion",player,CREATURE_BLADE_JUGGLER,TOWN_BUILDING_DWELLING_1,6); -- Blade Jugglers - 6 * level recruits per week
+		end;
+		if contains(heroes,"Itil") ~= nil then
+			startThread(Spe_CallCreatures,"Itil",player,CREATURE_UNICORN,TOWN_BUILDING_DWELLING_5,0.75); -- Unicorns - 0.75 * level transfered
+		end;
+		if contains(heroes,"Vinrael") ~= nil then
+			startThread(Spe_GiveStats,"Vinrael",player,3,0.2); -- Spellpower - +1 / 5*lvl / week
+		end;
+		if contains(heroes,"Nadaur") ~= nil then
+			startThread(Spe_GiveStats,"Nadaur",player,1,0.1) -- Attack - +1 / 10*lvl / week
+		end;
 		-- Academy
-		if contains(heroes,"Davius") ~= nil then startThread(Spe_AddRecruits,"Davius",player,CREATURE_RAKSHASA,TOWN_BUILDING_DWELLING_6,0.25) end;
+		if contains(heroes,"Davius") ~= nil then
+			startThread(Spe_AddRecruits,"Davius",player,CREATURE_RAKSHASA,TOWN_BUILDING_DWELLING_6,0.25); -- Rakshasas - 0.25 * level recruits per week
+		end;
 		-- Fortress
-		if contains(heroes,"Ingvar") ~= nil then startThread(Spe_AddRecruits,"Ingvar",player,CREATURE_DEFENDER,TOWN_BUILDING_DWELLING_1,3) end;
-		if contains(heroes,"Rolf") ~= nil then startThread(Spe_AddRecruits,"Rolf",player,CREATURE_BEAR_RIDER,TOWN_BUILDING_DWELLING_4,0.9) end;
-		if contains(heroes,"Egil") ~= nil then startThread(Spe_AddRecruits,"Egil",player,CREATURE_RUNE_MAGE,TOWN_BUILDING_DWELLING_5,0.3) end;
+		if contains(heroes,"Ingvar") ~= nil then
+			startThread(Spe_AddRecruits,"Ingvar",player,CREATURE_DEFENDER,TOWN_BUILDING_DWELLING_1,3);
+		end;
+		if contains(heroes,"Rolf") ~= nil then
+			startThread(Spe_AddRecruits,"Rolf",player,CREATURE_BEAR_RIDER,TOWN_BUILDING_DWELLING_4,0.9);
+		end;
+		if contains(heroes,"Egil") ~= nil then
+			startThread(Spe_AddRecruits,"Egil",player,CREATURE_RUNE_MAGE,TOWN_BUILDING_DWELLING_5,0.3);
+		end;
 		-- Necropolis
 		if contains(heroes,"Straker") ~= nil then startThread(Spe_AddRecruits,"Straker",player,CREATURE_WALKING_DEAD,TOWN_BUILDING_DWELLING_2,2.5) end;
 		if contains(heroes,"Tamika") ~= nil then startThread(Spe_AddRecruits,"Tamika",player,CREATURE_VAMPIRE,TOWN_BUILDING_DWELLING_4,0.9) end;

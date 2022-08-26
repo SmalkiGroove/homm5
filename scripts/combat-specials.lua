@@ -17,6 +17,27 @@ TRIGGER_LIMIT_PER_COMBAT = {
     ["Calid2"]=-1,
 } -- -1 means no limit
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+function RandomCreature(side, seed)
+    local creatures = GetUnits(side,CREATURE);
+    local stacks = length(creatures);
+    local target = 0;
+    if stacks >= 2 then target = random(0,stacks-1,seed) end;
+    return creatures[target];
+end;
+
+function Wait()
+    sleep(1);
+    THREAD_FINISHER = THREAD_FINISHER - 1;
+    -- print("Thread finisher = "..THREAD_FINISHER);
+    if THREAD_FINISHER == 0 then THREAD_STATE = 1 end;
+end;
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
 function UnitPlayFirst(side,id0,id1,id2)
     local creatures = GetUnits(side,CREATURE);
     for i,cr in creatures do
@@ -70,7 +91,7 @@ function UnitCast_RandomEnnemy(side,id0,id1,id2,spell)
     for i,cr in creatures do
         local id = GetCreatureType(cr);
         if id == id0 or id == id1 or id == id2 then
-            UnitCastAimedSpell(id,spell,RandomCreature(1-side,i));
+            UnitCastAimedSpell(cr,spell,RandomCreature(1-side,i));
             setATB(cr,0);
         end;
     end;
@@ -235,7 +256,10 @@ function SiphonEnnemyMana(hero_id,side)
     end;
 end;
 
---------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 function TriggerHeroSpe_Start(side,hero_name,hero_id)
     -- Haven
@@ -299,7 +323,6 @@ function TriggerHeroSpe_Start(side,hero_name,hero_id)
     if hero_name == "Zehir" then
         print("Trigger summon elementals !")
         HeroCast_Global(hero_id,43,FREE_MANA);
-        HeroCast_Global(hero_id,43,FREE_MANA);
     end;
     if hero_name == "Emilia" then
         print("Trigger summon beehives !")
@@ -314,8 +337,10 @@ function TriggerHeroSpe_Start(side,hero_name,hero_id)
     if hero_name == "Astral" then
         print("Trigger random arcane crystals !")
         local m = trunc(GetUnitManaPoints(hero_id) * 0.05);
+        local x1 = 13 - 11 * side;
+        local x2 = 9 - 3 * side;
         for i = 1,m do
-            startThread(UnitCastAreaSpell,hero_id,282);
+            startThread(UnitCastAreaSpell,hero_id,282,random(x1,x2,m),random(1,10,i));
         end;
     end;
     -- Fortress
@@ -361,8 +386,11 @@ function TriggerHeroSpe_Turn(side,hero_name,hero_id,unit)
     end;
     if hero_name == "Rissa" and hero_id == unit then
         print("Trigger random Slow !")
-        HeroCast_RandomEnnemy(side,hero_id,12,FREE_MANA);
-        setATB(hero_id,1);
+        local m = GetUnitManaPoints(hero_id);
+        if m >= 20 then
+            HeroCast_RandomEnnemy(side,hero_id,12,NO_COST);
+            setATB(hero_id,1);
+        end;
     end;
     -- Inferno
     if hero_name == "Calid2" and hero_id == unit then
@@ -370,6 +398,10 @@ function TriggerHeroSpe_Turn(side,hero_name,hero_id,unit)
         HeroCast_RandomEnnemyArea(side,hero_id,5,FREE_MANA);
     end;
 end;
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 function CombatStartSpecials()
@@ -401,32 +433,3 @@ function UnitMoveSpecials(unit)
     end;
 end;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function RandomCreature(side, seed)
-    local creatures = GetUnits(side,CREATURE);
-    local stacks = length(ennemies);
-    local target = 0;
-    if stacks >= 2 then target = random(0,stacks-1,seed) end;
-    return creatures[target];
-end;
-
-function Wait()
-    sleep(1);
-    THREAD_FINISHER = THREAD_FINISHER - 1;
-    -- print("Thread finisher = "..THREAD_FINISHER);
-    if THREAD_FINISHER == 0 then THREAD_STATE = 1 end;
-end;
