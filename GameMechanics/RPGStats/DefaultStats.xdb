@@ -2114,7 +2114,7 @@
 				<Waylayer_ATBShiftPerLevel>0.01</Waylayer_ATBShiftPerLevel>
 			</Ranger>
 			<Necromancer>
-				<Soulhunter_ManesSummonedBase>10</Soulhunter_ManesSummonedBase>
+				<Soulhunter_ManesSummonedBase>5</Soulhunter_ManesSummonedBase>
 				<Soulhunter_ManesSummonedPerLevel>5</Soulhunter_ManesSummonedPerLevel>
 				<Reanimator_SpellpowerBonus>1</Reanimator_SpellpowerBonus>
 				<Reanimator_SpellpowerBonusLevelDivisor>3</Reanimator_SpellpowerBonusLevelDivisor>

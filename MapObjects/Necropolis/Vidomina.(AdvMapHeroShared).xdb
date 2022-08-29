@@ -68,7 +68,7 @@
 			<Item>HERO_SKILL_DEAD_LUCK</Item>
 		</perkIDs>
 		<spellIDs>
-			<Item>SPELL_ANIMATE_DEAD</Item>
+			<Item>SPELL_SORROW</Item>
 		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>

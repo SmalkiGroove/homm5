@@ -32,12 +32,12 @@
 	<Class>HERO_CLASS_NECROMANCER</Class>
 	<Specialization/>
 	<PrimarySkill>
-		<Mastery>MASTERY_BASIC</Mastery>
+		<Mastery>MASTERY_EXTRA_EXPERT</Mastery>
 		<SkillID>HERO_SKILL_NECROMANCY</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Necropolis/Liches/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Necropolis/Liches/Description.txt"/>
-	<SpecializationIcon href="/Textures/Interface/CombatArena/Faces/Necropolis/ico_Lich_64.xdb#xpointer(/Texture)"/>	
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Necropolis/Necromancer/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Necropolis/Necromancer/Description.txt"/>
+	<SpecializationIcon href="/Textures/HeroScreen/Skills/Necromancy_4.xdb#xpointer(/Texture)"/>	
 	<FaceTexture href="/Textures/Icons/Heroes/Necropolis/Necropolis_Raven_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/Necropolis/Effig/HeroCharacterArena.xdb#xpointer(/Character)" />
@@ -63,7 +63,7 @@
 			<Item>HERO_SKILL_SCHOLAR</Item>
 		</perkIDs>
 		<spellIDs>
-			<Item>SPELL_ICE_BOLT</Item>
+			<Item>SPELL_ANIMATE_DEAD</Item>
 		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>

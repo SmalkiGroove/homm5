@@ -274,6 +274,14 @@ function ApplyHeroesSpe_daily(player)
 			startThread(Spe_AddCreatures2,"Xerxon",player,89,0.1); -- Black Knight - 1:5 - 2:15 - 3:25 - 4:35 - 5:45
 			startThread(Spe_UpgradeCreatures,"Xerxon",player,89,90,37,1); -- B.Knights to D.Knights for 1 Lich
 		end;
+		if contains(heroes,"Effig") ~= nil then
+			local army = GetHeroArmy("Effig");
+			local amount = 0;
+			for i=0,6 do
+				if army[i] then amount = amount + GetHeroCreatures("Effig",army[i]) end;
+			end;
+			startThread(Spe_GiveResources,"Effig",player,6,amount); -- Gold - 1 per creature in army
+		end;
 		-- Inferno
 		if contains(heroes,"Calid") ~= nil then
 			startThread(Spe_AddCreatures,"Calid",player,19,20,133,0.33); -- Hell hounds - 1:2 - 2:5 - 3:8 - 4:11 - ... - 17:50
@@ -362,7 +370,7 @@ function ApplyHeroesSpe_weekly(player)
 		if contains(heroes,"Arantir") ~= nil then
 			startThread(Spe_AddRecruits,"Arantir",player,CREATURE_SKELETON,TOWN_BUILDING_DWELLING_1,3.5); -- Skeletons - 3.5 * level recruits per week
 			startThread(Spe_AddRecruits,"Arantir",player,CREATURE_WALKING_DEAD,TOWN_BUILDING_DWELLING_2,2); -- Walking deads - 2 * level recruits per week
-			startThread(Spe_AddRecruits,"Arantir",player,CREATURE_GHOST,TOWN_BUILDING_DWELLING_3,0.75); -- Ghosts - 0.75 * level recruits per week
+			startThread(Spe_AddRecruits,"Arantir",player,CREATURE_MANES,TOWN_BUILDING_DWELLING_3,0.75); -- Manes - 0.75 * level recruits per week
 		end;
 		if contains(heroes,"Tamika") ~= nil then
 			startThread(Spe_CallCreatures,"Tamika",player,CREATURE_VAMPIRE,TOWN_BUILDING_DWELLING_4,1.5); -- Vampires - 1.5 * level transfered

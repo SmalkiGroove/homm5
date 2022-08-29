@@ -372,6 +372,13 @@ function TriggerHeroSpe_Start(side,hero_name,hero_id)
         UnitRandomShoot(side,94,95,167);
     end;
     -- Necropolis
+    if hero_name == "Pelt" then
+        print("Trigger summon and kill skeleton !")
+        SummonStack(side,152,1,5);
+        sleep(10);
+        local ennemies = GetUnits(1-side,CREATURE);
+        HeroCast_Target(hero_id,1,FREE_MANA,ennemies[length(ennemies)-1]);
+    end;
     if hero_name == "Archilus" then
         print("Trigger summon avatar of death !")
         HeroCast_Global(hero_id,200,FREE_MANA);
@@ -387,6 +394,18 @@ function TriggerHeroSpe_Start(side,hero_name,hero_id)
         local n = min(length(e),1+trunc(m));
         for i = 1,n do
             HeroCast_Target(hero_id,277,FREE_MANA,e[i-1]);
+        end;
+    end;
+    if hero_name == "Muscip" then
+        print("Trigger duplicate ghosts !")
+        for i,cr in GetUnits(side,CREATURE) do
+            local id = GetCreatureType(cr);
+            if id == 33 or id == 34 or id == 154 then
+                local nb = GetCreatureNumber(cr);
+                local x,y = GetUnitPosition(cr);
+                SummonCreature(side,id,nb,x);
+                sleep(1);
+            end;
         end;
     end;
     -- Inferno

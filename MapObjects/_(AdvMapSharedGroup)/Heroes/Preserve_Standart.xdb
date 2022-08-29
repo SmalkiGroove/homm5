@@ -12,7 +12,7 @@
 		<Item href="/MapObjects/Preserve/Arniel.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 		<Item href="/MapObjects/Preserve/Mephala.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 		<Item href="/MapObjects/Preserve/Ildar.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-		<Item href="/MapObjects/Preserve/Melodia.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>		
+		<!-- <Item href="/MapObjects/Preserve/Melodia.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>		 -->
 		<Item href="/MapObjects/Preserve/Diraya.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 		<Item href="/MapObjects/Preserve/Elleshar.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 		<Item href="/MapObjects/Preserve/Itil.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
