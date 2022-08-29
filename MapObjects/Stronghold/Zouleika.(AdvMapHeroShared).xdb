@@ -42,11 +42,11 @@
 	<SpecializationIcon href="/Textures/HeroScreen/Skills/DarkMagic_3.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Stronghold/Stronghold_Zouleika_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
-	<HeroCharacterArena href="/Characters/Heroes/H5A2/Kujin_Mounted.(Character).xdb#xpointer(/Character)"/>
-	<HeroCharacterArenaMelee/>
-	<HeroCharacterAdventure href="/Characters/Heroes/H5A2/Kujin_Mounted.(Character).xdb#xpointer(/Character)"/>
-	<HeroIndividualCamera/>
-	<CombatVisual href="/GameMechanics/CreatureVisual/Heroes/Shaman.xdb#xpointer(/CreatureVisual)"/>
+	<HeroCharacterArena href="/Characters/Heroes/Stronghold/Zouleika/HeroCharacterArena.xdb#xpointer(/Character)" />
+	<HeroCharacterArenaMelee href="/Characters/Heroes/Stronghold/Zouleika/HeroCharacterArenaMelee.xdb#xpointer(/Character)" />
+	<HeroCharacterAdventure href="/Characters/Heroes/Stronghold/Zouleika/HeroCharacterAdventure.xdb#xpointer(/Character)" />
+	<HeroIndividualCamera href="/Characters/Heroes/Stronghold/Zouleika/HeroIndividualCamera.xdb#xpointer(/Camera)" />
+	<CombatVisual href="/Characters/Heroes/Stronghold/Zouleika/CombatVisual.xdb#xpointer(/CreatureVisual)" />
 	<TownType>TOWN_STRONGHOLD</TownType>
 	<Editable>
 		<NameFileRef href="/Text/Game/Heroes/Persons/Stronghold/Zouleika/Name.txt"/>

@@ -40,11 +40,11 @@
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Inferno/Flagbearer_of_Darkness.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Inferno/Inferno_Jezebeth_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
-	<HeroCharacterArena href="/Characters/Heroes/Biara.(Character).xdb#xpointer(/Character)"/>
-	<HeroCharacterArenaMelee/>
-	<HeroCharacterAdventure href="/Characters/Heroes/Biara_LOD.(Character).xdb#xpointer(/Character)"/>
-	<HeroIndividualCamera href="/Cameras/Interface/HeroScreen/Biara.xdb#xpointer(/Camera)"/>
-	<CombatVisual href="/GameMechanics/CreatureVisual/Heroes/Biara.xdb#xpointer(/CreatureVisual)"/>
+	<HeroCharacterArena href="/Characters/Heroes/Inferno/Oddrema/HeroCharacterArena.xdb#xpointer(/Character)" />
+	<HeroCharacterArenaMelee href="/Characters/Heroes/Inferno/Oddrema/HeroCharacterArenaMelee.xdb#xpointer(/Character)" />
+	<HeroCharacterAdventure href="/Characters/Heroes/Inferno/Oddrema/HeroCharacterAdventure.xdb#xpointer(/Character)" />
+	<HeroIndividualCamera href="/Characters/Heroes/Inferno/Oddrema/HeroIndividualCamera.xdb#xpointer(/Camera)" />
+	<CombatVisual href="/Characters/Heroes/Inferno/Oddrema/CombatVisual.xdb#xpointer(/CreatureVisual)" />
 	<TownType>TOWN_INFERNO</TownType>
 	<Editable>
 		<NameFileRef href="/Text/Game/Heroes/Persons/Inferno/Oddrema/Name.txt"/>

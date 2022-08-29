@@ -58,11 +58,17 @@
 				<Mastery>MASTERY_BASIC</Mastery>
 				<SkillID>HERO_SKILL_WAR_MACHINES</SkillID>
 			</Item>
+			<Item>
+				<Mastery>MASTERY_BASIC</Mastery>
+				<SkillID>HERO_SKILL_DARK_MAGIC</SkillID>
+			</Item>
 		</skills>
 		<perkIDs>
 			<Item>HERO_SKILL_FIRST_AID</Item>
 		</perkIDs>
-		<spellIDs/>
+		<spellIDs>
+			<Item>SPELL_PLAGUE</Item>
+		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>true</FirstAidTent>
 		<AmmoCart>false</AmmoCart>

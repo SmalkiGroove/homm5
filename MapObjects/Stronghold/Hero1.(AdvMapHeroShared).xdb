@@ -42,11 +42,11 @@
 	<SpecializationIcon href="/UI/H5A2/Icons/Heroes_Specializations/Offender.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/UI/H5A2/Icons/Heroes/Portrets128x128/Stronghold_Grumsh.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
-	<HeroCharacterArena href="/Characters/Heroes/H5A2/OrcWarrior_Hero.(Character).xdb#xpointer(/Character)"/>
-	<HeroCharacterArenaMelee/>
-	<HeroCharacterAdventure href="/Characters/Heroes/H5A2/OrcWarrior_Hero.(Character).xdb#xpointer(/Character)"/>
-	<HeroIndividualCamera/>
-	<CombatVisual href="/GameMechanics/CreatureVisual/Heroes/Barbarian.xdb#xpointer(/CreatureVisual)"/>
+	<HeroCharacterArena href="/Characters/Heroes/Stronghold/Hero1/HeroCharacterArena.xdb#xpointer(/Character)" />
+	<HeroCharacterArenaMelee />
+	<HeroCharacterAdventure href="/Characters/Heroes/Stronghold/Hero1/HeroCharacterAdventure.xdb#xpointer(/Character)" />
+	<HeroIndividualCamera href="/Characters/Heroes/Stronghold/Hero1/HeroIndividualCamera.xdb#xpointer(/Camera)" />
+	<CombatVisual href="/Characters/Heroes/Stronghold/Hero1/CombatVisual.xdb#xpointer(/CreatureVisual)" />
 	<TownType>TOWN_STRONGHOLD</TownType>
 	<Editable>
 		<NameFileRef href="/Text/Game/Heroes/Persons/Stronghold/Hero1/Name.txt"/>

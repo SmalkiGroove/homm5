@@ -40,11 +40,11 @@
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Inferno/Furious.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Inferno/Inferno_Sovereign_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall href="/Textures/Icons/Heroes/Inferno/Inferno_Sovereign_128x128_64.(Texture).xdb#xpointer(/Texture)"/>
-	<HeroCharacterArena href="/Characters/Heroes/Demon_Sovereign.(Character).xdb#xpointer(/Character)"/>
-	<HeroCharacterArenaMelee/>
-	<HeroCharacterAdventure href="/Characters/Heroes/Demon_Sovereign.(Character).xdb#xpointer(/Character)"/>
-	<HeroIndividualCamera href="/Cameras/Interface/HeroScreen/Sovereign.xdb#xpointer(/Camera)"/>
-	<CombatVisual href="/GameMechanics/CreatureVisual/Heroes/Demon_Sovereign.xdb#xpointer(/CreatureVisual)"/>
+	<HeroCharacterArena href="/Characters/Heroes/Inferno/Sovereign/HeroCharacterArena.xdb#xpointer(/Character)" />
+	<HeroCharacterArenaMelee href="/Characters/Heroes/Inferno/Sovereign/HeroCharacterArenaMelee.xdb#xpointer(/Character)" />
+	<HeroCharacterAdventure href="/Characters/Heroes/Inferno/Sovereign/HeroCharacterAdventure.xdb#xpointer(/Character)" />
+	<HeroIndividualCamera href="/Characters/Heroes/Inferno/Sovereign/HeroIndividualCamera.xdb#xpointer(/Camera)" />
+	<CombatVisual href="/Characters/Heroes/Inferno/Sovereign/CombatVisual.xdb#xpointer(/CreatureVisual)" />
 	<TownType>TOWN_INFERNO</TownType>
 	<Editable>
 		<NameFileRef href="/Text/Game/Heroes/Persons/Inferno/Sovereign/Name.txt"/>
