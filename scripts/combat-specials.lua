@@ -374,10 +374,10 @@ function TriggerHeroSpe_Start(side,hero_name,hero_id)
     -- Necropolis
     if hero_name == "Pelt" then
         print("Trigger summon and kill skeleton !")
-        SummonStack(side,152,1,5);
-        sleep(10);
-        local ennemies = GetUnits(1-side,CREATURE);
-        HeroCast_Target(hero_id,1,FREE_MANA,ennemies[length(ennemies)-1]);
+        local n = length(GetUnits(1-side,CREATURE));
+        SummonStack(1-side,152,1,5);
+        repeat sleep(10) until length(GetUnits(1-side,CREATURE)) == n+1;
+        HeroCast_Target(hero_id,1,FREE_MANA,GetUnits(1-side,CREATURE)[n]);
     end;
     if hero_name == "Archilus" then
         print("Trigger summon avatar of death !")

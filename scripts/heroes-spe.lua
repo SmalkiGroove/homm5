@@ -291,10 +291,7 @@ function ApplyHeroesSpe_daily(player)
 			startThread(Spe_GiveResources,"Harkenraz",player,4,amount); -- Sulfur - +1 / 3 levels
 		end;
 		if contains(heroes,"Grok") ~= nil then
-			startThread(Spe_AddCreatures,"Ash",player,23,24,135,0.12); -- Hellmare - 1:5 - 2:13 - 3:21 - 4:30 - 5:38 - 6:46
-		end;
-		if contains(heroes,"Sovereign") ~= nil then
-			startThread(Spe_AddCreatures,"Sovereign",player,25,26,136,0.09); -- Pitlord - 1:6 - 2:17 - 3:28 - 4:39 - 5:50
+			startThread(Spe_AddCreatures,"Grok",player,23,24,135,0.12); -- Hellmare - 1:5 - 2:13 - 3:21 - 4:30 - 5:38 - 6:46
 		end;
 		-- Dungeon
 		if contains(heroes,"Menel") ~= nil then
@@ -384,6 +381,9 @@ function ApplyHeroesSpe_weekly(player)
 		if contains(heroes,"Malustar") ~= nil then
 			local stat = 1+random(3);
 			startThread(Spe_GiveStats,"Malustar",player,stat,0.2); -- Random attribute - +1 / 5*lvl / week
+		end;
+		if contains(heroes,"Marder") ~= nil then
+			startThread(Spe_AddCreatures2,"Marder",player,104,0.3); -- Fire Dragon - 1:2 - 2:5 - 3:9 - 4:12 - 5:15 ... 15:49
 		end;
 		-- Dungeon
 		if contains(heroes,"Ohtarig") ~= nil then
