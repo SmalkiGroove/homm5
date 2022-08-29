@@ -40,11 +40,11 @@
 	<SpecializationIcon href="/Textures/HeroScreen/Perks/Luck_Resistance.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/UI/H5A1/Icons/Heroes/Portrets128x128/RedHaven_Andreas.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall href="/UI/H5A1/Icons/Heroes/Portrets128x128/RedHaven_Andreas.(Texture).xdb#xpointer(/Texture)"/>
-	<HeroCharacterArena href="/Characters/Heroes/Renegade_Hero.(Character).xdb#xpointer(/Character)"/>
-	<HeroCharacterArenaMelee href="/Characters/Heroes/Renegade_Hero_Strike.(Character).xdb#xpointer(/Character)"/>
-	<HeroCharacterAdventure href="/Characters/Heroes/Renegade_Hero_LOD.(Character).xdb#xpointer(/Character)"/>
-	<HeroIndividualCamera/>
-	<CombatVisual href="/GameMechanics/CreatureVisual/Heroes/Knight.xdb#xpointer(/CreatureVisual)"/>
+	<HeroCharacterArena href="/Characters/Heroes/Haven/RedHeavenHero01/HeroCharacterArena.xdb#xpointer(/Character)" />
+	<HeroCharacterArenaMelee href="/Characters/Heroes/Haven/RedHeavenHero01/HeroCharacterArenaMelee.xdb#xpointer(/Character)" />
+	<HeroCharacterAdventure href="/Characters/Heroes/Haven/RedHeavenHero01/HeroCharacterAdventure.xdb#xpointer(/Character)" />
+	<HeroIndividualCamera href="/Characters/Heroes/Haven/RedHeavenHero01/HeroIndividualCamera.xdb#xpointer(/Camera)" />
+	<CombatVisual href="/Characters/Heroes/Haven/RedHeavenHero01/CombatVisual.xdb#xpointer(/CreatureVisual)" />
 	<TownType>TOWN_HEAVEN</TownType>
 	<Editable>
 		<NameFileRef href="/Text/Game/Heroes/Persons/Haven/RedHeavenHero01/Name.txt"/>

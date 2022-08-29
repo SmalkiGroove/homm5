@@ -42,11 +42,11 @@
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Inferno/Impregnable.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/UI/H5A1/Icons/Heroes/Portrets128x128/Hangvul.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
-	<HeroCharacterArena href="/Characters/Heroes/RuneMage.(Character).xdb#xpointer(/Character)"/>
-	<HeroCharacterArenaMelee href="/Characters/Heroes/RuneMageHero_Strike.(Character).xdb#xpointer(/Character)"/>
-	<HeroCharacterAdventure href="/Characters/Heroes/RuneMage_LOD.(Character).xdb#xpointer(/Character)"/>
-	<HeroIndividualCamera/>
-	<CombatVisual href="/GameMechanics/CreatureVisual/Heroes/Runemage.xdb#xpointer(/CreatureVisual)"/>
+	<HeroCharacterArena href="/Characters/Heroes/Dwarves/Hangvul/HeroCharacterArena.xdb#xpointer(/Character)" />
+	<HeroCharacterArenaMelee href="/Characters/Heroes/Dwarves/Hangvul/HeroCharacterArenaMelee.xdb#xpointer(/Character)" />
+	<HeroCharacterAdventure href="/Characters/Heroes/Dwarves/Hangvul/HeroCharacterAdventure.xdb#xpointer(/Character)" />
+	<HeroIndividualCamera href="/Characters/Heroes/Dwarves/Hangvul/HeroIndividualCamera.xdb#xpointer(/Camera)" />
+	<CombatVisual href="/Characters/Heroes/Dwarves/Hangvul/CombatVisual.xdb#xpointer(/CreatureVisual)" />
 	<TownType>TOWN_FORTRESS</TownType>
 	<Editable>
 		<NameFileRef href="/Text/Game/Heroes/Persons/Fortress/Hangvul/Name.txt"/>

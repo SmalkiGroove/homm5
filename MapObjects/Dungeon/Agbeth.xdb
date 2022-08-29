@@ -40,11 +40,11 @@
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Dungeon/Evasive.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/UI/H5A2/Icons/Heroes/Portrets128x128/Dungeon_Agbeth_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
-	<HeroCharacterArena href="/Characters/Heroes/Warlock.(Character).xdb#xpointer(/Character)"/>
-	<HeroCharacterArenaMelee/>
-	<HeroCharacterAdventure href="/Characters/Heroes/Warlock_LOD.(Character).xdb#xpointer(/Character)"/>
-	<HeroIndividualCamera/>
-	<CombatVisual href="/GameMechanics/CreatureVisual/Heroes/Warlock.xdb#xpointer(/CreatureVisual)"/>
+	<HeroCharacterArena href="/Characters/Heroes/Dungeon/Agbeth/HeroCharacterArena.xdb#xpointer(/Character)" />
+	<HeroCharacterArenaMelee href="/Characters/Heroes/Dungeon/Agbeth/HeroCharacterArenaMelee.xdb#xpointer(/Character)" />
+	<HeroCharacterAdventure href="/Characters/Heroes/Dungeon/Agbeth/HeroCharacterAdventure.xdb#xpointer(/Character)" />
+	<HeroIndividualCamera href="/Characters/Heroes/Dungeon/Agbeth/HeroIndividualCamera.xdb#xpointer(/Camera)" />
+	<CombatVisual href="/Characters/Heroes/Dungeon/Agbeth/CombatVisual.xdb#xpointer(/CreatureVisual)" />
 	<TownType>TOWN_DUNGEON</TownType>
 	<Editable>
 		<NameFileRef href="/Maps/SingleMissions/A2S3/name.1.txt"/>

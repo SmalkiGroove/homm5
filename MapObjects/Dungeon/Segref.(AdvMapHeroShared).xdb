@@ -40,11 +40,11 @@
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Dungeon/Dark_Acolyte.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Dungeon/Dungeon_Sinitar_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall href="/Textures/Icons/Heroes/Dungeon/Dungeon_Sinitar_128x128_64.(Texture).xdb#xpointer(/Texture)"/>
-	<HeroCharacterArena href="/Characters/Heroes/Warlock.(Character).xdb#xpointer(/Character)"/>
-	<HeroCharacterArenaMelee/>
-	<HeroCharacterAdventure href="/Characters/Heroes/Warlock_LOD.(Character).xdb#xpointer(/Character)"/>
-	<HeroIndividualCamera/>
-	<CombatVisual href="/GameMechanics/CreatureVisual/Heroes/Warlock.xdb#xpointer(/CreatureVisual)"/>
+	<HeroCharacterArena href="/Characters/Heroes/Dungeon/Segref/HeroCharacterArena.xdb#xpointer(/Character)" />
+	<HeroCharacterArenaMelee href="/Characters/Heroes/Dungeon/Segref/HeroCharacterArenaMelee.xdb#xpointer(/Character)" />
+	<HeroCharacterAdventure href="/Characters/Heroes/Dungeon/Segref/HeroCharacterAdventure.xdb#xpointer(/Character)" />
+	<HeroIndividualCamera href="/Characters/Heroes/Dungeon/Segref/HeroIndividualCamera.xdb#xpointer(/Camera)" />
+	<CombatVisual href="/Characters/Heroes/Dungeon/Segref/CombatVisual.xdb#xpointer(/CreatureVisual)" />
 	<TownType>TOWN_DUNGEON</TownType>
 	<Editable>
 		<NameFileRef href="/Text/Game/Heroes/Persons/Dungeon/Segref/Name.txt"/>

@@ -454,7 +454,7 @@ function TriggerHeroSpe_Turn(side,hero_name,hero_id,unit)
         print("Trigger random Ice Bolt !")
         HeroCast_RandomEnnemy(side,hero_id,4,FREE_MANA);
         setATB(hero_id,1);
-    end,
+    end;
     -- Inferno
     -- if hero_name == "Jazaz" and hero_id == unit then
     --     print("Trigger hero random attack !")

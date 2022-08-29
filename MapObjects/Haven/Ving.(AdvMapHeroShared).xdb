@@ -40,11 +40,11 @@
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Haven/Griffon_Commander.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Heaven/Heaven_Irina_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
-	<HeroCharacterArena href="/Characters/Heroes/Freyda.(Character).xdb#xpointer(/Character)"/>
-	<HeroCharacterArenaMelee href="/Characters/Heroes/Freyda_Strike.(Character).xdb#xpointer(/Character)"/>
-	<HeroCharacterAdventure href="/Characters/Heroes/Freyda_LOD.(Character).xdb#xpointer(/Character)"/>
-	<HeroIndividualCamera/>
-	<CombatVisual href="/GameMechanics/CreatureVisual/Heroes/Knight.xdb#xpointer(/CreatureVisual)"/>
+	<HeroCharacterArena href="/Characters/Heroes/Haven/Ving/HeroCharacterArena.xdb#xpointer(/Character)" />
+	<HeroCharacterArenaMelee href="/Characters/Heroes/Haven/Ving/HeroCharacterArenaMelee.xdb#xpointer(/Character)" />
+	<HeroCharacterAdventure href="/Characters/Heroes/Haven/Ving/HeroCharacterAdventure.xdb#xpointer(/Character)" />
+	<HeroIndividualCamera href="/Characters/Heroes/Haven/Ving/HeroIndividualCamera.xdb#xpointer(/Camera)" />
+	<CombatVisual href="/Characters/Heroes/Haven/Ving/CombatVisual.xdb#xpointer(/CreatureVisual)" />
 	<TownType>TOWN_HEAVEN</TownType>
 	<Editable>
 		<NameFileRef href="/Text/Game/Heroes/Persons/Haven/Ving/Name.txt"/>
