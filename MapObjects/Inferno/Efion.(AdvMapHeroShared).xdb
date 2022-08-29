@@ -64,7 +64,7 @@
 		</perkIDs>
 		<spellIDs>
 			<Item>SPELL_FORGETFULNESS</Item>
-			<Item>SPELL_SLOW</Item>			
+			<Item>SPELL_BLIND</Item>			
 		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>

@@ -189,23 +189,12 @@ end;
 function Spe_GiveResources(hero,player,resource,chosenamount)
 	print("Adding resources from hero "..hero);
 	-- resource : 0 wood - 1 ore - 2 mercury - 3 crystal - 4 sulfur - 5 gems - 6 gold
-	local currentamount = GetPlayerResource(player,resource);
-	local newamount = currentamount + chosenamount;
-	if chosenamount > 0 then
+	if chosenamount ~= nil and chosenamount > 0 then
+		local currentamount = GetPlayerResource(player,resource);
+		local newamount = currentamount + chosenamount;
 		SetPlayerResource(player,resource,newamount);
 		ShowFlyingSign({"/Text/Game/Scripts/Resources.txt"; num=chosenamount},hero,player,5);
 	end;
-end;
-
-function Spe_GetResourceAmount(hero)
-	print("Compute amount of resources for hero "..hero);
-	local level = GetHeroLevel(hero);
-	if hero == "Orlando" then return (level-1) * 250 end;
-	if hero == "Mephala" then return trunc(level * 0.5) end;
-	if hero == "Faiz" then return 250 * power(2, trunc(0.143*level)) - 250 end;
-	if hero == "Harkenraz" then return trunc(0.34*level) end;
-	if hero == "Menel" then return trunc(level * 0.2) end;
-	return 1;
 end;
 
 
@@ -219,7 +208,8 @@ function ApplyHeroesSpe_daily(player)
 	if heroes~=nil then
 		-- Haven
 		if contains(heroes,"Orlando") ~= nil then
-			startThread(Spe_GiveResources,"Orlando",player,6,Spe_GetResourceAmount("Orlando")); -- Gold - 250*level
+			local amount = (GetHeroLevel("Orlando") - 1) * 250;
+			startThread(Spe_GiveResources,"Orlando",player,6,amount); -- Gold - 250*level
 		end;
 		if contains(heroes,"Sarge") ~= nil then
 			startThread(Spe_AddCreatures,"Sarge",player,11,12,111,0.05) -- Cavalier - 1:10 - 2:30 - 3:50
@@ -241,14 +231,17 @@ function ApplyHeroesSpe_daily(player)
 			startThread(Spe_GiveStats,"Elleshar",player,0,300); -- Exp - +300 * level
 		end;
 		if contains(heroes,"Mephala") ~= nil then
-			startThread(Spe_GiveResources,"Mephala",player,random(1),Spe_GetResourceAmount("Mephala")); -- Wood or Ore - +1 / 2 levels
+			local amount = trunc(GetHeroLevel("Mephala") * 0.5);
+			local res = random(1);
+			startThread(Spe_GiveResources,"Mephala",player,res,amount); -- Wood or Ore - +1 / 2 levels
 		end;
 		-- Academy
 		if contains(heroes,"Havez") ~= nil then
 			startThread(Spe_AddCreatures3,"Havez",player,57,58,159,1); -- Gremlins (other heroes) - 1*level
 		end;
 		if contains(heroes,"Faiz") ~= nil then
-			startThread(Spe_GiveResources,"Faiz",player,6,Spe_GetResourceAmount("Faiz")); -- Gold - 1:250 - 7:500 - 14:1000 - 21:2000 ... 49:32k
+			local amount = 250 * power(2, trunc(0.143 * GetHeroLevel("Faiz")));
+			startThread(Spe_GiveResources,"Faiz",player,6,amount); -- Gold - 1:250 - 7:500 - 14:1000 - 21:2000 ... 49:32k
 		end;
 		if contains(heroes,"Tan") ~= nil then
 			startThread(Spe_AddCreatures,"Tan",player,65,66,163,0.15); -- Djinn - 1:4 - 2:10 - 3:17 - 4:24 - 5:30 ... 8:50
@@ -273,24 +266,26 @@ function ApplyHeroesSpe_daily(player)
 		end;
 		if contains(heroes,"Xerxon") ~= nil then
 			startThread(Spe_AddCreatures2,"Xerxon",player,89,0.1); -- Black Knight - 1:5 - 2:15 - 3:25 - 4:35 - 5:45
+			startThread(Spe_UpgradeCreatures,"Xerxon",player,89,90,37,1); -- B.Knights to D.Knights for 1 Lich
 		end;
 		-- Inferno
 		if contains(heroes,"Calid") ~= nil then
 			startThread(Spe_AddCreatures,"Calid",player,19,20,133,0.33); -- Hell hounds - 1:2 - 2:5 - 3:8 - 4:11 - ... - 17:50
 		end;
 		if contains(heroes,"Harkenraz") ~= nil then
-			startThread(Spe_GiveResources,"Harkenraz",player,6,500); -- Gold - +500
-			startThread(Spe_GiveResources,"Harkenraz",player,4,Spe_GetResourceAmount("Harkenraz")); -- Sulfur - +1 / 3 levels
+			local amount = trunc(0.34 * GetHeroLevel("Harkenraz"));
+			startThread(Spe_GiveResources,"Harkenraz",player,4,amount); -- Sulfur - +1 / 3 levels
 		end;
-		if contains(heroes,"Ash") ~= nil then
-			startThread(Spe_AddCreatures,"Ash",player,23,24,135,0.13); -- Hellmare - 1:4 - 2:12 - 3:20 - 4:27 ... 7:50
+		if contains(heroes,"Grok") ~= nil then
+			startThread(Spe_AddCreatures,"Ash",player,23,24,135,0.12); -- Hellmare - 1:5 - 2:13 - 3:21 - 4:30 - 5:38 - 6:46
 		end;
 		if contains(heroes,"Sovereign") ~= nil then
 			startThread(Spe_AddCreatures,"Sovereign",player,25,26,136,0.09); -- Pitlord - 1:6 - 2:17 - 3:28 - 4:39 - 5:50
 		end;
 		-- Dungeon
 		if contains(heroes,"Menel") ~= nil then
-			startThread(Spe_GiveResources,"Menel",player,6,Spe_GetResourceAmount("Menel")); -- Gold - 5:100 - 10:200 - 20:400 ... 50:1000
+			local amount = trunc(GetHeroLevel("Menel") * 0.2);
+			startThread(Spe_GiveResources,"Menel",player,6,amount); -- Gold - 5:100 - 10:200 - 20:400 ... 50:1000
 		end;
 		if contains(heroes,"Ferigl") ~= nil then
 			startThread(Spe_AddCreatures,"Ferigl",player,77,78,141,0.12); -- Raptor - 1:5 - 2:13 - 3:21 - 4:30 - 5:38 - 6:46
@@ -355,6 +350,9 @@ function ApplyHeroesSpe_weekly(player)
 			startThread(Spe_AddRecruits,"Egil",player,CREATURE_RUNE_MAGE,TOWN_BUILDING_DWELLING_5,0.3);
 		end;
 		-- Necropolis
+		if contains(heroes,"Nemor") ~= nil then
+			startThread(Spe_AddCreatures2,"Nemor",player,157,0.13); -- Banshee - 1:4 - 2:12 - 3:20 - 4:27 ... 7:50
+		end;
 		if contains(heroes,"Straker") ~= nil then
 			startThread(Spe_AddRecruits,"Straker",player,CREATURE_WALKING_DEAD,TOWN_BUILDING_DWELLING_2,2.5);
 		end;
@@ -363,11 +361,14 @@ function ApplyHeroesSpe_weekly(player)
 		end;
 		-- Inferno
 		if contains(heroes,"Zydar") ~= nil then
-			startThread(Spe_AddRecruits,"Zydar",player,CREATURE_IMP,TOWN_BUILDING_DWELLING_1,2.5); -- Imps - 2.5 * level recruits per week
+			startThread(Spe_AddRecruits,"Zydar",player,CREATURE_FAMILIAR,TOWN_BUILDING_DWELLING_1,2.5); -- Imps - 2.5 * level recruits per week
 			startThread(Spe_AddRecruits,"Zydar",player,CREATURE_DEMON,TOWN_BUILDING_DWELLING_2,1.5); -- Horned demons - 1.5 * level recruits per week
 			startThread(Spe_AddRecruits,"Zydar",player,CREATURE_DEVIL,TOWN_BUILDING_DWELLING_7,0.1); -- Devils - 0.1 * level recruits per week
 		end;
-		if contains(heroes,"Malustar") ~= nil then startThread(Spe_GiveStats,"Malustar",player,1+random(3),0.2) end; -- Random attribute - +1 / 5*lvl / week
+		if contains(heroes,"Malustar") ~= nil then
+			local stat = 1+random(3);
+			startThread(Spe_GiveStats,"Malustar",player,stat,0.2); -- Random attribute - +1 / 5*lvl / week
+		end;
 		-- Dungeon
 		if contains(heroes,"Ohtarig") ~= nil then startThread(Spe_AddRecruits,"Ohtarig",player,CREATURE_SCOUT,TOWN_BUILDING_DWELLING_1,3) end;
 		if contains(heroes,"Urunir") ~= nil then startThread(Spe_AddRecruits,"Urunir",player,CREATURE_WITCH,TOWN_BUILDING_DWELLING_2,2.4) end;
@@ -376,7 +377,10 @@ function ApplyHeroesSpe_weekly(player)
 		if contains(heroes,"Hero8") ~= nil then startThread(Spe_AddRecruits,"Hero8",player,CREATURE_ORC_WARRIOR,TOWN_BUILDING_DWELLING_3,1.4) end;
 		if contains(heroes,"Hero4") ~= nil then startThread(Spe_AddRecruits,"Hero4",player,CREATURE_CENTAUR,TOWN_BUILDING_DWELLING_4,0.8) end;
 		if contains(heroes,"Kunyak") ~= nil then startThread(Spe_AddRecruits,"Kunyak",player,CREATURE_ORCCHIEF_BUTCHER,TOWN_BUILDING_DWELLING_5,0.3) end;
-		if contains(heroes,"Zouleika") ~= nil then startThread(Spe_GiveStats,"Zouleika",player,3+random(1),0.1) end; --Spellpower or Knowledge - +1 / 10*lvl / week
+		if contains(heroes,"Zouleika") ~= nil then
+			local stat = 3+random(1);
+			startThread(Spe_GiveStats,"Zouleika",player,stat,0.1); --Spellpower or Knowledge - +1 / 10*lvl / week
+		end;
 	end;
 	print("Weekly run done.");
 	PLAYER_WEEKLY_EVENTS_CHECK[player] = TURN;

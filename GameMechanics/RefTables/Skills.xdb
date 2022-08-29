@@ -10013,19 +10013,19 @@
 					<Item>
 						<Class>HERO_CLASS_NECROMANCER</Class>
 						<dependenciesIDs>
-							<Item>HERO_SKILL_PROTECTION</Item>
+							<Item>HERO_SKILL_MASTER_OF_ICE</Item>
 						</dependenciesIDs>
 					</Item>
 					<Item>
 						<Class>HERO_CLASS_REAVER</Class>
 						<dependenciesIDs>
-							<Item>HERO_SKILL_PROTECTION</Item>
+							<Item>HERO_SKILL_MASTER_OF_ICE</Item>
 						</dependenciesIDs>
 					</Item>
 					<Item>
 						<Class>HERO_CLASS_DEATHKNIGHT</Class>
 						<dependenciesIDs>
-							<Item>HERO_SKILL_PROTECTION</Item>
+							<Item>HERO_SKILL_MASTER_OF_ICE</Item>
 						</dependenciesIDs>
 					</Item>
 				</SkillPrerequisites>

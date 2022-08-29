@@ -30,14 +30,14 @@
 	<Icon128/>
 	<InternalName>Faiz</InternalName>
 	<Class>HERO_CLASS_WIZARD</Class>
-	<Specialization>HERO_SPEC_SUZERAIN</Specialization>
+	<Specialization/>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
 		<SkillID>HERO_SKILL_ARTIFICIER</SkillID>
 	</PrimarySkill>
 	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Academy/Suzerain/Name.txt"/>
 	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Academy/Suzerain/Description.txt"/>
-	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Haven/Suzerain.xdb#xpointer(/Texture)"/>
+	<SpecializationIcon href="/Textures/Interface/TreeOfKnowledge/Accept_Texture.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Academy/Academy_Faiz_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/Wizard.(Character).xdb#xpointer(/Character)"/>

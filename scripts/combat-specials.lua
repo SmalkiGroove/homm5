@@ -14,8 +14,12 @@ TRIGGER_LIMIT_PER_COMBAT = {
     ["Jeddite"]=-1,
     ["Minasli"]=-1,
     ["Rissa"]=-1,
+    ["Gles"]=-1,
+    ["Giovanni"]=-1,
     ["Sheltem"]=-1,
     ["Calid2"]=-1,
+    ["Agrael"]=-1,
+    ["Deleb"]=-1,
 } -- -1 means no limit
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -349,7 +353,7 @@ function TriggerHeroSpe_Start(side,hero_name,hero_id)
         HeroCast_Area(hero_id,283,x,10,FREE_MANA);
     end;
     if hero_name == "Cyrus" then
-        print("Trigger mages spell !")
+        print("Trigger mages magic fist !")
         UnitCast_RandomEnnemy(side,63,64,162,2);
     end;
     if hero_name == "Astral" then
@@ -366,13 +370,19 @@ function TriggerHeroSpe_Start(side,hero_name,hero_id)
         print("Trigger spearwielders random shoot !")
         UnitRandomShoot(side,94,95,167);
     end;
+    -- Necropolis
+    if hero_name == "Archilus" then
+        print("Trigger summon avatar of death !")
+        HeroCast_Global(hero_id,200,FREE_MANA);
+    end;
     -- Inferno
     if hero_name == "Jazaz" then
-        print("Trigger hero attacks !")
-        for i = 1,3 do
-            setATB(hero_id,1);
-            HeroAttack_RandomEnnemy(side);
-        end;
+        print("Trigger mark of the damned")
+        HeroCast_RandomEnnemy(side,hero_id,56,NO_COST);
+    end;
+    if hero_name == "Efion" then
+        print("Trigger random blindness !")
+        HeroCast_RandomEnnemy(side,hero_id,19,FREE_MANA);
     end;
     if hero_name == "Biara" then
         print("Trigger succubus random shoot !")
@@ -383,6 +393,12 @@ function TriggerHeroSpe_Start(side,hero_name,hero_id)
         local m = GetUnitMaxManaPoints(hero_id) * 0.1;
         SummonStack(side,26,trunc(0.1*m*m),0);
         SummonStack(side,26,trunc(0.1*m*m),0);
+    end;
+    if hero_name == "Deleb" then
+        print("Trigger mine fields !")
+        local x = 10 - 5 * side;
+        HeroCast_Area(hero_id,38,x,3,FREE_MANA);
+        HeroCast_Area(hero_id,38,x,8,FREE_MANA);
     end;
 end;
 
@@ -428,7 +444,40 @@ function TriggerHeroSpe_Turn(side,hero_name,hero_id,unit)
             setATB(hero_id,1);
         end;
     end;
+    -- Necropolis
+    if hero_name == "Gles" and hero_id == unit then
+        print("Trigger random Plague !")
+        HeroCast_RandomEnnemy(side,hero_id,14,FREE_MANA);
+        setATB(hero_id,1);
+    end;
+    if hero_name == "Giovanni" and hero_id == unit then
+        print("Trigger random Ice Bolt !")
+        HeroCast_RandomEnnemy(side,hero_id,4,FREE_MANA);
+        setATB(hero_id,1);
+    end,
     -- Inferno
+    -- if hero_name == "Jazaz" and hero_id == unit then
+    --     print("Trigger hero random attack !")
+    --     HeroAttack_RandomEnnemy(side);
+    --     sleep(10);
+    --     setATB(hero_id,1);
+    -- end;
+    if hero_name == "Agrael" and hero_id ~= unit then
+        local id = GetCreatureType(unit);
+        if id ~= nil then
+            if (id >= 15 and id <= 28) or (id >= 131 and id <= 137) then
+                print("Trigger creature explosion !")
+                local x,y = GetUnitPosition(unit);
+                UnitCastAreaSpell(unit,162,x,y);
+                setATB(unit,1);
+            end;
+        end;
+    end;
+    if hero_name == "Deleb" and hero_id == unit then
+        print("Trigger random Stone spikes !")
+        HeroCast_RandomEnnemyArea(side,hero_id,237,FREE_MANA);
+        setATB(hero_id,1);
+    end;
     if hero_name == "Calid2" and hero_id == unit then
         print("Trigger random Fireball !")
         HeroCast_RandomEnnemyArea(side,hero_id,5,FREE_MANA);
