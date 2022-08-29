@@ -35,8 +35,8 @@
 		<Mastery>MASTERY_BASIC</Mastery>
 		<SkillID>HERO_SKILL_NECROMANCY</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Necropolis/Vamipre_Princess/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Necropolis/Vamipre_Princess/Description.txt"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Necropolis/Vampire_Princess/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Necropolis/Vampire_Princess/Description.txt"/>
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Necropolis/Vampire_Princess.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Necropolis/Necropolis_Lucretia_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>

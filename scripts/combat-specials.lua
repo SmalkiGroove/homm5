@@ -15,6 +15,7 @@ TRIGGER_LIMIT_PER_COMBAT = {
     ["Minasli"]=-1,
     ["Rissa"]=-1,
     ["Gles"]=-1,
+    ["Straker"]=-1,
     ["Giovanni"]=-1,
     ["Sheltem"]=-1,
     ["Calid2"]=-1,
@@ -375,6 +376,19 @@ function TriggerHeroSpe_Start(side,hero_name,hero_id)
         print("Trigger summon avatar of death !")
         HeroCast_Global(hero_id,200,FREE_MANA);
     end;
+    if hero_name == "Aislinn" then
+        print("Trigger cast mass weakness !")
+        HeroCast_Global(hero_id,210,FREE_MANA);
+    end; 
+    if hero_name == "Vidomina" then
+        print("Trigger random sorrow")
+        local e = GetUnits(1-side,CREATURE);
+        local m = GetUnitMaxManaPoints(hero_id) * 0.02;
+        local n = min(length(e),1+trunc(m));
+        for i = 1,n do
+            HeroCast_Target(hero_id,277,FREE_MANA,e[i-1]);
+        end;
+    end;
     -- Inferno
     if hero_name == "Jazaz" then
         print("Trigger mark of the damned")
@@ -448,6 +462,12 @@ function TriggerHeroSpe_Turn(side,hero_name,hero_id,unit)
     if hero_name == "Gles" and hero_id == unit then
         print("Trigger random Plague !")
         HeroCast_RandomEnnemy(side,hero_id,14,FREE_MANA);
+        setATB(hero_id,1);
+    end;
+    if hero_name == "Straker" and hero_id == unit then
+        print("Trigger summon zombies !")
+        local m = GetUnitMaxManaPoints(hero_id);
+        SummonCreature(side,32,m);
         setATB(hero_id,1);
     end;
     if hero_name == "Giovanni" and hero_id == unit then

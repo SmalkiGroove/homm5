@@ -8,7 +8,7 @@ TURN = 1; -- current turn
 
 ATTRIBUTE_NAME = {"Experience", "Offense", "Defense", "Spellpower", "Knowledge", "Luck", "Morale", "Movement", "Mana"};
 RESOURCE_NAME = {"wood", "ores", "mercury", "cystals", "sulfur", "gems", "golds"};
-ONE_TIME_BONUSES = {["Isabell"]=0,["Brem"]=0,["Linaas"]=0,["Metlirn"]=0,["Josephine"]=0};
+ONE_TIME_BONUSES = {["Isabell"]=0,["Brem"]=0,["Linaas"]=0,["Metlirn"]=0,["Josephine"]=0,["Thant"]=0};
 
 ARTIFACTS_GAINS = {
 	["Brem0"]=26,
@@ -23,6 +23,12 @@ ARTIFACTS_GAINS = {
 	["Josephine3"]=68,
 	["Josephine4"]=45,
 	["Josephine5"]=79, -- Tarot deck / Book of power / Tunic of enlightment / Sandal of the blessed / Staff of sar-issus / Tome of summoning magic
+	["Thant0"]=55,
+	["Thant1"]=64,
+	["Thant2"]=71,
+	["Thant3"]=63,
+	["Thant4"]=83,
+	["Thant5"]=78, -- Necromancer's Helm / Tunic of carved flesh / Amulet of Necromancy / Cursed Ring / Skull of Markal / Tome of dark magic
 };
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -258,8 +264,8 @@ function ApplyHeroesSpe_daily(player)
 			startThread(Spe_AddCreatures,"Hangvul2",player,102,103,171,0.09); -- Thane - 1:6 - 2:17 - 3:28 - 4:39 - 5:50
 		end;
 		-- Necropolis
-		if contains(heroes,"Effig") ~= nil then
-			startThread(Spe_AddCreatures,"Effig",player,37,38,156,0.12); -- Lich - 1:5 - 2:13 - 3:21 - 4:30 - 5:38 - 6:46
+		if contains(heroes,"Aberrar") ~= nil then
+			startThread(Spe_AddCreatures,"Aberrar",player,37,38,156,0.12); -- Lich - 1:5 - 2:13 - 3:21 - 4:30 - 5:38 - 6:46
 		end;
 		if contains(heroes,"Thant") ~= nil then
 			startThread(Spe_AddCreatures2,"Thant",player,116,0.25); -- Mummy - 1:2 - 2:6 - 3:10 - 4:14 - 5:18 ... 13:50
@@ -353,11 +359,13 @@ function ApplyHeroesSpe_weekly(player)
 		if contains(heroes,"Nemor") ~= nil then
 			startThread(Spe_AddCreatures2,"Nemor",player,157,0.13); -- Banshee - 1:4 - 2:12 - 3:20 - 4:27 ... 7:50
 		end;
-		if contains(heroes,"Straker") ~= nil then
-			startThread(Spe_AddRecruits,"Straker",player,CREATURE_WALKING_DEAD,TOWN_BUILDING_DWELLING_2,2.5);
+		if contains(heroes,"Arantir") ~= nil then
+			startThread(Spe_AddRecruits,"Arantir",player,CREATURE_SKELETON,TOWN_BUILDING_DWELLING_1,3.5); -- Skeletons - 3.5 * level recruits per week
+			startThread(Spe_AddRecruits,"Arantir",player,CREATURE_WALKING_DEAD,TOWN_BUILDING_DWELLING_2,2); -- Walking deads - 2 * level recruits per week
+			startThread(Spe_AddRecruits,"Arantir",player,CREATURE_GHOST,TOWN_BUILDING_DWELLING_3,0.75); -- Ghosts - 0.75 * level recruits per week
 		end;
 		if contains(heroes,"Tamika") ~= nil then
-			startThread(Spe_AddRecruits,"Tamika",player,CREATURE_VAMPIRE,TOWN_BUILDING_DWELLING_4,0.9);
+			startThread(Spe_CallCreatures,"Tamika",player,CREATURE_VAMPIRE,TOWN_BUILDING_DWELLING_4,1.5); -- Vampires - 1.5 * level transfered
 		end;
 		-- Inferno
 		if contains(heroes,"Zydar") ~= nil then
@@ -370,13 +378,25 @@ function ApplyHeroesSpe_weekly(player)
 			startThread(Spe_GiveStats,"Malustar",player,stat,0.2); -- Random attribute - +1 / 5*lvl / week
 		end;
 		-- Dungeon
-		if contains(heroes,"Ohtarig") ~= nil then startThread(Spe_AddRecruits,"Ohtarig",player,CREATURE_SCOUT,TOWN_BUILDING_DWELLING_1,3) end;
-		if contains(heroes,"Urunir") ~= nil then startThread(Spe_AddRecruits,"Urunir",player,CREATURE_WITCH,TOWN_BUILDING_DWELLING_2,2.4) end;
-		if contains(heroes,"Darkstorm") ~= nil then startThread(Spe_AddRecruits,"Darkstorm",player,CREATURE_MINOTAUR,TOWN_BUILDING_DWELLING_3,1.4) end;
+		if contains(heroes,"Ohtarig") ~= nil then
+			startThread(Spe_AddRecruits,"Ohtarig",player,CREATURE_SCOUT,TOWN_BUILDING_DWELLING_1,3);
+		end;
+		if contains(heroes,"Urunir") ~= nil then
+			startThread(Spe_AddRecruits,"Urunir",player,CREATURE_WITCH,TOWN_BUILDING_DWELLING_2,2.4);
+		end;
+		if contains(heroes,"Darkstorm") ~= nil then
+			startThread(Spe_AddRecruits,"Darkstorm",player,CREATURE_MINOTAUR,TOWN_BUILDING_DWELLING_3,1.4);
+		end;
 		-- Stronghold
-		if contains(heroes,"Hero8") ~= nil then startThread(Spe_AddRecruits,"Hero8",player,CREATURE_ORC_WARRIOR,TOWN_BUILDING_DWELLING_3,1.4) end;
-		if contains(heroes,"Hero4") ~= nil then startThread(Spe_AddRecruits,"Hero4",player,CREATURE_CENTAUR,TOWN_BUILDING_DWELLING_4,0.8) end;
-		if contains(heroes,"Kunyak") ~= nil then startThread(Spe_AddRecruits,"Kunyak",player,CREATURE_ORCCHIEF_BUTCHER,TOWN_BUILDING_DWELLING_5,0.3) end;
+		if contains(heroes,"Hero8") ~= nil then
+			startThread(Spe_AddRecruits,"Hero8",player,CREATURE_ORC_WARRIOR,TOWN_BUILDING_DWELLING_3,1.4);
+		end;
+		if contains(heroes,"Hero4") ~= nil then
+			startThread(Spe_AddRecruits,"Hero4",player,CREATURE_CENTAUR,TOWN_BUILDING_DWELLING_4,0.8);
+		end;
+		if contains(heroes,"Kunyak") ~= nil then
+			startThread(Spe_AddRecruits,"Kunyak",player,CREATURE_ORCCHIEF_BUTCHER,TOWN_BUILDING_DWELLING_5,0.3);
+		end;
 		if contains(heroes,"Zouleika") ~= nil then
 			local stat = 3+random(1);
 			startThread(Spe_GiveStats,"Zouleika",player,stat,0.1); --Spellpower or Knowledge - +1 / 10*lvl / week
@@ -427,6 +447,16 @@ function ApplyHeroesSpe_onetime(player)
 					GiveArtifact("Josephine",ARTIFACTS_GAINS["Josephine"..i]);
 				end;
 				ONE_TIME_BONUSES["Josephine"] = 1+level;
+			end; --Artifacts
+		end;
+		-- Necropolis
+		if contains(heroes,"Thant") ~= nil then
+			local level = trunc(0.1*GetHeroLevel("Thant"));
+			if (ONE_TIME_BONUSES["Thant"] <= level) then
+				for i = ONE_TIME_BONUSES["Thant"],level do
+					GiveArtifact("Thant",ARTIFACTS_GAINS["Thant"..i]);
+				end;
+				ONE_TIME_BONUSES["Thant"] = 1+level;
 			end; --Artifacts
 		end;
 	end;
