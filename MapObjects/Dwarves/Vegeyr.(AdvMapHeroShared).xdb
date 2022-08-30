@@ -35,8 +35,8 @@
 		<Mastery>MASTERY_BASIC</Mastery>
 		<SkillID>HERO_SKILL_RUNELORE</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Fortress/Weilder_of_Fire/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Fortress/Weilder_of_Fire/Description.txt"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Fortress/xxx/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Fortress/xxx/Description.txt"/>
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Academy/Weilder_of_Fire.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/UI/H5A1/Icons/Heroes/Portrets128x128/Vegeyr.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
@@ -64,6 +64,7 @@
 		</perkIDs>
 		<spellIDs>
 			<Item>SPELL_FIREBALL</Item>
+			<Item>SPELL_FIREWALL</Item>
 		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>

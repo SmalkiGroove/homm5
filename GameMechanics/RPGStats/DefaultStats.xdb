@@ -1979,7 +1979,7 @@
 				<ShrugDarkness_EnemySpellpowerMultiplier>0.5</ShrugDarkness_EnemySpellpowerMultiplier>
 				<RunicArmor_SpellpowerBonus>8</RunicArmor_SpellpowerBonus>
 				<RunicMachines_InitiativeBonus>3</RunicMachines_InitiativeBonus>
-				<Mentoring_ExpPecentToGiveToVisitor>0.25</Mentoring_ExpPecentToGiveToVisitor>
+				<Mentoring_ExpPecentToGiveToVisitor>0.33</Mentoring_ExpPecentToGiveToVisitor>
 				<Empathy_ATBAffectionOnMorale>0.1</Empathy_ATBAffectionOnMorale>
 				<Preparation_RetaliateToNER>true</Preparation_RetaliateToNER>
 			</Runemage>
@@ -2168,14 +2168,14 @@
 				<BorderGuard_LevelDivisor>1</BorderGuard_LevelDivisor>
 				<BorderGuard_DefenceBonusPerLevel>1</BorderGuard_DefenceBonusPerLevel>
 				<Courtier_DiplomacyBonusPerLevel>0.1</Courtier_DiplomacyBonusPerLevel>
-				<MountainKing_ActiveRune>SPELL_RUNE_OF_STUNNING</MountainKing_ActiveRune>
+				<MountainKing_ActiveRune>SPELL_RUNE_OF_DRAGONFORM</MountainKing_ActiveRune>
 				<Researcher_ChanceToGetExtraRune>0.25</Researcher_ChanceToGetExtraRune>
 				<SacredHammer_ChanceToCastBase>0.20</SacredHammer_ChanceToCastBase>
 				<SacredHammer_ChanceToCastPerLevel>0.01</SacredHammer_ChanceToCastPerLevel>
 				<SacredHammer_SpellToCast>SPELL_CELESTIAL_SHIELD</SacredHammer_SpellToCast>
 				<Economist_FineRuneChanceBonusBase>0.2</Economist_FineRuneChanceBonusBase>
 				<Economist_FineRuneChanceBonusPerLevel>0.01</Economist_FineRuneChanceBonusPerLevel>
-				<FineRuneProbability>0.5</FineRuneProbability>
+				<FineRuneProbability>0.4</FineRuneProbability>
 				<StrongRuneCostConstant>3</StrongRuneCostConstant>
 				<StrongAndFineRuneCostConstant>2</StrongAndFineRuneCostConstant>
 			</Runemage>

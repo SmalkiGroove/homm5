@@ -8,7 +8,7 @@ TURN = 1; -- current turn
 
 ATTRIBUTE_NAME = {"Experience", "Offense", "Defense", "Spellpower", "Knowledge", "Luck", "Morale", "Movement", "Mana"};
 RESOURCE_NAME = {"wood", "ores", "mercury", "cystals", "sulfur", "gems", "golds"};
-ONE_TIME_BONUSES = {["Isabell"]=0,["Brem"]=0,["Linaas"]=0,["Metlirn"]=0,["Josephine"]=0,["Thant"]=0};
+ONE_TIME_BONUSES = {["Isabell"]=0,["Brem"]=0,["Linaas"]=0,["Metlirn"]=0,["Josephine"]=0,["Thant"]=0,["KingTolghar"]=0,["Vilma"]=0};
 
 ARTIFACTS_GAINS = {
 	["Brem0"]=26,
@@ -192,6 +192,17 @@ function Spe_GiveStats2(hero,player,stat,coef)
 	end;
 end;
 
+function Spe_GiveStats3(hero,player,stat,coef)
+	print("Adding statistics to hero "..hero);
+	local total = GetHeroStat(hero,stat);
+	local value = round(coef*total);
+	if value >= 1 then
+		ChangeHeroStat(hero,stat,value);
+		local attribute = ATTRIBUTE_NAME[stat];
+		ShowFlyingSign({"/Text/Game/Scripts/Stats.txt"; stat=attribute},hero,player,5);
+	end;
+end;
+
 function Spe_GiveResources(hero,player,resource,chosenamount)
 	print("Adding resources from hero "..hero);
 	-- resource : 0 wood - 1 ore - 2 mercury - 3 crystal - 4 sulfur - 5 gems - 6 gold
@@ -260,8 +271,19 @@ function ApplyHeroesSpe_daily(player)
 			startThread(Spe_UpgradeCreatures,"Timerkhan",player,114,91,160,50); -- Eagle to Phoenix for 50 Elemental Gargoyles
 		end;
 		-- Fortress
+		if contains(heroes,"Hangvul") ~= nil then
+			startThread(Spe_GiveStats3,"Hangvul",player,0,0.01); -- Exp - 1% total hero exp
+		end;
+		if contains(heroes,"Ingvar") ~= nil then
+			startThread(Spe_AddCreatures,"Ingvar",player,92,93,166,0.5); -- Defenders - 1:1 - 2:3 - 3:5 - 4:7 - 5:9 ... 25:49
+		end;
 		if contains(heroes,"Hangvul2") ~= nil then
 			startThread(Spe_AddCreatures,"Hangvul2",player,102,103,171,0.09); -- Thane - 1:6 - 2:17 - 3:28 - 4:39 - 5:50
+		end;
+		if contains(heroes,"Bersy") ~= nil then
+			local amount = trunc(GetHeroLevel("Bersy") * 0.2);
+			startThread(Spe_GiveResources,"Bersy",player,3,amount); -- Crystal - +1 / 5 levels
+			startThread(Spe_GiveResources,"Bersy",player,5,amount); -- Gem - +1 / 5 levels
 		end;
 		-- Necropolis
 		if contains(heroes,"Aberrar") ~= nil then
@@ -351,11 +373,8 @@ function ApplyHeroesSpe_weekly(player)
 			startThread(Spe_AddRecruits,"Davius",player,CREATURE_RAKSHASA,TOWN_BUILDING_DWELLING_6,0.25); -- Rakshasas - 0.25 * level recruits per week
 		end;
 		-- Fortress
-		if contains(heroes,"Ingvar") ~= nil then
-			startThread(Spe_AddRecruits,"Ingvar",player,CREATURE_DEFENDER,TOWN_BUILDING_DWELLING_1,3);
-		end;
 		if contains(heroes,"Rolf") ~= nil then
-			startThread(Spe_AddRecruits,"Rolf",player,CREATURE_BEAR_RIDER,TOWN_BUILDING_DWELLING_4,0.9);
+			startThread(Spe_AddRecruits,"Rolf",player,CREATURE_BEAR_RIDER,TOWN_BUILDING_DWELLING_4,1.75);
 		end;
 		if contains(heroes,"Egil") ~= nil then
 			startThread(Spe_AddRecruits,"Egil",player,CREATURE_RUNE_MAGE,TOWN_BUILDING_DWELLING_5,0.3);
@@ -456,6 +475,25 @@ function ApplyHeroesSpe_onetime(player)
 				end;
 				ONE_TIME_BONUSES["Josephine"] = 1+level;
 			end; --Artifacts
+		end;
+		-- Fortress
+		if contains(heroes,"KingTolghar") ~= nil then
+			if (ONE_TIME_BONUSES["KingTolghar"] == 0) then
+				ChangeHeroStat("KingTolghar",5,2);
+				ChangeHeroStat("KingTolghar",6,2);
+				ONE_TIME_BONUSES["KingTolghar"] = 1;
+			end; --Luck and Morale +2
+		end;
+		if contains(heroes,"Vilma") ~= nil then
+			if (ONE_TIME_BONUSES["Vilma"] == 0) then
+				if (GetHeroLevel("Vilma") >= 40) then
+					GiveArtifact("Vilma",48);
+					GiveArtifact("Vilma",49);
+					GiveArtifact("Vilma",50);
+					GiveArtifact("Vilma",51);
+					ONE_TIME_BONUSES["Vilma"] = 1;
+				end;
+			end; -- Dwarven artfacts set
 		end;
 		-- Necropolis
 		if contains(heroes,"Thant") ~= nil then

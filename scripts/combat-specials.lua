@@ -69,6 +69,25 @@ function UnitPlayFirst(side,id0,id1,id2)
     if GetHero(1-side) then setATB(GetHero(1-side),0) end;
 end;
 
+function WarMachinePlayFirst(side,type)
+    local war_machines = GetUnits(side,WAR_MACHINE);
+    for i,wm in war_machines do
+        if GetWarMachineType(wm) == type then
+            setATB(wm,1);
+        end;
+    end;
+    local creatures = GetUnits(side,CREATURE);
+    for i,cr in creatures do
+        setATB(cr,0);
+    end;
+    local ennemies = GetUnits(1-side,CREATURE);
+    for i,en in ennemies do
+        setATB(en,0);
+    end;
+    setATB(GetHero(side),0);
+    if GetHero(1-side) then setATB(GetHero(1-side),0) end;
+end;
+
 function UnitPlayNext_Creature(side,id0,id1,id2)
     local creatures = GetUnits(side,CREATURE);
     for i,cr in creatures do
@@ -367,9 +386,28 @@ function TriggerHeroSpe_Start(side,hero_name,hero_id)
         end;
     end;
     -- Fortress
+    if hero_name == "Wulfstan" then
+        print("Trigger ballista play first !")
+        WarMachinePlayFirst(side,WAR_MACHINE_BALLISTA);
+    end;
     if hero_name == "Skeggy" then
         print("Trigger spearwielders random shoot !")
         UnitRandomShoot(side,94,95,167);
+    end;
+    if hero_name == "Brand" then
+        print("Trigger cast Fire walls !")
+        local m = GetUnitManaPoints(hero_id);
+        local x = 10 - 5 * side;
+        for y=2,9 do
+            HeroCast_Area(hero_id,236,x,y,FREE_MANA);
+        end;
+        SetMana(hero_id,m);
+    end;
+    if hero_name == "Bart" then
+        print("Trigger summon earth elems !")
+        local m = GetUnitMaxManaPoints(hero_id) * 0.5;
+        SummonStack(side,87,m,4);
+        SummonStack(side,87,m,4);
     end;
     -- Necropolis
     if hero_name == "Pelt" then
