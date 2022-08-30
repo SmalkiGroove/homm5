@@ -1966,7 +1966,7 @@
 			</Ranger>
 			<Runemage>
 				<StrongRune_2ndUseCostMultiplier>2</StrongRune_2ndUseCostMultiplier>
-				<FineRune_ChanceToActivateRuneForFree>40</FineRune_ChanceToActivateRuneForFree>
+				<FineRune_ChanceToActivateRuneForFree>50</FineRune_ChanceToActivateRuneForFree>
 				<QuicknessOfMind_InitiativeBonus>0.25</QuicknessOfMind_InitiativeBonus>
 				<TapRunes_ManaRestorePerKnowledge>0.5</TapRunes_ManaRestorePerKnowledge>
 				<RunicAttunement_EffectDurationInRounds>1</RunicAttunement_EffectDurationInRounds>
@@ -2175,7 +2175,7 @@
 				<SacredHammer_SpellToCast>SPELL_CELESTIAL_SHIELD</SacredHammer_SpellToCast>
 				<Economist_FineRuneChanceBonusBase>0.2</Economist_FineRuneChanceBonusBase>
 				<Economist_FineRuneChanceBonusPerLevel>0.01</Economist_FineRuneChanceBonusPerLevel>
-				<FineRuneProbability>0.4</FineRuneProbability>
+				<FineRuneProbability>0.5</FineRuneProbability>
 				<StrongRuneCostConstant>3</StrongRuneCostConstant>
 				<StrongAndFineRuneCostConstant>2</StrongAndFineRuneCostConstant>
 			</Runemage>

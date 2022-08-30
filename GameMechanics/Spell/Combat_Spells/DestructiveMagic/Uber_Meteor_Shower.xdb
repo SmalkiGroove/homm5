@@ -9,9 +9,8 @@
 	</SpellBookPredictions>
 	<CombatLogTexts/>
 	<Level>4</Level>
-	<MagicSchool>MAGIC_SCHOOL_SPECIAL</MagicSchool>
+	<MagicSchool>MAGIC_SCHOOL_DESTRUCTIVE</MagicSchool>
 	<RequiredHeroLevel>0</RequiredHeroLevel>
-	<IsAimed>true</IsAimed>
 	<TrainedCost>30</TrainedCost>
 	<damage>
 		<Item>
@@ -19,15 +18,15 @@
 			<PerPower>20</PerPower>
 		</Item>
 		<Item>
-			<Base>100</Base>
+			<Base>110</Base>
 			<PerPower>30</PerPower>
 		</Item>
 		<Item>
-			<Base>100</Base>
+			<Base>130</Base>
 			<PerPower>40</PerPower>
 		</Item>
 		<Item>
-			<Base>100</Base>
+			<Base>150</Base>
 			<PerPower>50</PerPower>
 		</Item>
 	</damage>
@@ -58,6 +57,7 @@
 		<Gem>0</Gem>
 		<Gold>0</Gold>
 	</sSpellCost>
+	<IsAimed>true</IsAimed>
 	<IsAreaAttack>true</IsAreaAttack>
 	<CanSelectDead>false</CanSelectDead>
 	<Target>TARGET_HOSTILE</Target>

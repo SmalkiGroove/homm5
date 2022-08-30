@@ -39,7 +39,7 @@
 	</PrimarySkill>
 	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Fortress/Thanes/Name.txt"/>
 	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Fortress/Thanes/Description.txt"/>
-	<SpecializationIcon href="/UI/H5A1/Icons/Creatures/Dwarven/128x128/warLord.(Texture).xdb#xpointer(/Texture)"/>
+	<SpecializationIcon href="/UI/H5A1/Icons/Creatures/Dwarven/128x128/Thane.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Fortress/Fortress_Hangvul2_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/Dwarves/Hangvul2/HeroCharacterArena.xdb#xpointer(/Character)" />

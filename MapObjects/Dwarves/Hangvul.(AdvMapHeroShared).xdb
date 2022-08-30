@@ -39,7 +39,7 @@
 	</PrimarySkill>
 	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Fortress/Researcher/Name.txt"/>
 	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Fortress/Researcher/Description.txt"/>
-	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Fortress/Researcher.xdb#xpointer(/Texture)"/>
+	<SpecializationIcon href="/UI/H5A1/Icons/Abilites/Heroes_Abillites/128x128/Researcher.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/UI/H5A1/Icons/Heroes/Portrets128x128/Hangvul.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
 	<HeroCharacterArena href="/Characters/Heroes/Dwarves/Hangvul/HeroCharacterArena.xdb#xpointer(/Character)" />

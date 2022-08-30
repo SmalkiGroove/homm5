@@ -31,6 +31,27 @@ ARTIFACTS_GAINS = {
 	["Thant5"]=78, -- Necromancer's Helm / Tunic of carved flesh / Amulet of Necromancy / Cursed Ring / Skull of Markal / Tome of dark magic
 };
 
+TRANSFORM_ARRAY_FORTRESS = { 0,
+	92,93,94,95,98,99,96,97,100,101,102,103,104,105,
+	92,93,94,95,98,99,96,97,100,101,102,103,104,105,
+	92,93,94,95,98,99,96,97,100,101,104,105,102,103,
+	94,95,92,93,98,99,96,97,100,101,102,103,104,105,
+	92,93,94,95,98,99,96,97,100,101,102,103,104,105,
+	92,93,94,95,98,99,96,97,102,103,100,101,104,105,
+	0,0,0,0,0,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+	166,167,169,168,170,171,172,
+	0,0,0,0,
+	92,93,96,97,98,99,94,95,100,101,102,103,104,105,
+	166,167,169,168,170,171,172,
+	166,167,169,168,171,170,172,
+	167,166,169,168,170,171,172,
+	166,167,169,168,170,172,171,
+	166,167,169,168,170,171,172,
+	0,0,0,0,0,0,0,
+	166,168,169,167,170,171,172,
+	0 };
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -119,7 +140,6 @@ function Spe_ArmyMultiply(hero,player,ids,coef)
 end;
 
 function Spe_UpgradeCreatures(hero,player,base,upgrade,consume,coef)
-	local army = GetHeroArmy(hero);
 	local nb_base = GetHeroCreatures(hero,base);
 	local nb_consume = GetHeroCreatures(hero,consume);
 	if nb_consume >= coef then
@@ -129,6 +149,29 @@ function Spe_UpgradeCreatures(hero,player,base,upgrade,consume,coef)
 		RemoveHeroCreatures(hero,base,nb);
 		AddHeroCreatures(hero,upgrade,nb);
 		-- ShowFlyingSign({"/Text/Game/Scripts/Evolve.txt"; num=nb},hero,player,5);
+	end;
+end;
+
+function Spe_UpgradeCreatures2(hero,player,base,upgrade)
+	local nb = GetHeroCreatures(hero,base);
+	RemoveHeroCreatures(hero,base,nb);
+	AddHeroCreatures(hero,upgrade,nb);
+	-- ShowFlyingSign({"/Text/Game/Scripts/Evolve.txt"; num=nb},hero,player,5);
+end;
+
+function Spe_TransformCreatures(hero,player,array)
+	local army = GetHeroArmy(hero);
+	for i=0,6 do
+		if army[i] then
+			print("transform unit "..army[i])
+			local id = array[army[i]];
+			print("... into unit "..id)
+			if id ~= 0 then
+				local n = GetHeroCreatures(hero,army[i]);
+				RemoveHeroCreatures(hero,army[i],n);
+				AddHeroCreatures(hero,id,n);
+			end;
+		end;
 	end;
 end;
 
@@ -173,7 +216,7 @@ function Spe_GiveStats(hero,player,stat,coef)
 	if amount >= 1 then
 		ChangeHeroStat(hero,stat,amount);
 		local attribute = ATTRIBUTE_NAME[stat];
-		ShowFlyingSign({"/Text/Game/Scripts/Stats.txt"; stat=attribute},hero,player,5);
+		-- ShowFlyingSign({"/Text/Game/Scripts/Stats.txt"; stat=attribute},hero,player,5);
 	end;
 end;
 
@@ -186,7 +229,7 @@ function Spe_GiveStats2(hero,player,stat,coef)
 			if value >= 1 then
 				ChangeHeroStat(heroname,stat,value);
 				local attribute = ATTRIBUTE_NAME[stat];
-				ShowFlyingSign({"/Text/Game/Scripts/Stats.txt"; stat=attribute},heroname,player,5);
+				-- ShowFlyingSign({"/Text/Game/Scripts/Stats.txt"; stat=attribute},heroname,player,5);
 			end;
 		end;
 	end;
@@ -199,7 +242,7 @@ function Spe_GiveStats3(hero,player,stat,coef)
 	if value >= 1 then
 		ChangeHeroStat(hero,stat,value);
 		local attribute = ATTRIBUTE_NAME[stat];
-		ShowFlyingSign({"/Text/Game/Scripts/Stats.txt"; stat=attribute},hero,player,5);
+		-- ShowFlyingSign({"/Text/Game/Scripts/Stats.txt"; stat=attribute},hero,player,5);
 	end;
 end;
 
@@ -264,7 +307,7 @@ function ApplyHeroesSpe_daily(player)
 			startThread(Spe_AddCreatures,"Tan",player,65,66,163,0.15); -- Djinn - 1:4 - 2:10 - 3:17 - 4:24 - 5:30 ... 8:50
 		end;
 		if contains(heroes,"Maahir") ~= nil then
-			startThread(Spe_GiveStats2,"Maahir",player,0,0.02); -- Exp (other heroes) - 2% total hero exp
+			startThread(Spe_GiveStats2,"Maahir",player,0,0.03); -- Exp (other heroes) - 3% total hero exp
 		end;
 		if contains(heroes,"Timerkhan") ~= nil then
 			startThread(Spe_AddCreatures2,"Timerkhan",player,114,0.09); -- Eagle - 1:6 - 2:17 - 3:28 - 4:39 - 5:50
@@ -272,18 +315,27 @@ function ApplyHeroesSpe_daily(player)
 		end;
 		-- Fortress
 		if contains(heroes,"Hangvul") ~= nil then
-			startThread(Spe_GiveStats3,"Hangvul",player,0,0.01); -- Exp - 1% total hero exp
+			startThread(Spe_GiveStats3,"Hangvul",player,0,0.05); -- Exp - 5% total hero exp
 		end;
 		if contains(heroes,"Ingvar") ~= nil then
 			startThread(Spe_AddCreatures,"Ingvar",player,92,93,166,0.5); -- Defenders - 1:1 - 2:3 - 3:5 - 4:7 - 5:9 ... 25:49
 		end;
 		if contains(heroes,"Hangvul2") ~= nil then
-			startThread(Spe_AddCreatures,"Hangvul2",player,102,103,171,0.09); -- Thane - 1:6 - 2:17 - 3:28 - 4:39 - 5:50
+			local n = 30 - trunc(GetHeroLevel("Hangvul2") * 0.5);
+			startThread(Spe_UpgradeCreatures,"Hangvul2",player,100,102,92,n); -- Rune Priest to Thane for n Defenders
+			startThread(Spe_UpgradeCreatures,"Hangvul2",player,100,103,93,n); -- Rune Priest to Flame lord for n Shieldguards
+			startThread(Spe_UpgradeCreatures,"Hangvul2",player,100,171,166,n); -- Rune Priest to Thunder Thane for n Mountain Guards
 		end;
 		if contains(heroes,"Bersy") ~= nil then
 			local amount = trunc(GetHeroLevel("Bersy") * 0.2);
 			startThread(Spe_GiveResources,"Bersy",player,3,amount); -- Crystal - +1 / 5 levels
 			startThread(Spe_GiveResources,"Bersy",player,5,amount); -- Gem - +1 / 5 levels
+		end;
+		if contains(heroes,"Egil") ~= nil then
+			startThread(Spe_UpgradeCreatures2,"Egil",player,100,101); -- Rune Priest to Rune Patriarch
+		end;
+		if contains(heroes,"Ufretin") ~= nil then
+			startThread(Spe_TransformCreatures,"Ufretin",player,TRANSFORM_ARRAY_FORTRESS); -- Transform creatures to Fortress units
 		end;
 		-- Necropolis
 		if contains(heroes,"Aberrar") ~= nil then

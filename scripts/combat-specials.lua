@@ -21,6 +21,7 @@ TRIGGER_LIMIT_PER_COMBAT = {
     ["Calid2"]=-1,
     ["Agrael"]=-1,
     ["Deleb"]=-1,
+    ["Una"]=-1,
 } -- -1 means no limit
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -113,6 +114,7 @@ function UnitRandomShoot(side,id0,id1,id2)
         local id = GetCreatureType(cr);
         if id == id0 or id == id1 or id == id2 then
             ShootCombatUnit(cr,RandomCreature(1-side,i));
+            sleep(50);
             setATB(cr,0);
         end;
     end;
@@ -135,6 +137,16 @@ function UnitSpecialAbility(side,id0,id1,id2,ability)
         local id = GetCreatureType(cr);
         if id == id0 or id == id1 or id == id2 then
             UseCombatAbility(cr,ability);
+        end;
+    end;
+end;
+
+function UnitSpecialAbility2(side,id,ability)
+    local creatures = GetUnits(side,CREATURE);
+    for i,cr in creatures do
+        if GetCreatureType(cr) == id then
+            local x,y = GetUnitPosition(RandomCreature(1-side,i));
+            UseCombatAbility(cr,ability,x,y);
         end;
     end;
 end;
@@ -394,6 +406,15 @@ function TriggerHeroSpe_Start(side,hero_name,hero_id)
         print("Trigger spearwielders random shoot !")
         UnitRandomShoot(side,94,95,167);
     end;
+    if hero_name == "Hangvul2" then
+        print("Trigger Thanes ability !")
+        UnitSpecialAbility2(side,103,345);
+        UnitSpecialAbility2(side,171,247);
+    end;
+    if hero_name == "Egil" then
+        print("Trigger rune priests play first !")
+        UnitPlayFirst(side,100,101,170);
+    end;
     if hero_name == "Brand" then
         print("Trigger cast Fire walls !")
         local m = GetUnitManaPoints(hero_id);
@@ -408,6 +429,13 @@ function TriggerHeroSpe_Start(side,hero_name,hero_id)
         local m = GetUnitMaxManaPoints(hero_id) * 0.5;
         SummonStack(side,87,m,4);
         SummonStack(side,87,m,4);
+    end;
+    if hero_name == "Una" then
+        print("Trigger uber meteor shower !")
+        local x = 13 - 11 * side;
+        HeroCast_Area(hero_id,285,x,8,FREE_MANA);
+        sleep(1000);
+        HeroCast_Area(hero_id,285,x,3,FREE_MANA);
     end;
     -- Necropolis
     if hero_name == "Pelt" then
@@ -512,6 +540,14 @@ function TriggerHeroSpe_Turn(side,hero_name,hero_id,unit)
         local m = GetUnitManaPoints(hero_id);
         if m >= 20 then
             HeroCast_RandomEnnemy(side,hero_id,12,NO_COST);
+            setATB(hero_id,1);
+        end;
+    end;
+    -- Fortress
+    if hero_name == "Una" and hero_id == unit then
+        if GetUnitManaPoints(hero_id) >= 250 then
+            print("Trigger random implosion !")
+            HeroCast_RandomEnnemy(side,hero_id,9,NO_COST);
             setATB(hero_id,1);
         end;
     end;
