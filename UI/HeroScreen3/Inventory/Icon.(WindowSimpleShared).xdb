@@ -5,7 +5,7 @@
 	<Background href="/UI/HeroScreen3/Skills/Icon.(BackgroundSimpleScallingTexture).xdb#xpointer(/BackgroundSimpleScallingTexture)"/>
 	<Foreground/>
 	<Flags>
-		<Transparent>true</Transparent>
+		<Transparent>false</Transparent>
 	</Flags>
 	<Placement>
 		<Position>

@@ -2,7 +2,6 @@
 <WindowSimpleShared>
 	<Crap>false</Crap>
 	<Children>
-		<Item href="Skills/Racial.(WindowStaticText).xdb#xpointer(/WindowStaticText)"/>
 		<Item href="Skills/Skills.(WindowStaticText).xdb#xpointer(/WindowStaticText)"/>
 		<Item href="Skills/Cell_1.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		<Item href="Skills/Cell_2.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
@@ -17,10 +16,11 @@
 		<Item href="Skills/Racial_3.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		<Item href="Skills/Racial_4.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		<Item href="Skills/Racial_5.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
-		<Item href="Skills/Racial_Desc.(WindowStaticText).xdb#xpointer(/WindowStaticText)"/>
 		<Item href="SkillSelection.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		<Item href="TableSkillSelection.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
-		<Item href="/UI/Doc/Skills/Button.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>		
+		
+		<Item href="Biography.(WindowScrollableContainer).xdb#xpointer(/WindowScrollableContainer)"/>
+		<Item href="Biography.(WindowTextView).xdb#xpointer(/WindowTextView)"/>				
 	</Children>
 	<Background/>
 	<Foreground/>
@@ -46,7 +46,7 @@
 		<Size>
 			<First>
 				<x>338</x>
-				<y>423</y>
+				<y>432</y>
 			</First>
 			<Second>false</Second>
 		</Size>

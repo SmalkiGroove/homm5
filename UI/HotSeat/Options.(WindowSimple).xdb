@@ -10,13 +10,13 @@
 	<Placement>
 		<Position>
 			<First>
-				<x>320</x>
-				<y>93</y>
+				<x>316</x>
+				<y>-2</y>
 			</First>
 			<Second>true</Second>
 		</Position>
 		<VerAllign>
-			<First>EPA_LOW_END</First>
+			<First>ERA_CENTER</First>
 			<Second>true</Second>
 		</VerAllign>
 		<HorAllign>
@@ -25,10 +25,10 @@
 		</HorAllign>
 		<Size>
 			<First>
-				<x>269</x>
-				<y>583</y>
+				<x>0</x>
+				<y>0</y>
 			</First>
-			<Second>true</Second>
+			<Second>false</Second>
 		</Size>
 		<LowerMargin>
 			<First>

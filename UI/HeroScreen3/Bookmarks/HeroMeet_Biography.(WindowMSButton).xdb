@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WindowMSButton ObjectRecordID="1000609">
 	<ClassTypeID>285694855</ClassTypeID>
-	<Shared href="HeroMeet_Biography.(WindowMSButtonShared).xdb#xpointer(/WindowMSButtonShared)"/>
-	<Name>Biography</Name>
-	<TooltipFileRef href="HeroMeet_Biography.txt"/>
-	<Visible>true</Visible>
+	<Shared href="HeroMeet_Skills.(WindowMSButtonShared).xdb#xpointer(/WindowMSButtonShared)"/>
+	<Name>Skills</Name>
+	<TooltipFileRef href="HeroMeet_Skills.txt"/>
+	<Visible>false</Visible>
 	<Priority>0</Priority>
 	<GameMessageReactions/>
 	<Placement>
@@ -75,7 +75,7 @@
 			<MessageOnEnterState/>
 			<CommandsOnEnterState>
 				<Commands>
-					<Item href="Bookmark5.(UISDirectRunReaction).xdb#xpointer(/UISDirectRunReaction)"/>
+					<Item href="Bookmark3.(UISDirectRunReaction).xdb#xpointer(/UISDirectRunReaction)"/>
 				</Commands>
 				<Reversable>false</Reversable>
 			</CommandsOnEnterState>

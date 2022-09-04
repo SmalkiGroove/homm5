@@ -61,22 +61,22 @@ function Spe_AddCreatures(hero,player,u1,u2,u3,coef)
 	local nb = round(coef*level);
 	if nb >= 1 then
 		local army = GetHeroArmy(hero);
-		local b = false;
-		for i = 0,6 do
-			if b then
-				b = true;
+		local b = 0;
+		for i = 1,7 do
+			if b ~= 0 then
+				b = 1;
 			elseif (army[i] == u1) then
 				AddHeroCreatures(hero,u1,nb);
-				b = true;
+				b = 1;
 			elseif (army[i] == u2) then	
 				AddHeroCreatures(hero,u2,nb);
-				b = true;
+				b = 1;
 			elseif (army[i] == u3) then	
 				AddHeroCreatures(hero,u3,nb);
-				b = true;
+				b = 1;
 			end;
 		end;
-		if b then ShowFlyingSign({"/Text/Game/Scripts/Reinforcements.txt"; num=nb},hero,player,5) end;
+		if b == 1 then ShowFlyingSign({"/Text/Game/Scripts/Reinforcements.txt"; num=nb},hero,player,5) end;
 	end;
 end;
 
@@ -98,22 +98,22 @@ function Spe_AddCreatures3(hero,player,u1,u2,u3,coef)
 		if heroname ~= hero then
 			if nb >= 1 then
 				local army = GetHeroArmy(heroname);
-				local b = false;
-				for i = 0,6 do
-					if b then
-						b = true;
+				local b = 0;
+				for i = 1,7 do
+					if b ~= 0 then
+						b = 1;
 					elseif (army[i] == u1) then
 						AddHeroCreatures(heroname,u1,nb);
-						b = true;
+						b = 1;
 					elseif (army[i] == u2) then	
 						AddHeroCreatures(heroname,u2,nb);
-						b = true;
+						b = 1;
 					elseif (army[i] == u3) then	
 						AddHeroCreatures(heroname,u3,nb);
-						b = true;
+						b = 1;
 					end;
 				end;
-				if b then ShowFlyingSign({"/Text/Game/Scripts/Reinforcements.txt"; num=nb},hero,player,5) end;
+				if b == 1 then ShowFlyingSign({"/Text/Game/Scripts/Reinforcements.txt"; num=nb},hero,player,5) end;
 			end;
 		end;
 	end;
@@ -124,8 +124,8 @@ function Spe_ArmyMultiply(hero,player,ids,coef)
 	local level = GetHeroLevel(hero);
 	local army = GetHeroArmy(hero);
 	local total = 0;
-	for i = 0,6 do
-		for j = 0,length(ids) do
+	for i = 1,7 do
+		for j = 1,length(ids) do
 			local id = ids[j];
 			if (army[i] == id) then
 				local nb = trunc(GetHeroCreatures(hero,id) * level * coef);
@@ -161,7 +161,7 @@ end;
 
 function Spe_TransformCreatures(hero,player,array)
 	local army = GetHeroArmy(hero);
-	for i=0,6 do
+	for i=1,7 do
 		if army[i] then
 			print("transform unit "..army[i])
 			local id = array[army[i]];

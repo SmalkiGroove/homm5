@@ -10,8 +10,6 @@
 		<Item href="EE_discount_Block.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		<Item href="EE_artefacts_Filter.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
 		<Item href="EE_artefacts_FilterView.(WindowTextView).xdb#xpointer(/WindowTextView)"/>
-		<Item href="EE_eightskills_Filter.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
-		<Item href="EE_eightskills_FilterView.(WindowTextView).xdb#xpointer(/WindowTextView)"/>
 		<Item href="EE_taxes_Filter.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
 		<Item href="EE_taxes_FilterView.(WindowTextView).xdb#xpointer(/WindowTextView)"/>
 	</Children>

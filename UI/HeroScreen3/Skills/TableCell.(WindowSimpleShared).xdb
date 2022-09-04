@@ -3,7 +3,6 @@
 	<Crap>false</Crap>
 	<Children>
 		<Item href="Icon.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
-		<Item href="Desc.(WindowStaticText).xdb#xpointer(/WindowStaticText)"/>
 	</Children>
 	<Background href="CellBackground.(BackgroundSimpleTexture).xdb#xpointer(/BackgroundSimpleTexture)"/>
 	<Foreground/>
@@ -28,7 +27,7 @@
 		</HorAllign>
 		<Size>
 			<First>
-				<x>164</x>
+				<x>64</x>
 				<y>64</y>
 			</First>
 			<Second>true</Second>

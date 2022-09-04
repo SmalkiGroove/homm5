@@ -5,13 +5,13 @@
 	<Name>Abilities0</Name>
 	<TooltipFileRef href=""/>
 	<Visible>true</Visible>
-	<Priority>0</Priority>
+	<Priority>10</Priority>
 	<GameMessageReactions/>
 	<Placement>
 		<Position>
 			<First>
-				<x>6</x>
-				<y>37</y>
+				<x>9</x>
+				<y>13</y>
 			</First>
 			<Second>true</Second>
 		</Position>

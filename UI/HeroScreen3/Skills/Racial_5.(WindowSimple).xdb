@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WindowSimple ObjectRecordID="1000549">
 	<ClassTypeID>285700801</ClassTypeID>
-	<Shared href="Racial.(WindowSimpleShared).xdb#xpointer(/WindowSimpleShared)"/>
+	<Shared href="TCell.(WindowSimpleShared).xdb#xpointer(/WindowSimpleShared)"/>
 	<Name>Racial_5</Name>
 	<TooltipFileRef href=""/>
 	<Visible>false</Visible>
@@ -10,8 +10,8 @@
 	<Placement>
 		<Position>
 			<First>
-				<x>271</x>
-				<y>360</y>
+				<x>6</x>
+				<y>33</y>
 			</First>
 			<Second>true</Second>
 		</Position>

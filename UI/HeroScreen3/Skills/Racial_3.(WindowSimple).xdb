@@ -5,13 +5,13 @@
 	<Name>Racial_3</Name>
 	<TooltipFileRef href=""/>
 	<Visible>false</Visible>
-	<Priority>0</Priority>
+	<Priority>1</Priority>
 	<GameMessageReactions/>
 	<Placement>
 		<Position>
 			<First>
-				<x>137</x>
-				<y>360</y>
+				<x>202</x>
+				<y>33</y>
 			</First>
 			<Second>true</Second>
 		</Position>

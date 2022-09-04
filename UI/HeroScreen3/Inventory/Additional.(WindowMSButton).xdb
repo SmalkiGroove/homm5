@@ -10,8 +10,8 @@
 	<Placement>
 		<Position>
 			<First>
-				<x>255</x>
-				<y>80</y>
+				<x>224</x>
+				<y>203</y>
 			</First>
 			<Second>true</Second>
 		</Position>

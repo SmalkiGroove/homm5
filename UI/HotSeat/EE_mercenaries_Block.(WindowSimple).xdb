@@ -5,13 +5,13 @@
 	<Name/>
 	<TooltipFileRef href="/UI/CustomGameCreate/TT_EE_mercenaries.txt"/>
 	<Visible>true</Visible>
-	<Priority>0</Priority>
+	<Priority>200</Priority>
 	<GameMessageReactions/>
 	<Placement>
 		<Position>
 			<First>
 				<x>25</x>
-				<y>215</y>
+				<y>214</y>
 			</First>
 			<Second>true</Second>
 		</Position>

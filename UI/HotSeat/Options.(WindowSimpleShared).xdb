@@ -9,16 +9,16 @@
 		<Item href="EE_mercenaries_Block.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		<Item href="EE_discount_Block.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		<Item href="EE_artefacts_Filter.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="EE_artefacts_FilterX.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>		
 		<Item href="EE_artefacts_FilterView.(WindowTextView).xdb#xpointer(/WindowTextView)"/>
-		<Item href="EE_eightskills_Filter.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
-		<Item href="EE_eightskills_FilterView.(WindowTextView).xdb#xpointer(/WindowTextView)"/>
 		<Item href="EE_taxes_Filter.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="EE_taxes_FilterX.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>		
 		<Item href="EE_taxes_FilterView.(WindowTextView).xdb#xpointer(/WindowTextView)"/>
 		<Item href="/UI/CustomGameCreate/EE_taxes_Filter.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
-		<Item href="/UI/CustomGameCreate/EE_eightskills_Filter.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
 		<Item href="/UI/CustomGameCreate/EE_artefacts_Filter.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>		
+		<Item href="RightBg.(WindowSimple).xdb#xpointer(/WindowSimple)"/>		
 	</Children>
-	<Background href="/UI/CustomGameCreate/RightBg.(BackgroundSimpleTexture).xdb#xpointer(/BackgroundSimpleTexture)"/>
+	<Background/>
 	<Foreground/>
 	<Flags>
 		<Transparent>false</Transparent>

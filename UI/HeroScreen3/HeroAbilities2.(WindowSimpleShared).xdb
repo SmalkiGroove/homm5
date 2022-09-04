@@ -2,15 +2,15 @@
 <WindowSimpleShared>
 	<Crap>false</Crap>
 	<Children>
-		<Item href="Abilities/AbilitiesHeader.(WindowStaticText).xdb#xpointer(/WindowStaticText)"/>
+		<Item href="FaceCover.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
+
 		<Item href="Abilities/AbilitiesLine0.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		<Item href="Abilities/AbilitiesLine1.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		<Item href="Abilities/AbilitiesLine2.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		<Item href="Abilities/AbilitiesLine3.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		<Item href="Abilities/AbilitiesLine4.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
-		<Item href="Abilities/SkillsHeader.(WindowStaticText).xdb#xpointer(/WindowStaticText)"/>
-		<Item href="Abilities/Left.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
-		<Item href="Abilities/Right.(WindowMSButton).xdb#xpointer(/WindowMSButton)"/>
+		<Item href="Abilities/AbilitiesLine5.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
+		<Item href="Abilities/AbilitiesLine6.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 		<Item href="SkillSelection.(WindowSimple).xdb#xpointer(/WindowSimple)"/>	
 	</Children>
 	<Background/>
@@ -36,8 +36,8 @@
 		</HorAllign>
 		<Size>
 			<First>
-				<x>339</x>
-				<y>417</y>
+				<x>343</x>
+				<y>582</y>
 			</First>
 			<Second>true</Second>
 		</Size>

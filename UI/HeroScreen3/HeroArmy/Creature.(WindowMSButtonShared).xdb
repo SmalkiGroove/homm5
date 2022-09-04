@@ -3,7 +3,7 @@
 	<Crap>false</Crap>
 	<Children>
 		<Item href="CreatureIcon.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
-		<Item href="/UI/Common/DragAndDrop/Highlight_55.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
+		<Item href="/UI/HeroScreen3/Inventory/IconHighligh.(WindowSimple).xdb#xpointer(/WindowSimple)"/>
 	</Children>
 	<Background/>
 	<Foreground/>
@@ -28,8 +28,8 @@
 		</HorAllign>
 		<Size>
 			<First>
-				<x>55</x>
-				<y>55</y>
+				<x>64</x>
+				<y>64</y>
 			</First>
 			<Second>false</Second>
 		</Size>

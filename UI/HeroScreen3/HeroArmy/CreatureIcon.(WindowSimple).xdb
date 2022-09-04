@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WindowSimple ObjectRecordID="1000453">
 	<ClassTypeID>285700801</ClassTypeID>
-	<Shared href="CreatureIcon.(WindowSimpleShared).xdb#xpointer(/WindowSimpleShared)"/>
+	<Shared href="CreatureIcon64.(WindowSimpleShared).xdb#xpointer(/WindowSimpleShared)"/>
 	<Name>Pic</Name>
 	<TooltipFileRef href=""/>
 	<Visible>true</Visible>

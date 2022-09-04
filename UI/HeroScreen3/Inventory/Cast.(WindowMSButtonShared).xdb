@@ -25,8 +25,8 @@
 		</HorAllign>
 		<Size>
 			<First>
-				<x>69</x>
-				<y>69</y>
+				<x>66</x>
+				<y>66</y>
 			</First>
 			<Second>false</Second>
 		</Size>
@@ -51,7 +51,7 @@
 	<VisualStates>
 		<Item>
 			<Normal>
-				<Background href="Cast/Normal.xdb#xpointer(/BackgroundSimpleTexture)"/>
+				<Background href="Cast/Normal.xdb#xpointer(/BackgroundSimpleScallingTexture)"/>
 				<Foreground/>
 				<TextString/>
 				<OnEnterSubState>
@@ -61,8 +61,8 @@
 				<TextFormat/>
 			</Normal>
 			<MouseOver>
-				<Background href="Cast/Normal.xdb#xpointer(/BackgroundSimpleTexture)"/>
-				<Foreground href="Cast/Highlight.xdb#xpointer(/BackgroundSimpleTexture)"/>
+				<Background href="Cast/Normal.xdb#xpointer(/BackgroundSimpleScallingTexture)"/>
+				<Foreground href="Cast/Highlight.xdb#xpointer(/BackgroundSimpleScallingTexture)"/>
 				<TextString/>
 				<OnEnterSubState>
 					<Commands/>
@@ -71,7 +71,7 @@
 				<TextFormat/>
 			</MouseOver>
 			<Pushed>
-				<Background href="Cast/Pushed.xdb#xpointer(/BackgroundSimpleTexture)"/>
+				<Background href="Cast/Pushed.xdb#xpointer(/BackgroundSimpleScallingTexture)"/>
 				<Foreground/>
 				<TextString/>
 				<OnEnterSubState>
@@ -81,7 +81,7 @@
 				<TextFormat/>
 			</Pushed>
 			<Disabled>
-				<Background href="Cast/Disabled.xdb#xpointer(/BackgroundSimpleTexture)"/>
+				<Background href="Cast/Disabled.xdb#xpointer(/BackgroundSimpleScallingTexture)"/>
 				<Foreground/>
 				<TextString/>
 				<OnEnterSubState>
@@ -108,7 +108,7 @@
 		</Item>
 		<Item>
 			<Normal>
-				<Background href="Cast/Normal.xdb#xpointer(/BackgroundSimpleTexture)"/>
+				<Background href="Cast/Normal.xdb#xpointer(/BackgroundSimpleScallingTexture)"/>
 				<Foreground/>
 				<TextString/>
 				<OnEnterSubState>
@@ -118,8 +118,8 @@
 				<TextFormat/>
 			</Normal>
 			<MouseOver>
-				<Background href="Cast/Normal.xdb#xpointer(/BackgroundSimpleTexture)"/>
-				<Foreground href="Cast/Highlight.xdb#xpointer(/BackgroundSimpleTexture)"/>
+				<Background href="Cast/Normal.xdb#xpointer(/BackgroundSimpleScallingTexture)"/>
+				<Foreground href="Cast/Highlight.xdb#xpointer(/BackgroundSimpleScallingTexture)"/>
 				<TextString/>
 				<OnEnterSubState>
 					<Commands/>
@@ -128,7 +128,7 @@
 				<TextFormat/>
 			</MouseOver>
 			<Pushed>
-				<Background href="Cast/Pushed.xdb#xpointer(/BackgroundSimpleTexture)"/>
+				<Background href="Cast/Pushed.xdb#xpointer(/BackgroundSimpleScallingTexture)"/>
 				<Foreground/>
 				<TextString/>
 				<OnEnterSubState>
@@ -138,7 +138,7 @@
 				<TextFormat/>
 			</Pushed>
 			<Disabled>
-				<Background href="Cast/Disabled.xdb#xpointer(/BackgroundSimpleTexture)"/>
+				<Background href="Cast/Disabled.xdb#xpointer(/BackgroundSimpleScallingTexture)"/>
 				<Foreground/>
 				<TextString/>
 				<OnEnterSubState>

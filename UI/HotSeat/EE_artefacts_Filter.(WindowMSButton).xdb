@@ -2,10 +2,10 @@
 <WindowMSButton>
 	<ClassTypeID>285694855</ClassTypeID>
 	<Shared href="/UI/Common/CheckBox/CheckBox.(WindowMSButtonShared).xdb#xpointer(/WindowMSButtonShared)"/>
-	<Name>EE_artefacts_FilterBtn</Name>
+	<Name>EE_artefacts_FilterBttn</Name>
 	<TooltipFileRef href="/UI/CustomGameCreate/TT_EE_artefacts.txt"/>
 	<Visible>true</Visible>
-	<Priority>100</Priority>
+	<Priority>150</Priority>
 	<GameMessageReactions/>
 	<Placement>
 		<Position>
@@ -58,6 +58,7 @@
 			<CommandsOnEnterState>
 				<Commands>
 					<Item href="EE_artefacts_Changed.(UISSendGameMessage).xdb#xpointer(/UISSendGameMessage)"/>
+					<Item href="artis_switchon.(UISSendUIMessage).xdb#xpointer(/UISSendUIMessage)"/>																				
 				</Commands>
 				<Reversable>false</Reversable>
 			</CommandsOnEnterState>

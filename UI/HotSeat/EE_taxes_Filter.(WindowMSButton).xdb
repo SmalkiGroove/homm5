@@ -2,10 +2,10 @@
 <WindowMSButton>
 	<ClassTypeID>285694855</ClassTypeID>
 	<Shared href="/UI/Common/CheckBox/CheckBox.(WindowMSButtonShared).xdb#xpointer(/WindowMSButtonShared)"/>
-	<Name>EE_taxes_FilterBtn</Name>
+	<Name>EE_taxes_FilterBttn</Name>
 	<TooltipFileRef href="/UI/CustomGameCreate/TT_EE_taxes.txt"/>
 	<Visible>true</Visible>
-	<Priority>100</Priority>
+	<Priority>150</Priority>
 	<GameMessageReactions/>
 	<Placement>
 		<Position>
@@ -58,6 +58,7 @@
 			<CommandsOnEnterState>
 				<Commands>
 					<Item href="EE_taxes_Changed.(UISRunReaction).xdb#xpointer(/UISRunReaction)"/>
+					<Item href="taxes_switchon.(UISSendUIMessage).xdb#xpointer(/UISSendUIMessage)"/>					
 				</Commands>
 				<Reversable>false</Reversable>
 			</CommandsOnEnterState>

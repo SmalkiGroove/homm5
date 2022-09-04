@@ -4,7 +4,7 @@
 	<Children>
 		<Item href="HeaderSkills.(WindowStaticText).xdb#xpointer(/WindowStaticText)"/>
 	</Children>
-	<Background href="Skills.(BackgroundSimpleTexture).xdb#xpointer(/BackgroundSimpleTexture)"/>
+	<Background/>
 	<Foreground/>
 	<Flags>
 		<Transparent>false</Transparent>
@@ -28,7 +28,7 @@
 		<Size>
 			<First>
 				<x>512</x>
-				<y>720</y>
+				<y>724</y>
 			</First>
 			<Second>false</Second>
 		</Size>

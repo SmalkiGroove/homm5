@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WindowSimple ObjectRecordID="1000474">
 	<ClassTypeID>285700801</ClassTypeID>
-	<Shared href="Icon.(WindowSimpleShared).xdb#xpointer(/WindowSimpleShared)"/>
+	<Shared href="Placeholder.(WindowSimpleShared).xdb#xpointer(/WindowSimpleShared)"/>
 	<Name>Placeholder</Name>
-	<TooltipFileRef href=""/>
+	<TooltipFileRef href="Invertory_Tooltip.txt"/>
 	<Visible>true</Visible>
 	<Priority>0</Priority>
 	<GameMessageReactions/>
