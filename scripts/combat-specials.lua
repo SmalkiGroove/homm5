@@ -5,6 +5,11 @@ THREAD_LIMIT = 50;
 THREAD_STATE = 0;
 THREAD_FINISHER = THREAD_LIMIT;
 
+GRID_X_MIN = 2;
+GRID_X_MAX = 15;
+GRID_Y_MIN = 1;
+GRID_Y_MAX = 12;
+
 NO_COST = 0;
 FREE_MANA = 99;
 
@@ -336,8 +341,8 @@ function TriggerHeroSpe_Start(side,hero_name,hero_id)
     if hero_name == "RedHeavenHero03" then
         print("Trigger cast Blade Barriers !")
         local m = GetUnitManaPoints(hero_id);
-        local x = 10 - 5 * side;
-        for y=2,9 do
+        local x = 12 - 9 * side;
+        for y=2,11 do
             HeroCast_Area(hero_id,284,x,y,FREE_MANA);
             HeroCast_Area(hero_id,284,x-1+side*2,11-y,FREE_MANA);
         end;
@@ -380,9 +385,9 @@ function TriggerHeroSpe_Start(side,hero_name,hero_id)
     end;
     if hero_name == "Emilia" then
         print("Trigger summon beehives !")
-        local x = 13 - 11 * side;
+        local x = 15 - 13 * side;
         HeroCast_Area(hero_id,283,x,1,FREE_MANA);
-        HeroCast_Area(hero_id,283,x,10,FREE_MANA);
+        HeroCast_Area(hero_id,283,x,12,FREE_MANA);
     end;
     if hero_name == "Cyrus" then
         print("Trigger mages magic fist !")
@@ -418,8 +423,8 @@ function TriggerHeroSpe_Start(side,hero_name,hero_id)
     if hero_name == "Brand" then
         print("Trigger cast Fire walls !")
         local m = GetUnitManaPoints(hero_id);
-        local x = 10 - 5 * side;
-        for y=2,9 do
+        local x = 11 - 7 * side;
+        for y=2,11 do
             HeroCast_Area(hero_id,236,x,y,FREE_MANA);
         end;
         SetMana(hero_id,m);
@@ -432,10 +437,10 @@ function TriggerHeroSpe_Start(side,hero_name,hero_id)
     end;
     if hero_name == "Una" then
         print("Trigger uber meteor shower !")
-        local x = 13 - 11 * side;
-        HeroCast_Area(hero_id,285,x,8,FREE_MANA);
-        sleep(1000);
-        HeroCast_Area(hero_id,285,x,3,FREE_MANA);
+        local x = 15 - 13 * side;
+        HeroCast_Area(hero_id,285,x,9,FREE_MANA);
+        sleep(1500);
+        HeroCast_Area(hero_id,285,x,4,FREE_MANA);
     end;
     -- Necropolis
     if hero_name == "Pelt" then
@@ -495,9 +500,9 @@ function TriggerHeroSpe_Start(side,hero_name,hero_id)
     end;
     if hero_name == "Deleb" then
         print("Trigger mine fields !")
-        local x = 10 - 5 * side;
-        HeroCast_Area(hero_id,38,x,3,FREE_MANA);
-        HeroCast_Area(hero_id,38,x,8,FREE_MANA);
+        local x = 12 - 9 * side;
+        HeroCast_Area(hero_id,38,x,4,FREE_MANA);
+        HeroCast_Area(hero_id,38,x,9,FREE_MANA);
     end;
 end;
 
