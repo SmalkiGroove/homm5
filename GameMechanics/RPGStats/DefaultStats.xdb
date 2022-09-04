@@ -55,13 +55,13 @@
 				<Gold>20000</Gold>
 			</Item>
 			<Item>
-				<Wood>15</Wood>
-				<Ore>15</Ore>
-				<Mercury>5</Mercury>
-				<Crystal>5</Crystal>
-				<Sulfur>5</Sulfur>
-				<Gem>5</Gem>
-				<Gold>15000</Gold>
+				<Wood>20</Wood>
+				<Ore>20</Ore>
+				<Mercury>10</Mercury>
+				<Crystal>10</Crystal>
+				<Sulfur>10</Sulfur>
+				<Gem>10</Gem>
+				<Gold>20000</Gold>
 			</Item>
 		</StartHumanResources>
 		<StartComputerResources>
@@ -84,22 +84,22 @@
 				<Gold>20000</Gold>
 			</Item>
 			<Item>
-				<Wood>20</Wood>
-				<Ore>20</Ore>
-				<Mercury>10</Mercury>
-				<Crystal>10</Crystal>
-				<Sulfur>10</Sulfur>
-				<Gem>10</Gem>
-				<Gold>20000</Gold>
+				<Wood>30</Wood>
+				<Ore>30</Ore>
+				<Mercury>15</Mercury>
+				<Crystal>15</Crystal>
+				<Sulfur>15</Sulfur>
+				<Gem>15</Gem>
+				<Gold>30000</Gold>
 			</Item>
 			<Item>
-				<Wood>20</Wood>
-				<Ore>20</Ore>
-				<Mercury>10</Mercury>
-				<Crystal>10</Crystal>
-				<Sulfur>10</Sulfur>
-				<Gem>10</Gem>
-				<Gold>20000</Gold>
+				<Wood>40</Wood>
+				<Ore>40</Ore>
+				<Mercury>20</Mercury>
+				<Crystal>20</Crystal>
+				<Sulfur>20</Sulfur>
+				<Gem>20</Gem>
+				<Gold>50000</Gold>
 			</Item>
 		</StartComputerResources>
 		<ChestMinorArtifactChance>10</ChestMinorArtifactChance>
@@ -2209,7 +2209,7 @@
 		</HeroSpecializations>
 		<Spells>
 			<Armageddon>
-				<StoneRadius>2</StoneRadius>
+				<StoneRadius>3</StoneRadius>
 				<StoneDelay>3100</StoneDelay>
 				<WaveSpeed>33</WaveSpeed>
 			</Armageddon>
