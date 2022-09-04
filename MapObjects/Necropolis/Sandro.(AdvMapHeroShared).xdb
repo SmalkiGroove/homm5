@@ -30,13 +30,13 @@
 	<Icon128/>
 	<InternalName>Sandro</InternalName>
 	<Class>HERO_CLASS_NECROMANCER</Class>
-	<Specialization>HERO_SPEC_HEIR_OF_UNDEAD</Specialization>
+	<Specialization>HERO_SPEC_COURTIER</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
 		<SkillID>HERO_SKILL_NECROMANCY</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Necropolis/Heir_of_Undeath/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Necropolis/Heir_of_Undeath/Description.txt"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Necropolis/Courtier/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Necropolis/Courtier/Description.txt"/>
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Necropolis/Heir_of_Undeath.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Textures/Icons/Heroes/Necropolis/Necropolis_Sandro_128x128.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
@@ -55,12 +55,15 @@
 		<Knowledge>2</Knowledge>
 		<skills>
 			<Item>
-				<Mastery>MASTERY_BASIC</Mastery>
+				<Mastery>MASTERY_EXPERT</Mastery>
 				<SkillID>HERO_SKILL_SUMMONING_MAGIC</SkillID>
 			</Item>
 		</skills>
 		<perkIDs>
 			<Item>HERO_SKILL_NO_REST_FOR_THE_WICKED</Item>
+			<Item>HERO_SKILL_MASTER_OF_ANIMATION</Item>
+			<Item>HERO_SKILL_HAUNT_MINE</Item>
+			<Item>HERO_SKILL_HERALD_OF_DEATH</Item>
 		</perkIDs>
 		<spellIDs>
 			<Item>SPELL_ANIMATE_DEAD</Item>

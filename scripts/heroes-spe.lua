@@ -571,11 +571,9 @@ function HeroesSpe_NewDay()
 	local day = GetDate(DAY_OF_WEEK);
 	for i = 1,8 do
 		if (GetPlayerState(i) == 1) then
-			if (IsPlayerCurrent(i)) then
-				if ((day == 1) and (PLAYER_WEEKLY_EVENTS_CHECK[i] < TURN)) then ApplyHeroesSpe_weekly(i) end;
-				if (PLAYER_DAILY_EVENTS_CHECK[i] < TURN) then ApplyHeroesSpe_daily(i) end;
-				if (PLAYER_ONETIME_EVENTS_CHECK[i] < TURN) then ApplyHeroesSpe_onetime(i) end;
-			end;
+			if ((day == 1) and (PLAYER_WEEKLY_EVENTS_CHECK[i] < TURN)) then ApplyHeroesSpe_weekly(i) end;
+			if (PLAYER_DAILY_EVENTS_CHECK[i] < TURN) then ApplyHeroesSpe_daily(i) end;
+			if (PLAYER_ONETIME_EVENTS_CHECK[i] < TURN) then ApplyHeroesSpe_onetime(i) end;
 		end;
 	end;
 end;
