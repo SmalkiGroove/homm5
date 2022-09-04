@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Creature>
-	<AttackSkill>5</AttackSkill>
-	<DefenceSkill>1</DefenceSkill>
+	<AttackSkill>4</AttackSkill>
+	<DefenceSkill>2</DefenceSkill>
 	<Shots>0</Shots>
-	<MinDamage>1</MinDamage>
+	<MinDamage>2</MinDamage>
 	<MaxDamage>3</MaxDamage>
 	<Speed>3</Speed>
 	<Initiative>8</Initiative>
 	<Flying>false</Flying>
-	<Health>25</Health>
+	<Health>22</Health>
 	<KnownSpells>
 		<Item>
 			<Spell>SPELL_ABILITY_SCAVENGER</Spell>
@@ -37,7 +37,7 @@
 		<Crystal>0</Crystal>
 		<Sulfur>0</Sulfur>
 		<Gem>0</Gem>
-		<Gold>40</Gold>
+		<Gold>50</Gold>
 	</Cost>
 	<SubjectOfRandomGeneration>true</SubjectOfRandomGeneration>
 	<MonsterShared href="/MapObjects/Necropolis/Alt_upgrade/Disease_Zombie.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
@@ -52,7 +52,7 @@
 		<Item>ABILITY_UNDEAD</Item>
 		<Item>ABILITY_WEAKENING_AURA</Item>
 		<Item>ABILITY_ENRAGED</Item>
-		<Item>ABILITY_WOUND</Item>
+		<Item>ABILITY_PACK_HUNTER</Item>
 		<Item>ABILITY_SCAVENGER</Item>
 	</Abilities>
 </Creature>

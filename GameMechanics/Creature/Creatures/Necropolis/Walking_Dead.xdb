@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Creature ObjectRecordID="66">
 	<AttackSkill>3</AttackSkill>
-	<DefenceSkill>1</DefenceSkill>
+	<DefenceSkill>2</DefenceSkill>
 	<Shots>0</Shots>
-	<MinDamage>1</MinDamage>
-	<MaxDamage>2</MaxDamage>
+	<MinDamage>2</MinDamage>
+	<MaxDamage>3</MaxDamage>
 	<Speed>3</Speed>
 	<Initiative>8</Initiative>
 	<Flying>false</Flying>
@@ -49,6 +49,6 @@
 	<Abilities>
 		<Item>ABILITY_UNDEAD</Item>
 		<Item>ABILITY_ENRAGED</Item>
-		<Item>ABILITY_WOUND</Item>
+		<Item>ABILITY_PACK_HUNTER</Item>
 	</Abilities>
 </Creature>

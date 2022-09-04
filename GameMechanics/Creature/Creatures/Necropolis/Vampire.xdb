@@ -4,7 +4,7 @@
 	<DefenceSkill>7</DefenceSkill>
 	<Shots>0</Shots>
 	<MinDamage>6</MinDamage>
-	<MaxDamage>9</MaxDamage>
+	<MaxDamage>10</MaxDamage>
 	<Speed>6</Speed>
 	<Initiative>9</Initiative>
 	<Flying>false</Flying>

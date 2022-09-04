@@ -3,12 +3,12 @@
 	<AttackSkill>12</AttackSkill>
 	<DefenceSkill>10</DefenceSkill>
 	<Shots>0</Shots>
-	<MinDamage>8</MinDamage>
+	<MinDamage>7</MinDamage>
 	<MaxDamage>13</MaxDamage>
 	<Speed>7</Speed>
 	<Initiative>15</Initiative>
 	<Flying>true</Flying>
-	<Health>35</Health>
+	<Health>38</Health>
 	<KnownSpells>
 		<Item>
 			<Spell>SPELL_ABILITY_BATTLE_DIVE</Spell>
@@ -37,7 +37,7 @@
 		<Crystal>0</Crystal>
 		<Sulfur>0</Sulfur>
 		<Gem>0</Gem>
-		<Gold>175</Gold>
+		<Gold>225</Gold>
 	</Cost>
 	<SubjectOfRandomGeneration>true</SubjectOfRandomGeneration>
 	<MonsterShared href="/MapObjects/Haven/Royal_Griffin.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>

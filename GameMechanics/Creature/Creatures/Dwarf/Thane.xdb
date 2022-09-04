@@ -3,8 +3,8 @@
 	<AttackSkill>16</AttackSkill>
 	<DefenceSkill>24</DefenceSkill>
 	<Shots>0</Shots>
-	<MinDamage>10</MinDamage>
-	<MaxDamage>12</MaxDamage>
+	<MinDamage>15</MinDamage>
+	<MaxDamage>25</MaxDamage>
 	<Speed>8</Speed>
 	<Initiative>10</Initiative>
 	<Flying>true</Flying>
@@ -47,6 +47,6 @@
 		<Item>CREATURE_THUNDER_THANE</Item>
 	</Upgrades>
 	<Abilities>
-		<Item>ABILITY_STORMSTRIKE</Item>
+		<Item>ABILITY_HOLD_GROUND</Item>
 	</Abilities>
 </Creature>

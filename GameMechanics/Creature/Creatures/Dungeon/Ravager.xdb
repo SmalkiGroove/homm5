@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Creature ObjectRecordID="1000029">
-	<AttackSkill>12</AttackSkill>
+	<AttackSkill>10</AttackSkill>
 	<DefenceSkill>8</DefenceSkill>
 	<Shots>0</Shots>
 	<MinDamage>8</MinDamage>
@@ -8,7 +8,7 @@
 	<Speed>7</Speed>
 	<Initiative>14</Initiative>
 	<Flying>false</Flying>
-	<Health>52</Health>
+	<Health>50</Health>
 	<KnownSpells/>
 	<SpellPoints>0</SpellPoints>
 	<SpellPoints1>0</SpellPoints1>
@@ -32,7 +32,7 @@
 		<Crystal>0</Crystal>
 		<Sulfur>0</Sulfur>
 		<Gem>0</Gem>
-		<Gold>175</Gold>
+		<Gold>225</Gold>
 	</Cost>
 	<SubjectOfRandomGeneration>true</SubjectOfRandomGeneration>
 	<MonsterShared href="/MapObjects/Dungeon/Ravager.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>

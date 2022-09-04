@@ -8,7 +8,7 @@
 	<Speed>6</Speed>
 	<Initiative>12</Initiative>
 	<Flying>true</Flying>
-	<Health>90</Health>
+	<Health>85</Health>
 	<KnownSpells/>
 	<SpellPoints>0</SpellPoints>
 	<SpellPoints1>0</SpellPoints1>
@@ -49,5 +49,6 @@
 	<Abilities>
 		<Item>ABILITY_REGENERATION</Item>
 		<Item>ABILITY_STRIKE_AND_RETURN</Item>
+		<Item>ABILITY_NO_ENEMY_RETALIATION</Item>
 	</Abilities>
 </Creature>

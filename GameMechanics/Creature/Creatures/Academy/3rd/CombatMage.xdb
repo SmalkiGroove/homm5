@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Creature>
-	<AttackSkill>9</AttackSkill>
-	<DefenceSkill>9</DefenceSkill>
+	<AttackSkill>8</AttackSkill>
+	<DefenceSkill>8</DefenceSkill>
 	<Shots>3</Shots>
 	<MinDamage>7</MinDamage>
 	<MaxDamage>7</MaxDamage>
@@ -49,7 +49,7 @@
 		<Crystal>0</Crystal>
 		<Sulfur>0</Sulfur>
 		<Gem>0</Gem>
-		<Gold>175</Gold>
+		<Gold>225</Gold>
 	</Cost>
 	<SubjectOfRandomGeneration>true</SubjectOfRandomGeneration>
 	<MonsterShared href="/MapObjects/Academy/Combat_Mage.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>

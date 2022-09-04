@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Creature ObjectRecordID="1000052">
-	<AttackSkill>5</AttackSkill>
+	<AttackSkill>4</AttackSkill>
 	<DefenceSkill>2</DefenceSkill>
 	<Shots>0</Shots>
-	<MinDamage>5</MinDamage>
+	<MinDamage>4</MinDamage>
 	<MaxDamage>7</MaxDamage>
 	<Speed>6</Speed>
 	<Initiative>14</Initiative>

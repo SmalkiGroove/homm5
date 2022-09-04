@@ -8,7 +8,7 @@
 	<Speed>7</Speed>
 	<Initiative>12</Initiative>
 	<Flying>true</Flying>
-	<Health>100</Health>
+	<Health>90</Health>
 	<KnownSpells>
 		<Item>
 			<Spell>SPELL_ABILITY_SCAVENGER</Spell>
@@ -37,7 +37,7 @@
 		<Crystal>0</Crystal>
 		<Sulfur>0</Sulfur>
 		<Gem>1</Gem>
-		<Gold>850</Gold>
+		<Gold>1100</Gold>
 	</Cost>
 	<PresetPrice>0</PresetPrice>
 	<SubjectOfRandomGeneration>true</SubjectOfRandomGeneration>

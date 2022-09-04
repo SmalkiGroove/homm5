@@ -8,7 +8,7 @@
 	<Speed>5</Speed>
 	<Initiative>10</Initiative>
 	<Flying>false</Flying>
-	<Health>4</Health>
+	<Health>5</Health>
 	<KnownSpells>
 		<Item>
 			<Spell>SPELL_ABILITY_SET_SNARES</Spell>
@@ -37,7 +37,7 @@
 		<Crystal>0</Crystal>
 		<Sulfur>0</Sulfur>
 		<Gem>0</Gem>
-		<Gold>15</Gold>
+		<Gold>20</Gold>
 	</Cost>
 	<SubjectOfRandomGeneration>true</SubjectOfRandomGeneration>
 	<MonsterShared href="/MapObjects/Stronghold/Goblin_Trapper.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
@@ -51,6 +51,7 @@
 	<Abilities>
 		<Item>ABILITY_DEMON_RAGED</Item>
 		<Item>ABILITY_COWARDICE</Item>
+		<Item>ABILITY_TREACHERY</Item>
 		<Item>ABILITY_SET_SNARES</Item>
 	</Abilities>
 </Creature>

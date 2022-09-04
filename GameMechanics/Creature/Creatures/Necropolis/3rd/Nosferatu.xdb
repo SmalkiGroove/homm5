@@ -4,7 +4,7 @@
 	<DefenceSkill>7</DefenceSkill>
 	<Shots>0</Shots>
 	<MinDamage>6</MinDamage>
-	<MaxDamage>13</MaxDamage>
+	<MaxDamage>12</MaxDamage>
 	<Speed>7</Speed>
 	<Initiative>10</Initiative>
 	<Flying>true</Flying>
@@ -32,7 +32,7 @@
 		<Crystal>0</Crystal>
 		<Sulfur>0</Sulfur>
 		<Gem>0</Gem>
-		<Gold>175</Gold>
+		<Gold>225</Gold>
 	</Cost>
 	<PresetPrice>0</PresetPrice>
 	<SubjectOfRandomGeneration>true</SubjectOfRandomGeneration>
