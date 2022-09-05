@@ -69,7 +69,7 @@
 						<Prob>5</Prob>
 					</Item>
 					<Item>
-						<SkillID>HERO_SKILL_BARBARIAN_LEARNING</SkillID>
+						<SkillID>HERO_SKILL_NAVIGATION</SkillID>
 						<Prob>5</Prob>
 					</Item>
 				</SkillsProbs>
@@ -136,7 +136,7 @@
 						<Prob>5</Prob>
 					</Item>
 					<Item>
-						<SkillID>HERO_SKILL_BARBARIAN_LEARNING</SkillID>
+						<SkillID>HERO_SKILL_NAVIGATION</SkillID>
 						<Prob>5</Prob>
 					</Item>
 				</SkillsProbs>
@@ -203,7 +203,7 @@
 						<Prob>8</Prob>
 					</Item>
 					<Item>
-						<SkillID>HERO_SKILL_BARBARIAN_LEARNING</SkillID>
+						<SkillID>HERO_SKILL_NAVIGATION</SkillID>
 						<Prob>5</Prob>
 					</Item>
 				</SkillsProbs>
@@ -270,7 +270,7 @@
 						<Prob>5</Prob>
 					</Item>
 					<Item>
-						<SkillID>HERO_SKILL_BARBARIAN_LEARNING</SkillID>
+						<SkillID>HERO_SKILL_NAVIGATION</SkillID>
 						<Prob>5</Prob>
 					</Item>
 				</SkillsProbs>
@@ -337,7 +337,7 @@
 						<Prob>4</Prob>
 					</Item>
 					<Item>
-						<SkillID>HERO_SKILL_BARBARIAN_LEARNING</SkillID>
+						<SkillID>HERO_SKILL_NAVIGATION</SkillID>
 						<Prob>5</Prob>
 					</Item>
 				</SkillsProbs>
@@ -404,7 +404,7 @@
 						<Prob>8</Prob>
 					</Item>
 					<Item>
-						<SkillID>HERO_SKILL_BARBARIAN_LEARNING</SkillID>
+						<SkillID>HERO_SKILL_NAVIGATION</SkillID>
 						<Prob>5</Prob>
 					</Item>
 				</SkillsProbs>
@@ -471,7 +471,7 @@
 						<Prob>4</Prob>
 					</Item>
 					<Item>
-						<SkillID>HERO_SKILL_BARBARIAN_LEARNING</SkillID>
+						<SkillID>HERO_SKILL_NAVIGATION</SkillID>
 						<Prob>5</Prob>
 					</Item>
 				</SkillsProbs>
@@ -538,7 +538,7 @@
 						<Prob>4</Prob>
 					</Item>
 					<Item>
-						<SkillID>HERO_SKILL_BARBARIAN_LEARNING</SkillID>
+						<SkillID>HERO_SKILL_NAVIGATION</SkillID>
 						<Prob>5</Prob>
 					</Item>
 				</SkillsProbs>
@@ -605,7 +605,7 @@
 						<Prob>12</Prob>
 					</Item>
 					<Item>
-						<SkillID>HERO_SKILL_BARBARIAN_LEARNING</SkillID>
+						<SkillID>HERO_SKILL_NAVIGATION</SkillID>
 						<Prob>5</Prob>
 					</Item>
 				</SkillsProbs>
@@ -672,7 +672,7 @@
 						<Prob>15</Prob>
 					</Item>
 					<Item>
-						<SkillID>HERO_SKILL_BARBARIAN_LEARNING</SkillID>
+						<SkillID>HERO_SKILL_NAVIGATION</SkillID>
 						<Prob>5</Prob>
 					</Item>
 				</SkillsProbs>
@@ -739,7 +739,7 @@
 						<Prob>4</Prob>
 					</Item>
 					<Item>
-						<SkillID>HERO_SKILL_BARBARIAN_LEARNING</SkillID>
+						<SkillID>HERO_SKILL_NAVIGATION</SkillID>
 						<Prob>5</Prob>
 					</Item>
 				</SkillsProbs>
@@ -806,7 +806,7 @@
 						<Prob>10</Prob>
 					</Item>
 					<Item>
-						<SkillID>HERO_SKILL_BARBARIAN_LEARNING</SkillID>
+						<SkillID>HERO_SKILL_NAVIGATION</SkillID>
 						<Prob>5</Prob>
 					</Item>
 				</SkillsProbs>
@@ -873,7 +873,7 @@
 						<Prob>10</Prob>
 					</Item>
 					<Item>
-						<SkillID>HERO_SKILL_BARBARIAN_LEARNING</SkillID>
+						<SkillID>HERO_SKILL_NAVIGATION</SkillID>
 						<Prob>5</Prob>
 					</Item>
 				</SkillsProbs>
@@ -936,11 +936,11 @@
 						<Prob>12</Prob>
 					</Item>
 					<Item>
-						<SkillID>HERO_SKILL_LEARNING</SkillID>
+						<SkillID>HERO_SKILL_BARBARIAN_LEARNING</SkillID>
 						<Prob>5</Prob>
 					</Item>
 					<Item>
-						<SkillID>HERO_SKILL_BARBARIAN_LEARNING</SkillID>
+						<SkillID>HERO_SKILL_NAVIGATION</SkillID>
 						<Prob>5</Prob>
 					</Item>
 				</SkillsProbs>
@@ -1007,7 +1007,7 @@
 						<Prob>5</Prob>
 					</Item>
 					<Item>
-						<SkillID>HERO_SKILL_BARBARIAN_LEARNING</SkillID>
+						<SkillID>HERO_SKILL_NAVIGATION</SkillID>
 						<Prob>5</Prob>
 					</Item>
 				</SkillsProbs>
@@ -1074,7 +1074,7 @@
 						<Prob>12</Prob>
 					</Item>
 					<Item>
-						<SkillID>HERO_SKILL_BARBARIAN_LEARNING</SkillID>
+						<SkillID>HERO_SKILL_NAVIGATION</SkillID>
 						<Prob>5</Prob>
 					</Item>
 				</SkillsProbs>
@@ -1141,7 +1141,7 @@
 						<Prob>10</Prob>
 					</Item>
 					<Item>
-						<SkillID>HERO_SKILL_BARBARIAN_LEARNING</SkillID>
+						<SkillID>HERO_SKILL_NAVIGATION</SkillID>
 						<Prob>5</Prob>
 					</Item>
 				</SkillsProbs>
@@ -1208,7 +1208,7 @@
 						<Prob>4</Prob>
 					</Item>
 					<Item>
-						<SkillID>HERO_SKILL_BARBARIAN_LEARNING</SkillID>
+						<SkillID>HERO_SKILL_NAVIGATION</SkillID>
 						<Prob>5</Prob>
 					</Item>
 				</SkillsProbs>
@@ -1275,7 +1275,7 @@
 						<Prob>5</Prob>
 					</Item>
 					<Item>
-						<SkillID>HERO_SKILL_BARBARIAN_LEARNING</SkillID>
+						<SkillID>HERO_SKILL_NAVIGATION</SkillID>
 						<Prob>5</Prob>
 					</Item>
 				</SkillsProbs>
@@ -1342,7 +1342,7 @@
 						<Prob>4</Prob>
 					</Item>
 					<Item>
-						<SkillID>HERO_SKILL_BARBARIAN_LEARNING</SkillID>
+						<SkillID>HERO_SKILL_NAVIGATION</SkillID>
 						<Prob>5</Prob>
 					</Item>
 				</SkillsProbs>
@@ -1409,7 +1409,7 @@
 						<Prob>12</Prob>
 					</Item>
 					<Item>
-						<SkillID>HERO_SKILL_BARBARIAN_LEARNING</SkillID>
+						<SkillID>HERO_SKILL_NAVIGATION</SkillID>
 						<Prob>5</Prob>
 					</Item>
 				</SkillsProbs>
@@ -1476,7 +1476,7 @@
 						<Prob>4</Prob>
 					</Item>
 					<Item>
-						<SkillID>HERO_SKILL_BARBARIAN_LEARNING</SkillID>
+						<SkillID>HERO_SKILL_NAVIGATION</SkillID>
 						<Prob>5</Prob>
 					</Item>
 				</SkillsProbs>
@@ -1543,7 +1543,7 @@
 						<Prob>8</Prob>
 					</Item>
 					<Item>
-						<SkillID>HERO_SKILL_BARBARIAN_LEARNING</SkillID>
+						<SkillID>HERO_SKILL_NAVIGATION</SkillID>
 						<Prob>5</Prob>
 					</Item>
 				</SkillsProbs>
@@ -1610,7 +1610,7 @@
 						<Prob>4</Prob>
 					</Item>
 					<Item>
-						<SkillID>HERO_SKILL_BARBARIAN_LEARNING</SkillID>
+						<SkillID>HERO_SKILL_NAVIGATION</SkillID>
 						<Prob>5</Prob>
 					</Item>
 				</SkillsProbs>
