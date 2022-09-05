@@ -6,7 +6,7 @@
 	<Icon/>
 	<Icon32/>
 	<Icon64/>
-	<Icon128 href="/Textures/Interface/CombatArena/Faces/Neutral/ico_Death_Knight_128.xdb#xpointer(/Texture)"/>
+	<Icon128 href="/Textures/Interface/CombatArena/Faces/Neutral/ico_Black_Knight_128.xdb#xpointer(/Texture)"/>
 	<AnimCharacter href="/Characters/Creatures/Necropolis/BlackKnight.(Character).xdb#xpointer(/Character)"/>
 	<DeadCharacter/>
 	<AnimShot/>

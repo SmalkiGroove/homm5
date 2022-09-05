@@ -8,7 +8,7 @@
 	<Speed>7</Speed>
 	<Initiative>10</Initiative>
 	<Flying>false</Flying>
-	<Health>175</Health>
+	<Health>150</Health>
 	<KnownSpells/>
 	<SpellPoints>0</SpellPoints>
 	<SpellPoints1>0</SpellPoints1>
@@ -16,7 +16,7 @@
 	<Exp>500</Exp>
 	<Power>3560</Power>
 	<TimeToCommand>10</TimeToCommand>
-	<CreatureTier>7</CreatureTier>
+	<CreatureTier>6</CreatureTier>
 	<Upgrade>true</Upgrade>
 	<PairCreature>CREATURE_BLACK_KNIGHT</PairCreature>
 	<CreatureTown>TOWN_NO_TYPE</CreatureTown>
