@@ -564,7 +564,7 @@ function TriggerHeroSpe_Turn(side,hero_name,hero_id,unit)
     end;
     if hero_name == "Straker" and hero_id == unit then
         print("Trigger summon zombies !")
-        local m = GetUnitMaxManaPoints(hero_id);
+        local m = GetUnitManaPoints(hero_id);
         SummonCreature(side,32,m);
         setATB(hero_id,1);
     end;

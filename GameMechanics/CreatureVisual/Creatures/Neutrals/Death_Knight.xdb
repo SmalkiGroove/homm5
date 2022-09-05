@@ -11,7 +11,7 @@
 	<DeadCharacter/>
 	<AnimShot/>
 	<SummoningEffect/>
-	<DamageEffect href="/GameMechanics/CreatureDamage/Necro_Hits2.xdb#xpointer(/CreatureDamage)"/>
+	<DamageEffect href="/GameMechanics/CreatureDamage/Flesh_and_Blood.xdb#xpointer(/CreatureDamage)"/>
 	<TeleportingMove>
 		<Use>false</Use>
 		<StartEffect/>

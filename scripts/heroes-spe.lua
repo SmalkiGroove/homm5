@@ -348,12 +348,13 @@ function ApplyHeroesSpe_daily(player)
 			startThread(Spe_UpgradeCreatures,"Xerxon",player,89,90,37,1); -- B.Knights to D.Knights for 1 Lich
 		end;
 		if contains(heroes,"Effig") ~= nil then
+			local mult = ceil(GetHeroLevel("Effig") * 0.1);
 			local army = GetHeroArmy("Effig");
 			local amount = 0;
 			for i=1,7 do
 				if army[i] and army[i] ~= 0 then amount = amount + GetHeroCreatures("Effig",army[i]) end;
 			end;
-			startThread(Spe_GiveResources,"Effig",player,6,amount); -- Gold - 1 per creature in army
+			startThread(Spe_GiveResources,"Effig",player,6,amount*mult); -- Gold - 1 per creature in army per 10 levels
 		end;
 		-- Inferno
 		if contains(heroes,"Calid") ~= nil then
