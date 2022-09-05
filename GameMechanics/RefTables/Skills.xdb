@@ -272,9 +272,9 @@
 						<FreelancerValue>1000</FreelancerValue>
 					</Fortress>
 					<Stronghold>
-						<CommanderValue>0</CommanderValue>
-						<CollectorSupplierValue>0</CollectorSupplierValue>
-						<FreelancerValue>0</FreelancerValue>
+						<CommanderValue>1000</CommanderValue>
+						<CollectorSupplierValue>1000</CollectorSupplierValue>
+						<FreelancerValue>1000</FreelancerValue>
 					</Stronghold>
 				</AIRacesValues>
 				<PresetPrice>0</PresetPrice>
@@ -7367,7 +7367,7 @@
 				<SkillType>SKILLTYPE_SPECIAL_PERK</SkillType>
 				<HeroClass>HERO_CLASS_NONE</HeroClass>
 				<spellBuffs/>
-				<BasicSkillID>HERO_SKILL_TRAINING</BasicSkillID>
+				<BasicSkillID>HERO_SKILL_BARBARIAN_LEARNING</BasicSkillID>
 				<SkillPrerequisites>
 				    <Item>
 						<Class>HERO_CLASS_KNIGHT</Class>
@@ -9003,7 +9003,7 @@
 				<SkillType>SKILLTYPE_SPECIAL_PERK</SkillType>
 				<HeroClass>HERO_CLASS_NONE</HeroClass>
 				<spellBuffs/>
-				<BasicSkillID>HERO_SKILL_GATING</BasicSkillID>
+				<BasicSkillID>HERO_SKILL_BARBARIAN_LEARNING</BasicSkillID>
 				<SkillPrerequisites>
 				    <Item>
 						<Class>HERO_CLASS_ENCHANTER</Class>
@@ -10751,7 +10751,7 @@
 				<SkillType>SKILLTYPE_SPECIAL_PERK</SkillType>
 				<HeroClass>HERO_CLASS_NONE</HeroClass>
 				<spellBuffs/>
-				<BasicSkillID>HERO_SKILL_NECROMANCY</BasicSkillID>
+				<BasicSkillID>HERO_SKILL_BARBARIAN_LEARNING</BasicSkillID>
 				<SkillPrerequisites>
 					<Item>
 						<Class>HERO_CLASS_NECROMANCER</Class>
@@ -12618,7 +12618,7 @@
 				<SkillType>SKILLTYPE_SPECIAL_PERK</SkillType>
 				<HeroClass>HERO_CLASS_NONE</HeroClass>
 				<spellBuffs/>
-				<BasicSkillID>HERO_SKILL_AVENGER</BasicSkillID>
+				<BasicSkillID>HERO_SKILL_BARBARIAN_LEARNING</BasicSkillID>
 				<SkillPrerequisites>
 					<Item>
 						<Class>HERO_CLASS_RANGER</Class>
@@ -14839,7 +14839,7 @@
 				<SkillType>SKILLTYPE_SPECIAL_PERK</SkillType>
 				<HeroClass>HERO_CLASS_NONE</HeroClass>
 				<spellBuffs/>
-				<BasicSkillID>HERO_SKILL_ARTIFICIER</BasicSkillID>
+				<BasicSkillID>HERO_SKILL_BARBARIAN_LEARNING</BasicSkillID>
 				<SkillPrerequisites>
 					<Item>
 						<Class>HERO_CLASS_SEER</Class>
@@ -17191,7 +17191,7 @@
 				<SkillType>SKILLTYPE_SPECIAL_PERK</SkillType>
 				<HeroClass>HERO_CLASS_NONE</HeroClass>
 				<spellBuffs/>
-				<BasicSkillID>HERO_SKILL_INVOCATION</BasicSkillID>
+				<BasicSkillID>HERO_SKILL_BARBARIAN_LEARNING</BasicSkillID>
 				<SkillPrerequisites>
 					<Item>
 						<Class>HERO_CLASS_SORCERER</Class>
@@ -19462,7 +19462,7 @@
 				<spellBuffs>
 					<Item>SPELL_SKILL_ABSOLUTE_PROTECTION</Item>
 				</spellBuffs>
-				<BasicSkillID>HERO_SKILL_RUNELORE</BasicSkillID>
+				<BasicSkillID>HERO_SKILL_BARBARIAN_LEARNING</BasicSkillID>
 				<SkillPrerequisites>
 					<Item>
 						<Class>HERO_CLASS_FLAMEKEEPER</Class>
@@ -20655,7 +20655,7 @@
 				<SkillType>SKILLTYPE_SPECIAL_PERK</SkillType>
 				<HeroClass>HERO_CLASS_NONE</HeroClass>
 				<spellBuffs/>
-				<BasicSkillID>HERO_SKILL_DEMONIC_RAGE</BasicSkillID>
+				<BasicSkillID>HERO_SKILL_BARBARIAN_LEARNING</BasicSkillID>
 				<SkillPrerequisites>
 					<Item>
 						<Class>HERO_CLASS_BEWITCHER</Class>
@@ -21370,21 +21370,21 @@
 			<obj>
 				<Texture>
 					<Item/>
-					<Item href="/Textures/HeroScreen/Skills/Learning_1.xdb#xpointer(/Texture)"/>
-					<Item href="/Textures/HeroScreen/Skills/Learning_2.xdb#xpointer(/Texture)"/>
-					<Item href="/Textures/HeroScreen/Skills/Learning_3.xdb#xpointer(/Texture)"/>
+					<Item href="/Textures/HeroScreen/Artifacts/Pendant_of_Mastery.xdb#xpointer(/Texture)"/>
+					<Item href="/Textures/HeroScreen/Artifacts/Pendant_of_Mastery.xdb#xpointer(/Texture)"/>
+					<Item href="/Textures/HeroScreen/Artifacts/Pendant_of_Mastery.xdb#xpointer(/Texture)"/>
 				</Texture>
 				<CommonTexture/>
 				<NameFileRef>
-					<Item href="/Text/Game/Skills/Common/Learning/1/Name.txt"/>
-					<Item href="/Text/Game/Skills/Common/Learning/2/Name.txt"/>
-					<Item href="/Text/Game/Skills/Common/Learning/3/Name.txt"/>
+					<Item href="/Text/Game/Skills/Absolute/Name.txt"/>
+					<Item href="/Text/Game/Skills/Absolute/Name.txt"/>
+					<Item href="/Text/Game/Skills/Absolute/Name.txt"/>
 				</NameFileRef>
 				<CommonNameFileRef href=""/>
 				<DescriptionFileRef>
-					<Item href="/Text/Game/Skills/Common/Learning/1/Description.txt"/>
-					<Item href="/Text/Game/Skills/Common/Learning/2/Description.txt"/>
-					<Item href="/Text/Game/Skills/Common/Learning/3/Description.txt"/>
+					<Item href="/Text/Game/Skills/Absolute/Description.txt"/>
+					<Item href="/Text/Game/Skills/Absolute/Description.txt"/>
+					<Item href="/Text/Game/Skills/Absolute/Description.txt"/>
 				</DescriptionFileRef>
 				<CommonDescriptionFileRef href=""/>
 				<SkillType>SKILLTYPE_SKILL</SkillType>
@@ -21394,39 +21394,39 @@
 				<SkillPrerequisites/>
 				<AIRacesValues>
 					<Haven>
-						<CommanderValue>0</CommanderValue>
-						<CollectorSupplierValue>0</CollectorSupplierValue>
-						<FreelancerValue>0</FreelancerValue>
+						<CommanderValue>1000</CommanderValue>
+						<CollectorSupplierValue>1000</CollectorSupplierValue>
+						<FreelancerValue>1000</FreelancerValue>
 					</Haven>
 					<Sylvan>
-						<CommanderValue>0</CommanderValue>
-						<CollectorSupplierValue>0</CollectorSupplierValue>
-						<FreelancerValue>0</FreelancerValue>
+						<CommanderValue>1000</CommanderValue>
+						<CollectorSupplierValue>1000</CollectorSupplierValue>
+						<FreelancerValue>1000</FreelancerValue>
 					</Sylvan>
 					<Academy>
-						<CommanderValue>0</CommanderValue>
-						<CollectorSupplierValue>0</CollectorSupplierValue>
-						<FreelancerValue>0</FreelancerValue>
+						<CommanderValue>1000</CommanderValue>
+						<CollectorSupplierValue>1000</CollectorSupplierValue>
+						<FreelancerValue>1000</FreelancerValue>
 					</Academy>
 					<Dungeon>
-						<CommanderValue>0</CommanderValue>
-						<CollectorSupplierValue>0</CollectorSupplierValue>
-						<FreelancerValue>0</FreelancerValue>
+						<CommanderValue>1000</CommanderValue>
+						<CollectorSupplierValue>1000</CollectorSupplierValue>
+						<FreelancerValue>1000</FreelancerValue>
 					</Dungeon>
 					<Necropolis>
-						<CommanderValue>0</CommanderValue>
-						<CollectorSupplierValue>0</CollectorSupplierValue>
-						<FreelancerValue>0</FreelancerValue>
+						<CommanderValue>1000</CommanderValue>
+						<CollectorSupplierValue>1000</CollectorSupplierValue>
+						<FreelancerValue>1000</FreelancerValue>
 					</Necropolis>
 					<Inferno>
-						<CommanderValue>0</CommanderValue>
-						<CollectorSupplierValue>0</CollectorSupplierValue>
-						<FreelancerValue>0</FreelancerValue>
+						<CommanderValue>1000</CommanderValue>
+						<CollectorSupplierValue>1000</CollectorSupplierValue>
+						<FreelancerValue>1000</FreelancerValue>
 					</Inferno>
 					<Fortress>
-						<CommanderValue>0</CommanderValue>
-						<CollectorSupplierValue>0</CollectorSupplierValue>
-						<FreelancerValue>0</FreelancerValue>
+						<CommanderValue>1000</CommanderValue>
+						<CollectorSupplierValue>1000</CollectorSupplierValue>
+						<FreelancerValue>1000</FreelancerValue>
 					</Fortress>
 					<Stronghold>
 						<CommanderValue>1000</CommanderValue>
@@ -21456,7 +21456,7 @@
 				<SkillType>SKILLTYPE_SPECIAL_PERK</SkillType>
 				<HeroClass>HERO_CLASS_NONE</HeroClass>
 				<spellBuffs/>
-				<BasicSkillID>HERO_SKILL_BARBARIAN_LEARNING</BasicSkillID>
+				<BasicSkillID>HERO_SKILL_LEARNING</BasicSkillID>
 				<SkillPrerequisites>
 					<Item>
 						<Class>HERO_CLASS_BEWITCHER</Class>
@@ -21541,7 +21541,7 @@
 				<SkillType>SKILLTYPE_STANDART_PERK</SkillType>
 				<HeroClass>HERO_CLASS_NONE</HeroClass>
 				<spellBuffs/>
-				<BasicSkillID>HERO_SKILL_BARBARIAN_LEARNING</BasicSkillID>
+				<BasicSkillID>HERO_SKILL_LEARNING</BasicSkillID>
 				<SkillPrerequisites/>
 				<AIRacesValues>
 					<Haven>
@@ -21607,7 +21607,7 @@
 				<SkillType>SKILLTYPE_STANDART_PERK</SkillType>
 				<HeroClass>HERO_CLASS_NONE</HeroClass>
 				<spellBuffs/>
-				<BasicSkillID>HERO_SKILL_BARBARIAN_LEARNING</BasicSkillID>
+				<BasicSkillID>HERO_SKILL_LEARNING</BasicSkillID>
 				<SkillPrerequisites/>
 				<AIRacesValues>
 					<Haven>
@@ -23523,7 +23523,7 @@
 					<Item>SPELL_NONE</Item>
 					<Item>SPELL_NONE</Item>
 				</spellBuffs>
-				<BasicSkillID>HERO_SKILL_BARBARIAN_LEARNING</BasicSkillID>
+				<BasicSkillID>HERO_SKILL_LEARNING</BasicSkillID>
 				<SkillPrerequisites/>
 				<AIRacesValues>
 					<Haven>
@@ -24008,7 +24008,7 @@
 				<SkillType>SKILLTYPE_SPECIAL_PERK</SkillType>
 				<HeroClass>HERO_CLASS_NONE</HeroClass>
 				<spellBuffs/>
-				<BasicSkillID>HERO_SKILL_BARBARIAN_LEARNING</BasicSkillID>
+				<BasicSkillID>HERO_SKILL_LEARNING</BasicSkillID>
 				<SkillPrerequisites>
 					<Item>
 						<Class>HERO_CLASS_BEWITCHER</Class>
@@ -24093,7 +24093,7 @@
 				<SkillType>SKILLTYPE_SPECIAL_PERK</SkillType>
 				<HeroClass>HERO_CLASS_NONE</HeroClass>
 				<spellBuffs/>
-				<BasicSkillID>HERO_SKILL_BARBARIAN_LEARNING</BasicSkillID>
+				<BasicSkillID>HERO_SKILL_LEARNING</BasicSkillID>
 				<SkillPrerequisites>
 					<Item>
 						<Class>HERO_CLASS_BEWITCHER</Class>
