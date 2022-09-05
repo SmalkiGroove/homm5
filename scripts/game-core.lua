@@ -29,7 +29,7 @@ end;
 
 function GetHeroFactionID(hero)
 	local race = 0;
-	if contains(H55_HavenHeroes,hero) ~= nil then race = 1 
+	if 	   contains(H55_HavenHeroes,hero) ~= nil then race = 1 
 	elseif contains(H55_SylvanHeroes,hero) ~= nil then race = 2 
 	elseif contains(H55_InfernoHeroes,hero) ~= nil then race = 3 
 	elseif contains(H55_NecropolisHeroes,hero) ~= nil then race = 4 
@@ -65,6 +65,6 @@ end;
 
 function GetHeroArmy(hero)
 	local type = {};
-	type[0], type[1], type[2], type[3], type[4], type[5], type[6] = GetHeroCreaturesTypes(hero);
+	type[1], type[2], type[3], type[4], type[5], type[6], type[7] = GetHeroCreaturesTypes(hero);
 	return type
 end;

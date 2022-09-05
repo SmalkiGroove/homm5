@@ -162,10 +162,9 @@ end;
 function Spe_TransformCreatures(hero,player,array)
 	local army = GetHeroArmy(hero);
 	for i=1,7 do
-		if army[i] then
-			print("transform unit "..army[i])
+		if army[i] and army[i] ~= 0 then
 			local id = array[army[i]];
-			print("... into unit "..id)
+			print("transform unit "..army[i].." into unit "..id)
 			if id ~= 0 then
 				local n = GetHeroCreatures(hero,army[i]);
 				RemoveHeroCreatures(hero,army[i],n);
@@ -351,8 +350,8 @@ function ApplyHeroesSpe_daily(player)
 		if contains(heroes,"Effig") ~= nil then
 			local army = GetHeroArmy("Effig");
 			local amount = 0;
-			for i=0,6 do
-				if army[i] then amount = amount + GetHeroCreatures("Effig",army[i]) end;
+			for i=1,7 do
+				if army[i] and army[i] ~= 0 then amount = amount + GetHeroCreatures("Effig",army[i]) end;
 			end;
 			startThread(Spe_GiveResources,"Effig",player,6,amount); -- Gold - 1 per creature in army
 		end;
@@ -566,24 +565,21 @@ end;
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
+function DoPlayerHeroesSpe(player,day)
+	while (not IsPlayerCurrent(player)) do sleep(10) end;
+	print("Player "..player.." turn");
+	if ((day == 1) and (PLAYER_WEEKLY_EVENTS_CHECK[player] < TURN)) then ApplyHeroesSpe_weekly(player) end;
+	if (PLAYER_DAILY_EVENTS_CHECK[player] < TURN) then ApplyHeroesSpe_daily(player) end;
+	if (PLAYER_ONETIME_EVENTS_CHECK[player] < TURN) then ApplyHeroesSpe_onetime(player) end;
+end;
 
 function HeroesSpe_NewDay()
 	local day = GetDate(DAY_OF_WEEK);
 	for i = 1,8 do
 		if (GetPlayerState(i) == 1) then
-			if ((day == 1) and (PLAYER_WEEKLY_EVENTS_CHECK[i] < TURN)) then ApplyHeroesSpe_weekly(i) end;
-			if (PLAYER_DAILY_EVENTS_CHECK[i] < TURN) then ApplyHeroesSpe_daily(i) end;
-			if (PLAYER_ONETIME_EVENTS_CHECK[i] < TURN) then ApplyHeroesSpe_onetime(i) end;
+			startThread(DoPlayerHeroesSpe,i,day);
 		end;
 	end;
-end;
-
-function HeroesSpe_LevelUp()
-
-end;
-
-function HeroesSpe_Recruit(hero)
-
 end;
 
 function NewDayTrigger()
@@ -594,5 +590,3 @@ end;
 
 
 Trigger(NEW_DAY_TRIGGER,"NewDayTrigger");
--- Trigger(PLAYER_ADD_HERO_TRIGGER,"player","HeroesSpe_Recruit");
--- Trigger(HERO_LEVELUP_TRIGGER,"hero","HeroesSpe_LevelUp");
