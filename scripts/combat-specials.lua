@@ -1,3 +1,4 @@
+COMBAT_READY = nil
 COMBAT_TURN = 0;
 CURRENT_UNIT = "none";
 
@@ -17,6 +18,8 @@ TRIGGER_LIMIT_PER_COMBAT = {
     ["RedHeavenHero01"]=-1,
     ["Maeve"]=-1,
     ["Jeddite"]=-1,
+    ["Heam"]=-1,
+    ["Ildar"]=-1,
     ["Minasli"]=-1,
     ["Rissa"]=-1,
     ["Gles"]=-1,
@@ -57,22 +60,25 @@ end;
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
+function ResetATB()
+    print("Set ATB of all to 0...")
+    for side = 0,1 do
+        for i,cr in GetUnits(side,CREATURE) do setATB(cr,0) end;
+        for i,wm in GetUnits(side,WAR_MACHINE) do setATB(wm,0) end;
+        if GetHero(side) then setATB(GetHero(side),0) end;
+    end;
+    COMBAT_READY = not nil;
+    print("Done")
+end;
+
 function UnitPlayFirst(side,id0,id1,id2)
     local creatures = GetUnits(side,CREATURE);
     for i,cr in creatures do
         local id = GetCreatureType(cr);
         if id == id0 or id == id1 or id == id2 then
             setATB(cr,1);
-        else
-            setATB(cr,0);
         end;
     end;
-    local ennemies = GetUnits(1-side,CREATURE);
-    for i,en in ennemies do
-        setATB(en,0);
-    end;
-    setATB(GetHero(side),0);
-    if GetHero(1-side) then setATB(GetHero(1-side),0) end;
 end;
 
 function WarMachinePlayFirst(side,type)
@@ -82,16 +88,6 @@ function WarMachinePlayFirst(side,type)
             setATB(wm,1);
         end;
     end;
-    local creatures = GetUnits(side,CREATURE);
-    for i,cr in creatures do
-        setATB(cr,0);
-    end;
-    local ennemies = GetUnits(1-side,CREATURE);
-    for i,en in ennemies do
-        setATB(en,0);
-    end;
-    setATB(GetHero(side),0);
-    if GetHero(1-side) then setATB(GetHero(1-side),0) end;
 end;
 
 function UnitPlayNext_Creature(side,id0,id1,id2)
@@ -119,8 +115,7 @@ function UnitRandomShoot(side,id0,id1,id2)
         local id = GetCreatureType(cr);
         if id == id0 or id == id1 or id == id2 then
             ShootCombatUnit(cr,RandomCreature(1-side,i));
-            sleep(50);
-            setATB(cr,0);
+            sleep(100);
         end;
     end;
 end;
@@ -131,7 +126,6 @@ function UnitCast_RandomEnnemy(side,id0,id1,id2,spell)
         local id = GetCreatureType(cr);
         if id == id0 or id == id1 or id == id2 then
             UnitCastAimedSpell(cr,spell,RandomCreature(1-side,i));
-            setATB(cr,0);
         end;
     end;
 end;
@@ -161,7 +155,6 @@ function BallistaTargetShoot(side,target)
     for i,wm in war_machines do
         if GetWarMachineType(wm) == WAR_MACHINE_BALLISTA then
             ShootCombatUnit(wm,target);
-            setATB(wm,0);
         end;
     end;
 end;
@@ -349,9 +342,21 @@ function TriggerHeroSpe_Start(side,hero_name,hero_id)
         SetMana(hero_id,m);
     end;
     -- Preserve
+    if hero_name == "Metlirn" then
+        print("Trigger anger treants rage of forest !")
+        UnitSpecialAbility(side,0,0,150,329);
+    end;
+    if hero_name == "Nadaur" then
+        print("Trigger spawn master hunter scout !")
+        SummonStack(side,48,1,9);
+    end;
 	if hero_name == "Ossir" then
         print("Trigger hunters random shoot !")
         UnitRandomShoot(side,47,48,147);
+    end;
+    if hero_name == "Heam" then
+        print("Trigger hero first !")
+        setATB(hero_id,1);
     end;
     if hero_name == "Vaniel" then
         print("Trigger hero cast Mass Haste !")
@@ -535,6 +540,11 @@ function TriggerHeroSpe_Turn(side,hero_name,hero_id,unit)
             setATB(hero_id,1);
         end;
     end;
+    -- Preserve
+    if hero_name == "Ildar" and hero_id == unit then
+        print("Trigger druids play next !")
+        UnitPlayNext_Creature(side,49,50,148);
+    end;
     -- Academy
     if hero_name == "Minasli" and hero_id == unit then
         print("Trigger fire ballista ATB boost !")
@@ -610,6 +620,11 @@ function TriggerHeroSpe_EnnemyTurn(side,hero_name,hero_id,unit)
     else
         return nil;
     end;
+    -- Preserve
+    if hero_name == "Heam" then
+        print("Trigger hero play next !")
+        setATB(hero_id,1);
+    end;
     -- Inferno
     if hero_name == "Sheltem" then
         print("Trigger fireball ballista shoot !")
@@ -623,6 +638,7 @@ end;
 
 
 function CombatStartSpecials()
+    repeat sleep(1) until COMBAT_READY;
 	if GetHero(ATTACKER) then
 		local attacker_id = GetAttackerHero();
 		local attacker = GetHeroName(attacker_id);

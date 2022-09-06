@@ -162,6 +162,7 @@ end
 
 function Start() end
 function DoStart()
+	ResetATB()
 	CombatStartSpecials()
 	Start()
 	return nil

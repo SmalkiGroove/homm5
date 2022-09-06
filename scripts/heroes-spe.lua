@@ -408,6 +408,9 @@ function ApplyHeroesSpe_weekly(player)
 			startThread(Spe_ArmyMultiply,"Nicolai",player,{3,4,107,5,6,108,9,10,110},0.01); -- T2 T3 T5 : 1% * level
 		end;
 		-- Preserve
+		if contains(heroes,"Metlirn") ~= nil then
+			startThread(Spe_AddCreatures2,"Metlirn",player,150,0.25); -- Anger Treant - 1:2 - 2:6 - 3:10 - 4:14 ... 13:50
+		end;
 		if contains(heroes,"Gillion") ~= nil then
 			startThread(Spe_AddRecruits,"Gillion",player,CREATURE_BLADE_JUGGLER,TOWN_BUILDING_DWELLING_1,6); -- Blade Jugglers - 6 * level recruits per week
 		end;
@@ -508,15 +511,16 @@ function ApplyHeroesSpe_onetime(player)
 		-- Preserve
 		if contains(heroes,"Linaas") ~= nil then
 			if (ONE_TIME_BONUSES["Linaas"] == 0) then
-				ChangeHeroStat("Linaas",6,2);
+				ChangeHeroStat("Linaas",6,3);
 				ONE_TIME_BONUSES["Linaas"] = 1;
-			end; --Morale +2
+			end; --Morale +3
 		end;
 		if contains(heroes,"Metlirn") ~= nil then
-			if (ONE_TIME_BONUSES["Metlirn"] == 0) then
-				ChangeHeroStat("Metlirn",5,2);
-				ONE_TIME_BONUSES["Metlirn"] = 1;
-			end; --Luck +2
+			local level = trunc(0.1*GetHeroLevel("Metlirn"));
+			if (ONE_TIME_BONUSES["Metlirn"] <= level) then
+				ChangeHeroStat("Metlirn",5,level-ONE_TIME_BONUSES["Metlirn"]+1);
+				ONE_TIME_BONUSES["Metlirn"] = 1+level;
+			end; --Luck +1 per 10 levels
 		end;
 		-- Academy
 		if contains(heroes,"Josephine") ~= nil then

@@ -67,7 +67,9 @@
 			<Item>HERO_SKILL_IMBUE_ARROW</Item>
 			<Item>HERO_SKILL_CRITICAL_STRIKE</Item>
 		</perkIDs>
-		<spellIDs/>
+		<spellIDs>
+			<Item>SPELL_LIGHTNING_BOLT</Item>
+		</spellIDs>
 		<Ballista>true</Ballista>
 		<FirstAidTent>false</FirstAidTent>
 		<AmmoCart>false</AmmoCart>
