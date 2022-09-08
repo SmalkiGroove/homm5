@@ -470,18 +470,18 @@ function ApplyHeroesSpe_weekly(player)
 			startThread(Spe_AddRecruits,"Darkstorm",player,CREATURE_MINOTAUR,TOWN_BUILDING_DWELLING_3,1.4);
 		end;
 		-- Stronghold
-		if contains(heroes,"Hero8") ~= nil then
-			startThread(Spe_AddRecruits,"Hero8",player,CREATURE_ORC_WARRIOR,TOWN_BUILDING_DWELLING_3,1.4);
-		end;
 		if contains(heroes,"Hero4") ~= nil then
-			startThread(Spe_AddRecruits,"Hero4",player,CREATURE_CENTAUR,TOWN_BUILDING_DWELLING_4,0.8);
-		end;
-		if contains(heroes,"Kunyak") ~= nil then
-			startThread(Spe_AddRecruits,"Kunyak",player,CREATURE_ORCCHIEF_BUTCHER,TOWN_BUILDING_DWELLING_5,0.3);
+			startThread(Spe_CallCreatures,"Hero4",player,CREATURE_CENTAUR,TOWN_BUILDING_DWELLING_4,1); -- Centaurs - 1 * level transfered
 		end;
 		if contains(heroes,"Zouleika") ~= nil then
 			local stat = 3+random(1);
 			startThread(Spe_GiveStats,"Zouleika",player,stat,0.1); --Spellpower or Knowledge - +1 / 10*lvl / week
+		end;
+		if contains(heroes,"Shiva") ~= nil then
+			startThread(Spe_AddRecruits,"Shiva",player,CREATURE_SHAMAN,TOWN_BUILDING_DWELLING_2,3); -- Shamans - 3 * level recruits per week
+		end;
+		if contains(heroes,"Mokka") ~= nil then
+			startThread(Spe_AddCreatures2,"Mokka",player,70,0.2); -- Titans - 1:3 - 2:8 - 3:13 - 4:18 - 5:23 ... 10:48
 		end;
 	end;
 	print("Weekly run done.");
