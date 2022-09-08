@@ -58,13 +58,15 @@
 		<skills>
 			<Item>
 				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_LEADERSHIP</SkillID>
+				<SkillID>HERO_SKILL_VOICE</SkillID>
 			</Item>
 		</skills>
 		<perkIDs>
 			<Item>HERO_SKILL_MEMORY_OF_OUR_BLOOD</Item>
 		</perkIDs>
-		<spellIDs/>
+		<spellIDs>
+			<Item>SPELL_WARCRY_CALL_OF_BLOOD</Item>
+		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>
 		<AmmoCart>true</AmmoCart>
