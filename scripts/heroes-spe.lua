@@ -8,7 +8,7 @@ TURN = 1; -- current turn
 
 ATTRIBUTE_NAME = {"Experience", "Offense", "Defense", "Spellpower", "Knowledge", "Luck", "Morale", "Movement", "Mana"};
 RESOURCE_NAME = {"wood", "ores", "mercury", "cystals", "sulfur", "gems", "golds"};
-ONE_TIME_BONUSES = {["Isabell"]=0,["Brem"]=0,["Linaas"]=0,["Metlirn"]=0,["Josephine"]=0,["Thant"]=0,["KingTolghar"]=0,["Vilma"]=0};
+ONE_TIME_BONUSES = {["Isabell"]=0,["Brem"]=0,["Linaas"]=0,["Metlirn"]=0,["Kyrre"]=0,["Josephine"]=0,["Thant"]=0,["KingTolghar"]=0,["Vilma"]=0};
 
 ARTIFACTS_GAINS = {
 	["Brem0"]=26,
@@ -521,6 +521,15 @@ function ApplyHeroesSpe_onetime(player)
 				ChangeHeroStat("Metlirn",5,level-ONE_TIME_BONUSES["Metlirn"]+1);
 				ONE_TIME_BONUSES["Metlirn"] = 1+level;
 			end; --Luck +1 per 10 levels
+		end;
+		if contains(heroes,"Kyrre") ~= nil then
+			if (ONE_TIME_BONUSES["Kyrre"] == 0) then
+				if (GetHeroLevel("Kyrre") >= 30) then
+					GiveArtifact("Kyrre",22);
+					GiveArtifact("Kyrre",58);
+					ONE_TIME_BONUSES["Kyrre"] = 1;
+				end;
+			end; -- Ring of haste and Moonblade
 		end;
 		-- Academy
 		if contains(heroes,"Josephine") ~= nil then

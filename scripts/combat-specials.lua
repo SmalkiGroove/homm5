@@ -14,7 +14,11 @@ GRID_Y_MAX = 12;
 NO_COST = 0;
 FREE_MANA = 99;
 
-NO_ATB_RESET_HEROES = { "RedHeavenHero05","Heam","Jazaz","Hero1","Linaas","Crag" };
+NO_ATB_RESET_HEROES = {
+    [HERO] = { "RedHeavenHero05","Heam","Jazaz","Hero1" },
+    [CREATURE] = { "Linaas","Crag" },
+    [WAR_MACHINE] = { },
+};
 
 TRIGGER_LIMIT_PER_COMBAT = {
     ["RedHeavenHero01"]=-1,
@@ -65,16 +69,20 @@ end;
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
 function ResetATB()
-    print("Set ATB of all to 0...")
     for side = 0,1 do
-        for i,cr in GetUnits(side,CREATURE) do setATB(cr,0) end;
-        for i,wm in GetUnits(side,WAR_MACHINE) do setATB(wm,0) end;
+        local heroname = "none";
+        if GetHero(side) then heroname = GetHeroName(GetHero(side)) end;
+        if contains(NO_ATB_RESET_HEROES[CREATURE],heroname) == nil then
+            for i,cr in GetUnits(side,CREATURE) do setATB(cr,0) end;
+        end;
+        if contains(NO_ATB_RESET_HEROES[WAR_MACHINE],heroname) == nil then
+            for i,wm in GetUnits(side,WAR_MACHINE) do setATB(wm,0) end;
+        end;
         if GetHero(side) then
-            if contains(NO_ATB_RESET_HEROES,GetHeroName(GetHero(side))) == nil then setATB(GetHero(side),0) end;
+            if contains(NO_ATB_RESET_HEROES[HERO],heroname) == nil then setATB(GetHero(side),0) end;
         end;
     end;
     COMBAT_READY = not nil;
-    print("Done")
 end;
 
 function UnitPlayFirst(side,id0,id1,id2)
@@ -351,10 +359,6 @@ function TriggerHeroSpe_Start(side,hero_name,hero_id)
     if hero_name == "Metlirn" then
         -- print("Trigger anger treants rage of forest !")
         UnitSpecialAbility(side,0,0,150,329);
-    end;
-    if hero_name == "Nadaur" then
-        -- print("Trigger spawn master hunter scout !")
-        SummonStack(side,48,1,9);
     end;
 	if hero_name == "Ossir" then
         -- print("Trigger hunters random shoot !")

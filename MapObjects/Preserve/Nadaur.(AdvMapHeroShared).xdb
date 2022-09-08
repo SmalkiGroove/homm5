@@ -66,7 +66,9 @@
 		<perkIDs>
 			<Item>HERO_SKILL_FRENZY</Item>
 		</perkIDs>
-		<spellIDs/>
+		<spellIDs>
+			<Item>SPELL_BLOODLUST</Item>
+		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>
 		<AmmoCart>true</AmmoCart>
