@@ -112,6 +112,36 @@
 			</buildings>
 		</Item>
 		<Item>
+			<BuildingType>TB_MAGIC_GUILD</BuildingType>
+			<buildings>
+				<Item>
+					<Upgrade>BLD_UPG_1</Upgrade>
+					<XSlotPos>4</XSlotPos>
+					<YSlotPos>2</YSlotPos>
+				</Item>
+				<Item>
+					<Upgrade>BLD_UPG_2</Upgrade>
+					<XSlotPos>4</XSlotPos>
+					<YSlotPos>2</YSlotPos>
+				</Item>
+				<Item>
+					<Upgrade>BLD_UPG_3</Upgrade>
+					<XSlotPos>4</XSlotPos>
+					<YSlotPos>2</YSlotPos>
+				</Item>
+				<Item>
+					<Upgrade>BLD_UPG_4</Upgrade>
+					<XSlotPos>4</XSlotPos>
+					<YSlotPos>2</YSlotPos>
+				</Item>
+				<Item>
+					<Upgrade>BLD_UPG_5</Upgrade>
+					<XSlotPos>4</XSlotPos>
+					<YSlotPos>2</YSlotPos>
+				</Item>
+			</buildings>
+		</Item>
+		<!-- <Item>
 			<BuildingType>TB_SPECIAL_1</BuildingType>
 			<buildings>
 				<Item>
@@ -130,7 +160,7 @@
 					<YSlotPos>2</YSlotPos>
 				</Item>
 			</buildings>
-		</Item>
+		</Item> -->
 		<Item>
 			<BuildingType>TB_SPECIAL_2</BuildingType>
 			<buildings>
