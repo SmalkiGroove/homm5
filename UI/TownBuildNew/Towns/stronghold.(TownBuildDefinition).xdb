@@ -296,10 +296,10 @@
 				</Item>
 			</buildings>
 		</Item>
-		<Item>
+		<!-- <Item>
 			<BuildingType>TB_MAGIC_GUILD</BuildingType>
 			<buildings/>
-		</Item>
+		</Item> -->
 	</slots>
 	<arrows>
 		<Item>

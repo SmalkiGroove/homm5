@@ -20,6 +20,6 @@
 	<Creature>CREATURE_UNKNOWN</Creature>
 	<DevLevelNeeded>3</DevLevelNeeded>
 	<UIObjectName>MagicGuild</UIObjectName>
-	<UIStackPosition>0</UIStackPosition>
+	<UIStackPosition>3</UIStackPosition>
 	<Icon href="/UI/H5A2/Icons/City_Buildings/Hall_of_Might.(Texture).xdb#xpointer(/Texture)"/>
 </TownBuildingSharedStats>
