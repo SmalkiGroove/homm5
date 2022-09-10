@@ -15,35 +15,35 @@ NO_COST = 0;
 FREE_MANA = 99;
 
 NO_ATB_RESET_HEROES = {
-    [HERO] = { "RedHeavenHero05","Heam","Jazaz","Hero1" },
-    [CREATURE] = { "Linaas","Crag" },
+    [HERO] = { H_BERTRAND,H_FINDAN,H_NEBIROS,H_KRAGH },
+    [CREATURE] = { H_WYNGAAL,H_CRAGHACK },
     [WAR_MACHINE] = { },
 };
 
 TRIGGER_LIMIT_PER_COMBAT = {
-    ["RedHeavenHero01"]=-1,
-    ["Maeve"]=-1,
+    [H_ANDREAS]=-1,
+    [H_MAEVE]=-1,
     ["Jeddite"]=-1,
-    ["Nadaur"]=-1,
-    ["Heam"]=-1,
-    ["Ildar"]=-1,
-    ["Arniel"]=-1,
-    ["Minasli"]=-1,
-    ["Rissa"]=-1,
-    ["Gles"]=-1,
-    ["Straker"]=-1,
-    ["Giovanni"]=-1,
-    ["Sheltem"]=-1,
-    ["Calid2"]=-1,
-    ["Agrael"]=-1,
-    ["Deleb"]=-1,
-    ["Una"]=-1,
-    ["Matewa"]=-1,
-    ["Hero9"]=-1,
-    ["Kraal"]=-1,
-    ["Shiva"]=-1,
-    ["Hero3"]=-1,
-    ["Zouleika"]=-1,
+    [H_TALANAR]=-1,
+    [H_FINDAN]=-1,
+    [H_ALARON]=-1,
+    [H_IVOR]=-1,
+    [H_MINASLI]=-1,
+    [H_RISSA]=-1,
+    [H_KASPAR]=-1,
+    [H_ORSON]=-1,
+    [H_GIOVANNI]=-1,
+    [H_SHELTEM]=-1,
+    [H_CALID]=-1,
+    [H_AGRAEL]=-1,
+    [H_DELEB]=-1,
+    [H_INGA]=-1,
+    [H_MATEWA]=-1,
+    [H_KILGHAN]=-1,
+    [H_KRAAL]=-1,
+    [H_SHIVA]=-1,
+    [H_GARUNA]=-1,
+    [H_ZOULEIKA]=-1,
 }; -- -1 means no limit
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -352,19 +352,19 @@ function TriggerHeroSpe_Start(side,hero_name,hero_id)
     if hero_name == "none" then
         return nil;
     -- Haven
-    elseif hero_name == "Duncan" then
+    elseif hero_name == H_DUNCAN then
         -- print("Trigger ballista random shoot !")
         BallistaRandomShoot(side);
-    elseif hero_name == "Orrin" then
+    elseif hero_name == H_DOUGAL then
         -- print("Trigger archers atb boost !")
         UnitPlayFirst(side,3,4,107);
-    elseif hero_name == "Markal" then
+    elseif hero_name == H_MARKAL then
         -- print("Trigger cast Mass Confusion !")
         HeroCast_Global(hero_id,213,FREE_MANA);
-    elseif hero_name == "Axel" then
+    elseif hero_name == H_FREYDA then
         -- print("Trigger cast Prayer !")
         HeroCast_Global(hero_id,54,NO_COST);
-    elseif hero_name == "RedHeavenHero03" then
+    elseif hero_name == H_VALERIA then
         -- print("Trigger cast Blade Barriers !")
         local m = GetUnitManaPoints(hero_id);
         local x = 12 - 9 * side;
@@ -374,44 +374,44 @@ function TriggerHeroSpe_Start(side,hero_name,hero_id)
         end;
         SetMana(hero_id,m);
     -- Preserve
-    elseif hero_name == "Metlirn" then
+    elseif hero_name == H_ANWEN then
         -- print("Trigger anger treants rage of forest !")
         UnitSpecialAbility(side,0,0,150,329);
-    elseif hero_name == "Ossir" then
+    elseif hero_name == H_OSSIR then
         -- print("Trigger hunters random shoot !")
         UnitRandomShoot(side,47,48,147);
-    elseif hero_name == "Vaniel" then
+    elseif hero_name == H_TIERU then
         -- print("Trigger hero cast Mass Haste !")
         HeroCast_Global(hero_id,221,FREE_MANA);
-    elseif hero_name == "Ildar" then
+    elseif hero_name == H_ALARON then
         -- print("Trigger elder druids summoning !")
         local m = GetUnitMaxManaPoints(hero_id) * 0.1;
         SummonStack(side,50,trunc(0.5*m*m),0);
-    elseif hero_name == "Gem" then
+    elseif hero_name == H_GEM then
         -- print("Trigger siphon mana !")
         SiphonEnnemyMana(hero_id,side);
     -- Academy
-    elseif hero_name == "Isher" then
+    elseif hero_name == H_RAZZAK then
         -- print("Trigger copy largest golems group !")
         SummonCopy(side,61,62,161);
-    elseif hero_name == "Davius" then
+    elseif hero_name == H_DAVIUS then
         -- print("Trigger rakshasas dash !")
         UnitSpecialAbility(side,67,68,164,176);
-    elseif hero_name == "Gurvilin" then
+    elseif hero_name == H_GURVILIN then
         -- print("Trigger disrupting rays !")
         HeroCast_AllEnnemies(side,hero_id,13,FREE_MANA);
-    elseif hero_name == "Zehir" then
+    elseif hero_name == H_ZEHIR then
         -- print("Trigger summon elementals !")
         HeroCast_Global(hero_id,43,FREE_MANA);
-    elseif hero_name == "Emilia" then
+    elseif hero_name == H_EMILIA then
         -- print("Trigger summon beehives !")
         local x = 15 - 13 * side;
         HeroCast_Area(hero_id,283,x,1,FREE_MANA);
         HeroCast_Area(hero_id,283,x,12,FREE_MANA);
-    elseif hero_name == "Cyrus" then
+    elseif hero_name == H_CYRUS then
         -- print("Trigger mages magic fist !")
         UnitCast_RandomEnnemy(side,63,64,162,2);
-    elseif hero_name == "Astral" then
+    elseif hero_name == H_NUR then
         -- print("Trigger random arcane crystals !")
         local m = trunc(GetUnitManaPoints(hero_id) * 0.05);
         local x1 = 13 - 11 * side;
@@ -420,20 +420,20 @@ function TriggerHeroSpe_Start(side,hero_name,hero_id)
             startThread(UnitCastAreaSpell,hero_id,282,random(x1,x2,m),random(1,10,i));
         end;
     -- Fortress
-    elseif hero_name == "Wulfstan" then
+    elseif hero_name == H_WULFSTAN then
         -- print("Trigger ballista play first !")
         WarMachinePlayFirst(side,WAR_MACHINE_BALLISTA);
-    elseif hero_name == "Skeggy" then
+    elseif hero_name == H_KARLI then
         -- print("Trigger spearwielders random shoot !")
         UnitRandomShoot(side,94,95,167);
-    elseif hero_name == "Hangvul2" then
+    elseif hero_name == H_ULAND then
         -- print("Trigger Thanes ability !")
         UnitSpecialAbility2(side,103,345);
         UnitSpecialAbility2(side,171,247);
-    elseif hero_name == "Egil" then
+    elseif hero_name == H_ERLING then
         -- print("Trigger rune priests play first !")
         UnitPlayFirst(side,100,101,170);
-    elseif hero_name == "Brand" then
+    elseif hero_name == H_BRAND then
         -- print("Trigger cast Fire walls !")
         local m = GetUnitManaPoints(hero_id);
         local x = 11 - 7 * side;
@@ -441,31 +441,31 @@ function TriggerHeroSpe_Start(side,hero_name,hero_id)
             HeroCast_Area(hero_id,236,x,y,FREE_MANA);
         end;
         SetMana(hero_id,m);
-    elseif hero_name == "Bart" then
+    elseif hero_name == H_BART then
         -- print("Trigger summon earth elems !")
         local m = GetUnitMaxManaPoints(hero_id) * 0.5;
         SummonStack(side,87,m,4);
         SummonStack(side,87,m,4);
-    elseif hero_name == "Una" then
+    elseif hero_name == H_INGA then
         -- print("Trigger uber meteor shower !")
         local x = 15 - 13 * side;
         HeroCast_Area(hero_id,285,x,9,FREE_MANA);
         sleep(1500);
         HeroCast_Area(hero_id,285,x,4,FREE_MANA);
     -- Necropolis
-    elseif hero_name == "Pelt" then
+    elseif hero_name == H_VLADIMIR then
         -- print("Trigger summon and kill skeleton !")
         local n = length(GetUnits(1-side,CREATURE));
         SummonStack(1-side,152,1,5);
         repeat sleep(10) until length(GetUnits(1-side,CREATURE)) == n+1;
         HeroCast_Target(hero_id,1,FREE_MANA,GetUnits(1-side,CREATURE)[n]);
-    elseif hero_name == "Archilus" then
+    elseif hero_name == H_ARCHILUS then
         -- print("Trigger summon avatar of death !")
         HeroCast_Global(hero_id,200,FREE_MANA);
-    elseif hero_name == "Aislinn" then
+    elseif hero_name == H_AISLINN then
         -- print("Trigger cast mass weakness !")
         HeroCast_Global(hero_id,210,FREE_MANA);
-    elseif hero_name == "Vidomina" then
+    elseif hero_name == H_VIDOMINA then
         -- print("Trigger random sorrow")
         local e = GetUnits(1-side,CREATURE);
         local m = GetUnitMaxManaPoints(hero_id) * 0.02;
@@ -473,7 +473,7 @@ function TriggerHeroSpe_Start(side,hero_name,hero_id)
         for i = 1,n do
             HeroCast_Target(hero_id,277,FREE_MANA,e[i-1]);
         end;
-    elseif hero_name == "Muscip" then
+    elseif hero_name == H_NAADIR then
         -- print("Trigger duplicate ghosts !")
         for i,cr in GetUnits(side,CREATURE) do
             local id = GetCreatureType(cr);
@@ -485,47 +485,47 @@ function TriggerHeroSpe_Start(side,hero_name,hero_id)
             end;
         end;
     -- Inferno
-    elseif hero_name == "Jazaz" then
+    elseif hero_name == H_NEBIROS then
         -- print("Trigger mark of the damned")
         HeroCast_RandomEnnemy(side,hero_id,56,NO_COST);
-    elseif hero_name == "Efion" then
+    elseif hero_name == H_ALASTOR then
         -- print("Trigger random blindness !")
         HeroCast_RandomEnnemy(side,hero_id,19,FREE_MANA);
-    elseif hero_name == "Biara" then
+    elseif hero_name == H_BIARA then
         -- print("Trigger succubus random shoot !")
         UnitRandomShoot(side,21,22,134);
-    elseif hero_name == "Sovereign" then
+    elseif hero_name == H_KHABELETH then
         -- print("Trigger pit lords summoning !")
         local m = GetUnitMaxManaPoints(hero_id) * 0.1;
         SummonStack(side,26,trunc(0.1*m*m),0);
         SummonStack(side,26,trunc(0.1*m*m),0);
-    elseif hero_name == "Deleb" then
+    elseif hero_name == H_DELEB then
         -- print("Trigger mine fields !")
         local x = 12 - 9 * side;
         HeroCast_Area(hero_id,38,x,4,FREE_MANA);
         HeroCast_Area(hero_id,38,x,9,FREE_MANA);
     -- Stronghold
-    elseif hero_name == "Hero8" then
+    elseif hero_name == H_TELSEK then
         -- print("Trigger call of blood !")
         HeroCast_TargetCreature(side,hero_id,291,FREE_MANA,121,122,175);
-    elseif hero_name == "Gottai" then
+    elseif hero_name == H_GOTAI then
         -- print("Trigger battlecry !")
         HeroCast_Global(hero_id,294,FREE_MANA);
-    elseif hero_name == "Azar" then
+    elseif hero_name == H_AZAR then
         if GetUnitManaPoints(hero_id) >= 10 then
             -- print("Trigger horde's anger !")
             HeroCast_RandomEnnemy(side,hero_id,295,10);
         end;
-    elseif hero_name == "Hero1" then
+    elseif hero_name == H_KRAGH then
         -- print("Trigger powerful blow on centaur !")
         HeroCast_TargetCreature(side,hero_id,305,FREE_MANA,119,120,174);
-    elseif hero_name == "Crag" then
+    elseif hero_name == H_CRAGHACK then
         -- print("Trigger ralling cry !")
         HeroCast_Global(hero_id,290,FREE_MANA);
-    elseif hero_name == "Kraal" then
+    elseif hero_name == H_KRAAL then
         -- print("Trigger ballista random shoot !")
         BallistaRandomShoot(side);
-    elseif hero_name == "Mokka" then
+    elseif hero_name == H_MUKHA then
         -- print("Trigger lightning spell !")
         local ennemies = GetUnits(1-side,CREATURE);
         local spell = 3;
@@ -546,13 +546,13 @@ function TriggerHeroSpe_Turn(side,hero_name,hero_id,unit)
     if hero_name == "none" then
         return nil;
     -- Haven
-    elseif hero_name == "RedHeavenHero01" and hero_id == unit then
+    elseif hero_name == H_ANDREAS and hero_id == unit then
         -- print("Trigger random stoneskin or deflect arrows !")
         local unit = RandomCreature(side,COMBAT_TURN);
         HeroCast_Target(hero_id,25,FREE_MANA,unit);
         HeroCast_Target(hero_id,29,FREE_MANA,unit);
         setATB(hero_id,1);
-    elseif hero_name == "Maeve" and hero_id == unit then
+    elseif hero_name == H_MAEVE and hero_id == unit then
         -- print("Trigger random Encourage !")
         HeroCast_RandomAlly(side,hero_id,52,NO_COST);
         setATB(hero_id,1);
@@ -564,22 +564,22 @@ function TriggerHeroSpe_Turn(side,hero_name,hero_id,unit)
             setATB(hero_id,1);
         end;
     -- Preserve
-    elseif hero_name == "Ildar" and hero_id == unit then
+    elseif hero_name == H_ALARON and hero_id == unit then
         -- print("Trigger druids play next !")
         UnitPlayNext_Creature(side,49,50,148);
-    elseif hero_name == "Nadaur" and hero_id == unit then
+    elseif hero_name == H_TALANAR and hero_id == unit then
         -- print("Trigger random bloodlust !")
         HeroCast_RandomAlly(side,hero_id,28,FREE_MANA);
         setATB(hero_id,1);
-    elseif hero_name == "Arniel" and hero_id == unit then
+    elseif hero_name == H_IVOR and hero_id == unit then
         -- print("Trigger spawn wolves pack !")
         local m = trunc(GetUnitManaPoints(hero_id) * 0.34);
         if m > 0 then SummonCreature(side,113,m) end;
     -- Academy
-    elseif hero_name == "Minasli" and hero_id == unit then
+    elseif hero_name == H_MINASLI and hero_id == unit then
         -- print("Trigger fire ballista ATB boost !")
         UnitPlayNext_WarMachine(side,WAR_MACHINE_BALLISTA);
-    elseif hero_name == "Rissa" and hero_id == unit then
+    elseif hero_name == H_RISSA and hero_id == unit then
         -- print("Trigger random Slow !")
         local m = GetUnitManaPoints(hero_id);
         if m >= 20 then
@@ -587,27 +587,27 @@ function TriggerHeroSpe_Turn(side,hero_name,hero_id,unit)
             setATB(hero_id,1);
         end;
     -- Fortress
-    elseif hero_name == "Una" and hero_id == unit then
+    elseif hero_name == H_INGA and hero_id == unit then
         if GetUnitManaPoints(hero_id) >= 250 then
             -- print("Trigger random implosion !")
             HeroCast_RandomEnnemy(side,hero_id,9,NO_COST);
             setATB(hero_id,1);
         end;
     -- Necropolis
-    elseif hero_name == "Gles" and hero_id == unit then
+    elseif hero_name == H_KASPAR and hero_id == unit then
         -- print("Trigger random Plague !")
         HeroCast_RandomEnnemy(side,hero_id,14,FREE_MANA);
         setATB(hero_id,1);
-    elseif hero_name == "Straker" and hero_id == unit then
+    elseif hero_name == H_ORSON and hero_id == unit then
         -- print("Trigger summon zombies !")
         local m = GetUnitManaPoints(hero_id);
         if m > 0 then SummonCreature(side,32,m) end;
-    elseif hero_name == "Giovanni" and hero_id == unit then
+    elseif hero_name == H_GIOVANNI and hero_id == unit then
         -- print("Trigger random Ice Bolt !")
         HeroCast_RandomEnnemy(side,hero_id,4,FREE_MANA);
         setATB(hero_id,1);
     -- Inferno
-    elseif hero_name == "Agrael" and hero_id ~= unit then
+    elseif hero_name == H_AGRAEL and hero_id ~= unit then
         local id = GetCreatureType(unit);
         if id ~= nil then
             if (id >= 15 and id <= 28) or (id >= 131 and id <= 137) then
@@ -617,25 +617,25 @@ function TriggerHeroSpe_Turn(side,hero_name,hero_id,unit)
                 setATB(unit,1);
             end;
         end;
-    elseif hero_name == "Deleb" and hero_id == unit then
+    elseif hero_name == H_DELEB and hero_id == unit then
         -- print("Trigger random Stone spikes !")
         HeroCast_RandomEnnemyArea(side,hero_id,237,FREE_MANA);
         setATB(hero_id,1);
-    elseif hero_name == "Calid2" and hero_id == unit then
+    elseif hero_name == H_CALID and hero_id == unit then
         -- print("Trigger random Fireball !")
         HeroCast_RandomEnnemyArea(side,hero_id,5,FREE_MANA);
     -- Stronghold
-    elseif hero_name == "Matewa" and hero_id == unit then
+    elseif hero_name == H_MATEWA and hero_id == unit then
         -- print("Trigger cyclops play next !")
         UnitPlayNext_Creature(side,129,130,179);
-    elseif hero_name == "Hero9" and hero_id == unit then
+    elseif hero_name == H_KILGHAN and hero_id == unit then
         -- print("Trigger summon goblins !")
         local m = trunc(GetUnitMaxManaPoints(hero_id) * 1.5);
         SummonCreature(side,117,m);
-    elseif hero_name == "Kraal" and hero_id == unit then
+    elseif hero_name == H_KRAAL and hero_id == unit then
         -- print("Trigger ballista random shoot !")
         BallistaRandomShoot(side);
-    elseif hero_name == "Shiva" then
+    elseif hero_name == H_SHIVA then
         -- print("Trigger shamans mana !")
         local id = GetCreatureType(unit);
         if id == 123 or id == 124 or id == 176 then
@@ -643,7 +643,7 @@ function TriggerHeroSpe_Turn(side,hero_name,hero_id,unit)
             local m = GetUnitManaPoints(unit);
             SetMana(unit,m+a);
         end;
-    elseif hero_name == "Hero3" then
+    elseif hero_name == H_GARUNA then
         -- print("Trigger regen or plague !")
         if GetUnitType(unit) == WAR_MACHINE and GetWarMachineType(unit) == WAR_MACHINE_BALLISTA then
             if mod(TURN,2) == 0 then
@@ -652,7 +652,7 @@ function TriggerHeroSpe_Turn(side,hero_name,hero_id,unit)
                 HeroCast_RandomEnnemy(side,hero_id,14,FREE_MANA);
             end;
         end;
-    elseif hero_name == "Zouleika" and hero_id == unit then
+    elseif hero_name == H_ZOULEIKA and hero_id == unit then
         -- print("Trigger random vulnerability !")
         HeroCast_RandomEnnemy(side,hero_id,13,FREE_MANA);
         setATB(hero_id,1);
@@ -668,12 +668,12 @@ function TriggerHeroSpe_EnnemyTurn(side,hero_name,hero_id,unit)
         return nil;
     end;
     -- Preserve
-    if hero_name == "Heam" then
+    if hero_name == H_FINDAN then
         -- print("Trigger hero play next !")
         setATB(hero_id,1);
     end;
     -- Inferno
-    if hero_name == "Sheltem" then
+    if hero_name == H_SHELTEM then
         -- print("Trigger fireball ballista shoot !")
         BallistaTargetShoot(1-side,unit);
     end;

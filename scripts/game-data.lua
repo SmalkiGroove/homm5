@@ -95,7 +95,7 @@ H_XERXON = 'Xerxon'                 -- black knights
 H_DEIRDRE = 'Nemor'                 -- banshee scream
 H_NAADIR = 'Muscip'                 -- ghosts
 H_AISLINN = 'Aislinn'               -- weakness
-H_GUIVANNI = 'Giovanni'             -- ice mage
+H_GIOVANNI = 'Giovanni'             -- ice mage
 H_ARCHILUS = 'Archilus'             -- avatar of death
 H_ZOLTAN = 'Aberrar'                -- counterspell
 H_RAVEN = 'Effig'                   -- necromancer
@@ -181,9 +181,33 @@ HEROES_SYLVAN = {
     H_GILRAEN, H_KYRRE, H_IVOR, H_MEPHALA, H_ALARON,
     H_DIRAEL, H_VINRAEL, H_YLTHIN, H_TIERU, H_GEM, H_ELLESHAR,
 }; -- 17
-HEROES_INFERNO = {"Marder","Sheltem","Harkenraz","Calh","Calid","Jazaz","Gamor","Guarg","Erasial","Kha-Beleth","Veyer","DMessiah","Efion","Ash","Nymus","Oddrema","Malustar","Grok","Sovereign","Deleb","Calid2","Zydar","Agrael","Biara"};
-HEROES_DUNGEON = {"Agbeth","Ranleth","Sylsai","Urunir","Menel","Ferigl","Dalom","Eruina","Darkstorm","Ohtarig","Thralsai","Almegir","Raelag","Kastore","Kelodin","Shadwyn","Sephinroth","Inagost","Raelag_A1","Segref","Ohtar","Eruina_A1"};
-HEROES_NECRO = {"Gles","Pelt","Tamika","OrnellaNecro","Straker","Xerxon","Archilus","Nimbus","Aislinn","Nemor","Muscip","Giovanni","Thant","Vidomina","Arantir","Aberrar","Effig","Sandro","Berein","Nikolay"};
-HEROES_ACADEMY = {"Isher","Rissa","Minasli","Davius","Josephine","Havez","Gurvilin","Razzak","Maahir","Faiz","Sufi","Cyrus","Zehir","Timerkhan","Nur","Tan","Emilia","Astral"};
-HEROES_FORTRESS = {"Wulfstan","Rolf","Maximus","Tazar","Ingvar","Skeggy","Hangvul2","KingTolghar","Ufretin","Bersy","Ottar","Una","Bart","Vilma","Hangvul","Brand","Egil","Vegeyr"};
-HEROES_ORCS = {"Hero1","Hero2","Hero3","Hero4","Hero5","Hero6","Hero7","Hero8","Hero9","Gottai","Crag","Azar","Kraal","Kujin","KujinMP","Kunyak","Matewa","Shiva","Zouleika","Quroq","Mokka","Erika"}; 
+HEROES_ACADEMY = {
+    H_HAVEZ, H_MINASLI, H_JOSEPHINE, H_RAZZAK, H_DAVIUS, H_RISSA,
+    H_GURVILIN, H_JHORA, H_CYRUS, H_FAIZ, H_MAAHIR,
+    H_NUR, H_NATHIR, H_GALIB, H_ZEHIR, H_THEODORUS, H_EMILIA,
+}; -- 17
+HEROES_FORTRESS = {
+    H_INGVAR, H_ROLF, H_WULFSTAN, H_TAZAR, H_MAXIMUS, H_KARLI,
+    H_HEDWIG, H_TOLGHAR, H_EBBA, H_ULAND, H_HAEGEIR, H_HELMAR,
+    H_BRAND, H_ERLING, H_HANGVUL, H_BART, H_INGA,
+}; -- 17
+HEROES_NECRO = {
+    H_KASPAR, H_VLADIMIR, H_ORSON, H_ORNELLA, H_LUCRETIA, H_XERXON,
+    H_DEIRDRE, H_NAADIR, H_AISLINN, H_GIOVANNI, H_ARCHILUS,
+    H_ZOLTAN, H_RAVEN, H_ARANTIR, H_THANT, H_SANDRO, H_VIDOMINA,
+}; -- 17
+HEROES_INFERNO = {
+    H_GRAWL, H_NEBIROS, H_MARBAS, H_HARKENRAZ, H_CALH, H_SHELTEM,
+    H_ALASTOR, H_GROK, H_NYMUS, H_JEZEBETH, H_MALUSTAR,
+    H_AGRAEL, H_BIARA, H_KHABELETH, H_ZYDAR, H_DELEB, H_CALID,
+}; -- 17
+HEROES_DUNGEON = {
+    H_SORGAL, H_KYTHRA, H_AGBETH, H_RANLETH, H_DARKSTORM, H_YRWANNA,
+    H_VAYSHAN, H_THRALSAI, H_LETHOS, H_ERUINA, H_YRBETH, H_SYLSAI,
+    H_SINITAR, H_SHADYA, H_RAELAG, H_YLAYA, H_SEPHINROTH, H_KASTORE,
+};
+HEROES_ORCS = {
+    H_TELSEK, H_GORSHAK, H_GOTAI, H_AZAR, H_MATEWA, H_KUNYAK, H_KRAGH, H_KILGHAN, H_CRAGHACK, H_KRAAL,
+    H_SHAKKARUKAT, H_KUJIN, H_SHIVA, H_MUKHA, H_HAGGASH,
+    H_URGHAT, H_GARUNA, H_ZOULEIKA, H_ERIKA
+}; 

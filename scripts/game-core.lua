@@ -1,7 +1,7 @@
 
 function GetTownFactionID(town)
 	local towntype = 0;
-	if contains(GetObjectNamesByType("TOWN_HEAVEN"),town) ~= nil then towntype = 1 
+	if     contains(GetObjectNamesByType("TOWN_HEAVEN"),town) ~= nil then towntype = 1 
 	elseif contains(GetObjectNamesByType("TOWN_PRESERVE"),town) ~= nil then towntype = 2 
 	elseif contains(GetObjectNamesByType("TOWN_INFERNO"),town) ~= nil then towntype = 3 
 	elseif contains(GetObjectNamesByType("TOWN_NECROMANCY"),town) ~= nil then towntype = 4 
@@ -14,7 +14,7 @@ end;
 
 function GetFactionTowns(num)
 	local towntype = "TOWN";
-	if num == 1 then towntype = "TOWN_HEAVEN"
+	if 	   num == 1 then towntype = "TOWN_HEAVEN"
 	elseif num == 2 then towntype = "TOWN_PRESERVE"
 	elseif num == 3 then towntype = "TOWN_INFERNO" 
 	elseif num == 4 then towntype = "TOWN_NECROMANCY" 
@@ -29,14 +29,14 @@ end;
 
 function GetHeroFactionID(hero)
 	local race = 0;
-	if 	   contains(H55_HavenHeroes,hero) ~= nil then race = 1 
-	elseif contains(H55_SylvanHeroes,hero) ~= nil then race = 2 
-	elseif contains(H55_InfernoHeroes,hero) ~= nil then race = 3 
-	elseif contains(H55_NecropolisHeroes,hero) ~= nil then race = 4 
-	elseif contains(H55_AcademyHeroes,hero) ~= nil then race = 5 
-	elseif contains(H55_DungeonHeroes,hero) ~= nil then race = 6 
-	elseif contains(H55_FortressHeroes,hero) ~= nil then race = 7 	
-	elseif contains(H55_StrongholdHeroes,hero) ~= nil then race = 8 end;
+	if 	   contains(HEROES_HAVEN,hero) ~= nil then race = 1 
+	elseif contains(HEROES_SYLVAN,hero) ~= nil then race = 2 
+	elseif contains(HEROES_INFERNO,hero) ~= nil then race = 3 
+	elseif contains(HEROES_NECRO,hero) ~= nil then race = 4 
+	elseif contains(HEROES_ACADEMY,hero) ~= nil then race = 5 
+	elseif contains(HEROES_DUNGEON,hero) ~= nil then race = 6 
+	elseif contains(HEROES_FORTRESS,hero) ~= nil then race = 7 	
+	elseif contains(HEROES_ORCS,hero) ~= nil then race = 8 end;
 	return race
 end;
 
