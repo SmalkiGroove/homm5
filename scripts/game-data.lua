@@ -19,6 +19,8 @@ H_ALARIC = 'Alaric'                 -- fireball
 H_GABRIELLE = 'RedHeavenHero06'     -- counterspell
 H_ORLANDO = 'Orlando'               -- suzerain
 H_MARKAL = 'Markal'                 -- confusion
+H_ORNELLA = 'Ornella'               -- OFF
+H_JEDDITE = 'Jeddite'               -- OFF
 H_ANDREAS = 'RedHeavenHero01'       -- OFF
 H_LORENZO = 'RedHeavenHero02'       -- OFF
 H_VALERIA = 'RedHeavenHero03'       -- OFF
@@ -89,7 +91,7 @@ H_VEGEYR = 'Vegeyr'                 -- OFF
 H_KASPAR = 'Gles'                   -- plague tent
 H_VLADIMIR = 'Pelt'                 -- blooddrinker
 H_ORSON = 'Straker'                 -- zombies
-H_ORNELLA = 'OrnellaNecro'          -- magic resist
+H_ORNELLA2 = 'OrnellaNecro'          -- magic resist
 H_LUCRETIA = 'Tamika'               -- vampires
 H_XERXON = 'Xerxon'                 -- black knights
 H_DEIRDRE = 'Nemor'                 -- banshee scream
@@ -205,9 +207,9 @@ HEROES_DUNGEON = {
     H_SORGAL, H_KYTHRA, H_AGBETH, H_RANLETH, H_DARKSTORM, H_YRWANNA,
     H_VAYSHAN, H_THRALSAI, H_LETHOS, H_ERUINA, H_YRBETH, H_SYLSAI,
     H_SINITAR, H_SHADYA, H_RAELAG, H_YLAYA, H_SEPHINROTH, H_KASTORE,
-};
+}; -- 18
 HEROES_ORCS = {
     H_TELSEK, H_GORSHAK, H_GOTAI, H_AZAR, H_MATEWA, H_KUNYAK, H_KRAGH, H_KILGHAN, H_CRAGHACK, H_KRAAL,
     H_SHAKKARUKAT, H_KUJIN, H_SHIVA, H_MUKHA, H_HAGGASH,
     H_URGHAT, H_GARUNA, H_ZOULEIKA, H_ERIKA
-};
+}; -- 19
