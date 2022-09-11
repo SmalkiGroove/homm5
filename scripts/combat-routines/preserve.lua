@@ -129,6 +129,11 @@ function Routine_CastRandomBloodlust(side, hero, unit)
     setATB(hero_id,1);
 end;
 
+function Routine_HeroMoveNext(side, hero, unit)
+    -- print("Trigger hero play next !")
+    setATB(hero_id,1);
+end;
+
 function Routine_SummonWolfStack(side, hero, unit)
     -- print("Trigger spawn wolves pack !")
     local m = trunc(GetUnitManaPoints(hero_id) * 0.34);
