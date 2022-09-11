@@ -371,45 +371,6 @@ end;
 function TriggerHeroSpe_Start(side,hero_name,hero_id)
     if hero_name == "none" then
         return nil;
-    -- Haven
-    elseif hero_name == H_DUNCAN then
-        -- print("Trigger ballista random shoot !")
-        BallistaRandomShoot(side);
-    elseif hero_name == H_DOUGAL then
-        -- print("Trigger archers atb boost !")
-        UnitPlayFirst(side,3,4,107);
-    elseif hero_name == H_MARKAL then
-        -- print("Trigger cast Mass Confusion !")
-        HeroCast_Global(hero_id,213,FREE_MANA);
-    elseif hero_name == H_FREYDA then
-        -- print("Trigger cast Prayer !")
-        HeroCast_Global(hero_id,54,NO_COST);
-    elseif hero_name == H_VALERIA then
-        -- print("Trigger cast Blade Barriers !")
-        local m = GetUnitManaPoints(hero_id);
-        local x = 12 - 9 * side;
-        for y=2,11 do
-            HeroCast_Area(hero_id,284,x,y,FREE_MANA);
-            HeroCast_Area(hero_id,284,x-1+side*2,11-y,FREE_MANA);
-        end;
-        SetMana(hero_id,m);
-    -- Preserve
-    elseif hero_name == H_ANWEN then
-        -- print("Trigger anger treants rage of forest !")
-        UnitSpecialAbility(side,0,0,150,329);
-    elseif hero_name == H_OSSIR then
-        -- print("Trigger hunters random shoot !")
-        UnitRandomShoot(side,47,48,147);
-    elseif hero_name == H_TIERU then
-        -- print("Trigger hero cast Mass Haste !")
-        HeroCast_Global(hero_id,221,FREE_MANA);
-    elseif hero_name == H_ALARON then
-        -- print("Trigger elder druids summoning !")
-        local m = GetUnitMaxManaPoints(hero_id) * 0.1;
-        SummonStack(side,50,trunc(0.5*m*m),0);
-    elseif hero_name == H_GEM then
-        -- print("Trigger siphon mana !")
-        SiphonEnnemyMana(hero_id,side);
     -- Academy
     elseif hero_name == H_RAZZAK then
         -- print("Trigger copy largest golems group !")
@@ -533,36 +494,6 @@ function TriggerHeroSpe_Turn(side,hero_name,hero_id,unit)
 
     if hero_name == "none" then
         return nil;
-    -- Haven
-    elseif hero_name == H_ANDREAS and hero_id == unit then
-        -- print("Trigger random stoneskin or deflect arrows !")
-        local unit = RandomCreature(side,COMBAT_TURN);
-        HeroCast_Target(hero_id,25,FREE_MANA,unit);
-        HeroCast_Target(hero_id,29,FREE_MANA,unit);
-        setATB(hero_id,1);
-    elseif hero_name == H_MAEVE and hero_id == unit then
-        -- print("Trigger random Encourage !")
-        HeroCast_RandomAlly(side,hero_id,52,NO_COST);
-        setATB(hero_id,1);
-    elseif hero_name == "Jeddite" and hero_id == unit then
-        -- print("Trigger random Vampirism !")
-        local m = GetUnitManaPoints(hero_id);
-        if m >= 100 then
-            HeroCast_RandomAlly(side,hero_id,278,NO_COST);
-            setATB(hero_id,1);
-        end;
-    -- Preserve
-    elseif hero_name == H_ALARON and hero_id == unit then
-        -- print("Trigger druids play next !")
-        UnitPlayNext_Creature(side,49,50,148);
-    elseif hero_name == H_TALANAR and hero_id == unit then
-        -- print("Trigger random bloodlust !")
-        HeroCast_RandomAlly(side,hero_id,28,FREE_MANA);
-        setATB(hero_id,1);
-    elseif hero_name == H_IVOR and hero_id == unit then
-        -- print("Trigger spawn wolves pack !")
-        local m = trunc(GetUnitManaPoints(hero_id) * 0.34);
-        if m > 0 then SummonCreature(side,113,m) end;
     -- Academy
     elseif hero_name == H_MINASLI and hero_id == unit then
         -- print("Trigger fire ballista ATB boost !")
