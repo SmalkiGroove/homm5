@@ -20,7 +20,7 @@ ACADEMY_COMBAT_PREPARE = {
     [H_HAVEZ] = NoneRoutine,
     [H_MINASLI] = NoneRoutine,
     [H_JOSEPHINE] = NoneRoutine,
-    [H_RAZZAK] = NoneRoutine,
+    [H_RAZZAK] = Routine_DuplicateGolemStack,
     [H_DAVIUS] = NoneRoutine,
     [H_RISSA] = NoneRoutine,
     [H_GURVILIN] = NoneRoutine,
@@ -40,7 +40,7 @@ ACADEMY_COMBAT_START = {
     [H_HAVEZ] = NoneRoutine,
     [H_MINASLI] = NoneRoutine,
     [H_JOSEPHINE] = NoneRoutine,
-    [H_RAZZAK] = Routine_DuplicateGolemStack,
+    [H_RAZZAK] = NoneRoutine,
     [H_DAVIUS] = Routine_RakshasasAbility,
     [H_RISSA] = NoneRoutine,
     [H_GURVILIN] = Routine_CastMultipleVulnerability,
@@ -99,7 +99,23 @@ ACADEMY_UNIT_DIED = {
 
 function Routine_DuplicateGolemStack(side, hero)
     -- print("Trigger copy largest golems group !")
-    SummonCopy(side,61,62,161);
+    local largest = 0;
+    local copied_stack = "none";
+    local creatures = GetUnits(side, CREATURE);
+    for i,cr in creatures do
+        local id = GetCreatureType(cr);
+        if id == id0 or id == id1 or id == id2 then
+            local nb = GetCreatureNumber(cr);
+            if nb > largest then
+                largest = nb;
+                copied_stack = cr;
+            end;
+        end;
+    end;
+    if IsCombatUnit(copied_stack) then
+        local x,y = GetUnitPosition(copied_stack);
+        SummonCreatureStack_XY(side, GetCreatureType(copied_stack), largest, x, y+1);
+    end;
 end;
 
 function Routine_RakshasasAbility(side, hero)

@@ -99,48 +99,62 @@ SYLVAN_UNIT_DIED = {
 
 function Routine_AngerTreantsAbility(side, hero)
     -- print("Trigger anger treants rage of forest !")
-    UnitSpecialAbility(side,0,0,150,329);
+    CreatureTypesAbility_Untargeted(side, {CREATURE_ANGER_TREANT}, SPELL_ABILITY_RAGE_OF_THE_FOREST);
 end;
 
 function Routine_HunterRandomShoot(side, hero)
     -- print("Trigger hunters random shoot !")
-    UnitRandomShoot(side,47,48,147);
+    RandomShoot_CreatureTypes(side, {CREATURE_WOOD_ELF,CREATURE_GRAND_ELF,CREATURE_SHARP_SHOOTER});
 end;
 
 function Routine_SummonDruidStack(side, hero)
     -- print("Trigger elder druids summoning !")
-    local m = GetUnitMaxManaPoints(hero_id) * 0.1;
-    SummonStack(side,50,trunc(0.5*m*m),0);
+    local m = GetUnitMaxManaPoints(hero) * 0.1;
+    local amount = trunc(0.5 * m * m);
+    SummonCreatureStack_X(side, CREATURE_DRUID_ELDER, amount, 0);
 end;
 
 function Routine_CastMassHaste(side, hero)
     -- print("Trigger hero cast Mass Haste !")
-    HeroCast_Global(hero_id,221,FREE_MANA);
+    HeroCast_Global(hero, SPELL_MASS_HASTE, FREE_MANA);
 end;
 
 function Routine_SiphonEnnemyMana(side, hero)
     -- print("Trigger siphon mana !")
-    SiphonEnnemyMana(hero_id,side);
+    local hero_cur_mana = GetUnitManaPoints(hero);
+    local hero_max_mana = GetUnitMaxManaPoints(hero);
+    local siphon = trunc(hero_max_mana * 0.1);
+    local amount = 0;
+    local ennemies = GetUnits(1-side, CREATURE);
+    for i,en in ennemies do
+        local mana = GetUnitManaPoints(en);
+        if mana >= 0 then
+            SetMana(en, max(mana-siphon,0);
+            amount = amount + min(mana,siphon);
+        end;
+    end;
+    local new_mana = min(hero_cur_mana+amount,hero_max_mana);
+    SetMana(hero, new_mana);
 end;
 
-function Routine_CastRandomBloodlust(side, hero, unit)
+function Routine_CastRandomBloodlust(side, hero)
     -- print("Trigger random bloodlust !")
-    HeroCast_RandomAlly(side,hero_id,28,FREE_MANA);
-    setATB(hero_id,1);
+    HeroCast_RandomCreature(hero, SPELL_BLOODLUST, FREE_MANA, side);
+    SetATB_ID(hero, ATB_INSTANT);
 end;
 
-function Routine_HeroMoveNext(side, hero, unit)
+function Routine_HeroMoveNext(side, hero)
     -- print("Trigger hero play next !")
-    setATB(hero_id,1);
+    SetATB_ID(hero, ATB_NEXT);
 end;
 
-function Routine_SummonWolfStack(side, hero, unit)
+function Routine_SummonWolfStack(side, hero)
     -- print("Trigger spawn wolves pack !")
-    local m = trunc(GetUnitManaPoints(hero_id) * 0.34);
-    if m > 0 then SummonCreature(side,113,m) end;
+    local amount = trunc(GetUnitManaPoints(hero) * 0.34);
+    if amount > 0 then SummonCreatureStack(side, CREATURE_WOLF, amount) end;
 end;
 
-function Routine_DruidsMoveNext(side, hero, unit)
+function Routine_DruidsMoveNext(side, hero)
     -- print("Trigger druids play next !")
-    UnitPlayNext_Creature(side,49,50,148);
+    SetATB_CreatureTypes(side, {CREATURE_DRUID,CREATURE_DRUID_ELDER,CREATURE_HIGH_DRUID}, ATB_NEXT);
 end;

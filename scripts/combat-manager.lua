@@ -22,28 +22,39 @@ GRID_Y_MAX = 12;
 NO_COST = 0;
 FREE_MANA = 99;
 
+ATB_INSTANT = 1;
+ATB_NEXT = 0.99;
+ATB_HALF = 0.5;
+ATB_ZERO = 0;
+
 NO_ATB_RESET_HEROES = {
     [HERO] = { H_BERTRAND, H_FINDAN, H_NEBIROS, H_KRAGH },
     [CREATURE] = { H_WYNGAAL, H_CRAGHACK },
     [WAR_MACHINE] = { },
 };
 
------------------------------------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------------------------------------------------------------------
+UNIT_SIDE_PREFIX = {
+    [0] = "attacker",
+    [1] = "defender"
+};
 
-function RandomCreature(side, seed)
-    local creatures = GetUnits(side,CREATURE);
-    local stacks = length(creatures);
-    local target = 0;
-    if stacks >= 2 then target = random(0,stacks-1,seed) end;
-    return creatures[target];
-end;
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 
 function Wait()
     sleep(1);
     THREAD_FINISHER = THREAD_FINISHER - 1;
     -- print("Thread finisher = "..THREAD_FINISHER);
     if THREAD_FINISHER == 0 then THREAD_STATE = 1 end;
+end;
+
+function RandomCreature(side, seed)
+    local creatures = GetUnits(side, CREATURE);
+    local stacks = length(creatures);
+    local target = 0;
+    if stacks >= 2 then target = random(0,stacks-1,seed) end;
+    return creatures[target];
 end;
 
 function SetMana(unit,mana)
@@ -101,6 +112,18 @@ doFile("/scripts/combat-routines/necropolis.lua")
 doFile("/scripts/combat-routines/preserve.lua")
 doFile("/scripts/combat-routines/stronghold.lua")
 
+PREPARE_ROUTINES = {
+    [0] = DoCommonRoutine_CombatPrepare,
+    [1] = DoHavenRoutine_CombatPrepare,
+    [2] = DoPreserveRoutine_CombatPrepare,
+    [3] = DoInfernoRoutine_CombatPrepare,
+    [4] = DoNecropolisRoutine_CombatPrepare,
+    [5] = DoAcademyRoutine_CombatPrepare,
+    [6] = DoDungeonRoutine_CombatPrepare,
+    [7] = DoFortressRoutine_CombatPrepare,
+    [8] = DoStrongholdRoutine_CombatPrepare,
+};
+
 START_ROUTINES = {
     [0] = DoCommonRoutine_CombatStart,
     [1] = DoHavenRoutine_CombatStart,
@@ -123,6 +146,18 @@ TURN_ROUTINES = {
     [6] = DoDungeonRoutine_CombatTurn,
     [7] = DoFortressRoutine_CombatTurn,
     [8] = DoStrongholdRoutine_CombatTurn,
+};
+
+DEATH_ROUTINES = {
+    [0] = DoCommonRoutine_UnitDied,
+    [1] = DoHavenRoutine_UnitDied,
+    [2] = DoPreserveRoutine_UnitDied,
+    [3] = DoInfernoRoutine_UnitDied,
+    [4] = DoNecropolisRoutine_UnitDied,
+    [5] = DoAcademyRoutine_UnitDied,
+    [6] = DoDungeonRoutine_UnitDied,
+    [7] = DoFortressRoutine_UnitDied,
+    [8] = DoStrongholdRoutine_UnitDied,
 };
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------

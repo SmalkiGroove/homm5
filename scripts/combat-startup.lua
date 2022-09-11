@@ -155,14 +155,14 @@ doFile("/scripts/combat-manager.lua")
 
 function Prepare() end
 function DoPrepare()
+	ManageCombatPrepare()
 	Prepare()
 	return nil
 end
 
 function Start() end
 function DoStart()
-	ResetATB()
-	CombatStartSpecials()
+	ManageCombatStart()
 	Start()
 	return nil
 end
@@ -205,7 +205,7 @@ end
 
 function UnitMove(unitName)
 	local temp = nil
-	UnitMoveSpecials(unitName)
+	ManageCombatTurn(unitName)
 	if IsAttacker(unitName) then
 		temp = AttackerUnitMove(unitName)
 	elseif IsDefender(unitName) then
@@ -252,6 +252,7 @@ function DefenderUnitDeath(unitName)
 end
 
 function UnitDeath(unitName)
+	ManageUnitDeath(unitName)
 	if IsAttacker(unitName) then
 		AttackerUnitDeath(unitName)
 	elseif IsDefender(unitName) then
