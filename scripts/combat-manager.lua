@@ -371,68 +371,6 @@ end;
 function TriggerHeroSpe_Start(side,hero_name,hero_id)
     if hero_name == "none" then
         return nil;
-    -- Academy
-    elseif hero_name == H_RAZZAK then
-        -- print("Trigger copy largest golems group !")
-        SummonCopy(side,61,62,161);
-    elseif hero_name == H_DAVIUS then
-        -- print("Trigger rakshasas dash !")
-        UnitSpecialAbility(side,67,68,164,176);
-    elseif hero_name == H_GURVILIN then
-        -- print("Trigger disrupting rays !")
-        HeroCast_AllEnnemies(side,hero_id,13,FREE_MANA);
-    elseif hero_name == H_ZEHIR then
-        -- print("Trigger summon elementals !")
-        HeroCast_Global(hero_id,43,FREE_MANA);
-    elseif hero_name == H_EMILIA then
-        -- print("Trigger summon beehives !")
-        local x = 15 - 13 * side;
-        HeroCast_Area(hero_id,283,x,1,FREE_MANA);
-        HeroCast_Area(hero_id,283,x,12,FREE_MANA);
-    elseif hero_name == H_CYRUS then
-        -- print("Trigger mages magic fist !")
-        UnitCast_RandomEnnemy(side,63,64,162,2);
-    elseif hero_name == H_NUR then
-        -- print("Trigger random arcane crystals !")
-        local m = trunc(GetUnitManaPoints(hero_id) * 0.05);
-        local x1 = 13 - 11 * side;
-        local x2 = 9 - 3 * side;
-        for i = 1,m do
-            startThread(UnitCastAreaSpell,hero_id,282,random(x1,x2,m),random(1,10,i));
-        end;
-    -- Fortress
-    elseif hero_name == H_WULFSTAN then
-        -- print("Trigger ballista play first !")
-        WarMachinePlayFirst(side,WAR_MACHINE_BALLISTA);
-    elseif hero_name == H_KARLI then
-        -- print("Trigger spearwielders random shoot !")
-        UnitRandomShoot(side,94,95,167);
-    elseif hero_name == H_ULAND then
-        -- print("Trigger Thanes ability !")
-        UnitSpecialAbility2(side,103,345);
-        UnitSpecialAbility2(side,171,247);
-    elseif hero_name == H_ERLING then
-        -- print("Trigger rune priests play first !")
-        UnitPlayFirst(side,100,101,170);
-    elseif hero_name == H_BRAND then
-        -- print("Trigger cast Fire walls !")
-        local m = GetUnitManaPoints(hero_id);
-        local x = 11 - 7 * side;
-        for y=2,11 do
-            HeroCast_Area(hero_id,236,x,y,FREE_MANA);
-        end;
-        SetMana(hero_id,m);
-    elseif hero_name == H_BART then
-        -- print("Trigger summon earth elems !")
-        local m = GetUnitMaxManaPoints(hero_id) * 0.5;
-        SummonStack(side,87,m,4);
-        SummonStack(side,87,m,4);
-    elseif hero_name == H_INGA then
-        -- print("Trigger uber meteor shower !")
-        local x = 15 - 13 * side;
-        HeroCast_Area(hero_id,285,x,9,FREE_MANA);
-        sleep(1500);
-        HeroCast_Area(hero_id,285,x,4,FREE_MANA);
     -- Inferno
     elseif hero_name == H_NEBIROS then
         -- print("Trigger mark of the damned")
@@ -494,24 +432,6 @@ function TriggerHeroSpe_Turn(side,hero_name,hero_id,unit)
 
     if hero_name == "none" then
         return nil;
-    -- Academy
-    elseif hero_name == H_MINASLI and hero_id == unit then
-        -- print("Trigger fire ballista ATB boost !")
-        UnitPlayNext_WarMachine(side,WAR_MACHINE_BALLISTA);
-    elseif hero_name == H_RISSA and hero_id == unit then
-        -- print("Trigger random Slow !")
-        local m = GetUnitManaPoints(hero_id);
-        if m >= 20 then
-            HeroCast_RandomEnnemy(side,hero_id,12,NO_COST);
-            setATB(hero_id,1);
-        end;
-    -- Fortress
-    elseif hero_name == H_INGA and hero_id == unit then
-        if GetUnitManaPoints(hero_id) >= 250 then
-            -- print("Trigger random implosion !")
-            HeroCast_RandomEnnemy(side,hero_id,9,NO_COST);
-            setATB(hero_id,1);
-        end;
     -- Inferno
     elseif hero_name == H_AGRAEL and hero_id ~= unit then
         local id = GetCreatureType(unit);
