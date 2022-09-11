@@ -1,6 +1,14 @@
-COMBAT_READY = nil
+COMBAT_READY = nil;
+ATTACKER_RACE = nil;
+DEFENDER_RACE = nil;
+ATTACKER_HERO = nil;
+DEFENDER_HERO = nil;
+
 COMBAT_TURN = 0;
 CURRENT_UNIT = "none";
+CURRENT_UNIT_SIDE = nil;
+ALLIED_CREATURES = {};
+ENNEMY_CREATURES = {};
 
 THREAD_LIMIT = 50;
 THREAD_STATE = 0;
@@ -18,6 +26,18 @@ NO_ATB_RESET_HEROES = {
     [HERO] = { H_BERTRAND,H_FINDAN,H_NEBIROS,H_KRAGH },
     [CREATURE] = { H_WYNGAAL,H_CRAGHACK },
     [WAR_MACHINE] = { },
+};
+
+START_ROUTINES = {
+    [0] = DoCommonRoutine_CombatStart,
+    [1] = DoHavenRoutine_CombatStart,
+    [2] = DoPreserveRoutine_CombatStart,
+    [3] = DoInfernoRoutine_CombatStart,
+    [4] = DoNecropolisRoutine_CombatStart,
+    [5] = DoAcademyRoutine_CombatStart,
+    [6] = DoDungeonRoutine_CombatStart,
+    [7] = DoFortressRoutine_CombatStart,
+    [8] = DoStrongholdRoutine_CombatStart,
 };
 
 TRIGGER_LIMIT_PER_COMBAT = {
@@ -452,38 +472,6 @@ function TriggerHeroSpe_Start(side,hero_name,hero_id)
         HeroCast_Area(hero_id,285,x,9,FREE_MANA);
         sleep(1500);
         HeroCast_Area(hero_id,285,x,4,FREE_MANA);
-    -- Necropolis
-    elseif hero_name == H_VLADIMIR then
-        -- print("Trigger summon and kill skeleton !")
-        local n = length(GetUnits(1-side,CREATURE));
-        SummonStack(1-side,152,1,5);
-        repeat sleep(10) until length(GetUnits(1-side,CREATURE)) == n+1;
-        HeroCast_Target(hero_id,1,FREE_MANA,GetUnits(1-side,CREATURE)[n]);
-    elseif hero_name == H_ARCHILUS then
-        -- print("Trigger summon avatar of death !")
-        HeroCast_Global(hero_id,200,FREE_MANA);
-    elseif hero_name == H_AISLINN then
-        -- print("Trigger cast mass weakness !")
-        HeroCast_Global(hero_id,210,FREE_MANA);
-    elseif hero_name == H_VIDOMINA then
-        -- print("Trigger random sorrow")
-        local e = GetUnits(1-side,CREATURE);
-        local m = GetUnitMaxManaPoints(hero_id) * 0.02;
-        local n = min(length(e),1+trunc(m));
-        for i = 1,n do
-            HeroCast_Target(hero_id,277,FREE_MANA,e[i-1]);
-        end;
-    elseif hero_name == H_NAADIR then
-        -- print("Trigger duplicate ghosts !")
-        for i,cr in GetUnits(side,CREATURE) do
-            local id = GetCreatureType(cr);
-            if id == 33 or id == 34 or id == 154 then
-                local nb = GetCreatureNumber(cr);
-                local x,y = GetUnitPosition(cr);
-                SummonCreature(side,id,nb,x);
-                sleep(1);
-            end;
-        end;
     -- Inferno
     elseif hero_name == H_NEBIROS then
         -- print("Trigger mark of the damned")
@@ -593,19 +581,6 @@ function TriggerHeroSpe_Turn(side,hero_name,hero_id,unit)
             HeroCast_RandomEnnemy(side,hero_id,9,NO_COST);
             setATB(hero_id,1);
         end;
-    -- Necropolis
-    elseif hero_name == H_KASPAR and hero_id == unit then
-        -- print("Trigger random Plague !")
-        HeroCast_RandomEnnemy(side,hero_id,14,FREE_MANA);
-        setATB(hero_id,1);
-    elseif hero_name == H_ORSON and hero_id == unit then
-        -- print("Trigger summon zombies !")
-        local m = GetUnitManaPoints(hero_id);
-        if m > 0 then SummonCreature(side,32,m) end;
-    elseif hero_name == H_GIOVANNI and hero_id == unit then
-        -- print("Trigger random Ice Bolt !")
-        HeroCast_RandomEnnemy(side,hero_id,4,FREE_MANA);
-        setATB(hero_id,1);
     -- Inferno
     elseif hero_name == H_AGRAEL and hero_id ~= unit then
         local id = GetCreatureType(unit);
@@ -683,25 +658,38 @@ end;
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
+function ManageCombatPrepare()
+    ATTACKER_HERO = GetHero(ATTACKER) and GetHeroName(ATTACKER_HERO_ID);
+    DEFENDER_HERO = GetHero(DEFENDER) and GetHeroName(DEFENDER_HERO_ID);
+    if ATTACKER_HERO ~= nil then
+        ATTACKER_RACE = GetHeroFactionID(ATTACKER_HERO);
+    end;
+    if DEFENDER_HERO ~= nil then
+        DEFENDER_RACE = GetHeroFactionID(DEFENDER_HERO);
+    end;
+end;
 
-function CombatStartSpecials()
+function ManageCombatStart()
+    ResetATB()
     repeat sleep(1) until COMBAT_READY;
-	if GetHero(ATTACKER) then
-		local attacker_id = GetAttackerHero();
-		local attacker = GetHeroName(attacker_id);
-		TriggerHeroSpe_Start(ATTACKER,attacker,attacker_id);
+
+	if ATTACKER_HERO ~= nil then
+        local startroutine = START_ROUTINES[ATTACKER_RACE];
+		startThread(startroutine, ATTACKER, ATTACKER_HERO, ATTACKER_HERO_ID);
 	end;
-	if GetHero(DEFENDER) then
-		local defender_id = GetDefenderHero(); 
-		local defender = GetHeroName(defender_id);
-		TriggerHeroSpe_Start(DEFENDER,defender,defender_id);
+	if DEFENDER_HERO ~= nil then
+		local startroutine = START_ROUTINES[DEFENDER_RACE];
+		startThread(startroutine, DEFENDER, DEFENDER_HERO, DEFENDER_HERO_ID);
 	end;
 end;
 
-function UnitMoveSpecials(unit)
+function ManageCombatTurn(unit)
     if CURRENT_UNIT ~= unit then
-        CURRENT_UNIT = unit;
         COMBAT_TURN = COMBAT_TURN + 1;
+        CURRENT_UNIT = unit;
+        CURRENT_UNIT_SIDE = IsAttacker(unit) and ATTACKER or DEFENDER;
+        ALLIED_CREATURES = GetUnits(CURRENT_UNIT_SIDE, CREATURE);
+        ENNEMY_CREATURES = GetUnits(1-CURRENT_UNIT_SIDE, CREATURE);
 
         local side = nil;
         if IsAttacker(unit) then side = ATTACKER else side = DEFENDER end;

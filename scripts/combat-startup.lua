@@ -26,12 +26,11 @@ function IsWarMachine(unit) return GetUnitType(unit) == WAR_MACHINE end
 function IsBuilding(unit) return GetUnitType(unit) == BUILDING end
 function IsSpellSpawn(unit) return GetUnitType(unit) == SPELL_SPAWN end
 
+ATTACKER_HERO_ID = "attacker-hero"
+DEFENDER_HERO_ID = "defender-hero"
+
 function GetHero(side)
 	local units = GetUnits(side, HERO)
-	local units_count = length(units)
-	if (units_count > 1) then
-		_ERRORMESSAGE('Internal error: army has more than one hero')
-	end
 	for index, unit in units do
 		return unit
 	end
@@ -152,7 +151,7 @@ function createTutorialAliases()
     HideTutorialMessage = clearMessage;
 end
 
-doFile("/scripts/combat-specials.lua")
+doFile("/scripts/combat-manager.lua")
 
 function Prepare() end
 function DoPrepare()
