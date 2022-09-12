@@ -55,13 +55,13 @@
 	GOLD    = 6
 
 	RESOURCE_TEXT = {
-		[0] = "wood",
-		[1] = "ores",
-		[2] = "mercury",
-		[3] = "cystals",
-		[4] = "sulfur",
-		[5] = "gems",
-		[6] = "golds"
+		[0] = "Wood",
+		[1] = "Ore",
+		[2] = "Mercury",
+		[3] = "Cystal",
+		[4] = "Sulfur",
+		[5] = "Gem",
+		[6] = "Golds"
 	};
 	
 	--
@@ -114,8 +114,8 @@
 
 	ATTRIBUTE_TEXT = {
 		[0] = "Experience",
-		[1] = "Offense",
-		[2] = "Defense",
+		[1] = "Attack",
+		[2] = "Defence",
 		[3] = "Spellpower",
 		[4] = "Knowledge",
 		[5] = "Luck",
