@@ -7,8 +7,8 @@ function DoAcademyRoutine_CombatStart(side, name, id)
     startThread(ACADEMY_COMBAT_START[name], side, id);
 end;
 
-function DoAcademyRoutine_CombatTurn(side, name, id, unit)
-    startThread(ACADEMY_COMBAT_TURN[name], side, id, unit);
+function DoAcademyRoutine_CombatTurn(side, name, id)
+    startThread(ACADEMY_COMBAT_TURN[name], side, id);
 end;
 
 function DoAcademyRoutine_UnitDied(side, name, id, unit)
@@ -103,8 +103,8 @@ function Routine_DuplicateGolemStack(side, hero)
     local copied_stack = "none";
     local creatures = GetUnits(side, CREATURE);
     for i,cr in creatures do
-        local id = GetCreatureType(cr);
-        if id == id0 or id == id1 or id == id2 then
+        local type = GetCreatureType(cr);
+        if type == CREATURE_IRON_GOLEM or type == CREATURE_STEEL_GOLEM or type == CREATURE_OBSIDIAN_GOLEM then
             local nb = GetCreatureNumber(cr);
             if nb > largest then
                 largest = nb;
@@ -120,51 +120,52 @@ end;
 
 function Routine_RakshasasAbility(side, hero)
     -- print("Trigger rakshasas dash !")
-    UnitSpecialAbility(side,67,68,164,176);
+    CreatureTypesAbility_Untargeted(side, {CREATURE_RAKSHASA,CREATURE_RAKSHASA_RUKH,CREATURE_RAKSHASA_KSHATRI}, SPELL_ABILITY_DASH);
 end;
 
 function Routine_CastMultipleVulnerability(side, hero)
     -- print("Trigger disrupting rays !")
-    HeroCast_AllEnnemies(side,hero_id,13,FREE_MANA);
+    HeroCast_AllCreatures(hero, SPELL_DISRUPTING_RAY, FREE_MANA, side);
 end;
 
 function Routine_MagesCastMagicFist(side, hero)
     -- print("Trigger mages magic fist !")
-    UnitCast_RandomEnnemy(side,63,64,162,2);
+    CreatureTypesCast_RandomTarget(side, 1-side, {CREATURE_MAGI,CREATURE_ARCH_MAGI,CREATURE_COMBAT_MAGE}, SPELL_MAGIC_FIST);
 end;
 
 function Routine_CastMultipleArcaneCrystals(side, hero)
     -- print("Trigger random arcane crystals !")
-    local m = trunc(GetUnitManaPoints(hero_id) * 0.05);
+    local n = trunc(GetUnitManaPoints(hero) * 0.05);
     local x1 = 13 - 11 * side;
     local x2 = 9 - 3 * side;
-    for i = 1,m do
-        startThread(UnitCastAreaSpell,hero_id,282,random(x1,x2,m),random(1,10,i));
+    for i = 1,n do
+        HeroCast_Area(hero, SPELL_ARCANE_CRYSTAL, FREE_MANA, random(x1,x2,i), random(GRID_Y_MIN,GRID_Y_MAX,i));
     end;
 end;
 
 function Routine_CastSummonElementals(side, hero)
     -- print("Trigger summon elementals !")
-    HeroCast_Global(hero_id,43,FREE_MANA);
+    HeroCast_Global(hero, SPELL_SUMMON_ELEMENTALS, FREE_MANA);
 end;
 
 function Routine_CastSummonHive(side, hero)
     -- print("Trigger summon beehives !")
     local x = 15 - 13 * side;
-    HeroCast_Area(hero_id,283,x,1,FREE_MANA);
-    HeroCast_Area(hero_id,283,x,12,FREE_MANA);
+    HeroCast_Area(hero, SPELL_SUMMON_HIVE, FREE_MANA, x, GRID_Y_MIN);
+    HeroCast_Area(hero, SPELL_SUMMON_HIVE, FREE_MANA, x, GRID_Y_MAX);
 end;
 
-function Routine_BallistaMoveNext(side, hero, unit)
+function Routine_BallistaMoveNext(side, hero)
     -- print("Trigger fire ballista ATB boost !")
-    UnitPlayNext_WarMachine(side,WAR_MACHINE_BALLISTA);
+    if CURRENT_UNIT == hero then
+        SetATB_WarMachineType(side, WAR_MACHINE_BALLISTA, ATB_NEXT);
+    end;
 end;
 
-function Routine_CastRandomSlow(side, hero, unit)
+function Routine_CastRandomSlow(side, hero)
     -- print("Trigger random Slow !")
-    local m = GetUnitManaPoints(hero_id);
-    if m >= 20 then
-        HeroCast_RandomEnnemy(side,hero_id,12,NO_COST);
-        setATB(hero_id,1);
+    if CURRENT_UNIT == hero and GetUnitManaPoints(hero) >= 20 then
+        HeroCast_RandomCreature(hero, SPELL_SLOW, NO_COST, 1-side);
+        SetATB_ID(hero, ATB_INSTANT);
     end;
 end;

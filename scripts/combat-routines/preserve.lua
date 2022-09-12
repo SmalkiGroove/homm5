@@ -7,8 +7,8 @@ function DoSylvanRoutine_CombatStart(side, name, id)
     startThread(SYLVAN_COMBAT_START[name], side, id);
 end;
 
-function DoSylvanRoutine_CombatTurn(side, name, id, unit)
-    startThread(SYLVAN_COMBAT_TURN[name], side, id, unit);
+function DoSylvanRoutine_CombatTurn(side, name, id)
+    startThread(SYLVAN_COMBAT_TURN[name], side, id);
 end;
 
 function DoSylvanRoutine_UnitDied(side, name, id, unit)
@@ -139,22 +139,30 @@ end;
 
 function Routine_CastRandomBloodlust(side, hero)
     -- print("Trigger random bloodlust !")
-    HeroCast_RandomCreature(hero, SPELL_BLOODLUST, FREE_MANA, side);
-    SetATB_ID(hero, ATB_INSTANT);
+    if CURRENT_UNIT == hero then
+        HeroCast_RandomCreature(hero, SPELL_BLOODLUST, FREE_MANA, side);
+        SetATB_ID(hero, ATB_INSTANT);
+    end;
 end;
 
 function Routine_HeroMoveNext(side, hero)
     -- print("Trigger hero play next !")
-    SetATB_ID(hero, ATB_NEXT);
+    if CURRENT_UNIT_SIDE ~= GetUnitSide(hero) then
+        SetATB_ID(hero, ATB_NEXT);
+    end;
 end;
 
 function Routine_SummonWolfStack(side, hero)
     -- print("Trigger spawn wolves pack !")
-    local amount = trunc(GetUnitManaPoints(hero) * 0.34);
-    if amount > 0 then SummonCreatureStack(side, CREATURE_WOLF, amount) end;
+    if CURRENT_UNIT == hero then
+        local amount = trunc(GetUnitManaPoints(hero) * 0.34);
+        if amount > 0 then SummonCreatureStack(side, CREATURE_WOLF, amount) end;
+    end;
 end;
 
 function Routine_DruidsMoveNext(side, hero)
     -- print("Trigger druids play next !")
-    SetATB_CreatureTypes(side, {CREATURE_DRUID,CREATURE_DRUID_ELDER,CREATURE_HIGH_DRUID}, ATB_NEXT);
+    if CURRENT_UNIT == hero then
+        SetATB_CreatureTypes(side, {CREATURE_DRUID,CREATURE_DRUID_ELDER,CREATURE_HIGH_DRUID}, ATB_NEXT);
+    end;
 end;

@@ -7,8 +7,8 @@ function DoStrongholdRoutine_CombatStart(side, name, id)
     startThread(STRONGHOLD_COMBAT_START[name], side, id);
 end;
 
-function DoStrongholdRoutine_CombatTurn(side, name, id, unit)
-    startThread(STRONGHOLD_COMBAT_TURN[name], side, id, unit);
+function DoStrongholdRoutine_CombatTurn(side, name, id)
+    startThread(STRONGHOLD_COMBAT_TURN[name], side, id);
 end;
 
 function DoStrongholdRoutine_UnitDied(side, name, id, unit)
@@ -107,78 +107,85 @@ STRONGHOLD_UNIT_DIED = {
 
 function Routine_CastCallOfBlood(side, hero)
     -- print("Trigger call of blood !")
-    HeroCast_TargetCreature(side,hero_id,291,FREE_MANA,121,122,175);
+    HeroCast_TargetCreatureTypes(hero, SPELL_WARCRY_CALL_OF_BLOOD, FREE_MANA, side, {CREATURE_ORC_WARRIOR,CREATURE_ORC_SLAYER,CREATURE_ORC_WARMONGER});
 end;
 
 function Routine_CastBattlecry(side, hero)
     -- print("Trigger battlecry !")
-    HeroCast_Global(hero_id,294,FREE_MANA);
+    HeroCast_Global(hero, SPELL_WARCRY_BATTLECRY, FREE_MANA);
 end;
 
 function Routine_CastHordeAnger(side, hero)
+    -- print("Trigger horde's anger !")
     if GetUnitManaPoints(hero_id) >= 10 then
-        -- print("Trigger horde's anger !")
-        HeroCast_RandomEnnemy(side,hero_id,295,10);
+        HeroCast_RandomCreature(hero, SPELL_WARCRY_SHOUT_OF_MANY, 10, 1-side);
     end;
 end;
 
 function Routine_CastPowerfulBlowCentaur(side, hero)
     -- print("Trigger powerful blow on centaur !")
-    HeroCast_TargetCreature(side,hero_id,305,FREE_MANA,119,120,174);
+    HeroCast_TargetCreatureTypes(hero, SPELL_EFFECT_POWERFULL_BLOW, NO_COST, side, {CREATURE_CENTAUR,CREATURE_CENTAUR_NOMAD,CREATURE_CENTAUR_MARADEUR});
 end;
 
 function Routine_CastRallingCry(side, hero)
     -- print("Trigger ralling cry !")
-    HeroCast_Global(hero_id,290,FREE_MANA);
+    HeroCast_Global(hero, SPELL_WARCRY_RALLING_CRY, FREE_MANA);
 end;
 
 function Routine_BallistaRandomShoot(side, hero)
     -- print("Trigger ballista random shoot !")
-    BallistaRandomShoot(side);
+    RandomShoot_Ballista(side);
 end;
 
 function Routine_CastLightningSpell(side, hero)
     -- print("Trigger lightning spell !")
     local ennemies = GetUnits(1-side,CREATURE);
-    local spell = 3;
-    if length(ennemies) >= 4 then spell = 7 end;
-    HeroCast_Target(hero_id,spell,FREE_MANA,ennemies[0]);
+    local spell = (length(ennemies) >= 4) and SPELL_CHAIN_LIGHTNING or SPELL_LIGHTNING_BOLT;
+    HeroCast_Target(hero, spell, FREE_MANA, ennemies[0]);
 end;
 
-function Routine_CyclopsMoveNext(side, hero, unit)
+function Routine_CyclopsMoveNext(side, hero)
     -- print("Trigger cyclops play next !")
-    UnitPlayNext_Creature(side,129,130,179);
-end;
-
-function Routine_SummonGoblinStack(side, hero, unit)
-    -- print("Trigger summon goblins !")
-    local m = trunc(GetUnitMaxManaPoints(hero_id) * 1.5);
-    SummonCreature(side,117,m);
-end;
-
-function Routine_ShamansManaRegen(side, hero, unit)
-    -- print("Trigger shamans mana !")
-    local id = GetCreatureType(unit);
-    if id == 123 or id == 124 or id == 176 then
-        local a = trunc(GetUnitMaxManaPoints(hero_id) * 0.1);
-        local m = GetUnitManaPoints(unit);
-        SetMana(unit,m+a);
+    if CURRENT_UNIT == hero then
+        SetATB_CreatureTypes(side, {CREATURE_CYCLOP,CREATURE_CYCLOP_UNTAMED,CREATURE_CYCLOP_BLOODEYED}, ATB_NEXT);
     end;
 end;
 
-function Routine_CastRandomRegenOrPlague(side, hero, unit)
-    -- print("Trigger regen or plague !")
-    if GetUnitType(unit) == WAR_MACHINE and GetWarMachineType(unit) == WAR_MACHINE_BALLISTA then
-        if mod(TURN,2) == 0 then
-            HeroCast_RandomAlly(side,hero_id,280,FREE_MANA);
-        else
-            HeroCast_RandomEnnemy(side,hero_id,14,FREE_MANA);
+function Routine_SummonGoblinStack(side, hero)
+    -- print("Trigger summon goblins !")
+    if CURRENT_UNIT == hero then
+        local amount = trunc(GetUnitMaxManaPoints(hero) * 1.5);
+        SummonCreatureStack(side, CREATURE_GOBLIN, amount);
+    end;
+end;
+
+function Routine_ShamansManaRegen(side, hero)
+    -- print("Trigger shamans mana !")
+    if CURRENT_UNIT_SIDE == GetUnitSide(hero) then
+        local type = GetCreatureType(CURRENT_UNIT);
+        if type == CREATURE_SHAMAN or type == CREATURE_SHAMAN_WITCH or type == CREATURE_SHAMAN_HAG then
+            local n = trunc(GetUnitMaxManaPoints(hero) * 0.1);
+            local m = GetUnitManaPoints(CURRENT_UNIT);
+            SetMana(CURRENT_UNIT, m + n);
         end;
     end;
 end;
 
-function Routine_CastRandomVulnerability(side, hero, unit)
+function Routine_CastRandomRegenOrPlague(side, hero)
+    -- print("Trigger regen or plague !")
+    if CURRENT_UNIT == UNIT_SIDE_PREFIX[side]..'-warmachine-WAR_MACHINE_FIRST_AID_TENT' then
+        if mod(TURN, 2) == 0 then
+            HeroCast_RandomCreature(hero, SPELL_REGENERATION, FREE_MANA, side);
+        else
+            HeroCast_RandomCreature(hero, SPELL_PLAGUE, FREE_MANA, 1-side);
+        end;
+    end;
+end;
+
+function Routine_CastRandomVulnerability(side, hero)
     -- print("Trigger random vulnerability !")
-    HeroCast_RandomEnnemy(side,hero_id,13,FREE_MANA);
-    setATB(hero_id,1);
+    if CURRENT_UNIT == hero then
+        HeroCast_RandomCreature(hero, SPELL_DISRUPTING_RAY, FREE_MANA, 1-side);
+        SetATB_ID(hero, ATB_INSTANT);
+    end;
 end;
