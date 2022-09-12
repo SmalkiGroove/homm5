@@ -982,4 +982,5 @@ end
 if StartDialogSceneInt then
 	StartDialogScene = function(name, callback, saveName) SyncCommand(StartDialogSceneInt, name, callback, saveName) end
 end
+
 doFile("/scripts/advmap-common.lua")

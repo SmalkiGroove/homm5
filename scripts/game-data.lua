@@ -214,3 +214,46 @@ HEROES_ORCS = {
     H_URGHAT, H_GARUNA, H_ZOULEIKA, H_ERIKA
 }; -- 19
 
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+-- GAME DATA
+
+STAT_EXPERIENCE = 0
+STAT_OFFENCE    = 1
+STAT_DEFENCE    = 2
+STAT_SPELLPOWER = 3
+STAT_KNOWLEDGE  = 4
+STAT_LUCK       = 5
+STAT_MORALE     = 6
+STAT_MOVEMENT   = 7
+STAT_MANA       = 8
+
+ATTRIBUTE_TEXT = {
+    [0] = "Experience",
+    [1] = "Offense",
+    [2] = "Defense",
+    [3] = "Spellpower",
+    [4] = "Knowledge",
+    [5] = "Luck",
+    [6] = "Morale",
+    [7] = "Movement",
+    [8] = "Mana"
+};
+
+RES_WOOD     = 0
+RES_ORES     = 1
+RES_MERCURY  = 2
+RES_CRYSTALS = 3
+RES_SULFUR   = 4
+RES_GEMS     = 5
+RES_GOLDS    = 6
+
+RESOURCE_TEXT = {
+    [0] = "wood",
+    [1] = "ores",
+    [2] = "mercury",
+    [3] = "cystals",
+    [4] = "sulfur",
+    [5] = "gems",
+    [6] = "golds"
+};

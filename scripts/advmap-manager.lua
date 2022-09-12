@@ -1,6 +1,4 @@
-PLAYER_DAILY_EVENTS_CHECK = {1,1,1,1,1,1,1,1}; -- last turn number applied for each player's daily events
-PLAYER_WEEKLY_EVENTS_CHECK = {1,1,1,1,1,1,1,1}; -- last turn number applied for each player's weekly events
-PLAYER_ONETIME_EVENTS_CHECK = {1,1,1,1,1,1,1,1}; -- last turn number applied for each player's onetime events
+
 TURN = 1; -- current turn
 
 PLAYER_HEROES = { [1] = {}, [2] = {}, [3] = {}, [4] = {}, [5] = {}, [6] = {}, [7] = {}, [8] = {} };
@@ -25,11 +23,34 @@ REMOVE_PLAYER_HERO = {
 	[7] = "RemovePlayer7Hero",
 	[8] = "RemovePlayer8Hero",
 };
+
+DAILY_ROUTINES = {
+	[0] = DoCommonRoutine_Daily,
+	[1] = DoHavenRoutine_Daily,
+	[2] = DoPreserveRoutine_Daily,
+	[3] = DoInfernoRoutine_Daily,
+	[4] = DoNecropolisRoutine_Daily,
+	[5] = DoAcademyRoutine_Daily,
+	[6] = DoDungeonRoutine_Daily,
+	[7] = DoFortressRoutine_Daily,
+	[8] = DoStrongholdRoutine_Daily,
+};
+
+WEEKLY_ROUTINES = {
+	[0] = DoCommonRoutine_Weekly,
+	[1] = DoHavenRoutine_Weekly,
+	[2] = DoPreserveRoutine_Weekly,
+	[3] = DoInfernoRoutine_Weekly,
+	[4] = DoNecropolisRoutine_Weekly,
+	[5] = DoAcademyRoutine_Weekly,
+	[6] = DoDungeonRoutine_Weekly,
+	[7] = DoFortressRoutine_Weekly,
+	[8] = DoStrongholdRoutine_Weekly,
+};
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
-ATTRIBUTE_NAME = {"Experience", "Offense", "Defense", "Spellpower", "Knowledge", "Luck", "Morale", "Movement", "Mana"};
-RESOURCE_NAME = {"wood", "ores", "mercury", "cystals", "sulfur", "gems", "golds"};
 ONE_TIME_BONUSES = {[H_ISABEL]=0,[H_RUTGER]=0,[H_WYNGAAL]=0,[H_ANWEN]=0,[H_KYRRE]=0,[H_JOSEPHINE]=0,[H_THANT]=0,[H_TOLGHAR]=0,[H_HEDWIG]=0};
 
 ARTIFACTS_GAINS = {
@@ -601,27 +622,25 @@ end;
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
-function DoPlayerHeroesSpe(player,day)
+function DoPlayerHeroesSpe(player, newweek)
 	while (not IsPlayerCurrent(player)) do sleep(10) end;
-	print("Player "..player.." turn");
-	if ((day == 1) and (PLAYER_WEEKLY_EVENTS_CHECK[player] < TURN)) then ApplyHeroesSpe_weekly(player) end;
-	if (PLAYER_DAILY_EVENTS_CHECK[player] < TURN) then ApplyHeroesSpe_daily(player) end;
-	if (PLAYER_ONETIME_EVENTS_CHECK[player] < TURN) then ApplyHeroesSpe_onetime(player) end;
-end;
-
-function HeroesSpe_NewDay()
-	local day = GetDate(DAY_OF_WEEK);
-	for i = 1,8 do
-		if (GetPlayerState(i) == 1) then
-			startThread(DoPlayerHeroesSpe,i,day);
-		end;
+	print("Player "..player.." turn started");
+	for hero in PLAYER_HEROES[player] do
+		local faction = GetHeroFactionID(hero);
+		startThread(DAILY_ROUTINES[faction], player, hero);
+		if newweek then startThread(WEEKLY_ROUTINES[faction], player, hero) end;
 	end;
 end;
 
 function NewDayTrigger()
 	TURN = TURN + 1;
 	print("New day ! Turn "..TURN);
-	startThread(HeroesSpe_NewDay);
+	local newweek = GetDate(DAY_OF_WEEK) == 1;
+	for i = 1,8 do
+		if (GetPlayerState(i) == 1) then
+			startThread(DoPlayerHeroesSpe, i, newweek);
+		end;
+	end;
 end;
 
 Trigger(NEW_DAY_TRIGGER, "NewDayTrigger");
