@@ -7,8 +7,8 @@ function DoNecropolisRoutine_CombatStart(side, name, id)
     startThread(NECROPOLIS_COMBAT_START[name], side, id);
 end;
 
-function DoNecropolisRoutine_CombatTurn(side, name, id, unit)
-    startThread(NECROPOLIS_COMBAT_TURN[name], side, id, unit);
+function DoNecropolisRoutine_CombatTurn(side, name, id)
+    startThread(NECROPOLIS_COMBAT_TURN[name], side, id);
 end;
 
 function DoNecropolisRoutine_UnitDied(side, name, id, unit)
@@ -99,59 +99,65 @@ NECROPOLIS_UNIT_DIED = {
 
 function Routine_SummonAndKillEnnemySkeleton(side, hero)
     -- print("Trigger summon and kill skeleton !")
-    local n = length(GetUnits(1-side,CREATURE));
-    SummonStack(1-side,152,1,5);
-    repeat sleep(10) until length(GetUnits(1-side,CREATURE)) == n+1;
-    HeroCast_Target(hero_id,1,FREE_MANA,GetUnits(1-side,CREATURE)[n]);
+    local n = length(GetUnits(1-side, CREATURE));
+    SummonCreatureStack_X(1-side, CREATURE_SKELETON, 1, 6);
+    repeat sleep(10) until length(GetUnits(1-side, CREATURE)) == n + 1;
+    HeroCast_Target(hero, SPELL_MAGIC_ARROW, FREE_MANA, GetUnits(1-side, CREATURE)[n]);
 end;
 
 function Routine_SummonAvatarOfDeath(side, hero)
     -- print("Trigger summon avatar of death !")
-    HeroCast_Global(hero_id,200,FREE_MANA);
+    HeroCast_Global(hero, SPELL_ABILITY_AVATAR_OF_DEATH, FREE_MANA);
 end;
 
 function Routine_CastMassWeakness(side, hero)
     -- print("Trigger cast mass weakness !")
-    HeroCast_Global(hero_id,210,FREE_MANA);
+    HeroCast_Global(hero, SPELL_MASS_CURSE, FREE_MANA);
 end;
 
 function Routine_CastMultipleSorrow(side, hero)
     -- print("Trigger random sorrow")
-    local e = GetUnits(1-side,CREATURE);
-    local m = GetUnitMaxManaPoints(hero_id) * 0.02;
-    local n = min(length(e),1+trunc(m));
+    local e = GetUnits(1-side, CREATURE);
+    local m = GetUnitMaxManaPoints(hero) * 0.02;
+    local n = min(length(e), 1+trunc(m));
     for i = 1,n do
-        HeroCast_Target(hero_id,277,FREE_MANA,e[i-1]);
+        HeroCast_Target(hero, SPELL_SORROW, FREE_MANA, e[i-1]);
     end;
 end;
 
 function Routine_DuplicateArmyGhosts(side, hero)
     -- print("Trigger duplicate ghosts !")
-    for i,cr in GetUnits(side,CREATURE) do
-        local id = GetCreatureType(cr);
-        if id == 33 or id == 34 or id == 154 then
+    for i,cr in GetUnits(side, CREATURE) do
+        local type = GetCreatureType(cr);
+        if type == CREATURE_MANES or type == CREATURE_GHOST or type == CREATURE_POLTERGEIST then
             local nb = GetCreatureNumber(cr);
             local x,y = GetUnitPosition(cr);
-            SummonCreature(side,id,nb,x);
-            sleep(1);
+            x = x + 1 - side * 2;
+            SummonCreatureStack_XY(side, type, nb, x, y);
         end;
     end;
 end;
 
-function Routine_CastRandomPlague(side, hero, unit)
+function Routine_CastRandomPlague(side, hero)
     -- print("Trigger random Plague !")
-    HeroCast_RandomEnnemy(side,hero_id,14,FREE_MANA);
-    setATB(hero_id,1);
+    if CURRENT_UNIT == hero then
+        HeroCast_RandomCreature(hero, SPELL_PLAGUE, FREE_MANA, 1-side);
+        SetATB_ID(hero, ATB_INSTANT);
+    end;
 end;
 
-function Routine_SummonZombieStack(side, hero, unit)
+function Routine_SummonZombieStack(side, hero)
     -- print("Trigger summon zombies !")
-    local m = GetUnitManaPoints(hero_id);
-    if m > 0 then SummonCreature(side,32,m) end;
+    if CURRENT_UNIT == hero then
+        local m = GetUnitManaPoints(hero);
+        if m > 0 then SummonCreatureStack(side, CREATURE_DISEASE_ZOMBIE, m) end;
+    end;
 end;
 
-function Routine_CastRandomIceBolt(side, hero, unit)
+function Routine_CastRandomIceBolt(side, hero)
     -- print("Trigger random Ice Bolt !")
-    HeroCast_RandomEnnemy(side,hero_id,4,FREE_MANA);
-    setATB(hero_id,1);
+    if CURRENT_UNIT == hero then
+        HeroCast_RandomCreature(hero, SPELL_ICE_BOLT, FREE_MANA, 1-side);
+        SetATB_ID(hero, ATB_INSTANT);
+    end;
 end;

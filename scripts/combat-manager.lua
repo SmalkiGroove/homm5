@@ -7,8 +7,6 @@ DEFENDER_HERO = nil;
 COMBAT_TURN = 0;
 CURRENT_UNIT = "none";
 CURRENT_UNIT_SIDE = nil;
-ALLIED_CREATURES = {};
-ENNEMY_CREATURES = {};
 
 THREAD_LIMIT = 50;
 THREAD_STATE = 0;
@@ -193,8 +191,6 @@ function ManageCombatTurn(unit)
         COMBAT_TURN = COMBAT_TURN + 1;
         CURRENT_UNIT = unit;
         CURRENT_UNIT_SIDE = IsAttacker(unit) and ATTACKER or DEFENDER;
-        ALLIED_CREATURES = GetUnits(CURRENT_UNIT_SIDE, CREATURE);
-        ENNEMY_CREATURES = GetUnits(1-CURRENT_UNIT_SIDE, CREATURE);
 
         if ATTACKER_HERO ~= nil then
             local turnroutine = TURN_ROUTINES[ATTACKER_RACE];

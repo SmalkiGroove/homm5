@@ -54,6 +54,16 @@
 	GEM     = 5
 	GOLD    = 6
 
+	RESOURCE_TEXT = {
+		[0] = "wood",
+		[1] = "ores",
+		[2] = "mercury",
+		[3] = "cystals",
+		[4] = "sulfur",
+		[5] = "gems",
+		[6] = "golds"
+	};
+	
 	--
 	-- Kinds of treasures
 	--
@@ -102,6 +112,18 @@
     STAT_MOVE_POINTS = 7
     STAT_MANA_POINTS = 8
 
+	ATTRIBUTE_TEXT = {
+		[0] = "Experience",
+		[1] = "Offense",
+		[2] = "Defense",
+		[3] = "Spellpower",
+		[4] = "Knowledge",
+		[5] = "Luck",
+		[6] = "Morale",
+		[7] = "Movement",
+		[8] = "Mana"
+	};
+	
 	--
 	-- Objective state`s IDs
 	--
