@@ -3,6 +3,28 @@ PLAYER_WEEKLY_EVENTS_CHECK = {1,1,1,1,1,1,1,1}; -- last turn number applied for 
 PLAYER_ONETIME_EVENTS_CHECK = {1,1,1,1,1,1,1,1}; -- last turn number applied for each player's onetime events
 TURN = 1; -- current turn
 
+PLAYER_HEROES = { [1] = {}, [2] = {}, [3] = {}, [4] = {}, [5] = {}, [6] = {}, [7] = {}, [8] = {} };
+
+ADD_PLAYER_HERO = {
+	[1] = "AddPlayer1Hero",
+	[2] = "AddPlayer2Hero",
+	[3] = "AddPlayer3Hero",
+	[4] = "AddPlayer4Hero",
+	[5] = "AddPlayer5Hero",
+	[6] = "AddPlayer6Hero",
+	[7] = "AddPlayer7Hero",
+	[8] = "AddPlayer8Hero",
+};
+REMOVE_PLAYER_HERO = {
+	[1] = "RemovePlayer1Hero",
+	[2] = "RemovePlayer2Hero",
+	[3] = "RemovePlayer3Hero",
+	[4] = "RemovePlayer4Hero",
+	[5] = "RemovePlayer5Hero",
+	[6] = "RemovePlayer6Hero",
+	[7] = "RemovePlayer7Hero",
+	[8] = "RemovePlayer8Hero",
+};
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -572,6 +594,9 @@ function ApplyHeroesSpe_onetime(player)
 	PLAYER_ONETIME_EVENTS_CHECK[player] = TURN;
 end;
 
+function Initialize_PlayerHeroes(player)
+	PLAYER_HEROES[player] = GetPlayerHeroes(player);
+end;
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -599,5 +624,29 @@ function NewDayTrigger()
 	startThread(HeroesSpe_NewDay);
 end;
 
+Trigger(NEW_DAY_TRIGGER, "NewDayTrigger");
 
-Trigger(NEW_DAY_TRIGGER,"NewDayTrigger");
+
+function AddPlayer1Hero(hero) insert(PLAYER_HEROES[1], hero) end;
+function AddPlayer2Hero(hero) insert(PLAYER_HEROES[2], hero) end;
+function AddPlayer3Hero(hero) insert(PLAYER_HEROES[3], hero) end;
+function AddPlayer4Hero(hero) insert(PLAYER_HEROES[4], hero) end;
+function AddPlayer5Hero(hero) insert(PLAYER_HEROES[5], hero) end;
+function AddPlayer6Hero(hero) insert(PLAYER_HEROES[6], hero) end;
+function AddPlayer7Hero(hero) insert(PLAYER_HEROES[7], hero) end;
+function AddPlayer8Hero(hero) insert(PLAYER_HEROES[8], hero) end;
+
+function RemovePlayer1Hero(hero) remove(PLAYER_HEROES[1], hero) end;
+function RemovePlayer2Hero(hero) remove(PLAYER_HEROES[2], hero) end;
+function RemovePlayer3Hero(hero) remove(PLAYER_HEROES[3], hero) end;
+function RemovePlayer4Hero(hero) remove(PLAYER_HEROES[4], hero) end;
+function RemovePlayer5Hero(hero) remove(PLAYER_HEROES[5], hero) end;
+function RemovePlayer6Hero(hero) remove(PLAYER_HEROES[6], hero) end;
+function RemovePlayer7Hero(hero) remove(PLAYER_HEROES[7], hero) end;
+function RemovePlayer8Hero(hero) remove(PLAYER_HEROES[8], hero) end;
+
+for i = 1,8 do
+	Trigger(PLAYER_ADD_HERO_TRIGGER, i, ADD_PLAYER_HERO[i]);
+	Trigger(PLAYER_REMOVE_HERO_TRIGGER, i, REMOVE_PLAYER_HERO[i]);
+end;
+
