@@ -94,10 +94,6 @@ WEEKLY_TRIGGER_DUNGEON = {
 };
 
 
-for i,hero in HEROES_DUNGEON do
-	Trigger(HERO_LEVELUP_TRIGGER, hero, LEVEL_UP_DUNGEON_HERO[hero]);
-end;
-
 function DoDungeonRoutine_Start(player, hero)
     startThread(START_TRIGGER_DUNGEON[hero], player);
 end;
@@ -108,6 +104,10 @@ end;
 
 function DoDungeonRoutine_Weekly(player, hero)
     startThread(WEEKLY_TRIGGER_DUNGEON[hero], player);
+end;
+
+function DoDungeonRoutine_LevelUp(hero)
+    Trigger(HERO_LEVELUP_TRIGGER, hero, LEVEL_UP_DUNGEON_HERO[hero]);
 end;
 
 

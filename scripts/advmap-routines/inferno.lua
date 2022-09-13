@@ -119,10 +119,6 @@ WEEKLY_TRIGGER_INFERNO = {
 };
 
 
-for i,hero in HEROES_INFERNO do
-	Trigger(HERO_LEVELUP_TRIGGER, hero, LEVEL_UP_INFERNO_HERO[hero]);
-end;
-
 function DoInfernoRoutine_Start(player, hero)
     startThread(START_TRIGGER_INFERNO[hero], player);
 end;
@@ -133,6 +129,10 @@ end;
 
 function DoInfernoRoutine_Weekly(player, hero)
     startThread(WEEKLY_TRIGGER_INFERNO[hero], player);
+end;
+
+function DoInfernoRoutine_LevelUp(hero)
+    Trigger(HERO_LEVELUP_TRIGGER, hero, LEVEL_UP_INFERNO_HERO[hero]);
 end;
 
 

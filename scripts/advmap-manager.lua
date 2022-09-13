@@ -12,6 +12,7 @@ ROUTINES_LOADED = {
 };
 
 function LoadScript(path, key)
+	print("Loading script "..path)
 	dofile(path);
 	repeat sleep(1) until ROUTINES_LOADED[key] == 1;
 end;
@@ -55,37 +56,49 @@ REMOVE_PLAYER_HERO = {
 START_ROUTINES = {
 	[0] = DoCommonRoutine_Start,
 	[1] = DoHavenRoutine_Start,
-	-- [2] = DoPreserveRoutine_Start,
-	-- [3] = DoInfernoRoutine_Start,
-	-- [4] = DoNecropolisRoutine_Start,
-	-- [5] = DoAcademyRoutine_Start,
-	-- [6] = DoDungeonRoutine_Start,
-	-- [7] = DoFortressRoutine_Start,
-	-- [8] = DoStrongholdRoutine_Start,
+	[2] = DoPreserveRoutine_Start,
+	[3] = DoInfernoRoutine_Start,
+	[4] = DoNecropolisRoutine_Start,
+	[5] = DoAcademyRoutine_Start,
+	[6] = DoDungeonRoutine_Start,
+	[7] = DoFortressRoutine_Start,
+	[8] = DoStrongholdRoutine_Start,
 };
 
 DAILY_ROUTINES = {
 	[0] = DoCommonRoutine_Daily,
 	[1] = DoHavenRoutine_Daily,
-	-- [2] = DoPreserveRoutine_Daily,
-	-- [3] = DoInfernoRoutine_Daily,
-	-- [4] = DoNecropolisRoutine_Daily,
-	-- [5] = DoAcademyRoutine_Daily,
-	-- [6] = DoDungeonRoutine_Daily,
-	-- [7] = DoFortressRoutine_Daily,
-	-- [8] = DoStrongholdRoutine_Daily,
+	[2] = DoPreserveRoutine_Daily,
+	[3] = DoInfernoRoutine_Daily,
+	[4] = DoNecropolisRoutine_Daily,
+	[5] = DoAcademyRoutine_Daily,
+	[6] = DoDungeonRoutine_Daily,
+	[7] = DoFortressRoutine_Daily,
+	[8] = DoStrongholdRoutine_Daily,
 };
 
 WEEKLY_ROUTINES = {
 	[0] = DoCommonRoutine_Weekly,
 	[1] = DoHavenRoutine_Weekly,
-	-- [2] = DoPreserveRoutine_Weekly,
-	-- [3] = DoInfernoRoutine_Weekly,
-	-- [4] = DoNecropolisRoutine_Weekly,
-	-- [5] = DoAcademyRoutine_Weekly,
-	-- [6] = DoDungeonRoutine_Weekly,
-	-- [7] = DoFortressRoutine_Weekly,
-	-- [8] = DoStrongholdRoutine_Weekly,
+	[2] = DoPreserveRoutine_Weekly,
+	[3] = DoInfernoRoutine_Weekly,
+	[4] = DoNecropolisRoutine_Weekly,
+	[5] = DoAcademyRoutine_Weekly,
+	[6] = DoDungeonRoutine_Weekly,
+	[7] = DoFortressRoutine_Weekly,
+	[8] = DoStrongholdRoutine_Weekly,
+};
+
+LEVELUP_ROUTINES = {
+	[0] = DoCommonRoutine_LevelUp,
+	[1] = DoHavenRoutine_LevelUp,
+	[2] = DoPreserveRoutine_LevelUp,
+	[3] = DoInfernoRoutine_LevelUp,
+	[4] = DoNecropolisRoutine_LevelUp,
+	[5] = DoAcademyRoutine_LevelUp,
+	[6] = DoDungeonRoutine_LevelUp,
+	[7] = DoFortressRoutine_LevelUp,
+	[8] = DoStrongholdRoutine_LevelUp,
 };
 
 
@@ -114,23 +127,79 @@ end;
 Trigger(NEW_DAY_TRIGGER, "NewDayTrigger");
 
 
-function AddPlayer1Hero(hero) insert(PLAYER_HEROES[1], hero) end;
-function AddPlayer2Hero(hero) insert(PLAYER_HEROES[2], hero) end;
-function AddPlayer3Hero(hero) insert(PLAYER_HEROES[3], hero) end;
-function AddPlayer4Hero(hero) insert(PLAYER_HEROES[4], hero) end;
-function AddPlayer5Hero(hero) insert(PLAYER_HEROES[5], hero) end;
-function AddPlayer6Hero(hero) insert(PLAYER_HEROES[6], hero) end;
-function AddPlayer7Hero(hero) insert(PLAYER_HEROES[7], hero) end;
-function AddPlayer8Hero(hero) insert(PLAYER_HEROES[8], hero) end;
+function AddPlayer1Hero(hero)
+	local faction = GetHeroFactionID(hero);
+	insert(PLAYER_HEROES[1], hero);
+	startThread(LEVELUP_ROUTINES[faction], hero);
+end;
+function AddPlayer2Hero(hero)
+	local faction = GetHeroFactionID(hero);
+	insert(PLAYER_HEROES[2], hero);
+	startThread(LEVELUP_ROUTINES[faction], hero);
+end;
+function AddPlayer3Hero(hero)
+	local faction = GetHeroFactionID(hero);
+	insert(PLAYER_HEROES[3], hero);
+	startThread(LEVELUP_ROUTINES[faction], hero);
+end;
+function AddPlayer4Hero(hero)
+	local faction = GetHeroFactionID(hero);
+	insert(PLAYER_HEROES[4], hero);
+	startThread(LEVELUP_ROUTINES[faction], hero);
+end;
+function AddPlayer5Hero(hero)
+	local faction = GetHeroFactionID(hero);
+	insert(PLAYER_HEROES[5], hero);
+	startThread(LEVELUP_ROUTINES[faction], hero);
+end;
+function AddPlayer6Hero(hero)
+	local faction = GetHeroFactionID(hero);
+	insert(PLAYER_HEROES[6], hero);
+	startThread(LEVELUP_ROUTINES[faction], hero);
+end;
+function AddPlayer7Hero(hero)
+	local faction = GetHeroFactionID(hero);
+	insert(PLAYER_HEROES[7], hero);
+	startThread(LEVELUP_ROUTINES[faction], hero);
+end;
+function AddPlayer8Hero(hero)
+	local faction = GetHeroFactionID(hero);
+	insert(PLAYER_HEROES[8], hero);
+	startThread(LEVELUP_ROUTINES[faction], hero);
+end;
 
-function RemovePlayer1Hero(hero) remove(PLAYER_HEROES[1], hero) end;
-function RemovePlayer2Hero(hero) remove(PLAYER_HEROES[2], hero) end;
-function RemovePlayer3Hero(hero) remove(PLAYER_HEROES[3], hero) end;
-function RemovePlayer4Hero(hero) remove(PLAYER_HEROES[4], hero) end;
-function RemovePlayer5Hero(hero) remove(PLAYER_HEROES[5], hero) end;
-function RemovePlayer6Hero(hero) remove(PLAYER_HEROES[6], hero) end;
-function RemovePlayer7Hero(hero) remove(PLAYER_HEROES[7], hero) end;
-function RemovePlayer8Hero(hero) remove(PLAYER_HEROES[8], hero) end;
+function RemovePlayer1Hero(hero)
+	remove(PLAYER_HEROES[1], hero);
+	Trigger(HERO_LEVELUP_TRIGGER, hero, nil);
+end;
+function RemovePlayer2Hero(hero)
+	remove(PLAYER_HEROES[2], hero);
+	Trigger(HERO_LEVELUP_TRIGGER, hero, nil);
+end;
+function RemovePlayer3Hero(hero)
+	remove(PLAYER_HEROES[3], hero);
+	Trigger(HERO_LEVELUP_TRIGGER, hero, nil);
+end;
+function RemovePlayer4Hero(hero)
+	remove(PLAYER_HEROES[4], hero);
+	Trigger(HERO_LEVELUP_TRIGGER, hero, nil);
+end;
+function RemovePlayer5Hero(hero)
+	remove(PLAYER_HEROES[5], hero);
+	Trigger(HERO_LEVELUP_TRIGGER, hero, nil);
+end;
+function RemovePlayer6Hero(hero)
+	remove(PLAYER_HEROES[6], hero);
+	Trigger(HERO_LEVELUP_TRIGGER, hero, nil);
+end;
+function RemovePlayer7Hero(hero)
+	remove(PLAYER_HEROES[7], hero);
+	Trigger(HERO_LEVELUP_TRIGGER, hero, nil);
+end;
+function RemovePlayer8Hero(hero)
+	remove(PLAYER_HEROES[8], hero);
+	Trigger(HERO_LEVELUP_TRIGGER, hero, nil);
+end;
 
 for i = 1,8 do
 	Trigger(PLAYER_ADD_HERO_TRIGGER, i, ADD_PLAYER_HERO[i]);
@@ -145,6 +214,7 @@ function InitializeHeroes()
 			for i,hero in PLAYER_HEROES[player] do
 				local faction = GetHeroFactionID(hero);
 				startThread(START_ROUTINES[faction], player, hero);
+				startThread(LEVELUP_ROUTINES[faction], hero);
 			end;
 		end;
 	end;

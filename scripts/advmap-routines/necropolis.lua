@@ -151,10 +151,6 @@ WEEKLY_TRIGGER_NECROPOLIS = {
 };
 
 
-for i,hero in HEROES_NECRO do
-	Trigger(HERO_LEVELUP_TRIGGER, hero, LEVEL_UP_NECRO_HERO[hero]);
-end;
-
 function DoNecropolisRoutine_Start(player, hero)
     startThread(START_TRIGGER_NECROPOLIS[hero], player);
 end;
@@ -165,6 +161,10 @@ end;
 
 function DoNecropolisRoutine_Weekly(player, hero)
     startThread(WEEKLY_TRIGGER_NECROPOLIS[hero], player);
+end;
+
+function DoNecropolisRoutine_LevelUp(hero)
+    Trigger(HERO_LEVELUP_TRIGGER, hero, LEVEL_UP_NECRO_HERO[hero]);
 end;
 
 

@@ -113,10 +113,6 @@ WEEKLY_TRIGGER_TRONGHOLD = {
 };
 
 
-for i,hero in HEROES_ORCS do
-	Trigger(HERO_LEVELUP_TRIGGER, hero, LEVEL_UP_STRONGHOLD_HERO[hero]);
-end;
-
 function DoStrongholdRoutine_Start(player, hero)
     startThread(START_TRIGGER_STRONGHOLD[hero], player);
 end;
@@ -127,6 +123,10 @@ end;
 
 function DoStrongholdRoutine_Weekly(player, hero)
     startThread(WEEKLY_TRIGGER_TRONGHOLD[hero], player);
+end;
+
+function DoStrongholdRoutine_LevelUp(hero)
+    Trigger(HERO_LEVELUP_TRIGGER, hero, LEVEL_UP_STRONGHOLD_HERO[hero]);
 end;
 
 

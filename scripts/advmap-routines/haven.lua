@@ -136,10 +136,6 @@ WEEKLY_TRIGGER_HAVEN = {
 };
 
 
-for i,hero in HEROES_HAVEN do
-	Trigger(HERO_LEVELUP_TRIGGER, hero, LEVEL_UP_HAVEN_HERO[hero]);
-end;
-
 function DoHavenRoutine_Start(player, hero)
     startThread(START_TRIGGER_HAVEN[hero], player);
 end;
@@ -150,6 +146,10 @@ end;
 
 function DoHavenRoutine_Weekly(player, hero)
     startThread(WEEKLY_TRIGGER_HAVEN[hero], player);
+end;
+
+function DoHavenRoutine_LevelUp(hero)
+    Trigger(HERO_LEVELUP_TRIGGER, hero, LEVEL_UP_HAVEN_HERO[hero]);
 end;
 
 

@@ -164,10 +164,6 @@ WEEKLY_TRIGGER_PRESERVE = {
 };
 
 
-for i,hero in HEROES_SYLVAN do
-	Trigger(HERO_LEVELUP_TRIGGER, hero, LEVEL_UP_SYLVAN_HERO[hero]);
-end;
-
 function DoPreserveRoutine_Start(player, hero)
     startThread(START_TRIGGER_PRESERVE[hero], player);
 end;
@@ -178,6 +174,10 @@ end;
 
 function DoPreserveRoutine_Weekly(player, hero)
     startThread(WEEKLY_TRIGGER_PRESERVE[hero], player);
+end;
+
+function DoPreserveRoutine_LevelUp(hero)
+    Trigger(HERO_LEVELUP_TRIGGER, hero, LEVEL_UP_SYLVAN_HERO[hero]);
 end;
 
 
