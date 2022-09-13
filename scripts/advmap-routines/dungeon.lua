@@ -99,3 +99,9 @@ WEEKLY_TRIGGER_DUNGEON = {
     [H_SEPHINROTH] = NoneRoutine,
     [H_KASTORE] = NoneRoutine,
 };
+
+
+function Routine_AddHeroManticores(player, hero)
+    -- Manticore - 1:4 - 2:12 - 3:20 - 4:27 ... 7:50
+    AddHero_CreatureType(player, hero, CREATURE_MANTICORE, 0.13);
+end;

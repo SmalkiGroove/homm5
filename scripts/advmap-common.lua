@@ -76,5 +76,5 @@ end;
 
 doFile("/scripts/game-data.lua");
 doFile("/scripts/game-core.lua");
-doFile("/scripts/heroes-spe.lua");
-doFile("/scripts/heroes-triggers.lua");
+
+doFile("/scripts/advmap-manager.lua");
