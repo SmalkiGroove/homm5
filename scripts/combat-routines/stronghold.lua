@@ -55,7 +55,7 @@ end;
 
 function Routine_ShamansManaRegen(side, hero)
     -- print("Trigger shamans mana !")
-    if CURRENT_UNIT_SIDE == GetUnitSide(hero) then
+    if CURRENT_UNIT_SIDE == side then
         local type = GetCreatureType(CURRENT_UNIT);
         if type == CREATURE_SHAMAN or type == CREATURE_SHAMAN_WITCH or type == CREATURE_SHAMAN_HAG then
             local n = trunc(GetUnitMaxManaPoints(hero) * 0.1);

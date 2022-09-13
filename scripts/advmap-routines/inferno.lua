@@ -120,15 +120,15 @@ WEEKLY_TRIGGER_INFERNO = {
 
 
 function DoInfernoRoutine_Start(player, hero)
-    startThread(START_TRIGGER_INFERNO[hero], player);
+    startThread(START_TRIGGER_INFERNO[hero], player, hero);
 end;
 
 function DoInfernoRoutine_Daily(player, hero)
-    startThread(DAILY_TRIGGER_INFERNO[hero], player);
+    startThread(DAILY_TRIGGER_INFERNO[hero], player, hero);
 end;
 
 function DoInfernoRoutine_Weekly(player, hero)
-    startThread(WEEKLY_TRIGGER_INFERNO[hero], player);
+    startThread(WEEKLY_TRIGGER_INFERNO[hero], player, hero);
 end;
 
 function DoInfernoRoutine_LevelUp(hero)

@@ -114,15 +114,15 @@ WEEKLY_TRIGGER_TRONGHOLD = {
 
 
 function DoStrongholdRoutine_Start(player, hero)
-    startThread(START_TRIGGER_STRONGHOLD[hero], player);
+    startThread(START_TRIGGER_STRONGHOLD[hero], player, hero);
 end;
 
 function DoStrongholdRoutine_Daily(player, hero)
-    startThread(DAILY_TRIGGER_STRONGHOLD[hero], player);
+    startThread(DAILY_TRIGGER_STRONGHOLD[hero], player, hero);
 end;
 
 function DoStrongholdRoutine_Weekly(player, hero)
-    startThread(WEEKLY_TRIGGER_TRONGHOLD[hero], player);
+    startThread(WEEKLY_TRIGGER_TRONGHOLD[hero], player, hero);
 end;
 
 function DoStrongholdRoutine_LevelUp(hero)

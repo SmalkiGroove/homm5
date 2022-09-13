@@ -143,15 +143,15 @@ WEEKLY_TRIGGER_ACADEMY = {
 
 
 function DoAcademyRoutine_Start(player, hero)
-    startThread(START_TRIGGER_ACADEMY[hero], player);
+    startThread(START_TRIGGER_ACADEMY[hero], player, hero);
 end;
 
 function DoAcademyRoutine_Daily(player, hero)
-    startThread(DAILY_TRIGGER_ACADEMY[hero], player);
+    startThread(DAILY_TRIGGER_ACADEMY[hero], player, hero);
 end;
 
 function DoAcademyRoutine_Weekly(player, hero)
-    startThread(WEEKLY_TRIGGER_ACADEMY[hero], player);
+    startThread(WEEKLY_TRIGGER_ACADEMY[hero], player, hero);
 end;
 
 function DoAcademyRoutine_LevelUp(hero)

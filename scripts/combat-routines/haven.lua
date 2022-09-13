@@ -18,17 +18,6 @@ function Routine_CastPrayer(side, hero)
     HeroCast_Global(hero, SPELL_PRAYER, NO_COST);
 end;
 
-function Routine_InvokeBladeBarriers(side, hero)
-    -- print("Trigger cast Blade Barriers !")
-    -- local m = GetUnitManaPoints(hero_id);
-    -- local x = 12 - 9 * side;
-    -- for y=2,11 do
-    --     HeroCast_Area(hero_id,284,x,y,FREE_MANA);
-    --     HeroCast_Area(hero_id,284,x-1+side*2,11-y,FREE_MANA);
-    -- end;
-    -- SetMana(hero_id,m);
-end;
-
 function Routine_CastMassConfusion(side, hero)
     -- print("Trigger cast Mass Confusion !")
     HeroCast_Global(hero, SPELL_MASS_FORGETFULNESS, FREE_MANA);

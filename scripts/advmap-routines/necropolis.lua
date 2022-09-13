@@ -31,7 +31,7 @@ function Routine_GenerateGoldPerNecroCreature(player, hero)
     local mult = ceil(GetHeroLevel(hero) * 0.1);
     local army = GetHeroArmy(hero);
     local amount = 0;
-    for i= 1,7 do
+    for i = 1,7 do
         local cr = army[i];
         if cr and GetCreatureFactionID(cr) == NECROPOLIS then amount = amount + GetHeroCreatures(hero, cr) end;
     end;
@@ -152,15 +152,15 @@ WEEKLY_TRIGGER_NECROPOLIS = {
 
 
 function DoNecropolisRoutine_Start(player, hero)
-    startThread(START_TRIGGER_NECROPOLIS[hero], player);
+    startThread(START_TRIGGER_NECROPOLIS[hero], player, hero);
 end;
 
 function DoNecropolisRoutine_Daily(player, hero)
-    startThread(DAILY_TRIGGER_NECROPOLIS[hero], player);
+    startThread(DAILY_TRIGGER_NECROPOLIS[hero], player, hero);
 end;
 
 function DoNecropolisRoutine_Weekly(player, hero)
-    startThread(WEEKLY_TRIGGER_NECROPOLIS[hero], player);
+    startThread(WEEKLY_TRIGGER_NECROPOLIS[hero], player, hero);
 end;
 
 function DoNecropolisRoutine_LevelUp(hero)

@@ -137,15 +137,15 @@ WEEKLY_TRIGGER_HAVEN = {
 
 
 function DoHavenRoutine_Start(player, hero)
-    startThread(START_TRIGGER_HAVEN[hero], player);
+    startThread(START_TRIGGER_HAVEN[hero], player, hero);
 end;
 
 function DoHavenRoutine_Daily(player, hero)
-    startThread(DAILY_TRIGGER_HAVEN[hero], player);
+    startThread(DAILY_TRIGGER_HAVEN[hero], player, hero);
 end;
 
 function DoHavenRoutine_Weekly(player, hero)
-    startThread(WEEKLY_TRIGGER_HAVEN[hero], player);
+    startThread(WEEKLY_TRIGGER_HAVEN[hero], player, hero);
 end;
 
 function DoHavenRoutine_LevelUp(hero)

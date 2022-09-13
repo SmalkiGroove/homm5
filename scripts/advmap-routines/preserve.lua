@@ -165,15 +165,15 @@ WEEKLY_TRIGGER_PRESERVE = {
 
 
 function DoPreserveRoutine_Start(player, hero)
-    startThread(START_TRIGGER_PRESERVE[hero], player);
+    startThread(START_TRIGGER_PRESERVE[hero], player, hero);
 end;
 
 function DoPreserveRoutine_Daily(player, hero)
-    startThread(DAILY_TRIGGER_PRESERVE[hero], player);
+    startThread(DAILY_TRIGGER_PRESERVE[hero], player, hero);
 end;
 
 function DoPreserveRoutine_Weekly(player, hero)
-    startThread(WEEKLY_TRIGGER_PRESERVE[hero], player);
+    startThread(WEEKLY_TRIGGER_PRESERVE[hero], player, hero);
 end;
 
 function DoPreserveRoutine_LevelUp(hero)

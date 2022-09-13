@@ -165,15 +165,15 @@ WEEKLY_TRIGGER_FORTRESS = {
 
 
 function DoFortressRoutine_Start(player, hero)
-    startThread(START_TRIGGER_FORTRESS[hero], player);
+    startThread(START_TRIGGER_FORTRESS[hero], player, hero);
 end;
 
 function DoFortressRoutine_Daily(player, hero)
-    startThread(DAILY_TRIGGER_FORTRESS[hero], player);
+    startThread(DAILY_TRIGGER_FORTRESS[hero], player, hero);
 end;
 
 function DoFortressRoutine_Weekly(player, hero)
-    startThread(WEEKLY_TRIGGER_FORTRESS[hero], player);
+    startThread(WEEKLY_TRIGGER_FORTRESS[hero], player, hero);
 end;
 
 function DoFortressRoutine_LevelUp(hero)
