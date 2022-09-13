@@ -24,6 +24,18 @@ REMOVE_PLAYER_HERO = {
 	[8] = "RemovePlayer8Hero",
 };
 
+START_ROUTINES = {
+	[0] = DoCommonRoutine_Start,
+	[1] = DoHavenRoutine_Start,
+	[2] = DoPreserveRoutine_Start,
+	[3] = DoInfernoRoutine_Start,
+	[4] = DoNecropolisRoutine_Start,
+	[5] = DoAcademyRoutine_Start,
+	[6] = DoDungeonRoutine_Start,
+	[7] = DoFortressRoutine_Start,
+	[8] = DoStrongholdRoutine_Start,
+};
+
 DAILY_ROUTINES = {
 	[0] = DoCommonRoutine_Daily,
 	[1] = DoHavenRoutine_Daily,
@@ -60,12 +72,6 @@ ARTIFACTS_GAINS = {
 	["Brem3"]=25,
 	["Brem4"]=11,
 	["Brem5"]=77, -- Wayfarer boots / Crown of leadership / Ring of life / Golden horseshoe / Crown of courage / Tome of light magic
-	["Josephine0"]=87,
-	["Josephine1"]=94,
-	["Josephine2"]=35,
-	["Josephine3"]=68,
-	["Josephine4"]=45,
-	["Josephine5"]=79, -- Tarot deck / Book of power / Tunic of enlightment / Sandal of the blessed / Staff of sar-issus / Tome of summoning magic
 	["Thant0"]=55,
 	["Thant1"]=64,
 	["Thant2"]=71,
@@ -73,27 +79,6 @@ ARTIFACTS_GAINS = {
 	["Thant4"]=83,
 	["Thant5"]=78, -- Necromancer's Helm / Tunic of carved flesh / Amulet of Necromancy / Cursed Ring / Skull of Markal / Tome of dark magic
 };
-
-TRANSFORM_ARRAY_FORTRESS = { 0,
-	92,93,94,95,98,99,96,97,100,101,102,103,104,105,
-	92,93,94,95,98,99,96,97,100,101,102,103,104,105,
-	92,93,94,95,98,99,96,97,100,101,104,105,102,103,
-	94,95,92,93,98,99,96,97,100,101,102,103,104,105,
-	92,93,94,95,98,99,96,97,100,101,102,103,104,105,
-	92,93,94,95,98,99,96,97,102,103,100,101,104,105,
-	0,0,0,0,0,0,0,
-	0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-	166,167,169,168,170,171,172,
-	0,0,0,0,
-	92,93,96,97,98,99,94,95,100,101,102,103,104,105,
-	166,167,169,168,170,171,172,
-	166,167,169,168,171,170,172,
-	167,166,169,168,170,171,172,
-	166,167,169,168,170,172,171,
-	166,167,169,168,170,171,172,
-	0,0,0,0,0,0,0,
-	166,168,169,167,170,171,172,
-	0 };
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -133,45 +118,7 @@ function ApplyHeroesSpe_daily(player)
 			local res = random(1);
 			startThread(Spe_GiveResources,H_MEPHALA,player,res,amount); -- Wood or Ore - +1 / 2 levels
 		end;
-		-- Academy
-		if contains(heroes,H_HAVEZ) ~= nil then
-			startThread(Spe_AddCreatures3,H_HAVEZ,player,57,58,159,1); -- Gremlins (other heroes) - 1*level
-		end;
-		if contains(heroes,H_FAIZ) ~= nil then
-			local amount = 250 * power(2, trunc(0.143 * GetHeroLevel(H_FAIZ)));
-			startThread(Spe_GiveResources,H_FAIZ,player,6,amount); -- Gold - 1:250 - 7:500 - 14:1000 - 21:2000 ... 49:32k
-		end;
-		if contains(heroes,H_GALIB) ~= nil then
-			startThread(Spe_AddCreatures,H_GALIB,player,65,66,163,0.15); -- Djinn - 1:4 - 2:10 - 3:17 - 4:24 - 5:30 ... 8:50
-		end;
-		if contains(heroes,H_MAAHIR) ~= nil then
-			startThread(Spe_GiveStats2,H_MAAHIR,player,0,0.03); -- Exp (other heroes) - 3% total hero exp
-		end;
-		if contains(heroes,H_THEODORUS) ~= nil then
-			startThread(Spe_AddCreatures2,H_THEODORUS,player,114,0.09); -- Eagle - 1:6 - 2:17 - 3:28 - 4:39 - 5:50
-			startThread(Spe_UpgradeCreatures,H_THEODORUS,player,114,91,160,50); -- Eagle to Phoenix for 50 Elemental Gargoyles
-		end;
 		-- Fortress
-		if contains(heroes,H_HANGVUL) ~= nil then
-			startThread(Spe_GiveStats3,H_HANGVUL,player,0,0.05); -- Exp - 5% total hero exp
-		end;
-		if contains(heroes,H_INGVAR) ~= nil then
-			startThread(Spe_AddCreatures,H_INGVAR,player,92,93,166,0.5); -- Defenders - 1:1 - 2:3 - 3:5 - 4:7 - 5:9 ... 25:49
-		end;
-		if contains(heroes,H_ULAND) ~= nil then
-			local n = 30 - trunc(GetHeroLevel(H_ULAND) * 0.5);
-			startThread(Spe_UpgradeCreatures,H_ULAND,player,100,102,92,n); -- Rune Priest to Thane for n Defenders
-			startThread(Spe_UpgradeCreatures,H_ULAND,player,100,103,93,n); -- Rune Priest to Flame lord for n Shieldguards
-			startThread(Spe_UpgradeCreatures,H_ULAND,player,100,171,166,n); -- Rune Priest to Thunder Thane for n Mountain Guards
-		end;
-		if contains(heroes,H_EBBA) ~= nil then
-			local amount = trunc(GetHeroLevel(H_EBBA) * 0.2);
-			startThread(Spe_GiveResources,H_EBBA,player,3,amount); -- Crystal - +1 / 5 levels
-			startThread(Spe_GiveResources,H_EBBA,player,5,amount); -- Gem - +1 / 5 levels
-		end;
-		if contains(heroes,H_ERLING) ~= nil then
-			startThread(Spe_UpgradeCreatures2,H_ERLING,player,100,101); -- Rune Priest to Rune Patriarch
-		end;
 		if contains(heroes,H_HAEGEIR) ~= nil then
 			startThread(Spe_TransformCreatures,H_HAEGEIR,player,TRANSFORM_ARRAY_FORTRESS); -- Transform creatures to Fortress units
 		end;
@@ -261,14 +208,6 @@ function ApplyHeroesSpe_weekly(player)
 		end;
 		if contains(heroes,H_TALANAR) ~= nil then
 			startThread(Spe_GiveStats,H_TALANAR,player,1,0.1); -- Attack - +1 / 10*lvl / week
-		end;
-		-- Academy
-		if contains(heroes,H_DAVIUS) ~= nil then
-			startThread(Spe_AddRecruits,H_DAVIUS,player,CREATURE_RAKSHASA,TOWN_BUILDING_DWELLING_6,0.25); -- Rakshasas - 0.25 * level recruits per week
-		end;
-		-- Fortress
-		if contains(heroes,H_ROLF) ~= nil then
-			startThread(Spe_AddRecruits,H_ROLF,player,CREATURE_BEAR_RIDER,TOWN_BUILDING_DWELLING_4,1.75); -- Bears - 1.75 * level recruits per week
 		end;
 		-- Necropolis
 		if contains(heroes,H_DEIRDRE) ~= nil then
@@ -367,35 +306,6 @@ function ApplyHeroesSpe_onetime(player)
 				end;
 			end; -- Ring of haste and Moonblade
 		end;
-		-- Academy
-		if contains(heroes,H_JOSEPHINE) ~= nil then
-			local level = trunc(0.1*GetHeroLevel(H_JOSEPHINE));
-			if (ONE_TIME_BONUSES[H_JOSEPHINE] <= level) then
-				for i = ONE_TIME_BONUSES[H_JOSEPHINE],level do
-					GiveArtifact(H_JOSEPHINE,ARTIFACTS_GAINS[H_JOSEPHINE..i]);
-				end;
-				ONE_TIME_BONUSES[H_JOSEPHINE] = 1+level;
-			end; --Artifacts
-		end;
-		-- Fortress
-		if contains(heroes,H_TOLGHAR) ~= nil then
-			if (ONE_TIME_BONUSES[H_TOLGHAR] == 0) then
-				ChangeHeroStat(H_TOLGHAR,5,2);
-				ChangeHeroStat(H_TOLGHAR,6,2);
-				ONE_TIME_BONUSES[H_TOLGHAR] = 1;
-			end; --Luck and Morale +2
-		end;
-		if contains(heroes,H_HEDWIG) ~= nil then
-			if (ONE_TIME_BONUSES[H_HEDWIG] == 0) then
-				if (GetHeroLevel(H_HEDWIG) >= 40) then
-					GiveArtifact(H_HEDWIG,48);
-					GiveArtifact(H_HEDWIG,49);
-					GiveArtifact(H_HEDWIG,50);
-					GiveArtifact(H_HEDWIG,51);
-					ONE_TIME_BONUSES[H_HEDWIG] = 1;
-				end;
-			end; -- Dwarven artfacts set
-		end;
 		-- Necropolis
 		if contains(heroes,H_THANT) ~= nil then
 			local level = trunc(0.1*GetHeroLevel(H_THANT));
@@ -418,6 +328,18 @@ end;
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
+function InitializeHeroes()
+	for player = 1,8 do
+		if (GetPlayerState(player) == 1) then
+			PLAYER_HEROES[player] = GetPlayerHeroes(player);
+			for hero in PLAYER_HEROES[player] do
+				local faction = GetHeroFactionID(hero);
+				startThread(START_ROUTINES[faction], player, hero);
+			end;
+		end;
+	end;
+end;
+
 function DoPlayerHeroesSpe(player, newweek)
 	while (not IsPlayerCurrent(player)) do sleep(10) end;
 	print("Player "..player.." turn started");
@@ -432,9 +354,9 @@ function NewDayTrigger()
 	TURN = TURN + 1;
 	print("New day ! Turn "..TURN);
 	local newweek = GetDate(DAY_OF_WEEK) == 1;
-	for i = 1,8 do
-		if (GetPlayerState(i) == 1) then
-			startThread(DoPlayerHeroesSpe, i, newweek);
+	for player = 1,8 do
+		if (GetPlayerState(player) == 1) then
+			startThread(DoPlayerHeroesSpe, player, newweek);
 		end;
 	end;
 end;
