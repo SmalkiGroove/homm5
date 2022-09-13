@@ -1,18 +1,65 @@
 
-function DoHavenRoutine_CombatPrepare(side, name, id)
-    startThread(HAVEN_COMBAT_START[name], side, id);
+function Routine_BallistaRandomSalvo(side, hero)
+    -- print("Trigger ballista random shoot !")
+    local n = trunc(GetUnitMaxManaPoints(hero) * 0.05);
+    for i = 1,n do
+        RandomShoot_Ballista(side);
+        sleep(100);
+    end;
 end;
 
-function DoHavenRoutine_CombatStart(side, name, id)
-    startThread(HAVEN_COMBAT_START[name], side, id);
+function Routine_ArchersMoveFirst(side, hero)
+    -- print("Trigger archers atb boost !")
+    SetATB_CreatureTypes(side, {CREATURE_ARCHER,CREATURE_MARKSMAN,CREATURE_LONGBOWMAN}, ATB_INSTANT);
 end;
 
-function DoHavenRoutine_CombatTurn(side, name, id)
-    startThread(HAVEN_COMBAT_TURN[name], side, id);
+function Routine_CastPrayer(side, hero)
+    -- print("Trigger cast Prayer !")
+    HeroCast_Global(hero, SPELL_PRAYER, NO_COST);
 end;
 
-function DoHavenRoutine_UnitDied(side, name, id, unit)
-    startThread(HAVEN_UNIT_DIED[name], side, id, unit);
+function Routine_InvokeBladeBarriers(side, hero)
+    -- print("Trigger cast Blade Barriers !")
+    -- local m = GetUnitManaPoints(hero_id);
+    -- local x = 12 - 9 * side;
+    -- for y=2,11 do
+    --     HeroCast_Area(hero_id,284,x,y,FREE_MANA);
+    --     HeroCast_Area(hero_id,284,x-1+side*2,11-y,FREE_MANA);
+    -- end;
+    -- SetMana(hero_id,m);
+end;
+
+function Routine_CastMassConfusion(side, hero)
+    -- print("Trigger cast Mass Confusion !")
+    HeroCast_Global(hero, SPELL_MASS_FORGETFULNESS, FREE_MANA);
+end;
+
+function Routine_CastRandomStoneskinAndDeflect(side, hero)
+    -- print("Trigger random stoneskin and deflect arrows !")
+    if CURRENT_UNIT == hero then
+        local unit = RandomCreature(side, COMBAT_TURN);
+        HeroCast_Target(hero, 25, FREE_MANA, unit);
+        HeroCast_Target(hero, 29, FREE_MANA, unit);
+        SetATB_ID(hero, ATB_INSTANT);
+    end;
+end;
+
+function Routine_CastRandomEncourage(side, hero)
+    -- print("Trigger random Encourage !")
+    if CURRENT_UNIT == hero then
+        HeroCast_RandomCreature(hero, SPELL_ENCOURAGE, NO_COST, side);
+        SetATB_ID(hero, ATB_INSTANT);
+    end;
+end;
+
+function Routine_CastRandomVampirism(side, hero)
+    -- print("Trigger random Vampirism !")
+    if CURRENT_UNIT == hero then
+        if GetUnitManaPoints(hero) >= 100 then
+            HeroCast_RandomCreature(hero, SPELL_VAMPIRISM, NO_COST, side);
+            SetATB_ID(hero, ATB_INSTANT);
+        end;
+    end;
 end;
 
 
@@ -93,65 +140,22 @@ HAVEN_UNIT_DIED = {
 };
 
 
-function Routine_BallistaRandomSalvo(side, hero)
-    -- print("Trigger ballista random shoot !")
-    local n = trunc(GetUnitMaxManaPoints(hero) * 0.05);
-    for i = 1,n do
-        RandomShoot_Ballista(side);
-        sleep(100);
-    end;
+function DoHavenRoutine_CombatPrepare(side, name, id)
+    startThread(HAVEN_COMBAT_START[name], side, id);
 end;
 
-function Routine_ArchersMoveFirst(side, hero)
-    -- print("Trigger archers atb boost !")
-    SetATB_CreatureTypes(side, {CREATURE_ARCHER,CREATURE_MARKSMAN,CREATURE_LONGBOWMAN}, ATB_INSTANT);
+function DoHavenRoutine_CombatStart(side, name, id)
+    startThread(HAVEN_COMBAT_START[name], side, id);
 end;
 
-function Routine_CastPrayer(side, hero)
-    -- print("Trigger cast Prayer !")
-    HeroCast_Global(hero, SPELL_PRAYER, NO_COST);
+function DoHavenRoutine_CombatTurn(side, name, id)
+    startThread(HAVEN_COMBAT_TURN[name], side, id);
 end;
 
-function Routine_InvokeBladeBarriers(side, hero)
-    -- print("Trigger cast Blade Barriers !")
-    -- local m = GetUnitManaPoints(hero_id);
-    -- local x = 12 - 9 * side;
-    -- for y=2,11 do
-    --     HeroCast_Area(hero_id,284,x,y,FREE_MANA);
-    --     HeroCast_Area(hero_id,284,x-1+side*2,11-y,FREE_MANA);
-    -- end;
-    -- SetMana(hero_id,m);
+function DoHavenRoutine_UnitDied(side, name, id, unit)
+    startThread(HAVEN_UNIT_DIED[name], side, id, unit);
 end;
 
-function Routine_CastMassConfusion(side, hero)
-    -- print("Trigger cast Mass Confusion !")
-    HeroCast_Global(hero, SPELL_MASS_FORGETFULNESS, FREE_MANA);
-end;
 
-function Routine_CastRandomStoneskinAndDeflect(side, hero)
-    -- print("Trigger random stoneskin and deflect arrows !")
-    if CURRENT_UNIT == hero then
-        local unit = RandomCreature(side, COMBAT_TURN);
-        HeroCast_Target(hero, 25, FREE_MANA, unit);
-        HeroCast_Target(hero, 29, FREE_MANA, unit);
-        SetATB_ID(hero, ATB_INSTANT);
-    end;
-end;
-
-function Routine_CastRandomEncourage(side, hero)
-    -- print("Trigger random Encourage !")
-    if CURRENT_UNIT == hero then
-        HeroCast_RandomCreature(hero, SPELL_ENCOURAGE, NO_COST, side);
-        SetATB_ID(hero, ATB_INSTANT);
-    end;
-end;
-
-function Routine_CastRandomVampirism(side, hero)
-    -- print("Trigger random Vampirism !")
-    if CURRENT_UNIT == hero then
-        if GetUnitManaPoints(hero) >= 100 then
-            HeroCast_RandomCreature(hero, SPELL_VAMPIRISM, NO_COST, side);
-            SetATB_ID(hero, ATB_INSTANT);
-        end;
-    end;
-end;
+print("Loaded Haven combat routines");
+ROUTINES_LOADED[HAVEN] = 1;

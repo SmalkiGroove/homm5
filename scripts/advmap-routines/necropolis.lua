@@ -125,7 +125,7 @@ DAILY_TRIGGER_NECROPOLIS = {
     [H_ZOLTAN] = Routine_AddHeroLiches,
     [H_RAVEN] = Routine_GenerateGoldPerNecroCreature,
     [H_ARANTIR] = NoneRoutine,
-    [H_THANT] = Rooutine_AddHeroMummies,
+    [H_THANT] = Routine_AddHeroMummies,
     [H_SANDRO] = NoneRoutine,
     [H_VIDOMINA] = NoneRoutine,
 };

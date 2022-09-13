@@ -100,15 +100,33 @@ end;
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
-dofile("/scripts/combat-routines/_common.lua")
-dofile("/scripts/combat-routines/academy.lua")
-dofile("/scripts/combat-routines/dungeon.lua")
-dofile("/scripts/combat-routines/fortress.lua")
-dofile("/scripts/combat-routines/haven.lua")
-dofile("/scripts/combat-routines/inferno.lua")
-dofile("/scripts/combat-routines/necropolis.lua")
-dofile("/scripts/combat-routines/preserve.lua")
-dofile("/scripts/combat-routines/stronghold.lua")
+ROUTINES_LOADED = {
+	[0] = 0,
+	[1] = 0,
+	[2] = 0,
+	[3] = 0,
+	[4] = 0,
+	[5] = 0,
+	[6] = 0,
+	[7] = 0,
+	[8] = 0,
+};
+
+function LoadScript(path, key)
+	-- print("Loading script "..path)
+	dofile(path);
+	repeat sleep(1) until ROUTINES_LOADED[key] == 1;
+end;
+
+LoadScript("/scripts/combat-routines/_common.lua", 0)
+LoadScript("/scripts/combat-routines/academy.lua", ACADEMY)
+LoadScript("/scripts/combat-routines/dungeon.lua", DUNGEON)
+LoadScript("/scripts/combat-routines/fortress.lua", FORTRESS)
+LoadScript("/scripts/combat-routines/haven.lua", HAVEN)
+LoadScript("/scripts/combat-routines/inferno.lua", INFERNO)
+LoadScript("/scripts/combat-routines/necropolis.lua", NECROPOLIS)
+LoadScript("/scripts/combat-routines/preserve.lua", PRESERVE)
+LoadScript("/scripts/combat-routines/stronghold.lua", STRONGHOLD)
 
 PREPARE_ROUTINES = {
     [0] = DoCommonRoutine_CombatPrepare,

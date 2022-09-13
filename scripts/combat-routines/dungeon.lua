@@ -1,20 +1,4 @@
 
-function DoDungeonRoutine_CombatPrepare(side, name, id)
-    startThread(DUNGEON_COMBAT_START[name], side, id);
-end;
-
-function DoDungeonRoutine_CombatStart(side, name, id)
-    startThread(DUNGEON_COMBAT_START[name], side, id);
-end;
-
-function DoDungeonRoutine_CombatTurn(side, name, id, unit)
-    startThread(DUNGEON_COMBAT_TURN[name], side, id, unit);
-end;
-
-function DoDungeonRoutine_UnitDied(side, name, id, unit)
-    startThread(DUNGEON_UNIT_DIED[name], side, id, unit);
-end;
-
 
 DUNGEON_COMBAT_PREPARE = {
     [H_SORGAL] = NoneRoutine,
@@ -99,3 +83,23 @@ DUNGEON_UNIT_DIED = {
     [H_SEPHINROTH] = NoneRoutine,
     [H_KASTORE] = NoneRoutine,
 };
+
+function DoDungeonRoutine_CombatPrepare(side, name, id)
+    startThread(DUNGEON_COMBAT_START[name], side, id);
+end;
+
+function DoDungeonRoutine_CombatStart(side, name, id)
+    startThread(DUNGEON_COMBAT_START[name], side, id);
+end;
+
+function DoDungeonRoutine_CombatTurn(side, name, id, unit)
+    startThread(DUNGEON_COMBAT_TURN[name], side, id, unit);
+end;
+
+function DoDungeonRoutine_UnitDied(side, name, id, unit)
+    startThread(DUNGEON_UNIT_DIED[name], side, id, unit);
+end;
+
+
+print("Loaded Dungeon combat routines");
+ROUTINES_LOADED[DUNGEON] = 1;
