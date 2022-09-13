@@ -1,6 +1,7 @@
 function StopTrigger() end --needed for lualib
+dofile = doFile
 
-doFile("/scripts/combat-common.lua")
+dofile("/scripts/combat-common.lua")
 
 function IsHuman(side) return GetHost(side) == HUMAN end
 function IsComputer(side) return GetHost(side) == COMPUTER end
@@ -151,7 +152,7 @@ function createTutorialAliases()
     HideTutorialMessage = clearMessage;
 end
 
-doFile("/scripts/combat-manager.lua")
+dofile("/scripts/combat-manager.lua")
 
 function Prepare() end
 function DoPrepare()

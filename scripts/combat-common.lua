@@ -1,4 +1,4 @@
 
-doFile("/scripts/common.lua")
-doFile("/scripts/game-data.lua")
-doFile("/scripts/game-core.lua")
+dofile("/scripts/common.lua")
+dofile("/scripts/game-data.lua")
+dofile("/scripts/game-core.lua")

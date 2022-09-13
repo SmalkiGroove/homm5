@@ -1,4 +1,4 @@
-doFile("/scripts/common.lua")
+dofile("/scripts/common.lua")
 
 __difficulty = GetDifficulty();
 __defaultResources = { 20, 20, 10, 10, 10, 10, 20000 };
@@ -74,7 +74,7 @@ function PlayVoiceover( soundName )
   Play2DSound( soundName, 1 );
 end;
 
-doFile("/scripts/game-data.lua");
-doFile("/scripts/game-core.lua");
+dofile("/scripts/game-data.lua");
+dofile("/scripts/game-core.lua");
 
-doFile("/scripts/advmap-manager.lua");
+dofile("/scripts/advmap-manager.lua");

@@ -100,15 +100,15 @@ end;
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
-doFile("/scripts/combat-routines/_common.lua")
-doFile("/scripts/combat-routines/academy.lua")
-doFile("/scripts/combat-routines/dungeon.lua")
-doFile("/scripts/combat-routines/fortress.lua")
-doFile("/scripts/combat-routines/haven.lua")
-doFile("/scripts/combat-routines/inferno.lua")
-doFile("/scripts/combat-routines/necropolis.lua")
-doFile("/scripts/combat-routines/preserve.lua")
-doFile("/scripts/combat-routines/stronghold.lua")
+dofile("/scripts/combat-routines/_common.lua")
+dofile("/scripts/combat-routines/academy.lua")
+dofile("/scripts/combat-routines/dungeon.lua")
+dofile("/scripts/combat-routines/fortress.lua")
+dofile("/scripts/combat-routines/haven.lua")
+dofile("/scripts/combat-routines/inferno.lua")
+dofile("/scripts/combat-routines/necropolis.lua")
+dofile("/scripts/combat-routines/preserve.lua")
+dofile("/scripts/combat-routines/stronghold.lua")
 
 PREPARE_ROUTINES = {
     [0] = DoCommonRoutine_CombatPrepare,

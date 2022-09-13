@@ -1,13 +1,30 @@
 
-doFile("/scripts/advmap-routines/_common.lua")
-doFile("/scripts/advmap-routines/academy.lua")
-doFile("/scripts/advmap-routines/dungeon.lua")
-doFile("/scripts/advmap-routines/fortress.lua")
-doFile("/scripts/advmap-routines/haven.lua")
-doFile("/scripts/advmap-routines/inferno.lua")
-doFile("/scripts/advmap-routines/necropolis.lua")
-doFile("/scripts/advmap-routines/preserve.lua")
-doFile("/scripts/advmap-routines/stronghold.lua")
+ROUTINES_LOADED = {
+	[0] = 0,
+	[1] = 0,
+	[2] = 0,
+	[3] = 0,
+	[4] = 0,
+	[5] = 0,
+	[6] = 0,
+	[7] = 0,
+	[8] = 0,
+};
+
+function LoadScript(path, key)
+	dofile(path);
+	repeat sleep(1) until ROUTINES_LOADED[key] == 1;
+end;
+
+LoadScript("/scripts/advmap-routines/_common.lua", 0)
+LoadScript("/scripts/advmap-routines/academy.lua", ACADEMY)
+LoadScript("/scripts/advmap-routines/dungeon.lua", DUNGEON)
+LoadScript("/scripts/advmap-routines/fortress.lua", FORTRESS)
+LoadScript("/scripts/advmap-routines/haven.lua", HAVEN)
+LoadScript("/scripts/advmap-routines/inferno.lua", INFERNO)
+LoadScript("/scripts/advmap-routines/necropolis.lua", NECROPOLIS)
+LoadScript("/scripts/advmap-routines/preserve.lua", PRESERVE)
+LoadScript("/scripts/advmap-routines/stronghold.lua", STRONGHOLD)
 
 
 TURN = 1;
@@ -38,37 +55,37 @@ REMOVE_PLAYER_HERO = {
 START_ROUTINES = {
 	[0] = DoCommonRoutine_Start,
 	[1] = DoHavenRoutine_Start,
-	[2] = DoPreserveRoutine_Start,
-	[3] = DoInfernoRoutine_Start,
-	[4] = DoNecropolisRoutine_Start,
-	[5] = DoAcademyRoutine_Start,
-	[6] = DoDungeonRoutine_Start,
-	[7] = DoFortressRoutine_Start,
-	[8] = DoStrongholdRoutine_Start,
+	-- [2] = DoPreserveRoutine_Start,
+	-- [3] = DoInfernoRoutine_Start,
+	-- [4] = DoNecropolisRoutine_Start,
+	-- [5] = DoAcademyRoutine_Start,
+	-- [6] = DoDungeonRoutine_Start,
+	-- [7] = DoFortressRoutine_Start,
+	-- [8] = DoStrongholdRoutine_Start,
 };
 
 DAILY_ROUTINES = {
 	[0] = DoCommonRoutine_Daily,
 	[1] = DoHavenRoutine_Daily,
-	[2] = DoPreserveRoutine_Daily,
-	[3] = DoInfernoRoutine_Daily,
-	[4] = DoNecropolisRoutine_Daily,
-	[5] = DoAcademyRoutine_Daily,
-	[6] = DoDungeonRoutine_Daily,
-	[7] = DoFortressRoutine_Daily,
-	[8] = DoStrongholdRoutine_Daily,
+	-- [2] = DoPreserveRoutine_Daily,
+	-- [3] = DoInfernoRoutine_Daily,
+	-- [4] = DoNecropolisRoutine_Daily,
+	-- [5] = DoAcademyRoutine_Daily,
+	-- [6] = DoDungeonRoutine_Daily,
+	-- [7] = DoFortressRoutine_Daily,
+	-- [8] = DoStrongholdRoutine_Daily,
 };
 
 WEEKLY_ROUTINES = {
 	[0] = DoCommonRoutine_Weekly,
 	[1] = DoHavenRoutine_Weekly,
-	[2] = DoPreserveRoutine_Weekly,
-	[3] = DoInfernoRoutine_Weekly,
-	[4] = DoNecropolisRoutine_Weekly,
-	[5] = DoAcademyRoutine_Weekly,
-	[6] = DoDungeonRoutine_Weekly,
-	[7] = DoFortressRoutine_Weekly,
-	[8] = DoStrongholdRoutine_Weekly,
+	-- [2] = DoPreserveRoutine_Weekly,
+	-- [3] = DoInfernoRoutine_Weekly,
+	-- [4] = DoNecropolisRoutine_Weekly,
+	-- [5] = DoAcademyRoutine_Weekly,
+	-- [6] = DoDungeonRoutine_Weekly,
+	-- [7] = DoFortressRoutine_Weekly,
+	-- [8] = DoStrongholdRoutine_Weekly,
 };
 
 
@@ -76,7 +93,7 @@ WEEKLY_ROUTINES = {
 function DoPlayerHeroesSpe(player, newweek)
 	while (not IsPlayerCurrent(player)) do sleep(10) end;
 	print("Player "..player.." turn started");
-	for hero in PLAYER_HEROES[player] do
+	for i,hero in PLAYER_HEROES[player] do
 		local faction = GetHeroFactionID(hero);
 		startThread(DAILY_ROUTINES[faction], player, hero);
 		if newweek then startThread(WEEKLY_ROUTINES[faction], player, hero) end;
@@ -125,7 +142,7 @@ function InitializeHeroes()
 	for player = 1,8 do
 		if (GetPlayerState(player) == 1) then
 			PLAYER_HEROES[player] = GetPlayerHeroes(player);
-			for hero in PLAYER_HEROES[player] do
+			for i,hero in PLAYER_HEROES[player] do
 				local faction = GetHeroFactionID(hero);
 				startThread(START_ROUTINES[faction], player, hero);
 			end;
