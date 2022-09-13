@@ -21,7 +21,14 @@ function AddPlayer_Resource(player, hero, resource, amount)
 	end;
 end;
 
-function AddHero_StatAmount(player, hero, stat, coef)
+function AddHero_StatAmount(player, hero, stat, amount)
+    if amount >= 1 then
+		ChangeHeroStat(hero, stat, amount);
+		ShowFlyingSign({"/Text/Game/Scripts/Stats/"..ATTRIBUTE_TEXT[stat]..".txt"; num=amount}, hero, player, 5);
+	end;
+end;
+
+function AddHero_StatPerLevel(player, hero, stat, coef)
 	-- print("Adding statistics to hero "..hero);
 	local level = GetHeroLevel(hero);
 	local amount = trunc(coef * level);

@@ -66,12 +66,6 @@ WEEKLY_ROUTINES = {
 ONE_TIME_BONUSES = {[H_ISABEL]=0,[H_RUTGER]=0,[H_WYNGAAL]=0,[H_ANWEN]=0,[H_KYRRE]=0,[H_JOSEPHINE]=0,[H_THANT]=0,[H_TOLGHAR]=0,[H_HEDWIG]=0};
 
 ARTIFACTS_GAINS = {
-	["Brem0"]=26,
-	["Brem1"]=88,
-	["Brem2"]=21,
-	["Brem3"]=25,
-	["Brem4"]=11,
-	["Brem5"]=77, -- Wayfarer boots / Crown of leadership / Ring of life / Golden horseshoe / Crown of courage / Tome of light magic
 	["Thant0"]=55,
 	["Thant1"]=64,
 	["Thant2"]=71,
@@ -89,35 +83,6 @@ function ApplyHeroesSpe_daily(player)
 	print("Daily run for player "..player);
 	local heroes = GetPlayerHeroes(player);
 	if heroes~=nil then
-		-- Haven
-		if contains(heroes,H_ORLANDO) ~= nil then
-			local amount = (GetHeroLevel(H_ORLANDO) - 1) * 250;
-			startThread(Spe_GiveResources,H_ORLANDO,player,6,amount); -- Gold - 250*level
-		end;
-		if contains(heroes,H_KLAUS) ~= nil then
-			startThread(Spe_AddCreatures,H_KLAUS,player,11,12,111,0.05) -- Cavalier - 1:10 - 2:30 - 3:50
-		end;
-		if contains(heroes,H_GABRIELLE) ~= nil then
-			startThread(Spe_AddCreatures2,H_GABRIELLE,player,110,0.13); -- Zealot - 1:4 - 2:12 - 3:20 - 4:27 ... 7:50
-		end;
-		-- Preserve
-		if contains(heroes,H_DIRAEL) ~= nil then
-			startThread(Spe_AddCreatures2,H_DIRAEL,player,44,0.5); -- Sprites - 1:1 - 2:3 - 3:5 - 4:7 - 5:9 ... 25:49
-		end;
-		if contains(heroes,H_JENOVA) ~= nil then
-			startThread(Spe_AddCreatures,H_JENOVA,player,55,56,151,0.03); -- Green Dragon - 1:17 - 2:50
-		end;
-		if contains(heroes,H_IVOR) ~= nil then
-			startThread(Spe_AddCreatures2,H_IVOR,player,113,0.5); -- Wolf - 1:1 - 2:3 - 3:5 - 4:7 - 5:9 ... 25:49
-		end;
-		if contains(heroes,H_VINRAEL) ~= nil then
-			startThread(Spe_GiveStats,H_VINRAEL,player,0,300); -- Exp - +300 * level
-		end;
-		if contains(heroes,H_MEPHALA) ~= nil then
-			local amount = trunc(GetHeroLevel(H_MEPHALA) * 0.5);
-			local res = random(1);
-			startThread(Spe_GiveResources,H_MEPHALA,player,res,amount); -- Wood or Ore - +1 / 2 levels
-		end;
 		-- Fortress
 		if contains(heroes,H_HAEGEIR) ~= nil then
 			startThread(Spe_TransformCreatures,H_HAEGEIR,player,TRANSFORM_ARRAY_FORTRESS); -- Transform creatures to Fortress units
@@ -167,10 +132,6 @@ function ApplyHeroesSpe_daily(player)
 		if contains(heroes,"Almegir") ~= nil then
 			startThread(Spe_AddCreatures2,"Almegir",player,115,0.13); -- Manticore - 1:4 - 2:12 - 3:20 - 4:27 ... 7:50
 		end;
-		-- Stronghold
-		if contains(heroes,H_SHAKKARUKAT) ~= nil then
-			startThread(Spe_AddCreatures,H_SHAKKARUKAT,player,127,128,178,0.05); -- Wyvern - 1:10 - 2:30 - 3:50
-		end;
 	end;
 	print("Daily run done.");
 	PLAYER_DAILY_EVENTS_CHECK[player] = TURN;
@@ -180,35 +141,6 @@ function ApplyHeroesSpe_weekly(player)
 	print("Weekly run for player "..player);
     local heroes = GetPlayerHeroes(player);
 	if heroes~=nil then
-		-- Haven
-		if contains(heroes,H_ELLAINE) ~= nil then
-			startThread(Spe_AddRecruits,H_ELLAINE,player,CREATURE_PEASANT,TOWN_BUILDING_DWELLING_1,7); -- Peasants - 7 * level recruits per week
-		end;
-		if contains(heroes,H_IRINA) ~= nil then
-			startThread(Spe_CallCreatures,H_IRINA,player,CREATURE_GRIFFIN,TOWN_BUILDING_DWELLING_4,1.5); -- Griffins - 1.5 * level transfered
-		end;
-		if contains(heroes,H_BERTRAND) ~= nil then
-			startThread(Spe_GiveStats,H_BERTRAND,player,1,0.1); -- Attack - +1 / 10*lvl / week
-		end;
-		if contains(heroes,H_NICOLAI) ~= nil then
-			startThread(Spe_ArmyMultiply,H_NICOLAI,player,{3,4,107,5,6,108,9,10,110},0.01); -- T2 T3 T5 : 1% * level
-		end;
-		-- Preserve
-		if contains(heroes,H_ANWEN) ~= nil then
-			startThread(Spe_AddCreatures2,H_ANWEN,player,150,0.25); -- Anger Treant - 1:2 - 2:6 - 3:10 - 4:14 ... 13:50
-		end;
-		if contains(heroes,H_GILRAEN) ~= nil then
-			startThread(Spe_AddRecruits,H_GILRAEN,player,CREATURE_BLADE_JUGGLER,TOWN_BUILDING_DWELLING_1,6); -- Blade Jugglers - 6 * level recruits per week
-		end;
-		if contains(heroes,H_YLTHIN) ~= nil then
-			startThread(Spe_CallCreatures,H_YLTHIN,player,CREATURE_UNICORN,TOWN_BUILDING_DWELLING_5,0.75); -- Unicorns - 0.75 * level transfered
-		end;
-		if contains(heroes,H_ELLESHAR) ~= nil then
-			startThread(Spe_GiveStats,H_ELLESHAR,player,3,0.2); -- Spellpower - +1 / 5*lvl / week
-		end;
-		if contains(heroes,H_TALANAR) ~= nil then
-			startThread(Spe_GiveStats,H_TALANAR,player,1,0.1); -- Attack - +1 / 10*lvl / week
-		end;
 		-- Necropolis
 		if contains(heroes,H_DEIRDRE) ~= nil then
 			startThread(Spe_AddCreatures2,H_DEIRDRE,player,157,0.13); -- Banshee - 1:4 - 2:12 - 3:20 - 4:27 ... 7:50
@@ -244,20 +176,6 @@ function ApplyHeroesSpe_weekly(player)
 		if contains(heroes,"Darkstorm") ~= nil then
 			startThread(Spe_AddRecruits,"Darkstorm",player,CREATURE_MINOTAUR,TOWN_BUILDING_DWELLING_3,1.4);
 		end;
-		-- Stronghold
-		if contains(heroes,H_GORSHAK) ~= nil then
-			startThread(Spe_CallCreatures,H_GORSHAK,player,CREATURE_CENTAUR,TOWN_BUILDING_DWELLING_4,1); -- Centaurs - 1 * level transfered
-		end;
-		if contains(heroes,H_ZOULEIKA) ~= nil then
-			local stat = 3+random(1);
-			startThread(Spe_GiveStats,H_ZOULEIKA,player,stat,0.1); --Spellpower or Knowledge - +1 / 10*lvl / week
-		end;
-		if contains(heroes,H_SHIVA) ~= nil then
-			startThread(Spe_AddRecruits,H_SHIVA,player,CREATURE_SHAMAN,TOWN_BUILDING_DWELLING_2,3); -- Shamans - 3 * level recruits per week
-		end;
-		if contains(heroes,H_MUKHA) ~= nil then
-			startThread(Spe_AddCreatures2,H_MUKHA,player,70,0.2); -- Titans - 1:3 - 2:8 - 3:13 - 4:18 - 5:23 ... 10:48
-		end;
 	end;
 	print("Weekly run done.");
 	PLAYER_WEEKLY_EVENTS_CHECK[player] = TURN;
@@ -267,45 +185,6 @@ function ApplyHeroesSpe_onetime(player)
 	print("Daily one time bonuses check for player "..player);
 	local heroes = GetPlayerHeroes(player);
 	if heroes~=nil then
-		-- Haven
-		if contains(heroes,H_ISABEL) ~= nil then
-			if (ONE_TIME_BONUSES[H_ISABEL] == 0) then
-				ChangeHeroStat(H_ISABEL,5,2);
-				ONE_TIME_BONUSES[H_ISABEL] = 1;
-			end; --Luck +2
-		end;
-		if contains(heroes,H_RUTGER) ~= nil then
-			local level = trunc(0.1*GetHeroLevel(H_RUTGER));
-			if (ONE_TIME_BONUSES[H_RUTGER] <= level) then
-				for i = ONE_TIME_BONUSES[H_RUTGER],level do
-					GiveArtifact(H_RUTGER,ARTIFACTS_GAINS[H_RUTGER..i]);
-				end;
-				ONE_TIME_BONUSES[H_RUTGER] = 1+level;
-			end; --Artifacts
-		end;
-		-- Preserve
-		if contains(heroes,H_WYNGAAL) ~= nil then
-			if (ONE_TIME_BONUSES[H_WYNGAAL] == 0) then
-				ChangeHeroStat(H_WYNGAAL,6,3);
-				ONE_TIME_BONUSES[H_WYNGAAL] = 1;
-			end; --Morale +3
-		end;
-		if contains(heroes,H_ANWEN) ~= nil then
-			local level = trunc(0.1*GetHeroLevel(H_ANWEN));
-			if (ONE_TIME_BONUSES[H_ANWEN] <= level) then
-				ChangeHeroStat(H_ANWEN,5,level-ONE_TIME_BONUSES[H_ANWEN]+1);
-				ONE_TIME_BONUSES[H_ANWEN] = 1+level;
-			end; --Luck +1 per 10 levels
-		end;
-		if contains(heroes,H_KYRRE) ~= nil then
-			if (ONE_TIME_BONUSES[H_KYRRE] == 0) then
-				if (GetHeroLevel(H_KYRRE) >= 30) then
-					GiveArtifact(H_KYRRE,22);
-					GiveArtifact(H_KYRRE,58);
-					ONE_TIME_BONUSES[H_KYRRE] = 1;
-				end;
-			end; -- Ring of haste and Moonblade
-		end;
 		-- Necropolis
 		if contains(heroes,H_THANT) ~= nil then
 			local level = trunc(0.1*GetHeroLevel(H_THANT));

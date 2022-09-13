@@ -110,8 +110,8 @@ end;
 
 function Routine_AddLuckAndMorale(player, hero)
     --Luck and Morale +2
-    ChangeHeroStat(hero, STAT_LUCK, 2);
-    ChangeHeroStat(hero, STAT_MORALE, 2);
+    AddHero_StatAmount(player, hero, STAT_LUCK, amount);
+    AddHero_StatAmount(player, hero, STAT_MORALE, amount);
 end;
 
 function Routine_AddHeroDefenders(player, hero)

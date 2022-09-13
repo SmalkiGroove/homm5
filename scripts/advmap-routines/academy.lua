@@ -98,7 +98,7 @@ WEEKLY_TRIGGER_ACADEMY = {
 
 
 function Routine_GainAcademyArtifacts()
-    -- Tarot deck / Book of power / Tunic of enlightment / Sandal of the blessed / Staff of sar-issus / Tome of summoning magic
+    -- Book of power / Tunic of enlightment / Sandal of the blessed / Staff of sar-issus / Tome of summoning magic
     local hero = H_JOSEPHINE;
     local level = GetHeroLevel(hero);
     if     level == 10 then GiveArtifact(hero, ARTIFACT_BOOK_OF_POWER)
