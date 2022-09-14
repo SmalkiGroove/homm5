@@ -143,7 +143,7 @@ INFERNO_UNIT_DIED = {
 
 
 function DoInfernoRoutine_CombatPrepare(side, name, id)
-    startThread(INFERNO_COMBAT_START[name], side, id);
+    startThread(INFERNO_COMBAT_PREPARE[name], side, id);
 end;
 
 function DoInfernoRoutine_CombatStart(side, name, id)

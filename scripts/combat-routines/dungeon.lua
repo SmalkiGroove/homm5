@@ -168,7 +168,7 @@ DUNGEON_UNIT_DIED = {
 };
 
 function DoDungeonRoutine_CombatPrepare(side, name, id)
-    startThread(DUNGEON_COMBAT_START[name], side, id);
+    startThread(DUNGEON_COMBAT_PREPARE[name], side, id);
 end;
 
 function DoDungeonRoutine_CombatStart(side, name, id)

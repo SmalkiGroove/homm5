@@ -130,7 +130,7 @@ HAVEN_UNIT_DIED = {
 
 
 function DoHavenRoutine_CombatPrepare(side, name, id)
-    startThread(HAVEN_COMBAT_START[name], side, id);
+    startThread(HAVEN_COMBAT_PREPARE[name], side, id);
 end;
 
 function DoHavenRoutine_CombatStart(side, name, id)

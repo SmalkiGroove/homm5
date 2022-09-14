@@ -175,7 +175,7 @@ STRONGHOLD_UNIT_DIED = {
 
 
 function DoStrongholdRoutine_CombatPrepare(side, name, id)
-    startThread(STRONGHOLD_COMBAT_START[name], side, id);
+    startThread(STRONGHOLD_COMBAT_PREPARE[name], side, id);
 end;
 
 function DoStrongholdRoutine_CombatStart(side, name, id)

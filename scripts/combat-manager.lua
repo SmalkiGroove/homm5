@@ -1,8 +1,4 @@
 COMBAT_READY = nil;
-ATTACKER_RACE = nil;
-DEFENDER_RACE = nil;
-ATTACKER_HERO = nil;
-DEFENDER_HERO = nil;
 
 COMBAT_TURN = 0;
 CURRENT_UNIT = "none";
@@ -180,41 +176,44 @@ DEATH_ROUTINES = {
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
 function ManageCombatPrepare()
-    ATTACKER_HERO = GetHero(ATTACKER) and GetHeroName(ATTACKER_HERO_ID);
-    DEFENDER_HERO = GetHero(DEFENDER) and GetHeroName(DEFENDER_HERO_ID);
-    if ATTACKER_HERO ~= nil then
+    -- print("Manage combat prepare")
+    ATTACKER_HERO = GetHero(ATTACKER) and GetHeroName(ATTACKER_HERO_ID) or "";
+    DEFENDER_HERO = GetHero(DEFENDER) and GetHeroName(DEFENDER_HERO_ID) or "";
+    if ATTACKER_HERO ~= "" then
         ATTACKER_RACE = GetHeroFactionID(ATTACKER_HERO);
     end;
-    if DEFENDER_HERO ~= nil then
+    if DEFENDER_HERO ~= "" then
         DEFENDER_RACE = GetHeroFactionID(DEFENDER_HERO);
     end;
 end;
 
 function ManageCombatStart()
+    -- print("Manage combat start")
     ResetATB()
     repeat sleep(1) until COMBAT_READY;
-
-	if ATTACKER_HERO ~= nil then
+    print("Ready")
+	if ATTACKER_HERO ~= "" then
         local startroutine = START_ROUTINES[ATTACKER_RACE];
 		startThread(startroutine, ATTACKER, ATTACKER_HERO, ATTACKER_HERO_ID);
 	end;
-	if DEFENDER_HERO ~= nil then
+	if DEFENDER_HERO ~= "" then
 		local startroutine = START_ROUTINES[DEFENDER_RACE];
 		startThread(startroutine, DEFENDER, DEFENDER_HERO, DEFENDER_HERO_ID);
 	end;
 end;
 
 function ManageCombatTurn(unit)
+    -- print("Manage combat turn")
     if CURRENT_UNIT ~= unit then
         COMBAT_TURN = COMBAT_TURN + 1;
         CURRENT_UNIT = unit;
         CURRENT_UNIT_SIDE = IsAttacker(unit) and ATTACKER or DEFENDER;
 
-        if ATTACKER_HERO ~= nil then
+        if ATTACKER_HERO ~= "" then
             local turnroutine = TURN_ROUTINES[ATTACKER_RACE];
             startThread(turnroutine, ATTACKER, ATTACKER_HERO, ATTACKER_HERO_ID);
         end;
-        if DEFENDER_HERO ~= nil then
+        if DEFENDER_HERO ~= "" then
             local turnroutine = TURN_ROUTINES[DEFENDER_RACE];
             startThread(turnroutine, DEFENDER, DEFENDER_HERO, DEFENDER_HERO_ID);
         end;
@@ -222,11 +221,12 @@ function ManageCombatTurn(unit)
 end;
 
 function ManageUnitDeath(unit)
-    if ATTACKER_HERO ~= nil then
+    -- print("Manage unit death")
+    if ATTACKER_HERO ~= "" then
         local deathroutine = DEATH_ROUTINES[ATTACKER_RACE];
 		startThread(deathroutine, ATTACKER, ATTACKER_HERO, ATTACKER_HERO_ID, unit);
 	end;
-	if DEFENDER_HERO ~= nil then
+	if DEFENDER_HERO ~= "" then
 		local deathroutine = DEATH_ROUTINES[DEFENDER_RACE];
 		startThread(deathroutine, DEFENDER, DEFENDER_HERO, DEFENDER_HERO_ID, unit);
 	end;

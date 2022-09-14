@@ -144,7 +144,7 @@ FORTRESS_UNIT_DIED = {
 
 
 function DoFortressRoutine_CombatPrepare(side, name, id)
-    startThread(FORTRESS_COMBAT_START[name], side, id);
+    startThread(FORTRESS_COMBAT_PREPARE[name], side, id);
 end;
 
 function DoFortressRoutine_CombatStart(side, name, id)

@@ -226,3 +226,5 @@ HEROES_ORCS = {
     H_URGHAT, H_GARUNA, H_ZOULEIKA, H_ERIKA
 }; -- 19
 
+
+SOURCE_LOADED["game-data"] = 1

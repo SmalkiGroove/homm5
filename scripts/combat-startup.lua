@@ -1,8 +1,6 @@
 function StopTrigger() end --needed for lualib
 dofile = doFile
 
-dofile("/scripts/combat-common.lua")
-
 function IsHuman(side) return GetHost(side) == HUMAN end
 function IsComputer(side) return GetHost(side) == COMPUTER end
 
@@ -29,6 +27,11 @@ function IsSpellSpawn(unit) return GetUnitType(unit) == SPELL_SPAWN end
 
 ATTACKER_HERO_ID = "attacker-hero"
 DEFENDER_HERO_ID = "defender-hero"
+ATTACKER_RACE = 0;
+DEFENDER_RACE = 0;
+ATTACKER_HERO = "";
+DEFENDER_HERO = "";
+
 
 function GetHero(side)
 	local units = GetUnits(side, HERO)
@@ -151,6 +154,10 @@ function createTutorialAliases()
     ShowTutorialMessage = showMessage;
     HideTutorialMessage = clearMessage;
 end
+
+LOAD_SOURCES = 0
+dofile("/scripts/combat-common.lua")
+repeat sleep(1) until LOAD_SOURCES == 1;
 
 dofile("/scripts/combat-manager.lua")
 

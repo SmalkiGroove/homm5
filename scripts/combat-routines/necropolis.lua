@@ -147,7 +147,7 @@ NECROPOLIS_UNIT_DIED = {
 
 
 function DoNecropolisRoutine_CombatPrepare(side, name, id)
-    startThread(NECROPOLIS_COMBAT_START[name], side, id);
+    startThread(NECROPOLIS_COMBAT_PREPARE[name], side, id);
 end;
 
 function DoNecropolisRoutine_CombatStart(side, name, id)

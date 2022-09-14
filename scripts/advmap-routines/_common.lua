@@ -19,14 +19,14 @@ function AddPlayer_Resource(player, hero, resource, amount)
 		local curamount = GetPlayerResource(player, resource);
 		local newamount = curamount + amount;
 		SetPlayerResource(player, resource, newamount);
-		ShowFlyingSign({"/Text/Game/Scripts/Resources/"..RESOURCE_TEXT[resource]..".txt"; num=amount}, hero, player, 5);
+		ShowFlyingSign({"/Text/Game/Scripts/Resources/"..RESOURCE_TEXT[resource]..".txt"; num=amount}, hero, player, FLYING_SIGN_TIME);
 	end;
 end;
 
 function AddHero_StatAmount(player, hero, stat, amount)
     if amount >= 1 then
 		ChangeHeroStat(hero, stat, amount);
-		ShowFlyingSign({"/Text/Game/Scripts/Stats/"..ATTRIBUTE_TEXT[stat]..".txt"; num=amount}, hero, player, 5);
+		ShowFlyingSign({"/Text/Game/Scripts/Stats/"..ATTRIBUTE_TEXT[stat]..".txt"; num=amount}, hero, player, FLYING_SIGN_TIME);
 	end;
 end;
 
@@ -36,7 +36,7 @@ function AddHero_StatPerLevel(player, hero, stat, coef)
 	local amount = trunc(coef * level);
 	if amount >= 1 then
 		ChangeHeroStat(hero, stat, amount);
-		ShowFlyingSign({"/Text/Game/Scripts/Stats/"..ATTRIBUTE_TEXT[stat]..".txt"; num=amount}, hero, player, 5);
+		ShowFlyingSign({"/Text/Game/Scripts/Stats/"..ATTRIBUTE_TEXT[stat]..".txt"; num=amount}, hero, player, FLYING_SIGN_TIME);
 	end;
 end;
 
@@ -47,7 +47,7 @@ function AddHero_StatPercent(player, hero, stat, coef)
 	if amount >= 1 then
 		ChangeHeroStat(hero, stat, amount);
 		local attribute = ATTRIBUTE_NAME[stat];
-		ShowFlyingSign({"/Text/Game/Scripts/Stats/"..ATTRIBUTE_TEXT[stat]..".txt"; num=amount}, hero, player, 5);
+		ShowFlyingSign({"/Text/Game/Scripts/Stats/"..ATTRIBUTE_TEXT[stat]..".txt"; num=amount}, hero, player, FLYING_SIGN_TIME);
 	end;
 end;
 
@@ -57,7 +57,7 @@ function AddHero_CreatureType(player, hero, type, coef)
 	local nb = round(coef * level);
 	if nb >= 1 then
 		AddHeroCreatures(hero, type, nb);
-		ShowFlyingSign({"/Text/Game/Scripts/Reinforcements.txt"; num=nb}, hero, player, 5);
+		ShowFlyingSign({"/Text/Game/Scripts/Reinforcements.txt"; num=nb}, hero, player, FLYING_SIGN_TIME);
 	end;
 end;
 
@@ -71,7 +71,7 @@ function AddHero_CreatureInTypes(player, hero, types, coef)
 		for i = 1,7 do
             if contains(types, army[i]) then
                 AddHeroCreatures(hero, army[i], nb);
-                ShowFlyingSign({"/Text/Game/Scripts/Reinforcements.txt"; num=nb}, hero, player, 5)
+                ShowFlyingSign({"/Text/Game/Scripts/Reinforcements.txt"; num=nb}, hero, player, FLYING_SIGN_TIME)
                 return
             end;
         end;
@@ -93,7 +93,7 @@ function AddHero_CreatureTypesPercent(player, hero, types, coef)
             end;
         end;
 	end;
-	ShowFlyingSign({"/Text/Game/Scripts/Reinforcements.txt"; num=total}, hero, player, 5);
+	ShowFlyingSign({"/Text/Game/Scripts/Reinforcements.txt"; num=total}, hero, player, FLYING_SIGN_TIME);
 end;
 
 function AddHero_TownRecruits(player, hero, dwelling, creature, coef)
@@ -106,7 +106,7 @@ function AddHero_TownRecruits(player, hero, dwelling, creature, coef)
 			if GetTownBuildingLevel(town, dwelling) ~= 0 then
                 local current = GetObjectDwellingCreatures(town, creature);
 				SetObjectDwellingCreatures(town, creature, current + nb);
-				ShowFlyingSign({"/Text/Game/Scripts/Recruits.txt"; num=nb}, hero, player, 5);
+				ShowFlyingSign({"/Text/Game/Scripts/Recruits.txt"; num=nb}, hero, player, FLYING_SIGN_TIME);
 			end;
 		end;
 	end;
@@ -123,7 +123,7 @@ function AddHero_CreatureFromDwelling(player, hero, dwelling, creature, coef)
 			if nb >= 1 then
 				SetObjectDwellingCreatures(town, creature, recruits-nb+1);
 				AddHeroCreatures(hero, creature, nb);
-				ShowFlyingSign({"/Text/Game/Scripts/Reinforcements.txt"; num=nb}, hero, player, 5);
+				ShowFlyingSign({"/Text/Game/Scripts/Reinforcements.txt"; num=nb}, hero, player, FLYING_SIGN_TIME);
 			end;
 		end;
 	end;
@@ -133,7 +133,7 @@ function ChangeHero_CreatureUpgrade(player, hero, base, upgrade)
 	local nb = GetHeroCreatures(hero, base);
 	RemoveHeroCreatures(hero, base, nb);
 	AddHeroCreatures(hero, upgrade, nb);
-	ShowFlyingSign({"/Text/Game/Scripts/Evolve.txt"; num=nb}, hero, player, 5);
+	ShowFlyingSign({"/Text/Game/Scripts/Evolve.txt"; num=nb}, hero, player, FLYING_SIGN_TIME);
 end;
 
 function ChangeHero_CreatureFusion(player, hero, base, consume, upgrade, coef)
@@ -145,7 +145,7 @@ function ChangeHero_CreatureFusion(player, hero, base, consume, upgrade, coef)
 		RemoveHeroCreatures(hero, consume, coef * nb);
 		RemoveHeroCreatures(hero, base, nb);
 		AddHeroCreatures(hero, upgrade, nb);
-		ShowFlyingSign({"/Text/Game/Scripts/Evolve.txt"; num=nb}, hero, player, 5);
+		ShowFlyingSign({"/Text/Game/Scripts/Evolve.txt"; num=nb}, hero, player, FLYING_SIGN_TIME);
 	end;
 end;
 

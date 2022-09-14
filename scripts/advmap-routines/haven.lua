@@ -12,7 +12,7 @@ function Routine_GainHavenArtifacts()
     end;
 end;
 
-function Routine_AddTwoLuckPoints()
+function Routine_AddTwoLuckPoints(player, hero)
     --Luck +2
     AddHero_StatAmount(player, hero, STAT_LUCK, 2);
 end;

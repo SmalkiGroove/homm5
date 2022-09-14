@@ -81,3 +81,6 @@ function GetHeroArmy(hero)
 	type[1], type[2], type[3], type[4], type[5], type[6], type[7] = GetHeroCreaturesTypes(hero);
 	return type
 end;
+
+
+SOURCE_LOADED["game-core"] = 1

@@ -954,6 +954,9 @@
 	HERO_BATTLE_BONUS_INITIATIVE = 5
 	HERO_BATTLE_BONUS_SPEED = 6
 
+
+	FLYING_SIGN_TIME = 9
+
 function createAdvmapAliases()
     --
     -- dumb command aliasing
@@ -1006,4 +1009,8 @@ if StartDialogSceneInt then
 	StartDialogScene = function(name, callback, saveName) SyncCommand(StartDialogSceneInt, name, callback, saveName) end
 end
 
+LOAD_SOURCES = 0
 dofile("/scripts/advmap-common.lua")
+repeat sleep(1) until LOAD_SOURCES == 1;
+
+dofile("/scripts/advmap-manager.lua");

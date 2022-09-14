@@ -76,7 +76,7 @@ ACADEMY_COMBAT_PREPARE = {
     [H_HAVEZ] = NoneRoutine,
     [H_MINASLI] = NoneRoutine,
     [H_JOSEPHINE] = NoneRoutine,
-    [H_RAZZAK] = Routine_DuplicateGolemStack,
+    [H_RAZZAK] = NoneRoutine,
     [H_DAVIUS] = NoneRoutine,
     [H_RISSA] = NoneRoutine,
     [H_GURVILIN] = NoneRoutine,
@@ -96,7 +96,7 @@ ACADEMY_COMBAT_START = {
     [H_HAVEZ] = NoneRoutine,
     [H_MINASLI] = NoneRoutine,
     [H_JOSEPHINE] = NoneRoutine,
-    [H_RAZZAK] = NoneRoutine,
+    [H_RAZZAK] = Routine_DuplicateGolemStack,
     [H_DAVIUS] = Routine_RakshasasAbility,
     [H_RISSA] = NoneRoutine,
     [H_GURVILIN] = Routine_CastMultipleVulnerability,
@@ -154,7 +154,7 @@ ACADEMY_UNIT_DIED = {
 
 
 function DoAcademyRoutine_CombatPrepare(side, name, id)
-    startThread(ACADEMY_COMBAT_START[name], side, id);
+    startThread(ACADEMY_COMBAT_PREPARE[name], side, id);
 end;
 
 function DoAcademyRoutine_CombatStart(side, name, id)

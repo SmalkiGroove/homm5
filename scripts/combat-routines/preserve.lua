@@ -151,19 +151,19 @@ SYLVAN_UNIT_DIED = {
 };
 
 
-function DoSylvanRoutine_CombatPrepare(side, name, id)
+function DoPreserveRoutine_CombatPrepare(side, name, id)
+    startThread(SYLVAN_COMBAT_PREPARE[name], side, id);
+end;
+
+function DoPreserveRoutine_CombatStart(side, name, id)
     startThread(SYLVAN_COMBAT_START[name], side, id);
 end;
 
-function DoSylvanRoutine_CombatStart(side, name, id)
-    startThread(SYLVAN_COMBAT_START[name], side, id);
-end;
-
-function DoSylvanRoutine_CombatTurn(side, name, id)
+function DoPreserveRoutine_CombatTurn(side, name, id)
     startThread(SYLVAN_COMBAT_TURN[name], side, id);
 end;
 
-function DoSylvanRoutine_UnitDied(side, name, id, unit)
+function DoPreserveRoutine_UnitDied(side, name, id, unit)
     startThread(SYLVAN_UNIT_DIED[name], side, id, unit);
 end;
 
