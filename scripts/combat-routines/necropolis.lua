@@ -163,5 +163,5 @@ function DoNecropolisRoutine_UnitDied(side, name, id, unit)
 end
 
 
-print("Loaded Necropolis combat routines")
+-- print("Loaded Necropolis combat routines")
 ROUTINES_LOADED[NECROPOLIS] = 1

@@ -168,5 +168,5 @@ function DoNecropolisRoutine_LevelUp(hero)
 end
 
 
-print("Loaded Necropolis advmap routines")
+-- print("Loaded Necropolis advmap routines")
 ROUTINES_LOADED[NECROPOLIS] = 1

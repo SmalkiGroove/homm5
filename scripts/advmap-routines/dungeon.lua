@@ -180,5 +180,5 @@ function DoDungeonRoutine_LevelUp(hero)
 end
 
 
-print("Loaded Dungeon advmap routines")
+-- print("Loaded Dungeon advmap routines")
 ROUTINES_LOADED[DUNGEON] = 1

@@ -181,5 +181,5 @@ function DoFortressRoutine_LevelUp(hero)
 end
 
 
-print("Loaded Fortress advmap routines")
+-- print("Loaded Fortress advmap routines")
 ROUTINES_LOADED[FORTRESS] = 1

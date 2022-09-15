@@ -204,5 +204,5 @@ function SetATB_WarMachineType(side, type, value)
 end
 
 
-print("Loaded common combat routines")
+-- print("Loaded common combat routines")
 ROUTINES_LOADED[0] = 1

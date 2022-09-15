@@ -170,5 +170,5 @@ function DoAcademyRoutine_UnitDied(side, name, id, unit)
 end
 
 
-print("Loaded Academy combat routines")
+-- print("Loaded Academy combat routines")
 ROUTINES_LOADED[ACADEMY] = 1

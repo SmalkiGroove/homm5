@@ -159,5 +159,5 @@ function DoInfernoRoutine_UnitDied(side, name, id, unit)
 end
 
 
-print("Loaded Inferno combat routines")
+-- print("Loaded Inferno combat routines")
 ROUTINES_LOADED[INFERNO] = 1

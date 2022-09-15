@@ -136,5 +136,5 @@ function DoInfernoRoutine_LevelUp(hero)
 end
 
 
-print("Loaded Inferno advmap routines")
+-- print("Loaded Inferno advmap routines")
 ROUTINES_LOADED[INFERNO] = 1

@@ -130,5 +130,5 @@ function DoStrongholdRoutine_LevelUp(hero)
 end
 
 
-print("Loaded Stronghold advmap routines")
+-- print("Loaded Stronghold advmap routines")
 ROUTINES_LOADED[STRONGHOLD] = 1

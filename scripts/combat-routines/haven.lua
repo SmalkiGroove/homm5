@@ -146,5 +146,5 @@ function DoHavenRoutine_UnitDied(side, name, id, unit)
 end
 
 
-print("Loaded Haven combat routines")
+-- print("Loaded Haven combat routines")
 ROUTINES_LOADED[HAVEN] = 1

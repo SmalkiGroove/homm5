@@ -168,5 +168,5 @@ function DoPreserveRoutine_UnitDied(side, name, id, unit)
 end
 
 
-print("Loaded Preserve combat routines")
+-- print("Loaded Preserve combat routines")
 ROUTINES_LOADED[PRESERVE] = 1

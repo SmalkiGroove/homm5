@@ -160,5 +160,5 @@ function DoFortressRoutine_UnitDied(side, name, id, unit)
 end
 
 
-print("Loaded Fortress combat routines")
+-- print("Loaded Fortress combat routines")
 ROUTINES_LOADED[FORTRESS] = 1

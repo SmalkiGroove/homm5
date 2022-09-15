@@ -181,5 +181,5 @@ function DoPreserveRoutine_LevelUp(hero)
 end
 
 
-print("Loaded Preserve advmap routines")
+-- print("Loaded Preserve advmap routines")
 ROUTINES_LOADED[PRESERVE] = 1

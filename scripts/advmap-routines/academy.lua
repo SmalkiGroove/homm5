@@ -159,5 +159,5 @@ function DoAcademyRoutine_LevelUp(hero)
 end
 
 
-print("Loaded Academy advmap routines")
+-- print("Loaded Academy advmap routines")
 ROUTINES_LOADED[ACADEMY] = 1

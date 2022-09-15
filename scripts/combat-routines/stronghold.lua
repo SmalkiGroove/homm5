@@ -198,5 +198,5 @@ function DoStrongholdRoutine_UnitDied(side, name, id, unit)
 end
 
 
-print("Loaded Stronghold combat routines")
+-- print("Loaded Stronghold combat routines")
 ROUTINES_LOADED[STRONGHOLD] = 1

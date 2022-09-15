@@ -165,5 +165,5 @@ function ChangeHero_CreatureTransform(player, hero, array)
 	end
 end
 
-print("Loaded common advmap routines")
+-- print("Loaded common advmap routines")
 ROUTINES_LOADED[0] = 1

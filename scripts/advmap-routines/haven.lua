@@ -153,5 +153,5 @@ function DoHavenRoutine_LevelUp(hero)
 end
 
 
-print("Loaded Haven advmap routines")
+-- print("Loaded Haven advmap routines")
 ROUTINES_LOADED[HAVEN] = 1

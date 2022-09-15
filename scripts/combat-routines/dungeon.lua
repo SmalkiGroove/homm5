@@ -184,5 +184,5 @@ function DoDungeonRoutine_UnitDied(side, name, id, unit)
 end
 
 
-print("Loaded Dungeon combat routines")
+-- print("Loaded Dungeon combat routines")
 ROUTINES_LOADED[DUNGEON] = 1
