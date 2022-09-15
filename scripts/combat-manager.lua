@@ -191,7 +191,7 @@ function ManageCombatStart()
     -- print("Manage combat start")
     ResetATB()
     repeat sleep(1) until COMBAT_READY;
-    print("Ready")
+    
 	if ATTACKER_HERO ~= "" then
         local startroutine = START_ROUTINES[ATTACKER_RACE];
 		startThread(startroutine, ATTACKER, ATTACKER_HERO, ATTACKER_HERO_ID);
