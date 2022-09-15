@@ -5,7 +5,7 @@
 	<Shots>0</Shots>
 	<MinDamage>7</MinDamage>
 	<MaxDamage>11</MaxDamage>
-	<Speed>5</Speed>
+	<Speed>6</Speed>
 	<Initiative>11</Initiative>
 	<Flying>false</Flying>
 	<Health>40</Health>
