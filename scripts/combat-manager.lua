@@ -77,19 +77,27 @@ function DoCastGlobalSpell(unit,spell,mana)
 end;
 
 function ResetATB()
-    for side = 0,1 do
-        local heroname = "none";
-        if GetHero(side) then heroname = GetHeroName(GetHero(side)) end;
-        if contains(NO_ATB_RESET_HEROES[CREATURE],heroname) == nil then
-            for i,cr in GetUnits(side,CREATURE) do setATB(cr,0) end;
-        end;
-        if contains(NO_ATB_RESET_HEROES[WAR_MACHINE],heroname) == nil then
-            for i,wm in GetUnits(side,WAR_MACHINE) do setATB(wm,0) end;
-        end;
-        if GetHero(side) then
-            if contains(NO_ATB_RESET_HEROES[HERO],heroname) == nil then setATB(GetHero(side),0) end;
-        end;
+    if contains(NO_ATB_RESET_HEROES[CREATURE], ATTACKER_HERO) == nil then
+        for i,cr in GetUnits(ATTACKER, CREATURE) do setATB(cr, ATB_ZERO) end;
     end;
+    if contains(NO_ATB_RESET_HEROES[CREATURE], DEFENDER_HERO) == nil then
+        for i,cr in GetUnits(DEFENDER, CREATURE) do setATB(cr, ATB_ZERO) end;
+    end;
+
+    if contains(NO_ATB_RESET_HEROES[WAR_MACHINE], ATTACKER_HERO) == nil then
+        for i,wm in GetUnits(ATTACKER, WAR_MACHINE) do setATB(wm, ATB_ZERO) end;
+    end;
+    if contains(NO_ATB_RESET_HEROES[WAR_MACHINE], DEFENDER_HERO) == nil then
+        for i,wm in GetUnits(DEFENDER, WAR_MACHINE) do setATB(wm, ATB_ZERO) end;
+    end;
+
+    if contains(NO_ATB_RESET_HEROES[HERO], ATTACKER_HERO) == nil then
+        if ATTACKER_HERO ~= "" then setATB(ATTACKER_HERO_ID, ATB_ZERO) end;
+    end;
+    if contains(NO_ATB_RESET_HEROES[HERO], DEFENDER_HERO) == nil then
+        if DEFENDER_HERO ~= "" then setATB(DEFENDER_HERO_ID, ATB_ZERO) end;
+    end;
+
     COMBAT_READY = not nil;
 end;
 

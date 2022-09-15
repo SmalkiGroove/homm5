@@ -27,10 +27,10 @@ function IsSpellSpawn(unit) return GetUnitType(unit) == SPELL_SPAWN end
 
 ATTACKER_HERO_ID = "attacker-hero"
 DEFENDER_HERO_ID = "defender-hero"
-ATTACKER_RACE = 0;
-DEFENDER_RACE = 0;
-ATTACKER_HERO = "";
-DEFENDER_HERO = "";
+ATTACKER_RACE = 0
+DEFENDER_RACE = 0
+ATTACKER_HERO = ""
+DEFENDER_HERO = ""
 
 
 function GetHero(side)
@@ -157,7 +157,7 @@ end
 
 LOAD_SOURCES = 0
 dofile("/scripts/combat-common.lua")
-repeat sleep(1) until LOAD_SOURCES == 1;
+repeat sleep(1) until LOAD_SOURCES == 1
 
 dofile("/scripts/combat-manager.lua")
 

@@ -11,7 +11,7 @@ end;
 
 function Routine_CastHordeAnger(side, hero)
     -- print("Trigger horde's anger !")
-    if GetUnitManaPoints(hero_id) >= 10 then
+    if GetUnitManaPoints(hero) >= 10 then
         HeroCast_RandomCreature(hero, SPELL_WARCRY_SHOUT_OF_MANY, 10, 1-side);
     end;
 end;
@@ -50,6 +50,13 @@ function Routine_SummonGoblinStack(side, hero)
     if CURRENT_UNIT == hero then
         local amount = trunc(GetUnitMaxManaPoints(hero) * 1.5);
         SummonCreatureStack(side, CREATURE_GOBLIN, amount);
+    end;
+end;
+
+function Routine_BallistaRandomShoot2(side, hero)
+    -- print("Trigger ballista random shoot !")
+    if CURRENT_UNIT == hero then
+        RandomShoot_Ballista(side);
     end;
 end;
 
@@ -108,20 +115,20 @@ STRONGHOLD_COMBAT_PREPARE = {
 };
 
 STRONGHOLD_COMBAT_START = {
-    [H_TELSEK] = NoneRoutine,
+    [H_TELSEK] = Routine_CastCallOfBlood,
     [H_GORSHAK] = NoneRoutine,
-    [H_GOTAI] = NoneRoutine,
-    [H_AZAR] = NoneRoutine,
+    [H_GOTAI] = Routine_CastBattlecry,
+    [H_AZAR] = Routine_CastHordeAnger,
     [H_MATEWA] = NoneRoutine,
     [H_KUNYAK] = NoneRoutine,
-    [H_KRAGH] = NoneRoutine,
+    [H_KRAGH] = Routine_CastPowerfulBlowCentaur,
     [H_KILGHAN] = NoneRoutine,
-    [H_CRAGHACK] = NoneRoutine,
-    [H_KRAAL] = NoneRoutine,
+    [H_CRAGHACK] = Routine_CastRallingCry,
+    [H_KRAAL] = Routine_BallistaRandomShoot,
     [H_SHAKKARUKAT] = NoneRoutine,
     [H_KUJIN] = NoneRoutine,
     [H_SHIVA] = NoneRoutine,
-    [H_MUKHA] = NoneRoutine,
+    [H_MUKHA] = Routine_CastLightningSpell,
     [H_HAGGASH] = NoneRoutine,
     [H_URGHAT] = NoneRoutine,
     [H_GARUNA] = NoneRoutine,
@@ -134,20 +141,20 @@ STRONGHOLD_COMBAT_TURN = {
     [H_GORSHAK] = NoneRoutine,
     [H_GOTAI] = NoneRoutine,
     [H_AZAR] = NoneRoutine,
-    [H_MATEWA] = NoneRoutine,
+    [H_MATEWA] = Routine_CyclopsMoveNext,
     [H_KUNYAK] = NoneRoutine,
     [H_KRAGH] = NoneRoutine,
-    [H_KILGHAN] = NoneRoutine,
+    [H_KILGHAN] = Routine_SummonGoblinStack,
     [H_CRAGHACK] = NoneRoutine,
-    [H_KRAAL] = NoneRoutine,
+    [H_KRAAL] = Routine_BallistaRandomShoot2,
     [H_SHAKKARUKAT] = NoneRoutine,
     [H_KUJIN] = NoneRoutine,
-    [H_SHIVA] = NoneRoutine,
+    [H_SHIVA] = Routine_ShamansManaRegen,
     [H_MUKHA] = NoneRoutine,
     [H_HAGGASH] = NoneRoutine,
     [H_URGHAT] = NoneRoutine,
-    [H_GARUNA] = NoneRoutine,
-    [H_ZOULEIKA] = NoneRoutine,
+    [H_GARUNA] = Routine_CastRandomRegenOrPlague,
+    [H_ZOULEIKA] = Routine_CastRandomVulnerability,
     [H_ERIKA] = NoneRoutine,
 };
 

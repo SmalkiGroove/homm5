@@ -8,7 +8,7 @@ function Routine_InvokeBladeBarriers(side, hero)
         HeroCast_Area(hero, SPELL_BLADE_BARRIER, FREE_MANA, x1, y);
         HeroCast_Area(hero, SPELL_BLADE_BARRIER, FREE_MANA, x2, GRID_Y_MAX-y+1);
     end;
-    SetMana(hero_id,m);
+    SetMana(hero, m);
 end;
 
 function Routine_CastVampirismOnWitches(side, hero)

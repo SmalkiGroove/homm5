@@ -1011,6 +1011,6 @@ end
 
 LOAD_SOURCES = 0
 dofile("/scripts/advmap-common.lua")
-repeat sleep(1) until LOAD_SOURCES == 1;
+repeat sleep(1) until LOAD_SOURCES == 1
 
-dofile("/scripts/advmap-manager.lua");
+dofile("/scripts/advmap-manager.lua")
