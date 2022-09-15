@@ -87,26 +87,26 @@ function createCombatAliases()
     --
     -- abilitiy IDs
     --
-    ABILITY_BATTLE_DIVE = 15;
-    ABILITY_BATTLE_DIVE_FINISH = 27;
-    ABILITY_LAY_HANDS = 16;
-    ABILITY_RESURRECT_ALLIES = 17;
-    ABILITY_SCATTER_SHOT = 14;
+    ABILITY_BATTLE_DIVE = 15
+    ABILITY_BATTLE_DIVE_FINISH = 27
+    ABILITY_LAY_HANDS = 16
+    ABILITY_RESURRECT_ALLIES = 17
+    ABILITY_SCATTER_SHOT = 14
     -- Inferno
-    ABILITY_GATING = 155;
-    ABILITY_FEAR = 143;
-    ABILITY_SUMMON_BALOR = 146;
-    ABILITY_EXPLOSION = 147;
-    ABILITY_EXPLOSION_EFFECT = 148;
-    ABILITY_CHAIN_SHOT_END_EFFECT = 150;
-    ABILITY_MANA_DESTROY = 160;
-    ABILITY_MANA_STEAL = 157;
-    ABILITY_TELEPORTING_MOVE = 163;
+    ABILITY_GATING = 155
+    ABILITY_FEAR = 143
+    ABILITY_SUMMON_BALOR = 146
+    ABILITY_EXPLOSION = 147
+    ABILITY_EXPLOSION_EFFECT = 148
+    ABILITY_CHAIN_SHOT_END_EFFECT = 150
+    ABILITY_MANA_DESTROY = 160
+    ABILITY_MANA_STEAL = 157
+    ABILITY_TELEPORTING_MOVE = 163
     -- Necropolis
-    ABILITY_LIFE_DRAIN = 168;
-    ABILITY_MANA_DRAIN = 169;
-    ABILITY_DEATH_CLOUD = 170;
-    ABILITY_HARM_TOUCH = 171;
+    ABILITY_LIFE_DRAIN = 168
+    ABILITY_MANA_DRAIN = 169
+    ABILITY_DEATH_CLOUD = 170
+    ABILITY_HARM_TOUCH = 171
 
 
 	BUILDING_WALL = 1
@@ -133,26 +133,26 @@ function createCombatAliases()
     --
     ExecConsoleCommand = consoleCmd
 
-    ShowCombatHighlighting = showHighlighting;
+    ShowCombatHighlighting = showHighlighting
 
-    MoveCombatUnit = commandMove;
-    AttackCombatUnit = commandMoveAttack;
-    ShootCombatUnit = commandShot;
-    UseCombatAbility = commandDoSpecial;
-    DefendCombatUnit = commandDefend;
-    GetCombatPosition = pos;
-    SetCombatPosition = displace;
-    IsCombatUnit = exist;
-    AddCombatUnit = addUnit;
-    RemoveCombatUnit = removeUnit;
+    MoveCombatUnit = commandMove
+    AttackCombatUnit = commandMoveAttack
+    ShootCombatUnit = commandShot
+    UseCombatAbility = commandDoSpecial
+    DefendCombatUnit = commandDefend
+    GetCombatPosition = pos
+    SetCombatPosition = displace
+    IsCombatUnit = exist
+    AddCombatUnit = addUnit
+    RemoveCombatUnit = removeUnit
 end
 
 function createTutorialAliases()
     -- tutorials
     --ShowTutorialMode = toggleTutorialMode
     --HideTutorialMode = toggleTutorialMode
-    ShowTutorialMessage = showMessage;
-    HideTutorialMessage = clearMessage;
+    ShowTutorialMessage = showMessage
+    HideTutorialMessage = clearMessage
 end
 
 LOAD_SOURCES = 0

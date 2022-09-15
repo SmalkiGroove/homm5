@@ -1,76 +1,76 @@
 
 function Routine_DuplicateGolemStack(side, hero)
     -- print("Trigger copy largest golems group !")
-    local largest = 0;
-    local copied_stack = "none";
-    local creatures = GetUnits(side, CREATURE);
+    local largest = 0
+    local copied_stack = "none"
+    local creatures = GetUnits(side, CREATURE)
     for i,cr in creatures do
-        local type = GetCreatureType(cr);
+        local type = GetCreatureType(cr)
         if type == CREATURE_IRON_GOLEM or type == CREATURE_STEEL_GOLEM or type == CREATURE_OBSIDIAN_GOLEM then
-            local nb = GetCreatureNumber(cr);
+            local nb = GetCreatureNumber(cr)
             if nb > largest then
-                largest = nb;
-                copied_stack = cr;
-            end;
-        end;
-    end;
+                largest = nb
+                copied_stack = cr
+            end
+        end
+    end
     if IsCombatUnit(copied_stack) then
-        local x,y = GetUnitPosition(copied_stack);
-        SummonCreatureStack_XY(side, GetCreatureType(copied_stack), largest, x, y+1);
-    end;
-end;
+        local x,y = GetUnitPosition(copied_stack)
+        SummonCreatureStack_XY(side, GetCreatureType(copied_stack), largest, x, y+1)
+    end
+end
 
 function Routine_RakshasasAbility(side, hero)
     -- print("Trigger rakshasas dash !")
-    CreatureTypesAbility_Untargeted(side, {CREATURE_RAKSHASA,CREATURE_RAKSHASA_RUKH,CREATURE_RAKSHASA_KSHATRI}, SPELL_ABILITY_DASH);
-end;
+    CreatureTypesAbility_Untargeted(side, {CREATURE_RAKSHASA,CREATURE_RAKSHASA_RUKH,CREATURE_RAKSHASA_KSHATRI}, SPELL_ABILITY_DASH)
+end
 
 function Routine_CastMultipleVulnerability(side, hero)
     -- print("Trigger disrupting rays !")
-    HeroCast_AllCreatures(hero, SPELL_DISRUPTING_RAY, FREE_MANA, side);
-end;
+    HeroCast_AllCreatures(hero, SPELL_DISRUPTING_RAY, FREE_MANA, side)
+end
 
 function Routine_MagesCastMagicFist(side, hero)
     -- print("Trigger mages magic fist !")
-    CreatureTypesCast_RandomTarget(side, 1-side, {CREATURE_MAGI,CREATURE_ARCH_MAGI,CREATURE_COMBAT_MAGE}, SPELL_MAGIC_FIST);
-end;
+    CreatureTypesCast_RandomTarget(side, 1-side, {CREATURE_MAGI,CREATURE_ARCH_MAGI,CREATURE_COMBAT_MAGE}, SPELL_MAGIC_FIST)
+end
 
 function Routine_CastMultipleArcaneCrystals(side, hero)
     -- print("Trigger random arcane crystals !")
-    local n = trunc(GetUnitManaPoints(hero) * 0.05);
-    local x1 = 13 - 11 * side;
-    local x2 = 9 - 3 * side;
+    local n = trunc(GetUnitManaPoints(hero) * 0.05)
+    local x1 = 13 - 11 * side
+    local x2 = 9 - 3 * side
     for i = 1,n do
-        HeroCast_Area(hero, SPELL_ARCANE_CRYSTAL, FREE_MANA, random(x1,x2,i), random(GRID_Y_MIN,GRID_Y_MAX,i));
-    end;
-end;
+        HeroCast_Area(hero, SPELL_ARCANE_CRYSTAL, FREE_MANA, random(x1,x2,i), random(GRID_Y_MIN,GRID_Y_MAX,i))
+    end
+end
 
 function Routine_CastSummonElementals(side, hero)
     -- print("Trigger summon elementals !")
-    HeroCast_Global(hero, SPELL_SUMMON_ELEMENTALS, FREE_MANA);
-end;
+    HeroCast_Global(hero, SPELL_SUMMON_ELEMENTALS, FREE_MANA)
+end
 
 function Routine_CastSummonHive(side, hero)
     -- print("Trigger summon beehives !")
-    local x = 15 - 13 * side;
-    HeroCast_Area(hero, SPELL_SUMMON_HIVE, FREE_MANA, x, GRID_Y_MIN);
-    HeroCast_Area(hero, SPELL_SUMMON_HIVE, FREE_MANA, x, GRID_Y_MAX);
-end;
+    local x = 15 - 13 * side
+    HeroCast_Area(hero, SPELL_SUMMON_HIVE, FREE_MANA, x, GRID_Y_MIN)
+    HeroCast_Area(hero, SPELL_SUMMON_HIVE, FREE_MANA, x, GRID_Y_MAX)
+end
 
 function Routine_BallistaMoveNext(side, hero)
     -- print("Trigger fire ballista ATB boost !")
     if CURRENT_UNIT == hero then
-        SetATB_WarMachineType(side, WAR_MACHINE_BALLISTA, ATB_NEXT);
-    end;
-end;
+        SetATB_WarMachineType(side, WAR_MACHINE_BALLISTA, ATB_NEXT)
+    end
+end
 
 function Routine_CastRandomSlow(side, hero)
     -- print("Trigger random Slow !")
     if CURRENT_UNIT == hero and GetUnitManaPoints(hero) >= 20 then
-        HeroCast_RandomCreature(hero, SPELL_SLOW, NO_COST, 1-side);
-        SetATB_ID(hero, ATB_INSTANT);
-    end;
-end;
+        HeroCast_RandomCreature(hero, SPELL_SLOW, NO_COST, 1-side)
+        SetATB_ID(hero, ATB_INSTANT)
+    end
+end
 
 ACADEMY_COMBAT_PREPARE = {
     [H_HAVEZ] = NoneRoutine,
@@ -90,7 +90,7 @@ ACADEMY_COMBAT_PREPARE = {
     [H_ZEHIR] = NoneRoutine,
     [H_THEODORUS] = NoneRoutine,
     [H_EMILIA] = NoneRoutine,
-};
+}
 
 ACADEMY_COMBAT_START = {
     [H_HAVEZ] = NoneRoutine,
@@ -110,7 +110,7 @@ ACADEMY_COMBAT_START = {
     [H_ZEHIR] = Routine_CastSummonElementals,
     [H_THEODORUS] = NoneRoutine,
     [H_EMILIA] = Routine_CastSummonHive,
-};
+}
 
 ACADEMY_COMBAT_TURN = {
     [H_HAVEZ] = NoneRoutine,
@@ -130,7 +130,7 @@ ACADEMY_COMBAT_TURN = {
     [H_ZEHIR] = NoneRoutine,
     [H_THEODORUS] = NoneRoutine,
     [H_EMILIA] = NoneRoutine,
-};
+}
 
 ACADEMY_UNIT_DIED = {
     [H_HAVEZ] = NoneRoutine,
@@ -150,25 +150,25 @@ ACADEMY_UNIT_DIED = {
     [H_ZEHIR] = NoneRoutine,
     [H_THEODORUS] = NoneRoutine,
     [H_EMILIA] = NoneRoutine,
-};
+}
 
 
 function DoAcademyRoutine_CombatPrepare(side, name, id)
-    startThread(ACADEMY_COMBAT_PREPARE[name], side, id);
-end;
+    startThread(ACADEMY_COMBAT_PREPARE[name], side, id)
+end
 
 function DoAcademyRoutine_CombatStart(side, name, id)
-    startThread(ACADEMY_COMBAT_START[name], side, id);
-end;
+    startThread(ACADEMY_COMBAT_START[name], side, id)
+end
 
 function DoAcademyRoutine_CombatTurn(side, name, id)
-    startThread(ACADEMY_COMBAT_TURN[name], side, id);
-end;
+    startThread(ACADEMY_COMBAT_TURN[name], side, id)
+end
 
 function DoAcademyRoutine_UnitDied(side, name, id, unit)
-    startThread(ACADEMY_UNIT_DIED[name], side, id, unit);
-end;
+    startThread(ACADEMY_UNIT_DIED[name], side, id, unit)
+end
 
 
-print("Loaded Academy combat routines");
-ROUTINES_LOADED[ACADEMY] = 1;
+print("Loaded Academy combat routines")
+ROUTINES_LOADED[ACADEMY] = 1

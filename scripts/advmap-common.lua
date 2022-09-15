@@ -3,27 +3,27 @@ SOURCE_LOADED = {
 	["common"]    = 0,
 	["game-data"] = 0,
 	["game-core"] = 0,
-};
+}
 
 function Source(path, key)
 	-- print("Loading script "..path)
-	dofile(path);
-	repeat sleep(1) until SOURCE_LOADED[key] == 1;
-end;
+	dofile(path)
+	repeat sleep(1) until SOURCE_LOADED[key] == 1
+end
 
 Source("/scripts/common.lua", "common")
 Source("/scripts/game-data.lua", "game-data")
 Source("/scripts/game-core.lua", "game-core")
 
 
-__difficulty = GetDifficulty();
-__defaultResources = { 20, 20, 10, 10, 10, 10, 20000 };
-__difficultyResModifiers = { 1.5, 1.0, 1.0, 0.5 };
+__difficulty = GetDifficulty()
+__defaultResources = { 20, 20, 10, 10, 10, 10, 20000 }
+__difficultyResModifiers = { 1.5, 1.0, 1.0, 0.5 }
 
 function SetPlayerStartResource( nPlayer, nRes, nAmount )
-    local resbonus = GetPlayerResource( nPlayer, nRes ) - __defaultResources[nRes + 1] * __difficultyResModifiers[__difficulty + 1];
-    SetPlayerResource( nPlayer, nRes, nAmount + resbonus );
-end;
+    local resbonus = GetPlayerResource( nPlayer, nRes ) - __defaultResources[nRes + 1] * __difficultyResModifiers[__difficulty + 1]
+    SetPlayerResource( nPlayer, nRes, nAmount + resbonus )
+end
 
 function GiveExp( heroName, exp )
     ChangeHeroStat( heroName, STAT_EXPERIENCE, exp )
@@ -75,20 +75,20 @@ function GetHeroCreaturesCount( heroName )
 end
 
 function GetPlayerFilter( player )
-  if player == PLAYER_1 then return PLAYERFLT_1; end;
-  if player == PLAYER_2 then return PLAYERFLT_2; end;
-  if player == PLAYER_3 then return PLAYERFLT_3; end;
-  if player == PLAYER_4 then return PLAYERFLT_4; end;
-  if player == PLAYER_5 then return PLAYERFLT_5; end;
-  if player == PLAYER_6 then return PLAYERFLT_6; end;
-  if player == PLAYER_7 then return PLAYERFLT_7; end;
-  if player == PLAYER_8 then return PLAYERFLT_8; end;
-  return 0;
-end;
+  if player == PLAYER_1 then return PLAYERFLT_1 end
+  if player == PLAYER_2 then return PLAYERFLT_2 end
+  if player == PLAYER_3 then return PLAYERFLT_3 end
+  if player == PLAYER_4 then return PLAYERFLT_4 end
+  if player == PLAYER_5 then return PLAYERFLT_5 end
+  if player == PLAYER_6 then return PLAYERFLT_6 end
+  if player == PLAYER_7 then return PLAYERFLT_7 end
+  if player == PLAYER_8 then return PLAYERFLT_8 end
+  return 0
+end
 
 function PlayVoiceover( soundName )
-  Play2DSound( soundName, 1 );
-end;
+  Play2DSound( soundName, 1 )
+end
 
 LOAD_SOURCES = 1
 

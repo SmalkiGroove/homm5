@@ -1,23 +1,23 @@
 
 function Routine_AddHeroWyverns(player, hero)
     -- Wyvern - 1:10 - 2:30 - 3:50
-    AddHero_CreatureInTypes(player, hero, {CREATURE_WYVERN,CREATURE_WYVERN_POISONOUS,CREATURE_WYVERN_PAOKAI}, 0.05);
-end;
+    AddHero_CreatureInTypes(player, hero, {CREATURE_WYVERN,CREATURE_WYVERN_POISONOUS,CREATURE_WYVERN_PAOKAI}, 0.05)
+end
 
 function Routine_HeroCallCentaurs(player, hero)
     -- Centaurs - 1 * level transfered
-    AddHero_CreatureFromDwelling(player, hero, TOWN_BUILDING_DWELLING_4, CREATURE_CENTAUR_MARADEUR, 1.0);
-end;
+    AddHero_CreatureFromDwelling(player, hero, TOWN_BUILDING_DWELLING_4, CREATURE_CENTAUR_MARADEUR, 1.0)
+end
 
 function Routine_AddRecruitsShamans(player, hero)
     -- Shamans - 3 * level recruits per week
-    AddHero_TownRecruits(player, hero, TOWN_BUILDING_DWELLING_2, CREATURE_SHAMAN, 3.0);
-end;
+    AddHero_TownRecruits(player, hero, TOWN_BUILDING_DWELLING_2, CREATURE_SHAMAN, 3.0)
+end
 
 function Routine_AddHeroTitans(player, hero)
     -- Titans - 1:3 - 2:8 - 3:13 - 4:18 - 5:23 ... 10:48
-    AddHero_CreatureType(player, hero, CREATURE_TITAN, 0.2);
-end;
+    AddHero_CreatureType(player, hero, CREATURE_TITAN, 0.2)
+end
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -44,7 +44,7 @@ LEVEL_UP_STRONGHOLD_HERO = {
     [H_GARUNA] = "NoneRoutine",
     [H_ZOULEIKA] = "NoneRoutine",
     [H_ERIKA] = "NoneRoutine",
-};
+}
 
 START_TRIGGER_STRONGHOLD = {
     [H_TELSEK] = NoneRoutine,
@@ -66,7 +66,7 @@ START_TRIGGER_STRONGHOLD = {
     [H_GARUNA] = NoneRoutine,
     [H_ZOULEIKA] = NoneRoutine,
     [H_ERIKA] = NoneRoutine,
-};
+}
 
 DAILY_TRIGGER_STRONGHOLD = {
     [H_TELSEK] = NoneRoutine,
@@ -88,7 +88,7 @@ DAILY_TRIGGER_STRONGHOLD = {
     [H_GARUNA] = NoneRoutine,
     [H_ZOULEIKA] = NoneRoutine,
     [H_ERIKA] = NoneRoutine,
-};
+}
 
 WEEKLY_TRIGGER_TRONGHOLD = {
     [H_TELSEK] = NoneRoutine,
@@ -110,25 +110,25 @@ WEEKLY_TRIGGER_TRONGHOLD = {
     [H_GARUNA] = NoneRoutine,
     [H_ZOULEIKA] = NoneRoutine,
     [H_ERIKA] = NoneRoutine,
-};
+}
 
 
 function DoStrongholdRoutine_Start(player, hero)
-    startThread(START_TRIGGER_STRONGHOLD[hero], player, hero);
-end;
+    startThread(START_TRIGGER_STRONGHOLD[hero], player, hero)
+end
 
 function DoStrongholdRoutine_Daily(player, hero)
-    startThread(DAILY_TRIGGER_STRONGHOLD[hero], player, hero);
-end;
+    startThread(DAILY_TRIGGER_STRONGHOLD[hero], player, hero)
+end
 
 function DoStrongholdRoutine_Weekly(player, hero)
-    startThread(WEEKLY_TRIGGER_TRONGHOLD[hero], player, hero);
-end;
+    startThread(WEEKLY_TRIGGER_TRONGHOLD[hero], player, hero)
+end
 
 function DoStrongholdRoutine_LevelUp(hero)
-    Trigger(HERO_LEVELUP_TRIGGER, hero, LEVEL_UP_STRONGHOLD_HERO[hero]);
-end;
+    Trigger(HERO_LEVELUP_TRIGGER, hero, LEVEL_UP_STRONGHOLD_HERO[hero])
+end
 
 
-print("Loaded Stronghold advmap routines");
-ROUTINES_LOADED[STRONGHOLD] = 1;
+print("Loaded Stronghold advmap routines")
+ROUTINES_LOADED[STRONGHOLD] = 1

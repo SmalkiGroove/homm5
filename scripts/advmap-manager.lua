@@ -9,13 +9,13 @@ ROUTINES_LOADED = {
 	[6] = 0,
 	[7] = 0,
 	[8] = 0,
-};
+}
 
 function LoadScript(path, key)
 	-- print("Loading script "..path)
-	dofile(path);
-	repeat sleep(1) until ROUTINES_LOADED[key] == 1;
-end;
+	dofile(path)
+	repeat sleep(1) until ROUTINES_LOADED[key] == 1
+end
 
 LoadScript("/scripts/advmap-routines/_common.lua", 0)
 LoadScript("/scripts/advmap-routines/academy.lua", ACADEMY)
@@ -28,9 +28,9 @@ LoadScript("/scripts/advmap-routines/preserve.lua", PRESERVE)
 LoadScript("/scripts/advmap-routines/stronghold.lua", STRONGHOLD)
 
 
-TURN = 1;
+TURN = 1
 
-PLAYER_HEROES = { [1] = {}, [2] = {}, [3] = {}, [4] = {}, [5] = {}, [6] = {}, [7] = {}, [8] = {} };
+PLAYER_HEROES = { [1] = {}, [2] = {}, [3] = {}, [4] = {}, [5] = {}, [6] = {}, [7] = {}, [8] = {} }
 
 ADD_PLAYER_HERO = {
 	[1] = "AddPlayer1Hero",
@@ -41,7 +41,7 @@ ADD_PLAYER_HERO = {
 	[6] = "AddPlayer6Hero",
 	[7] = "AddPlayer7Hero",
 	[8] = "AddPlayer8Hero",
-};
+}
 REMOVE_PLAYER_HERO = {
 	[1] = "RemovePlayer1Hero",
 	[2] = "RemovePlayer2Hero",
@@ -51,7 +51,7 @@ REMOVE_PLAYER_HERO = {
 	[6] = "RemovePlayer6Hero",
 	[7] = "RemovePlayer7Hero",
 	[8] = "RemovePlayer8Hero",
-};
+}
 
 START_ROUTINES = {
 	[0] = DoCommonRoutine_Start,
@@ -63,7 +63,7 @@ START_ROUTINES = {
 	[6] = DoDungeonRoutine_Start,
 	[7] = DoFortressRoutine_Start,
 	[8] = DoStrongholdRoutine_Start,
-};
+}
 
 DAILY_ROUTINES = {
 	[0] = DoCommonRoutine_Daily,
@@ -75,7 +75,7 @@ DAILY_ROUTINES = {
 	[6] = DoDungeonRoutine_Daily,
 	[7] = DoFortressRoutine_Daily,
 	[8] = DoStrongholdRoutine_Daily,
-};
+}
 
 WEEKLY_ROUTINES = {
 	[0] = DoCommonRoutine_Weekly,
@@ -87,7 +87,7 @@ WEEKLY_ROUTINES = {
 	[6] = DoDungeonRoutine_Weekly,
 	[7] = DoFortressRoutine_Weekly,
 	[8] = DoStrongholdRoutine_Weekly,
-};
+}
 
 LEVELUP_ROUTINES = {
 	[0] = DoCommonRoutine_LevelUp,
@@ -99,125 +99,125 @@ LEVELUP_ROUTINES = {
 	[6] = DoDungeonRoutine_LevelUp,
 	[7] = DoFortressRoutine_LevelUp,
 	[8] = DoStrongholdRoutine_LevelUp,
-};
+}
 
 
 
 function DoPlayerHeroesSpe(player, newweek)
-	while (not IsPlayerCurrent(player)) do sleep(10) end;
-	print("Player "..player.." turn started");
+	while (not IsPlayerCurrent(player)) do sleep(10) end
+	print("Player "..player.." turn started")
 	for i,hero in PLAYER_HEROES[player] do
-		local faction = GetHeroFactionID(hero);
-		startThread(DAILY_ROUTINES[faction], player, hero);
-		if newweek then startThread(WEEKLY_ROUTINES[faction], player, hero) end;
-	end;
-end;
+		local faction = GetHeroFactionID(hero)
+		startThread(DAILY_ROUTINES[faction], player, hero)
+		if newweek then startThread(WEEKLY_ROUTINES[faction], player, hero) end
+	end
+end
 
 function NewDayTrigger()
-	TURN = TURN + 1;
-	print("New day ! Turn "..TURN);
-	local newweek = GetDate(DAY_OF_WEEK) == 1;
+	TURN = TURN + 1
+	print("New day ! Turn "..TURN)
+	local newweek = GetDate(DAY_OF_WEEK) == 1
 	for player = 1,8 do
 		if (GetPlayerState(player) == 1) then
-			startThread(DoPlayerHeroesSpe, player, newweek);
-		end;
-	end;
-end;
+			startThread(DoPlayerHeroesSpe, player, newweek)
+		end
+	end
+end
 
-Trigger(NEW_DAY_TRIGGER, "NewDayTrigger");
+Trigger(NEW_DAY_TRIGGER, "NewDayTrigger")
 
 
 function AddPlayer1Hero(hero)
-	local faction = GetHeroFactionID(hero);
-	insert(PLAYER_HEROES[1], hero);
-	startThread(LEVELUP_ROUTINES[faction], hero);
-end;
+	local faction = GetHeroFactionID(hero)
+	insert(PLAYER_HEROES[1], hero)
+	startThread(LEVELUP_ROUTINES[faction], hero)
+end
 function AddPlayer2Hero(hero)
-	local faction = GetHeroFactionID(hero);
-	insert(PLAYER_HEROES[2], hero);
-	startThread(LEVELUP_ROUTINES[faction], hero);
-end;
+	local faction = GetHeroFactionID(hero)
+	insert(PLAYER_HEROES[2], hero)
+	startThread(LEVELUP_ROUTINES[faction], hero)
+end
 function AddPlayer3Hero(hero)
-	local faction = GetHeroFactionID(hero);
-	insert(PLAYER_HEROES[3], hero);
-	startThread(LEVELUP_ROUTINES[faction], hero);
-end;
+	local faction = GetHeroFactionID(hero)
+	insert(PLAYER_HEROES[3], hero)
+	startThread(LEVELUP_ROUTINES[faction], hero)
+end
 function AddPlayer4Hero(hero)
-	local faction = GetHeroFactionID(hero);
-	insert(PLAYER_HEROES[4], hero);
-	startThread(LEVELUP_ROUTINES[faction], hero);
-end;
+	local faction = GetHeroFactionID(hero)
+	insert(PLAYER_HEROES[4], hero)
+	startThread(LEVELUP_ROUTINES[faction], hero)
+end
 function AddPlayer5Hero(hero)
-	local faction = GetHeroFactionID(hero);
-	insert(PLAYER_HEROES[5], hero);
-	startThread(LEVELUP_ROUTINES[faction], hero);
-end;
+	local faction = GetHeroFactionID(hero)
+	insert(PLAYER_HEROES[5], hero)
+	startThread(LEVELUP_ROUTINES[faction], hero)
+end
 function AddPlayer6Hero(hero)
-	local faction = GetHeroFactionID(hero);
-	insert(PLAYER_HEROES[6], hero);
-	startThread(LEVELUP_ROUTINES[faction], hero);
-end;
+	local faction = GetHeroFactionID(hero)
+	insert(PLAYER_HEROES[6], hero)
+	startThread(LEVELUP_ROUTINES[faction], hero)
+end
 function AddPlayer7Hero(hero)
-	local faction = GetHeroFactionID(hero);
-	insert(PLAYER_HEROES[7], hero);
-	startThread(LEVELUP_ROUTINES[faction], hero);
-end;
+	local faction = GetHeroFactionID(hero)
+	insert(PLAYER_HEROES[7], hero)
+	startThread(LEVELUP_ROUTINES[faction], hero)
+end
 function AddPlayer8Hero(hero)
-	local faction = GetHeroFactionID(hero);
-	insert(PLAYER_HEROES[8], hero);
-	startThread(LEVELUP_ROUTINES[faction], hero);
-end;
+	local faction = GetHeroFactionID(hero)
+	insert(PLAYER_HEROES[8], hero)
+	startThread(LEVELUP_ROUTINES[faction], hero)
+end
 
 function RemovePlayer1Hero(hero)
-	remove(PLAYER_HEROES[1], hero);
-	Trigger(HERO_LEVELUP_TRIGGER, hero, nil);
-end;
+	remove(PLAYER_HEROES[1], hero)
+	Trigger(HERO_LEVELUP_TRIGGER, hero, nil)
+end
 function RemovePlayer2Hero(hero)
-	remove(PLAYER_HEROES[2], hero);
-	Trigger(HERO_LEVELUP_TRIGGER, hero, nil);
-end;
+	remove(PLAYER_HEROES[2], hero)
+	Trigger(HERO_LEVELUP_TRIGGER, hero, nil)
+end
 function RemovePlayer3Hero(hero)
-	remove(PLAYER_HEROES[3], hero);
-	Trigger(HERO_LEVELUP_TRIGGER, hero, nil);
-end;
+	remove(PLAYER_HEROES[3], hero)
+	Trigger(HERO_LEVELUP_TRIGGER, hero, nil)
+end
 function RemovePlayer4Hero(hero)
-	remove(PLAYER_HEROES[4], hero);
-	Trigger(HERO_LEVELUP_TRIGGER, hero, nil);
-end;
+	remove(PLAYER_HEROES[4], hero)
+	Trigger(HERO_LEVELUP_TRIGGER, hero, nil)
+end
 function RemovePlayer5Hero(hero)
-	remove(PLAYER_HEROES[5], hero);
-	Trigger(HERO_LEVELUP_TRIGGER, hero, nil);
-end;
+	remove(PLAYER_HEROES[5], hero)
+	Trigger(HERO_LEVELUP_TRIGGER, hero, nil)
+end
 function RemovePlayer6Hero(hero)
-	remove(PLAYER_HEROES[6], hero);
-	Trigger(HERO_LEVELUP_TRIGGER, hero, nil);
-end;
+	remove(PLAYER_HEROES[6], hero)
+	Trigger(HERO_LEVELUP_TRIGGER, hero, nil)
+end
 function RemovePlayer7Hero(hero)
-	remove(PLAYER_HEROES[7], hero);
-	Trigger(HERO_LEVELUP_TRIGGER, hero, nil);
-end;
+	remove(PLAYER_HEROES[7], hero)
+	Trigger(HERO_LEVELUP_TRIGGER, hero, nil)
+end
 function RemovePlayer8Hero(hero)
-	remove(PLAYER_HEROES[8], hero);
-	Trigger(HERO_LEVELUP_TRIGGER, hero, nil);
-end;
+	remove(PLAYER_HEROES[8], hero)
+	Trigger(HERO_LEVELUP_TRIGGER, hero, nil)
+end
 
 for i = 1,8 do
-	Trigger(PLAYER_ADD_HERO_TRIGGER, i, ADD_PLAYER_HERO[i]);
-	Trigger(PLAYER_REMOVE_HERO_TRIGGER, i, REMOVE_PLAYER_HERO[i]);
-end;
+	Trigger(PLAYER_ADD_HERO_TRIGGER, i, ADD_PLAYER_HERO[i])
+	Trigger(PLAYER_REMOVE_HERO_TRIGGER, i, REMOVE_PLAYER_HERO[i])
+end
 
 
 function InitializeHeroes()
 	for player = 1,8 do
 		if (GetPlayerState(player) == 1) then
-			PLAYER_HEROES[player] = GetPlayerHeroes(player);
+			PLAYER_HEROES[player] = GetPlayerHeroes(player)
 			for i,hero in PLAYER_HEROES[player] do
-				local faction = GetHeroFactionID(hero);
-				startThread(START_ROUTINES[faction], player, hero);
-				startThread(LEVELUP_ROUTINES[faction], hero);
-			end;
-		end;
-	end;
-end;
+				local faction = GetHeroFactionID(hero)
+				startThread(START_ROUTINES[faction], player, hero)
+				startThread(LEVELUP_ROUTINES[faction], hero)
+			end
+		end
+	end
+end
 
 InitializeHeroes()
