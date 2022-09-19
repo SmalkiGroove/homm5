@@ -69,16 +69,17 @@ function insert(array, sample)
 end
 
 function remove(array, sample)
+    local n = length(array)
     local j = 0
-    local result = {}
-    for i = 0, length(array) do
+    for i = 0,n do
         if array[i] == sample then
             j = j + 1
         else
-            result[i-j] = array[i]
+            array[i-j] = array[i]
         end
+        array[i] = nil
     end
-    array = result
+    array.n = n - j
 end
 
 RANDOM_SEED = 0
