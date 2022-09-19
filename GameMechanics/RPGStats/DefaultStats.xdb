@@ -75,24 +75,6 @@
 				<Gold>20000</Gold>
 			</Item>
 			<Item>
-				<Wood>20</Wood>
-				<Ore>20</Ore>
-				<Mercury>10</Mercury>
-				<Crystal>10</Crystal>
-				<Sulfur>10</Sulfur>
-				<Gem>10</Gem>
-				<Gold>20000</Gold>
-			</Item>
-			<Item>
-				<Wood>30</Wood>
-				<Ore>30</Ore>
-				<Mercury>15</Mercury>
-				<Crystal>15</Crystal>
-				<Sulfur>15</Sulfur>
-				<Gem>15</Gem>
-				<Gold>30000</Gold>
-			</Item>
-			<Item>
 				<Wood>40</Wood>
 				<Ore>40</Ore>
 				<Mercury>20</Mercury>
@@ -101,14 +83,32 @@
 				<Gem>20</Gem>
 				<Gold>50000</Gold>
 			</Item>
+			<Item>
+				<Wood>40</Wood>
+				<Ore>40</Ore>
+				<Mercury>20</Mercury>
+				<Crystal>20</Crystal>
+				<Sulfur>20</Sulfur>
+				<Gem>20</Gem>
+				<Gold>100000</Gold>
+			</Item>
+			<Item>
+				<Wood>99</Wood>
+				<Ore>99</Ore>
+				<Mercury>33</Mercury>
+				<Crystal>33</Crystal>
+				<Sulfur>33</Sulfur>
+				<Gem>33</Gem>
+				<Gold>999999</Gold>
+			</Item>
 		</StartComputerResources>
 		<ChestMinorArtifactChance>10</ChestMinorArtifactChance>
 		<NeutralsInCampaign>
 			<CountCoefs>
-				<Item>1.0</Item>
-				<Item>1.3</Item>
-				<Item>1.4</Item>
-				<Item>1.5</Item>
+				<Item>1</Item>
+				<Item>1</Item>
+				<Item>1</Item>
+				<Item>1</Item>
 			</CountCoefs>
 			<ExpCoefs>
 				<Item>1</Item>
@@ -118,17 +118,17 @@
 			</ExpCoefs>
 			<WeeklyGrowCoefs>
 				<Item>1.05</Item>
-				<Item>1.09</Item>
-				<Item>1.1</Item>
-				<Item>1.11</Item>
+				<Item>1.10</Item>
+				<Item>1.15</Item>
+				<Item>1.20</Item>
 			</WeeklyGrowCoefs>
 		</NeutralsInCampaign>
 		<NeutralsNotInCampaign>
 			<CountCoefs>
-				<Item>1.1</Item>
-				<Item>1.2</Item>
-				<Item>1.3</Item>
-				<Item>1.4</Item>
+				<Item>1</Item>
+				<Item>1</Item>
+				<Item>1</Item>
+				<Item>1</Item>
 			</CountCoefs>
 			<ExpCoefs>
 				<Item>1</Item>
@@ -137,10 +137,10 @@
 				<Item>1</Item>
 			</ExpCoefs>
 			<WeeklyGrowCoefs>
-				<Item>1.11</Item>
-				<Item>1.12</Item>
-				<Item>1.13</Item>
-				<Item>1.14</Item>
+				<Item>1.05</Item>
+				<Item>1.10</Item>
+				<Item>1.15</Item>
+				<Item>1.20</Item>
 			</WeeklyGrowCoefs>
 		</NeutralsNotInCampaign>
 		<HeroSkills>
@@ -192,13 +192,13 @@
 						<Gem>0</Gem>
 						<Gold>1000</Gold>
 					</CostOfUpgrade>
-					<HeroLevel>0</HeroLevel>
+					<HeroLevel>5</HeroLevel>
 				</Item>
 				<Item>
 					<Spell>SPELL_SUMMON_CREATURES</Spell>
 					<CostOfUpgrade>
-						<Wood>2</Wood>
-						<Ore>2</Ore>
+						<Wood>0</Wood>
+						<Ore>0</Ore>
 						<Mercury>1</Mercury>
 						<Crystal>1</Crystal>
 						<Sulfur>1</Sulfur>
@@ -206,6 +206,19 @@
 						<Gold>1000</Gold>
 					</CostOfUpgrade>
 					<HeroLevel>10</HeroLevel>
+				</Item>
+				<Item>
+					<Spell>SPELL_TOWN_PORTAL</Spell>
+					<CostOfUpgrade>
+						<Wood>2</Wood>
+						<Ore>2</Ore>
+						<Mercury>2</Mercury>
+						<Crystal>2</Crystal>
+						<Sulfur>2</Sulfur>
+						<Gem>2</Gem>
+						<Gold>1000</Gold>
+					</CostOfUpgrade>
+					<HeroLevel>15</HeroLevel>
 				</Item>
 				<Item>
 					<Spell>SPELL_DIMENSION_DOOR</Spell>
@@ -216,22 +229,9 @@
 						<Crystal>2</Crystal>
 						<Sulfur>2</Sulfur>
 						<Gem>2</Gem>
-						<Gold>3000</Gold>
+						<Gold>7000</Gold>
 					</CostOfUpgrade>
-					<HeroLevel>10</HeroLevel>
-				</Item>
-				<Item>
-					<Spell>SPELL_TOWN_PORTAL</Spell>
-					<CostOfUpgrade>
-						<Wood>0</Wood>
-						<Ore>0</Ore>
-						<Mercury>0</Mercury>
-						<Crystal>0</Crystal>
-						<Sulfur>0</Sulfur>
-						<Gem>0</Gem>
-						<Gold>0</Gold>
-					</CostOfUpgrade>
-					<HeroLevel>10</HeroLevel>
+					<HeroLevel>20</HeroLevel>
 				</Item>
 			</Levels>
 		</TalismanOfAdventure>
@@ -427,14 +427,14 @@
 					<ReceiveRangedAttackRP>0</ReceiveRangedAttackRP>
 					<CastSpellRP>50</CastSpellRP>
 					<ReceiveDDSpellRP>0</ReceiveDDSpellRP>
-					<ReceiveCurseRP>10</ReceiveCurseRP>
+					<ReceiveCurseRP>0</ReceiveCurseRP>
 					<ReceiveMoatDamageRP>0</ReceiveMoatDamageRP>
 					<MoveRP>0</MoveRP>
 					<DefendRP>0</DefendRP>
 					<WaitRP>-25</WaitRP>
 					<BadMoraleRP>-50</BadMoraleRP>
 					<UseGoblinRP>50</UseGoblinRP>
-					<UseCowardiceRP>-100</UseCowardiceRP>
+					<UseCowardiceRP>-25</UseCowardiceRP>
 					<BlindedRPPerTurn>-50</BlindedRPPerTurn>
 					<RPCoefUnderBerserk>2</RPCoefUnderBerserk>
 					<ActionRPUnderHypnotize>-50</ActionRPUnderHypnotize>
@@ -446,7 +446,7 @@
 					<WeakenedRP>-50</WeakenedRP>
 					<RPCoefPowerOfBlood>1.5</RPCoefPowerOfBlood>
 					<AbsoluteRageRP>500</AbsoluteRageRP>
-					<UltimateBloodRage_RageForLevelDecrease>0</UltimateBloodRage_RageForLevelDecrease>
+					<UltimateBloodRage_RageForLevelDecrease>0.25</UltimateBloodRage_RageForLevelDecrease>
 					<MemoryOfOurBlood_MinRP>50</MemoryOfOurBlood_MinRP>
 					<MemoryOfOurBlood_MaxRP>100</MemoryOfOurBlood_MaxRP>
 					<MemoryOfOurBlood_RPStep>25</MemoryOfOurBlood_RPStep>
@@ -2986,359 +2986,245 @@
 		<BankCrypt>
 			<Variants>
 				<Item>
-					<ChanceOfVariant>25</ChanceOfVariant>
+					<ChanceOfVariant>90</ChanceOfVariant>
 					<Creatures>
 						<Item>
 							<Creature1>CREATURE_SKELETON</Creature1>
-							<Creature2>CREATURE_SKELETON_ARCHER</Creature2>
-							<ChanceOfCreature1>50</ChanceOfCreature1>
-							<ChanceOfCreature2>50</ChanceOfCreature2>
-							<MinCount1>45</MinCount1>
-							<MaxCount1>45</MaxCount1>
-							<MinCount2>30</MinCount2>
-							<MaxCount2>30</MaxCount2>
+							<Creature2>CREATURE_UNKNOWN</Creature2>
+							<ChanceOfCreature1>100</ChanceOfCreature1>
+							<ChanceOfCreature2>0</ChanceOfCreature2>
+							<MinCount1>5000</MinCount1>
+							<MaxCount1>5000</MaxCount1>
+							<MinCount2>0</MinCount2>
+							<MaxCount2>0</MaxCount2>
 						</Item>
 						<Item>
 							<Creature1>CREATURE_WALKING_DEAD</Creature1>
-							<Creature2>CREATURE_ZOMBIE</Creature2>
-							<ChanceOfCreature1>60</ChanceOfCreature1>
-							<ChanceOfCreature2>40</ChanceOfCreature2>
-							<MinCount1>30</MinCount1>
-							<MaxCount1>30</MaxCount1>
-							<MinCount2>20</MinCount2>
-							<MaxCount2>20</MaxCount2>
-						</Item>
-					</Creatures>
-					<RewardMin>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>1500</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMin>
-					<RewardMax>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>1500</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMax>
-				</Item>
-				<Item>
-					<ChanceOfVariant>30</ChanceOfVariant>
-					<Creatures>
-						<Item>
-							<Creature1>CREATURE_SKELETON</Creature1>
-							<Creature2>CREATURE_SKELETON_ARCHER</Creature2>
-							<ChanceOfCreature1>80</ChanceOfCreature1>
-							<ChanceOfCreature2>20</ChanceOfCreature2>
-							<MinCount1>30</MinCount1>
-							<MaxCount1>30</MaxCount1>
-							<MinCount2>25</MinCount2>
-							<MaxCount2>25</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_WALKING_DEAD</Creature1>
-							<Creature2>CREATURE_ZOMBIE</Creature2>
-							<ChanceOfCreature1>60</ChanceOfCreature1>
-							<ChanceOfCreature2>40</ChanceOfCreature2>
-							<MinCount1>30</MinCount1>
-							<MaxCount1>30</MaxCount1>
-							<MinCount2>20</MinCount2>
-							<MaxCount2>20</MaxCount2>
+							<Creature2>CREATURE_UNKNOWN</Creature2>
+							<ChanceOfCreature1>100</ChanceOfCreature1>
+							<ChanceOfCreature2>0</ChanceOfCreature2>
+							<MinCount1>3000</MinCount1>
+							<MaxCount1>3000</MaxCount1>
+							<MinCount2>0</MinCount2>
+							<MaxCount2>0</MaxCount2>
 						</Item>
 						<Item>
 							<Creature1>CREATURE_MANES</Creature1>
-							<Creature2>CREATURE_GHOST</Creature2>
-							<ChanceOfCreature1>80</ChanceOfCreature1>
-							<ChanceOfCreature2>20</ChanceOfCreature2>
-							<MinCount1>5</MinCount1>
-							<MaxCount1>5</MaxCount1>
-							<MinCount2>5</MinCount2>
-							<MaxCount2>5</MaxCount2>
-						</Item>
-					</Creatures>
-					<RewardMin>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>2000</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMin>
-					<RewardMax>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>2000</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMax>
-				</Item>
-				<Item>
-					<ChanceOfVariant>30</ChanceOfVariant>
-					<Creatures>
-						<Item>
-							<Creature1>CREATURE_SKELETON</Creature1>
-							<Creature2>CREATURE_SKELETON_ARCHER</Creature2>
-							<ChanceOfCreature1>80</ChanceOfCreature1>
-							<ChanceOfCreature2>20</ChanceOfCreature2>
-							<MinCount1>35</MinCount1>
-							<MaxCount1>35</MaxCount1>
-							<MinCount2>20</MinCount2>
-							<MaxCount2>20</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_WALKING_DEAD</Creature1>
-							<Creature2>CREATURE_ZOMBIE</Creature2>
-							<ChanceOfCreature1>80</ChanceOfCreature1>
-							<ChanceOfCreature2>20</ChanceOfCreature2>
-							<MinCount1>25</MinCount1>
-							<MaxCount1>25</MaxCount1>
-							<MinCount2>20</MinCount2>
-							<MaxCount2>20</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_MANES</Creature1>
-							<Creature2>CREATURE_GHOST</Creature2>
-							<ChanceOfCreature1>80</ChanceOfCreature1>
-							<ChanceOfCreature2>20</ChanceOfCreature2>
-							<MinCount1>10</MinCount1>
-							<MaxCount1>10</MaxCount1>
-							<MinCount2>6</MinCount2>
-							<MaxCount2>7</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_VAMPIRE</Creature1>
-							<Creature2>CREATURE_VAMPIRE_LORD</Creature2>
-							<ChanceOfCreature1>80</ChanceOfCreature1>
-							<ChanceOfCreature2>20</ChanceOfCreature2>
-							<MinCount1>5</MinCount1>
-							<MaxCount1>5</MaxCount1>
-							<MinCount2>3</MinCount2>
-							<MaxCount2>3</MaxCount2>
-						</Item>
-					</Creatures>
-					<RewardMin>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>2500</Gold>
-						</Money>
-						<MinorArtifactsCount>1</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMin>
-					<RewardMax>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>2500</Gold>
-						</Money>
-						<MinorArtifactsCount>1</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMax>
-				</Item>
-				<Item>
-					<ChanceOfVariant>15</ChanceOfVariant>
-					<Creatures>
-						<Item>
-							<Creature1>CREATURE_SKELETON</Creature1>
-							<Creature2>CREATURE_SKELETON_ARCHER</Creature2>
-							<ChanceOfCreature1>80</ChanceOfCreature1>
-							<ChanceOfCreature2>20</ChanceOfCreature2>
-							<MinCount1>35</MinCount1>
-							<MaxCount1>35</MaxCount1>
-							<MinCount2>20</MinCount2>
-							<MaxCount2>20</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_WALKING_DEAD</Creature1>
-							<Creature2>CREATURE_ZOMBIE</Creature2>
-							<ChanceOfCreature1>80</ChanceOfCreature1>
-							<ChanceOfCreature2>20</ChanceOfCreature2>
-							<MinCount1>25</MinCount1>
-							<MaxCount1>25</MaxCount1>
-							<MinCount2>20</MinCount2>
-							<MaxCount2>20</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_MANES</Creature1>
-							<Creature2>CREATURE_GHOST</Creature2>
-							<ChanceOfCreature1>80</ChanceOfCreature1>
-							<ChanceOfCreature2>20</ChanceOfCreature2>
-							<MinCount1>10</MinCount1>
-							<MaxCount1>10</MaxCount1>
-							<MinCount2>6</MinCount2>
-							<MaxCount2>6</MaxCount2>
+							<Creature2>CREATURE_UNKNOWN</Creature2>
+							<ChanceOfCreature1>100</ChanceOfCreature1>
+							<ChanceOfCreature2>0</ChanceOfCreature2>
+							<MinCount1>1000</MinCount1>
+							<MaxCount1>1000</MaxCount1>
+							<MinCount2>0</MinCount2>
+							<MaxCount2>0</MaxCount2>
 						</Item>
 						<Item>
 							<Creature1>CREATURE_LICH</Creature1>
-							<Creature2>CREATURE_VAMPIRE_LORD</Creature2>
-							<ChanceOfCreature1>50</ChanceOfCreature1>
-							<ChanceOfCreature2>50</ChanceOfCreature2>
-							<MinCount1>5</MinCount1>
-							<MaxCount1>6</MaxCount1>
-							<MinCount2>5</MinCount2>
-							<MaxCount2>6</MaxCount2>
+							<Creature2>CREATURE_UNKNOWN</Creature2>
+							<ChanceOfCreature1>100</ChanceOfCreature1>
+							<ChanceOfCreature2>0</ChanceOfCreature2>
+							<MinCount1>500</MinCount1>
+							<MaxCount1>500</MaxCount1>
+							<MinCount2>0</MinCount2>
+							<MaxCount2>0</MaxCount2>
+						</Item>
+						<Item>
+							<Creature1>CREATURE_WIGHT</Creature1>
+							<Creature2>CREATURE_UNKNOWN</Creature2>
+							<ChanceOfCreature1>100</ChanceOfCreature1>
+							<ChanceOfCreature2>0</ChanceOfCreature2>
+							<MinCount1>99</MinCount1>
+							<MaxCount1>99</MaxCount1>
+							<MinCount2>0</MinCount2>
+							<MaxCount2>0</MaxCount2>
 						</Item>
 					</Creatures>
 					<RewardMin>
 						<Money>
 							<Wood>0</Wood>
 							<Ore>0</Ore>
-							<Mercury>0</Mercury>
+							<Mercury>20</Mercury>
 							<Crystal>0</Crystal>
 							<Sulfur>0</Sulfur>
 							<Gem>0</Gem>
-							<Gold>5000</Gold>
+							<Gold>10000</Gold>
 						</Money>
-						<MinorArtifactsCount>1</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
+						<MinorArtifactsCount>3</MinorArtifactsCount>
+						<MajorArtifactsCount>1</MajorArtifactsCount>
 						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
+						<RandomSpellsCount>1</RandomSpellsCount>
+						<RandomSpellsLevel>4</RandomSpellsLevel>
 					</RewardMin>
 					<RewardMax>
 						<Money>
 							<Wood>0</Wood>
 							<Ore>0</Ore>
-							<Mercury>0</Mercury>
+							<Mercury>20</Mercury>
 							<Crystal>0</Crystal>
 							<Sulfur>0</Sulfur>
 							<Gem>0</Gem>
-							<Gold>5000</Gold>
+							<Gold>10000</Gold>
 						</Money>
-						<MinorArtifactsCount>1</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
+						<MinorArtifactsCount>3</MinorArtifactsCount>
+						<MajorArtifactsCount>1</MajorArtifactsCount>
 						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
+						<RandomSpellsCount>1</RandomSpellsCount>
+						<RandomSpellsLevel>4</RandomSpellsLevel>
+					</RewardMax>
+				</Item>
+				<Item>
+					<ChanceOfVariant>10</ChanceOfVariant>
+					<Creatures>
+						<Item>
+							<Creature1>CREATURE_MUMMY</Creature1>
+							<Creature2>CREATURE_UNKNOWN</Creature2>
+							<ChanceOfCreature1>100</ChanceOfCreature1>
+							<ChanceOfCreature2>0</ChanceOfCreature2>
+							<MinCount1>2400</MinCount1>
+							<MaxCount1>2400</MaxCount1>
+							<MinCount2>0</MinCount2>
+							<MaxCount2>0</MaxCount2>
+						</Item>
+						<Item>
+							<Creature1>CREATURE_VAMPIRE</Creature1>
+							<Creature2>CREATURE_UNKNOWN</Creature2>
+							<ChanceOfCreature1>100</ChanceOfCreature1>
+							<ChanceOfCreature2>0</ChanceOfCreature2>
+							<MinCount1>800</MinCount1>
+							<MaxCount1>800</MaxCount1>
+							<MinCount2>0</MinCount2>
+							<MaxCount2>0</MaxCount2>
+						</Item>
+						<Item>
+							<Creature1>CREATURE_BLACK_KNIGHT</Creature1>
+							<Creature2>CREATURE_UNKNOWN</Creature2>
+							<ChanceOfCreature1>100</ChanceOfCreature1>
+							<ChanceOfCreature2>0</ChanceOfCreature2>
+							<MinCount1>200</MinCount1>
+							<MaxCount1>200</MaxCount1>
+							<MinCount2>0</MinCount2>
+							<MaxCount2>0</MaxCount2>
+						</Item>
+					</Creatures>
+					<RewardMin>
+						<Money>
+							<Wood>0</Wood>
+							<Ore>0</Ore>
+							<Mercury>20</Mercury>
+							<Crystal>0</Crystal>
+							<Sulfur>0</Sulfur>
+							<Gem>0</Gem>
+							<Gold>10000</Gold>
+						</Money>
+						<MinorArtifactsCount>3</MinorArtifactsCount>
+						<MajorArtifactsCount>1</MajorArtifactsCount>
+						<RelicArtifactsCount>0</RelicArtifactsCount>
+						<RandomSpellsCount>1</RandomSpellsCount>
+						<RandomSpellsLevel>4</RandomSpellsLevel>
+					</RewardMin>
+					<RewardMax>
+						<Money>
+							<Wood>0</Wood>
+							<Ore>0</Ore>
+							<Mercury>20</Mercury>
+							<Crystal>0</Crystal>
+							<Sulfur>0</Sulfur>
+							<Gem>0</Gem>
+							<Gold>10000</Gold>
+						</Money>
+						<MinorArtifactsCount>3</MinorArtifactsCount>
+						<MajorArtifactsCount>1</MajorArtifactsCount>
+						<RelicArtifactsCount>0</RelicArtifactsCount>
+						<RandomSpellsCount>1</RandomSpellsCount>
+						<RandomSpellsLevel>4</RandomSpellsLevel>
 					</RewardMax>
 				</Item>
 			</Variants>
 			<RechargesCount>-1</RechargesCount>
 			<DaysForRecharge>28</DaysForRecharge>
 			<LuckLossOnEmpty>0</LuckLossOnEmpty>
-			<MoraleLossOnEmpty>1</MoraleLossOnEmpty>
+			<MoraleLossOnEmpty>0</MoraleLossOnEmpty>
 			<SearchDialog>1</SearchDialog>
 		</BankCrypt>
 		<BankPyramid>
 			<Variants>
 				<Item>
-					<ChanceOfVariant>9999</ChanceOfVariant>
+					<ChanceOfVariant>90</ChanceOfVariant>
 					<Creatures>
 						<Item>
 							<Creature1>CREATURE_IRON_GOLEM</Creature1>
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>40</MinCount1>
-							<MaxCount1>40</MaxCount1>
+							<MinCount1>4000</MinCount1>
+							<MaxCount1>4000</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
+						<Item>
+							<Creature1>CREATURE_MUMMY</Creature1>
+							<Creature2>CREATURE_UNKNOWN</Creature2>
+							<ChanceOfCreature1>100</ChanceOfCreature1>
+							<ChanceOfCreature2>0</ChanceOfCreature2>
+							<MinCount1>2400</MinCount1>
+							<MaxCount1>2400</MaxCount1>
+							<MinCount2>0</MinCount2>
+							<MaxCount2>0</MaxCount2>
+						</Item>
+					</Creatures>
+					<RewardMin>
+						<Money>
+							<Wood>0</Wood>
+							<Ore>0</Ore>
+							<Mercury>0</Mercury>
+							<Crystal>0</Crystal>
+							<Sulfur>0</Sulfur>
+							<Gem>0</Gem>
+							<Gold>20000</Gold>
+						</Money>
+						<MinorArtifactsCount>3</MinorArtifactsCount>
+						<MajorArtifactsCount>1</MajorArtifactsCount>
+						<RelicArtifactsCount>0</RelicArtifactsCount>
+						<RandomSpellsCount>1</RandomSpellsCount>
+						<RandomSpellsLevel>4</RandomSpellsLevel>
+					</RewardMin>
+					<RewardMax>
+						<Money>
+							<Wood>0</Wood>
+							<Ore>0</Ore>
+							<Mercury>0</Mercury>
+							<Crystal>0</Crystal>
+							<Sulfur>0</Sulfur>
+							<Gem>0</Gem>
+							<Gold>20000</Gold>
+						</Money>
+						<MinorArtifactsCount>3</MinorArtifactsCount>
+						<MajorArtifactsCount>1</MajorArtifactsCount>
+						<RelicArtifactsCount>0</RelicArtifactsCount>
+						<RandomSpellsCount>1</RandomSpellsCount>
+						<RandomSpellsLevel>4</RandomSpellsLevel>
+					</RewardMax>
+				</Item>
+				<Item>
+					<ChanceOfVariant>10</ChanceOfVariant>
+					<Creatures>
 						<Item>
 							<Creature1>CREATURE_STEEL_GOLEM</Creature1>
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>20</MinCount1>
-							<MaxCount1>20</MaxCount1>
+							<MinCount1>2500</MinCount1>
+							<MaxCount1>2500</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
-					</Creatures>
-					<RewardMin>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>0</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>1</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMin>
-					<RewardMax>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>0</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>1</RandomSpellsCount>
-						<RandomSpellsLevel>5</RandomSpellsLevel>
-					</RewardMax>
-				</Item>
-				<Item>
-					<ChanceOfVariant>1</ChanceOfVariant>
-					<Creatures>
 						<Item>
-							<Creature1>CREATURE_SKELETON</Creature1>
+							<Creature1>CREATURE_RAKSHASA_KSHATRI</Creature1>
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>666</MinCount1>
-							<MaxCount1>666</MaxCount1>
+							<MinCount1>250</MinCount1>
+							<MaxCount1>250</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
@@ -3351,13 +3237,13 @@
 							<Crystal>0</Crystal>
 							<Sulfur>0</Sulfur>
 							<Gem>0</Gem>
-							<Gold>0</Gold>
+							<Gold>20000</Gold>
 						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
+						<MinorArtifactsCount>3</MinorArtifactsCount>
+						<MajorArtifactsCount>1</MajorArtifactsCount>
 						<RelicArtifactsCount>0</RelicArtifactsCount>
 						<RandomSpellsCount>1</RandomSpellsCount>
-						<RandomSpellsLevel>2</RandomSpellsLevel>
+						<RandomSpellsLevel>4</RandomSpellsLevel>
 					</RewardMin>
 					<RewardMax>
 						<Money>
@@ -3367,131 +3253,64 @@
 							<Crystal>0</Crystal>
 							<Sulfur>0</Sulfur>
 							<Gem>0</Gem>
-							<Gold>0</Gold>
+							<Gold>20000</Gold>
 						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
+						<MinorArtifactsCount>3</MinorArtifactsCount>
+						<MajorArtifactsCount>1</MajorArtifactsCount>
 						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>2</RandomSpellsCount>
+						<RandomSpellsCount>1</RandomSpellsCount>
 						<RandomSpellsLevel>4</RandomSpellsLevel>
 					</RewardMax>
 				</Item>
 			</Variants>
 			<RechargesCount>-1</RechargesCount>
 			<DaysForRecharge>28</DaysForRecharge>
-			<LuckLossOnEmpty>2</LuckLossOnEmpty>
+			<LuckLossOnEmpty>0</LuckLossOnEmpty>
 			<MoraleLossOnEmpty>0</MoraleLossOnEmpty>
 			<SearchDialog>1</SearchDialog>
 		</BankPyramid>
 		<BankMagiVault>
 			<Variants>
 				<Item>
-					<ChanceOfVariant>30</ChanceOfVariant>
+					<ChanceOfVariant>90</ChanceOfVariant>
 					<Creatures>
 						<Item>
-							<Creature1>CREATURE_MAGI</Creature1>
-							<Creature2>CREATURE_MAGI</Creature2>
-							<ChanceOfCreature1>80</ChanceOfCreature1>
-							<ChanceOfCreature2>20</ChanceOfCreature2>
-							<MinCount1>7</MinCount1>
-							<MaxCount1>7</MaxCount1>
-							<MinCount2>9</MinCount2>
-							<MaxCount2>9</MaxCount2>
+							<Creature1>CREATURE_GREMLIN_SABOTEUR</Creature1>
+							<Creature2>CREATURE_UNKNOWN</Creature2>
+							<ChanceOfCreature1>100</ChanceOfCreature1>
+							<ChanceOfCreature2>0</ChanceOfCreature2>
+							<MinCount1>3000</MinCount1>
+							<MaxCount1>3000</MaxCount1>
+							<MinCount2>0</MinCount2>
+							<MaxCount2>0</MaxCount2>
 						</Item>
 						<Item>
-							<Creature1>CREATURE_STONE_GARGOYLE</Creature1>
-							<Creature2>CREATURE_OBSIDIAN_GARGOYLE</Creature2>
-							<ChanceOfCreature1>50</ChanceOfCreature1>
-							<ChanceOfCreature2>50</ChanceOfCreature2>
-							<MinCount1>25</MinCount1>
-							<MaxCount1>25</MaxCount1>
-							<MinCount2>20</MinCount2>
-							<MaxCount2>20</MaxCount2>
+							<Creature1>CREATURE_MAGI</Creature1>
+							<Creature2>CREATURE_UNKNOWN</Creature2>
+							<ChanceOfCreature1>100</ChanceOfCreature1>
+							<ChanceOfCreature2>0</ChanceOfCreature2>
+							<MinCount1>500</MinCount1>
+							<MaxCount1>500</MaxCount1>
+							<MinCount2>0</MinCount2>
+							<MaxCount2>0</MaxCount2>
 						</Item>
 						<Item>
 							<Creature1>CREATURE_ARCH_MAGI</Creature1>
-							<Creature2>CREATURE_ARCH_MAGI</Creature2>
-							<ChanceOfCreature1>80</ChanceOfCreature1>
-							<ChanceOfCreature2>20</ChanceOfCreature2>
-							<MinCount1>5</MinCount1>
-							<MaxCount1>5</MaxCount1>
-							<MinCount2>7</MinCount2>
-							<MaxCount2>7</MaxCount2>
-						</Item>
-					</Creatures>
-					<RewardMin>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>8</Gem>
-							<Gold>2500</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>1</RandomSpellsCount>
-						<RandomSpellsLevel>4</RandomSpellsLevel>
-					</RewardMin>
-					<RewardMax>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>8</Gem>
-							<Gold>2500</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>1</RandomSpellsCount>
-						<RandomSpellsLevel>4</RandomSpellsLevel>
-					</RewardMax>
-				</Item>
-				<Item>
-					<ChanceOfVariant>50</ChanceOfVariant>
-					<Creatures>
-						<Item>
-							<Creature1>CREATURE_MAGI</Creature1>
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>15</MinCount1>
-							<MaxCount1>15</MaxCount1>
-							<MinCount2>15</MinCount2>
-							<MaxCount2>15</MaxCount2>
+							<MinCount1>250</MinCount1>
+							<MaxCount1>250</MaxCount1>
+							<MinCount2>0</MinCount2>
+							<MaxCount2>0</MaxCount2>
 						</Item>
 						<Item>
-							<Creature1>CREATURE_GENIE</Creature1>
-							<Creature2>CREATURE_MASTER_GENIE</Creature2>
-							<ChanceOfCreature1>60</ChanceOfCreature1>
-							<ChanceOfCreature2>40</ChanceOfCreature2>
-							<MinCount1>15</MinCount1>
-							<MaxCount1>15</MaxCount1>
-							<MinCount2>13</MinCount2>
-							<MaxCount2>13</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_MAGI</Creature1>
-							<Creature2>CREATURE_ARCH_MAGI</Creature2>
-							<ChanceOfCreature1>20</ChanceOfCreature1>
-							<ChanceOfCreature2>80</ChanceOfCreature2>
-							<MinCount1>20</MinCount1>
-							<MaxCount1>20</MaxCount1>
-							<MinCount2>12</MinCount2>
-							<MaxCount2>12</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_MAGI</Creature1>
+							<Creature1>CREATURE_DJINN_VIZIER</Creature1>
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>15</MinCount1>
-							<MaxCount1>15</MaxCount1>
+							<MinCount1>250</MinCount1>
+							<MaxCount1>250</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
@@ -3503,11 +3322,11 @@
 							<Mercury>0</Mercury>
 							<Crystal>0</Crystal>
 							<Sulfur>0</Sulfur>
-							<Gem>12</Gem>
-							<Gold>5000</Gold>
+							<Gem>20</Gem>
+							<Gold>10000</Gold>
 						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
+						<MinorArtifactsCount>3</MinorArtifactsCount>
+						<MajorArtifactsCount>1</MajorArtifactsCount>
 						<RelicArtifactsCount>0</RelicArtifactsCount>
 						<RandomSpellsCount>1</RandomSpellsCount>
 						<RandomSpellsLevel>4</RandomSpellsLevel>
@@ -3519,48 +3338,38 @@
 							<Mercury>0</Mercury>
 							<Crystal>0</Crystal>
 							<Sulfur>0</Sulfur>
-							<Gem>12</Gem>
-							<Gold>5000</Gold>
+							<Gem>20</Gem>
+							<Gold>10000</Gold>
 						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
+						<MinorArtifactsCount>3</MinorArtifactsCount>
+						<MajorArtifactsCount>1</MajorArtifactsCount>
 						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>2</RandomSpellsCount>
-						<RandomSpellsLevel>5</RandomSpellsLevel>
+						<RandomSpellsCount>1</RandomSpellsCount>
+						<RandomSpellsLevel>4</RandomSpellsLevel>
 					</RewardMax>
 				</Item>
 				<Item>
-					<ChanceOfVariant>20</ChanceOfVariant>
+					<ChanceOfVariant>10</ChanceOfVariant>
 					<Creatures>
 						<Item>
-							<Creature1>CREATURE_MAGI</Creature1>
-							<Creature2>CREATURE_ARCH_MAGI</Creature2>
-							<ChanceOfCreature1>50</ChanceOfCreature1>
-							<ChanceOfCreature2>50</ChanceOfCreature2>
-							<MinCount1>21</MinCount1>
-							<MaxCount1>21</MaxCount1>
-							<MinCount2>12</MinCount2>
-							<MaxCount2>12</MaxCount2>
+							<Creature1>CREATURE_SNOW_APE</Creature1>
+							<Creature2>CREATURE_UNKNOWN</Creature2>
+							<ChanceOfCreature1>100</ChanceOfCreature1>
+							<ChanceOfCreature2>0</ChanceOfCreature2>
+							<MinCount1>1000</MinCount1>
+							<MaxCount1>1000</MaxCount1>
+							<MinCount2>0</MinCount2>
+							<MaxCount2>0</MaxCount2>
 						</Item>
 						<Item>
-							<Creature1>CREATURE_RAKSHASA_RUKH</Creature1>
-							<Creature2>CREATURE_PHOENIX</Creature2>
-							<ChanceOfCreature1>50</ChanceOfCreature1>
-							<ChanceOfCreature2>50</ChanceOfCreature2>
-							<MinCount1>5</MinCount1>
-							<MaxCount1>5</MaxCount1>
-							<MinCount2>3</MinCount2>
-							<MaxCount2>3</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_MAGI</Creature1>
-							<Creature2>CREATURE_ARCH_MAGI</Creature2>
-							<ChanceOfCreature1>80</ChanceOfCreature1>
-							<ChanceOfCreature2>20</ChanceOfCreature2>
-							<MinCount1>20</MinCount1>
-							<MaxCount1>20</MaxCount1>
-							<MinCount2>20</MinCount2>
-							<MaxCount2>20</MaxCount2>
+							<Creature1>CREATURE_PHOENIX</Creature1>
+							<Creature2>CREATURE_UNKNOWN</Creature2>
+							<ChanceOfCreature1>100</ChanceOfCreature1>
+							<ChanceOfCreature2>0</ChanceOfCreature2>
+							<MinCount1>33</MinCount1>
+							<MaxCount1>33</MaxCount1>
+							<MinCount2>0</MinCount2>
+							<MaxCount2>0</MaxCount2>
 						</Item>
 					</Creatures>
 					<RewardMin>
@@ -3570,14 +3379,14 @@
 							<Mercury>0</Mercury>
 							<Crystal>0</Crystal>
 							<Sulfur>0</Sulfur>
-							<Gem>12</Gem>
-							<Gold>7000</Gold>
+							<Gem>20</Gem>
+							<Gold>10000</Gold>
 						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
+						<MinorArtifactsCount>3</MinorArtifactsCount>
+						<MajorArtifactsCount>1</MajorArtifactsCount>
 						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>2</RandomSpellsCount>
-						<RandomSpellsLevel>5</RandomSpellsLevel>
+						<RandomSpellsCount>1</RandomSpellsCount>
+						<RandomSpellsLevel>4</RandomSpellsLevel>
 					</RewardMin>
 					<RewardMax>
 						<Money>
@@ -3586,14 +3395,14 @@
 							<Mercury>0</Mercury>
 							<Crystal>0</Crystal>
 							<Sulfur>0</Sulfur>
-							<Gem>12</Gem>
-							<Gold>7000</Gold>
+							<Gem>20</Gem>
+							<Gold>10000</Gold>
 						</Money>
-						<MinorArtifactsCount>1</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
+						<MinorArtifactsCount>3</MinorArtifactsCount>
+						<MajorArtifactsCount>1</MajorArtifactsCount>
 						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>2</RandomSpellsCount>
-						<RandomSpellsLevel>5</RandomSpellsLevel>
+						<RandomSpellsCount>1</RandomSpellsCount>
+						<RandomSpellsLevel>4</RandomSpellsLevel>
 					</RewardMax>
 				</Item>
 			</Variants>
@@ -3606,149 +3415,25 @@
 		<BankDragonUtopia>
 			<Variants>
 				<Item>
-					<ChanceOfVariant>40</ChanceOfVariant>
-					<Creatures>
-						<Item>
-							<Creature1>CREATURE_GREEN_DRAGON</Creature1>
-							<Creature2>CREATURE_GOLD_DRAGON</Creature2>
-							<ChanceOfCreature1>50</ChanceOfCreature1>
-							<ChanceOfCreature2>50</ChanceOfCreature2>
-							<MinCount1>9</MinCount1>
-							<MaxCount1>9</MaxCount1>
-							<MinCount2>7</MinCount2>
-							<MaxCount2>7</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_DEEP_DRAGON</Creature1>
-							<Creature2>CREATURE_BLACK_DRAGON</Creature2>
-							<ChanceOfCreature1>50</ChanceOfCreature1>
-							<ChanceOfCreature2>50</ChanceOfCreature2>
-							<MinCount1>6</MinCount1>
-							<MaxCount1>6</MaxCount1>
-							<MinCount2>4</MinCount2>
-							<MaxCount2>4</MaxCount2>
-						</Item>
-					</Creatures>
-					<RewardMin>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>12000</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>2</MajorArtifactsCount>
-						<RelicArtifactsCount>1</RelicArtifactsCount>
-						<RandomSpellsCount>2</RandomSpellsCount>
-						<RandomSpellsLevel>4</RandomSpellsLevel>
-					</RewardMin>
-					<RewardMax>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>20000</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>3</MajorArtifactsCount>
-						<RelicArtifactsCount>1</RelicArtifactsCount>
-						<RandomSpellsCount>2</RandomSpellsCount>
-						<RandomSpellsLevel>5</RandomSpellsLevel>
-					</RewardMax>
-				</Item>
-				<Item>
-					<ChanceOfVariant>20</ChanceOfVariant>
-					<Creatures>
-						<Item>
-							<Creature1>CREATURE_SHADOW_DRAGON</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>11</MinCount1>
-							<MaxCount1>11</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_DEEP_DRAGON</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>6</MinCount1>
-							<MaxCount1>6</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_BLACK_DRAGON</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>5</MinCount1>
-							<MaxCount1>5</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-					</Creatures>
-					<RewardMin>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>14000</Gold>
-						</Money>
-						<MinorArtifactsCount>1</MinorArtifactsCount>
-						<MajorArtifactsCount>2</MajorArtifactsCount>
-						<RelicArtifactsCount>1</RelicArtifactsCount>
-						<RandomSpellsCount>2</RandomSpellsCount>
-						<RandomSpellsLevel>4</RandomSpellsLevel>
-					</RewardMin>
-					<RewardMax>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>14000</Gold>
-						</Money>
-						<MinorArtifactsCount>3</MinorArtifactsCount>
-						<MajorArtifactsCount>2</MajorArtifactsCount>
-						<RelicArtifactsCount>1</RelicArtifactsCount>
-						<RandomSpellsCount>2</RandomSpellsCount>
-						<RandomSpellsLevel>5</RandomSpellsLevel>
-					</RewardMax>
-				</Item>
-				<Item>
-					<ChanceOfVariant>40</ChanceOfVariant>
+					<ChanceOfVariant>50</ChanceOfVariant>
 					<Creatures>
 						<Item>
 							<Creature1>CREATURE_GREEN_DRAGON</Creature1>
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>8</MinCount1>
-							<MaxCount1>8</MaxCount1>
+							<MinCount1>100</MinCount1>
+							<MaxCount1>100</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
 						<Item>
-							<Creature1>CREATURE_DEEP_DRAGON</Creature1>
+							<Creature1>CREATURE_RAINBOW_DRAGON</Creature1>
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>6</MinCount1>
-							<MaxCount1>6</MaxCount1>
+							<MinCount1>50</MinCount1>
+							<MaxCount1>50</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
@@ -3757,18 +3442,8 @@
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>4</MinCount1>
-							<MaxCount1>4</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_BLACK_DRAGON</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>4</MinCount1>
-							<MaxCount1>4</MaxCount1>
+							<MinCount1>50</MinCount1>
+							<MaxCount1>50</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
@@ -3781,12 +3456,12 @@
 							<Crystal>0</Crystal>
 							<Sulfur>0</Sulfur>
 							<Gem>0</Gem>
-							<Gold>20000</Gold>
+							<Gold>50000</Gold>
 						</Money>
 						<MinorArtifactsCount>0</MinorArtifactsCount>
 						<MajorArtifactsCount>3</MajorArtifactsCount>
-						<RelicArtifactsCount>2</RelicArtifactsCount>
-						<RandomSpellsCount>3</RandomSpellsCount>
+						<RelicArtifactsCount>1</RelicArtifactsCount>
+						<RandomSpellsCount>1</RandomSpellsCount>
 						<RandomSpellsLevel>5</RandomSpellsLevel>
 					</RewardMin>
 					<RewardMax>
@@ -3797,12 +3472,79 @@
 							<Crystal>0</Crystal>
 							<Sulfur>0</Sulfur>
 							<Gem>0</Gem>
-							<Gold>20000</Gold>
+							<Gold>50000</Gold>
 						</Money>
 						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>4</MajorArtifactsCount>
-						<RelicArtifactsCount>2</RelicArtifactsCount>
-						<RandomSpellsCount>3</RandomSpellsCount>
+						<MajorArtifactsCount>3</MajorArtifactsCount>
+						<RelicArtifactsCount>1</RelicArtifactsCount>
+						<RandomSpellsCount>1</RandomSpellsCount>
+						<RandomSpellsLevel>5</RandomSpellsLevel>
+					</RewardMax>
+				</Item>
+				<Item>
+					<ChanceOfVariant>50</ChanceOfVariant>
+					<Creatures>
+						<Item>
+							<Creature1>CREATURE_SHADOW_DRAGON</Creature1>
+							<Creature2>CREATURE_UNKNOWN</Creature2>
+							<ChanceOfCreature1>100</ChanceOfCreature1>
+							<ChanceOfCreature2>0</ChanceOfCreature2>
+							<MinCount1>100</MinCount1>
+							<MaxCount1>100</MaxCount1>
+							<MinCount2>0</MinCount2>
+							<MaxCount2>0</MaxCount2>
+						</Item>
+						<Item>
+							<Creature1>CREATURE_BLACK_DRAGON</Creature1>
+							<Creature2>CREATURE_UNKNOWN</Creature2>
+							<ChanceOfCreature1>100</ChanceOfCreature1>
+							<ChanceOfCreature2>0</ChanceOfCreature2>
+							<MinCount1>50</MinCount1>
+							<MaxCount1>50</MaxCount1>
+							<MinCount2>0</MinCount2>
+							<MaxCount2>0</MaxCount2>
+						</Item>
+						<Item>
+							<Creature1>CREATURE_RED_DRAGON</Creature1>
+							<Creature2>CREATURE_UNKNOWN</Creature2>
+							<ChanceOfCreature1>100</ChanceOfCreature1>
+							<ChanceOfCreature2>0</ChanceOfCreature2>
+							<MinCount1>50</MinCount1>
+							<MaxCount1>50</MaxCount1>
+							<MinCount2>0</MinCount2>
+							<MaxCount2>0</MaxCount2>
+						</Item>
+					</Creatures>
+					<RewardMin>
+						<Money>
+							<Wood>0</Wood>
+							<Ore>0</Ore>
+							<Mercury>0</Mercury>
+							<Crystal>0</Crystal>
+							<Sulfur>0</Sulfur>
+							<Gem>0</Gem>
+							<Gold>50000</Gold>
+						</Money>
+						<MinorArtifactsCount>0</MinorArtifactsCount>
+						<MajorArtifactsCount>3</MajorArtifactsCount>
+						<RelicArtifactsCount>1</RelicArtifactsCount>
+						<RandomSpellsCount>1</RandomSpellsCount>
+						<RandomSpellsLevel>5</RandomSpellsLevel>
+					</RewardMin>
+					<RewardMax>
+						<Money>
+							<Wood>0</Wood>
+							<Ore>0</Ore>
+							<Mercury>0</Mercury>
+							<Crystal>0</Crystal>
+							<Sulfur>0</Sulfur>
+							<Gem>0</Gem>
+							<Gold>50000</Gold>
+						</Money>
+						<MinorArtifactsCount>0</MinorArtifactsCount>
+						<MajorArtifactsCount>3</MajorArtifactsCount>
+						<RelicArtifactsCount>1</RelicArtifactsCount>
+						<RandomSpellsCount>1</RandomSpellsCount>
 						<RandomSpellsLevel>5</RandomSpellsLevel>
 					</RewardMax>
 				</Item>
@@ -3816,15 +3558,15 @@
 		<BankElementalsStockpile>
 			<Variants>
 				<Item>
-					<ChanceOfVariant>30</ChanceOfVariant>
+					<ChanceOfVariant>90</ChanceOfVariant>
 					<Creatures>
 						<Item>
 							<Creature1>CREATURE_FIRE_ELEMENTAL</Creature1>
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>5</MinCount1>
-							<MaxCount1>5</MaxCount1>
+							<MinCount1>250</MinCount1>
+							<MaxCount1>250</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
@@ -3833,8 +3575,8 @@
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>5</MinCount1>
-							<MaxCount1>5</MaxCount1>
+							<MinCount1>250</MinCount1>
+							<MaxCount1>250</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
@@ -3843,8 +3585,8 @@
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>5</MinCount1>
-							<MaxCount1>5</MaxCount1>
+							<MinCount1>250</MinCount1>
+							<MaxCount1>250</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
@@ -3853,186 +3595,16 @@
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>5</MinCount1>
-							<MaxCount1>5</MaxCount1>
+							<MinCount1>250</MinCount1>
+							<MaxCount1>250</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
 					</Creatures>
 					<RewardMin>
 						<Money>
-							<Wood>4</Wood>
-							<Ore>4</Ore>
-							<Mercury>4</Mercury>
-							<Crystal>4</Crystal>
-							<Sulfur>4</Sulfur>
-							<Gem>4</Gem>
-							<Gold>0</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMin>
-					<RewardMax>
-						<Money>
-							<Wood>4</Wood>
-							<Ore>4</Ore>
-							<Mercury>4</Mercury>
-							<Crystal>4</Crystal>
-							<Sulfur>4</Sulfur>
-							<Gem>4</Gem>
-							<Gold>0</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMax>
-				</Item>
-				<Item>
-					<ChanceOfVariant>30</ChanceOfVariant>
-					<Creatures>
-						<Item>
-							<Creature1>CREATURE_FIRE_ELEMENTAL</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>10</MinCount1>
-							<MaxCount1>10</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_AIR_ELEMENTAL</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>10</MinCount1>
-							<MaxCount1>10</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_WATER_ELEMENTAL</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>10</MinCount1>
-							<MaxCount1>10</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_EARTH_ELEMENTAL</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>10</MinCount1>
-							<MaxCount1>10</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-					</Creatures>
-					<RewardMin>
-						<Money>
-							<Wood>6</Wood>
-							<Ore>6</Ore>
-							<Mercury>6</Mercury>
-							<Crystal>6</Crystal>
-							<Sulfur>6</Sulfur>
-							<Gem>6</Gem>
-							<Gold>0</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMin>
-					<RewardMax>
-						<Money>
-							<Wood>6</Wood>
-							<Ore>6</Ore>
-							<Mercury>6</Mercury>
-							<Crystal>6</Crystal>
-							<Sulfur>6</Sulfur>
-							<Gem>6</Gem>
-							<Gold>0</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMax>
-				</Item>
-				<Item>
-					<ChanceOfVariant>30</ChanceOfVariant>
-					<Creatures>
-						<Item>
-							<Creature1>CREATURE_FIRE_ELEMENTAL</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>15</MinCount1>
-							<MaxCount1>15</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_AIR_ELEMENTAL</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>15</MinCount1>
-							<MaxCount1>15</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_WATER_ELEMENTAL</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>15</MinCount1>
-							<MaxCount1>15</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_EARTH_ELEMENTAL</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>15</MinCount1>
-							<MaxCount1>15</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-					</Creatures>
-					<RewardMin>
-						<Money>
-							<Wood>8</Wood>
-							<Ore>8</Ore>
-							<Mercury>8</Mercury>
-							<Crystal>8</Crystal>
-							<Sulfur>8</Sulfur>
-							<Gem>10</Gem>
-							<Gold>0</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMin>
-					<RewardMax>
-						<Money>
-							<Wood>10</Wood>
-							<Ore>10</Ore>
+							<Wood>0</Wood>
+							<Ore>0</Ore>
 							<Mercury>10</Mercury>
 							<Crystal>10</Crystal>
 							<Sulfur>10</Sulfur>
@@ -4041,86 +3613,82 @@
 						</Money>
 						<MinorArtifactsCount>0</MinorArtifactsCount>
 						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMax>
-				</Item>
-				<Item>
-					<ChanceOfVariant>10</ChanceOfVariant>
-					<Creatures>
-						<Item>
-							<Creature1>CREATURE_FIRE_ELEMENTAL</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>20</MinCount1>
-							<MaxCount1>20</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_AIR_ELEMENTAL</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>20</MinCount1>
-							<MaxCount1>20</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_WATER_ELEMENTAL</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>20</MinCount1>
-							<MaxCount1>20</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_EARTH_ELEMENTAL</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>20</MinCount1>
-							<MaxCount1>20</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-					</Creatures>
-					<RewardMin>
+						<RelicArtifactsCount>1</RelicArtifactsCount>
+						<RandomSpellsCount>2</RandomSpellsCount>
+						<RandomSpellsLevel>3</RandomSpellsLevel>
+					</RewardMin>
+					<RewardMax>
 						<Money>
-							<Wood>10</Wood>
-							<Ore>10</Ore>
+							<Wood>0</Wood>
+							<Ore>0</Ore>
 							<Mercury>10</Mercury>
 							<Crystal>10</Crystal>
 							<Sulfur>10</Sulfur>
 							<Gem>10</Gem>
 							<Gold>0</Gold>
 						</Money>
-						<MinorArtifactsCount>1</MinorArtifactsCount>
+						<MinorArtifactsCount>0</MinorArtifactsCount>
 						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
+						<RelicArtifactsCount>1</RelicArtifactsCount>
+						<RandomSpellsCount>2</RandomSpellsCount>
+						<RandomSpellsLevel>3</RandomSpellsLevel>
+					</RewardMax>
+				</Item>
+				<Item>
+					<ChanceOfVariant>30</ChanceOfVariant>
+					<Creatures>
+						<Item>
+							<Creature1>CREATURE_LAVA_DRAGON</Creature1>
+							<Creature2>CREATURE_UNKNOWN</Creature2>
+							<ChanceOfCreature1>100</ChanceOfCreature1>
+							<ChanceOfCreature2>0</ChanceOfCreature2>
+							<MinCount1>100</MinCount1>
+							<MaxCount1>100</MaxCount1>
+							<MinCount2>0</MinCount2>
+							<MaxCount2>0</MaxCount2>
+						</Item>
+						<Item>
+							<Creature1>CREATURE_STORM_LORD</Creature1>
+							<Creature2>CREATURE_UNKNOWN</Creature2>
+							<ChanceOfCreature1>100</ChanceOfCreature1>
+							<ChanceOfCreature2>0</ChanceOfCreature2>
+							<MinCount1>100</MinCount1>
+							<MaxCount1>100</MaxCount1>
+							<MinCount2>0</MinCount2>
+							<MaxCount2>0</MaxCount2>
+						</Item>
+					</Creatures>
+					<RewardMin>
+						<Money>
+							<Wood>0</Wood>
+							<Ore>0</Ore>
+							<Mercury>10</Mercury>
+							<Crystal>10</Crystal>
+							<Sulfur>10</Sulfur>
+							<Gem>10</Gem>
+							<Gold>0</Gold>
+						</Money>
+						<MinorArtifactsCount>0</MinorArtifactsCount>
+						<MajorArtifactsCount>0</MajorArtifactsCount>
+						<RelicArtifactsCount>1</RelicArtifactsCount>
+						<RandomSpellsCount>2</RandomSpellsCount>
+						<RandomSpellsLevel>3</RandomSpellsLevel>
 					</RewardMin>
 					<RewardMax>
 						<Money>
-							<Wood>12</Wood>
-							<Ore>12</Ore>
-							<Mercury>12</Mercury>
-							<Crystal>12</Crystal>
-							<Sulfur>12</Sulfur>
-							<Gem>12</Gem>
+							<Wood>0</Wood>
+							<Ore>0</Ore>
+							<Mercury>10</Mercury>
+							<Crystal>10</Crystal>
+							<Sulfur>10</Sulfur>
+							<Gem>10</Gem>
 							<Gold>0</Gold>
 						</Money>
-						<MinorArtifactsCount>1</MinorArtifactsCount>
+						<MinorArtifactsCount>0</MinorArtifactsCount>
 						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
+						<RelicArtifactsCount>1</RelicArtifactsCount>
+						<RandomSpellsCount>2</RandomSpellsCount>
+						<RandomSpellsLevel>3</RandomSpellsLevel>
 					</RewardMax>
 				</Item>
 			</Variants>
@@ -4189,192 +3757,11 @@
 						<RandomSpellsLevel>1</RandomSpellsLevel>
 					</RewardMax>
 				</Item>
-				<Item>
-					<ChanceOfVariant>30</ChanceOfVariant>
-					<Creatures>
-						<Item>
-							<Creature1>CREATURE_GHOST</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>1</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>15</MinCount1>
-							<MaxCount1>15</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_MANES</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>1</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>15</MinCount1>
-							<MaxCount1>15</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-					</Creatures>
-					<RewardMin>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>3000</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMin>
-					<RewardMax>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>3000</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMax>
-				</Item>
-				<Item>
-					<ChanceOfVariant>30</ChanceOfVariant>
-					<Creatures>
-						<Item>
-							<Creature1>CREATURE_GHOST</Creature1>
-							<Creature2>CREATURE_WALKING_DEAD</Creature2>
-							<ChanceOfCreature1>50</ChanceOfCreature1>
-							<ChanceOfCreature2>50</ChanceOfCreature2>
-							<MinCount1>25</MinCount1>
-							<MaxCount1>25</MaxCount1>
-							<MinCount2>75</MinCount2>
-							<MaxCount2>75</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_SKELETON</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>1</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>15</MinCount1>
-							<MaxCount1>15</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-					</Creatures>
-					<RewardMin>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>5000</Gold>
-						</Money>
-						<MinorArtifactsCount>1</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMin>
-					<RewardMax>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>5000</Gold>
-						</Money>
-						<MinorArtifactsCount>1</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMax>
-				</Item>
-				<Item>
-					<ChanceOfVariant>10</ChanceOfVariant>
-					<Creatures>
-						<Item>
-							<Creature1>CREATURE_GHOST</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>1</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>15</MinCount1>
-							<MaxCount1>15</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_MANES</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>1</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>21</MinCount1>
-							<MaxCount1>21</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_WIGHT</Creature1>
-							<Creature2>CREATURE_WRAITH</Creature2>
-							<ChanceOfCreature1>50</ChanceOfCreature1>
-							<ChanceOfCreature2>50</ChanceOfCreature2>
-							<MinCount1>4</MinCount1>
-							<MaxCount1>4</MaxCount1>
-							<MinCount2>2</MinCount2>
-							<MaxCount2>2</MaxCount2>
-						</Item>
-					</Creatures>
-					<RewardMin>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>5000</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>1</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMin>
-					<RewardMax>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>5000</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>1</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMax>
-				</Item>
 			</Variants>
-			<RechargesCount>0</RechargesCount>
-			<DaysForRecharge>0</DaysForRecharge>
+			<RechargesCount>-1</RechargesCount>
+			<DaysForRecharge>28</DaysForRecharge>
 			<LuckLossOnEmpty>0</LuckLossOnEmpty>
-			<MoraleLossOnEmpty>1</MoraleLossOnEmpty>
+			<MoraleLossOnEmpty>0</MoraleLossOnEmpty>
 			<SearchDialog>1</SearchDialog>
 		</BankDemolish>
 		<BankUnkempt>
@@ -4436,186 +3823,25 @@
 						<RandomSpellsLevel>1</RandomSpellsLevel>
 					</RewardMax>
 				</Item>
-				<Item>
-					<ChanceOfVariant>25</ChanceOfVariant>
-					<Creatures>
-						<Item>
-							<Creature1>CREATURE_WATER_ELEMENTAL</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>1</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>15</MinCount1>
-							<MaxCount1>15</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-					</Creatures>
-					<RewardMin>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>3000</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>1</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMin>
-					<RewardMax>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>3000</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>1</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMax>
-				</Item>
-				<Item>
-					<ChanceOfVariant>25</ChanceOfVariant>
-					<Creatures>
-						<Item>
-							<Creature1>CREATURE_AIR_ELEMENTAL</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>1</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>35</MinCount1>
-							<MaxCount1>40</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-					</Creatures>
-					<RewardMin>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>4000</Gold>
-						</Money>
-						<MinorArtifactsCount>1</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMin>
-					<RewardMax>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>4000</Gold>
-						</Money>
-						<MinorArtifactsCount>1</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMax>
-				</Item>
-				<Item>
-					<ChanceOfVariant>25</ChanceOfVariant>
-					<Creatures>
-						<Item>
-							<Creature1>CREATURE_SCOUT</Creature1>
-							<Creature2>CREATURE_ASSASSIN</Creature2>
-							<ChanceOfCreature1>70</ChanceOfCreature1>
-							<ChanceOfCreature2>30</ChanceOfCreature2>
-							<MinCount1>40</MinCount1>
-							<MaxCount1>40</MaxCount1>
-							<MinCount2>30</MinCount2>
-							<MaxCount2>30</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_HYDRA</Creature1>
-							<Creature2>CREATURE_MATRON</Creature2>
-							<ChanceOfCreature1>50</ChanceOfCreature1>
-							<ChanceOfCreature2>50</ChanceOfCreature2>
-							<MinCount1>6</MinCount1>
-							<MaxCount1>6</MaxCount1>
-							<MinCount2>2</MinCount2>
-							<MaxCount2>2</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_SCOUT</Creature1>
-							<Creature2>CREATURE_ASSASSIN</Creature2>
-							<ChanceOfCreature1>70</ChanceOfCreature1>
-							<ChanceOfCreature2>30</ChanceOfCreature2>
-							<MinCount1>40</MinCount1>
-							<MaxCount1>40</MaxCount1>
-							<MinCount2>30</MinCount2>
-							<MaxCount2>30</MaxCount2>
-						</Item>
-					</Creatures>
-					<RewardMin>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>5000</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>1</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMin>
-					<RewardMax>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>5000</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>1</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMax>
-				</Item>
 			</Variants>
-			<RechargesCount>0</RechargesCount>
-			<DaysForRecharge>0</DaysForRecharge>
+			<RechargesCount>-1</RechargesCount>
+			<DaysForRecharge>28</DaysForRecharge>
 			<LuckLossOnEmpty>0</LuckLossOnEmpty>
-			<MoraleLossOnEmpty>1</MoraleLossOnEmpty>
+			<MoraleLossOnEmpty>0</MoraleLossOnEmpty>
 			<SearchDialog>1</SearchDialog>
 		</BankUnkempt>
 		<BankDwarvenTreasure>
 			<Variants>
 				<Item>
-					<ChanceOfVariant>34</ChanceOfVariant>
+					<ChanceOfVariant>90</ChanceOfVariant>
 					<Creatures>
 						<Item>
 							<Creature1>CREATURE_STOUT_DEFENDER</Creature1>
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>25</MinCount1>
-							<MaxCount1>25</MaxCount1>
+							<MinCount1>1500</MinCount1>
+							<MaxCount1>1500</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
@@ -4624,8 +3850,8 @@
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>25</MinCount1>
-							<MaxCount1>25</MaxCount1>
+							<MinCount1>1500</MinCount1>
+							<MaxCount1>1500</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
@@ -4634,8 +3860,8 @@
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>5</MinCount1>
-							<MaxCount1>5</MaxCount1>
+							<MinCount1>500</MinCount1>
+							<MaxCount1>500</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
@@ -4644,8 +3870,18 @@
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>5</MinCount1>
-							<MaxCount1>5</MaxCount1>
+							<MinCount1>500</MinCount1>
+							<MaxCount1>500</MaxCount1>
+							<MinCount2>0</MinCount2>
+							<MaxCount2>0</MaxCount2>
+						</Item>
+						<Item>
+							<Creature1>CREATURE_FLAME_KEEPER</Creature1>
+							<Creature2>CREATURE_UNKNOWN</Creature2>
+							<ChanceOfCreature1>100</ChanceOfCreature1>
+							<ChanceOfCreature2>0</ChanceOfCreature2>
+							<MinCount1>250</MinCount1>
+							<MaxCount1>250</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
@@ -4655,74 +3891,64 @@
 							<Wood>0</Wood>
 							<Ore>0</Ore>
 							<Mercury>0</Mercury>
-							<Crystal>5</Crystal>
+							<Crystal>20</Crystal>
 							<Sulfur>0</Sulfur>
-							<Gem>5</Gem>
-							<Gold>1000</Gold>
+							<Gem>0</Gem>
+							<Gold>10000</Gold>
 						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
+						<MinorArtifactsCount>3</MinorArtifactsCount>
+						<MajorArtifactsCount>1</MajorArtifactsCount>
 						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
+						<RandomSpellsCount>1</RandomSpellsCount>
+						<RandomSpellsLevel>4</RandomSpellsLevel>
 					</RewardMin>
 					<RewardMax>
 						<Money>
 							<Wood>0</Wood>
 							<Ore>0</Ore>
 							<Mercury>0</Mercury>
-							<Crystal>5</Crystal>
+							<Crystal>20</Crystal>
 							<Sulfur>0</Sulfur>
-							<Gem>5</Gem>
-							<Gold>1000</Gold>
+							<Gem>0</Gem>
+							<Gold>10000</Gold>
 						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
+						<MinorArtifactsCount>3</MinorArtifactsCount>
+						<MajorArtifactsCount>1</MajorArtifactsCount>
 						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
+						<RandomSpellsCount>1</RandomSpellsCount>
+						<RandomSpellsLevel>4</RandomSpellsLevel>
 					</RewardMax>
 				</Item>
 				<Item>
-					<ChanceOfVariant>33</ChanceOfVariant>
+					<ChanceOfVariant>10</ChanceOfVariant>
 					<Creatures>
 						<Item>
-							<Creature1>CREATURE_STOUT_DEFENDER</Creature1>
+							<Creature1>CREATURE_BERSERKER</Creature1>
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>50</MinCount1>
-							<MaxCount1>50</MaxCount1>
+							<MinCount1>1000</MinCount1>
+							<MaxCount1>1000</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
 						<Item>
-							<Creature1>CREATURE_STOUT_DEFENDER</Creature1>
+							<Creature1>CREATURE_BATTLE_RAGER</Creature1>
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>50</MinCount1>
-							<MaxCount1>50</MaxCount1>
+							<MinCount1>1000</MinCount1>
+							<MaxCount1>1000</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
 						<Item>
-							<Creature1>CREATURE_AXE_THROWER</Creature1>
+							<Creature1>CREATURE_THANE</Creature1>
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>10</MinCount1>
-							<MaxCount1>10</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_AXE_THROWER</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>10</MinCount1>
-							<MaxCount1>10</MaxCount1>
+							<MinCount1>300</MinCount1>
+							<MaxCount1>300</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
@@ -4732,124 +3958,37 @@
 							<Wood>0</Wood>
 							<Ore>0</Ore>
 							<Mercury>0</Mercury>
-							<Crystal>10</Crystal>
+							<Crystal>20</Crystal>
 							<Sulfur>0</Sulfur>
-							<Gem>10</Gem>
-							<Gold>2500</Gold>
+							<Gem>0</Gem>
+							<Gold>10000</Gold>
 						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
+						<MinorArtifactsCount>3</MinorArtifactsCount>
+						<MajorArtifactsCount>1</MajorArtifactsCount>
 						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
+						<RandomSpellsCount>1</RandomSpellsCount>
+						<RandomSpellsLevel>4</RandomSpellsLevel>
 					</RewardMin>
 					<RewardMax>
 						<Money>
 							<Wood>0</Wood>
 							<Ore>0</Ore>
 							<Mercury>0</Mercury>
-							<Crystal>10</Crystal>
+							<Crystal>20</Crystal>
 							<Sulfur>0</Sulfur>
-							<Gem>10</Gem>
-							<Gold>2500</Gold>
+							<Gem>0</Gem>
+							<Gold>10000</Gold>
 						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
+						<MinorArtifactsCount>3</MinorArtifactsCount>
+						<MajorArtifactsCount>1</MajorArtifactsCount>
 						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMax>
-				</Item>
-				<Item>
-					<ChanceOfVariant>33</ChanceOfVariant>
-					<Creatures>
-						<Item>
-							<Creature1>CREATURE_STOUT_DEFENDER</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>75</MinCount1>
-							<MaxCount1>75</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_STOUT_DEFENDER</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>75</MinCount1>
-							<MaxCount1>75</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_AXE_THROWER</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>15</MinCount1>
-							<MaxCount1>15</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_AXE_THROWER</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>15</MinCount1>
-							<MaxCount1>15</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_WARLORD</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>5</MinCount1>
-							<MaxCount1>5</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-					</Creatures>
-					<RewardMin>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>15</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>15</Gem>
-							<Gold>5000</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMin>
-					<RewardMax>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>15</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>15</Gem>
-							<Gold>5000</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
+						<RandomSpellsCount>1</RandomSpellsCount>
+						<RandomSpellsLevel>4</RandomSpellsLevel>
 					</RewardMax>
 				</Item>
 			</Variants>
-			<RechargesCount>0</RechargesCount>
-			<DaysForRecharge>0</DaysForRecharge>
+			<RechargesCount>-1</RechargesCount>
+			<DaysForRecharge>28</DaysForRecharge>
 			<LuckLossOnEmpty>0</LuckLossOnEmpty>
 			<MoraleLossOnEmpty>0</MoraleLossOnEmpty>
 			<SearchDialog>2</SearchDialog>
@@ -4857,112 +3996,25 @@
 		<BankBloodTemple>
 			<Variants>
 				<Item>
-					<ChanceOfVariant>34</ChanceOfVariant>
+					<ChanceOfVariant>90</ChanceOfVariant>
 					<Creatures>
 						<Item>
 							<Creature1>CREATURE_BLOOD_WITCH</Creature1>
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>20</MinCount1>
-							<MaxCount1>20</MaxCount1>
+							<MinCount1>3000</MinCount1>
+							<MaxCount1>3000</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
 						<Item>
-							<Creature1>CREATURE_BLOOD_WITCH</Creature1>
+							<Creature1>CREATURE_RAVAGER</Creature1>
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>20</MinCount1>
-							<MaxCount1>20</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_MATRON</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>5</MinCount1>
-							<MaxCount1>5</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-					</Creatures>
-					<RewardMin>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>2500</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMin>
-					<RewardMax>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>2500</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMax>
-				</Item>
-				<Item>
-					<ChanceOfVariant>33</ChanceOfVariant>
-					<Creatures>
-						<Item>
-							<Creature1>CREATURE_BLOOD_WITCH</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>40</MinCount1>
-							<MaxCount1>40</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_BLOOD_WITCH</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>40</MinCount1>
-							<MaxCount1>40</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_MATRON</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>5</MinCount1>
-							<MaxCount1>5</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_MATRON</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>5</MinCount1>
-							<MaxCount1>5</MaxCount1>
+							<MinCount1>500</MinCount1>
+							<MaxCount1>500</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
@@ -4971,8 +4023,8 @@
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>5</MinCount1>
-							<MaxCount1>5</MaxCount1>
+							<MinCount1>500</MinCount1>
+							<MaxCount1>500</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
@@ -4983,15 +4035,15 @@
 							<Ore>0</Ore>
 							<Mercury>0</Mercury>
 							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
+							<Sulfur>20</Sulfur>
 							<Gem>0</Gem>
-							<Gold>4000</Gold>
+							<Gold>10000</Gold>
 						</Money>
-						<MinorArtifactsCount>1</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
+						<MinorArtifactsCount>3</MinorArtifactsCount>
+						<MajorArtifactsCount>1</MajorArtifactsCount>
 						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
+						<RandomSpellsCount>1</RandomSpellsCount>
+						<RandomSpellsLevel>4</RandomSpellsLevel>
 					</RewardMin>
 					<RewardMax>
 						<Money>
@@ -4999,67 +4051,47 @@
 							<Ore>0</Ore>
 							<Mercury>0</Mercury>
 							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
+							<Sulfur>20</Sulfur>
 							<Gem>0</Gem>
-							<Gold>4000</Gold>
+							<Gold>10000</Gold>
 						</Money>
-						<MinorArtifactsCount>1</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
+						<MinorArtifactsCount>3</MinorArtifactsCount>
+						<MajorArtifactsCount>1</MajorArtifactsCount>
 						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
+						<RandomSpellsCount>1</RandomSpellsCount>
+						<RandomSpellsLevel>4</RandomSpellsLevel>
 					</RewardMax>
 				</Item>
 				<Item>
-					<ChanceOfVariant>33</ChanceOfVariant>
+					<ChanceOfVariant>10</ChanceOfVariant>
 					<Creatures>
 						<Item>
-							<Creature1>CREATURE_BLOOD_WITCH</Creature1>
+							<Creature1>CREATURE_MINOTAUR_KING</Creature1>
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>60</MinCount1>
-							<MaxCount1>60</MaxCount1>
+							<MinCount1>1000</MinCount1>
+							<MaxCount1>1000</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
 						<Item>
-							<Creature1>CREATURE_BLOOD_WITCH</Creature1>
+							<Creature1>CREATURE_MINOTAUR_CAPTAIN</Creature1>
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>60</MinCount1>
-							<MaxCount1>60</MaxCount1>
+							<MinCount1>1000</MinCount1>
+							<MaxCount1>1000</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
 						<Item>
-							<Creature1>CREATURE_MATRON</Creature1>
+							<Creature1>CREATURE_CHAOS_HYDRA</Creature1>
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>10</MinCount1>
-							<MaxCount1>10</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_MATRON</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>10</MinCount1>
-							<MaxCount1>10</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_MATRIARCH</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>10</MinCount1>
-							<MaxCount1>10</MaxCount1>
+							<MinCount1>250</MinCount1>
+							<MaxCount1>250</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
@@ -5070,15 +4102,15 @@
 							<Ore>0</Ore>
 							<Mercury>0</Mercury>
 							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
+							<Sulfur>20</Sulfur>
 							<Gem>0</Gem>
-							<Gold>5500</Gold>
+							<Gold>10000</Gold>
 						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
+						<MinorArtifactsCount>3</MinorArtifactsCount>
 						<MajorArtifactsCount>1</MajorArtifactsCount>
 						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
+						<RandomSpellsCount>1</RandomSpellsCount>
+						<RandomSpellsLevel>4</RandomSpellsLevel>
 					</RewardMin>
 					<RewardMax>
 						<Money>
@@ -5086,20 +4118,20 @@
 							<Ore>0</Ore>
 							<Mercury>0</Mercury>
 							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
+							<Sulfur>20</Sulfur>
 							<Gem>0</Gem>
-							<Gold>5500</Gold>
+							<Gold>10000</Gold>
 						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
+						<MinorArtifactsCount>3</MinorArtifactsCount>
 						<MajorArtifactsCount>1</MajorArtifactsCount>
 						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
+						<RandomSpellsCount>1</RandomSpellsCount>
+						<RandomSpellsLevel>4</RandomSpellsLevel>
 					</RewardMax>
 				</Item>
 			</Variants>
-			<RechargesCount>0</RechargesCount>
-			<DaysForRecharge>0</DaysForRecharge>
+			<RechargesCount>-1</RechargesCount>
+			<DaysForRecharge>28</DaysForRecharge>
 			<LuckLossOnEmpty>0</LuckLossOnEmpty>
 			<MoraleLossOnEmpty>0</MoraleLossOnEmpty>
 			<SearchDialog>2</SearchDialog>
@@ -5107,15 +4139,15 @@
 		<BankTreantThicket>
 			<Variants>
 				<Item>
-					<ChanceOfVariant>34</ChanceOfVariant>
+					<ChanceOfVariant>90</ChanceOfVariant>
 					<Creatures>
 						<Item>
 							<Creature1>CREATURE_TREANT</Creature1>
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>15</MinCount1>
-							<MaxCount1>15</MaxCount1>
+							<MinCount1>200</MinCount1>
+							<MaxCount1>200</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
@@ -5124,105 +4156,28 @@
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>15</MinCount1>
-							<MaxCount1>15</MaxCount1>
+							<MinCount1>200</MinCount1>
+							<MaxCount1>200</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
 						<Item>
-							<Creature1>CREATURE_WOOD_ELF</Creature1>
+							<Creature1>CREATURE_DRYAD</Creature1>
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>30</MinCount1>
-							<MaxCount1>30</MaxCount1>
+							<MinCount1>1200</MinCount1>
+							<MaxCount1>1200</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
 						<Item>
-							<Creature1>CREATURE_WOOD_ELF</Creature1>
+							<Creature1>CREATURE_DRYAD</Creature1>
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>30</MinCount1>
-							<MaxCount1>30</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-					</Creatures>
-					<RewardMin>
-						<Money>
-							<Wood>10</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>5000</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMin>
-					<RewardMax>
-						<Money>
-							<Wood>10</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>5000</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMax>
-				</Item>
-				<Item>
-					<ChanceOfVariant>33</ChanceOfVariant>
-					<Creatures>
-						<Item>
-							<Creature1>CREATURE_TREANT_GUARDIAN</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>15</MinCount1>
-							<MaxCount1>15</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_TREANT_GUARDIAN</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>15</MinCount1>
-							<MaxCount1>15</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_WOOD_ELF</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>30</MinCount1>
-							<MaxCount1>30</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_WOOD_ELF</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>30</MinCount1>
-							<MaxCount1>30</MaxCount1>
+							<MinCount1>1200</MinCount1>
+							<MaxCount1>1200</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
@@ -5235,13 +4190,13 @@
 							<Crystal>0</Crystal>
 							<Sulfur>0</Sulfur>
 							<Gem>0</Gem>
-							<Gold>7500</Gold>
+							<Gold>10000</Gold>
 						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
+						<MinorArtifactsCount>3</MinorArtifactsCount>
+						<MajorArtifactsCount>1</MajorArtifactsCount>
 						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
+						<RandomSpellsCount>1</RandomSpellsCount>
+						<RandomSpellsLevel>4</RandomSpellsLevel>
 					</RewardMin>
 					<RewardMax>
 						<Money>
@@ -5251,25 +4206,25 @@
 							<Crystal>0</Crystal>
 							<Sulfur>0</Sulfur>
 							<Gem>0</Gem>
-							<Gold>7500</Gold>
+							<Gold>10000</Gold>
 						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
+						<MinorArtifactsCount>3</MinorArtifactsCount>
+						<MajorArtifactsCount>1</MajorArtifactsCount>
 						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
+						<RandomSpellsCount>1</RandomSpellsCount>
+						<RandomSpellsLevel>4</RandomSpellsLevel>
 					</RewardMax>
 				</Item>
 				<Item>
-					<ChanceOfVariant>33</ChanceOfVariant>
+					<ChanceOfVariant>10</ChanceOfVariant>
 					<Creatures>
 						<Item>
 							<Creature1>CREATURE_TREANT_GUARDIAN</Creature1>
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>20</MinCount1>
-							<MaxCount1>20</MaxCount1>
+							<MinCount1>100</MinCount1>
+							<MaxCount1>100</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
@@ -5278,8 +4233,8 @@
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>20</MinCount1>
-							<MaxCount1>20</MaxCount1>
+							<MinCount1>100</MinCount1>
+							<MaxCount1>100</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
@@ -5288,18 +4243,8 @@
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>30</MinCount1>
-							<MaxCount1>30</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_GRAND_ELF</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>30</MinCount1>
-							<MaxCount1>30</MaxCount1>
+							<MinCount1>1000</MinCount1>
+							<MaxCount1>1000</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
@@ -5308,15 +4253,15 @@
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>10</MinCount1>
-							<MaxCount1>10</MaxCount1>
+							<MinCount1>500</MinCount1>
+							<MaxCount1>500</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
 					</Creatures>
 					<RewardMin>
 						<Money>
-							<Wood>30</Wood>
+							<Wood>20</Wood>
 							<Ore>0</Ore>
 							<Mercury>0</Mercury>
 							<Crystal>0</Crystal>
@@ -5324,15 +4269,15 @@
 							<Gem>0</Gem>
 							<Gold>10000</Gold>
 						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
+						<MinorArtifactsCount>3</MinorArtifactsCount>
+						<MajorArtifactsCount>1</MajorArtifactsCount>
 						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
+						<RandomSpellsCount>1</RandomSpellsCount>
+						<RandomSpellsLevel>4</RandomSpellsLevel>
 					</RewardMin>
 					<RewardMax>
 						<Money>
-							<Wood>30</Wood>
+							<Wood>20</Wood>
 							<Ore>0</Ore>
 							<Mercury>0</Mercury>
 							<Crystal>0</Crystal>
@@ -5340,16 +4285,16 @@
 							<Gem>0</Gem>
 							<Gold>10000</Gold>
 						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
+						<MinorArtifactsCount>3</MinorArtifactsCount>
+						<MajorArtifactsCount>1</MajorArtifactsCount>
 						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
+						<RandomSpellsCount>1</RandomSpellsCount>
+						<RandomSpellsLevel>4</RandomSpellsLevel>
 					</RewardMax>
 				</Item>
 			</Variants>
-			<RechargesCount>0</RechargesCount>
-			<DaysForRecharge>0</DaysForRecharge>
+			<RechargesCount>-1</RechargesCount>
+			<DaysForRecharge>28</DaysForRecharge>
 			<LuckLossOnEmpty>0</LuckLossOnEmpty>
 			<MoraleLossOnEmpty>0</MoraleLossOnEmpty>
 			<SearchDialog>2</SearchDialog>
@@ -5357,35 +4302,35 @@
 		<BankGargoyleStonevault>
 			<Variants>
 				<Item>
-					<ChanceOfVariant>34</ChanceOfVariant>
+					<ChanceOfVariant>90</ChanceOfVariant>
 					<Creatures>
 						<Item>
-							<Creature1>CREATURE_STONE_GARGOYLE</Creature1>
+							<Creature1>CREATURE_OBSIDIAN_GARGOYLE</Creature1>
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>20</MinCount1>
-							<MaxCount1>20</MaxCount1>
+							<MinCount1>2000</MinCount1>
+							<MaxCount1>2000</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
 						<Item>
-							<Creature1>CREATURE_STONE_GARGOYLE</Creature1>
+							<Creature1>CREATURE_OBSIDIAN_GARGOYLE</Creature1>
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>20</MinCount1>
-							<MaxCount1>20</MaxCount1>
+							<MinCount1>2000</MinCount1>
+							<MaxCount1>2000</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
 						<Item>
-							<Creature1>CREATURE_STONE_GARGOYLE</Creature1>
+							<Creature1>CREATURE_OBSIDIAN_GARGOYLE</Creature1>
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>20</MinCount1>
-							<MaxCount1>20</MaxCount1>
+							<MinCount1>2000</MinCount1>
+							<MaxCount1>2000</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
@@ -5393,76 +4338,46 @@
 					<RewardMin>
 						<Money>
 							<Wood>0</Wood>
-							<Ore>5</Ore>
+							<Ore>20</Ore>
 							<Mercury>0</Mercury>
 							<Crystal>0</Crystal>
 							<Sulfur>0</Sulfur>
 							<Gem>0</Gem>
-							<Gold>1000</Gold>
+							<Gold>10000</Gold>
 						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
+						<MinorArtifactsCount>3</MinorArtifactsCount>
+						<MajorArtifactsCount>1</MajorArtifactsCount>
 						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
+						<RandomSpellsCount>1</RandomSpellsCount>
+						<RandomSpellsLevel>4</RandomSpellsLevel>
 					</RewardMin>
 					<RewardMax>
 						<Money>
 							<Wood>0</Wood>
-							<Ore>5</Ore>
+							<Ore>20</Ore>
 							<Mercury>0</Mercury>
 							<Crystal>0</Crystal>
 							<Sulfur>0</Sulfur>
 							<Gem>0</Gem>
-							<Gold>1000</Gold>
+							<Gold>10000</Gold>
 						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
+						<MinorArtifactsCount>3</MinorArtifactsCount>
+						<MajorArtifactsCount>1</MajorArtifactsCount>
 						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
+						<RandomSpellsCount>1</RandomSpellsCount>
+						<RandomSpellsLevel>4</RandomSpellsLevel>
 					</RewardMax>
 				</Item>
 				<Item>
-					<ChanceOfVariant>33</ChanceOfVariant>
+					<ChanceOfVariant>10</ChanceOfVariant>
 					<Creatures>
 						<Item>
-							<Creature1>CREATURE_OBSIDIAN_GARGOYLE</Creature1>
+							<Creature1>CREATURE_MARBLE_GARGOYLE</Creature1>
 							<Creature2>CREATURE_UNKNOWN</Creature2>
 							<ChanceOfCreature1>100</ChanceOfCreature1>
 							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>30</MinCount1>
-							<MaxCount1>30</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_OBSIDIAN_GARGOYLE</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>30</MinCount1>
-							<MaxCount1>30</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_OBSIDIAN_GARGOYLE</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>30</MinCount1>
-							<MaxCount1>30</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_IRON_GOLEM</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>10</MinCount1>
-							<MaxCount1>10</MaxCount1>
+							<MinCount1>5000</MinCount1>
+							<MaxCount1>5000</MaxCount1>
 							<MinCount2>0</MinCount2>
 							<MaxCount2>0</MaxCount2>
 						</Item>
@@ -5470,116 +4385,39 @@
 					<RewardMin>
 						<Money>
 							<Wood>0</Wood>
-							<Ore>10</Ore>
+							<Ore>20</Ore>
 							<Mercury>0</Mercury>
 							<Crystal>0</Crystal>
 							<Sulfur>0</Sulfur>
 							<Gem>0</Gem>
-							<Gold>2000</Gold>
+							<Gold>10000</Gold>
 						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
+						<MinorArtifactsCount>3</MinorArtifactsCount>
+						<MajorArtifactsCount>1</MajorArtifactsCount>
 						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
+						<RandomSpellsCount>1</RandomSpellsCount>
+						<RandomSpellsLevel>4</RandomSpellsLevel>
 					</RewardMin>
 					<RewardMax>
 						<Money>
 							<Wood>0</Wood>
-							<Ore>10</Ore>
+							<Ore>20</Ore>
 							<Mercury>0</Mercury>
 							<Crystal>0</Crystal>
 							<Sulfur>0</Sulfur>
 							<Gem>0</Gem>
-							<Gold>2000</Gold>
+							<Gold>10000</Gold>
 						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
+						<MinorArtifactsCount>3</MinorArtifactsCount>
+						<MajorArtifactsCount>1</MajorArtifactsCount>
 						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMax>
-				</Item>
-				<Item>
-					<ChanceOfVariant>33</ChanceOfVariant>
-					<Creatures>
-						<Item>
-							<Creature1>CREATURE_OBSIDIAN_GARGOYLE</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>40</MinCount1>
-							<MaxCount1>40</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_OBSIDIAN_GARGOYLE</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>40</MinCount1>
-							<MaxCount1>40</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_OBSIDIAN_GARGOYLE</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>40</MinCount1>
-							<MaxCount1>40</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_STEEL_GOLEM</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>20</MinCount1>
-							<MaxCount1>20</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-					</Creatures>
-					<RewardMin>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>15</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>3000</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
-					</RewardMin>
-					<RewardMax>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>15</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>3000</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>0</MajorArtifactsCount>
-						<RelicArtifactsCount>0</RelicArtifactsCount>
-						<RandomSpellsCount>0</RandomSpellsCount>
-						<RandomSpellsLevel>1</RandomSpellsLevel>
+						<RandomSpellsCount>1</RandomSpellsCount>
+						<RandomSpellsLevel>4</RandomSpellsLevel>
 					</RewardMax>
 				</Item>
 			</Variants>
-			<RechargesCount>0</RechargesCount>
-			<DaysForRecharge>0</DaysForRecharge>
+			<RechargesCount>-1</RechargesCount>
+			<DaysForRecharge>28</DaysForRecharge>
 			<LuckLossOnEmpty>0</LuckLossOnEmpty>
 			<MoraleLossOnEmpty>0</MoraleLossOnEmpty>
 			<SearchDialog>2</SearchDialog>
@@ -5640,150 +4478,6 @@
 						<MajorArtifactsCount>3</MajorArtifactsCount>
 						<RelicArtifactsCount>1</RelicArtifactsCount>
 						<RandomSpellsCount>2</RandomSpellsCount>
-						<RandomSpellsLevel>5</RandomSpellsLevel>
-					</RewardMax>
-				</Item>
-				<Item>
-					<ChanceOfVariant>20</ChanceOfVariant>
-					<Creatures>
-						<Item>
-							<Creature1>CREATURE_GIANT</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>11</MinCount1>
-							<MaxCount1>11</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_TITAN</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>6</MinCount1>
-							<MaxCount1>6</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_WATER_ELEMENTAL</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>50</MinCount1>
-							<MaxCount1>50</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-					</Creatures>
-					<RewardMin>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>14000</Gold>
-						</Money>
-						<MinorArtifactsCount>1</MinorArtifactsCount>
-						<MajorArtifactsCount>2</MajorArtifactsCount>
-						<RelicArtifactsCount>1</RelicArtifactsCount>
-						<RandomSpellsCount>2</RandomSpellsCount>
-						<RandomSpellsLevel>4</RandomSpellsLevel>
-					</RewardMin>
-					<RewardMax>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>14000</Gold>
-						</Money>
-						<MinorArtifactsCount>3</MinorArtifactsCount>
-						<MajorArtifactsCount>2</MajorArtifactsCount>
-						<RelicArtifactsCount>1</RelicArtifactsCount>
-						<RandomSpellsCount>2</RandomSpellsCount>
-						<RandomSpellsLevel>5</RandomSpellsLevel>
-					</RewardMax>
-				</Item>
-				<Item>
-					<ChanceOfVariant>40</ChanceOfVariant>
-					<Creatures>
-						<Item>
-							<Creature1>CREATURE_GIANT</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>8</MinCount1>
-							<MaxCount1>8</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_WATER_ELEMENTAL</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>60</MinCount1>
-							<MaxCount1>60</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_TITAN</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>4</MinCount1>
-							<MaxCount1>4</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-						<Item>
-							<Creature1>CREATURE_WATER_ELEMENTAL</Creature1>
-							<Creature2>CREATURE_UNKNOWN</Creature2>
-							<ChanceOfCreature1>100</ChanceOfCreature1>
-							<ChanceOfCreature2>0</ChanceOfCreature2>
-							<MinCount1>40</MinCount1>
-							<MaxCount1>40</MaxCount1>
-							<MinCount2>0</MinCount2>
-							<MaxCount2>0</MaxCount2>
-						</Item>
-					</Creatures>
-					<RewardMin>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>20000</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>3</MajorArtifactsCount>
-						<RelicArtifactsCount>2</RelicArtifactsCount>
-						<RandomSpellsCount>3</RandomSpellsCount>
-						<RandomSpellsLevel>5</RandomSpellsLevel>
-					</RewardMin>
-					<RewardMax>
-						<Money>
-							<Wood>0</Wood>
-							<Ore>0</Ore>
-							<Mercury>0</Mercury>
-							<Crystal>0</Crystal>
-							<Sulfur>0</Sulfur>
-							<Gem>0</Gem>
-							<Gold>20000</Gold>
-						</Money>
-						<MinorArtifactsCount>0</MinorArtifactsCount>
-						<MajorArtifactsCount>4</MajorArtifactsCount>
-						<RelicArtifactsCount>2</RelicArtifactsCount>
-						<RandomSpellsCount>3</RandomSpellsCount>
 						<RandomSpellsLevel>5</RandomSpellsLevel>
 					</RewardMax>
 				</Item>
