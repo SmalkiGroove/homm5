@@ -41,7 +41,7 @@ function Routine_GenerateGoldPerScout(player, hero)
             amount = amount + GetHeroCreatures(hero, cr)
         end
     end
-    AddPlayer_Resource(player, hero, GOLD, amount)
+    AddPlayer_Resource(player, hero, GOLD, amount * mult)
 end
 
 function Routine_AddHeroManticores(player, hero)
@@ -60,6 +60,7 @@ function Routine_ConvertOverflowManaToExp(player, hero)
         for i,h in GetPlayerHeroes(player) do
             AddHero_StatAmount(player, h, STAT_EXPERIENCE, amount)
         end
+        ChangeHeroStat(hero, STAT_MANA_POINTS, -diff)
     end
 end
 
@@ -146,12 +147,12 @@ WEEKLY_TRIGGER_DUNGEON = {
     [H_KYTHRA] = NoneRoutine,
     [H_AGBETH] = NoneRoutine,
     [H_RANLETH] = NoneRoutine,
-    [H_DARKSTORM] = NoneRoutine,
+    [H_DARKSTORM] = Routine_HeroCallMinotaurs,
     [H_YRWANNA] = NoneRoutine,
     [H_VAYSHAN] = NoneRoutine,
     [H_THRALSAI] = NoneRoutine,
     [H_LETHOS] = NoneRoutine,
-    [H_ERUINA] = NoneRoutine,
+    [H_ERUINA] = Routine_AddRecruitsMatrons,
     [H_YRBETH] = NoneRoutine,
     [H_SYLSAI] = NoneRoutine,
     [H_SINITAR] = NoneRoutine,

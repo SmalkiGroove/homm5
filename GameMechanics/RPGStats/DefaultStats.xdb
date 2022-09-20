@@ -5058,7 +5058,7 @@
 						<BonusDescFileRef href=""/>
 					</Item>
 					<Item>
-						<HeroClass>HERO_CLASS_WARLOCK</HeroClass>
+						<HeroClass>HERO_CLASS_SORCERER</HeroClass>
 						<BonusDescFileRef href="ArtifactSets/Runic_Desc2_Warlock.txt"/>
 					</Item>
 				</CombinedHeroClassBonusesDescs>
