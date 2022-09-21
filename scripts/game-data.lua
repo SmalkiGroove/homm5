@@ -140,24 +140,24 @@ H_CALID = 'Calid2'                  -- fireball
 H_ASH = 'Ash'                       -- OFF
 
 -- dungeon
-H_SORGAL = 'Ferigl'                 --
-H_KYTHRA = 'Menel'                  --
-H_AGBETH = 'Agbeth'                 --
+H_SORGAL = 'Ferigl'                 -- lizard bite
+H_KYTHRA = 'Menel'                  -- border guard
+H_AGBETH = 'Agbeth'                 -- evasive
 H_RANLETH = 'Ranleth'               --
-H_DARKSTORM = 'Darkstorm'           --
-H_YRWANNA = 'Urunir'                --
-H_VAYSHAN = 'Ohtarig'               --
+H_DARKSTORM = 'Darkstorm'           -- minotaurs
+H_YRWANNA = 'Urunir'                -- blood witches
+H_VAYSHAN = 'Ohtarig'               -- scouts
 H_THRALSAI = 'Thralsai'             --
-H_LETHOS = 'Dalom'                  --
-H_ERUINA = 'Eruina'                 --
+H_LETHOS = 'Dalom'                  -- poisoner
+H_ERUINA = 'Eruina'                 -- shadow witches
 H_YRBETH = 'Almegir'                --
 H_SYLSAI = 'Sylsai'                 --
-H_SINITAR = 'Inagost'               --
-H_SHADYA = 'Kelodin'                --
-H_RAELAG = 'Raelag'                 --
-H_YLAYA = 'Shadwyn'                 --
-H_SEPHINROTH = 'Sephinroth'         --
-H_KASTORE = 'Kastore'               --
+H_SINITAR = 'Inagost'               -- power bargain
+H_SHADYA = 'Kelodin'                -- witch queen
+H_RAELAG = 'Raelag'                 -- initiative down
+H_YLAYA = 'Shadwyn'                 -- stormcaller
+H_SEPHINROTH = 'Sephinroth'         -- dark ritual
+H_KASTORE = 'Kastore'               -- summon phoenix
 
 -- stronghold
 H_TELSEK = 'Hero8'                  -- warriors

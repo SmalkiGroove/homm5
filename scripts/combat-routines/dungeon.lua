@@ -32,6 +32,11 @@ function Routine_ScoutsMoveFirst(side, hero)
     SetATB_CreatureTypes(side, {CREATURE_SCOUT,CREATURE_ASSASSIN,CREATURE_STALKER}, ATB_INSTANT)
 end
 
+function Routine_CastRandomDeepFrost(side, hero)
+    -- print("Trigger cast deep frost !")
+    HeroCast_RandomCreature(hero, SPELL_DEEP_FREEZE, FREE_MANA, 1-side)
+end
+
 function Routine_CastRandomLightningBolt(side, hero)
     -- print("Trigger cast lightning bolt !")
     HeroCast_RandomCreature(hero, SPELL_LIGHTNING_BOLT, FREE_MANA, 1-side)
@@ -118,7 +123,7 @@ DUNGEON_COMBAT_START = {
     [H_YRBETH] = NoneRoutine,
     [H_SYLSAI] = NoneRoutine,
     [H_SINITAR] = NoneRoutine,
-    [H_SHADYA] = NoneRoutine,
+    [H_SHADYA] = Routine_CastRandomDeepFrost,
     [H_RAELAG] = NoneRoutine,
     [H_YLAYA] = Routine_CastRandomLightningBolt,
     [H_SEPHINROTH] = NoneRoutine,

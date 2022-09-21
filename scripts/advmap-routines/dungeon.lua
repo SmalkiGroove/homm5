@@ -15,6 +15,14 @@ function Routine_AddHeroSpellPowerPairLevel()
     end
 end
 
+function Routine_AddHeroLevel()
+    -- Level up every 5 levels
+    local hero = H_SHADYA
+    if mod(GetHeroLevel(hero), 5) == 0 then
+        LevelUpHero(hero)
+    end
+end
+
 function Routine_GainDragonArtifacts()
     -- Dragon artfacts set
     local hero = H_RAELAG
@@ -74,6 +82,14 @@ function Routine_AddRecruitsMatrons(player, hero)
     AddHero_TownRecruits(player, hero, TOWN_BUILDING_DWELLING_5, CREATURE_MATRON, 0.33)
 end
 
+function Routine_UpgradeToWitches(player, hero)
+    -- Upgrade scouts recruits to blood witches and riders recruits to shadow witches
+    local max_bloodwitch = GetHeroLevel(hero) * 2
+    ChangeHero_TownRecruits(player, hero, TOWN_BUILDING_DWELLING_1, CREATURE_SCOUT, TOWN_BUILDING_DWELLING_2, CREATURE_WITCH, max_bloodwitch)
+    local max_shadowwitch = GetHeroLevel(hero) * 0.5
+    ChangeHero_TownRecruits(player, hero, TOWN_BUILDING_DWELLING_4, CREATURE_RIDER, TOWN_BUILDING_DWELLING_5, CREATURE_MATRON, max_shadowwitch)
+end
+
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -93,7 +109,7 @@ LEVEL_UP_DUNGEON_HERO = {
     [H_YRBETH] = "NoneRoutine",
     [H_SYLSAI] = "NoneRoutine",
     [H_SINITAR] = "Routine_AddHeroSpellPowerPairLevel",
-    [H_SHADYA] = "NoneRoutine",
+    [H_SHADYA] = "Routine_AddHeroLevel",
     [H_RAELAG] = "Routine_GainDragonArtifacts",
     [H_YLAYA] = "NoneRoutine",
     [H_SEPHINROTH] = "NoneRoutine",
@@ -135,7 +151,7 @@ DAILY_TRIGGER_DUNGEON = {
     [H_YRBETH] = NoneRoutine,
     [H_SYLSAI] = NoneRoutine,
     [H_SINITAR] = NoneRoutine,
-    [H_SHADYA] = NoneRoutine,
+    [H_SHADYA] = Routine_UpgradeToWitches,
     [H_RAELAG] = NoneRoutine,
     [H_YLAYA] = NoneRoutine,
     [H_SEPHINROTH] = Routine_ConvertOverflowManaToExp,
