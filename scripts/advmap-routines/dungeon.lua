@@ -46,6 +46,11 @@ function Routine_GainDragonArtifacts()
     end
 end
 
+function Routine_AddHeroRiders(player, hero)
+    -- Riders - 1:4 - 2:10 - 3:17 - 4:24 - 5:30 ... 8:50
+    AddHero_CreatureInTypes(player, hero, {CREATURE_RIDER,CREATURE_RAVAGER,CREATURE_BLACK_RIDER}, 0.15)
+end
+
 function Routine_GenerateGoldPerScout(player, hero)
     -- Gold - 1 per scout per 5 levels
     local mult = trunc(GetHeroLevel(hero) * 0.2)
@@ -167,7 +172,7 @@ START_TRIGGER_DUNGEON = {
 }
 
 DAILY_TRIGGER_DUNGEON = {
-    [H_SORGAL] = NoneRoutine,
+    [H_SORGAL] = Routine_AddHeroRiders,
     [H_KYTHRA] = NoneRoutine,
     [H_AGBETH] = NoneRoutine,
     [H_RANLETH] = NoneRoutine,

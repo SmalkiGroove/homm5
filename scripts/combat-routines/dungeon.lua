@@ -20,8 +20,8 @@ function Routine_CastVampirismOnWitches(side, hero)
             insert(w, cr)
         end
     end
-    local m = GetUnitMaxManaPoints(hero) * 0.01
-    local n = min(length(w), 1+trunc(m))
+    local m = trunc(GetUnitMaxManaPoints(hero) * 0.01)
+    local n = min(length(w), 1 + m)
     for i = 1,n do
         HeroCast_Target(hero, SPELL_VAMPIRISM, FREE_MANA, w[i])
     end
@@ -35,6 +35,16 @@ end
 function Routine_HeroMoveFirst(side, hero)
     -- print("Trigger hero play first !")
     SetATB_ID(hero, ATB_INSTANT)
+end
+
+function Routine_HeroCastRage(side, hero)
+    -- print("Trigger hero cast rage")
+    local ennemies = GetUnits(1-side, CREATURE)
+    local m = trunc(GetUnitMaxManaPoints(hero) * 0.02)
+    local n = min(length(ennemies), m)
+    for i = 0,n do
+        HeroCast_Target(hero, SPELL_BERSERK, FREE_MANA, ennemies[i])
+    end
 end
 
 function Routine_CastRandomDeepFrost(side, hero)
@@ -92,6 +102,16 @@ function Routine_CastRandomLightningBolt2(side, hero)
     end
 end
 
+function Routine_SummonDeadEnnemyCreature(side, hero, unit)
+    -- print("Trigger revive ennemy creature !")
+    if CURRENT_UNIT_SIDE ~= side then
+        local type = GetCreatureType(unit)
+        local x,y = GetUnitPosition(unit)
+        local amount = trunc(GetUnitMaxManaPoints(hero) * 0.1)
+        SummonCreatureStack_XY(side, type, amount, x, y)
+    end
+end
+
 
 DUNGEON_COMBAT_PREPARE = {
     [H_SORGAL] = NoneRoutine,
@@ -126,7 +146,7 @@ DUNGEON_COMBAT_START = {
     [H_LETHOS] = NoneRoutine,
     [H_ERUINA] = NoneRoutine,
     [H_YRBETH] = NoneRoutine,
-    [H_SYLSAI] = NoneRoutine,
+    [H_SYLSAI] = Routine_HeroCastRage,
     [H_SINITAR] = NoneRoutine,
     [H_SHADYA] = Routine_CastRandomDeepFrost,
     [H_RAELAG] = NoneRoutine,
@@ -168,7 +188,7 @@ DUNGEON_UNIT_DIED = {
     [H_LETHOS] = NoneRoutine,
     [H_ERUINA] = NoneRoutine,
     [H_YRBETH] = NoneRoutine,
-    [H_SYLSAI] = NoneRoutine,
+    [H_SYLSAI] = Routine_SummonDeadEnnemyCreature,
     [H_SINITAR] = NoneRoutine,
     [H_SHADYA] = NoneRoutine,
     [H_RAELAG] = NoneRoutine,
@@ -185,8 +205,8 @@ function DoDungeonRoutine_CombatStart(side, name, id)
     startThread(DUNGEON_COMBAT_START[name], side, id)
 end
 
-function DoDungeonRoutine_CombatTurn(side, name, id, unit)
-    startThread(DUNGEON_COMBAT_TURN[name], side, id, unit)
+function DoDungeonRoutine_CombatTurn(side, name, id)
+    startThread(DUNGEON_COMBAT_TURN[name], side, id)
 end
 
 function DoDungeonRoutine_UnitDied(side, name, id, unit)

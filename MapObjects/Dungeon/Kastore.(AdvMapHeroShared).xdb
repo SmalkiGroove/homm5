@@ -64,6 +64,7 @@
 		</perkIDs>
 		<spellIDs>
 			<Item>SPELL_SUMMON_ELEMENTALS</Item>
+			<Item>SPELL_CONJURE_PHOENIX</Item>
 		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>
