@@ -7,6 +7,14 @@ function Routine_AddHeroAttackPairLevel()
     end
 end
 
+function Routine_AddHeroArcaneOmniscience()
+    -- Add skill learned trigger for arcane omniscience
+    local hero = H_RANLETH
+    if HasHeroSkill(hero, WARLOCK_FEAT_ABSOLUTE_CHAINS) then
+        GiveHeroSkill(hero, WIZARD_FEAT_ABSOLUTE_WIZARDY)
+    end
+end
+
 function Routine_AddHeroSpellPowerPairLevel()
     -- Spellpower - 1 per 2 level
     local hero = H_SINITAR
@@ -26,7 +34,7 @@ end
 function Routine_GainDragonArtifacts()
     -- Dragon artfacts set
     local hero = H_RAELAG
-    if GetHeroLevel(hero) == 45 then
+    if GetHeroLevel(hero) == 40 then
         GiveArtifact(hero, ARTIFACT_DRAGON_SCALE_ARMOR)
         GiveArtifact(hero, ARTIFACT_DRAGON_SCALE_SHIELD)
         GiveArtifact(hero, ARTIFACT_DRAGON_BONE_GRAVES)
@@ -116,6 +124,27 @@ LEVEL_UP_DUNGEON_HERO = {
     [H_KASTORE] = "NoneRoutine",
 }
 
+LEARN_SKILL_DUNGEON_HERO = {
+    [H_SORGAL] = "NoneRoutine",
+    [H_KYTHRA] = "NoneRoutine",
+    [H_AGBETH] = "NoneRoutine",
+    [H_RANLETH] = "Routine_AddHeroArcaneOmniscience",
+    [H_DARKSTORM] = "NoneRoutine",
+    [H_YRWANNA] = "NoneRoutine",
+    [H_VAYSHAN] = "NoneRoutine",
+    [H_THRALSAI] = "NoneRoutine",
+    [H_LETHOS] = "NoneRoutine",
+    [H_ERUINA] = "NoneRoutine",
+    [H_YRBETH] = "NoneRoutine",
+    [H_SYLSAI] = "NoneRoutine",
+    [H_SINITAR] = "NoneRoutine",
+    [H_SHADYA] = "NoneRoutine",
+    [H_RAELAG] = "NoneRoutine",
+    [H_YLAYA] = "NoneRoutine",
+    [H_SEPHINROTH] = "NoneRoutine",
+    [H_KASTORE] = "NoneRoutine",
+}
+
 START_TRIGGER_DUNGEON = {
     [H_SORGAL] = NoneRoutine,
     [H_KYTHRA] = NoneRoutine,
@@ -194,6 +223,7 @@ end
 
 function DoDungeonRoutine_LevelUp(hero)
     Trigger(HERO_LEVELUP_TRIGGER, hero, LEVEL_UP_DUNGEON_HERO[hero])
+    Trigger(HERO_ADD_SKILL_TRIGGER, hero, LEARN_SKILL_DUNGEON_HERO[hero])
 end
 
 

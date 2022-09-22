@@ -35,8 +35,8 @@
 		<Mastery>MASTERY_BASIC</Mastery>
 		<SkillID>HERO_SKILL_INVOCATION</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Dungeon/ChosenByGods/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Dungeon/ChosenByGods/Description.txt"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Dungeon/Feather_Mage/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Dungeon/Feather_Mage/Description.txt"/>
 	<SpecializationIcon href="/UI/H5A1/Icons/Abilites/Heroes_Abillites/128x128/The_Chosen_by_Gods.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/Maps/Scenario/A2C3M4/Dungeon Agaris_128_128.1.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall href=""/>
@@ -56,17 +56,17 @@
 		<skills>
 			<Item>
 				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_LIGHT_MAGIC</SkillID>
+				<SkillID>HERO_SKILL_LEARNING</SkillID>
 			</Item>
 		</skills>
 		<perkIDs>
-			<Item>HERO_SKILL_DARK_RITUAL</Item>
+			<Item>HERO_SKILL_SCHOLAR</Item>
 		</perkIDs>
 		<spellIDs>
-			<Item>SPELL_MAGIC_BLESS</Item>
+			<Item>SPELL_MAGIC_FIST</Item>
 		</spellIDs>
 		<Ballista>false</Ballista>
-		<FirstAidTent>true</FirstAidTent>
+		<FirstAidTent>false</FirstAidTent>
 		<AmmoCart>false</AmmoCart>
 		<FavoriteEnemies/>
 	</Editable>

@@ -32,6 +32,11 @@ function Routine_ScoutsMoveFirst(side, hero)
     SetATB_CreatureTypes(side, {CREATURE_SCOUT,CREATURE_ASSASSIN,CREATURE_STALKER}, ATB_INSTANT)
 end
 
+function Routine_HeroMoveFirst(side, hero)
+    -- print("Trigger hero play first !")
+    SetATB_ID(hero, ATB_INSTANT)
+end
+
 function Routine_CastRandomDeepFrost(side, hero)
     -- print("Trigger cast deep frost !")
     HeroCast_RandomCreature(hero, SPELL_DEEP_FREEZE, FREE_MANA, 1-side)
@@ -117,7 +122,7 @@ DUNGEON_COMBAT_START = {
     [H_DARKSTORM] = NoneRoutine,
     [H_YRWANNA] = Routine_CastVampirismOnWitches,
     [H_VAYSHAN] = Routine_ScoutsMoveFirst,
-    [H_THRALSAI] = NoneRoutine,
+    [H_THRALSAI] = Routine_HeroMoveFirst,
     [H_LETHOS] = NoneRoutine,
     [H_ERUINA] = NoneRoutine,
     [H_YRBETH] = NoneRoutine,

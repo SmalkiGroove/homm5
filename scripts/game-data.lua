@@ -143,14 +143,13 @@ H_ASH = 'Ash'                       -- OFF
 H_SORGAL = 'Ferigl'                 -- lizard bite
 H_KYTHRA = 'Menel'                  -- border guard
 H_AGBETH = 'Agbeth'                 -- evasive
-H_RANLETH = 'Ranleth'               --
+H_RANLETH = 'Ranleth'               -- windspeaker
 H_DARKSTORM = 'Darkstorm'           -- minotaurs
 H_YRWANNA = 'Urunir'                -- blood witches
 H_VAYSHAN = 'Ohtarig'               -- scouts
-H_THRALSAI = 'Thralsai'             --
+H_THRALSAI = 'Thralsai'             -- bombardier
 H_LETHOS = 'Dalom'                  -- poisoner
 H_ERUINA = 'Eruina'                 -- shadow witches
-H_YRBETH = 'Almegir'                --
 H_SYLSAI = 'Sylsai'                 --
 H_SINITAR = 'Inagost'               -- power bargain
 H_SHADYA = 'Kelodin'                -- witch queen
@@ -158,6 +157,7 @@ H_RAELAG = 'Raelag'                 -- initiative down
 H_YLAYA = 'Shadwyn'                 -- stormcaller
 H_SEPHINROTH = 'Sephinroth'         -- dark ritual
 H_KASTORE = 'Kastore'               -- summon phoenix
+H_YRBETH = 'Almegir'                -- OFF
 
 -- stronghold
 H_TELSEK = 'Hero8'                  -- warriors

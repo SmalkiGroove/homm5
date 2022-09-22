@@ -30,13 +30,13 @@
 	<Icon128 href="/UI/H5A1/Icons/Heroes/Portrets128x128/Thralsai.(Texture).xdb#xpointer(/Texture)"/>
 	<InternalName>Thralsai</InternalName>
 	<Class>HERO_CLASS_ASSASSIN</Class>
-	<Specialization>HERO_SPEC_BEATER</Specialization>
+	<Specialization>HERO_SPEC_BOMBARDIER</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
 		<SkillID>HERO_SKILL_INVOCATION</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Dungeon/Beater/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Dungeon/Beater/Description.txt"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Dungeon/Bombardier/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Dungeon/Bombardier/Description.txt"/>
 	<SpecializationIcon href="/Textures/HeroScreen/Specializations/Dungeon/Power_Bargain.xdb#xpointer(/Texture)"/>
 	<FaceTexture href="/UI/H5A1/Icons/Heroes/Portrets128x128/Thralsai.(Texture).xdb#xpointer(/Texture)"/>
 	<FaceTextureSmall/>
@@ -56,16 +56,21 @@
 		<skills>
 			<Item>
 				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_LOGISTICS</SkillID>
+				<SkillID>HERO_SKILL_AVENGER</SkillID>
+			</Item>
+			<Item>
+				<Mastery>MASTERY_BASIC</Mastery>
+				<SkillID>HERO_SKILL_WAR_MACHINES</SkillID>
 			</Item>
 		</skills>
 		<perkIDs>
-			<Item>HERO_SKILL_PATHFINDING</Item>
+			<Item>HERO_SKILL_IMBUE_ARROW</Item>
+			<Item>HERO_SKILL_IMBUE_BALLISTA</Item>
 		</perkIDs>
 		<spellIDs>	
-			<Item>SPELL_TELEPORT</Item>
+			<Item>SPELL_FIREBALL</Item>
 		</spellIDs>
-		<Ballista>false</Ballista>
+		<Ballista>true</Ballista>
 		<FirstAidTent>false</FirstAidTent>
 		<AmmoCart>false</AmmoCart>
 		<FavoriteEnemies/>
