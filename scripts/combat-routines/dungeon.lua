@@ -42,8 +42,8 @@ function Routine_HeroCastRage(side, hero)
     local ennemies = GetUnits(1-side, CREATURE)
     local m = trunc(GetUnitMaxManaPoints(hero) * 0.02)
     local n = min(length(ennemies), m)
-    for i = 0,n do
-        HeroCast_Target(hero, SPELL_BERSERK, FREE_MANA, ennemies[i])
+    for i = 1,n do
+        HeroCast_Target(hero, SPELL_BERSERK, FREE_MANA, ennemies[i-1])
     end
 end
 
