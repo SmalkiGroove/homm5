@@ -6,6 +6,7 @@ function DoCommonRoutine_UnitDied(side, name, id, unit) end
 
 function NoneRoutine(side, hero)
     -- print("Trigger nothing !")
+    COMBAT_PAUSE = 0
 end
 
 

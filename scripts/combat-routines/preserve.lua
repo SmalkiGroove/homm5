@@ -2,11 +2,13 @@
 function Routine_AngerTreantsAbility(side, hero)
     -- print("Trigger anger treants rage of forest !")
     CreatureTypesAbility_Untargeted(side, {CREATURE_ANGER_TREANT}, SPELL_ABILITY_RAGE_OF_THE_FOREST)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_HunterRandomShoot(side, hero)
     -- print("Trigger hunters random shoot !")
     RandomShoot_CreatureTypes(side, {CREATURE_WOOD_ELF,CREATURE_GRAND_ELF,CREATURE_SHARP_SHOOTER})
+    COMBAT_PAUSE = 0
 end
 
 function Routine_SummonDruidStack(side, hero)
@@ -14,11 +16,13 @@ function Routine_SummonDruidStack(side, hero)
     local m = GetUnitMaxManaPoints(hero) * 0.1
     local amount = trunc(0.5 * m * m)
     SummonCreatureStack_X(side, CREATURE_DRUID_ELDER, amount, 0)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastMassHaste(side, hero)
     -- print("Trigger hero cast Mass Haste !")
     HeroCast_Global(hero, SPELL_MASS_HASTE, FREE_MANA)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_SiphonEnnemyMana(side, hero)
@@ -37,6 +41,7 @@ function Routine_SiphonEnnemyMana(side, hero)
     end
     local new_mana = min(hero_cur_mana+amount, hero_max_mana)
     SetMana(hero, new_mana)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastRandomBloodlust(side, hero)
@@ -45,6 +50,7 @@ function Routine_CastRandomBloodlust(side, hero)
         HeroCast_RandomCreature(hero, SPELL_BLOODLUST, FREE_MANA, side)
         SetATB_ID(hero, ATB_INSTANT)
     end
+    COMBAT_PAUSE = 0
 end
 
 function Routine_HeroMoveNext(side, hero)
@@ -52,6 +58,7 @@ function Routine_HeroMoveNext(side, hero)
     if CURRENT_UNIT_SIDE ~= GetUnitSide(hero) then
         SetATB_ID(hero, ATB_NEXT)
     end
+    COMBAT_PAUSE = 0
 end
 
 function Routine_SummonWolfStack(side, hero)
@@ -60,6 +67,7 @@ function Routine_SummonWolfStack(side, hero)
         local amount = trunc(GetUnitManaPoints(hero) * 0.34)
         if amount > 0 then SummonCreatureStack(side, CREATURE_WOLF, amount) end
     end
+    COMBAT_PAUSE = 0
 end
 
 function Routine_DruidsMoveNext(side, hero)
@@ -67,6 +75,7 @@ function Routine_DruidsMoveNext(side, hero)
     if CURRENT_UNIT == hero then
         SetATB_CreatureTypes(side, {CREATURE_DRUID,CREATURE_DRUID_ELDER,CREATURE_HIGH_DRUID}, ATB_NEXT)
     end
+    COMBAT_PAUSE = 0
 end
 
 

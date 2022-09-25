@@ -2,11 +2,13 @@
 function Routine_CastCallOfBlood(side, hero)
     -- print("Trigger call of blood !")
     HeroCast_TargetCreatureTypes(hero, SPELL_WARCRY_CALL_OF_BLOOD, FREE_MANA, side, {CREATURE_ORC_WARRIOR,CREATURE_ORC_SLAYER,CREATURE_ORC_WARMONGER})
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastBattlecry(side, hero)
     -- print("Trigger battlecry !")
     HeroCast_Global(hero, SPELL_WARCRY_BATTLECRY, FREE_MANA)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastHordeAnger(side, hero)
@@ -14,21 +16,25 @@ function Routine_CastHordeAnger(side, hero)
     if GetUnitManaPoints(hero) >= 10 then
         HeroCast_RandomCreature(hero, SPELL_WARCRY_SHOUT_OF_MANY, 10, 1-side)
     end
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastPowerfulBlowCentaur(side, hero)
     -- print("Trigger powerful blow on centaur !")
     HeroCast_TargetCreatureTypes(hero, SPELL_EFFECT_POWERFULL_BLOW, NO_COST, side, {CREATURE_CENTAUR,CREATURE_CENTAUR_NOMAD,CREATURE_CENTAUR_MARADEUR})
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastRallingCry(side, hero)
     -- print("Trigger ralling cry !")
     HeroCast_Global(hero, SPELL_WARCRY_RALLING_CRY, FREE_MANA)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_BallistaRandomShoot(side, hero)
     -- print("Trigger ballista random shoot !")
     RandomShoot_Ballista(side)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastLightningSpell(side, hero)
@@ -36,6 +42,7 @@ function Routine_CastLightningSpell(side, hero)
     local ennemies = GetUnits(1-side,CREATURE)
     local spell = (length(ennemies) >= 4) and SPELL_CHAIN_LIGHTNING or SPELL_LIGHTNING_BOLT
     HeroCast_Target(hero, spell, FREE_MANA, ennemies[0])
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CyclopsMoveNext(side, hero)
@@ -43,6 +50,7 @@ function Routine_CyclopsMoveNext(side, hero)
     if CURRENT_UNIT == hero then
         SetATB_CreatureTypes(side, {CREATURE_CYCLOP,CREATURE_CYCLOP_UNTAMED,CREATURE_CYCLOP_BLOODEYED}, ATB_NEXT)
     end
+    COMBAT_PAUSE = 0
 end
 
 function Routine_SummonGoblinStack(side, hero)
@@ -51,6 +59,7 @@ function Routine_SummonGoblinStack(side, hero)
         local amount = trunc(GetUnitMaxManaPoints(hero) * 1.5)
         SummonCreatureStack(side, CREATURE_GOBLIN, amount)
     end
+    COMBAT_PAUSE = 0
 end
 
 function Routine_BallistaRandomShoot2(side, hero)
@@ -58,6 +67,7 @@ function Routine_BallistaRandomShoot2(side, hero)
     if CURRENT_UNIT == hero then
         RandomShoot_Ballista(side)
     end
+    COMBAT_PAUSE = 0
 end
 
 function Routine_ShamansManaRegen(side, hero)
@@ -70,6 +80,7 @@ function Routine_ShamansManaRegen(side, hero)
             SetMana(CURRENT_UNIT, m + n)
         end
     end
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastRandomRegenOrPlague(side, hero)
@@ -81,6 +92,7 @@ function Routine_CastRandomRegenOrPlague(side, hero)
             HeroCast_RandomCreature(hero, SPELL_PLAGUE, FREE_MANA, 1-side)
         end
     end
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastRandomVulnerability(side, hero)
@@ -89,6 +101,7 @@ function Routine_CastRandomVulnerability(side, hero)
         HeroCast_RandomCreature(hero, SPELL_DISRUPTING_RAY, FREE_MANA, 1-side)
         SetATB_ID(hero, ATB_INSTANT)
     end
+    COMBAT_PAUSE = 0
 end
 
 

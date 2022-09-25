@@ -6,21 +6,25 @@ function Routine_BallistaRandomSalvo(side, hero)
         RandomShoot_Ballista(side)
         sleep(1000)
     end
+    COMBAT_PAUSE = 0
 end
 
 function Routine_ArchersMoveFirst(side, hero)
     -- print("Trigger archers atb boost !")
     SetATB_CreatureTypes(side, {CREATURE_ARCHER,CREATURE_MARKSMAN,CREATURE_LONGBOWMAN}, ATB_INSTANT)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastPrayer(side, hero)
     -- print("Trigger cast Prayer !")
     HeroCast_Global(hero, SPELL_PRAYER, NO_COST)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastMassConfusion(side, hero)
     -- print("Trigger cast Mass Confusion !")
     HeroCast_Global(hero, SPELL_MASS_FORGETFULNESS, FREE_MANA)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastRandomStoneskinAndDeflect(side, hero)
@@ -31,6 +35,7 @@ function Routine_CastRandomStoneskinAndDeflect(side, hero)
         HeroCast_Target(hero, 29, FREE_MANA, unit)
         SetATB_ID(hero, ATB_INSTANT)
     end
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastRandomEncourage(side, hero)
@@ -39,6 +44,7 @@ function Routine_CastRandomEncourage(side, hero)
         HeroCast_RandomCreature(hero, SPELL_ENCOURAGE, NO_COST, side)
         SetATB_ID(hero, ATB_INSTANT)
     end
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastRandomVampirism(side, hero)
@@ -49,6 +55,7 @@ function Routine_CastRandomVampirism(side, hero)
             SetATB_ID(hero, ATB_INSTANT)
         end
     end
+    COMBAT_PAUSE = 0
 end
 
 

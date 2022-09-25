@@ -18,21 +18,25 @@ function Routine_DuplicateGolemStack(side, hero)
         local x,y = GetUnitPosition(copied_stack)
         SummonCreatureStack_XY(side, GetCreatureType(copied_stack), largest, x, y+1)
     end
+    COMBAT_PAUSE = 0
 end
 
 function Routine_RakshasasAbility(side, hero)
     -- print("Trigger rakshasas dash !")
     CreatureTypesAbility_Untargeted(side, {CREATURE_RAKSHASA,CREATURE_RAKSHASA_RUKH,CREATURE_RAKSHASA_KSHATRI}, SPELL_ABILITY_DASH)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastMultipleVulnerability(side, hero)
     -- print("Trigger disrupting rays !")
     HeroCast_AllCreatures(hero, SPELL_DISRUPTING_RAY, FREE_MANA, side)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_MagesCastMagicFist(side, hero)
     -- print("Trigger mages magic fist !")
     CreatureTypesCast_RandomTarget(side, 1-side, {CREATURE_MAGI,CREATURE_ARCH_MAGI,CREATURE_COMBAT_MAGE}, SPELL_MAGIC_FIST)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastMultipleArcaneCrystals(side, hero)
@@ -43,11 +47,13 @@ function Routine_CastMultipleArcaneCrystals(side, hero)
     for i = 1,n do
         HeroCast_Area(hero, SPELL_ARCANE_CRYSTAL, FREE_MANA, random(x1,x2,i), random(GRID_Y_MIN,GRID_Y_MAX,i))
     end
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastSummonElementals(side, hero)
     -- print("Trigger summon elementals !")
     HeroCast_Global(hero, SPELL_SUMMON_ELEMENTALS, FREE_MANA)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastSummonHive(side, hero)
@@ -55,6 +61,7 @@ function Routine_CastSummonHive(side, hero)
     local x = 15 - 13 * side
     HeroCast_Area(hero, SPELL_SUMMON_HIVE, FREE_MANA, x, GRID_Y_MIN)
     HeroCast_Area(hero, SPELL_SUMMON_HIVE, FREE_MANA, x, GRID_Y_MAX)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_BallistaMoveNext(side, hero)
@@ -62,6 +69,7 @@ function Routine_BallistaMoveNext(side, hero)
     if CURRENT_UNIT == hero then
         SetATB_WarMachineType(side, WAR_MACHINE_BALLISTA, ATB_NEXT)
     end
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastRandomSlow(side, hero)
@@ -70,6 +78,7 @@ function Routine_CastRandomSlow(side, hero)
         HeroCast_RandomCreature(hero, SPELL_SLOW, NO_COST, 1-side)
         SetATB_ID(hero, ATB_INSTANT)
     end
+    COMBAT_PAUSE = 0
 end
 
 ACADEMY_COMBAT_PREPARE = {

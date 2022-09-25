@@ -9,6 +9,7 @@ function Routine_InvokeBladeBarriers(side, hero)
         HeroCast_Area(hero, SPELL_BLADE_BARRIER, FREE_MANA, x2, GRID_Y_MAX-y+1)
     end
     SetMana(hero, m)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastVampirismOnWitches(side, hero)
@@ -25,16 +26,19 @@ function Routine_CastVampirismOnWitches(side, hero)
     for i = 1,n do
         HeroCast_Target(hero, SPELL_VAMPIRISM, FREE_MANA, w[i])
     end
+    COMBAT_PAUSE = 0
 end
 
 function Routine_ScoutsMoveFirst(side, hero)
     -- print("Trigger scouts play first !")
     SetATB_CreatureTypes(side, {CREATURE_SCOUT,CREATURE_ASSASSIN,CREATURE_STALKER}, ATB_INSTANT)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_HeroMoveFirst(side, hero)
     -- print("Trigger hero play first !")
     SetATB_ID(hero, ATB_INSTANT)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_HeroCastRage(side, hero)
@@ -45,21 +49,25 @@ function Routine_HeroCastRage(side, hero)
     for i = 1,n do
         HeroCast_Target(hero, SPELL_BERSERK, FREE_MANA, ennemies[i-1])
     end
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastRandomDeepFrost(side, hero)
     -- print("Trigger cast deep frost !")
     HeroCast_RandomCreature(hero, SPELL_DEEP_FREEZE, FREE_MANA, 1-side)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastRandomLightningBolt(side, hero)
     -- print("Trigger cast lightning bolt !")
     HeroCast_RandomCreature(hero, SPELL_LIGHTNING_BOLT, FREE_MANA, 1-side)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastConjurePhoenix(side, hero)
     -- print("Trigger cast conjure phoenix !")
     HeroCast_Global(hero, SPELL_CONJURE_PHOENIX, FREE_MANA)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_RidersHydraSynergy(side, hero)
@@ -73,6 +81,7 @@ function Routine_RidersHydraSynergy(side, hero)
             end
         end
     end
+    COMBAT_PAUSE = 0
 end
 
 function Routine_MinotaursMoveNext(side, hero)
@@ -80,6 +89,7 @@ function Routine_MinotaursMoveNext(side, hero)
     if CURRENT_UNIT == hero then
         SetATB_CreatureTypes(side, {CREATURE_MINOTAUR,CREATURE_MINOTAUR_KING,CREATURE_MINOTAUR_CAPTAIN}, ATB_NEXT)
     end
+    COMBAT_PAUSE = 0
 end
 
 function Routine_RefreshMatronMana(side, hero)
@@ -93,6 +103,7 @@ function Routine_RefreshMatronMana(side, hero)
             end
         end
     end
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastRandomLightningBolt2(side, hero)
@@ -100,6 +111,7 @@ function Routine_CastRandomLightningBolt2(side, hero)
     if CURRENT_UNIT == hero then
         HeroCast_RandomCreature(hero, SPELL_LIGHTNING_BOLT, FREE_MANA, 1-side)
     end
+    COMBAT_PAUSE = 0
 end
 
 function Routine_SummonDeadEnnemyCreature(side, hero, unit)
@@ -110,6 +122,7 @@ function Routine_SummonDeadEnnemyCreature(side, hero, unit)
         local amount = trunc(GetUnitMaxManaPoints(hero) * 0.1)
         SummonCreatureStack_XY(side, type, amount, x, y)
     end
+    COMBAT_PAUSE = 0
 end
 
 

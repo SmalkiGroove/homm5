@@ -5,16 +5,19 @@ function Routine_SummonAndKillEnnemySkeleton(side, hero)
     SummonCreatureStack_X(1-side, CREATURE_SKELETON, 1, 6)
     repeat sleep(10) until length(GetUnits(1-side, CREATURE)) == n + 1
     HeroCast_Target(hero, SPELL_MAGIC_ARROW, FREE_MANA, GetUnits(1-side, CREATURE)[n])
+    COMBAT_PAUSE = 0
 end
 
 function Routine_SummonAvatarOfDeath(side, hero)
     -- print("Trigger summon avatar of death !")
     HeroCast_Global(hero, SPELL_ABILITY_AVATAR_OF_DEATH, FREE_MANA)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastMassWeakness(side, hero)
     -- print("Trigger cast mass weakness !")
     HeroCast_Global(hero, SPELL_MASS_CURSE, FREE_MANA)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastMultipleSorrow(side, hero)
@@ -25,6 +28,7 @@ function Routine_CastMultipleSorrow(side, hero)
     for i = 1,n do
         HeroCast_Target(hero, SPELL_SORROW, FREE_MANA, e[i-1])
     end
+    COMBAT_PAUSE = 0
 end
 
 function Routine_DuplicateArmyGhosts(side, hero)
@@ -38,6 +42,7 @@ function Routine_DuplicateArmyGhosts(side, hero)
             SummonCreatureStack_XY(side, type, nb, x, y)
         end
     end
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastRandomPlague(side, hero)
@@ -46,6 +51,7 @@ function Routine_CastRandomPlague(side, hero)
         HeroCast_RandomCreature(hero, SPELL_PLAGUE, FREE_MANA, 1-side)
         SetATB_ID(hero, ATB_INSTANT)
     end
+    COMBAT_PAUSE = 0
 end
 
 function Routine_SummonZombieStack(side, hero)
@@ -54,6 +60,7 @@ function Routine_SummonZombieStack(side, hero)
         local m = GetUnitManaPoints(hero)
         if m > 0 then SummonCreatureStack(side, CREATURE_DISEASE_ZOMBIE, m) end
     end
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastRandomIceBolt(side, hero)
@@ -62,6 +69,7 @@ function Routine_CastRandomIceBolt(side, hero)
         HeroCast_RandomCreature(hero, SPELL_ICE_BOLT, FREE_MANA, 1-side)
         SetATB_ID(hero, ATB_INSTANT)
     end
+    COMBAT_PAUSE = 0
 end
 
 

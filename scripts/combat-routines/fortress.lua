@@ -2,17 +2,20 @@
 function Routine_BallistaMoveFirst(side, hero)
     -- print("Trigger ballista play first !")
     SetATB_WarMachineType(side, WAR_MACHINE_BALLISTA, ATB_INSTANT)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_SkirmishersRandomShoot(side, hero)
     -- print("Trigger spearwielders random shoot !")
     RandomShoot_CreatureTypes(side, {CREATURE_AXE_FIGHTER,CREATURE_AXE_THROWER,CREATURE_HARPOONER})
+    COMBAT_PAUSE = 0
 end
 
 function Routine_ThanesAbility(side, hero)
     -- print("Trigger Thanes ability !")
     CreatureTypesAbility_RandomTarget(side, 1-side, {CREATURE_WARLORD}, SPELL_ABILITY_FLAMESTRIKE)
     CreatureTypesAbility_RandomTarget(side, 1-side, {CREATURE_THUNDER_THANE}, SPELL_ABILITY_STORMBOLT)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastFireWalls(side, hero)
@@ -23,11 +26,13 @@ function Routine_CastFireWalls(side, hero)
         HeroCast_Area(hero, SPELL_FIREWALL, FREE_MANA, x, y)
     end
     SetMana(hero, m)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_RunePriestsMoveFirst(side, hero)
     -- print("Trigger rune priests play first !")
     SetATB_CreatureTypes(side, {CREATURE_RUNE_MAGE,CREATURE_FLAME_MAGECREATURE_FLAME_KEEPER}, ATB_INSTANT)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_SummonEarthElementals(side, hero)
@@ -35,15 +40,17 @@ function Routine_SummonEarthElementals(side, hero)
     local amount = trunc(GetUnitMaxManaPoints(hero) * 0.5)
     SummonCreatureStack_X(side, {CREATURE_EARTH_ELEMENTAL}, amount, 3)
     SummonCreatureStack_X(side, {CREATURE_EARTH_ELEMENTAL}, amount, 3)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastMeteorShowers(side, hero)
     -- print("Trigger uber meteor shower !")
     local x = 15 - 13 * side
     HeroCast_Area(hero, SPELL_UBER_METEOR_SHOWER, FREE_MANA, x, 9)
-    sleep(1500)
+    sleep(750)
     HeroCast_Area(hero, SPELL_UBER_METEOR_SHOWER, FREE_MANA, x, 4)
-    sleep(1500)
+    sleep(750)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_BallistaUseHalfATB(side, hero)
@@ -51,6 +58,7 @@ function Routine_BallistaUseHalfATB(side, hero)
     if CURRENT_UNIT == UNIT_SIDE_PREFIX[side]..'-warmachine-WAR_MACHINE_BALLISTA' then
         SetATB_ID(CURRENT_UNIT, ATB_HALF)
     end
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastRandomImplosion(side, hero)
@@ -59,6 +67,7 @@ function Routine_CastRandomImplosion(side, hero)
         HeroCast_RandomCreature(hero, SPELL_IMPLOSION, 50, 1-side)
         SetATB_ID(hero, ATB_INSTANT)
     end
+    COMBAT_PAUSE = 0
 end
 
 

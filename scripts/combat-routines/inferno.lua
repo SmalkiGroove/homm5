@@ -2,16 +2,19 @@
 function Routine_CastMarkOfTheDamned(side, hero)
     -- print("Trigger mark of the damned")
     HeroCast_RandomCreature(hero, SPELL_DEMONIC_STRIKE, NO_COST, 1-side)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastRandomBlindness(side, hero)
     -- print("Trigger random blindness !")
     HeroCast_RandomCreature(hero, SPELL_BLIND, FREE_MANA, 1-side)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_SuccubusRandomShoot(side, hero)
     -- print("Trigger succubus random shoot !")
     RandomShoot_CreatureTypes(side, {CREATURE_SUCCUBUS,CREATURE_INFERNAL_SUCCUBUS,CREATURE_SUCCUBUS_SEDUCER})
+    COMBAT_PAUSE = 0
 end
 
 function Routine_SummonPitlords(side, hero)
@@ -20,6 +23,7 @@ function Routine_SummonPitlords(side, hero)
     local amount = trunc(0.1 * m * m)
     SummonCreatureStack_X(side, CREATURE_BALOR, amount, 0)
     SummonCreatureStack_X(side, CREATURE_BALOR, amount, 0)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastMineFields(side, hero)
@@ -27,6 +31,7 @@ function Routine_CastMineFields(side, hero)
     local x = 12 - 9 * side
     HeroCast_Area(hero, SPELL_LAND_MINE, FREE_MANA, x, 9)
     HeroCast_Area(hero, SPELL_LAND_MINE, FREE_MANA, x, 4)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_BallistaShootUnit(side, hero)
@@ -34,6 +39,7 @@ function Routine_BallistaShootUnit(side, hero)
     if CURRENT_UNIT_SIDE ~= side then
         TargetShoot_Ballista(side, CURRENT_UNIT)
     end
+    COMBAT_PAUSE = 0
 end
 
 function Routine_DemonicCreatureExplosion(side, hero)
@@ -46,18 +52,21 @@ function Routine_DemonicCreatureExplosion(side, hero)
             SetATB_ID(CURRENT_UNIT, ATB_INSTANT)
         end
     end
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastRandomStoneSpikes(side, hero)
     -- print("Trigger random Stone spikes !")
     HeroCast_RandomCreatureArea(hero, SPELL_STONE_SPIKES, FREE_MANA, 1-side)
     SetATB_ID(hero, ATB_INSTANT)
+    COMBAT_PAUSE = 0
 end
 
 function Routine_CastRandomFireball(side, hero)
     -- print("Trigger random Fireball !")
     HeroCast_RandomCreatureArea(hero, SPELL_FIREBALL, FREE_MANA, 1-side)
     SetATB_ID(hero, ATB_HALF)
+    COMBAT_PAUSE = 0
 end
 
 

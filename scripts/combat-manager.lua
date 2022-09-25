@@ -1,3 +1,4 @@
+COMBAT_PAUSE = 0
 COMBAT_READY = nil
 
 COMBAT_TURN = 0
@@ -35,6 +36,16 @@ UNIT_SIDE_PREFIX = {
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------
+
+function Pause()
+    COMBAT_PAUSE = 1
+    combatSetPause(1)
+end
+
+function Resume()
+    repeat sleep(5) until COMBAT_PAUSE == 0
+    combatSetPause(nil)
+end
 
 function Wait()
     sleep(1)
@@ -197,6 +208,7 @@ end
 
 function ManageCombatStart()
     -- print("Manage combat start")
+    Pause()
     ResetATB()
     repeat sleep(1) until COMBAT_READY
     
@@ -208,6 +220,7 @@ function ManageCombatStart()
 		local startroutine = START_ROUTINES[DEFENDER_RACE]
 		startThread(startroutine, DEFENDER, DEFENDER_HERO, DEFENDER_HERO_ID)
 	end
+    Resume()
 end
 
 function ManageCombatTurn(unit)
@@ -217,6 +230,7 @@ function ManageCombatTurn(unit)
         CURRENT_UNIT = unit
         CURRENT_UNIT_SIDE = IsAttacker(unit) and ATTACKER or DEFENDER
 
+        Pause()
         if ATTACKER_HERO ~= "" then
             local turnroutine = TURN_ROUTINES[ATTACKER_RACE]
             startThread(turnroutine, ATTACKER, ATTACKER_HERO, ATTACKER_HERO_ID)
@@ -225,11 +239,13 @@ function ManageCombatTurn(unit)
             local turnroutine = TURN_ROUTINES[DEFENDER_RACE]
             startThread(turnroutine, DEFENDER, DEFENDER_HERO, DEFENDER_HERO_ID)
         end
+        Resume()
     end
 end
 
 function ManageUnitDeath(unit)
     -- print("Manage unit death")
+    Pause()
     if ATTACKER_HERO ~= "" then
         local deathroutine = DEATH_ROUTINES[ATTACKER_RACE]
 		startThread(deathroutine, ATTACKER, ATTACKER_HERO, ATTACKER_HERO_ID, unit)
@@ -238,4 +254,5 @@ function ManageUnitDeath(unit)
 		local deathroutine = DEATH_ROUTINES[DEFENDER_RACE]
 		startThread(deathroutine, DEFENDER, DEFENDER_HERO, DEFENDER_HERO_ID, unit)
 	end
+    Resume()
 end
