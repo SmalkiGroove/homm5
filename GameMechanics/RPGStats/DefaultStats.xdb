@@ -2370,7 +2370,7 @@
 			<Demonlord>
 				<Hypnotist_ManaDrainPerLevel>1</Hypnotist_ManaDrainPerLevel>
 				<Bombardier_FireballSpellpower>1</Bombardier_FireballSpellpower>
-				<Bombardier_FireballSpellpowerLevelDivisor>1</Bombardier_FireballSpellpowerLevelDivisor>
+				<Bombardier_FireballSpellpowerLevelDivisor>2</Bombardier_FireballSpellpowerLevelDivisor>
 				<Bombardier_FireballSpellpowerPerLevel>1</Bombardier_FireballSpellpowerPerLevel>
 				<Beater_MPBonusBase>0.05</Beater_MPBonusBase>
 				<Beater_MPBonusPerLevel>0.01</Beater_MPBonusPerLevel>

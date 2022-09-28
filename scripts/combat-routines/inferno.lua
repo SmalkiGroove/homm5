@@ -36,7 +36,9 @@ end
 
 function Routine_BallistaShootUnit(side, hero)
     -- print("Trigger fireball ballista shoot !")
-    if CURRENT_UNIT_SIDE ~= side then
+    if CURRENT_UNIT == UNIT_SIDE_PREFIX[side]..'-warmachine-WAR_MACHINE_BALLISTA' then
+        SetATB_ID(CURRENT_UNIT, ATB_ZERO)
+    elseif CURRENT_UNIT_SIDE ~= side then
         TargetShoot_Ballista(side, CURRENT_UNIT)
     end
     COMBAT_PAUSE = 0
