@@ -47,7 +47,7 @@ end
 function Routine_DemonicCreatureExplosion(side, hero)
     -- print("Trigger creature explosion !")
     if CURRENT_UNIT_SIDE == side then
-        local id = GetCreatureType(unit)
+        local id = GetCreatureType(CURRENT_UNIT)
         if GetCreatureFactionID(id) == INFERNO then
             local x,y = GetUnitPosition(CURRENT_UNIT)
             UnitCastAreaSpell(CURRENT_UNIT, SPELL_ABILITY_EXPLOSION, x, y)
