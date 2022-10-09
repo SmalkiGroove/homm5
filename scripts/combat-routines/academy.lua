@@ -76,7 +76,7 @@ function Routine_CastRandomSlow(side, hero)
     -- print("Trigger random Slow !")
     if CURRENT_UNIT == hero and GetUnitManaPoints(hero) >= 20 then
         HeroCast_RandomCreature(hero, SPELL_SLOW, NO_COST, 1-side)
-        SetATB_ID(hero, ATB_INSTANT)
+        if IsHuman(side) then SetATB_ID(hero, ATB_INSTANT) end
     end
     COMBAT_PAUSE = 0
 end

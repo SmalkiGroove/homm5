@@ -33,7 +33,7 @@ function Routine_CastRandomStoneskinAndDeflect(side, hero)
         local unit = RandomCreature(side, COMBAT_TURN)
         HeroCast_Target(hero, 25, FREE_MANA, unit)
         HeroCast_Target(hero, 29, FREE_MANA, unit)
-        SetATB_ID(hero, ATB_INSTANT)
+        if IsHuman(side) then SetATB_ID(hero, ATB_INSTANT) end
     end
     COMBAT_PAUSE = 0
 end
@@ -42,7 +42,7 @@ function Routine_CastRandomEncourage(side, hero)
     -- print("Trigger random Encourage !")
     if CURRENT_UNIT == hero then
         HeroCast_RandomCreature(hero, SPELL_ENCOURAGE, NO_COST, side)
-        SetATB_ID(hero, ATB_INSTANT)
+        if IsHuman(side) then SetATB_ID(hero, ATB_INSTANT) end
     end
     COMBAT_PAUSE = 0
 end
@@ -52,7 +52,7 @@ function Routine_CastRandomVampirism(side, hero)
     if CURRENT_UNIT == hero then
         if GetUnitManaPoints(hero) >= 100 then
             HeroCast_RandomCreature(hero, SPELL_VAMPIRISM, NO_COST, side)
-            SetATB_ID(hero, ATB_INSTANT)
+            if IsHuman(side) then SetATB_ID(hero, ATB_INSTANT) end
         end
     end
     COMBAT_PAUSE = 0

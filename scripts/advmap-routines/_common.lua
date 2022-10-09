@@ -119,9 +119,9 @@ function AddHero_CreatureFromDwelling(player, hero, dwelling, creature, coef)
 	for i,town in towns do
 		if GetTownBuildingLevel(town, dwelling) ~= 0 then
 			local recruits = GetObjectDwellingCreatures(town, creature)
-			local nb = min(coef * level, recruits)
+			local nb = min(trunc(coef * level), recruits)
 			if nb >= 1 then
-				SetObjectDwellingCreatures(town, creature, recruits-nb+1)
+				SetObjectDwellingCreatures(town, creature, recruits-nb)
 				AddHeroCreatures(hero, creature, nb)
 				ShowFlyingSign({"/Text/Game/Scripts/Reinforcements.txt"; num=nb}, hero, player, FLYING_SIGN_TIME)
 			end
@@ -133,7 +133,7 @@ function ChangeHero_TownRecruits(player, hero, dwelling1, creature1, dwelling2, 
 	-- print("Upgrade recuits from hero "..hero)
 	local towns = GetHeroTowns(player, hero)
 	for i,town in towns do
-		if GetTownBuildingLevel(town, dwelling1) ~= 0 and GetTownBuildingLevel(town, dwelling1) ~= 0 then
+		if GetTownBuildingLevel(town, dwelling1) ~= 0 and GetTownBuildingLevel(town, dwelling2) ~= 0 then
 			local recruits1 = GetObjectDwellingCreatures(town, creature1)
 			local recruits2 = GetObjectDwellingCreatures(town, creature2)
 			local nb = min(amount, recruits1)

@@ -1255,7 +1255,7 @@
 						<Prob>12</Prob>
 					</Item>
 					<Item>
-						<SkillID>HERO_SKILL_LOGISTICS</SkillID>
+						<SkillID>HERO_SKILL_LUCK</SkillID>
 						<Prob>6</Prob>
 					</Item>
 					<Item>

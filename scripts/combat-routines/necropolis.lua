@@ -49,7 +49,7 @@ function Routine_CastRandomPlague(side, hero)
     -- print("Trigger random Plague !")
     if CURRENT_UNIT == hero then
         HeroCast_RandomCreature(hero, SPELL_PLAGUE, FREE_MANA, 1-side)
-        SetATB_ID(hero, ATB_INSTANT)
+        if IsHuman(side) then SetATB_ID(hero, ATB_INSTANT) end
     end
     COMBAT_PAUSE = 0
 end
@@ -67,7 +67,7 @@ function Routine_CastRandomIceBolt(side, hero)
     -- print("Trigger random Ice Bolt !")
     if CURRENT_UNIT == hero then
         HeroCast_RandomCreature(hero, SPELL_ICE_BOLT, FREE_MANA, 1-side)
-        SetATB_ID(hero, ATB_INSTANT)
+        if IsHuman(side) then SetATB_ID(hero, ATB_INSTANT) end
     end
     COMBAT_PAUSE = 0
 end

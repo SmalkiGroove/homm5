@@ -7,14 +7,6 @@ function Routine_AddHeroAttackPairLevel()
     end
 end
 
-function Routine_AddHeroArcaneOmniscience()
-    -- Add skill learned trigger for arcane omniscience
-    local hero = H_RANLETH
-    if HasHeroSkill(hero, WARLOCK_FEAT_ABSOLUTE_CHAINS) then
-        GiveHeroSkill(hero, WIZARD_FEAT_ABSOLUTE_WIZARDY)
-    end
-end
-
 function Routine_AddHeroSpellPowerPairLevel()
     -- Spellpower - 1 per 2 level
     local hero = H_SINITAR
@@ -99,7 +91,7 @@ function Routine_UpgradeToWitches(player, hero)
     -- Upgrade scouts recruits to blood witches and riders recruits to shadow witches
     local max_bloodwitch = GetHeroLevel(hero) * 2
     ChangeHero_TownRecruits(player, hero, TOWN_BUILDING_DWELLING_1, CREATURE_SCOUT, TOWN_BUILDING_DWELLING_2, CREATURE_WITCH, max_bloodwitch)
-    local max_shadowwitch = GetHeroLevel(hero) * 0.5
+    local max_shadowwitch = trunc(GetHeroLevel(hero) * 0.5)
     ChangeHero_TownRecruits(player, hero, TOWN_BUILDING_DWELLING_4, CREATURE_RIDER, TOWN_BUILDING_DWELLING_5, CREATURE_MATRON, max_shadowwitch)
 end
 
@@ -133,7 +125,7 @@ LEARN_SKILL_DUNGEON_HERO = {
     [H_SORGAL] = "NoneRoutine",
     [H_KYTHRA] = "NoneRoutine",
     [H_AGBETH] = "NoneRoutine",
-    [H_RANLETH] = "Routine_AddHeroArcaneOmniscience",
+    [H_RANLETH] = "NoneRoutine",
     [H_DARKSTORM] = "NoneRoutine",
     [H_YRWANNA] = "NoneRoutine",
     [H_VAYSHAN] = "NoneRoutine",
@@ -185,7 +177,7 @@ DAILY_TRIGGER_DUNGEON = {
     [H_YRBETH] = NoneRoutine,
     [H_SYLSAI] = NoneRoutine,
     [H_SINITAR] = NoneRoutine,
-    [H_SHADYA] = Routine_UpgradeToWitches,
+    [H_SHADYA] = NoneRoutine,
     [H_RAELAG] = NoneRoutine,
     [H_YLAYA] = NoneRoutine,
     [H_SEPHINROTH] = Routine_ConvertOverflowManaToExp,
@@ -206,7 +198,7 @@ WEEKLY_TRIGGER_DUNGEON = {
     [H_YRBETH] = NoneRoutine,
     [H_SYLSAI] = NoneRoutine,
     [H_SINITAR] = NoneRoutine,
-    [H_SHADYA] = NoneRoutine,
+    [H_SHADYA] = Routine_UpgradeToWitches,
     [H_RAELAG] = NoneRoutine,
     [H_YLAYA] = NoneRoutine,
     [H_SEPHINROTH] = NoneRoutine,
@@ -228,7 +220,7 @@ end
 
 function DoDungeonRoutine_LevelUp(hero)
     Trigger(HERO_LEVELUP_TRIGGER, hero, LEVEL_UP_DUNGEON_HERO[hero])
-    Trigger(HERO_ADD_SKILL_TRIGGER, hero, LEARN_SKILL_DUNGEON_HERO[hero])
+    -- Trigger(HERO_ADD_SKILL_TRIGGER, hero, LEARN_SKILL_DUNGEON_HERO[hero])
 end
 
 

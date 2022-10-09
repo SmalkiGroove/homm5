@@ -14726,6 +14726,14 @@
 							<Item>HERO_SKILL_REMOTE_CONTROL</Item>
 						</dependenciesIDs>
 					</Item>
+					<Item>
+						<Class>HERO_CLASS_BEASTMASTER</Class>
+						<dependenciesIDs>
+							<Item>HERO_SKILL_LUCKY_SPELLS</Item>
+							<Item>HERO_SKILL_MENTORING</Item>
+							<Item>HERO_SKILL_REMOTE_CONTROL</Item>
+						</dependenciesIDs>
+					</Item>
 				</SkillPrerequisites>
 				<AIRacesValues>
 					<Haven>

@@ -60,7 +60,7 @@ end
 function Routine_CastRandomStoneSpikes(side, hero)
     -- print("Trigger random Stone spikes !")
     HeroCast_RandomCreatureArea(hero, SPELL_STONE_SPIKES, FREE_MANA, 1-side)
-    SetATB_ID(hero, ATB_INSTANT)
+    if IsHuman(side) then SetATB_ID(hero, ATB_INSTANT) end
     COMBAT_PAUSE = 0
 end
 

@@ -48,7 +48,7 @@ function Routine_CastRandomBloodlust(side, hero)
     -- print("Trigger random bloodlust !")
     if CURRENT_UNIT == hero then
         HeroCast_RandomCreature(hero, SPELL_BLOODLUST, FREE_MANA, side)
-        SetATB_ID(hero, ATB_INSTANT)
+        if IsHuman(side) then SetATB_ID(hero, ATB_INSTANT) end
     end
     COMBAT_PAUSE = 0
 end

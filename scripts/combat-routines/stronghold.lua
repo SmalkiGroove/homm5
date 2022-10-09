@@ -99,7 +99,7 @@ function Routine_CastRandomVulnerability(side, hero)
     -- print("Trigger random vulnerability !")
     if CURRENT_UNIT == hero then
         HeroCast_RandomCreature(hero, SPELL_DISRUPTING_RAY, FREE_MANA, 1-side)
-        SetATB_ID(hero, ATB_INSTANT)
+        if IsHuman(side) then SetATB_ID(hero, ATB_INSTANT) end
     end
     COMBAT_PAUSE = 0
 end
