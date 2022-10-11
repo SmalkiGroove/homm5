@@ -51,6 +51,39 @@ function AddHero_StatPercent(player, hero, stat, coef)
 	end
 end
 
+function AddHero_RandomSpell(hero, type, tier)
+	-- print("Adding random spell to hero "..hero)
+	local spells = {}
+	if type == SPELL_TYPE_DESTRUCTIVE_MAGIC then
+		if tier >= 1 then insert(spells, SPELL_MAGIC_ARROW); insert(spells, SPELL_STONE_SPIKES) end
+		if tier >= 2 then insert(spells, SPELL_LIGHTNING_BOLT); insert(spells, SPELL_ICE_BOLT) end
+		if tier >= 3 then insert(spells, SPELL_FIREBALL); insert(spells, SPELL_FROST_RING) end
+		if tier >= 4 then insert(spells, SPELL_CHAIN_LIGHTNING); insert(spells, SPELL_METEOR_SHOWER); insert(spells, SPELL_DEEP_FREEZE) end
+		if tier >= 5 then insert(spells, SPELL_IMPLOSION); insert(spells, SPELL_ARMAGEDDON) end
+	elseif type == SPELL_TYPE_DARK_MAGIC then
+		if tier >= 1 then insert(spells, SPELL_CURSE); insert(spells, SPELL_SLOW); insert(spells, SPELL_SORROW) end
+		if tier >= 2 then insert(spells, SPELL_DISRUPTING_RAY); insert(spells, SPELL_PLAGUE) end
+		if tier >= 3 then insert(spells, SPELL_FORGETFULNESS); insert(spells, SPELL_WEAKNESS); insert(spells, SPELL_BLIND) end
+		if tier >= 4 then insert(spells, SPELL_BERSERK); insert(spells, SPELL_VAMPIRISM) end
+		if tier >= 5 then insert(spells, SPELL_HYPNOTIZE); insert(spells, SPELL_UNHOLY_WORD) end
+	elseif type == SPELL_TYPE_LIGHT_MAGIC then
+		if tier >= 1 then insert(spells, SPELL_BLESS); insert(spells, SPELL_HASTE) end
+		if tier >= 2 then insert(spells, SPELL_STONESKIN); insert(spells, SPELL_DISPEL) end
+		if tier >= 3 then insert(spells, SPELL_BLOODLUST); insert(spells, SPELL_REGENERATION); insert(spells, SPELL_DEFLECT_ARROWS) end
+		if tier >= 4 then insert(spells, SPELL_DIVINE_VENGEANCE); insert(spells, SPELL_TELEPORT); insert(spells, SPELL_ANTI_MAGIC) end
+		if tier >= 5 then insert(spells, SPELL_RESURRECT); insert(spells, SPELL_HOLY_WORD) end
+	elseif type == SPELL_TYPE_SUMMONING_MAGIC then
+		if tier >= 1 then insert(spells, SPELL_MAGIC_FIST); insert(spells, SPELL_ARCANE_CRYSTAL) end
+		if tier >= 2 then insert(spells, SPELL_LAND_MINE); insert(spells, SPELL_WASP_SWARM); insert(spells, SPELL_EARTHQUAKE) end
+		if tier >= 3 then insert(spells, SPELL_BLADE_BARRIER); insert(spells, SPELL_ANIMATE_DEAD); insert(spells, SPELL_SUMMON_ELEMENTALS) end
+		if tier >= 4 then insert(spells, SPELL_SUMMON_HIVE); insert(spells, SPELL_PHANTOM); insert(spells, SPELL_FIREWALL) end
+		if tier >= 5 then insert(spells, SPELL_CELESTIAL_SHIELD); insert(spells, SPELL_CONJURE_PHOENIX) end
+	end
+	local nb = length(spells)
+	local spell = spells[random(0, nb, type)]
+	TeachHeroSpell(hero, spell)
+end
+
 function AddHero_CreatureType(player, hero, type, coef)
 	-- print("Add specific creature to hero "..hero)
 	local level = GetHeroLevel(hero)

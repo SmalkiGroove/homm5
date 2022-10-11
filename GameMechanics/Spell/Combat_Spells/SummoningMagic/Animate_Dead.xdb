@@ -10,7 +10,7 @@
 	<CombatLogTexts>
 		<Item href="/Text/CombatLog/Spells/Resurrect.txt"/>
 	</CombatLogTexts>
-	<Level>2</Level>
+	<Level>3</Level>
 	<MagicSchool>MAGIC_SCHOOL_SUMMONING</MagicSchool>
 	<RequiredHeroLevel>0</RequiredHeroLevel>
 	<IsAimed>true</IsAimed>

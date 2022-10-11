@@ -10,7 +10,7 @@ function round(num)
 end
 
 function ceil(num)
-    local r = num + mod(-num,1)
+    local r = trunc(num + 0.99)
     return r
 end
 

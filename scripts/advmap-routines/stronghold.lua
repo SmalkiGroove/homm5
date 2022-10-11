@@ -1,4 +1,14 @@
 
+function Routine_LearnSpellShaman1()
+    local hero = H_SHAKKARUKAT
+    local level = GetHeroLevel(hero)
+    if mod(level, 2) == 0 then
+        local type = random(SPELL_TYPE_LIGHT_MAGIC, SPELL_TYPE_SUMMONING_MAGIC, mod(level,5))
+        local tier = ceil(level * 0.15)
+        AddHero_RandomSpell(hero, type, tier)
+    end
+end
+
 function Routine_AddHeroWyverns(player, hero)
     -- Wyvern - 1:10 - 2:30 - 3:50
     AddHero_CreatureInTypes(player, hero, {CREATURE_WYVERN,CREATURE_WYVERN_POISONOUS,CREATURE_WYVERN_PAOKAI}, 0.05)

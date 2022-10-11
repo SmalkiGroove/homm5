@@ -38,8 +38,9 @@ end
 
 function Routine_GenerateWoodOrOre(player, hero)
     -- Wood or Ore - +1 / 2 levels
-    local resource = random(1)
-    local amount = trunc(GetHeroLevel(hero) * 0.5)
+    local level = GetHeroLevel(hero)
+    local resource = random(0, 1, level)
+    local amount = trunc(level * 0.5)
     AddPlayer_Resource(player, hero, resource, amount)
 end
 

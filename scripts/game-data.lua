@@ -227,4 +227,13 @@ HEROES_ORCS = {
 } -- 19
 
 
+--------------------------------------------------------------------------------------------------------------------------------------------
+-- SPELL TYPES
+
+SPELL_TYPE_DESTRUCTIVE_MAGIC = 1
+SPELL_TYPE_DARK_MAGIC = 2
+SPELL_TYPE_LIGHT_MAGIC = 3
+SPELL_TYPE_SUMMONING_MAGIC = 4
+
+
 SOURCE_LOADED["game-data"] = 1

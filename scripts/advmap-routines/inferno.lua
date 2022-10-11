@@ -22,7 +22,7 @@ end
 
 function Routine_AddRandomStat(player, hero)
     -- Random attribute - +1 / 5*lvl / week
-    local stat = 1 + random(3)
+    local stat = random(1, 4, GetHeroLevel(hero))
     AddHero_StatPerLevel(player, hero, stat, 0.2)
 end
 
