@@ -80,7 +80,7 @@ function AddHero_RandomSpell(hero, type, tier)
 		if tier >= 5 then insert(spells, SPELL_CELESTIAL_SHIELD); insert(spells, SPELL_CONJURE_PHOENIX) end
 	end
 	local nb = length(spells)
-	local spell = spells[random(0, nb, type)]
+	local spell = spells[random(0, nb-1, type)]
 	TeachHeroSpell(hero, spell)
 end
 

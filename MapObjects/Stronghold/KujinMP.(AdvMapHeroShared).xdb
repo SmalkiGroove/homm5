@@ -34,8 +34,8 @@
 	<Class>HERO_CLASS_SHAMAN</Class>
 	<Specialization>HERO_SPEC_CHOSEN_BY_GODS</Specialization>
 	<PrimarySkill>
-		<Mastery>MASTERY_BASIC</Mastery>
-		<SkillID>HERO_SKILL_DEMONIC_RAGE</SkillID>
+		<Mastery>MASTERY_EXPERT</Mastery>
+		<SkillID>HERO_SKILL_NAVIGATION</SkillID>
 	</PrimarySkill>
 	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Stronghold/ChosenByGods/Name.txt"/>
 	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Stronghold/ChosenByGods/Description.txt"/>

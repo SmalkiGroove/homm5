@@ -34,8 +34,8 @@
 	<Class>HERO_CLASS_SHAMAN</Class>
 	<Specialization>HERO_SPEC_IMPREGNABLE</Specialization>
 	<PrimarySkill>
-		<Mastery>MASTERY_BASIC</Mastery>
-		<SkillID>HERO_SKILL_DEMONIC_RAGE</SkillID>
+		<Mastery>MASTERY_EXPERT</Mastery>
+		<SkillID>HERO_SKILL_NAVIGATION</SkillID>
 	</PrimarySkill>
 	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Stronghold/Impregnable/Name.txt"/>
 	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Stronghold/Impregnable/Description.txt"/>
@@ -75,7 +75,7 @@
 		</skills>
 		<perkIDs/>
 		<spellIDs>
-			<Item>SPELL_MAGIC_FIST</Item>
+			<Item>SPELL_DISPEL</Item>
 		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>

@@ -1,12 +1,60 @@
 
-function Routine_LearnSpellShaman1()
-    local hero = H_SHAKKARUKAT
-    local level = GetHeroLevel(hero)
-    if mod(level, 2) == 0 then
-        local type = random(SPELL_TYPE_LIGHT_MAGIC, SPELL_TYPE_SUMMONING_MAGIC, mod(level,5))
-        local tier = ceil(level * 0.15)
-        AddHero_RandomSpell(hero, type, tier)
+function Routine_LearnSpellShaman(hero)
+    if not HasHeroSkill(hero, HERO_SKILL_DEMONIC_RAGE) then
+        local level = GetHeroLevel(hero)
+        if mod(level, 2) == 0 then
+            local type = random(SPELL_TYPE_LIGHT_MAGIC, SPELL_TYPE_SUMMONING_MAGIC, mod(level,5))
+            local tier = ceil(level * 0.15)
+            AddHero_RandomSpell(hero, type, tier)
+        end
     end
+end
+
+function Routine_LearnSpellShaman1()
+    Routine_LearnSpellShaman(H_SHAKKARUKAT)
+end
+
+function Routine_LearnSpellShaman2()
+    Routine_LearnSpellShaman(H_KUJIN)
+end
+
+function Routine_LearnSpellShaman3()
+    Routine_LearnSpellShaman(H_SHIVA)
+end
+
+function Routine_LearnSpellShaman4()
+    Routine_LearnSpellShaman(H_MUKHA)
+end
+
+function Routine_LearnSpellShaman5()
+    Routine_LearnSpellShaman(H_HAGGASH)
+end
+
+function Routine_LearnSpellWitch(hero)
+    if not HasHeroSkill(hero, HERO_SKILL_DEMONIC_RAGE) then
+        local level = GetHeroLevel(hero)
+        if mod(level, 2) == 0 then
+            local type = random(SPELL_TYPE_DESTRUCTIVE_MAGIC, SPELL_TYPE_DARK_MAGIC, mod(level,5))
+            local tier = ceil(level * 0.15)
+            AddHero_RandomSpell(hero, type, tier)
+        end
+    end
+end
+
+function Routine_LearnSpellWitch1()
+    Routine_LearnSpellWitch(H_URGHAT)
+end
+
+function Routine_LearnSpellWitch2()
+    Routine_LearnSpellWitch(H_GARUNA)
+end
+
+function Routine_LearnSpellWitch3()
+    Routine_LearnSpellWitch(H_ZOULEIKA)
+end
+
+function Routine_LearnSpellWitch4()
+    Routine_LearnSpellWitch(H_ERIKA)
 end
 
 function Routine_AddHeroWyverns(player, hero)
@@ -45,15 +93,15 @@ LEVEL_UP_STRONGHOLD_HERO = {
     [H_KILGHAN] = "NoneRoutine",
     [H_CRAGHACK] = "NoneRoutine",
     [H_KRAAL] = "NoneRoutine",
-    [H_SHAKKARUKAT] = "NoneRoutine",
-    [H_KUJIN] = "NoneRoutine",
-    [H_SHIVA] = "NoneRoutine",
-    [H_MUKHA] = "NoneRoutine",
-    [H_HAGGASH] = "NoneRoutine",
-    [H_URGHAT] = "NoneRoutine",
-    [H_GARUNA] = "NoneRoutine",
-    [H_ZOULEIKA] = "NoneRoutine",
-    [H_ERIKA] = "NoneRoutine",
+    [H_SHAKKARUKAT] = "Routine_LearnSpellShaman1",
+    [H_KUJIN] = "Routine_LearnSpellShaman2",
+    [H_SHIVA] = "Routine_LearnSpellShaman3",
+    [H_MUKHA] = "Routine_LearnSpellShaman4",
+    [H_HAGGASH] = "Routine_LearnSpellShaman5",
+    [H_URGHAT] = "Routine_LearnSpellWitch1",
+    [H_GARUNA] = "Routine_LearnSpellWitch2",
+    [H_ZOULEIKA] = "Routine_LearnSpellWitch3",
+    [H_ERIKA] = "Routine_LearnSpellWitch4",
 }
 
 START_TRIGGER_STRONGHOLD = {
