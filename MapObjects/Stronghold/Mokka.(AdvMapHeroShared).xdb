@@ -31,7 +31,7 @@
 	<RazedStatic/>
 	<Icon128/>
 	<InternalName>Mokka</InternalName>
-	<Class>HERO_CLASS_SHAMAN</Class>
+	<Class>HERO_CLASS_BEWITCHER</Class>
 	<Specialization>HERO_SPEC_STORMCALLER</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_EXPERT</Mastery>
