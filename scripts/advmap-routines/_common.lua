@@ -46,7 +46,6 @@ function AddHero_StatPercent(player, hero, stat, coef)
 	local amount = round(coef * current)
 	if amount >= 1 then
 		ChangeHeroStat(hero, stat, amount)
-		local attribute = ATTRIBUTE_NAME[stat]
 		ShowFlyingSign({"/Text/Game/Scripts/Stats/"..ATTRIBUTE_TEXT[stat]..".txt"; num=amount}, hero, player, FLYING_SIGN_TIME)
 	end
 end

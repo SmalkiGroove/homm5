@@ -20,7 +20,7 @@ end
 function Routine_SummonPitlords(side, hero)
     -- print("Trigger pit lords summoning !")
     local m = GetUnitMaxManaPoints(hero) * 0.1
-    local amount = trunc(0.1 * m * m)
+    local amount = trunc(0.06 * m * m)
     SummonCreatureStack_X(side, CREATURE_BALOR, amount, 0)
     SummonCreatureStack_X(side, CREATURE_BALOR, amount, 0)
     COMBAT_PAUSE = 0

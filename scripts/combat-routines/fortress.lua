@@ -47,9 +47,9 @@ function Routine_CastMeteorShowers(side, hero)
     -- print("Trigger uber meteor shower !")
     local x = 15 - 13 * side
     HeroCast_Area(hero, SPELL_UBER_METEOR_SHOWER, FREE_MANA, x, 9)
-    sleep(750)
+    sleep(600)
     HeroCast_Area(hero, SPELL_UBER_METEOR_SHOWER, FREE_MANA, x, 4)
-    sleep(750)
+    sleep(600)
     COMBAT_PAUSE = 0
 end
 
