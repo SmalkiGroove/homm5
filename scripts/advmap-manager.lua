@@ -9,6 +9,7 @@ ROUTINES_LOADED = {
 	[6] = 0,
 	[7] = 0,
 	[8] = 0,
+	[9] = 0,
 }
 
 function LoadScript(path, key)
@@ -26,6 +27,7 @@ LoadScript("/scripts/advmap-routines/inferno.lua", INFERNO)
 LoadScript("/scripts/advmap-routines/necropolis.lua", NECROPOLIS)
 LoadScript("/scripts/advmap-routines/preserve.lua", PRESERVE)
 LoadScript("/scripts/advmap-routines/stronghold.lua", STRONGHOLD)
+LoadScript("/scripts/advmap-routines/x_conversion.lua", 9)
 
 
 TURN = 1
