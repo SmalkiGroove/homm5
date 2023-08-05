@@ -1,4 +1,13 @@
 
+function Routine_GainStats(hero)
+        local level = GetHeroLevel(hero)
+        if mod(level, 5) == 0 then
+            AddHero_StatAmount(player, hero, STAT_ATTACK, 1)
+            AddHero_StatAmount(player, hero, STAT_DEFENCE, 1)
+        end
+    end
+end
+
 function Routine_LearnSpellShaman(hero)
     if not HasHeroSkill(hero, HERO_SKILL_DEMONIC_RAGE) then
         local level = GetHeroLevel(hero)
@@ -72,6 +81,11 @@ function Routine_AddRecruitsShamans(player, hero)
     AddHero_TownRecruits(player, hero, TOWN_BUILDING_DWELLING_2, CREATURE_SHAMAN, 3.0)
 end
 
+function Routine_AddRecruitsCyclops(player, hero)
+    -- Cyclops - 0.2 * level recruits per week
+    AddHero_TownRecruits(player, hero, TOWN_BUILDING_DWELLING_7, CREATURE_CYCLOP, 0.2)
+end
+
 function Routine_AddHeroTitans(player, hero)
     -- Titans - 1:3 - 2:8 - 3:13 - 4:18 - 5:23 ... 10:48
     AddHero_CreatureType(player, hero, CREATURE_TITAN, 0.2)
@@ -88,7 +102,7 @@ LEVEL_UP_STRONGHOLD_HERO = {
     [H_GOTAI] = "NoneRoutine",
     [H_AZAR] = "NoneRoutine",
     [H_MATEWA] = "NoneRoutine",
-    [H_KUNYAK] = "NoneRoutine",
+    [H_KUNYAK] = "Routine_GainStats",
     [H_KRAGH] = "NoneRoutine",
     [H_KILGHAN] = "NoneRoutine",
     [H_CRAGHACK] = "NoneRoutine",
@@ -153,7 +167,7 @@ WEEKLY_TRIGGER_TRONGHOLD = {
     [H_GORSHAK] = Routine_HeroCallCentaurs,
     [H_GOTAI] = NoneRoutine,
     [H_AZAR] = NoneRoutine,
-    [H_MATEWA] = NoneRoutine,
+    [H_MATEWA] = Routine_AddRecruitsCyclops,
     [H_KUNYAK] = NoneRoutine,
     [H_KRAGH] = NoneRoutine,
     [H_KILGHAN] = NoneRoutine,

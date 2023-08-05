@@ -1,3 +1,4 @@
+GOBLIN_AMOUNT = 0
 
 function Routine_CastCallOfBlood(side, hero)
     -- print("Trigger call of blood !")
@@ -22,6 +23,20 @@ end
 function Routine_CastPowerfulBlowCentaur(side, hero)
     -- print("Trigger powerful blow on centaur !")
     HeroCast_TargetCreatureTypes(hero, SPELL_EFFECT_POWERFULL_BLOW, NO_COST, side, {CREATURE_CENTAUR,CREATURE_CENTAUR_NOMAD,CREATURE_CENTAUR_MARADEUR})
+    COMBAT_PAUSE = 0
+end
+
+function Routine_GetMaxGoblinStack(side, hero)
+    -- print("Trigger get max goblin stack !")
+    for i,cr in GetUnits(side, CREATURE) do
+        local type = GetCreatureType(cr)
+        if type == CREATURE_GOBLIN or type == CREATURE_GOBLIN_TRAPPER or type == CREATURE_GOBLIN_DEFILER then
+            local nb = GetCreatureNumber(cr)
+            if nb > GOBLIN_AMOUNT then
+                GOBLIN_AMOUNT = nb
+            end
+        end
+    end
     COMBAT_PAUSE = 0
 end
 
@@ -56,7 +71,7 @@ end
 function Routine_SummonGoblinStack(side, hero)
     -- print("Trigger summon goblins !")
     if CURRENT_UNIT == hero then
-        local amount = trunc(GetUnitMaxManaPoints(hero) * 1.5)
+        local amount = trunc(GOBLIN_AMOUNT * 0.1)
         SummonCreatureStack(side, CREATURE_GOBLIN, amount)
     end
     COMBAT_PAUSE = 0
@@ -135,7 +150,7 @@ STRONGHOLD_COMBAT_START = {
     [H_MATEWA] = NoneRoutine,
     [H_KUNYAK] = NoneRoutine,
     [H_KRAGH] = Routine_CastPowerfulBlowCentaur,
-    [H_KILGHAN] = NoneRoutine,
+    [H_KILGHAN] = Routine_GetMaxGoblinStack,
     [H_CRAGHACK] = Routine_CastRallingCry,
     [H_KRAAL] = Routine_BallistaRandomShoot,
     [H_SHAKKARUKAT] = NoneRoutine,
