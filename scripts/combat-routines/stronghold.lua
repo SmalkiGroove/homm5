@@ -93,6 +93,12 @@ function Routine_ShamansManaRegen(side, hero)
             local n = trunc(GetUnitMaxManaPoints(hero) * 0.1)
             local m = GetUnitManaPoints(CURRENT_UNIT)
             SetMana(CURRENT_UNIT, m + n)
+            if m + n >= 30 then
+                if type == CREATURE_SHAMAN then UnitCastAimedSpell(CURRENT_UNIT,SPELL_DISPEL,CURRENT_UNIT) end
+                if type == CREATURE_SHAMAN_WITCH then UnitCastAimedSpell(CURRENT_UNIT,SPELL_STONESKIN,CURRENT_UNIT) end
+                if type == CREATURE_SHAMAN_HAG then UnitCastAimedSpell(CURRENT_UNIT,SPELL_DEFLECT_ARROWS,CURRENT_UNIT) end
+                SetATB_ID(CURRENT_UNIT, ATB_INSTANT)
+            end
         end
     end
     COMBAT_PAUSE = 0

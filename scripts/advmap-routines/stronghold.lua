@@ -8,6 +8,14 @@ function Routine_GainStats(hero)
     end
 end
 
+function Routine_GainArtifactCrownLead(hero)
+    local hero = H_CRAGHACK
+    local level = GetHeroLevel(hero)
+    if level == 10 then 
+        GiveArtifact(hero, ARTIFACT_CROWN_OF_LEADER)
+    end
+end
+
 function Routine_LearnSpellShaman(hero)
     if not HasHeroSkill(hero, HERO_SKILL_DEMONIC_RAGE) then
         local level = GetHeroLevel(hero)
@@ -105,7 +113,7 @@ LEVEL_UP_STRONGHOLD_HERO = {
     [H_KUNYAK] = "Routine_GainStats",
     [H_KRAGH] = "NoneRoutine",
     [H_KILGHAN] = "NoneRoutine",
-    [H_CRAGHACK] = "NoneRoutine",
+    [H_CRAGHACK] = "Routine_GainArtifactCrownLead",
     [H_KRAAL] = "NoneRoutine",
     [H_SHAKKARUKAT] = "Routine_LearnSpellShaman1",
     [H_KUJIN] = "Routine_LearnSpellShaman2",

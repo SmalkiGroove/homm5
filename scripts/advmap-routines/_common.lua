@@ -80,6 +80,7 @@ function AddHero_RandomSpell(hero, type, tier)
 	end
 	local nb = length(spells)
 	local spell = spells[random(0, nb-1, type)]
+	if KnowHeroSpell(hero, spell) then spell = spells[random(0, nb-1, type)] end
 	TeachHeroSpell(hero, spell)
 end
 

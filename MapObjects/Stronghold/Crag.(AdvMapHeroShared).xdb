@@ -63,6 +63,7 @@
 		</skills>
 		<perkIDs>
 			<Item>HERO_SKILL_MIGHT_OVER_MAGIC</Item>
+			<Item>HERO_SKILL_MEMORY_OF_OUR_BLOOD</Item>
 		</perkIDs>
 		<spellIDs>
 			<Item>SPELL_WARCRY_RALLING_CRY</Item>

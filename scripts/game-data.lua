@@ -173,8 +173,8 @@ H_KRAAL = 'Kraal'                   -- ballista
 H_SHAKKARUKAT = 'Hero6'             -- wyverns
 H_KUJIN = 'KujinMP'                 -- bless
 H_SHIVA = 'Shiva'                   -- shamans
-H_MUKHA = 'Mokka'                   -- lightning
 H_HAGGASH = 'Hero7'                 -- magic resist
+H_MUKHA = 'Mokka'                   -- lightning
 H_URGHAT = 'Hero2'                  -- dark ritual
 H_GARUNA = 'Hero3'                  -- plague tent
 H_ZOULEIKA = 'Zouleika'             -- vulnerability
@@ -225,6 +225,167 @@ HEROES_ORCS = {
     H_SHAKKARUKAT, H_KUJIN, H_SHIVA, H_MUKHA, H_HAGGASH,
     H_URGHAT, H_GARUNA, H_ZOULEIKA, H_ERIKA
 } -- 19
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+-- HEROES STARTING ARMIES
+
+INIT_T1X = 100
+INIT_T1 = 80
+INIT_T2X = 50
+INIT_T2 = 40
+INIT_T3 = 20
+INIT_T4 = 10
+INIT_T5 = 5
+INIT_T6 = 2
+INIT_T7 = 1
+
+STARTING_ARMIES = {
+    -- haven
+    [H_DUNCAN] = {},
+    [H_DOUGAL] = {},
+    [H_KLAUS] = {},
+    [H_IRINA] = {},
+    [H_ISABEL] = {},
+    [H_LASZLO] = {},
+    [H_NICOLAI] = {},
+    [H_GODRIC] = {},
+    [H_FREYDA] = {},
+    [H_RUTGER] = {},
+    [H_MAEVE] = {},
+    [H_ELLAINE] = {},
+    [H_ALARIC] = {},
+    [H_GABRIELLE] = {},
+    [H_ORLANDO] = {},
+    [H_MARKAL] = {},
+    -- preserve
+    [H_WYNGAAL] = {},
+    [H_ANWEN] = {},
+    [H_TALANAR] = {},
+    [H_OSSIR] = {},
+    [H_FINDAN] = {},
+    [H_JENOVA] = {},
+    [H_GILRAEN] = {},
+    [H_KYRRE] = {},
+    [H_IVOR] = {},
+    [H_MEPHALA] = {},
+    [H_ALARON] = {},
+    [H_DIRAEL] = {},
+    [H_VINRAEL] = {},
+    [H_YLTHIN] = {},
+    [H_TIERU] = {},
+    [H_GEM] = {},
+    [H_ELLESHAR] = {},
+    -- academy
+    [H_HAVEZ] = {},
+    [H_MINASLI] = {},
+    [H_JOSEPHINE] = {},
+    [H_RAZZAK] = {},
+    [H_DAVIUS] = {},
+    [H_RISSA] = {},
+    [H_GURVILIN] = {},
+    [H_JHORA] = {},
+    [H_CYRUS] = {},
+    [H_FAIZ] = {},
+    [H_MAAHIR] = {},
+    [H_NATHIR] = {},
+    [H_NUR] = {},
+    [H_GALIB] = {},
+    [H_ZEHIR] = {},
+    [H_THEODORUS] = {},
+    [H_EMILIA] = {},
+    -- fortress
+    [H_INGVAR] = {},
+    [H_ROLF] = {},
+    [H_WULFSTAN] = {},
+    [H_TAZAR] = {},
+    [H_MAXIMUS] = {},
+    [H_KARLI] = {},
+    [H_HEDWIG] = {},
+    [H_TOLGHAR] = {},
+    [H_EBBA] = {},
+    [H_ULAND] = {},
+    [H_HAEGEIR] = {},
+    [H_HELMAR] = {},
+    [H_BRAND] = {},
+    [H_ERLING] = {},
+    [H_HANGVUL] = {},
+    [H_BART] = {},
+    [H_INGA] = {},
+    -- necropolis
+    [H_KASPAR] = {},
+    [H_VLADIMIR] = {},
+    [H_ORSON] = {},
+    [H_ORNELLA2] = {},
+    [H_LUCRETIA] = {},
+    [H_XERXON] = {},
+    [H_DEIRDRE] = {},
+    [H_NAADIR] = {},
+    [H_AISLINN] = {},
+    [H_GIOVANNI] = {},
+    [H_ARCHILUS] = {},
+    [H_ZOLTAN] = {},
+    [H_RAVEN] = {},
+    [H_ARANTIR] = {},
+    [H_THANT] = {},
+    [H_SANDRO] = {},
+    [H_VIDOMINA] = {},
+    -- inferno
+    [H_GRAWL] = {},
+    [H_NEBIROS] = {},
+    [H_MARBAS] = {},
+    [H_HARKENRAZ] = {},
+    [H_CALH] = {},
+    [H_SHELTEM] = {},
+    [H_ALASTOR] = {},
+    [H_GROK] = {},
+    [H_NYMUS] = {},
+    [H_JEZEBETH] = {},
+    [H_MALUSTAR] = {},
+    [H_AGRAEL] = {},
+    [H_BIARA] = {},
+    [H_KHABELETH] = {},
+    [H_ZYDAR] = {},
+    [H_DELEB] = {},
+    [H_CALID] = {},
+    -- dungeon
+    [H_SORGAL] = {},
+    [H_KYTHRA] = {},
+    [H_AGBETH] = {},
+    [H_RANLETH] = {},
+    [H_DARKSTORM] = {},
+    [H_YRWANNA] = {},
+    [H_VAYSHAN] = {},
+    [H_THRALSAI] = {},
+    [H_LETHOS] = {},
+    [H_ERUINA] = {},
+    [H_SYLSAI] = {},
+    [H_SINITAR] = {},
+    [H_SHADYA] = {},
+    [H_RAELAG] = {},
+    [H_YLAYA] = {},
+    [H_SEPHINROTH] = {},
+    [H_KASTORE] = {},
+    -- stronghold
+    [H_TELSEK] = { {CREATURE_ORC_WARRIOR,INIT_T3}, {CREATURE_ORC_WARRIOR,INIT_T3}, {CREATURE_ORC_WARRIOR,INIT_T3} },
+    [H_GORSHAK] = { {CREATURE_CENTAUR,INIT_T4}, {CREATURE_CENTAUR,INIT_T4} },
+    [H_GOTAI] = { {CREATURE_GOBLIN,INIT_T1}, {CREATURE_SHAMAN,INIT_T2}, {CREATURE_ORC_WARRIOR,INIT_T3} },
+    [H_AZAR] = { {CREATURE_GOBLIN,INIT_T1}, {CREATURE_SHAMAN,INIT_T2}, {CREATURE_ORC_WARRIOR,INIT_T3} },
+    [H_MATEWA] = { {CREATURE_GOBLIN,INIT_T1X}, {CREATURE_CYCLOP,INIT_T7} },
+    [H_KUNYAK] = { {CREATURE_SHAMAN,INIT_T2}, {CREATURE_ORC_WARRIOR,INIT_T3}, {CREATURE_ORCCHIEF_BUTCHER,INIT_T5} },
+    [H_KRAGH] = { {CREATURE_GOBLIN,INIT_T1}, {CREATURE_ORC_WARRIOR,INIT_T3}, {CREATURE_CENTAUR,INIT_T4} },
+    [H_KILGHAN] = { {CREATURE_GOBLIN,INIT_T1X}, {CREATURE_GOBLIN,INIT_T1X} },
+    [H_CRAGHACK] = { {CREATURE_GOBLIN,INIT_T1}, {CREATURE_SHAMAN,INIT_T2}, {CREATURE_ORC_WARRIOR,INIT_T3} },
+    [H_KRAAL] = { {CREATURE_GOBLIN,INIT_T1}, {CREATURE_SHAMAN,INIT_T2}, {CREATURE_ORC_WARRIOR,INIT_T3} },
+    [H_SHAKKARUKAT] = { {CREATURE_WYVERN_POISONOUS,INIT_T6} },
+    [H_KUJIN] = { {CREATURE_GOBLIN,INIT_T1X}, {CREATURE_SHAMAN,INIT_T2X} },
+    [H_SHIVA] = { {CREATURE_SHAMAN,INIT_T2X}, {CREATURE_SHAMAN,INIT_T2X} },
+    [H_HAGGASH] = { {CREATURE_GOBLIN,INIT_T1}, {CREATURE_SHAMAN,INIT_T2}, {CREATURE_ORC_WARRIOR,INIT_T3} },
+    [H_MUKHA] = { {CREATURE_SHAMAN,INIT_T2X}, {CREATURE_ORC_WARRIOR,INIT_T3} },
+    [H_URGHAT] = { {CREATURE_GOBLIN,INIT_T1X}, {CREATURE_SHAMAN,INIT_T2X} },
+    [H_GARUNA] = { {CREATURE_GOBLIN,INIT_T1}, {CREATURE_SHAMAN,INIT_T2}, {CREATURE_ORC_WARRIOR,INIT_T3} },
+    [H_ZOULEIKA] = { {CREATURE_GOBLIN,INIT_T1}, {CREATURE_SHAMAN,INIT_T2}, {CREATURE_ORC_WARRIOR,INIT_T3} },
+    [H_ERIKA] = { {CREATURE_GOBLIN,INIT_T1X}, {CREATURE_SHAMAN,INIT_T2X} },
+}
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------

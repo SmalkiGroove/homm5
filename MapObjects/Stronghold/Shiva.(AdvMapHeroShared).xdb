@@ -66,6 +66,7 @@
 		</perkIDs>
 		<spellIDs>
 			<Item>SPELL_STONESKIN</Item>
+			<Item>SPELL_DEFLECT_ARROWS</Item>
 		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>

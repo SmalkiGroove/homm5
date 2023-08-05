@@ -57,11 +57,11 @@
 		<Knowledge>2</Knowledge>
 		<skills>
 			<Item>
-				<Mastery>MASTERY_BASIC</Mastery>
+				<Mastery>MASTERY_EXPERT</Mastery>
 				<SkillID>HERO_SKILL_LIGHT_MAGIC</SkillID>
 			</Item>
 			<Item>
-				<Mastery>MASTERY_BASIC</Mastery>
+				<Mastery>MASTERY_EXPERT</Mastery>
 				<SkillID>HERO_SKILL_SHATTER_LIGHT_MAGIC</SkillID>
 			</Item>
 		</skills>
