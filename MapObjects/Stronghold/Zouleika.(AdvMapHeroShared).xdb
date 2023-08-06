@@ -32,7 +32,7 @@
 	<Icon128/>
 	<InternalName>Zouleika</InternalName>
 	<Class>HERO_CLASS_BEWITCHER</Class>
-	<Specialization/>
+	<Specialization>HERO_SPEC_DISRUPTER</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_EXPERT</Mastery>
 		<SkillID>HERO_SKILL_NAVIGATION</SkillID>

@@ -57,7 +57,7 @@
 		<Knowledge>2</Knowledge>
 		<skills>
 			<Item>
-				<Mastery>MASTERY_BASIC</Mastery>
+				<Mastery>MASTERY_ADVANCED</Mastery>
 				<SkillID>HERO_SKILL_WAR_MACHINES</SkillID>
 			</Item>
 		</skills>
