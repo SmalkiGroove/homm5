@@ -1,0 +1,1 @@
+Do you want to convert this town?<br>Cost = Gold: <value=gold>, Wood: <value=wood>, Ore: <value=ore>, Mercury: <value=mercury>, Crystal: <value=crystal>, Sulphur: <value=crystal>,Gems: <value=gem><br><br>WARNING: Remove armies from garrison or they will die!

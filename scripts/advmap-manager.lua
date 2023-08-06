@@ -190,6 +190,12 @@ for i = 1,8 do
 	Trigger(PLAYER_REMOVE_HERO_TRIGGER, i, REMOVE_PLAYER_HERO[i])
 end
 
+for i = 1,8 do
+	TriggerOnMapObjectType(Dwellings_T1[i], OBJECT_TOUCH_TRIGGER, "HeroVisitDwellingT1")
+	TriggerOnMapObjectType(Dwellings_T2[i], OBJECT_TOUCH_TRIGGER, "HeroVisitDwellingT2")
+	TriggerOnMapObjectType(Dwellings_T3[i], OBJECT_TOUCH_TRIGGER, "HeroVisitDwellingT3")
+	TriggerOnMapObjectType(Dwellings_MP[i], OBJECT_TOUCH_TRIGGER, "HeroVisitDwellingMP")
+end
 
 function InitializeHeroes()
 	for player = 1,8 do

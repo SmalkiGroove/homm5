@@ -1,0 +1,1 @@
+Would you like to convert this dwelling to your faction?<br><br>Cost:<br>Wood: <value=wood>, Ore: <value=ore>, Gold: <value=gold>

@@ -23,6 +23,14 @@ function AddPlayer_Resource(player, hero, resource, amount)
 	end
 end
 
+function TakePlayer_Resource(player, resource, amount)
+	if amount >= 1 then
+		local curamount = GetPlayerResource(player, resource)
+		local newamount = curamount - amount
+		SetPlayerResource(player, resource, newamount)
+	end
+end
+
 function AddHero_StatAmount(player, hero, stat, amount)
     if amount >= 1 then
 		ChangeHeroStat(hero, stat, amount)
