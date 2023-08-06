@@ -74,6 +74,18 @@ function GetHeroCreaturesCount( heroName )
     return count
 end
 
+function GetPlayerBrain( player )
+    if (GetPlayerState(player) == 1) then
+        if mod(GetPlayerResource(player, GOLD), 2) == 1 then
+            return COMPUTER
+        else
+            return HUMAN
+        end
+	else
+		return OBSERVER;
+	end;
+end
+
 function GetPlayerFilter( player )
   if player == PLAYER_1 then return PLAYERFLT_1 end
   if player == PLAYER_2 then return PLAYERFLT_2 end

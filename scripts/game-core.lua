@@ -1,4 +1,18 @@
 
+function FactionToTownType(faction)
+	local town_type = -1
+	if     faction == HAVEN then town_type = TOWN_HEAVEN
+	elseif faction == PRESERVE then town_type = TOWN_PRESERVE
+	elseif faction == INFERNO then town_type = TOWN_INFERNO
+	elseif faction == NECROPOLIS then town_type = TOWN_NECROMANCY
+	elseif faction == ACADEMY then town_type = TOWN_ACADEMY
+	elseif faction == DUNGEON then town_type = TOWN_DUNGEON
+	elseif faction == FORTRESS then town_type = TOWN_FORTRESS
+	elseif faction == STRONGHOLD then town_type = TOWN_STRONGHOLD
+	end
+	return town_type
+end
+
 function GetCreatureFactionID(id)
 	local race = 0
 	if 	   (id >= 1 and id <= 14) or (id >= 106 and id <= 112) then race = 1
@@ -80,6 +94,11 @@ function GetHeroArmy(hero)
 	local type = {}
 	type[1], type[2], type[3], type[4], type[5], type[6], type[7] = GetHeroCreaturesTypes(hero)
 	return type
+end
+
+function IsHeroHuman(hero)
+	local player = GetObjectOwner(hero)
+	return PLAYER_BRAIN[player] == HUMAN
 end
 
 

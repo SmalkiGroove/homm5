@@ -16,7 +16,7 @@ end
 
 function ConvertDwelling(hero, dwelling, tier)
     local player = GetObjectOwner(hero)
-    local race = GetHeroFactionID(hero) - 1
+    local race = GetHeroFactionID(hero)
 
     local resource_cost = 0; local gold_cost = 0
     if     tier == 'T1' then resource_cost = 3; gold_cost = 1000;
@@ -34,7 +34,8 @@ function ConvertDwelling(hero, dwelling, tier)
         TakePlayer_Resource(player, GOLD, gold_cost)
         local x,y,z = GetObjectPosition(dwelling)
         Play3DSoundForPlayers(GetPlayerFilter(player), CrashSound, x,y,z)
-        ReplaceDwelling(dwelling, race)
+        ReplaceDwelling(dwelling, FactionToTownType(race))
+        JustVisitDwelling(hero, dwelling, "HeroVisitDwelling"..tier)
     end
 end
 
@@ -49,7 +50,7 @@ end
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
 function HeroVisitDwellingT1(hero, dwelling)
-    if GetObjectOwner(dwelling) == GetObjectOwner(hero) and GetDwellingRace(Dwellings_T1, dwelling) ~= GetHeroFactionID(hero) then
+    if IsHeroHuman(hero) and GetObjectOwner(dwelling) == GetObjectOwner(hero) and GetDwellingRace(Dwellings_T1, dwelling) ~= GetHeroFactionID(hero) then
         QuestionBoxForPlayers(
             GetPlayerFilter(GetObjectOwner(hero)),
             {"/Text/Game/Scripts/DwellingConversion.txt"; wood=3,ore=3,gold=1000},
@@ -62,7 +63,7 @@ function HeroVisitDwellingT1(hero, dwelling)
 end
 
 function HeroVisitDwellingT2(hero, dwelling)
-    if GetObjectOwner(dwelling) == GetObjectOwner(hero) and GetDwellingRace(Dwellings_T2, dwelling) ~= GetHeroFactionID(hero) then
+    if IsHeroHuman(hero) and GetObjectOwner(dwelling) == GetObjectOwner(hero) and GetDwellingRace(Dwellings_T2, dwelling) ~= GetHeroFactionID(hero) then
         QuestionBoxForPlayers(
             GetPlayerFilter(GetObjectOwner(hero)),
             {"/Text/Game/Scripts/DwellingConversion.txt"; wood=6,ore=6,gold=2000},
@@ -75,7 +76,7 @@ function HeroVisitDwellingT2(hero, dwelling)
 end
 
 function HeroVisitDwellingT3(hero, dwelling)
-    if GetObjectOwner(dwelling) == GetObjectOwner(hero) and GetDwellingRace(Dwellings_T3, dwelling) ~= GetHeroFactionID(hero) then
+    if IsHeroHuman(hero) and GetObjectOwner(dwelling) == GetObjectOwner(hero) and GetDwellingRace(Dwellings_T3, dwelling) ~= GetHeroFactionID(hero) then
         QuestionBoxForPlayers(
             GetPlayerFilter(GetObjectOwner(hero)),
             {"/Text/Game/Scripts/DwellingConversion.txt"; wood=9,ore=9,gold=3000},
@@ -88,7 +89,7 @@ function HeroVisitDwellingT3(hero, dwelling)
 end
 
 function HeroVisitDwellingMP(hero, dwelling)
-    if GetObjectOwner(dwelling) == GetObjectOwner(hero) and GetDwellingRace(Dwellings_MP, dwelling) ~= GetHeroFactionID(hero) then
+    if IsHeroHuman(hero) and GetObjectOwner(dwelling) == GetObjectOwner(hero) and GetDwellingRace(Dwellings_MP, dwelling) ~= GetHeroFactionID(hero) then
         QuestionBoxForPlayers(
             GetPlayerFilter(GetObjectOwner(hero)),
             {"/Text/Game/Scripts/DwellingConversion.txt"; wood=15,ore=15,gold=5000},

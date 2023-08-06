@@ -107,6 +107,7 @@ end
 
 HUMAN = 0
 COMPUTER = 1
+OBSERVER = 2
 
 --
 -- Game difficulty IDs

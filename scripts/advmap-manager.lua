@@ -32,6 +32,21 @@ LoadScript("/scripts/advmap-routines/x_conversion.lua", 9)
 
 TURN = 1
 
+PLAYER_BRAIN = {
+	[1] = OBSERVER,
+	[2] = OBSERVER,
+	[3] = OBSERVER,
+	[4] = OBSERVER,
+	[5] = OBSERVER,
+	[6] = OBSERVER,
+	[7] = OBSERVER,
+	[8] = OBSERVER,
+}
+
+for i = 1,8 do
+	PLAYER_BRAIN[i] = GetPlayerBrain(i)
+end
+
 ADD_PLAYER_HERO = {
 	[1] = "AddPlayer1Hero",
 	[2] = "AddPlayer2Hero",
