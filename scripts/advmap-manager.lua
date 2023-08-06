@@ -13,7 +13,7 @@ ROUTINES_LOADED = {
 }
 
 function LoadScript(path, key)
-	print("Loading script "..path)
+	-- print("Loading script "..path)
 	dofile(path)
 	repeat sleep(1) until ROUTINES_LOADED[key] == 1
 end

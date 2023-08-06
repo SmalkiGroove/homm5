@@ -111,5 +111,5 @@ function TriggerOnMapObjectType(object_type, trigger_type, handler)
 end
 
 
-print("Loaded conversion advmap routines")
+-- print("Loaded conversion advmap routines")
 ROUTINES_LOADED[9] = 1
