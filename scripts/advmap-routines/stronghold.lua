@@ -1,14 +1,14 @@
 
-function Routine_GainStats(hero)
-        local level = GetHeroLevel(hero)
-        if mod(level, 5) == 0 then
-            AddHero_StatAmount(player, hero, STAT_ATTACK, 1)
-            AddHero_StatAmount(player, hero, STAT_DEFENCE, 1)
-        end
+function Routine_GainStats()
+    local hero = H_KUNYAK
+    local level = GetHeroLevel(hero)
+    if mod(level, 6) == 0 then
+        AddHero_StatAmount(player, hero, STAT_ATTACK, 1)
+        AddHero_StatAmount(player, hero, STAT_DEFENCE, 1)
     end
 end
 
-function Routine_GainArtifactCrownLead(hero)
+function Routine_GainArtifactCrownLead()
     local hero = H_CRAGHACK
     local level = GetHeroLevel(hero)
     if level == 10 then 
