@@ -64,6 +64,16 @@ function CreatureTypesCast_RandomTarget(unit_side, target_side, types, spell)
     end
 end
 
+function CreatureTypesCast_Untargeted(unit_side, types, spell)
+    local creatures = GetUnits(unit_side, CREATURE)
+    for i,cr in creatures do
+        if contains(types, GetCreatureType(cr)) then
+            UnitCastGlobalSpell(cr, spell)
+            sleep(100)
+        end
+    end
+end
+
 function CreatureTypesAbility_Untargeted(unit_side, types, ability)
     local creatures = GetUnits(unit_side, CREATURE)
     for i,cr in creatures do

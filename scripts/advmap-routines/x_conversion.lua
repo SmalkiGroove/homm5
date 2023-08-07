@@ -4,8 +4,6 @@ Dwellings_T2 = {"BUILDING_ARCHERS_HOUSE","BUILDING_WOOD_GUARD_QUARTERS","BUILDIN
 Dwellings_T3 = {"BUILDING_BARRACKS","BUILDING_HIGH_CABINS","BUILDING_KENNELS","BUILDING_RUINED_TOWER","BUILDING_GOLEM_FORGE","BUILDING_MAZE","BUILDING_FORTRESS_BEAR_RIDERS","BUILDING_STRONGHOLD_WARRIORS"}
 Dwellings_MP = {"BUILDING_HEAVEN_MILITARY_POST","BUILDING_PRESERVE_MILITARY_POST","BUILDING_INFERNO_MILITARY_POST","BUILDING_NECROPOLIS_MILITARY_POST","BUILDING_ACADEMY_MILITARY_POST","BUILDING_DUNGEON_MILITARY_POST","BUILDING_FORTRESS_MILITARY_POST","BUILDING_STRONGHOLD_MILITARY_POST"}
 
-CrashSound = '/Maps/Scenario/A2C2M1/Siege_WallCrash02sound.xdb#xpointer(/Sound)'
-
 function GetDwellingRace(tier_table, dwelling)
     local race = 0
     for i = 1,8 do
@@ -33,9 +31,10 @@ function ConvertDwelling(hero, dwelling, tier)
         TakePlayer_Resource(player, ORE, resource_cost)
         TakePlayer_Resource(player, GOLD, gold_cost)
         local x,y,z = GetObjectPosition(dwelling)
-        Play3DSoundForPlayers(GetPlayerFilter(player), CrashSound, x,y,z)
         ReplaceDwelling(dwelling, FactionToTownType(race))
-        JustVisitDwelling(hero, dwelling, "HeroVisitDwelling"..tier)
+        Trigger(OBJECT_TOUCH_TRIGGER, dwelling, nil)
+        SetObjectEnabled(dwelling, not nil)
+        MakeHeroInteractWithObject(hero, dwelling)
     end
 end
 

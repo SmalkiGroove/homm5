@@ -52,6 +52,12 @@ function Routine_BallistaRandomShoot(side, hero)
     COMBAT_PAUSE = 0
 end
 
+function Routine_ShamanCastPowerFeed(side,hero)
+    -- print("Trigger shaman cast er feed !")
+    CreatureTypesCast_Untargeted(side, {CREATURE_SHAMAN,CREATURE_SHAMAN_WITCH,CREATURE_SHAMAN_HAG}, SPELL_ABILITY_POWER_FEED)
+    COMBAT_PAUSE = 0
+end
+
 function Routine_CastLightningSpell(side, hero)
     -- print("Trigger lightning spell !")
     local ennemies = GetUnits(1-side,CREATURE)
@@ -161,7 +167,7 @@ STRONGHOLD_COMBAT_START = {
     [H_KRAAL] = Routine_BallistaRandomShoot,
     [H_SHAKKARUKAT] = NoneRoutine,
     [H_KUJIN] = NoneRoutine,
-    [H_SHIVA] = NoneRoutine,
+    [H_SHIVA] = Routine_ShamanCastPowerFeed,
     [H_MUKHA] = Routine_CastLightningSpell,
     [H_HAGGASH] = NoneRoutine,
     [H_URGHAT] = NoneRoutine,
