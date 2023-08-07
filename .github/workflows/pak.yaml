@@ -1,0 +1,16 @@
+name: Make mod package
+run-name: Generate .pak artifact...
+on: [push]
+jobs:
+  pak:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Archive mod content
+        run: zip -r mod.pak .
+      - name: Store pak archive
+        uses: actions/upload-artifact@v3
+        with:
+          name: mod.pak
+          path: mod.pak
