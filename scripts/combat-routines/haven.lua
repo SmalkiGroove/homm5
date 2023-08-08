@@ -1,7 +1,7 @@
 
 function Routine_BallistaRandomSalvo(side, hero)
     -- print("Trigger ballista random shoot !")
-    local n = trunc(GetUnitMaxManaPoints(hero) * 0.05)
+    local n = 1 + trunc(GetUnitMaxManaPoints(hero) * 0.025)
     for i = 1,n do
         RandomShoot_Ballista(side)
         sleep(1000)
@@ -12,6 +12,15 @@ end
 function Routine_ArchersMoveFirst(side, hero)
     -- print("Trigger archers atb boost !")
     SetATB_CreatureTypes(side, {CREATURE_ARCHER,CREATURE_MARKSMAN,CREATURE_LONGBOWMAN}, ATB_INSTANT)
+    COMBAT_PAUSE = 0
+end
+
+function Routine_BlessGriffins(side, hero)
+    -- print("Trigger spells on griffins !")
+    HeroCast_TargetCreatureTypes(hero, SPELL_DEFLECT_ARROWS, FREE_MANA, side, {CREATURE_GRIFFIN,CREATURE_ROYAL_GRIFFIN,CREATURE_BATTLE_GRIFFIN})
+    sleep(600)
+    HeroCast_TargetCreatureTypes(hero, SPELL_BLESS, FREE_MANA, side, {CREATURE_GRIFFIN,CREATURE_ROYAL_GRIFFIN,CREATURE_BATTLE_GRIFFIN})
+    sleep(600)
     COMBAT_PAUSE = 0
 end
 
@@ -82,7 +91,7 @@ HAVEN_COMBAT_START = {
     [H_DUNCAN] = Routine_BallistaRandomSalvo,
     [H_DOUGAL] = Routine_ArchersMoveFirst,
     [H_KLAUS] = NoneRoutine,
-    [H_IRINA] = NoneRoutine,
+    [H_IRINA] = Routine_BlessGriffins,
     [H_ISABEL] = NoneRoutine,
     [H_LASZLO] = NoneRoutine,
     [H_NICOLAI] = NoneRoutine,

@@ -62,7 +62,10 @@
 		<perkIDs>
 			<Item>HERO_SKILL_HOLD_GROUND</Item>
 		</perkIDs>
-		<spellIDs/>
+		<spellIDs>
+			<Item>SPELL_BLESS</Item>
+			<Item>SPELL_DEFLECT_ARROWS</Item>
+		</Spells>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>
 		<AmmoCart>true</AmmoCart>

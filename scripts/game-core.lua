@@ -96,6 +96,24 @@ function GetHeroArmy(hero)
 	return type
 end
 
+function GetHeroArmySummary(hero)
+	local units = {}
+	local amounts = {}
+	local k = 0
+	local army = GetHeroArmy(hero)
+	for i = 1,7 do
+		local cr = army[i]
+		if cr and cr ~= 0 and not contains(units, cr) then
+			local nb = GetHeroCreatures(hero, cr)
+			-- print("Hero "..hero.." army contains "..nb.." creatures of type "..cr)
+			k = k + 1
+			units[k] = cr
+			amounts[k] = nb
+		end
+	end
+	return k, units, amounts
+end
+
 function IsHeroHuman(hero)
 	local player = GetObjectOwner(hero)
 	return PLAYER_BRAIN[player] == HUMAN

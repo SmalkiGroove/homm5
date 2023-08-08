@@ -116,6 +116,8 @@ function AddHero_CreatureInTypes(player, hero, types, coef)
                 return
             end
         end
+		AddHeroCreatures(hero, types[0], nb)
+		ShowFlyingSign({"/Text/Game/Scripts/Reinforcements.txt"; num=nb}, hero, player, FLYING_SIGN_TIME)
 	end
 end
 
@@ -213,8 +215,8 @@ function ChangeHero_CreatureTransform(player, hero, array)
         local cr = army[i]
 		if cr and cr ~= 0 then
 			local type = array[cr]
-			print("transform unit "..cr.." into unit "..type)
 			if type ~= 0 then
+				print("transform unit "..cr.." into unit "..type)
 				local nb = GetHeroCreatures(hero, cr)
 				RemoveHeroCreatures(hero, cr, nb)
 				AddHeroCreatures(hero, type, nb)

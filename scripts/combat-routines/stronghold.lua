@@ -66,6 +66,13 @@ function Routine_CastLightningSpell(side, hero)
     COMBAT_PAUSE = 0
 end
 
+function Routine_SummonMatron(side, hero)
+    -- print("Trigger summon matron !")
+    local m = trunc(GetUnitMaxManaPoints(hero) * 0.1)
+    SummonCreatureStack_X(side, CREATURE_MATRON, amount, 0.5 * m * m)
+    COMBAT_PAUSE = 0
+end
+
 function Routine_CyclopsMoveNext(side, hero)
     -- print("Trigger cyclops play next !")
     if CURRENT_UNIT == hero then
@@ -173,7 +180,7 @@ STRONGHOLD_COMBAT_START = {
     [H_URGHAT] = NoneRoutine,
     [H_GARUNA] = NoneRoutine,
     [H_ZOULEIKA] = NoneRoutine,
-    [H_ERIKA] = NoneRoutine,
+    [H_ERIKA] = Routine_SummonMatron,
 }
 
 STRONGHOLD_COMBAT_TURN = {

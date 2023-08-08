@@ -74,6 +74,14 @@ function Routine_LearnSpellWitch4()
     Routine_LearnSpellWitch(H_ERIKA)
 end
 
+function Routine_GainArtifactMachineRing()
+    local hero = H_GARUNA
+    local level = GetHeroLevel(hero)
+    if level == 25 then 
+        GiveArtifact(hero, ARTIFACT_RING_OF_MACHINE_AFFINITY)
+    end
+end
+
 function Routine_AddHeroWyverns(player, hero)
     -- Wyvern - 1:10 - 2:30 - 3:50
     AddHero_CreatureInTypes(player, hero, {CREATURE_WYVERN,CREATURE_WYVERN_POISONOUS,CREATURE_WYVERN_PAOKAI}, 0.05)
@@ -95,8 +103,8 @@ function Routine_AddRecruitsCyclops(player, hero)
 end
 
 function Routine_AddHeroTitans(player, hero)
-    -- Titans - 1:3 - 2:8 - 3:13 - 4:18 - 5:23 ... 10:48
-    AddHero_CreatureType(player, hero, CREATURE_TITAN, 0.2)
+    -- Titans - 1:7 - 2:20 - 3:34 - 4:47
+    AddHero_CreatureType(player, hero, CREATURE_TITAN, 0.075)
 end
 
 
