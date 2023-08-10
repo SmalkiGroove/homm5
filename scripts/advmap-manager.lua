@@ -147,6 +147,16 @@ function DoPlayerHeroesSpe(player, newweek)
 	end
 end
 
+function DoTriggerBuildingConversion()
+	for i = 1,8 do
+		TriggerOnMapObjectType(Dwellings_T1[i], OBJECT_TOUCH_TRIGGER, "HeroVisitDwellingT1")
+		TriggerOnMapObjectType(Dwellings_T2[i], OBJECT_TOUCH_TRIGGER, "HeroVisitDwellingT2")
+		TriggerOnMapObjectType(Dwellings_T3[i], OBJECT_TOUCH_TRIGGER, "HeroVisitDwellingT3")
+		TriggerOnMapObjectType(Dwellings_MP[i], OBJECT_TOUCH_TRIGGER, "HeroVisitDwellingMP")
+		TriggerOnMapObjectType(Towns_Types[i], OBJECT_TOUCH_TRIGGER, "HeroVisitTown")
+	end
+end
+
 function NewDayTrigger()
 	TURN = TURN + 1
 	print("New day ! Turn "..TURN)
@@ -157,12 +167,7 @@ function NewDayTrigger()
 		end
 	end
 	if newweek then	
-		for i = 1,8 do
-			TriggerOnMapObjectType(Dwellings_T1[i], OBJECT_TOUCH_TRIGGER, "HeroVisitDwellingT1")
-			TriggerOnMapObjectType(Dwellings_T2[i], OBJECT_TOUCH_TRIGGER, "HeroVisitDwellingT2")
-			TriggerOnMapObjectType(Dwellings_T3[i], OBJECT_TOUCH_TRIGGER, "HeroVisitDwellingT3")
-			TriggerOnMapObjectType(Dwellings_MP[i], OBJECT_TOUCH_TRIGGER, "HeroVisitDwellingMP")
-		end
+		startThread(DoTriggerBuildingConversion)
 	end
 end
 
@@ -248,13 +253,6 @@ for i = 1,8 do
 	Trigger(PLAYER_REMOVE_HERO_TRIGGER, i, REMOVE_PLAYER_HERO[i])
 end
 
-for i = 1,8 do
-	TriggerOnMapObjectType(Dwellings_T1[i], OBJECT_TOUCH_TRIGGER, "HeroVisitDwellingT1")
-	TriggerOnMapObjectType(Dwellings_T2[i], OBJECT_TOUCH_TRIGGER, "HeroVisitDwellingT2")
-	TriggerOnMapObjectType(Dwellings_T3[i], OBJECT_TOUCH_TRIGGER, "HeroVisitDwellingT3")
-	TriggerOnMapObjectType(Dwellings_MP[i], OBJECT_TOUCH_TRIGGER, "HeroVisitDwellingMP")
-end
-
 function InitializeHeroes()
 	for player = 1,8 do
 		if (GetPlayerState(player) == 1) then
@@ -270,3 +268,4 @@ function InitializeHeroes()
 end
 
 InitializeHeroes()
+DoTriggerBuildingConversion()
