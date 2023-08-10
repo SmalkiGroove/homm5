@@ -51,8 +51,8 @@
 		<BiographyFileRef href="/Text/Game/Heroes/Persons/Inferno/Efion/Bio.txt"/>
 		<Offence>2</Offence>
 		<Defence>0</Defence>
-		<Spellpower>2</Spellpower>
-		<Knowledge>1</Knowledge>
+		<Spellpower>3</Spellpower>
+		<Knowledge>2</Knowledge>
 		<skills>
 			<Item>
 				<Mastery>MASTERY_BASIC</Mastery>
@@ -64,7 +64,7 @@
 		</perkIDs>
 		<spellIDs>
 			<Item>SPELL_FORGETFULNESS</Item>
-			<Item>SPELL_BLIND</Item>			
+			<Item>SPELL_BLIND</Item>
 		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>

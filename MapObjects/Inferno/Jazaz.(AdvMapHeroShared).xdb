@@ -49,7 +49,7 @@
 	<Editable>
 		<NameFileRef href="/Text/Game/Heroes/Persons/Inferno/Jazaz/Name.txt"/>
 		<BiographyFileRef href="/Text/Game/Heroes/Persons/Inferno/Jazaz/Bio.txt"/>
-		<Offence>3</Offence>
+		<Offence>5</Offence>
 		<Defence>0</Defence>
 		<Spellpower>1</Spellpower>
 		<Knowledge>1</Knowledge>

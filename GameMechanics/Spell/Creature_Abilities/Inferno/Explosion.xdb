@@ -14,19 +14,19 @@
 	<TrainedCost>0</TrainedCost>
 	<damage>
 		<Item>
-			<Base>11</Base>
+			<Base>8</Base>
 			<PerPower>16</PerPower>
 		</Item>
 		<Item>
-			<Base>11</Base>
+			<Base>8</Base>
 			<PerPower>16</PerPower>
 		</Item>
 		<Item>
-			<Base>11</Base>
+			<Base>8</Base>
 			<PerPower>16</PerPower>
 		</Item>
 		<Item>
-			<Base>11</Base>
+			<Base>8</Base>
 			<PerPower>16</PerPower>
 		</Item>
 	</damage>

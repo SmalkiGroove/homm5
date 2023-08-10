@@ -52,16 +52,21 @@
 		<Offence>3</Offence>
 		<Defence>0</Defence>
 		<Spellpower>1</Spellpower>
-		<Knowledge>1</Knowledge>
+		<Knowledge>3</Knowledge>
 		<skills>
 			<Item>
 				<Mastery>MASTERY_ADVANCED</Mastery>
 				<SkillID>HERO_SKILL_OFFENCE</SkillID>
 			</Item>
+			<Item>
+				<Mastery>MASTERY_BASIC</Mastery>
+				<SkillID>HERO_SKILL_SORCERY</SkillID>
+			</Item>
 		</skills>
 		<perkIDs>
 			<Item>HERO_SKILL_FRENZY</Item>
 			<Item>HERO_SKILL_POWER_OF_HASTE</Item>
+			<Item>HERO_SKILL_MYSTICISM</Item>
 		</perkIDs>
 		<spellIDs>
 			<Item>SPELL_HASTE</Item>

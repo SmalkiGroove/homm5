@@ -1,6 +1,7 @@
 
 function Routine_GainStats()
     local hero = H_KUNYAK
+    local player = GetObjectOwner(hero)
     local level = GetHeroLevel(hero)
     if mod(level, 7) == 0 then
         AddHero_StatAmount(player, hero, STAT_ATTACK, 1)

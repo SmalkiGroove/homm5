@@ -12,6 +12,16 @@ function Routine_GainHavenArtifacts()
     end
 end
 
+function Routine_GainAttack()
+    --Att +1 / 4 levels
+    local hero = H_LASZLO
+    local player = GetObjectOwner(hero)
+    local level = GetHeroLevel(hero)
+    if mod(level, 4) == 0 then
+        AddHero_StatAmount(player, hero, STAT_ATTACK, 1)
+    end
+end
+
 function Routine_AddTwoLuckPoints(player, hero)
     --Luck +2
     AddHero_StatAmount(player, hero, STAT_LUCK, 2)
@@ -54,6 +64,14 @@ function Routine_AddRecruitsPeasants(player, hero)
     AddHero_TownRecruits(player, hero, TOWN_BUILDING_DWELLING_1, CREATURE_PEASANT, 7.0)
 end
 
+function Routine_GenerateExpFromGolds(player, hero)
+    -- Give exp from golds stock
+    local golds = GetPlayerResource(player, GOLD)
+    local mult = GetHeroLevel(hero) + 1
+    local exp = trunc(0.5 * golds * mult)
+    GiveExp(hero, exp)
+end
+
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -65,7 +83,7 @@ LEVEL_UP_HAVEN_HERO = {
     [H_KLAUS] = "NoneRoutine",
     [H_IRINA] = "NoneRoutine",
     [H_ISABEL] = "NoneRoutine",
-    [H_LASZLO] = "NoneRoutine",
+    [H_LASZLO] = "Routine_GainAttack",
     [H_NICOLAI] = "NoneRoutine",
     [H_GODRIC] = "NoneRoutine",
     [H_FREYDA] = "NoneRoutine",
@@ -131,7 +149,7 @@ WEEKLY_TRIGGER_HAVEN = {
     [H_ELLAINE] = Routine_AddRecruitsPeasants,
     [H_ALARIC] = NoneRoutine,
     [H_GABRIELLE] = NoneRoutine,
-    [H_ORLANDO] = NoneRoutine,
+    [H_ORLANDO] = Routine_GenerateExpFromGolds,
     [H_MARKAL] = NoneRoutine,
 }
 

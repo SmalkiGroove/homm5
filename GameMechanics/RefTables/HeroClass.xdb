@@ -301,8 +301,8 @@
 						<Prob>15</Prob>
 					</Item>
 					<Item>
-						<SkillID>HERO_SKILL_WAR_MACHINES</SkillID>
-						<Prob>8</Prob>
+						<SkillID>HERO_SKILL_SORCERY</SkillID>
+						<Prob>4</Prob>
 					</Item>
 					<Item>
 						<SkillID>HERO_SKILL_LUCK</SkillID>
@@ -334,7 +334,7 @@
 					</Item>
 					<Item>
 						<SkillID>HERO_SKILL_DESTRUCTIVE_MAGIC</SkillID>
-						<Prob>4</Prob>
+						<Prob>8</Prob>
 					</Item>
 					<Item>
 						<SkillID>HERO_SKILL_NAVIGATION</SkillID>

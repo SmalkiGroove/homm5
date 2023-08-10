@@ -2,6 +2,7 @@
 function Routine_AddHeroAttackPairLevel()
     -- Attack - 1 per 2 level
     local hero = H_KYTHRA
+    local player = GetObjectOwner(hero)
     if mod(GetHeroLevel(hero), 2) == 0 then
         AddHero_StatAmount(player, hero, STAT_ATTACK, 1)
     end
@@ -10,6 +11,7 @@ end
 function Routine_AddHeroSpellPowerPairLevel()
     -- Spellpower - 1 per 2 level
     local hero = H_SINITAR
+    local player = GetObjectOwner(hero)
     if mod(GetHeroLevel(hero), 2) == 0 then
         AddHero_StatAmount(player, hero, STAT_SPELL_POWER, 1)
     end

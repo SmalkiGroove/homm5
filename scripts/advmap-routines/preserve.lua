@@ -2,6 +2,7 @@
 function Routine_AddHeroLuck()
     --Luck +1 per 10 levels
     local hero = H_ANWEN
+    local player = GetObjectOwner(hero)
     if mod(GetHeroLevel(hero), 10) == 0 then
         AddHero_StatAmount(player, hero, STAT_LUCK, 1)
     end

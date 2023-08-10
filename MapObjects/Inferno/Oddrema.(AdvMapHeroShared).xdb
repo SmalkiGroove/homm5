@@ -55,11 +55,11 @@
 		<Knowledge>1</Knowledge>
 		<skills>
 			<Item>
-				<Mastery>MASTERY_BASIC</Mastery>
+				<Mastery>MASTERY_ADVANCED</Mastery>
 				<SkillID>HERO_SKILL_DARK_MAGIC</SkillID>
 			</Item>
 			<Item>
-				<Mastery>MASTERY_BASIC</Mastery>
+				<Mastery>MASTERY_ADVANCED</Mastery>
 				<SkillID>HERO_SKILL_LIGHT_MAGIC</SkillID>
 			</Item>
 		</skills>

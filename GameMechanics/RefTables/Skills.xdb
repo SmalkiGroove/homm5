@@ -14840,13 +14840,13 @@
 					<Item>
 						<Class>HERO_CLASS_ENCHANTER</Class>
 						<dependenciesIDs>
-							<Item>HERO_SKILL_MASTER_OF_WRATH</Item>
+							<Item>HERO_SKILL_QUICK_GATING</Item>
 						</dependenciesIDs>
 					</Item>
 					<Item>
 						<Class>HERO_CLASS_DEMON_LORD</Class>
 						<dependenciesIDs>
-							<Item>HERO_SKILL_MASTER_OF_WRATH</Item>
+							<Item>HERO_SKILL_QUICK_GATING</Item>
 						</dependenciesIDs>
 					</Item>
 					<Item>
@@ -14918,7 +14918,7 @@
 					<Item>
 						<Class>HERO_CLASS_WARLOCK</Class>
 						<dependenciesIDs>
-							<Item>HERO_SKILL_MASTER_OF_WRATH</Item>
+							<Item>HERO_SKILL_QUICK_GATING</Item>
 						</dependenciesIDs>
 					</Item>
 					<Item>

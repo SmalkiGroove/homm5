@@ -1,4 +1,24 @@
 
+function Routine_GainAttackInferno()
+    --Att +1 / 5 levels
+    local hero = H_NEBIROS
+    local player = GetObjectOwner(hero)
+    local level = GetHeroLevel(hero)
+    if mod(level, 5) == 0 then
+        AddHero_StatAmount(player, hero, STAT_ATTACK, 1)
+    end
+end
+
+function Routine_AddRandomStat()
+    -- Random attribute - +1 / lvl + lvl / 10
+    local hero = H_NEBIROS
+    local player = GetObjectOwner(hero)
+    local level = GetHeroLevel(hero)
+    local stat = random(1, 4, level)
+    local amount = 1 + trunc(level * 0.1)
+    AddHero_StatAmount(player, hero, stat, amount)
+end
+
 function Routine_AddHeroHellHounds(player, hero)
     -- Hell hounds - 1:2 - 2:5 - 3:8 - 4:11 - ... - 17:50
     AddHero_CreatureInTypes(player, hero, {CREATURE_HELL_HOUND,CREATURE_CERBERI,CREATURE_FIREBREATHER_HOUND}, 0.33)
@@ -20,10 +40,15 @@ function Routine_AddHeroFireDragons(player, hero)
     AddHero_CreatureType(player, hero, CREATURE_FIRE_DRAGON, 0.3)
 end
 
-function Routine_AddRandomStat(player, hero)
-    -- Random attribute - +1 / 5*lvl / week
-    local stat = random(1, 4, GetHeroLevel(hero))
-    AddHero_StatPerLevel(player, hero, stat, 0.2)
+function Routine_GenerateCrystal(player, hero)
+    -- Crystals - +1 / 3 levels
+    local amount = trunc(0.34 * GetHeroLevel(hero))
+    AddPlayer_Resource(player, hero, SULFUR, amount)
+end
+
+function Routine_AddHeroSuccubi(player, hero)
+    -- Succubus - 1:1 - 2:3 - 3:5 - 4:7 - ... - 25:49
+    AddHero_CreatureInTypes(player, hero, {CREATURE_SUCCUBUS,CREATURE_INFERNAL_SUCCUBUS,CREATURE_SUCCUBUS_SEDUCER}, 0.5)
 end
 
 function Routine_AddRecruitsInferno(player, hero)
@@ -40,7 +65,7 @@ end
 
 LEVEL_UP_INFERNO_HERO = {
     [H_GRAWL] = "NoneRoutine",
-    [H_NEBIROS] = "NoneRoutine",
+    [H_NEBIROS] = "Routine_GainAttackInferno",
     [H_MARBAS] = "NoneRoutine",
     [H_HARKENRAZ] = "NoneRoutine",
     [H_CALH] = "NoneRoutine",
@@ -49,7 +74,7 @@ LEVEL_UP_INFERNO_HERO = {
     [H_GROK] = "NoneRoutine",
     [H_NYMUS] = "NoneRoutine",
     [H_JEZEBETH] = "NoneRoutine",
-    [H_MALUSTAR] = "NoneRoutine",
+    [H_MALUSTAR] = "Routine_AddRandomStat",
     [H_AGRAEL] = "NoneRoutine",
     [H_BIARA] = "NoneRoutine",
     [H_KHABELETH] = "NoneRoutine",
@@ -109,7 +134,7 @@ WEEKLY_TRIGGER_INFERNO = {
     [H_GROK] = NoneRoutine,
     [H_NYMUS] = NoneRoutine,
     [H_JEZEBETH] = NoneRoutine,
-    [H_MALUSTAR] = Routine_AddRandomStat,
+    [H_MALUSTAR] = NoneRoutine,
     [H_AGRAEL] = NoneRoutine,
     [H_BIARA] = NoneRoutine,
     [H_KHABELETH] = NoneRoutine,
