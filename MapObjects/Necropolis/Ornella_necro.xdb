@@ -52,21 +52,16 @@
 		<NameFileRef href="/Text/Game/Heroes/Persons/Necropolis/OrnellaNecro/name.txt"/>
 		<BiographyFileRef href="/Text/Game/Heroes/Persons/Necropolis/OrnellaNecro/Bio.txt"/>
 		<Offence>1</Offence>
-		<Defence>2</Defence>
+		<Defence>5</Defence>
 		<Spellpower>1</Spellpower>
 		<Knowledge>1</Knowledge>
 		<skills>
-			<Item>
-				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_SHATTER_DESTRUCTIVE_MAGIC</SkillID>
-			</Item>
 			<Item>
 				<Mastery>MASTERY_ADVANCED</Mastery>
 				<SkillID>HERO_SKILL_SORCERY</SkillID>
 			</Item>
 		</skills>
 		<perkIDs>
-			<Item>HERO_SKILL_CORRUPT_DESTRUCTIVE</Item>
 			<Item>HERO_SKILL_MYSTICISM</Item>
 			<Item>HERO_SKILL_SPELLPROOF_BONES</Item>
 		</perkIDs>

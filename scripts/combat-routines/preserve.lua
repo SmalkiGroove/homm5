@@ -5,6 +5,15 @@ function Routine_AngerTreantsAbility(side, hero)
     COMBAT_PAUSE = 0
 end
 
+function Routine_CastBloodlustEnraged(side, hero)
+    -- print("Trigger random bloodlust !")
+    if CURRENT_UNIT == hero then
+        HeroCast_RandomCreature(hero, SPELL_BLOODLUST, FREE_MANA, side)
+        if IsHuman(side) then SetATB_ID(hero, ATB_INSTANT) end
+    end
+    COMBAT_PAUSE = 0
+end
+
 function Routine_HunterRandomShoot(side, hero)
     -- print("Trigger hunters random shoot !")
     RandomShoot_CreatureTypes(side, {CREATURE_WOOD_ELF,CREATURE_GRAND_ELF,CREATURE_SHARP_SHOOTER})
@@ -44,19 +53,13 @@ function Routine_SiphonEnnemyMana(side, hero)
     COMBAT_PAUSE = 0
 end
 
-function Routine_CastRandomBloodlust(side, hero)
-    -- print("Trigger random bloodlust !")
-    if CURRENT_UNIT == hero then
-        HeroCast_RandomCreature(hero, SPELL_BLOODLUST, FREE_MANA, side)
-        if IsHuman(side) then SetATB_ID(hero, ATB_INSTANT) end
-    end
-    COMBAT_PAUSE = 0
-end
-
 function Routine_HeroMoveNext(side, hero)
     -- print("Trigger hero play next !")
     if CURRENT_UNIT_SIDE ~= GetUnitSide(hero) then
-        SetATB_ID(hero, ATB_NEXT)
+        local m = GetUnitMaxManaPoints(hero) + 20
+        if m > random(0, 200, COMBAT_TURN*m)
+            SetATB_ID(hero, ATB_NEXT)
+        end
     end
     COMBAT_PAUSE = 0
 end
@@ -102,7 +105,7 @@ SYLVAN_COMBAT_PREPARE = {
 SYLVAN_COMBAT_START = {
     [H_WYNGAAL] = NoneRoutine,
     [H_ANWEN] = Routine_AngerTreantsAbility,
-    [H_TALANAR] = NoneRoutine,
+    [H_TALANAR] = Routine_CastBloodlustEnraged,
     [H_OSSIR] = Routine_HunterRandomShoot,
     [H_FINDAN] = NoneRoutine,
     [H_JENOVA] = NoneRoutine,
@@ -122,7 +125,7 @@ SYLVAN_COMBAT_START = {
 SYLVAN_COMBAT_TURN = {
     [H_WYNGAAL] = NoneRoutine,
     [H_ANWEN] = NoneRoutine,
-    [H_TALANAR] = Routine_CastRandomBloodlust,
+    [H_TALANAR] = NoneRoutine,
     [H_OSSIR] = NoneRoutine,
     [H_FINDAN] = Routine_HeroMoveNext,
     [H_JENOVA] = NoneRoutine,

@@ -22,11 +22,6 @@ function Routine_AddThreeMoralePoints(player, hero)
     AddHero_StatAmount(player, hero, STAT_MORALE, 3)
 end
 
-function Routine_AddOneLuckPoint(player, hero)
-    -- Luck +1
-    AddHero_StatAmount(player, hero, STAT_LUCK, 1)
-end
-
 function Routine_AddHeroGreenDragons(player, hero)
     -- Green Dragon - 1:17 - 2:50
     AddHero_CreatureInTypes(player, hero, {CREATURE_GREEN_DRAGON,CREATURE_GOLD_DRAGON,CREATURE_RAINBOW_DRAGON}, 0.03)
@@ -58,11 +53,6 @@ end
 function Routine_AddHeroAngerTreants(player, hero)
     -- Anger Treant - 1:2 - 2:6 - 3:10 - 4:14 ... 13:50
     AddHero_CreatureType(player, hero, CREATURE_ANGER_TREANT, 0.25)
-end
-
-function Routine_AddHeroAttack(player, hero)
-    -- Attack - +1 / 10*lvl / week
-    AddHero_StatPerLevel(player, hero, STAT_ATTACK, 0.1)
 end
 
 function Routine_AddRecruitsBladeJugglers(player, hero)
@@ -107,7 +97,7 @@ LEVEL_UP_SYLVAN_HERO = {
 
 START_TRIGGER_PRESERVE = {
     [H_WYNGAAL] = Routine_AddThreeMoralePoints,
-    [H_ANWEN] = Routine_AddOneLuckPoint,
+    [H_ANWEN] = NoneRoutine,
     [H_TALANAR] = NoneRoutine,
     [H_OSSIR] = NoneRoutine,
     [H_FINDAN] = NoneRoutine,
@@ -148,7 +138,7 @@ DAILY_TRIGGER_PRESERVE = {
 WEEKLY_TRIGGER_PRESERVE = {
     [H_WYNGAAL] = NoneRoutine,
     [H_ANWEN] = Routine_AddHeroAngerTreants,
-    [H_TALANAR] = Routine_AddHeroAttack,
+    [H_TALANAR] = NoneRoutine,
     [H_OSSIR] = NoneRoutine,
     [H_FINDAN] = NoneRoutine,
     [H_JENOVA] = NoneRoutine,

@@ -149,7 +149,7 @@
 			<ID>WAR_MACHINE_FIRST_AID_TENT</ID>
 			<Obj href="#n:inline(WarMachine)" id="item_9f5e94d7-770d-44c8-9b64-03dc4472504e">
 				<WarMachine ObjectRecordID="31">
-					<Shots>6</Shots>
+					<Shots>10</Shots>
 					<Initiative>10</Initiative>
 					<Health>60</Health>
 					<Range>0</Range>

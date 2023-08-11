@@ -32,7 +32,7 @@
 	<Class>HERO_CLASS_RANGER</Class>
 	<Specialization>HERO_SPEC_FOREST_GUARDIAN</Specialization>
 	<PrimarySkill>
-		<Mastery>MASTERY_BASIC</Mastery>
+		<Mastery>MASTERY_EXTRA_EXPERT</Mastery>
 		<SkillID>HERO_SKILL_AVENGER</SkillID>
 	</PrimarySkill>
 	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Preserve/Forest_Guardian/Name.txt"/>

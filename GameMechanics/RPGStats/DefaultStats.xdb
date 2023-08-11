@@ -2464,7 +2464,7 @@
 				</WyvernTamer_HealthBonus>
 				<Blooddrinker_OffenceBonusPerStack>
 					<Base>1</Base>
-					<LevelDivisor>2</LevelDivisor>
+					<LevelDivisor>3</LevelDivisor>
 					<PerDividedLevel>1</PerDividedLevel>
 				</Blooddrinker_OffenceBonusPerStack>
 				<GoblinKing_GoblinsWeeklyIncome>

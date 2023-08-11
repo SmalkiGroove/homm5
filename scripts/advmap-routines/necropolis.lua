@@ -1,4 +1,14 @@
 
+function Routine_GainDefenceNecro()
+    --Def +1 / 4 levels
+    local hero = H_ORNELLA2
+    local player = GetObjectOwner(hero)
+    local level = GetHeroLevel(hero)
+    if mod(level, 4) == 0 then
+        AddHero_StatAmount(player, hero, STAT_DEFENCE, 1)
+    end
+end
+
 function Routine_GainNecroArtifacts()
     -- Tunic of carved flesh / Amulet of Necromancy / Cursed Ring / Skull of Markal / Tome of dark magic
     local hero = H_THANT
@@ -28,7 +38,7 @@ end
 
 function Routine_GenerateGoldPerNecroCreature(player, hero)
     -- Gold - 1 per creature in army per 10 levels
-    local mult = ceil(GetHeroLevel(hero) * 0.1)
+    local mult = ceil(GetHeroLevel(hero) * 0.067)
     local army = GetHeroArmy(hero)
     local amount = 0
     for i = 1,7 do
@@ -54,8 +64,8 @@ function Routine_EvolveBlackKnights(player, hero)
 end
 
 function Routine_AddHeroBanshees(player, hero)
-    -- Banshee - 1:4 - 2:12 - 3:20 - 4:27 ... 7:50
-    AddHero_CreatureType(player, hero, CREATURE_BANSHEE, 0.13)
+    -- Banshee - 1:8 - 2:22 - 3:36 - 4:50
+    AddHero_CreatureType(player, hero, CREATURE_BANSHEE, 0.07)
 end
 
 function Routine_AddRecruitsNecropolis(player, hero)
@@ -74,7 +84,7 @@ LEVEL_UP_NECRO_HERO = {
     [H_KASPAR] = "NoneRoutine",
     [H_VLADIMIR] = "NoneRoutine",
     [H_ORSON] = "NoneRoutine",
-    [H_ORNELLA2] = "NoneRoutine",
+    [H_ORNELLA2] = "Routine_GainDefenceNecro",
     [H_LUCRETIA] = "NoneRoutine",
     [H_XERXON] = "NoneRoutine",
     [H_DEIRDRE] = "NoneRoutine",
