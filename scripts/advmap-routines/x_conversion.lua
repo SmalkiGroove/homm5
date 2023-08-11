@@ -147,5 +147,16 @@ function TriggerOnMapObjectType(object_type, trigger_type, handler)
 end
 
 
+function DoTriggerBuildingConversion()
+	for i = 1,8 do
+		TriggerOnMapObjectType(Dwellings_T1[i], OBJECT_TOUCH_TRIGGER, "HeroVisitDwellingT1")
+		TriggerOnMapObjectType(Dwellings_T2[i], OBJECT_TOUCH_TRIGGER, "HeroVisitDwellingT2")
+		TriggerOnMapObjectType(Dwellings_T3[i], OBJECT_TOUCH_TRIGGER, "HeroVisitDwellingT3")
+		TriggerOnMapObjectType(Dwellings_MP[i], OBJECT_TOUCH_TRIGGER, "HeroVisitDwellingMP")
+		TriggerOnMapObjectType(Towns_Types[i], OBJECT_TOUCH_TRIGGER, "HeroVisitTown")
+	end
+end
+
+
 -- print("Loaded conversion advmap routines")
 ROUTINES_LOADED[9] = 1

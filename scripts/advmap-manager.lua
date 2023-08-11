@@ -116,6 +116,18 @@ LEVELUP_ROUTINES = {
 	[8] = DoStrongholdRoutine_LevelUp,
 }
 
+AFTER_COMBAT_ROUTINES = {
+	[0] = DoCommonRoutine_AfterCombat,
+	[1] = DoHavenRoutine_AfterCombat,
+	[2] = DoPreserveRoutine_AfterCombat,
+	[3] = DoInfernoRoutine_AfterCombat,
+	[4] = DoNecropolisRoutine_AfterCombat,
+	[5] = DoAcademyRoutine_AfterCombat,
+	[6] = DoDungeonRoutine_AfterCombat,
+	[7] = DoFortressRoutine_AfterCombat,
+	[8] = DoStrongholdRoutine_AfterCombat,
+}
+
 
 function StartingArmy(hero)
 	-- print("Starting army for hero "..hero)
@@ -147,16 +159,6 @@ function DoPlayerHeroesSpe(player, newweek)
 	end
 end
 
-function DoTriggerBuildingConversion()
-	for i = 1,8 do
-		TriggerOnMapObjectType(Dwellings_T1[i], OBJECT_TOUCH_TRIGGER, "HeroVisitDwellingT1")
-		TriggerOnMapObjectType(Dwellings_T2[i], OBJECT_TOUCH_TRIGGER, "HeroVisitDwellingT2")
-		TriggerOnMapObjectType(Dwellings_T3[i], OBJECT_TOUCH_TRIGGER, "HeroVisitDwellingT3")
-		TriggerOnMapObjectType(Dwellings_MP[i], OBJECT_TOUCH_TRIGGER, "HeroVisitDwellingMP")
-		TriggerOnMapObjectType(Towns_Types[i], OBJECT_TOUCH_TRIGGER, "HeroVisitTown")
-	end
-end
-
 function NewDayTrigger()
 	TURN = TURN + 1
 	print("New day ! Turn "..TURN)
@@ -171,7 +173,16 @@ function NewDayTrigger()
 	end
 end
 
+function CombatResultsHandler(combatIndex)
+	local hero = GetSavedCombatArmyHero(combatIndex, 1)
+	local player = GetSavedCombatArmyPlayer(combatIndex, 1)
+	local faction = GetHeroFactionID(hero)
+	startThread(AFTER_COMBAT_ROUTINES[faction], player, hero, combatIndex)
+end
+
+
 Trigger(NEW_DAY_TRIGGER, "NewDayTrigger")
+Trigger(COMBAT_RESULTS_TRIGGER, "CombatResultsHandler")
 
 
 function AddPlayer1Hero(hero)

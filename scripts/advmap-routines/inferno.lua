@@ -143,6 +143,26 @@ WEEKLY_TRIGGER_INFERNO = {
     [H_CALID] = NoneRoutine,
 }
 
+AFTER_COMBAT_TRIGGER_INFERNO = {
+    [H_GRAWL] = NoneRoutine,
+    [H_NEBIROS] = NoneRoutine,
+    [H_MARBAS] = NoneRoutine,
+    [H_HARKENRAZ] = NoneRoutine,
+    [H_CALH] = NoneRoutine,
+    [H_SHELTEM] = NoneRoutine,
+    [H_ALASTOR] = NoneRoutine,
+    [H_GROK] = NoneRoutine,
+    [H_NYMUS] = NoneRoutine,
+    [H_JEZEBETH] = NoneRoutine,
+    [H_MALUSTAR] = NoneRoutine,
+    [H_AGRAEL] = NoneRoutine,
+    [H_BIARA] = NoneRoutine,
+    [H_KHABELETH] = NoneRoutine,
+    [H_ZYDAR] = NoneRoutine,
+    [H_DELEB] = NoneRoutine,
+    [H_CALID] = NoneRoutine,
+}
+
 
 function DoInfernoRoutine_Start(player, hero)
     startThread(START_TRIGGER_INFERNO[hero], player, hero)
@@ -154,6 +174,10 @@ end
 
 function DoInfernoRoutine_Weekly(player, hero)
     startThread(WEEKLY_TRIGGER_INFERNO[hero], player, hero)
+end
+
+function DoInfernoRoutine_AfterCombat(player, hero, index)
+    startThread(AFTER_COMBAT_TRIGGER_INFERNO[hero], player, hero, index)
 end
 
 function DoInfernoRoutine_LevelUp(hero)

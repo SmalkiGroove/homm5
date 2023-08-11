@@ -201,6 +201,28 @@ WEEKLY_TRIGGER_TRONGHOLD = {
     [H_ERIKA] = NoneRoutine,
 }
 
+AFTER_COMBAT_TRIGGER_TRONGHOLD = {
+    [H_TELSEK] = NoneRoutine,
+    [H_GORSHAK] = NoneRoutine,
+    [H_GOTAI] = NoneRoutine,
+    [H_AZAR] = NoneRoutine,
+    [H_MATEWA] = NoneRoutine,
+    [H_KUNYAK] = NoneRoutine,
+    [H_KRAGH] = NoneRoutine,
+    [H_KILGHAN] = NoneRoutine,
+    [H_CRAGHACK] = NoneRoutine,
+    [H_KRAAL] = NoneRoutine,
+    [H_SHAKKARUKAT] = NoneRoutine,
+    [H_KUJIN] = NoneRoutine,
+    [H_SHIVA] = NoneRoutine,
+    [H_MUKHA] = NoneRoutine,
+    [H_HAGGASH] = NoneRoutine,
+    [H_URGHAT] = NoneRoutine,
+    [H_GARUNA] = NoneRoutine,
+    [H_ZOULEIKA] = NoneRoutine,
+    [H_ERIKA] = NoneRoutine,
+}
+
 
 function DoStrongholdRoutine_Start(player, hero)
     startThread(START_TRIGGER_STRONGHOLD[hero], player, hero)
@@ -212,6 +234,10 @@ end
 
 function DoStrongholdRoutine_Weekly(player, hero)
     startThread(WEEKLY_TRIGGER_TRONGHOLD[hero], player, hero)
+end
+
+function DoStrongholdRoutine_AfterCombat(player, hero, index)
+    startThread(AFTER_COMBAT_TRIGGER_TRONGHOLD[hero], player, hero, index)
 end
 
 function DoStrongholdRoutine_LevelUp(hero)

@@ -207,6 +207,27 @@ WEEKLY_TRIGGER_DUNGEON = {
     [H_KASTORE] = NoneRoutine,
 }
 
+AFTER_COMBAT_TRIGGER_DUNGEON = {
+    [H_SORGAL] = NoneRoutine,
+    [H_KYTHRA] = NoneRoutine,
+    [H_AGBETH] = NoneRoutine,
+    [H_RANLETH] = NoneRoutine,
+    [H_DARKSTORM] = NoneRoutine,
+    [H_YRWANNA] = NoneRoutine,
+    [H_VAYSHAN] = NoneRoutine,
+    [H_THRALSAI] = NoneRoutine,
+    [H_LETHOS] = NoneRoutine,
+    [H_ERUINA] = NoneRoutine,
+    [H_YRBETH] = NoneRoutine,
+    [H_SYLSAI] = NoneRoutine,
+    [H_SINITAR] = NoneRoutine,
+    [H_SHADYA] = NoneRoutine,
+    [H_RAELAG] = NoneRoutine,
+    [H_YLAYA] = NoneRoutine,
+    [H_SEPHINROTH] = NoneRoutine,
+    [H_KASTORE] = NoneRoutine,
+}
+
 
 function DoDungeonRoutine_Start(player, hero)
     startThread(START_TRIGGER_DUNGEON[hero], player, hero)
@@ -218,6 +239,10 @@ end
 
 function DoDungeonRoutine_Weekly(player, hero)
     startThread(WEEKLY_TRIGGER_DUNGEON[hero], player, hero)
+end
+
+function DoDungeonRoutine_AfterCombat(player, hero, index)
+    startThread(AFTER_COMBAT_TRIGGER_DUNGEON[hero], player, hero, index)
 end
 
 function DoDungeonRoutine_LevelUp(hero)

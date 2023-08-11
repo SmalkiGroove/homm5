@@ -163,6 +163,26 @@ WEEKLY_TRIGGER_FORTRESS = {
     [H_INGA] = NoneRoutine,
 }
 
+AFTER_COMBAT_TRIGGER_FORTRESS = {
+    [H_INGVAR] = NoneRoutine,
+    [H_ROLF] = NoneRoutine,
+    [H_WULFSTAN] = NoneRoutine,
+    [H_TAZAR] = NoneRoutine,
+    [H_MAXIMUS] = NoneRoutine,
+    [H_KARLI] = NoneRoutine,
+    [H_HEDWIG] = NoneRoutine,
+    [H_TOLGHAR] = NoneRoutine,
+    [H_EBBA] = NoneRoutine,
+    [H_ULAND] = NoneRoutine,
+    [H_HAEGEIR] = NoneRoutine,
+    [H_HELMAR] = NoneRoutine,
+    [H_BRAND] = NoneRoutine,
+    [H_ERLING] = NoneRoutine,
+    [H_HANGVUL] = NoneRoutine,
+    [H_BART] = NoneRoutine,
+    [H_INGA] = NoneRoutine,
+}
+
 
 function DoFortressRoutine_Start(player, hero)
     startThread(START_TRIGGER_FORTRESS[hero], player, hero)
@@ -174,6 +194,10 @@ end
 
 function DoFortressRoutine_Weekly(player, hero)
     startThread(WEEKLY_TRIGGER_FORTRESS[hero], player, hero)
+end
+
+function DoFortressRoutine_AfterCombat(player, hero, index)
+    startThread(AFTER_COMBAT_TRIGGER_FORTRESS[hero], player, hero, index)
 end
 
 function DoFortressRoutine_LevelUp(hero)

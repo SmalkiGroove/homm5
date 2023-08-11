@@ -155,6 +155,26 @@ WEEKLY_TRIGGER_PRESERVE = {
     [H_ELLESHAR] = Routine_AddHeroSpellPower,
 }
 
+AFTER_COMBAT_TRIGGER_PRESERVE = {
+    [H_WYNGAAL] = NoneRoutine,
+    [H_ANWEN] = NoneRoutine,
+    [H_TALANAR] = NoneRoutine,
+    [H_OSSIR] = NoneRoutine,
+    [H_FINDAN] = NoneRoutine,
+    [H_JENOVA] = NoneRoutine,
+    [H_GILRAEN] = NoneRoutine,
+    [H_KYRRE] = NoneRoutine,
+    [H_IVOR] = NoneRoutine,
+    [H_MEPHALA] = NoneRoutine,
+    [H_ALARON] = NoneRoutine,
+    [H_DIRAEL] = NoneRoutine,
+    [H_VINRAEL] = NoneRoutine,
+    [H_YLTHIN] = NoneRoutine,
+    [H_TIERU] = NoneRoutine,
+    [H_GEM] = NoneRoutine,
+    [H_ELLESHAR] = NoneRoutine,
+}
+
 
 function DoPreserveRoutine_Start(player, hero)
     startThread(START_TRIGGER_PRESERVE[hero], player, hero)
@@ -166,6 +186,10 @@ end
 
 function DoPreserveRoutine_Weekly(player, hero)
     startThread(WEEKLY_TRIGGER_PRESERVE[hero], player, hero)
+end
+
+function DoPreserveRoutine_AfterCombat(player, hero, index)
+    startThread(AFTER_COMBAT_TRIGGER_PRESERVE[hero], player, hero, index)
 end
 
 function DoPreserveRoutine_LevelUp(hero)

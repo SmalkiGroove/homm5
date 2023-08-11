@@ -141,6 +141,26 @@ WEEKLY_TRIGGER_ACADEMY = {
     [H_EMILIA] = NoneRoutine,
 }
 
+AFTER_COMBAT_TRIGGER_ACADEMY = {
+    [H_HAVEZ] = NoneRoutine,
+    [H_MINASLI] = NoneRoutine,
+    [H_JOSEPHINE] = NoneRoutine,
+    [H_RAZZAK] = NoneRoutine,
+    [H_DAVIUS] = NoneRoutine,
+    [H_RISSA] = NoneRoutine,
+    [H_GURVILIN] = NoneRoutine,
+    [H_JHORA] = NoneRoutine,
+    [H_CYRUS] = NoneRoutine,
+    [H_FAIZ] = NoneRoutine,
+    [H_MAAHIR] = NoneRoutine,
+    [H_NATHIR] = NoneRoutine,
+    [H_NUR] = NoneRoutine,
+    [H_GALIB] = NoneRoutine,
+    [H_ZEHIR] = NoneRoutine,
+    [H_THEODORUS] = NoneRoutine,
+    [H_EMILIA] = NoneRoutine,
+}
+
 
 function DoAcademyRoutine_Start(player, hero)
     startThread(START_TRIGGER_ACADEMY[hero], player, hero)
@@ -152,6 +172,10 @@ end
 
 function DoAcademyRoutine_Weekly(player, hero)
     startThread(WEEKLY_TRIGGER_ACADEMY[hero], player, hero)
+end
+
+function DoAcademyRoutine_AfterCombat(player, hero, index)
+    startThread(AFTER_COMBAT_TRIGGER_ACADEMY[hero], player, hero, index)
 end
 
 function DoAcademyRoutine_LevelUp(hero)
