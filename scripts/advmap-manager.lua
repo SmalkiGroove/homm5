@@ -175,9 +175,11 @@ end
 
 function CombatResultsHandler(combatIndex)
 	local hero = GetSavedCombatArmyHero(combatIndex, 1)
-	local player = GetSavedCombatArmyPlayer(combatIndex, 1)
-	local faction = GetHeroFactionID(hero)
-	startThread(AFTER_COMBAT_ROUTINES[faction], player, hero, combatIndex)
+	if hero ~= nil then
+		local player = GetSavedCombatArmyPlayer(combatIndex, 1)
+		local faction = GetHeroFactionID(hero)
+		startThread(AFTER_COMBAT_ROUTINES[faction], player, hero, combatIndex)
+	end
 end
 
 

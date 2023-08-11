@@ -70,6 +70,18 @@ function Routine_AddHeroSpellPower(player, hero)
     AddHero_StatPerLevel(player, hero, STAT_SPELL_POWER, 0.2)
 end
 
+function Routine_RezHunters(player, hero, combatIndex)
+    local stacks = GetSavedCombatArmyCreaturesCount(combatIndex, 1)
+    for i = 0,stacks do
+        local creature, count, died = GetSavedCombatArmyCreatureInfo(combatIndex, 1, i)
+        if died > 0 and contains({CREATURE_WOOD_ELF,CREATURE_GRAND_ELF,CREATURE_SHARP_SHOOTER}, creature) then
+            local cap = 5 + GetHeroLevel(hero)
+            local rez = max(cap, died)
+            AddHeroCreatures(hero, creature, rez)
+        end
+    end
+end
+
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -159,7 +171,7 @@ AFTER_COMBAT_TRIGGER_PRESERVE = {
     [H_WYNGAAL] = NoneRoutine,
     [H_ANWEN] = NoneRoutine,
     [H_TALANAR] = NoneRoutine,
-    [H_OSSIR] = NoneRoutine,
+    [H_OSSIR] = Routine_RezHunters,
     [H_FINDAN] = NoneRoutine,
     [H_JENOVA] = NoneRoutine,
     [H_GILRAEN] = NoneRoutine,
