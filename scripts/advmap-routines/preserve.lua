@@ -72,11 +72,11 @@ end
 
 function Routine_RezHunters(player, hero, combatIndex)
     local stacks = GetSavedCombatArmyCreaturesCount(combatIndex, 1)
-    for i = 0,stacks do
+    for i = 0,stacks-1 do
         local creature, count, died = GetSavedCombatArmyCreatureInfo(combatIndex, 1, i)
         if died > 0 and contains({CREATURE_WOOD_ELF,CREATURE_GRAND_ELF,CREATURE_SHARP_SHOOTER}, creature) then
             local cap = 5 + GetHeroLevel(hero)
-            local rez = max(cap, died)
+            local rez = min(cap, died)
             AddHeroCreatures(hero, creature, rez)
         end
     end

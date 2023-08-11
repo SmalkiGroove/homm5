@@ -7,10 +7,7 @@ end
 
 function Routine_CastBloodlustEnraged(side, hero)
     -- print("Trigger random bloodlust !")
-    if CURRENT_UNIT == hero then
-        HeroCast_RandomCreature(hero, SPELL_BLOODLUST, FREE_MANA, side)
-        if IsHuman(side) then SetATB_ID(hero, ATB_INSTANT) end
-    end
+    
     COMBAT_PAUSE = 0
 end
 
@@ -57,7 +54,7 @@ function Routine_HeroMoveNext(side, hero)
     -- print("Trigger hero play next !")
     if CURRENT_UNIT_SIDE ~= GetUnitSide(hero) then
         local m = GetUnitMaxManaPoints(hero) + 20
-        if m > random(0, 200, COMBAT_TURN*m)
+        if m > random(0, 200, COMBAT_TURN*m) then
             SetATB_ID(hero, ATB_NEXT)
         end
     end
