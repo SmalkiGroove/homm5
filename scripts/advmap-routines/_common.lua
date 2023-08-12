@@ -217,7 +217,7 @@ function ChangeHero_CreatureTransform(player, hero, array)
 		if cr and cr ~= 0 then
 			local type = array[cr]
 			if type ~= 0 then
-				print("transform unit "..cr.." into unit "..type)
+				-- print("transform unit "..cr.." into unit "..type)
 				local nb = GetHeroCreatures(hero, cr)
 				RemoveHeroCreatures(hero, cr, nb)
 				AddHeroCreatures(hero, type, nb)

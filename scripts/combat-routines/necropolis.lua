@@ -1,4 +1,6 @@
 
+AVATAR_OF_DEATH_ID = "none"
+
 function Routine_SummonAndKillEnnemySkeleton(side, hero)
     -- print("Trigger summon and kill skeleton !")
     local n = length(GetUnits(1-side, CREATURE))
@@ -10,7 +12,10 @@ end
 
 function Routine_SummonAvatarOfDeath(side, hero)
     -- print("Trigger summon avatar of death !")
+    local units = GetUnits(side, CREATURE)
     HeroCast_Global(hero, SPELL_ABILITY_AVATAR_OF_DEATH, FREE_MANA)
+    sleep(100)
+    AVATAR_OF_DEATH_ID = GetUnits(side, CREATURE)[length(units)]
     COMBAT_PAUSE = 0
 end
 
@@ -68,6 +73,15 @@ function Routine_CastRandomIceBolt(side, hero)
     if CURRENT_UNIT == hero then
         HeroCast_RandomCreature(hero, SPELL_ICE_BOLT, FREE_MANA, 1-side)
         if IsHuman(side) then SetATB_ID(hero, ATB_INSTANT) end
+    end
+    COMBAT_PAUSE = 0
+end
+
+function Routine_AvatarDead(side, hero, unit)
+    -- print("Trigger mass Blindness on Avatar of Death's death !")
+    if unit == AVATAR_OF_DEATH_ID then
+        HeroCast_AllCreatures(hero, SPELL_BLIND, FREE_MANA, 1-side)
+        sleep(100); SetMana(hero, 10)
     end
     COMBAT_PAUSE = 0
 end
@@ -144,7 +158,7 @@ NECROPOLIS_UNIT_DIED = {
     [H_NAADIR] = NoneRoutine,
     [H_AISLINN] = NoneRoutine,
     [H_GIOVANNI] = NoneRoutine,
-    [H_ARCHILUS] = NoneRoutine,
+    [H_ARCHILUS] = Routine_AvatarDead,
     [H_ZOLTAN] = NoneRoutine,
     [H_RAVEN] = NoneRoutine,
     [H_ARANTIR] = NoneRoutine,

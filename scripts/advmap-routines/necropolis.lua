@@ -55,6 +55,9 @@ end
 
 function Routine_HeroCallVampires(player, hero)
     -- Vampires - 1.5 * level transfered
+    local coef = 2 / GetHeroLevel(hero)
+    AddHero_TownRecruits(player, hero, TOWN_BUILDING_DWELLING_4, CREATURE_VAMPIRE, coef)
+    sleep(10)
     AddHero_CreatureFromDwelling(player, hero, TOWN_BUILDING_DWELLING_4, CREATURE_NOSFERATU, 1.5)
 end
 
