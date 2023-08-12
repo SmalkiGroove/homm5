@@ -1,4 +1,11 @@
 
+ENRAGED_CREATURES_ELVEN_FURY = {
+    CREATURE_BLADE_JUGGLER, CREATURE_WAR_DANCER, CREATURE_BLADE_SINGER,
+    CREATURE_WOOD_ELF, CREATURE_GRAND_ELF, CREATURE_SHARP_SHOOTER,
+    CREATURE_DRUID, CREATURE_DRUID_ELDER, CREATURE_HIGH_DRUID,
+    CREATURE_TREANT, CREATURE_TREANT_GUARDIAN, CREATURE_ANGER_TREANT,
+}
+
 function Routine_AngerTreantsAbility(side, hero)
     -- print("Trigger anger treants rage of forest !")
     CreatureTypesAbility_Untargeted(side, {CREATURE_ANGER_TREANT}, SPELL_ABILITY_RAGE_OF_THE_FOREST)
@@ -6,8 +13,8 @@ function Routine_AngerTreantsAbility(side, hero)
 end
 
 function Routine_CastBloodlustEnraged(side, hero)
-    -- print("Trigger random bloodlust !")
-    
+    -- print("Trigger bloodlust on enraged !")
+    HeroCast_TargetCreatureTypes(hero, SPELL_BLOODLUST, FREE_MANA, side, ENRAGED_CREATURES_ELVEN_FURY)
     COMBAT_PAUSE = 0
 end
 
@@ -78,6 +85,15 @@ function Routine_DruidsMoveNext(side, hero)
     COMBAT_PAUSE = 0
 end
 
+function Routine_ResetAtbOnKillEnraged(side, hero, unit)
+    -- print("Trigger reset enraged atb !")
+    if GetUnitSide(unit) ~= GetUnitSide(hero) then
+        if not contains(ENRAGED_CREATURES_ELVEN_FURY, GetCreatureType(CURRENT_UNIT)) then SetATB_ID(CURRENT_UNIT, ATB_NEXT) end
+        SetATB_CreatureTypes(side, ENRAGED_CREATURES_ELVEN_FURY, ATB_INSTANT)
+    end
+    COMBAT_PAUSE = 0
+end
+
 
 SYLVAN_COMBAT_PREPARE = {
     [H_WYNGAAL] = NoneRoutine,
@@ -142,7 +158,7 @@ SYLVAN_COMBAT_TURN = {
 SYLVAN_UNIT_DIED = {
     [H_WYNGAAL] = NoneRoutine,
     [H_ANWEN] = NoneRoutine,
-    [H_TALANAR] = NoneRoutine,
+    [H_TALANAR] = Routine_ResetAtbOnKillEnraged,
     [H_OSSIR] = NoneRoutine,
     [H_FINDAN] = NoneRoutine,
     [H_JENOVA] = NoneRoutine,

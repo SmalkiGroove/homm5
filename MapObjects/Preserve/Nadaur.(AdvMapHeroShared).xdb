@@ -58,10 +58,6 @@
 				<Mastery>MASTERY_BASIC</Mastery>
 				<SkillID>HERO_SKILL_OFFENCE</SkillID>
 			</Item>
-			<Item>
-				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_TRAINING</SkillID>
-			</Item>
 		</skills>
 		<perkIDs>
 			<Item>HERO_SKILL_FRENZY</Item>
