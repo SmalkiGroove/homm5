@@ -132,7 +132,7 @@ AFTER_COMBAT_ROUTINES = {
 function StartingArmy(hero)
 	-- print("Starting army for hero "..hero)
 	if STARTING_ARMIES[hero] and STARTING_ARMIES[hero][1] then
-		AddHeroCreatures(hero, CREATURE_WOLF, 1, 7) sleep(10)
+		AddHeroCreatures(hero, CREATURE_WOLF, 1, 6) sleep(10)
 		local k, units, amounts = GetHeroArmySummary(hero)
 		for i = 1,k do
 			-- print("Remove hero creature type : "..units[i].." - "..amounts[i])
@@ -141,7 +141,7 @@ function StartingArmy(hero)
 		for i = 1,7 do
 			if STARTING_ARMIES[hero][i] then
 				-- print("Add hero creature type "..STARTING_ARMIES[hero][i][1].." - "..STARTING_ARMIES[hero][i][2])
-				AddHeroCreatures(hero, STARTING_ARMIES[hero][i][1], STARTING_ARMIES[hero][i][2], i)
+				AddHeroCreatures(hero, STARTING_ARMIES[hero][i][1], STARTING_ARMIES[hero][i][2], i-1)
 			end
 		end
 		sleep(10); RemoveHeroCreatures(hero, CREATURE_WOLF, 1)

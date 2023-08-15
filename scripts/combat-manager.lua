@@ -54,11 +54,6 @@ function Wait()
     if THREAD_FINISHER == 0 then THREAD_STATE = 1 end
 end
 
-function RequestUpdate(name)
-    SetGameVar("update_request", name)
-    repeat sleep(1) until GetGameVar("update_request") == "none"
-end
-
 function GetHeroLevel(name)
     local game_id = GetGameVar("game_id")
     local level = GetGameVar(game_id..'_'..name..'_level')
@@ -210,13 +205,11 @@ function ManageCombatPrepare()
     ATTACKER_HERO = GetHero(ATTACKER) and GetHeroName(ATTACKER_HERO_ID) or ""
     DEFENDER_HERO = GetHero(DEFENDER) and GetHeroName(DEFENDER_HERO_ID) or ""
     if ATTACKER_HERO ~= "" then
-        RequestUpdate(ATTACKER_HERO)
         ATTACKER_RACE = GetHeroFactionID(ATTACKER_HERO)
         ATTACKER_LEVEL = GetHeroLevel(ATTACKER_HERO)
         print("Attacker hero "..ATTACKER_HERO.." level "..ATTACKER_LEVEL)
     end
     if DEFENDER_HERO ~= "" then
-        RequestUpdate(DEFENDER_HERO)
         DEFENDER_RACE = GetHeroFactionID(DEFENDER_HERO)
         DEFENDER_LEVEL = GetHeroLevel(DEFENDER_HERO)
         print("Defender hero "..DEFENDER_HERO.." level "..DEFENDER_LEVEL)

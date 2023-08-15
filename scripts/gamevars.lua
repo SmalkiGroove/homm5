@@ -10,18 +10,29 @@ end
 RegisterHero = function(name)
     local key = GAME_ID..'_'..name
     SetGameVar(key.."_level", GetHeroLevel(name))
+    SetGameVar(key.."_stat_att", GetHeroStat(name, STAT_ATTACK))
+    SetGameVar(key.."_stat_def", GetHeroStat(name, STAT_DEFENCE))
+    SetGameVar(key.."_stat_pwr", GetHeroStat(name, STAT_SPELL_POWER))
+    SetGameVar(key.."_stat_klg", GetHeroStat(name, STAT_KNOWLEDGE))
+    SetGameVar(key.."_stat_lck", GetHeroStat(name, STAT_LUCK))
+    SetGameVar(key.."_stat_mrl", GetHeroStat(name, STAT_MORALE))
 end
 
 DataUpdate = function()
-    SetGameVar("update_request", "none")
-    while true do
-        local value = GetGameVar("update_request")
-        if value ~= "none" then
-            RegisterHero(value)
-            SetGameVar("update_request", "none")
-        else
-            sleep(10)
+    local Check = function()
+        for player = 1,8 do
+            if (GetPlayerState(player) == 1) then
+                for i,hero in GetPlayerHeroes(player) do
+                    RegisterHero(hero)
+                end
+            end
         end
+    end
+
+    while 1 do
+        sleep(50)
+        print("update data...")
+        startThread(Check)
     end
 end
 
