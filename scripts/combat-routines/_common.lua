@@ -1,10 +1,10 @@
 
-function DoCommonRoutine_CombatPrepare(side, name, id) end
-function DoCommonRoutine_CombatStart(side, name, id) end
-function DoCommonRoutine_CombatTurn(side, name, id) end
-function DoCommonRoutine_UnitDied(side, name, id, unit) end
+function DoCommonRoutine_CombatPrepare(side, name, id, level) end
+function DoCommonRoutine_CombatStart(side, name, id, level) end
+function DoCommonRoutine_CombatTurn(side, name, id, level) end
+function DoCommonRoutine_UnitDied(side, name, id, level, unit) end
 
-function NoneRoutine(side, hero)
+function NoneRoutine()
     -- print("Trigger nothing !")
     COMBAT_PAUSE = 0
 end

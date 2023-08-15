@@ -975,7 +975,6 @@ function createAdvmapAliases()
     ShowFlyMessage = ShowFlyingSign
 	Trigger = SetTrigger
     ExecConsoleCommand = consoleCmd
-    SetCombatLight = SetCombatAmbientLight
 	GiveArtifact = GiveArtefact
 end
 

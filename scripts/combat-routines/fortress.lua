@@ -1,24 +1,24 @@
 
-function Routine_BallistaMoveFirst(side, hero)
+function Routine_BallistaMoveFirst(side, hero, level)
     -- print("Trigger ballista play first !")
     SetATB_WarMachineType(side, WAR_MACHINE_BALLISTA, ATB_INSTANT)
     COMBAT_PAUSE = 0
 end
 
-function Routine_SkirmishersRandomShoot(side, hero)
+function Routine_SkirmishersRandomShoot(side, hero, level)
     -- print("Trigger spearwielders random shoot !")
     RandomShoot_CreatureTypes(side, {CREATURE_AXE_FIGHTER,CREATURE_AXE_THROWER,CREATURE_HARPOONER})
     COMBAT_PAUSE = 0
 end
 
-function Routine_ThanesAbility(side, hero)
+function Routine_ThanesAbility(side, hero, level)
     -- print("Trigger Thanes ability !")
     CreatureTypesAbility_RandomTarget(side, 1-side, {CREATURE_WARLORD}, SPELL_ABILITY_FLAMESTRIKE)
     CreatureTypesAbility_RandomTarget(side, 1-side, {CREATURE_THUNDER_THANE}, SPELL_ABILITY_STORMBOLT)
     COMBAT_PAUSE = 0
 end
 
-function Routine_CastFireWalls(side, hero)
+function Routine_CastFireWalls(side, hero, level)
     -- print("Trigger cast Fire walls !")
     local m = GetUnitManaPoints(hero)
     local x = 11 - 7 * side
@@ -29,13 +29,13 @@ function Routine_CastFireWalls(side, hero)
     COMBAT_PAUSE = 0
 end
 
-function Routine_RunePriestsMoveFirst(side, hero)
+function Routine_RunePriestsMoveFirst(side, hero, level)
     -- print("Trigger rune priests play first !")
     SetATB_CreatureTypes(side, {CREATURE_RUNE_MAGE,CREATURE_FLAME_MAGECREATURE_FLAME_KEEPER}, ATB_INSTANT)
     COMBAT_PAUSE = 0
 end
 
-function Routine_SummonEarthElementals(side, hero)
+function Routine_SummonEarthElementals(side, hero, level)
     -- print("Trigger summon earth elems !")
     local amount = trunc(GetUnitMaxManaPoints(hero) * 0.5)
     SummonCreatureStack_X(side, {CREATURE_EARTH_ELEMENTAL}, amount, 3)
@@ -43,7 +43,7 @@ function Routine_SummonEarthElementals(side, hero)
     COMBAT_PAUSE = 0
 end
 
-function Routine_CastMeteorShowers(side, hero)
+function Routine_CastMeteorShowers(side, hero, level)
     -- print("Trigger uber meteor shower !")
     local x = 15 - 13 * side
     local r = random(4, 9, GetUnitManaPoints(hero))
@@ -52,7 +52,7 @@ function Routine_CastMeteorShowers(side, hero)
     COMBAT_PAUSE = 0
 end
 
-function Routine_BallistaUseHalfATB(side, hero)
+function Routine_BallistaUseHalfATB(side, hero, level)
     -- print("Trigger ballista use half atb !")
     if CURRENT_UNIT == UNIT_SIDE_PREFIX[side]..'-warmachine-WAR_MACHINE_BALLISTA' then
         SetATB_ID(CURRENT_UNIT, ATB_HALF)
@@ -60,7 +60,7 @@ function Routine_BallistaUseHalfATB(side, hero)
     COMBAT_PAUSE = 0
 end
 
-function Routine_CastRandomImplosion(side, hero)
+function Routine_CastRandomImplosion(side, hero, level)
     -- print("Trigger random implosion !")
     if GetUnitManaPoints(hero) >= 250 then
         HeroCast_RandomCreature(hero, SPELL_IMPLOSION, 50, 1-side)
@@ -151,20 +151,20 @@ FORTRESS_UNIT_DIED = {
 }
 
 
-function DoFortressRoutine_CombatPrepare(side, name, id)
-    startThread(FORTRESS_COMBAT_PREPARE[name], side, id)
+function DoFortressRoutine_CombatPrepare(side, name, id, level)
+    startThread(FORTRESS_COMBAT_PREPARE[name], side, id, level)
 end
 
-function DoFortressRoutine_CombatStart(side, name, id)
-    startThread(FORTRESS_COMBAT_START[name], side, id)
+function DoFortressRoutine_CombatStart(side, name, id, level)
+    startThread(FORTRESS_COMBAT_START[name], side, id, level)
 end
 
-function DoFortressRoutine_CombatTurn(side, name, id)
-    startThread(FORTRESS_COMBAT_TURN[name], side, id)
+function DoFortressRoutine_CombatTurn(side, name, id, level)
+    startThread(FORTRESS_COMBAT_TURN[name], side, id, level)
 end
 
-function DoFortressRoutine_UnitDied(side, name, id, unit)
-    startThread(FORTRESS_UNIT_DIED[name], side, id, unit)
+function DoFortressRoutine_UnitDied(side, name, id, level, unit)
+    startThread(FORTRESS_UNIT_DIED[name], side, id, level, unit)
 end
 
 

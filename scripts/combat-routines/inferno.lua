@@ -1,23 +1,23 @@
 
-function Routine_CastMarkOfTheDamned(side, hero)
+function Routine_CastMarkOfTheDamned(side, hero, level)
     -- print("Trigger mark of the damned")
     HeroCast_RandomCreature(hero, SPELL_DEMONIC_STRIKE, NO_COST, 1-side)
     COMBAT_PAUSE = 0
 end
 
-function Routine_CastRandomBlindness(side, hero)
+function Routine_CastRandomBlindness(side, hero, level)
     -- print("Trigger random blindness !")
     HeroCast_RandomCreature(hero, SPELL_BLIND, FREE_MANA, 1-side)
     COMBAT_PAUSE = 0
 end
 
-function Routine_SuccubusRandomShoot(side, hero)
+function Routine_SuccubusRandomShoot(side, hero, level)
     -- print("Trigger succubus random shoot !")
     RandomShoot_CreatureTypes(side, {CREATURE_SUCCUBUS,CREATURE_INFERNAL_SUCCUBUS,CREATURE_SUCCUBUS_SEDUCER})
     COMBAT_PAUSE = 0
 end
 
-function Routine_SummonPitlords(side, hero)
+function Routine_SummonPitlords(side, hero, level)
     -- print("Trigger pit lords summoning !")
     local m = GetUnitMaxManaPoints(hero) * 0.1
     local amount = trunc(0.1 * m * m)
@@ -26,7 +26,7 @@ function Routine_SummonPitlords(side, hero)
     COMBAT_PAUSE = 0
 end
 
-function Routine_CastMineFields(side, hero)
+function Routine_CastMineFields(side, hero, level)
     -- print("Trigger mine fields !")
     local x = 12 - 9 * side
     HeroCast_Area(hero, SPELL_LAND_MINE, FREE_MANA, x, 9)
@@ -34,7 +34,7 @@ function Routine_CastMineFields(side, hero)
     COMBAT_PAUSE = 0
 end
 
-function Routine_BallistaShootUnit(side, hero)
+function Routine_BallistaShootUnit(side, hero, level)
     -- print("Trigger fireball ballista shoot !")
     if CURRENT_UNIT == UNIT_SIDE_PREFIX[side]..'-warmachine-WAR_MACHINE_BALLISTA' then
         SetATB_ID(CURRENT_UNIT, ATB_ZERO)
@@ -50,7 +50,7 @@ function Routine_BallistaShootUnit(side, hero)
     COMBAT_PAUSE = 0
 end
 
-function Routine_DemonicCreatureExplosion(side, hero)
+function Routine_DemonicCreatureExplosion(side, hero, level)
     -- print("Trigger creature explosion !")
     if CURRENT_UNIT_SIDE == side then
         if IsCreature(CURRENT_UNIT) then
@@ -65,7 +65,7 @@ function Routine_DemonicCreatureExplosion(side, hero)
     COMBAT_PAUSE = 0
 end
 
-function Routine_CastRandomStoneSpikes(side, hero)
+function Routine_CastRandomStoneSpikes(side, hero, level)
     -- print("Trigger random Stone spikes !")
     if CURRENT_UNIT == hero then
         HeroCast_RandomCreatureArea(hero, SPELL_STONE_SPIKES, FREE_MANA, 1-side)
@@ -74,7 +74,7 @@ function Routine_CastRandomStoneSpikes(side, hero)
     COMBAT_PAUSE = 0
 end
 
-function Routine_CastRandomFireball(side, hero)
+function Routine_CastRandomFireball(side, hero, level)
     -- print("Trigger random Fireball !")
     if CURRENT_UNIT == hero then
         HeroCast_RandomCreatureArea(hero, SPELL_FIREBALL, FREE_MANA, 1-side)
@@ -165,20 +165,20 @@ INFERNO_UNIT_DIED = {
 }
 
 
-function DoInfernoRoutine_CombatPrepare(side, name, id)
-    startThread(INFERNO_COMBAT_PREPARE[name], side, id)
+function DoInfernoRoutine_CombatPrepare(side, name, id, level)
+    startThread(INFERNO_COMBAT_PREPARE[name], side, id, level)
 end
 
-function DoInfernoRoutine_CombatStart(side, name, id)
-    startThread(INFERNO_COMBAT_START[name], side, id)
+function DoInfernoRoutine_CombatStart(side, name, id, level)
+    startThread(INFERNO_COMBAT_START[name], side, id, level)
 end
 
-function DoInfernoRoutine_CombatTurn(side, name, id)
-    startThread(INFERNO_COMBAT_TURN[name], side, id)
+function DoInfernoRoutine_CombatTurn(side, name, id, level)
+    startThread(INFERNO_COMBAT_TURN[name], side, id, level)
 end
 
-function DoInfernoRoutine_UnitDied(side, name, id, unit)
-    startThread(INFERNO_UNIT_DIED[name], side, id, unit)
+function DoInfernoRoutine_UnitDied(side, name, id, level, unit)
+    startThread(INFERNO_UNIT_DIED[name], side, id, level, unit)
 end
 
 
