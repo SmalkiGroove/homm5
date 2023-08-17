@@ -1,4 +1,6 @@
 
+RESET_HERO_ATB = nil
+
 function Routine_CastMarkOfTheDamned(side, hero, level)
     -- print("Trigger mark of the damned")
     HeroCast_RandomCreature(hero, SPELL_DEMONIC_STRIKE, NO_COST, 1-side)
@@ -78,7 +80,10 @@ function Routine_CastRandomFireball(side, hero, level)
     -- print("Trigger random Fireball !")
     if CURRENT_UNIT == hero then
         HeroCast_RandomCreatureArea(hero, SPELL_FIREBALL, FREE_MANA, 1-side)
-        SetATB_ID(hero, ATB_HALF)
+        RESET_HERO_ATB = not nil
+    elseif RESET_HERO_ATB then
+        RESET_HERO_ATB = nil
+        SetATB_ID(hero, 0.66)
     end
     COMBAT_PAUSE = 0
 end

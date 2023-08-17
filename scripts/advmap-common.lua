@@ -3,7 +3,6 @@ SOURCE_LOADED = {
 	["common"]    = 0,
 	["game-data"] = 0,
 	["game-core"] = 0,
-	["gamevars"] = 0,
 }
 
 function Source(path, key)
@@ -15,7 +14,6 @@ end
 Source("/scripts/common.lua", "common")
 Source("/scripts/game-data.lua", "game-data")
 Source("/scripts/game-core.lua", "game-core")
-Source("/scripts/gamevars.lua", "gamevars")
 
 
 __difficulty = GetDifficulty()

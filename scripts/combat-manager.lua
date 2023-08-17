@@ -55,8 +55,9 @@ function Wait()
 end
 
 function GetHeroLevel(name)
-    local game_id = GetGameVar("game_id")
-    local level = GetGameVar(game_id..'_'..name..'_level')
+    local m = GetUnitManaPoints(name)
+    local level = trunc(m * 0.001)
+    SetUnitManaPoints(name, mod(m, 1000))
     return level
 end
 
@@ -206,13 +207,13 @@ function ManageCombatPrepare()
     DEFENDER_HERO = GetHero(DEFENDER) and GetHeroName(DEFENDER_HERO_ID) or ""
     if ATTACKER_HERO ~= "" then
         ATTACKER_RACE = GetHeroFactionID(ATTACKER_HERO)
-        ATTACKER_LEVEL = GetHeroLevel(ATTACKER_HERO)
-        print("Attacker hero "..ATTACKER_HERO.." level "..ATTACKER_LEVEL)
+        ATTACKER_LEVEL = GetHeroLevel(GetHero(ATTACKER))
+        -- print("Attacker hero "..ATTACKER_HERO.." level "..ATTACKER_LEVEL)
     end
     if DEFENDER_HERO ~= "" then
         DEFENDER_RACE = GetHeroFactionID(DEFENDER_HERO)
-        DEFENDER_LEVEL = GetHeroLevel(DEFENDER_HERO)
-        print("Defender hero "..DEFENDER_HERO.." level "..DEFENDER_LEVEL)
+        DEFENDER_LEVEL = GetHeroLevel(GetHero(DEFENDER))
+        -- print("Defender hero "..DEFENDER_HERO.." level "..DEFENDER_LEVEL)
     end
 end
 
