@@ -1,11 +1,12 @@
 
 function HackHeroMana(hero)
-    ChangeHeroStat(hero, STAT_KNOWLEDGE, 10000)
-    repeat sleep(1) until GetHeroStat(hero, STAT_KNOWLEDGE) > 10000
-    ChangeHeroStat(hero, STAT_MANA_POINTS, 1000 * GetHeroLevel(hero))
+    local temp = 1000000000 + GetHeroLevel(hero) * 10000000
+    ChangeHeroStat(hero, STAT_KNOWLEDGE, 200000000)
+    repeat sleep(1) until GetHeroStat(hero, STAT_KNOWLEDGE) > 200000000
+    ChangeHeroStat(hero, STAT_MANA_POINTS, temp)
     repeat sleep(1) until GetHeroStat(hero, STAT_MANA_POINTS) > 1000
-    ChangeHeroStat(hero, STAT_KNOWLEDGE, -10000)
-    repeat sleep(1) until GetHeroStat(hero, STAT_KNOWLEDGE) < 10000
+    ChangeHeroStat(hero, STAT_KNOWLEDGE, -200000000)
+    repeat sleep(1) until GetHeroStat(hero, STAT_KNOWLEDGE) < 200000000
 end
 
 function EnableCombatHook(object)

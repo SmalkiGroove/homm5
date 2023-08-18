@@ -1,5 +1,5 @@
 
-function Routine_DuplicateGolemStack(side, hero, level)
+function Routine_DuplicateGolemStack(side, hero, data)
     -- print("Trigger copy largest golems group !")
     local largest = 0
     local copied_stack = "none"
@@ -21,25 +21,25 @@ function Routine_DuplicateGolemStack(side, hero, level)
     COMBAT_PAUSE = 0
 end
 
-function Routine_RakshasasAbility(side, hero, level)
+function Routine_RakshasasAbility(side, hero, data)
     -- print("Trigger rakshasas dash !")
     CreatureTypesAbility_Untargeted(side, {CREATURE_RAKSHASA,CREATURE_RAKSHASA_RUKH,CREATURE_RAKSHASA_KSHATRI}, SPELL_ABILITY_DASH)
     COMBAT_PAUSE = 0
 end
 
-function Routine_CastMultipleVulnerability(side, hero, level)
+function Routine_CastMultipleVulnerability(side, hero, data)
     -- print("Trigger disrupting rays !")
     HeroCast_AllCreatures(hero, SPELL_DISRUPTING_RAY, FREE_MANA, side)
     COMBAT_PAUSE = 0
 end
 
-function Routine_MagesCastMagicFist(side, hero, level)
+function Routine_MagesCastMagicFist(side, hero, data)
     -- print("Trigger mages magic fist !")
     CreatureTypesCast_RandomTarget(side, 1-side, {CREATURE_MAGI,CREATURE_ARCH_MAGI,CREATURE_COMBAT_MAGE}, SPELL_MAGIC_FIST)
     COMBAT_PAUSE = 0
 end
 
-function Routine_CastMultipleArcaneCrystals(side, hero, level)
+function Routine_CastMultipleArcaneCrystals(side, hero, data)
     -- print("Trigger random arcane crystals !")
     local n = trunc(GetUnitManaPoints(hero) * 0.05)
     local x1 = 13 - 11 * side
@@ -50,13 +50,13 @@ function Routine_CastMultipleArcaneCrystals(side, hero, level)
     COMBAT_PAUSE = 0
 end
 
-function Routine_CastSummonElementals(side, hero, level)
+function Routine_CastSummonElementals(side, hero, data)
     -- print("Trigger summon elementals !")
     HeroCast_Global(hero, SPELL_SUMMON_ELEMENTALS, FREE_MANA)
     COMBAT_PAUSE = 0
 end
 
-function Routine_CastSummonHive(side, hero, level)
+function Routine_CastSummonHive(side, hero, data)
     -- print("Trigger summon beehives !")
     local x = 15 - 13 * side
     HeroCast_Area(hero, SPELL_SUMMON_HIVE, FREE_MANA, x, GRID_Y_MIN)
@@ -64,7 +64,7 @@ function Routine_CastSummonHive(side, hero, level)
     COMBAT_PAUSE = 0
 end
 
-function Routine_BallistaMoveNext(side, hero, level)
+function Routine_BallistaMoveNext(side, hero, data)
     -- print("Trigger fire ballista ATB boost !")
     if CURRENT_UNIT == hero then
         SetATB_WarMachineType(side, WAR_MACHINE_BALLISTA, ATB_NEXT)
@@ -72,7 +72,7 @@ function Routine_BallistaMoveNext(side, hero, level)
     COMBAT_PAUSE = 0
 end
 
-function Routine_CastRandomSlow(side, hero, level)
+function Routine_CastRandomSlow(side, hero, data)
     -- print("Trigger random Slow !")
     if CURRENT_UNIT == hero and GetUnitManaPoints(hero) >= 20 then
         HeroCast_RandomCreature(hero, SPELL_SLOW, NO_COST, 1-side)
@@ -162,20 +162,20 @@ ACADEMY_UNIT_DIED = {
 }
 
 
-function DoAcademyRoutine_CombatPrepare(side, name, id, level)
-    startThread(ACADEMY_COMBAT_PREPARE[name], side, id, level)
+function DoAcademyRoutine_CombatPrepare(side, name, id, data)
+    startThread(ACADEMY_COMBAT_PREPARE[name], side, id, data)
 end
 
-function DoAcademyRoutine_CombatStart(side, name, id, level)
-    startThread(ACADEMY_COMBAT_START[name], side, id, level)
+function DoAcademyRoutine_CombatStart(side, name, id, data)
+    startThread(ACADEMY_COMBAT_START[name], side, id, data)
 end
 
-function DoAcademyRoutine_CombatTurn(side, name, id, level)
-    startThread(ACADEMY_COMBAT_TURN[name], side, id, level)
+function DoAcademyRoutine_CombatTurn(side, name, id, data)
+    startThread(ACADEMY_COMBAT_TURN[name], side, id, data)
 end
 
-function DoAcademyRoutine_UnitDied(side, name, id, level, unit)
-    startThread(ACADEMY_UNIT_DIED[name], side, id, level, unit)
+function DoAcademyRoutine_UnitDied(side, name, id, data, unit)
+    startThread(ACADEMY_UNIT_DIED[name], side, id, data, unit)
 end
 
 

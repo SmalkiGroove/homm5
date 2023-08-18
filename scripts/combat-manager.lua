@@ -54,11 +54,23 @@ function Wait()
     if THREAD_FINISHER == 0 then THREAD_STATE = 1 end
 end
 
-function GetHeroLevel(name)
+function ParseData(hero, data)
     local m = GetUnitManaPoints(name)
-    local level = trunc(m * 0.001)
-    SetUnitManaPoints(name, mod(m, 1000))
-    return level
+    local level = mod(trunc(m * 0.0000001), 100)
+    local set1 = mod(trunc(m * 0.00001), 100)
+    local set2 = mod(trunc(m * 0.001), 100)
+    SetUnitManaPoints(hero, mod(m, 1000))
+    data["LVL"] = level
+    data["SET1"] = set1
+    data["SET2"] = set2
+end
+
+function GetHeroLevel(data)
+    return data["LVL"]
+end
+
+function GetHeroArtifactSets(data)
+    return data["SET1"], data["SET2"]
 end
 
 function RandomCreature(side, seed)
@@ -207,13 +219,11 @@ function ManageCombatPrepare()
     DEFENDER_HERO = GetHero(DEFENDER) and GetHeroName(DEFENDER_HERO_ID) or ""
     if ATTACKER_HERO ~= "" then
         ATTACKER_RACE = GetHeroFactionID(ATTACKER_HERO)
-        ATTACKER_LEVEL = GetHeroLevel(GetHero(ATTACKER))
-        -- print("Attacker hero "..ATTACKER_HERO.." level "..ATTACKER_LEVEL)
+        ParseData(GetHero(ATTACKER), ATTACKER_HERO_DATA)
     end
     if DEFENDER_HERO ~= "" then
         DEFENDER_RACE = GetHeroFactionID(DEFENDER_HERO)
-        DEFENDER_LEVEL = GetHeroLevel(GetHero(DEFENDER))
-        -- print("Defender hero "..DEFENDER_HERO.." level "..DEFENDER_LEVEL)
+        ParseData(GetHero(DEFENDER), DEFENDER_HERO_DATA)
     end
 end
 
@@ -225,11 +235,11 @@ function ManageCombatStart()
     
 	if ATTACKER_HERO ~= "" then
         local startroutine = START_ROUTINES[ATTACKER_RACE]
-		startThread(startroutine, ATTACKER, ATTACKER_HERO, ATTACKER_HERO_ID, ATTACKER_LEVEL)
+		startThread(startroutine, ATTACKER, ATTACKER_HERO, ATTACKER_HERO_ID, ATTACKER_HERO_DATA)
 	end
 	if DEFENDER_HERO ~= "" then
 		local startroutine = START_ROUTINES[DEFENDER_RACE]
-		startThread(startroutine, DEFENDER, DEFENDER_HERO, DEFENDER_HERO_ID, DEFENDER_LEVEL)
+		startThread(startroutine, DEFENDER, DEFENDER_HERO, DEFENDER_HERO_ID, DEFENDER_HERO_DATA)
 	end
     Resume()
 end
@@ -244,11 +254,11 @@ function ManageCombatTurn(unit)
         Pause()
         if ATTACKER_HERO ~= "" then
             local turnroutine = TURN_ROUTINES[ATTACKER_RACE]
-            startThread(turnroutine, ATTACKER, ATTACKER_HERO, ATTACKER_HERO_ID, ATTACKER_LEVEL)
+            startThread(turnroutine, ATTACKER, ATTACKER_HERO, ATTACKER_HERO_ID, ATTACKER_HERO_DATA)
         end
         if DEFENDER_HERO ~= "" then
             local turnroutine = TURN_ROUTINES[DEFENDER_RACE]
-            startThread(turnroutine, DEFENDER, DEFENDER_HERO, DEFENDER_HERO_ID, DEFENDER_LEVEL)
+            startThread(turnroutine, DEFENDER, DEFENDER_HERO, DEFENDER_HERO_ID, DEFENDER_HERO_DATA)
         end
         Resume()
     end
@@ -259,11 +269,11 @@ function ManageUnitDeath(unit)
     Pause()
     if ATTACKER_HERO ~= "" then
         local deathroutine = DEATH_ROUTINES[ATTACKER_RACE]
-		startThread(deathroutine, ATTACKER, ATTACKER_HERO, ATTACKER_HERO_ID, ATTACKER_LEVEL, unit)
+		startThread(deathroutine, ATTACKER, ATTACKER_HERO, ATTACKER_HERO_ID, ATTACKER_HERO_DATA, unit)
 	end
 	if DEFENDER_HERO ~= "" then
 		local deathroutine = DEATH_ROUTINES[DEFENDER_RACE]
-		startThread(deathroutine, DEFENDER, DEFENDER_HERO, DEFENDER_HERO_ID, DEFENDER_LEVEL, unit)
+		startThread(deathroutine, DEFENDER, DEFENDER_HERO, DEFENDER_HERO_ID, DEFENDER_HERO_DATA, unit)
 	end
     Resume()
 end
