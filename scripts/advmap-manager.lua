@@ -26,7 +26,7 @@ LoadScript("/scripts/artifacts/artifacts-data.lua", 12)
 LoadScript("/scripts/building-conversion/conversion.lua", 9)
 
 LoadScript("/scripts/object-initializers/combat-trigger.lua", 10)
-LoadScript("/scripts/object-initializers/starting_armies.lua", 11)
+LoadScript("/scripts/object-initializers/starting-armies.lua", 11)
 
 
 TURN = 1
@@ -168,49 +168,49 @@ Trigger(COMBAT_RESULTS_TRIGGER, "CombatResultsHandler")
 
 function AddPlayer1Hero(hero)
 	local faction = GetHeroFactionID(hero)
-	startThread(StartingArmy, hero)
+	startThread(ReplaceStartingArmy, hero)
 	startThread(START_ROUTINES[faction], PLAYER_1, hero)
 	startThread(LEVELUP_ROUTINES[faction], hero)
 end
 function AddPlayer2Hero(hero)
 	local faction = GetHeroFactionID(hero)
-	startThread(StartingArmy, hero)
+	startThread(ReplaceStartingArmy, hero)
 	startThread(START_ROUTINES[faction], PLAYER_2, hero)
 	startThread(LEVELUP_ROUTINES[faction], hero)
 end
 function AddPlayer3Hero(hero)
 	local faction = GetHeroFactionID(hero)
-	startThread(StartingArmy, hero)
+	startThread(ReplaceStartingArmy, hero)
 	startThread(START_ROUTINES[faction], PLAYER_3, hero)
 	startThread(LEVELUP_ROUTINES[faction], hero)
 end
 function AddPlayer4Hero(hero)
 	local faction = GetHeroFactionID(hero)
-	startThread(StartingArmy, hero)
+	startThread(ReplaceStartingArmy, hero)
 	startThread(START_ROUTINES[faction], PLAYER_4, hero)
 	startThread(LEVELUP_ROUTINES[faction], hero)
 end
 function AddPlayer5Hero(hero)
 	local faction = GetHeroFactionID(hero)
-	startThread(StartingArmy, hero)
+	startThread(ReplaceStartingArmy, hero)
 	startThread(START_ROUTINES[faction], PLAYER_5, hero)
 	startThread(LEVELUP_ROUTINES[faction], hero)
 end
 function AddPlayer6Hero(hero)
 	local faction = GetHeroFactionID(hero)
-	startThread(StartingArmy, hero)
+	startThread(ReplaceStartingArmy, hero)
 	startThread(START_ROUTINES[faction], PLAYER_6, hero)
 	startThread(LEVELUP_ROUTINES[faction], hero)
 end
 function AddPlayer7Hero(hero)
 	local faction = GetHeroFactionID(hero)
-	startThread(StartingArmy, hero)
+	startThread(ReplaceStartingArmy, hero)
 	startThread(START_ROUTINES[faction], PLAYER_7, hero)
 	startThread(LEVELUP_ROUTINES[faction], hero)
 end
 function AddPlayer8Hero(hero)
 	local faction = GetHeroFactionID(hero)
-	startThread(StartingArmy, hero)
+	startThread(ReplaceStartingArmy, hero)
 	startThread(START_ROUTINES[faction], PLAYER_8, hero)
 	startThread(LEVELUP_ROUTINES[faction], hero)
 end
@@ -251,7 +251,7 @@ function InitializeHeroes()
 			for i,hero in GetPlayerHeroes(player) do
 				-- print("Initialize hero "..hero)
 				local faction = GetHeroFactionID(hero)
-				startThread(StartingArmy, hero)
+				startThread(ReplaceStartingArmy, hero)
 				startThread(START_ROUTINES[faction], player, hero)
 				startThread(LEVELUP_ROUTINES[faction], hero)
 			end
