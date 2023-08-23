@@ -152,15 +152,15 @@ function LoadScript(path, key)
 	repeat sleep(1) until ROUTINES_LOADED[key] == 1
 end
 
-LoadScript("/scripts/combat-routines/_common.lua", 0)
-LoadScript("/scripts/combat-routines/academy.lua", ACADEMY)
-LoadScript("/scripts/combat-routines/dungeon.lua", DUNGEON)
-LoadScript("/scripts/combat-routines/fortress.lua", FORTRESS)
-LoadScript("/scripts/combat-routines/haven.lua", HAVEN)
-LoadScript("/scripts/combat-routines/inferno.lua", INFERNO)
-LoadScript("/scripts/combat-routines/necropolis.lua", NECROPOLIS)
-LoadScript("/scripts/combat-routines/preserve.lua", PRESERVE)
-LoadScript("/scripts/combat-routines/stronghold.lua", STRONGHOLD)
+LoadScript("/scripts/hero-combat-routines/_common.lua", 0)
+LoadScript("/scripts/hero-combat-routines/academy.lua", ACADEMY)
+LoadScript("/scripts/hero-combat-routines/dungeon.lua", DUNGEON)
+LoadScript("/scripts/hero-combat-routines/fortress.lua", FORTRESS)
+LoadScript("/scripts/hero-combat-routines/haven.lua", HAVEN)
+LoadScript("/scripts/hero-combat-routines/inferno.lua", INFERNO)
+LoadScript("/scripts/hero-combat-routines/necropolis.lua", NECROPOLIS)
+LoadScript("/scripts/hero-combat-routines/preserve.lua", PRESERVE)
+LoadScript("/scripts/hero-combat-routines/stronghold.lua", STRONGHOLD)
 
 PREPARE_ROUTINES = {
     [0] = DoCommonRoutine_CombatPrepare,

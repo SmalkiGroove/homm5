@@ -1,18 +1,7 @@
 
 ROUTINES_LOADED = {
-	[0] = 0,
-	[1] = 0,
-	[2] = 0,
-	[3] = 0,
-	[4] = 0,
-	[5] = 0,
-	[6] = 0,
-	[7] = 0,
-	[8] = 0,
-	[9] = 0,
-	[10]= 0,
-	[11]= 0,
-	[12]= 0,
+	[0] = 0, [1] = 0, [2] = 0, [3] = 0, [4] = 0, [5] = 0, [6] = 0, [7] = 0, [8] = 0,
+	[9] = 0, [10]= 0, [11]= 0, [12]= 0, [13]= 0, [14]= 0, [15]= 0, [16]= 0, [17]= 0,
 }
 
 function LoadScript(path, key)
@@ -21,19 +10,23 @@ function LoadScript(path, key)
 	repeat sleep(1) until ROUTINES_LOADED[key] == 1
 end
 
-LoadScript("/scripts/advmap-routines/_common.lua", 0)
-LoadScript("/scripts/advmap-routines/academy.lua", ACADEMY)
-LoadScript("/scripts/advmap-routines/dungeon.lua", DUNGEON)
-LoadScript("/scripts/advmap-routines/fortress.lua", FORTRESS)
-LoadScript("/scripts/advmap-routines/haven.lua", HAVEN)
-LoadScript("/scripts/advmap-routines/inferno.lua", INFERNO)
-LoadScript("/scripts/advmap-routines/necropolis.lua", NECROPOLIS)
-LoadScript("/scripts/advmap-routines/preserve.lua", PRESERVE)
-LoadScript("/scripts/advmap-routines/stronghold.lua", STRONGHOLD)
-LoadScript("/scripts/advmap-routines/x_conversion.lua", 9)
-LoadScript("/scripts/advmap-routines/x_monsters.lua", 10)
-LoadScript("/scripts/advmap-routines/x_starting_armies.lua", 11)
-LoadScript("/scripts/advmap-routines/x_artifacts.lua", 12)
+LoadScript("/scripts/hero-advmap-routines/_common.lua", 0)
+LoadScript("/scripts/hero-advmap-routines/academy.lua", ACADEMY)
+LoadScript("/scripts/hero-advmap-routines/dungeon.lua", DUNGEON)
+LoadScript("/scripts/hero-advmap-routines/fortress.lua", FORTRESS)
+LoadScript("/scripts/hero-advmap-routines/haven.lua", HAVEN)
+LoadScript("/scripts/hero-advmap-routines/inferno.lua", INFERNO)
+LoadScript("/scripts/hero-advmap-routines/necropolis.lua", NECROPOLIS)
+LoadScript("/scripts/hero-advmap-routines/preserve.lua", PRESERVE)
+LoadScript("/scripts/hero-advmap-routines/stronghold.lua", STRONGHOLD)
+
+LoadScript("/scripts/artifacts/artifacts-data.lua", 12)
+--LoadScript("/scripts/artifacts/artifacts-data.lua", 13)
+
+LoadScript("/scripts/building-conversion/conversion.lua", 9)
+
+LoadScript("/scripts/object-initializers/combat-trigger.lua", 10)
+LoadScript("/scripts/object-initializers/starting_armies.lua", 11)
 
 
 TURN = 1
@@ -252,10 +245,6 @@ for i = 1,8 do
 	Trigger(PLAYER_REMOVE_HERO_TRIGGER, i, REMOVE_PLAYER_HERO[i])
 end
 
-function herotouchsomething(hero)
-	print("hero "..hero.." touched something")
-end
-
 function InitializeHeroes()
 	for player = 1,8 do
 		if (GetPlayerState(player) == 1) then
@@ -270,10 +259,10 @@ function InitializeHeroes()
 	end
 end
 
-// Initializers
+-- Initializers
 InitializeHeroes()
 DoTriggerBuildingConversion()
 DoTriggerCombatStart()
 
-// Game Loops
-startThread(DoWatchArtifacts)
+-- Game Loops
+-- startThread(DoWatchArtifacts)
