@@ -12,6 +12,7 @@ ROUTINES_LOADED = {
 	[9] = 0,
 	[10]= 0,
 	[11]= 0,
+	[12]= 0,
 }
 
 function LoadScript(path, key)
@@ -32,6 +33,7 @@ LoadScript("/scripts/advmap-routines/stronghold.lua", STRONGHOLD)
 LoadScript("/scripts/advmap-routines/x_conversion.lua", 9)
 LoadScript("/scripts/advmap-routines/x_monsters.lua", 10)
 LoadScript("/scripts/advmap-routines/x_starting_armies.lua", 11)
+LoadScript("/scripts/advmap-routines/x_artifacts.lua", 12)
 
 
 TURN = 1
@@ -268,6 +270,10 @@ function InitializeHeroes()
 	end
 end
 
+// Initializers
 InitializeHeroes()
 DoTriggerBuildingConversion()
 DoTriggerCombatStart()
+
+// Game Loops
+startThread(DoWatchArtifacts)

@@ -55,7 +55,7 @@ function Wait()
 end
 
 function ParseData(hero, data)
-    local m = GetUnitManaPoints(name)
+    local m = GetUnitManaPoints(hero)
     local level = mod(trunc(m * 0.0000001), 100)
     local set1 = mod(trunc(m * 0.00001), 100)
     local set2 = mod(trunc(m * 0.001), 100)
@@ -220,10 +220,12 @@ function ManageCombatPrepare()
     if ATTACKER_HERO ~= "" then
         ATTACKER_RACE = GetHeroFactionID(ATTACKER_HERO)
         ParseData(GetHero(ATTACKER), ATTACKER_HERO_DATA)
+        print("Hero "..ATTACKER_HERO.." level "..GetHeroLevel(ATTACKER_HERO_DATA))
     end
     if DEFENDER_HERO ~= "" then
         DEFENDER_RACE = GetHeroFactionID(DEFENDER_HERO)
         ParseData(GetHero(DEFENDER), DEFENDER_HERO_DATA)
+        print("Hero "..DEFENDER_HERO.." level "..GetHeroLevel(DEFENDER_HERO_DATA))
     end
 end
 

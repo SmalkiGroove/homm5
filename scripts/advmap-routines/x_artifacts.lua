@@ -48,7 +48,12 @@ function SetHeroActiveSet(hero, pieces, sets)
     for n,v in sets do
         if pieces >= n then artfset = v end
     end
-    if artfset ~= 0 then insert(HERO_ACTIVE_ARTIFACT_SETS[hero], artfset) end
+    if artfset ~= 0 then
+        if not contains(HERO_ACTIVE_ARTIFACT_SETS[hero], artfset) then
+            print("Hero "..hero.." has artifact set "..artfset)
+            insert(HERO_ACTIVE_ARTIFACT_SETS[hero], artfset)
+        end
+    end
 end
 
 
@@ -200,6 +205,23 @@ HERO_ACTIVE_ARTIFACT_SETS = {
     [H_ZOULEIKA] = {},
     [H_ERIKA] = {},
 }
+
+function UpdateArtifacts()
+    for player = 1,8 do
+        if (GetPlayerState(player) == 1) then
+			for i,hero in GetPlayerHeroes(player) do
+                ScanHeroArtifacts(hero)
+            end
+        end
+    end
+end
+
+function DoWatchArtifacts()
+    while 1 do
+        sleep(60)
+        startThread(UpdateArtifacts)
+    end
+end
 
 
 -- print("Loaded artifact advmap routines")
