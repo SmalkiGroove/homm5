@@ -1,17 +1,5 @@
 
 
-function ScanHeroArtifacts(hero)
-    for i = 1,10 do
-        local pieces = 0
-        for _,artifact in ARTIFACT_SETS[i] do
-            if HasArtefact(hero, artifact, 1) then
-                pieces = pieces + 1
-            end
-        end
-        SetHeroActiveSet(hero, pieces, ARTIFACT_SETS_ACTIVATIONS[i])
-    end
-end
-
 function SetHeroActiveSet(hero, pieces, sets)
     local artfset = 0
     for n,v in sets do
@@ -21,6 +9,20 @@ function SetHeroActiveSet(hero, pieces, sets)
         if not contains(HERO_ACTIVE_ARTIFACT_SETS[hero], artfset) then
             print("Hero "..hero.." has artifact set "..artfset)
             insert(HERO_ACTIVE_ARTIFACT_SETS[hero], artfset)
+        end
+    end
+end
+
+function UpdateArtifactSets(hero, previous, artifact)
+    for set = 1,10 do
+        if contains(ARTIFACT_SETS[set], previous) or contains(ARTIFACT_SETS[set], artifact) then
+            local pieces = 0
+            for _,a in ARTIFACT_SETS[set] do
+                if HasArtefact(hero, a, 1) then
+                    pieces = pieces + 1
+                end
+            end
+            SetHeroActiveSet(hero, pieces, ARTIFACT_SETS_ACTIVATIONS[i])
         end
     end
 end
@@ -173,3 +175,7 @@ HERO_ACTIVE_ARTIFACT_SETS = {
     [H_ZOULEIKA] = {},
     [H_ERIKA] = {},
 }
+
+
+-- print("Loaded artifact sets script")
+ROUTINES_LOADED[15] = 1

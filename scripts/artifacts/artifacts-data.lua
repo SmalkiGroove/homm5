@@ -24,6 +24,7 @@ ARTIFACT_SET_DRAGON = 9
 ARTIFACT_SET_ENLIGHTEN = 10
 
 -- Artifacts
+ARTIFACT_NONE = 0                                   --
 ARTIFACT_SWORD_OF_RUINS = 1                         -- sword of might
 ARTIFACT_GREAT_AXE_OF_GIANT_SLAYING = 2             -- axe of the mountain lords
 ARTIFACT_WAND_OF_X = 3                              -- wand of spell
@@ -261,5 +262,5 @@ ARTIFACT_SETS_ACTIVATIONS = {
 }
 
 
--- print("Loaded artifact advmap routines")
-ROUTINES_LOADED[12] = 1
+-- print("Loaded artifacts data script")
+ROUTINES_LOADED[14] = 1

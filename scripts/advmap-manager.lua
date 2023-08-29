@@ -20,15 +20,17 @@ LoadScript("/scripts/hero-advmap-routines/necropolis.lua", NECROPOLIS)
 LoadScript("/scripts/hero-advmap-routines/preserve.lua", PRESERVE)
 LoadScript("/scripts/hero-advmap-routines/stronghold.lua", STRONGHOLD)
 
-LoadScript("/scripts/artifacts/artifacts-data.lua", 12)
---LoadScript("/scripts/artifacts/artifacts-data.lua", 13)
+LoadScript("/scripts/artifacts/artifacts-data.lua", 14)
+LoadScript("/scripts/artifacts/artifact-sets.lua", 15)
+LoadScript("/scripts/artifacts/artifact-routines.lua", 16)
+LoadScript("/scripts/artifacts/artifacts-manager.lua", 17)
 
 LoadScript("/scripts/building-conversion/conversion.lua", 9)
 
 LoadScript("/scripts/object-initializers/combat-trigger.lua", 10)
 LoadScript("/scripts/object-initializers/starting-armies.lua", 11)
 
-LoadScript("/scripts/skills/skills-data.lua", 16)
+LoadScript("/scripts/skills/skills-data.lua", 12)
 
 
 TURN = 1

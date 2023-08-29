@@ -244,5 +244,5 @@ HERO_SKILL_BARBARIAN_MENTORING = 220
 
 
 
--- print("Loaded skills data advmap routines")
-ROUTINES_LOADED[16] = 1
+-- print("Loaded skills data script")
+ROUTINES_LOADED[12] = 1
