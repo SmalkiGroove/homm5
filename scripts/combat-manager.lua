@@ -59,7 +59,7 @@ function ParseData(hero, data)
     local level = mod(trunc(m * 0.0000001), 100)
     local set1 = mod(trunc(m * 0.00001), 100)
     local set2 = mod(trunc(m * 0.001), 100)
-    SetUnitManaPoints(hero, mod(m, 1000))
+    SetUnitManaPoints(hero, m - 1000000000 - level * 10000000, 1000)
     data["LVL"] = level
     data["SET1"] = set1
     data["SET2"] = set2

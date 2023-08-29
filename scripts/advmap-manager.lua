@@ -28,6 +28,8 @@ LoadScript("/scripts/building-conversion/conversion.lua", 9)
 LoadScript("/scripts/object-initializers/combat-trigger.lua", 10)
 LoadScript("/scripts/object-initializers/starting-armies.lua", 11)
 
+LoadScript("/scripts/skills/skills-data.lua", 16)
+
 
 TURN = 1
 
