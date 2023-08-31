@@ -22,7 +22,7 @@ function UpdateArtifactSets(hero, previous, artifact)
                     pieces = pieces + 1
                 end
             end
-            SetHeroActiveSet(hero, pieces, ARTIFACT_SETS_ACTIVATIONS[i])
+            SetHeroActiveSet(hero, pieces, ARTIFACT_SETS_ACTIVATIONS[set])
         end
     end
 end

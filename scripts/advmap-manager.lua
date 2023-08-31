@@ -1,4 +1,7 @@
 
+local x_skills = 9
+local x_artifacts = 10
+
 ROUTINES_LOADED = {
 	[0] = 0, [1] = 0, [2] = 0, [3] = 0, [4] = 0, [5] = 0, [6] = 0, [7] = 0, [8] = 0,
 	[9] = 0, [10]= 0, [11]= 0, [12]= 0, [13]= 0, [14]= 0, [15]= 0, [16]= 0, [17]= 0,
@@ -20,6 +23,8 @@ LoadScript("/scripts/hero-advmap-routines/inferno.lua", INFERNO)
 LoadScript("/scripts/hero-advmap-routines/necropolis.lua", NECROPOLIS)
 LoadScript("/scripts/hero-advmap-routines/preserve.lua", PRESERVE)
 LoadScript("/scripts/hero-advmap-routines/stronghold.lua", STRONGHOLD)
+LoadScript("/scripts/hero-advmap-routines/x-skills.lua", x_skills)
+LoadScript("/scripts/hero-advmap-routines/x-artifacts.lua", x_artifacts)
 
 LoadScript("/scripts/artifacts/artifacts-data.lua", 14)
 LoadScript("/scripts/artifacts/artifact-sets.lua", 15)
@@ -96,6 +101,8 @@ DAILY_ROUTINES = {
 	[6] = DoDungeonRoutine_Daily,
 	[7] = DoFortressRoutine_Daily,
 	[8] = DoStrongholdRoutine_Daily,
+	[9] = DoSkillsRoutine_Daily,
+	[10]= DoArtifactRoutine_Daily,
 }
 
 WEEKLY_ROUTINES = {
@@ -108,6 +115,8 @@ WEEKLY_ROUTINES = {
 	[6] = DoDungeonRoutine_Weekly,
 	[7] = DoFortressRoutine_Weekly,
 	[8] = DoStrongholdRoutine_Weekly,
+	[9] = DoSkillsRoutine_Weekly,
+	[10]= DoArtifactRoutine_Weekly,
 }
 
 LEVELUP_ROUTINES = {
@@ -120,6 +129,8 @@ LEVELUP_ROUTINES = {
 	[6] = DoDungeonRoutine_LevelUp,
 	[7] = DoFortressRoutine_LevelUp,
 	[8] = DoStrongholdRoutine_LevelUp,
+	-- [9] = DoSkillsRoutine_LevelUp,
+	-- [10]= DoArtifactRoutine_LevelUp,
 }
 
 AFTER_COMBAT_ROUTINES = {
@@ -132,16 +143,24 @@ AFTER_COMBAT_ROUTINES = {
 	[6] = DoDungeonRoutine_AfterCombat,
 	[7] = DoFortressRoutine_AfterCombat,
 	[8] = DoStrongholdRoutine_AfterCombat,
+	[9] = DoSkillsRoutine_AfterCombat,
+	[10]= DoArtifactRoutine_AfterCombat,
 }
 
 
-function DoPlayerHeroesSpe(player, newweek)
+function PlayerDailyHandler(player, newweek)
 	while (not IsPlayerCurrent(player)) do sleep(10) end
 	print("Player "..player.." turn started")
 	for i,hero in GetPlayerHeroes(player) do
 		local faction = GetHeroFactionID(hero)
 		startThread(DAILY_ROUTINES[faction], player, hero)
-		if newweek then startThread(WEEKLY_ROUTINES[faction], player, hero) end
+		startThread(DAILY_ROUTINES[9], player, hero)
+		startThread(DAILY_ROUTINES[10], player, hero)
+		if newweek then 
+			startThread(WEEKLY_ROUTINES[faction], player, hero)
+			startThread(WEEKLY_ROUTINES[9], player, hero)
+			startThread(WEEKLY_ROUTINES[10], player, hero)
+		end
 	end
 end
 
@@ -151,10 +170,10 @@ function NewDayTrigger()
 	local newweek = GetDate(DAY_OF_WEEK) == 1
 	for player = 1,8 do
 		if (GetPlayerState(player) == 1) then
-			startThread(DoPlayerHeroesSpe, player, newweek)
+			startThread(PlayerDailyHandler, player, newweek)
 		end
 	end
-	if newweek then	
+	if newweek then
 		startThread(DoTriggerBuildingConversion)
 	end
 end
@@ -165,7 +184,8 @@ function CombatResultsHandler(combatIndex)
 		local player = GetSavedCombatArmyPlayer(combatIndex, 1)
 		local faction = GetHeroFactionID(hero)
 		startThread(AFTER_COMBAT_ROUTINES[faction], player, hero, combatIndex)
-		startThread(AFT)
+		startThread(AFTER_COMBAT_ROUTINES[9], player, hero, combatIndex)
+		startThread(AFTER_COMBAT_ROUTINES[10], player, hero, combatIndex)
 	end
 end
 
@@ -260,8 +280,9 @@ function InitializeHeroes()
 				-- print("Initialize hero "..hero)
 				local faction = GetHeroFactionID(hero)
 				startThread(ReplaceStartingArmy, hero)
-				startThread(START_ROUTINES[faction], player, hero)
 				startThread(LEVELUP_ROUTINES[faction], hero)
+				startThread(START_ROUTINES[faction], player, hero)
+				startThread(START_ROUTINES[9], player, hero)
 			end
 		end
 	end

@@ -1,5 +1,6 @@
 
 function Routine_Offence(player, hero)
+    local m = GetHeroSkillMastery(hero, SKILL_OFFENCE)
 
 end
 
@@ -57,4 +58,4 @@ end
 
 
 -- print("Loaded skills advmap routines")
-ROUTINES_LOADED[9] = 1
+ROUTINES_LOADED[x_skills] = 1
