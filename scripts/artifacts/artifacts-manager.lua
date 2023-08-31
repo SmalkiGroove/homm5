@@ -3,7 +3,7 @@
 
 function ScanHeroArtifacts(hero)
     for location = 1,9 do
-        for artifact in ARTIFACT_LOCATIONS[location] do
+        for _,artifact in ARTIFACT_LOCATIONS[location] do
             if HasArtefact(hero, artifact, 1) then
                 local alreadyHas = (artifact == HERO_EQUIPPED_ARTIFACTS[hero][location])
                 if location == 7 then

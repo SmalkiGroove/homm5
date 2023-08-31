@@ -26,7 +26,7 @@ function HeroAttackMonsters(hero, monsters)
     EnableCombatHook(monsters)
 end
 
-function DoTriggerCombatStart()
+function InitializeCombatHook()
     local monsters = GetObjectNamesByType("CREATURE")
     for i,monster in monsters do
         EnableCombatHook(monster)

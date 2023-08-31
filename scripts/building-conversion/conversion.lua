@@ -147,7 +147,7 @@ function TriggerOnMapObjectType(object_type, trigger_type, handler)
 end
 
 
-function DoTriggerBuildingConversion()
+function EnableBuildingConversion()
 	for i = 1,8 do
 		TriggerOnMapObjectType(Dwellings_T1[i], OBJECT_TOUCH_TRIGGER, "HeroVisitDwellingT1")
 		TriggerOnMapObjectType(Dwellings_T2[i], OBJECT_TOUCH_TRIGGER, "HeroVisitDwellingT2")

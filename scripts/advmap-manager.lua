@@ -1,4 +1,28 @@
 
+INIT_SCRIPTS = 0
+
+PLAYER_BRAIN = {
+	[1] = OBSERVER,
+	[2] = OBSERVER,
+	[3] = OBSERVER,
+	[4] = OBSERVER,
+	[5] = OBSERVER,
+	[6] = OBSERVER,
+	[7] = OBSERVER,
+	[8] = OBSERVER,
+}
+
+function InitMessage(player)
+	if INIT_SCRIPTS == 0 then
+		MessageBoxForPlayers(GetPlayerFilter(player), "/Text/Game/Scripts/Init.txt", "InitMessage('"..player.."')")
+	end
+end
+
+for i = 1,8 do
+	PLAYER_BRAIN[i] = GetPlayerBrain(i)
+	if IsPlayerCurrent(i) then startThread(InitMessage, i) end
+end
+
 x_skills=9 x_skills_data=18
 x_artifacts=10 x_artifacts_data=14 x_artifacts_sets=15 x_artifacts_routines=16 x_artifacts_manager=17
 x_conversion=11 x_combat_trigger=12 x_starting_armies=13
@@ -42,21 +66,6 @@ LoadScript("/scripts/hero-advmap-routines/x-skills.lua", x_skills)
 
 TURN = 1
 
-PLAYER_BRAIN = {
-	[1] = OBSERVER,
-	[2] = OBSERVER,
-	[3] = OBSERVER,
-	[4] = OBSERVER,
-	[5] = OBSERVER,
-	[6] = OBSERVER,
-	[7] = OBSERVER,
-	[8] = OBSERVER,
-}
-
-for i = 1,8 do
-	PLAYER_BRAIN[i] = GetPlayerBrain(i)
-end
-
 ADD_PLAYER_HERO = {
 	[1] = "AddPlayer1Hero",
 	[2] = "AddPlayer2Hero",
@@ -89,7 +98,7 @@ START_ROUTINES = {
 	[7] = DoFortressRoutine_Start,
 	[8] = DoStrongholdRoutine_Start,
 	[9] = DoSkillsRoutine_Start,
-	[10]= DoArtifactRoutine_Start,
+	[10]= DoArtifactsRoutine_Start,
 }
 
 DAILY_ROUTINES = {
@@ -103,7 +112,7 @@ DAILY_ROUTINES = {
 	[7] = DoFortressRoutine_Daily,
 	[8] = DoStrongholdRoutine_Daily,
 	[9] = DoSkillsRoutine_Daily,
-	[10]= DoArtifactRoutine_Daily,
+	[10]= DoArtifactsRoutine_Daily,
 }
 
 WEEKLY_ROUTINES = {
@@ -117,7 +126,7 @@ WEEKLY_ROUTINES = {
 	[7] = DoFortressRoutine_Weekly,
 	[8] = DoStrongholdRoutine_Weekly,
 	[9] = DoSkillsRoutine_Weekly,
-	[10]= DoArtifactRoutine_Weekly,
+	[10]= DoArtifactsRoutine_Weekly,
 }
 
 LEVELUP_ROUTINES = {
@@ -131,7 +140,7 @@ LEVELUP_ROUTINES = {
 	[7] = DoFortressRoutine_LevelUp,
 	[8] = DoStrongholdRoutine_LevelUp,
 	-- [9] = DoSkillsRoutine_LevelUp,
-	-- [10]= DoArtifactRoutine_LevelUp,
+	-- [10]= DoArtifactsRoutine_LevelUp,
 }
 
 AFTER_COMBAT_ROUTINES = {
@@ -145,7 +154,7 @@ AFTER_COMBAT_ROUTINES = {
 	[7] = DoFortressRoutine_AfterCombat,
 	[8] = DoStrongholdRoutine_AfterCombat,
 	[9] = DoSkillsRoutine_AfterCombat,
-	[10]= DoArtifactRoutine_AfterCombat,
+	[10]= DoArtifactsRoutine_AfterCombat,
 }
 
 
@@ -155,12 +164,12 @@ function PlayerDailyHandler(player, newweek)
 	for i,hero in GetPlayerHeroes(player) do
 		local faction = GetHeroFactionID(hero)
 		startThread(DAILY_ROUTINES[faction], player, hero)
-		startThread(DAILY_ROUTINES[9], player, hero)
-		startThread(DAILY_ROUTINES[10], player, hero)
+		startThread(DAILY_ROUTINES[x_skills], player, hero)
+		startThread(DAILY_ROUTINES[x_artifacts], player, hero)
 		if newweek then 
 			startThread(WEEKLY_ROUTINES[faction], player, hero)
-			startThread(WEEKLY_ROUTINES[9], player, hero)
-			startThread(WEEKLY_ROUTINES[10], player, hero)
+			startThread(WEEKLY_ROUTINES[x_skills], player, hero)
+			startThread(WEEKLY_ROUTINES[x_artifacts], player, hero)
 		end
 	end
 end
@@ -175,7 +184,7 @@ function NewDayTrigger()
 		end
 	end
 	if newweek then
-		startThread(DoTriggerBuildingConversion)
+		startThread(EnableBuildingConversion)
 	end
 end
 
@@ -185,8 +194,8 @@ function CombatResultsHandler(combatIndex)
 		local player = GetSavedCombatArmyPlayer(combatIndex, 1)
 		local faction = GetHeroFactionID(hero)
 		startThread(AFTER_COMBAT_ROUTINES[faction], player, hero, combatIndex)
-		startThread(AFTER_COMBAT_ROUTINES[9], player, hero, combatIndex)
-		startThread(AFTER_COMBAT_ROUTINES[10], player, hero, combatIndex)
+		startThread(AFTER_COMBAT_ROUTINES[x_skills], player, hero, combatIndex)
+		startThread(AFTER_COMBAT_ROUTINES[x_artifacts], player, hero, combatIndex)
 	end
 end
 
@@ -283,7 +292,7 @@ function InitializeHeroes()
 				startThread(ReplaceStartingArmy, hero)
 				startThread(LEVELUP_ROUTINES[faction], hero)
 				startThread(START_ROUTINES[faction], player, hero)
-				startThread(START_ROUTINES[9], player, hero)
+				startThread(START_ROUTINES[x_skills], player, hero)
 			end
 		end
 	end
@@ -291,8 +300,10 @@ end
 
 -- Initializers
 InitializeHeroes()
-DoTriggerBuildingConversion()
-DoTriggerCombatStart()
+InitializeCombatHook()
+EnableBuildingConversion()
+
+INIT_SCRIPTS = 1
 
 -- Game Loops
 -- startThread(DoWatchArtifacts)
