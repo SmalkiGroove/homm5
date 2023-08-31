@@ -1,6 +1,7 @@
 
-local x_skills = 9
-local x_artifacts = 10
+x_skills=9 x_skills_data=18
+x_artifacts=10 x_artifacts_data=14 x_artifacts_sets=15 x_artifacts_routines=16 x_artifacts_manager=17
+x_conversion=11 x_combat_trigger=12 x_starting_armies=13
 
 ROUTINES_LOADED = {
 	[0] = 0, [1] = 0, [2] = 0, [3] = 0, [4] = 0, [5] = 0, [6] = 0, [7] = 0, [8] = 0,
@@ -23,20 +24,20 @@ LoadScript("/scripts/hero-advmap-routines/inferno.lua", INFERNO)
 LoadScript("/scripts/hero-advmap-routines/necropolis.lua", NECROPOLIS)
 LoadScript("/scripts/hero-advmap-routines/preserve.lua", PRESERVE)
 LoadScript("/scripts/hero-advmap-routines/stronghold.lua", STRONGHOLD)
-LoadScript("/scripts/hero-advmap-routines/x-skills.lua", x_skills)
+
+LoadScript("/scripts/artifacts/artifacts-data.lua", x_artifacts_data)
+LoadScript("/scripts/artifacts/artifact-sets.lua", x_artifacts_sets)
+LoadScript("/scripts/artifacts/artifact-routines.lua", x_artifacts_routines)
+LoadScript("/scripts/artifacts/artifacts-manager.lua", x_artifacts_manager)
 LoadScript("/scripts/hero-advmap-routines/x-artifacts.lua", x_artifacts)
 
-LoadScript("/scripts/artifacts/artifacts-data.lua", 14)
-LoadScript("/scripts/artifacts/artifact-sets.lua", 15)
-LoadScript("/scripts/artifacts/artifact-routines.lua", 16)
-LoadScript("/scripts/artifacts/artifacts-manager.lua", 17)
+LoadScript("/scripts/building-conversion/conversion.lua", x_conversion)
 
-LoadScript("/scripts/building-conversion/conversion.lua", 11)
+LoadScript("/scripts/object-initializers/combat-trigger.lua", x_combat_trigger)
+LoadScript("/scripts/object-initializers/starting-armies.lua", x_starting_armies)
 
-LoadScript("/scripts/object-initializers/combat-trigger.lua", 12)
-LoadScript("/scripts/object-initializers/starting-armies.lua", 13)
-
-LoadScript("/scripts/skills/skills-data.lua", 12)
+LoadScript("/scripts/skills/skills-data.lua", x_skills_data)
+LoadScript("/scripts/hero-advmap-routines/x-skills.lua", x_skills)
 
 
 TURN = 1

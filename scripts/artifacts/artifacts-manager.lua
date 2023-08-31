@@ -189,4 +189,4 @@ HERO_EQUIPPED_ARTIFACTS = {
 
 
 -- print("Loaded artifact management script")
-ROUTINES_LOADED[17] = 1
+ROUTINES_LOADED[x_artifacts_manager] = 1

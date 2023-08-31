@@ -263,4 +263,4 @@ ARTIFACT_SETS_ACTIVATIONS = {
 
 
 -- print("Loaded artifacts data script")
-ROUTINES_LOADED[14] = 1
+ROUTINES_LOADED[x_artifacts_data] = 1

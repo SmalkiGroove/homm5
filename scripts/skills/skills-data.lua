@@ -246,4 +246,4 @@ HERO_SKILL_BARBARIAN_MENTORING = 220
 
 
 -- print("Loaded skills data script")
-ROUTINES_LOADED[12] = 1
+ROUTINES_LOADED[x_skills_data] = 1

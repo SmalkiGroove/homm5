@@ -185,4 +185,4 @@ STARTING_ARMIES = {
 
 
 -- print("Loaded starting armies advmap routines")
-ROUTINES_LOADED[11] = 1
+ROUTINES_LOADED[x_starting_armies] = 1

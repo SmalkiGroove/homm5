@@ -233,4 +233,4 @@ end
 
 
 -- print("Loaded artifact routines script")
-ROUTINES_LOADED[16] = 1
+ROUTINES_LOADED[x_artifacts_routines] = 1
