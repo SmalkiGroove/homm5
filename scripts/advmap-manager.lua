@@ -48,18 +48,14 @@ LoadScript("/scripts/hero-advmap-routines/inferno.lua", INFERNO)
 LoadScript("/scripts/hero-advmap-routines/necropolis.lua", NECROPOLIS)
 LoadScript("/scripts/hero-advmap-routines/preserve.lua", PRESERVE)
 LoadScript("/scripts/hero-advmap-routines/stronghold.lua", STRONGHOLD)
-
 LoadScript("/scripts/artifacts/artifacts-data.lua", x_artifacts_data)
 LoadScript("/scripts/artifacts/artifact-sets.lua", x_artifacts_sets)
 LoadScript("/scripts/artifacts/artifact-routines.lua", x_artifacts_routines)
 LoadScript("/scripts/artifacts/artifacts-manager.lua", x_artifacts_manager)
 LoadScript("/scripts/hero-advmap-routines/x-artifacts.lua", x_artifacts)
-
 LoadScript("/scripts/building-conversion/conversion.lua", x_conversion)
-
 LoadScript("/scripts/object-initializers/combat-trigger.lua", x_combat_trigger)
 LoadScript("/scripts/object-initializers/starting-armies.lua", x_starting_armies)
-
 LoadScript("/scripts/skills/skills-data.lua", x_skills_data)
 LoadScript("/scripts/hero-advmap-routines/x-skills.lua", x_skills)
 
@@ -305,5 +301,11 @@ EnableBuildingConversion()
 
 INIT_SCRIPTS = 1
 
--- Game Loops
--- startThread(DoWatchArtifacts)
+-- Game Loop
+function GameLoop()
+    while 1 do
+        sleep(40)
+        startThread(UpdateArtifacts)
+    end
+end
+

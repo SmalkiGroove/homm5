@@ -22,21 +22,13 @@ end
 
 function UpdateArtifacts()
     for player = 1,8 do
-        if (GetPlayerState(player) == 1) then
+        if IsPlayerCurrent(i) then
 			for i,hero in GetPlayerHeroes(player) do
                 ScanHeroArtifacts(hero)
             end
         end
     end
 end
-
-function DoWatchArtifacts()
-    while 1 do
-        sleep(40)
-        startThread(UpdateArtifacts)
-    end
-end
-
 
 
 HERO_EQUIPPED_ARTIFACTS = {

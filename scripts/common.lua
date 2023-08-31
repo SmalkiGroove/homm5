@@ -68,6 +68,15 @@ function insert(array, sample)
 	array[index] = sample
 end
 
+function replace(array, sample, rep, all)
+    for index, element in array do
+		if (element == sample) then
+			array[index] = rep
+            if not all then return end
+		end
+	end
+end
+
 function remove(array, sample)
     local n = length(array)
     local j = 0
