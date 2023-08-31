@@ -2,6 +2,7 @@
 
 -- Skill type IDs
 --
+SKILL_NONE = 0
 -- Basic Skills
 SKILL_LOGISTICS = 1
 SKILL_WAR_MACHINES = 2

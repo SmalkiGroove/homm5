@@ -2,6 +2,7 @@
 ROUTINES_LOADED = {
 	[0] = 0, [1] = 0, [2] = 0, [3] = 0, [4] = 0, [5] = 0, [6] = 0, [7] = 0, [8] = 0,
 	[9] = 0, [10]= 0, [11]= 0, [12]= 0, [13]= 0, [14]= 0, [15]= 0, [16]= 0, [17]= 0,
+	[18] = 0, [19]= 0, [20]= 0, [21]= 0, [22]= 0, [23]= 0, [24]= 0, [25]= 0, [26]= 0,
 }
 
 function LoadScript(path, key)
@@ -25,10 +26,10 @@ LoadScript("/scripts/artifacts/artifact-sets.lua", 15)
 LoadScript("/scripts/artifacts/artifact-routines.lua", 16)
 LoadScript("/scripts/artifacts/artifacts-manager.lua", 17)
 
-LoadScript("/scripts/building-conversion/conversion.lua", 9)
+LoadScript("/scripts/building-conversion/conversion.lua", 11)
 
-LoadScript("/scripts/object-initializers/combat-trigger.lua", 10)
-LoadScript("/scripts/object-initializers/starting-armies.lua", 11)
+LoadScript("/scripts/object-initializers/combat-trigger.lua", 12)
+LoadScript("/scripts/object-initializers/starting-armies.lua", 13)
 
 LoadScript("/scripts/skills/skills-data.lua", 12)
 
@@ -81,6 +82,8 @@ START_ROUTINES = {
 	[6] = DoDungeonRoutine_Start,
 	[7] = DoFortressRoutine_Start,
 	[8] = DoStrongholdRoutine_Start,
+	[9] = DoSkillsRoutine_Start,
+	[10]= DoArtifactRoutine_Start,
 }
 
 DAILY_ROUTINES = {
@@ -162,6 +165,7 @@ function CombatResultsHandler(combatIndex)
 		local player = GetSavedCombatArmyPlayer(combatIndex, 1)
 		local faction = GetHeroFactionID(hero)
 		startThread(AFTER_COMBAT_ROUTINES[faction], player, hero, combatIndex)
+		startThread(AFT)
 	end
 end
 
