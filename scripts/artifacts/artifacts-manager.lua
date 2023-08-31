@@ -6,7 +6,7 @@ function ScanHeroArtifacts(hero)
         local loc = location
         if loc == 10 then loc = 7 end
         local artifact = HERO_EQUIPPED_ARTIFACTS[hero][location]
-        if artifact == 0 then
+        if artifact == ARTIFACT_NONE then
             for _,a in ARTIFACT_LOCATIONS[loc] do
                 if HasArtefact(hero, a, 1) then
                     if location == 7 and HERO_EQUIPPED_ARTIFACTS[hero][10] == a then break end

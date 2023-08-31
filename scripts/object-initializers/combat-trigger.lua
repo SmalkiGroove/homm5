@@ -1,12 +1,20 @@
 
 function HackHeroMana(hero)
-    local temp = 1000000000 + GetHeroLevel(hero) * 10000000
+    local temp = 1000000000 + GetHeroLevel(hero) * 10000000 + HERO_ACTIVE_ARTIFACT_SETS[hero][1] * 100000 + HERO_ACTIVE_ARTIFACT_SETS[hero][2] * 1000
     ChangeHeroStat(hero, STAT_KNOWLEDGE, 200000000)
     repeat sleep(1) until GetHeroStat(hero, STAT_KNOWLEDGE) > 200000000
     ChangeHeroStat(hero, STAT_MANA_POINTS, temp)
     repeat sleep(1) until GetHeroStat(hero, STAT_MANA_POINTS) > 1000
     ChangeHeroStat(hero, STAT_KNOWLEDGE, -200000000)
     repeat sleep(1) until GetHeroStat(hero, STAT_KNOWLEDGE) < 200000000
+end
+
+function RestoreHeroMana(hero)
+    sleep(10)
+    if GetHeroStat(hero, STAT_MANA_POINTS) > 1000 then
+        local temp = 1000000000 + GetHeroLevel(hero) * 10000000 + HERO_ACTIVE_ARTIFACT_SETS[hero][1] * 100000 + HERO_ACTIVE_ARTIFACT_SETS[hero][2] * 1000
+        ChangeHeroStat(hero, STAT_MANA_POINTS, -temp)
+    end
 end
 
 function EnableCombatHook(object)
@@ -24,6 +32,7 @@ function HeroAttackMonsters(hero, monsters)
     DisableCombatHook(monsters)
     MakeHeroInteractWithObject(hero, monsters)
     EnableCombatHook(monsters)
+    RestoreHeroMana(hero)
 end
 
 function InitializeCombatHook()
