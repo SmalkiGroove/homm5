@@ -94,7 +94,6 @@ START_ROUTINES = {
 	[7] = DoFortressRoutine_Start,
 	[8] = DoStrongholdRoutine_Start,
 	[9] = DoSkillsRoutine_Start,
-	[10]= DoArtifactsRoutine_Start,
 }
 
 DAILY_ROUTINES = {
@@ -135,8 +134,6 @@ LEVELUP_ROUTINES = {
 	[6] = DoDungeonRoutine_LevelUp,
 	[7] = DoFortressRoutine_LevelUp,
 	[8] = DoStrongholdRoutine_LevelUp,
-	-- [9] = DoSkillsRoutine_LevelUp,
-	-- [10]= DoArtifactsRoutine_LevelUp,
 }
 
 AFTER_COMBAT_ROUTINES = {
