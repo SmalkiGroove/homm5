@@ -2,19 +2,33 @@
 
 
 function ScanHeroArtifacts(hero)
-    for location = 1,9 do
-        for _,artifact in ARTIFACT_LOCATIONS[location] do
-            if HasArtefact(hero, artifact, 1) then
-                local alreadyHas = (artifact == HERO_EQUIPPED_ARTIFACTS[hero][location])
-                if location == 7 then
-                    alreadyHas = alreadyHas or (artifact == HERO_EQUIPPED_ARTIFACTS[hero][10])
+    for location = 1,10 do
+        local loc = location
+        if loc == 10 then loc = 7 end
+        local artifact = HERO_EQUIPPED_ARTIFACTS[hero][location]
+        if artifact == 0 then
+            for _,a in ARTIFACT_LOCATIONS[loc] do
+                if HasArtefact(hero, a, 1) then
+                    if location == 7 and HERO_EQUIPPED_ARTIFACTS[hero][10] == a then break end
+                    if location == 10 and HERO_EQUIPPED_ARTIFACTS[hero][7] == a then break end
+                    print(hero.." now has artifact #"..a.." at location "..location)
+                    UpdateArtifactSets(hero, artifact, a)
+                    HERO_EQUIPPED_ARTIFACTS[hero][location] = a
+                    break
                 end
-                if not alreadyHas then
-                    print(hero.." now has artifact #"..artifact)
-                    UpdateArtifactSets(hero, HERO_EQUIPPED_ARTIFACTS[hero][location], artifact)
-                    EnableArtifactRoutine(hero, artifact)
-                    HERO_EQUIPPED_ARTIFACTS[hero][location] = artifact
+            end
+        else
+            if not HasArtefact(hero, artifact, 1) then
+                local rep = ARTIFACT_NONE
+                for _,a in ARTIFACT_LOCATIONS[loc] do
+                    if HasArtefact(hero, a, 1) then
+                        rep = a
+                        break
+                    end
                 end
+                print(hero.." has replaced artifact #"..artifact.." by #"..rep.." at location "..location)
+                UpdateArtifactSets(hero, artifact, rep)
+                HERO_EQUIPPED_ARTIFACTS[hero][location] = rep
             end
         end
     end
@@ -22,8 +36,9 @@ end
 
 function UpdateArtifacts()
     for player = 1,8 do
-        if IsPlayerCurrent(i) then
+        if IsPlayerCurrent(player) then
 			for i,hero in GetPlayerHeroes(player) do
+                print("Update artifact for hero "..hero)
                 ScanHeroArtifacts(hero)
             end
         end

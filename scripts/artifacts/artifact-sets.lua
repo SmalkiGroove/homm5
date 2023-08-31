@@ -11,7 +11,7 @@ function SetHeroActiveSet(hero, pieces, set)
         print("Hero "..hero.." artifact set "..artfset.." has not changed")
     else
         print("Hero "..hero.." artifact set has changed from "..before.." to "..artfset)
-        replace(HERO_ACTIVE_ARTIFACT_SETS[hero], before, artfset, false)
+        replace(HERO_ACTIVE_ARTIFACT_SETS[hero], before, artfset, nil)
         print("["..HERO_ACTIVE_ARTIFACT_SETS[hero][1]..","..HERO_ACTIVE_ARTIFACT_SETS[hero][2].."]")
     end
 end

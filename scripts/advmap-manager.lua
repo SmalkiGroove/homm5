@@ -299,13 +299,13 @@ InitializeHeroes()
 InitializeCombatHook()
 EnableBuildingConversion()
 
-INIT_SCRIPTS = 1
-
 -- Game Loop
 function GameLoop()
     while 1 do
-        sleep(40)
+        sleep(30)
         startThread(UpdateArtifacts)
     end
 end
+startThread(GameLoop)
 
+INIT_SCRIPTS = 1
