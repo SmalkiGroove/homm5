@@ -24,7 +24,7 @@ for i = 1,8 do
 end
 
 x_skills=9 x_skills_data=18
-x_artifacts=10 x_artifacts_data=14 x_artifacts_sets=15 x_artifacts_routines=16 x_artifacts_manager=17
+x_artifacts=10 x_artifacts_data=14 x_artifacts_sets=15 x_artifacts_manager=16
 x_conversion=11 x_combat_trigger=12 x_starting_armies=13
 
 ROUTINES_LOADED = {
@@ -50,7 +50,6 @@ LoadScript("/scripts/hero-advmap-routines/preserve.lua", PRESERVE)
 LoadScript("/scripts/hero-advmap-routines/stronghold.lua", STRONGHOLD)
 LoadScript("/scripts/artifacts/artifacts-data.lua", x_artifacts_data)
 LoadScript("/scripts/artifacts/artifact-sets.lua", x_artifacts_sets)
-LoadScript("/scripts/artifacts/artifact-routines.lua", x_artifacts_routines)
 LoadScript("/scripts/artifacts/artifacts-manager.lua", x_artifacts_manager)
 LoadScript("/scripts/hero-advmap-routines/x-artifacts.lua", x_artifacts)
 LoadScript("/scripts/building-conversion/conversion.lua", x_conversion)
