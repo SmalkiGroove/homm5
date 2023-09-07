@@ -15,7 +15,7 @@
 		<x>0</x>
 		<y>0</y>
 	</PossessionMarkerTile>
-	<Effect href="/Effects/_(Effect)/Artefacts/General/Green.xdb#xpointer(/Effect)"/>
+	<Effect/>
 	<EffectWhenOwned/>
 	<messagesFileRef>
 		<Item href="/Text/Game/Artifacts/Skull_of_Markal/Name.txt"/>

@@ -8,7 +8,7 @@
 				<DescriptionFileRef href=""/>
 				<Model/>
 				<Type>ARTF_CLASS_MINOR</Type>
-				<Slot>PRIMARY</Slot>
+				<Slot>INVENTORY</Slot>
 				<Icon/>
 				<CostOfGold>0</CostOfGold>
 				<AIValue>0</AIValue>
@@ -31,7 +31,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/SwordOfRuin/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/SwordOfRuin/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/Sword_of_Ruins.(Model).xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
 				<Slot>PRIMARY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Sword_of_Ruins.xdb#xpointer(/Texture)"/>
@@ -56,7 +56,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Great_Axe_of_giant_slaying/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Great_Axe_of_giant_slaying/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>PRIMARY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Great_Axe_of_Giant_Slaying.xdb#xpointer(/Texture)"/>
@@ -81,7 +81,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Wand_of_x/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Wand_of_x/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/Wand_of_.(Model).xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
 				<Slot>PRIMARY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Wand_Of_X.xdb#xpointer(/Texture)"/>
@@ -106,7 +106,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/UnicornHornBow/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/UnicornHornBow/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/Unicorn_Horn_Bow.(Model).xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>PRIMARY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Unicorn_Horn_Bow.xdb#xpointer(/Texture)"/>
@@ -131,7 +131,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Titan`s_trident/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Titan`s_trident/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
 				<Slot>PRIMARY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Titant_Trident.(Texture).xdb#xpointer(/Texture)"/>
@@ -156,7 +156,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Staff_of_vexing/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Staff_of_vexing/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>PRIMARY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Staff_of_Vexings.xdb#xpointer(/Texture)"/>
@@ -181,7 +181,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/ShacklesOfWar/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/ShacklesOfWar/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/Shackles_of_War.(Model).xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>MISCSLOT1</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Shackles_of_War.xdb#xpointer(/Texture)"/>
@@ -206,7 +206,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Four_leaf_clover/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Four_leaf_clover/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
 				<Slot>MISCSLOT1</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Four_leaf_clover.(Texture).xdb#xpointer(/Texture)"/>
@@ -231,7 +231,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Iceberg_shield/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Iceberg_shield/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>SECONDARY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Icberg_Shield.xdb#xpointer(/Texture)"/>
@@ -256,7 +256,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Golden_sextant/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Golden_sextant/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
 				<Slot>MISCSLOT1</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Golden_sextant.(Texture).xdb#xpointer(/Texture)"/>
@@ -281,7 +281,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Crown_of_courage/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Crown_of_courage/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>HEAD</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Crown_of_courage.(Texture).xdb#xpointer(/Texture)"/>
@@ -306,7 +306,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Crown_of_many_eyes/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Crown_of_many_eyes/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
 				<Slot>HEAD</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Crown_of_many_eyes.(Texture).xdb#xpointer(/Texture)"/>
@@ -331,7 +331,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/PlateMailOfStability/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/PlateMailOfStability/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/Plate_Mail_of_Stability.(Model).xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>CHEST</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Plate_Mail_of_Stability.xdb#xpointer(/Texture)"/>
@@ -356,7 +356,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Breastplate_of_petrified_wood/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Breastplate_of_petrified_wood/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
 				<Slot>CHEST</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Breastplate_of_Petrified_Wood.xdb#xpointer(/Texture)"/>
@@ -381,7 +381,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Pedant_of_mastery/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Pedant_of_mastery/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/Pendant_of_Mastery.(Model).xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>NECK</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Pendant_of_Mastery.xdb#xpointer(/Texture)"/>
@@ -406,7 +406,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Necklace_of_bravery/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Necklace_of_bravery/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/Pendant_of_Mastery.(Model).xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
 				<Slot>NECK</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Necklace_of_Bravery.xdb#xpointer(/Texture)"/>
@@ -431,7 +431,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Werewolf_claw_necklace/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Werewolf_claw_necklace/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>NECK</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Werewolf_Claw_Necklace.xdb#xpointer(/Texture)"/>
@@ -456,7 +456,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Evercold_icicle/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Evercold_icicle/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
 				<Slot>NECK</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Evercold_Icicle.xdb#xpointer(/Texture)"/>
@@ -481,7 +481,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Necklace_of_power/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Necklace_of_power/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/Necklace_of_Power.(Model).xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>NECK</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Neclace_of_Power.xdb#xpointer(/Texture)"/>
@@ -506,7 +506,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Ring_of_lightning_protection/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Ring_of_lightning_protection/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/Ring_of_Lightning_Protection.(Model).xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
 				<Slot>FINGER</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Ring_of_Lightning_Protection.xdb#xpointer(/Texture)"/>
@@ -531,7 +531,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/RingOfLife/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/RingOfLife/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/Ring_of_Life.(Model).xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>FINGER</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Ring_of_Life.xdb#xpointer(/Texture)"/>
@@ -556,10 +556,10 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Ring_of_haste/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Ring_of_haste/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
-				<Slot>FINGER</Slot>
-				<Icon href="/Textures/HeroScreen/Artifacts/Ring_of_haste.xdb#xpointer(/Texture)"/>
+				<Slot>PRIMARY</Slot>
+				<Icon href="/Textures/HeroScreen/Artifacts/Angelic.xdb#xpointer(/Texture)"/>
 				<CostOfGold>30000</CostOfGold>
 				<AIValue>32000</AIValue>
 				<CanBeGeneratedToSell>false</CanBeGeneratedToSell>
@@ -581,7 +581,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Nightmarish_ring/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Nightmarish_ring/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/Nightmarish_Ring.(Model).xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>FINGER</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Nightmarish_Ring_3.xdb#xpointer(/Texture)"/>
@@ -606,7 +606,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/BootsOfSpeed/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/BootsOfSpeed/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/Boots_of_Speed.(Model).xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>FEET</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Boots_of_Speed.xdb#xpointer(/Texture)"/>
@@ -631,7 +631,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Golden_horseshoe/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Golden_horseshoe/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>MISCSLOT1</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Golden Horseshoe.xdb#xpointer(/Texture)"/>
@@ -656,7 +656,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Wayfarer_boots/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Wayfarer_boots/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>FEET</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Wayfarer_Boots.xdb#xpointer(/Texture)"/>
@@ -681,7 +681,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Boots_of_interference/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Boots_of_interference/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/Boots_of_Interference.xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
 				<Slot>FEET</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Boots_of_Interference2.xdb#xpointer(/Texture)"/>
@@ -706,7 +706,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/EndlessSackOfGold/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/EndlessSackOfGold/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/Endless_Sack_of_Gold.(Model).xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>SHOULDERS</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Endless_Sack_of_Gold.xdb#xpointer(/Texture)"/>
@@ -731,9 +731,9 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Endless_bag_of_gold/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Endless_bag_of_gold/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/Endless_Bag_of_Gold.(Model).xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
-				<Slot>SHOULDERS</Slot>
+				<Slot>MISCSLOT1</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Endless_Bag_of_Gold.tga.(Texture).xdb#xpointer(/Texture)"/>
 				<CostOfGold>1500</CostOfGold>
 				<AIValue>6600</AIValue>
@@ -756,7 +756,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Angel_wings/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Angel_wings/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/Angel_wings.(Model).xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>SHOULDERS</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Angel_Wings.xdb#xpointer(/Texture)"/>
@@ -781,7 +781,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Lion_hide_cape/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Lion_hide_cape/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>SHOULDERS</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Lion_Hide_Cape.xdb#xpointer(/Texture)"/>
@@ -806,7 +806,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Phoenix_feather_cape/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Phoenix_feather_cape/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
 				<Slot>SHOULDERS</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Phoenix_Feather_Cape.xdb#xpointer(/Texture)"/>
@@ -831,7 +831,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Cloak_of_mourning/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Cloak_of_mourning/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>SHOULDERS</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Cloak_of_Mourning.xdb#xpointer(/Texture)"/>
@@ -856,7 +856,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Helm_of_enlightenment/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Helm_of_enlightenment/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>HEAD</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Helm_of_Enlightenment.xdb#xpointer(/Texture)"/>
@@ -881,7 +881,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Chain_mail_of_enlightenment/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Chain_mail_of_enlightenment/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/Chainmail_of_Enlightenment.(Model).xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>CHEST</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Chain_Mail_of_Enlightenment.xdb#xpointer(/Texture)"/>
@@ -906,7 +906,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Dragon_scale_armor/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Dragon_scale_armor/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>CHEST</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Dragon_Scale_Armor.xdb#xpointer(/Texture)"/>
@@ -931,7 +931,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/DragonscaleShield/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/DragonscaleShield/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/Dragon_Scale_Shield.(Model).xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>SECONDARY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Dragon_Scale_Shield.xdb#xpointer(/Texture)"/>
@@ -956,7 +956,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Dragon_bone_greaves/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Dragon_bone_greaves/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>FEET</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Dragon_Bone_Greaves.xdb#xpointer(/Texture)"/>
@@ -981,7 +981,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Dragon_wing_mantle/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Dragon_wing_mantle/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/Dragon_Wing_Mantle.(Model).xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>SHOULDERS</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Dragon_Wing_Mantle.xdb#xpointer(/Texture)"/>
@@ -1006,7 +1006,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Dragon_teeth_necklace/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Dragon_teeth_necklace/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/Dragon_Teeth_Necklace.(Model).xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>NECK</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Dragon_Teeth_Necklace.xdb#xpointer(/Texture)"/>
@@ -1031,7 +1031,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Dragon_talon_crown/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Dragon_talon_crown/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>HEAD</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Dragon_Talon_Crown.xdb#xpointer(/Texture)"/>
@@ -1056,7 +1056,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Dragon_eye_ring/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Dragon_eye_ring/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/Ring_of_Lightning_Protection.(Model).xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>FINGER</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Dragon_Eye_Ring.xdb#xpointer(/Texture)"/>
@@ -1081,7 +1081,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Dragon_flame_tongue/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Dragon_flame_tongue/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>PRIMARY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Dragon_Flame_Tongue.xdb#xpointer(/Texture)"/>
@@ -1106,7 +1106,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Robe_of_magi/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Robe_of_magi/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>CHEST</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Robe_of_Magi.xdb#xpointer(/Texture)"/>
@@ -1131,7 +1131,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Staff_of_magi/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Staff_of_magi/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>PRIMARY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Staff_of_Magi.xdb#xpointer(/Texture)"/>
@@ -1156,7 +1156,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Crown_of_magi/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Crown_of_magi/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>HEAD</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Crown_of_Magi.xdb#xpointer(/Texture)"/>
@@ -1181,7 +1181,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Ring_of_magi/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Ring_of_magi/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>FINGER</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Ring_of_Magi.xdb#xpointer(/Texture)"/>
@@ -1206,7 +1206,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Dwarven_mithral_cuirass/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Dwarven_mithral_cuirass/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>CHEST</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Dwarven_Mithral_Cuirass.xdb#xpointer(/Texture)"/>
@@ -1231,7 +1231,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Dwarven_mithral_greaves/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Dwarven_mithral_greaves/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>FEET</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Dwarven_Mithral_Greaves.xdb#xpointer(/Texture)"/>
@@ -1256,7 +1256,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Dwarven_mithral_helmet/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Dwarven_mithral_helmet/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>HEAD</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Dwarven_Mithral_Helmet.xdb#xpointer(/Texture)"/>
@@ -1281,7 +1281,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Dwarven_mithral_shield/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Dwarven_mithral_shield/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>SECONDARY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Dwarven_mithral_shield.xdb#xpointer(/Texture)"/>
@@ -1306,9 +1306,9 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/ScrollOfSpell/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/ScrollOfSpell/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/Scroll.(Model).xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
-				<Slot>MISCSLOT1</Slot>
+				<Slot>SECONDARY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Scroll_of_Spell.xdb#xpointer(/Texture)"/>
 				<CostOfGold>7500</CostOfGold>
 				<AIValue>4000</AIValue>
@@ -1331,7 +1331,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Graal/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Graal/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/Graal.xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_GRAIL</Type>
 				<Slot>INVENTORY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Graal.xdb#xpointer(/Texture)"/>
@@ -1356,7 +1356,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Boots_of_levitation/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Boots_of_levitation/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>FEET</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Boots_of_Levitation.(Texture).xdb#xpointer(/Texture)"/>
@@ -1381,7 +1381,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Skull_Helmet/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Skull_Helmet/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
 				<Slot>HEAD</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Skull_Helmet.xdb#xpointer(/Texture)"/>
@@ -1406,7 +1406,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Valorious_Armor/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Valorious_Armor/Valorious_Armor.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
 				<Slot>CHEST</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Valorious_Armor.xdb#xpointer(/Texture)"/>
@@ -1431,7 +1431,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Boots_of_Swiftness/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Boots_of_Swiftness/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>FEET</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Boots_of_Swiftness.xdb#xpointer(/Texture)"/>
@@ -1456,7 +1456,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Moonblade/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Moonblade/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>SECONDARY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Moonblade.xdb#xpointer(/Texture)"/>
@@ -1481,7 +1481,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Ring_of_Celerity/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Ring_of_Celerity/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>FINGER</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Ring_of_Celerity.xdb#xpointer(/Texture)"/>
@@ -1506,7 +1506,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Band_of_Conjurer/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Band_of_Conjurer/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
 				<Slot>FINGER</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Band_of_Conjurer.xdb#xpointer(/Texture)"/>
@@ -1531,7 +1531,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Earthsliders/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Earthsliders/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
 				<Slot>FEET</Slot>
 				<Icon href="/Textures/Icons/Artifacts/Earth_Sliders.(Texture).xdb#xpointer(/Texture)"/>
@@ -1556,7 +1556,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Rigid_Mantle/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Rigid_Mantle/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
 				<Slot>SHOULDERS</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Rigid_Mantle.xdb#xpointer(/Texture)"/>
@@ -1581,7 +1581,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Jinxing_Band/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Jinxing_Band/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>FINGER</Slot>
 				<Icon href="/Textures/Icons/Artifacts/Jinxing_Band.(Texture).xdb#xpointer(/Texture)"/>
@@ -1606,7 +1606,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Bonestudded_Leather/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Bonestudded_Leather/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>CHEST</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Bonestudded_Leather.xdb#xpointer(/Texture)"/>
@@ -1631,7 +1631,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Wispering_Ring/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Wispering_Ring/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
 				<Slot>FINGER</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Wispering_Ring.xdb#xpointer(/Texture)"/>
@@ -1656,7 +1656,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Helm_of_Chaos/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Helm_of_Chaos/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>HEAD</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Helm_of_Chaos.xdb#xpointer(/Texture)"/>
@@ -1681,7 +1681,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Twisting_neither/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Twisting_neither/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>NECK</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Twisted_Neither.xdb#xpointer(/Texture)"/>
@@ -1706,7 +1706,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Sandals_of_the_Saint/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Sandals_of_the_Saint/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>FEET</Slot>
 				<Icon href="/Textures/Icons/Artifacts/Sandais_of_the_Saint.(Texture).xdb#xpointer(/Texture)"/>
@@ -1731,7 +1731,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Shawl_of_the_great_lich/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Shawl_of_the_great_lich/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>SHOULDERS</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Shawl_of_Great_Lich.xdb#xpointer(/Texture)"/>
@@ -1756,7 +1756,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Ring_of_Death/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Ring_of_Death/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
 				<Slot>FINGER</Slot>
 				<Icon href="/Textures/Icons/Artifacts/Ring_of_the_Death.(Texture).xdb#xpointer(/Texture)"/>
@@ -1781,7 +1781,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Necromancer_Pendant/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Necromancer_Pendant/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>NECK</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Necromancer_Pendant.(Texture).xdb#xpointer(/Texture)"/>
@@ -1806,7 +1806,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Freida/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Freida/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>INVENTORY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Freida.(Texture).xdb#xpointer(/Texture)"/>
@@ -1831,7 +1831,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Ogre_Club/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Ogre_Club/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/H5Addon1/OgreClub.xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>PRIMARY</Slot>
 				<Icon href="/UI/H5A1/Icons/Artefacts/128x128/Ogre_Club.(Texture).xdb#xpointer(/Texture)"/>
@@ -1856,7 +1856,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Ogre_Shield/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Ogre_Shield/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/H5Addon1/OgreShield.xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>SECONDARY</Slot>
 				<Icon href="/UI/H5A1/Icons/Artefacts/128x128/Ogre_Shield.(Texture).xdb#xpointer(/Texture)"/>
@@ -1881,7 +1881,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Tome_of_Destruction/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Tome_of_Destruction/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/H5Addon1/TomeOfDestruction.xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>SECONDARY</Slot>
 				<Icon href="/UI/H5A1/Icons/Artefacts/128x128/Tome_of_Destruction.(Texture).xdb#xpointer(/Texture)"/>
@@ -1906,7 +1906,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Tome_of_Light_Magic/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Tome_of_Light_Magic/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/H5Addon1/TomeOfLightMagic.xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>SECONDARY</Slot>
 				<Icon href="/UI/H5A1/Icons/Artefacts/128x128/Tome_of_Light_Magic.(Texture).xdb#xpointer(/Texture)"/>
@@ -1931,7 +1931,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Tome_of_Dark_Magic/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Tome_of_Dark_Magic/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/H5Addon1/TomeOfDarkMagic.xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>SECONDARY</Slot>
 				<Icon href="/UI/H5A1/Icons/Artefacts/128x128/Tome_of_Dark_Magic.(Texture).xdb#xpointer(/Texture)"/>
@@ -1956,7 +1956,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Tome_of_Summoning_Magic/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Tome_of_Summoning_Magic/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/H5Addon1/TomeOfSummoning.xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>SECONDARY</Slot>
 				<Icon href="/UI/H5A1/Icons/Artefacts/128x128/Tome_of_Summoning_Magic.(Texture).xdb#xpointer(/Texture)"/>
@@ -1981,7 +1981,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Beginer_Magic_Stick/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Beginer_Magic_Stick/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/H5Addon1/BeginersMagicStick.xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
 				<Slot>PRIMARY</Slot>
 				<Icon href="/UI/H5A1/Icons/Artefacts/128x128/Beginners_Magic_Stick.(Texture).xdb#xpointer(/Texture)"/>
@@ -2006,7 +2006,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Runic_War_Axe/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Runic_War_Axe/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/H5Addon1/RunicWarAxe.xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>PRIMARY</Slot>
 				<Icon href="/UI/H5A1/Icons/Artefacts/128x128/Runic_War_Axe.(Texture).xdb#xpointer(/Texture)"/>
@@ -2031,7 +2031,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Runic_War_Harness/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Runic_War_Harness/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/H5Addon1/RunicWarHarness.xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>CHEST</Slot>
 				<Icon href="/UI/H5A1/Icons/Artefacts/128x128/Runic_War_Harness.(Texture).xdb#xpointer(/Texture)"/>
@@ -2056,9 +2056,9 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Skull_of_Markal/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Skull_of_Markal/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/H5Addon1/SkullOfMarcal.xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
-				<Slot>SECONDARY</Slot>
+				<Slot>MISCSLOT1</Slot>
 				<Icon href="/UI/H5A1/Icons/Artefacts/128x128/Skull_of_Markal_(Berein).(Texture).xdb#xpointer(/Texture)"/>
 				<CostOfGold>20000</CostOfGold>
 				<AIValue>12000</AIValue>
@@ -2081,7 +2081,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Bearhide_Wraps/name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Bearhide_Wraps/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/H5Addon1/BearhideWraps.xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
 				<Slot>SHOULDERS</Slot>
 				<Icon href="/UI/H5A1/Icons/Artefacts/128x128/Bearhide_Wraps.(Texture).xdb#xpointer(/Texture)"/>
@@ -2106,7 +2106,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Dwarven_Smithy_Hammer/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Dwarven_Smithy_Hammer/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/H5Addon1/DwarvenSmythyHummer.xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>PRIMARY</Slot>
 				<Icon href="/UI/H5A1/Icons/Artefacts/128x128/Dwarven_Smithy_Hammer.(Texture).xdb#xpointer(/Texture)"/>
@@ -2131,7 +2131,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Rune_of_Flame/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Rune_of_Flame/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/H5Addon1/RuneOfFlame.xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
 				<Slot>MISCSLOT1</Slot>
 				<Icon href="/UI/H5A1/Icons/Artefacts/128x128/Rune_of_Flame.(Texture).xdb#xpointer(/Texture)"/>
@@ -2156,7 +2156,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Tarot_Deck/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Tarot_Deck/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/H5Addon1/TarotDeck.xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
 				<Slot>MISCSLOT1</Slot>
 				<Icon href="/UI/H5A1/Icons/Artefacts/128x128/Tarot_Deck.(Texture).xdb#xpointer(/Texture)"/>
@@ -2181,7 +2181,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Crown_Of_Leader/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Crown_Of_Leader/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/H5A2/CrownOfLeader.xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>HEAD</Slot>
 				<Icon href="/UI/H5A2/Icons/Artifacts/Crown_of_Leader.(Texture).xdb#xpointer(/Texture)"/>
@@ -2208,7 +2208,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Mask_Of_Doppelganger/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
-				<Slot>INVENTORY</Slot>
+				<Slot>HEAD</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Egg.xdb#xpointer(/Texture)"/>
 				<CostOfGold>30000</CostOfGold>
 				<AIValue>100</AIValue>
@@ -2231,7 +2231,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Edge_Of_Balance/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Edge_Of_Balance/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/H5A2/EdgeOfBalance.xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
 				<Slot>PRIMARY</Slot>
 				<Icon href="/UI/H5A2/Icons/Artifacts/Edge_of_Balance.(Texture).xdb#xpointer(/Texture)"/>
@@ -2256,7 +2256,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Ring_Of_Machine_Affinity/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Ring_Of_Machine_Affinity/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/H5A2/RingOfMachine.xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>FINGER</Slot>
 				<Icon href="/UI/H5A2/Icons/Artifacts/Ring_Of_Machine_Affinity.(Texture).xdb#xpointer(/Texture)"/>
@@ -2281,7 +2281,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Horn_Of_Plenty/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Horn_Of_Plenty/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/H5A2/HornOfPlenty.xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>MISCSLOT1</Slot>
 				<Icon href="/UI/H5A2/Icons/Artifacts/Horn_of_Plenty.(Texture).xdb#xpointer(/Texture)"/>
@@ -2306,7 +2306,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Ring_Of_Unsummoning/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Ring_Of_Unsummoning/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/H5A2/RingOfUnsummoning.xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
 				<Slot>FINGER</Slot>
 				<Icon href="/UI/H5A2/Icons/Artifacts/Ring_of_Unsummoning.(Texture).xdb#xpointer(/Texture)"/>
@@ -2331,7 +2331,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Book_Of_Power/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Book_Of_Power/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/H5A2/BookOfPower.xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>SECONDARY</Slot>
 				<Icon href="/UI/H5A2/Icons/Artifacts/Book_of_Power.(Texture).xdb#xpointer(/Texture)"/>
@@ -2356,7 +2356,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Treeborn_Quiver/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Treeborn_Quiver/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/H5A2/TreebornQuiver.xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>SHOULDERS</Slot>
 				<Icon href="/UI/H5A2/Icons/Artifacts/Treeborn_Quiver.(Texture).xdb#xpointer(/Texture)"/>
@@ -2381,7 +2381,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Princess_Aelina/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Princess_Aelina/Description.txt"/>
-				<Model/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>INVENTORY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Princess.(Texture).xdb#xpointer(/Texture)"/>
@@ -2483,7 +2483,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Res_Crystal/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
-				<Slot>FINGER</Slot>
+				<Slot>CHEST</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/ResCrystal.xdb#xpointer(/Texture)"/>
 				<CostOfGold>12000</CostOfGold>
 				<AIValue>6000</AIValue>
@@ -2608,7 +2608,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Legion_T3/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
-				<Slot>SECONDARY</Slot>
+				<Slot>HEAD</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/LegionT3.xdb#xpointer(/Texture)"/>
 				<CostOfGold>12000</CostOfGold>
 				<AIValue>6000</AIValue>
@@ -2633,7 +2633,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Legion_T4/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
-				<Slot>FINGER</Slot>
+				<Slot>SECONDARY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/LegionT4.xdb#xpointer(/Texture)"/>
 				<CostOfGold>16000</CostOfGold>
 				<AIValue>8000</AIValue>
@@ -2658,7 +2658,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Legion_T5/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
-				<Slot>NECK</Slot>
+				<Slot>MISCSLOT1</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/LegionT5.xdb#xpointer(/Texture)"/>
 				<CostOfGold>24000</CostOfGold>
 				<AIValue>12000</AIValue>
@@ -2958,7 +2958,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Monk_04/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
-				<Slot>SECONDARY</Slot>
+				<Slot>PRIMARY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Monk04.xdb#xpointer(/Texture)"/>
 				<CostOfGold>12000</CostOfGold>
 				<AIValue>6000</AIValue>
@@ -3009,7 +3009,7 @@
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>FEET</Slot>
-				<Icon href="/Textures/HeroScreen/Artifacts/Guardian03.xdb#xpointer(/Texture)"/>
+				<Icon href="/Textures/HeroScreen/Artifacts/Guardian02.xdb#xpointer(/Texture)"/>
 				<CostOfGold>28000</CostOfGold>
 				<AIValue>14000</AIValue>
 				<CanBeGeneratedToSell>true</CanBeGeneratedToSell>
@@ -3034,7 +3034,7 @@
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>SECONDARY</Slot>
-				<Icon href="/Textures/HeroScreen/Artifacts/Guardian04.xdb#xpointer(/Texture)"/>
+				<Icon href="/Textures/HeroScreen/Artifacts/Guardian03.xdb#xpointer(/Texture)"/>
 				<CostOfGold>32000</CostOfGold>
 				<AIValue>16000</AIValue>
 				<CanBeGeneratedToSell>true</CanBeGeneratedToSell>
@@ -3109,7 +3109,7 @@
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>PRIMARY</Slot>
-				<Icon href="/Textures/HeroScreen/Artifacts/Angelic.xdb#xpointer(/Texture)"/>
+				<Icon href="/Textures/HeroScreen/Artifacts/Eightfold.xdb#xpointer(/Texture)"/>
 				<CostOfGold>80000</CostOfGold>
 				<AIValue>26000</AIValue>
 				<CanBeGeneratedToSell>false</CanBeGeneratedToSell>
@@ -3133,7 +3133,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Codex/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
-				<Slot>INVENTORY</Slot>
+				<Slot>SECONDARY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Codex.xdb#xpointer(/Texture)"/>
 				<CostOfGold>80000</CostOfGold>
 				<AIValue>26000</AIValue>
@@ -3208,7 +3208,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Pirate_03/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
-				<Slot>FINGER</Slot>
+				<Slot>PRIMARY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Pirate03.xdb#xpointer(/Texture)"/>
 				<CostOfGold>8000</CostOfGold>
 				<AIValue>4000</AIValue>
@@ -3283,7 +3283,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Pirate_06/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
-				<Slot>NECK</Slot>
+				<Slot>PRIMARY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Pirate06.xdb#xpointer(/Texture)"/>
 				<CostOfGold>12000</CostOfGold>
 				<AIValue>6000</AIValue>
@@ -3358,7 +3358,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Medical_03/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
-				<Slot>MISCSLOT1</Slot>
+				<Slot>SHOULDERS</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Medical03.xdb#xpointer(/Texture)"/>
 				<CostOfGold>0</CostOfGold>
 				<AIValue>0</AIValue>
@@ -3456,10 +3456,10 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Potion_03/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Potion_03/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/Wand_of_.(Model).xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
-				<Slot>PRIMARY</Slot>
-				<Icon href="/Textures/HeroScreen/Artifacts/Wand_Of_XA.xdb#xpointer(/Texture)"/>
+				<Slot>MISCSLOT1</Slot>
+				<Icon href="/Textures/HeroScreen/Artifacts/Potion03.xdb#xpointer(/Texture)"/>
 				<CostOfGold>0</CostOfGold>
 				<AIValue>4000</AIValue>
 				<CanBeGeneratedToSell>false</CanBeGeneratedToSell>
@@ -3483,7 +3483,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Book_A1/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
-				<Slot>INVENTORY</Slot>
+				<Slot>NECK</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/BookA1.xdb#xpointer(/Texture)"/>
 				<CostOfGold>8000</CostOfGold>
 				<AIValue>4000</AIValue>
@@ -3508,7 +3508,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Book_A2/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
-				<Slot>INVENTORY</Slot>
+				<Slot>HEAD</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/BookA2.xdb#xpointer(/Texture)"/>
 				<CostOfGold>8000</CostOfGold>
 				<AIValue>4000</AIValue>
@@ -3533,7 +3533,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Book_A3/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
-				<Slot>INVENTORY</Slot>
+				<Slot>HEAD</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/BookA3.xdb#xpointer(/Texture)"/>
 				<CostOfGold>16000</CostOfGold>
 				<AIValue>8000</AIValue>
@@ -3558,7 +3558,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Book_A4/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
-				<Slot>INVENTORY</Slot>
+				<Slot>HEAD</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/BookA4.xdb#xpointer(/Texture)"/>
 				<CostOfGold>16000</CostOfGold>
 				<AIValue>8000</AIValue>
@@ -3583,7 +3583,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Book_D1/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
-				<Slot>INVENTORY</Slot>
+				<Slot>PRIMARY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/BookD1.xdb#xpointer(/Texture)"/>
 				<CostOfGold>8000</CostOfGold>
 				<AIValue>4000</AIValue>
@@ -3608,7 +3608,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Book_D2/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
-				<Slot>INVENTORY</Slot>
+				<Slot>PRIMARY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/BookD2.xdb#xpointer(/Texture)"/>
 				<CostOfGold>8000</CostOfGold>
 				<AIValue>4000</AIValue>
@@ -3633,7 +3633,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Book_D3/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
-				<Slot>INVENTORY</Slot>
+				<Slot>SHOULDERS</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/BookD3.xdb#xpointer(/Texture)"/>
 				<CostOfGold>16000</CostOfGold>
 				<AIValue>8000</AIValue>
@@ -3658,7 +3658,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Book_D4/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
-				<Slot>INVENTORY</Slot>
+				<Slot>PRIMARY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/BookD4.xdb#xpointer(/Texture)"/>
 				<CostOfGold>16000</CostOfGold>
 				<AIValue>8000</AIValue>
@@ -3683,7 +3683,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Book_S1/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
-				<Slot>INVENTORY</Slot>
+				<Slot>FEET</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/BookS1.xdb#xpointer(/Texture)"/>
 				<CostOfGold>8000</CostOfGold>
 				<AIValue>2000</AIValue>
@@ -3708,7 +3708,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Book_S2/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
-				<Slot>INVENTORY</Slot>
+				<Slot>CHEST</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/BookS2.xdb#xpointer(/Texture)"/>
 				<CostOfGold>8000</CostOfGold>
 				<AIValue>4000</AIValue>
@@ -3733,7 +3733,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Book_S3/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
-				<Slot>INVENTORY</Slot>
+				<Slot>FEET</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/BookS3.xdb#xpointer(/Texture)"/>
 				<CostOfGold>16000</CostOfGold>
 				<AIValue>8000</AIValue>
@@ -3758,7 +3758,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Book_S4/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
-				<Slot>INVENTORY</Slot>
+				<Slot>FEET</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/BookS4.xdb#xpointer(/Texture)"/>
 				<CostOfGold>16000</CostOfGold>
 				<AIValue>8000</AIValue>
@@ -3783,7 +3783,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Book_K1/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
-				<Slot>INVENTORY</Slot>
+				<Slot>NECK</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/BookK1.xdb#xpointer(/Texture)"/>
 				<CostOfGold>8000</CostOfGold>
 				<AIValue>4000</AIValue>
@@ -3808,7 +3808,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Book_K2/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
-				<Slot>INVENTORY</Slot>
+				<Slot>PRIMARY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/BookK2.xdb#xpointer(/Texture)"/>
 				<CostOfGold>8000</CostOfGold>
 				<AIValue>4000</AIValue>
@@ -3833,7 +3833,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Book_K3/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
-				<Slot>INVENTORY</Slot>
+				<Slot>PRIMARY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/BookK3.xdb#xpointer(/Texture)"/>
 				<CostOfGold>16000</CostOfGold>
 				<AIValue>8000</AIValue>
@@ -3858,7 +3858,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Book_K4/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
-				<Slot>INVENTORY</Slot>
+				<Slot>FEET</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/BookK4.xdb#xpointer(/Texture)"/>
 				<CostOfGold>16000</CostOfGold>
 				<AIValue>8000</AIValue>
@@ -3883,7 +3883,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Book_R1/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
-				<Slot>INVENTORY</Slot>
+				<Slot>CHEST</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/BookR1.xdb#xpointer(/Texture)"/>
 				<CostOfGold>28000</CostOfGold>
 				<AIValue>14000</AIValue>
@@ -3908,7 +3908,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Book_R2/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
-				<Slot>INVENTORY</Slot>
+				<Slot>FEET</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/BookR2.xdb#xpointer(/Texture)"/>
 				<CostOfGold>28000</CostOfGold>
 				<AIValue>14000</AIValue>
@@ -3933,7 +3933,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Book_R3/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
-				<Slot>INVENTORY</Slot>
+				<Slot>FEET</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/BookR3.xdb#xpointer(/Texture)"/>
 				<CostOfGold>28000</CostOfGold>
 				<AIValue>14000</AIValue>
@@ -4058,7 +4058,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Shantiri_05/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
-				<Slot>MISCSLOT1</Slot>
+				<Slot>INVENTORY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Shantiri05.xdb#xpointer(/Texture)"/>
 				<CostOfGold>80000</CostOfGold>
 				<AIValue>26000</AIValue>
@@ -4156,7 +4156,7 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Upg_HM1/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Upg_HM1/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/H5A2/MaskOfDoppelganger.xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>HEAD</Slot>
 				<Icon href="/UI/H5A2/Icons/Artifacts/Mask_of_Doppelganger.(Texture).xdb#xpointer(/Texture)"/>
@@ -4283,7 +4283,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Upg_ST3/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
-				<Slot>MISCSLOT1</Slot>
+				<Slot>HEAD</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/UpgST3.xdb#xpointer(/Texture)"/>
 				<CostOfGold>16000</CostOfGold>
 				<AIValue>6000</AIValue>
@@ -4383,7 +4383,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Fizbin/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
-				<Slot>NECK</Slot>
+				<Slot>PRIMARY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Fizbin.xdb#xpointer(/Texture)"/>
 				<CostOfGold>-26665</CostOfGold>
 				<AIValue>0</AIValue>
@@ -4408,7 +4408,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Forging/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
-				<Slot>HEAD</Slot>
+				<Slot>PRIMARY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Forging.xdb#xpointer(/Texture)"/>
 				<CostOfGold>-26665</CostOfGold>
 				<AIValue>0</AIValue>
@@ -4433,7 +4433,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Urgash_01/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
-				<Slot>PRIMARY</Slot>
+				<Slot>MISCSLOT1</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Urgash01.xdb#xpointer(/Texture)"/>
 				<CostOfGold>32000</CostOfGold>
 				<AIValue>16000</AIValue>
@@ -4533,7 +4533,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Governor_01/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MAJOR</Type>
-				<Slot>MISCSLOT1</Slot>
+				<Slot>SHOULDERS</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Governor01.xdb#xpointer(/Texture)"/>
 				<CostOfGold>16000</CostOfGold>
 				<AIValue>10000</AIValue>
@@ -4556,9 +4556,9 @@
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Governor_02/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Governor_02/Description.txt"/>
-				<Model href="/_(Model)/Artefacts/H5A2/HornOfPlenty.xdb#xpointer(/Model)"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
-				<Slot>MISCSLOT1</Slot>
+				<Slot>NECK</Slot>
 				<Icon href="/UI/H5A2/Icons/Artifacts/Horn_of_Plenty.(Texture).xdb#xpointer(/Texture)"/>
 				<CostOfGold>64000</CostOfGold>
 				<AIValue>21000</AIValue>
@@ -4658,7 +4658,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Gear_04/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
-				<Slot>CHEST</Slot>
+				<Slot>PRIMARY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Gear04.xdb#xpointer(/Texture)"/>
 				<CostOfGold>32000</CostOfGold>
 				<AIValue>16000</AIValue>
@@ -4733,7 +4733,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Gear_07/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
-				<Slot>INVENTORY</Slot>
+				<Slot>CHEST</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Gear07.xdb#xpointer(/Texture)"/>
 				<CostOfGold>8000</CostOfGold>
 				<AIValue>4000</AIValue>
@@ -4758,7 +4758,7 @@
 				<DescriptionFileRef href="/Text/Game/Artifacts/Gear_08/Description.txt"/>
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_RELIC</Type>
-				<Slot>MISCSLOT1</Slot>
+				<Slot>PRIMARY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Gear08.xdb#xpointer(/Texture)"/>
 				<CostOfGold>64000</CostOfGold>
 				<AIValue>21000</AIValue>
