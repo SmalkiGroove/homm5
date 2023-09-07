@@ -30,7 +30,8 @@ function HackHeroMana(hero)
 end
 
 function RestoreHeroMana(hero)
-    sleep(20)
+    local player = GetObjectOwner(hero)
+    if PLAYER_BRAIN[player] == HUMAN then sleep(20) end
     if GetHeroStat(hero, STAT_MANA_POINTS) > 1000 then
         local temp = 1000000000 + GetHeroLevel(hero) * 10000000 + HERO_ACTIVE_ARTIFACT_SETS[hero][1] * 100000 + HERO_ACTIVE_ARTIFACT_SETS[hero][2] * 1000
         ChangeHeroStat(hero, STAT_MANA_POINTS, -temp)
@@ -54,7 +55,7 @@ function HeroAttackMonsters(hero, monsters)
     DisableCombatHook(monsters)
     MakeHeroInteractWithObject(hero, monsters)
     EnableCombatHook(monsters)
-    RestoreHeroMana(hero)
+    startThread(RestoreHeroMana, hero)
 end
 
 function InitializeCombatHook()
