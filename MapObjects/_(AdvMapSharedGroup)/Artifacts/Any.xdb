@@ -63,6 +63,7 @@
 		<Item href="/MapObjects/Artifacts/LegionT7.(AdvMapArtifactShared).xdb#xpointer(/AdvMapArtifactShared)"/>	
 		<Item href="/MapObjects/Artifacts/Steadfast.(AdvMapArtifactShared).xdb#xpointer(/AdvMapArtifactShared)"/>
 		<Item href="/MapObjects/Artifacts/Buckler.(AdvMapArtifactShared).xdb#xpointer(/AdvMapArtifactShared)"/>				
+		<Item href="/MapObjects/Artifacts/Life01.(AdvMapArtifactShared).xdb#xpointer(/AdvMapArtifactShared)"/>	
 		<Item href="/MapObjects/Artifacts/Life02.(AdvMapArtifactShared).xdb#xpointer(/AdvMapArtifactShared)"/>	
 		<Item href="/MapObjects/Artifacts/Life03.(AdvMapArtifactShared).xdb#xpointer(/AdvMapArtifactShared)"/>	
 		<Item href="/MapObjects/Artifacts/Life04.(AdvMapArtifactShared).xdb#xpointer(/AdvMapArtifactShared)"/>	
@@ -73,7 +74,6 @@
 		<Item href="/MapObjects/Artifacts/Guardian01.(AdvMapArtifactShared).xdb#xpointer(/AdvMapArtifactShared)"/>	
 		<Item href="/MapObjects/Artifacts/Guardian02.(AdvMapArtifactShared).xdb#xpointer(/AdvMapArtifactShared)"/>
 		<Item href="/MapObjects/Artifacts/Guardian03.(AdvMapArtifactShared).xdb#xpointer(/AdvMapArtifactShared)"/>	
-		<Item href="/MapObjects/Artifacts/Angelic.(AdvMapArtifactShared).xdb#xpointer(/AdvMapArtifactShared)"/>		
 		<Item href="/MapObjects/Artifacts/Sentinel.(AdvMapArtifactShared).xdb#xpointer(/AdvMapArtifactShared)"/>	
 		<Item href="/MapObjects/Artifacts/Draconic.(AdvMapArtifactShared).xdb#xpointer(/AdvMapArtifactShared)"/>	
 		<Item href="/MapObjects/Artifacts/Eightfold.(AdvMapArtifactShared).xdb#xpointer(/AdvMapArtifactShared)"/>

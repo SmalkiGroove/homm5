@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AdvMapArtifactShared ObjectRecordID="11">
-	<Model href="/_(Model)/Artefacts/Titans_Trident.xdb#xpointer(/Model)"/>
+	<Model href="/_(Model)/Artefacts/Tank.(Model).xdb#xpointer(/Model)" />
 	<AnimSet href="/_(AnimSet)/Artefacts/General.(AnimSet).xdb#xpointer(/AnimSet)"/>
 	<blockedTiles/>
 	<holeTiles/>

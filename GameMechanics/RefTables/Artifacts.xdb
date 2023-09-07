@@ -1827,6 +1827,31 @@
 			</obj>
 		</Item>
 		<Item>
+			<ID>ARTIFACT_RING_OF_THE_SHADOWBRAND</ID>
+			<obj>
+				<NameFileRef href="/Text/Game/Artifacts/Ring_of_the_Shadowbrand/Name.txt"/>
+				<DescriptionFileRef href="/Text/Game/Artifacts/Ring_of_the_Shadowbrand/Description.txt"/>
+				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
+				<Type>ARTF_CLASS_MAJOR</Type>
+				<Slot>FINGER</Slot>
+				<Icon href="/Textures/HeroScreen/Artifacts/Shadow_Brand.(Texture).xdb#xpointer(/Texture)"/>
+				<CostOfGold>24000</CostOfGold>
+				<AIValue>10000</AIValue>
+				<CanBeGeneratedToSell>true</CanBeGeneratedToSell>
+				<HeroStatsModif>
+					<Attack>0</Attack>
+					<Defence>0</Defence>
+					<Knowledge>0</Knowledge>
+					<SpellPower>0</SpellPower>
+					<Morale>0</Morale>
+					<Luck>0</Luck>
+				</HeroStatsModif>
+				<ArtifactShared href="/MapObjects/Artifacts/Ring_Of_The_Shadowbrand(Scenario).(AdvMapArtifactShared).xdb#xpointer(/AdvMapArtifactShared)"/>
+				<AvailableForPresets>true</AvailableForPresets>
+				<PresetPrice>0</PresetPrice>
+			</obj>
+		</Item>
+		<Item>
 			<ID>ARTIFACT_OGRE_CLUB</ID>
 			<obj>
 				<NameFileRef href="/Text/Game/Artifacts/Ogre_Club/Name.txt"/>
@@ -2234,7 +2259,7 @@
 				<Model href="/_(Model)/TerrainObjects/Water/SeaChest.(Model).xdb#xpointer(/Model)"/>
 				<Type>ARTF_CLASS_MINOR</Type>
 				<Slot>PRIMARY</Slot>
-				<Icon href="/UI/H5A2/Icons/Artifacts/Edge_of_Balance.(Texture).xdb#xpointer(/Texture)"/>
+				<Icon href="/Textures/HeroScreen/Artifacts/Edge_of_Balance2.xdb#xpointer(/Texture)"/>
 				<CostOfGold>1500</CostOfGold>
 				<AIValue>2600</AIValue>
 				<CanBeGeneratedToSell>true</CanBeGeneratedToSell>
@@ -2796,7 +2821,7 @@
 					<Morale>0</Morale>
 					<Luck>0</Luck>
 				</HeroStatsModif>
-				<ArtifactShared href="/MapObjects/Artifacts/ring_of_haste.(AdvMapArtifactShared).xdb#xpointer(/AdvMapArtifactShared)"/>
+				<ArtifactShared href="/MapObjects/Artifacts/Life01.(AdvMapArtifactShared).xdb#xpointer(/AdvMapArtifactShared)"/>
 				<AvailableForPresets>true</AvailableForPresets>
 				<PresetPrice>0</PresetPrice>
 			</obj>
