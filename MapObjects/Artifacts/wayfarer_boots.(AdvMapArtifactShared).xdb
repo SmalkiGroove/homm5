@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AdvMapArtifactShared ObjectRecordID="32">
 	<Model href="/_(Model)/Artefacts/Tank.(Model).xdb#xpointer(/Model)" />
-	<AnimSet href="/_(AnimSet)/Artefacts/BootsOfSpeed-adv.(AnimSet).xdb#xpointer(/AnimSet)"/>
+	<AnimSet href="/_(AnimSet)/Artefacts/General.(AnimSet).xdb#xpointer(/AnimSet)"/>
 	<blockedTiles/>
 	<holeTiles/>
 	<activeTiles>

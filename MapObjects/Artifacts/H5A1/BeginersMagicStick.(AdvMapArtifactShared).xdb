@@ -15,8 +15,8 @@
 		<x>0</x>
 		<y>0</y>
 	</PossessionMarkerTile>
-	<Effect href="/Effects/_(Effect)/Artefacts/Magic_Want_Glow.(Effect).xdb#xpointer(/Effect)"/>
-	<EffectWhenOwned href="/Effects/_(Effect)/Artefacts/Magic_Want_Glow.(Effect).xdb#xpointer(/Effect)"/>
+	<Effect href="/Effects/_(Effect)/Artefacts/General/Gold.xdb#xpointer(/Effect)"/>
+	<EffectWhenOwned/>
 	<messagesFileRef>
 		<Item href="/Text/Game/Artifacts/Beginer_Magic_Stick/Name.txt"/>
 		<Item href="/Text/Game/Artifacts/Beginer_Magic_Stick/Description.txt"/>
