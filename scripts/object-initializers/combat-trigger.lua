@@ -1,4 +1,24 @@
 
+COMBAT_TRIGGERING_OBJECTS = {
+    "CREATURE",
+    "BUILDING_CRYPT",
+    "BUILDING_GARGOYLE_STONEVAULT",
+    "BUILDING_DWARVEN_TREASURE",
+    "BUILDING_BLOOD_TEMPLE",
+    "BUILDING_NAGA_BANK",
+    "BUILDING_NAGA_TEMPLE",
+    "BUILDING_TREANT_THICKET",
+    "BUILDING_UNKEMPT",
+    "BUILDING_LEAN_TO",
+    "BUILDING_SUNKEN_TEMPLE",
+    "BUILDING_PYRAMID",
+    "BUILDING_DEMOLISH",
+    "BUILDING_BUOY",
+    "BUILDING_CYCLOPS_STOCKPILE",
+    "BUILDING_ABANDONED_MINE",
+    "BUILDING_DRAGON_UTOPIA",
+}
+
 function HackHeroMana(hero)
     local temp = 1000000000 + GetHeroLevel(hero) * 10000000 + HERO_ACTIVE_ARTIFACT_SETS[hero][1] * 100000 + HERO_ACTIVE_ARTIFACT_SETS[hero][2] * 1000
     ChangeHeroStat(hero, STAT_KNOWLEDGE, 200000000)
@@ -10,7 +30,7 @@ function HackHeroMana(hero)
 end
 
 function RestoreHeroMana(hero)
-    sleep(10)
+    sleep(20)
     if GetHeroStat(hero, STAT_MANA_POINTS) > 1000 then
         local temp = 1000000000 + GetHeroLevel(hero) * 10000000 + HERO_ACTIVE_ARTIFACT_SETS[hero][1] * 100000 + HERO_ACTIVE_ARTIFACT_SETS[hero][2] * 1000
         ChangeHeroStat(hero, STAT_MANA_POINTS, -temp)
@@ -18,8 +38,10 @@ function RestoreHeroMana(hero)
 end
 
 function EnableCombatHook(object)
-    Trigger(OBJECT_TOUCH_TRIGGER, object, "HeroAttackMonsters")
-    SetObjectEnabled(object, nil)
+    if GetObjectPosition(object) then
+        Trigger(OBJECT_TOUCH_TRIGGER, object, "HeroAttackMonsters")
+        SetObjectEnabled(object, nil)
+    end
 end
 
 function DisableCombatHook(object)
@@ -36,9 +58,11 @@ function HeroAttackMonsters(hero, monsters)
 end
 
 function InitializeCombatHook()
-    local monsters = GetObjectNamesByType("CREATURE")
-    for i,monster in monsters do
-        EnableCombatHook(monster)
+    for _,obj in COMBAT_TRIGGERING_OBJECTS do
+        local objects = GetObjectNamesByType(obj)
+        for _,o in objects do
+            EnableCombatHook(o)
+        end
     end
 end
 

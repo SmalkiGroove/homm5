@@ -1,12 +1,19 @@
 
 
 function SetHeroActiveSet(hero, pieces, set)
+    local faction = GetHeroFactionID(hero)
+
+    local activations = set[0]
+    if set[faction] then activations = set[faction] end
+
     local artfset = 0
     local before = 0
-    for n,v in set do
+    
+    for n,v in activations do
         if pieces >= n then artfset = v end
         if contains(HERO_ACTIVE_ARTIFACT_SETS[hero], v) then before = v end
     end
+
     if before == artfset then
         print("Hero "..hero.." artifact set "..artfset.." has not changed")
     else
