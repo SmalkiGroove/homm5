@@ -39,8 +39,8 @@ function RestoreHeroMana(hero)
 end
 
 function EnableCombatHook(object)
-    if GetObjectPosition(object) then
-        Trigger(OBJECT_TOUCH_TRIGGER, object, "HeroAttackMonsters")
+    if IsObjectExists(object) then
+        Trigger(OBJECT_TOUCH_TRIGGER, object, "HeroVisitObject")
         SetObjectEnabled(object, nil)
     end
 end
@@ -50,11 +50,18 @@ function DisableCombatHook(object)
     SetObjectEnabled(object, not nil)
 end
 
-function HeroAttackMonsters(hero, monsters)
+function HeroVisitObject(hero, object)
+    local battle = not nil
+    if GetObjectOwner(object) then
+        if GetObjectOwner(object) == GetObjectOwner(hero) then
+            MakeHeroInteractWithObject(hero, object)
+            return
+        end
+    end
     HackHeroMana(hero)
-    DisableCombatHook(monsters)
-    MakeHeroInteractWithObject(hero, monsters)
-    EnableCombatHook(monsters)
+    DisableCombatHook(object)
+    MakeHeroInteractWithObject(hero, object)
+    EnableCombatHook(object)
     startThread(RestoreHeroMana, hero)
 end
 

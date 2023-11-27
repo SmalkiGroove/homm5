@@ -299,7 +299,7 @@ EnableBuildingConversion()
 function GameLoop()
     while 1 do
         sleep(30)
-        startThread(UpdateArtifacts)
+        -- startThread(UpdateArtifacts)
     end
 end
 startThread(GameLoop)
